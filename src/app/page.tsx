@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { TrustBadges } from "@/components/TrustBadges";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { ConsultationForm } from "@/components/ConsultationForm";
+import { HomeCtaBanner } from "@/components/HomeCtaBanner";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,9 @@ export default function HomePage() {
 
       {/* 4. Free Lighting Consultation Form */}
       <ConsultationForm />
+
+      {/* 5. Home Specific CTA Banner */}
+      <HomeCtaBanner />
     </>
   );
 }

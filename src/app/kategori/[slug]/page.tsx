@@ -87,7 +87,7 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
               </span>
               <span className="text-slate-600 text-xs">•</span>
               <span className="text-[11px] text-amber-400 font-medium">
-                {category.itemCount}+ Model Teşhirde
+                {categoryProducts.length} Model Teşhirde
               </span>
             </div>
 
@@ -120,7 +120,7 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
               {category.name} Modellerimiz
             </h2>
             <span className="text-xs text-amber-400 font-semibold">
-              Teşhirde {category.itemCount}+ Model Mevcut
+              Teşhirde {categoryProducts.length} Model Mevcut
             </span>
           </div>
 

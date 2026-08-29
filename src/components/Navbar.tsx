@@ -117,11 +117,11 @@ export function Navbar() {
                       key={cat.slug}
                       href={`/kategori/${cat.slug}`}
                       onClick={handleLinkClick}
-                      className="flex items-center justify-between px-3 py-2 rounded-lg text-slate-300 hover:text-amber-300 hover:bg-slate-800/80 transition-colors text-xs"
+                      className="group flex items-center justify-between px-3 py-2 rounded-lg text-slate-300 hover:text-amber-300 hover:bg-slate-800/80 transition-colors text-xs"
                     >
                       <span className="font-medium">{cat.name}</span>
-                      <span className="text-[10px] text-slate-500 bg-slate-900 px-1.5 py-0.5 rounded">
-                        {cat.itemCount} Model
+                      <span className="text-amber-400 font-bold group-hover:translate-x-1 transition-transform text-xs">
+                        →
                       </span>
                     </Link>
                   ))}
