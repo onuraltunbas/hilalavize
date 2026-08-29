@@ -28,6 +28,24 @@ export const CATEGORY_PREFIXES: Record<string, { name: string; slug: string }> =
 const activeSessions = new Map<string, number>();
 const SESSION_DURATION_MS = 6 * 60 * 60 * 1000; // 6 saat
 
+// Kategori Başına En Yüksek Kullanılmış ID Sayaç Takibi (Ürün silinse bile ID geri sarmaz, hep ileri gider)
+const highestAllocatedIdMap = new Map<string, number>();
+
+// İlk yüklemede mevcut ürünlerin en yüksek ID'lerini kaydet
+PRODUCTS.forEach((p) => {
+  const parts = p.id.split("-");
+  if (parts.length === 2) {
+    const prefix = parts[0].toUpperCase();
+    const num = parseInt(parts[1], 10);
+    if (!isNaN(num)) {
+      const currentMax = highestAllocatedIdMap.get(prefix) || 0;
+      if (num > currentMax) {
+        highestAllocatedIdMap.set(prefix, num);
+      }
+    }
+  }
+});
+
 // Adım Adım Ürün Ekleme Sihirbazı Durumları
 export type WizardStep =
   | "WAITING_PHOTO"
@@ -70,25 +88,63 @@ export function clearWizardState(userId: number | string): void {
   wizardStates.delete(String(userId));
 }
 
-// Otomatik Sıradaki ID'yi Üretme (Örn: AVZ-03)
+// Otomatik Sıradaki ID'yi Üretme (Örn: AVZ-003, AVZ-006 - Asla Geri Dönmez)
 export function generateNextProductId(prefix: string): string {
   const cleanPrefix = prefix.toUpperCase();
+
+  // 1. Mevcut ürünlerdeki en büyük numarayı bul
   const matchingProducts = PRODUCTS.filter((p) =>
     p.id.toUpperCase().startsWith(`${cleanPrefix}-`)
   );
 
-  let maxNum = 0;
+  let currentMax = highestAllocatedIdMap.get(cleanPrefix) || 0;
+
   matchingProducts.forEach((p) => {
     const numPart = p.id.split("-")[1];
     const num = parseInt(numPart, 10);
-    if (!isNaN(num) && num > maxNum) {
-      maxNum = num;
+    if (!isNaN(num) && num > currentMax) {
+      currentMax = num;
     }
   });
 
-  const nextNum = maxNum + 1;
-  const formattedNum = nextNum < 10 ? `0${nextNum}` : `${nextNum}`;
+  const nextNum = currentMax + 1;
+  highestAllocatedIdMap.set(cleanPrefix, nextNum);
+
+  // 3 Haneli Format (001, 002, 005, 006 ...)
+  const formattedNum = String(nextNum).padStart(3, "0");
   return `${cleanPrefix}-${formattedNum}`;
+}
+
+// Ürün Silme İşlemi (Sayaç korunur, silinen ID geri dönmez)
+export function deleteProductByIdOrName(query: string): { success: boolean; product?: Product; nextIdForCategory?: string } {
+  const product = findProductByIdOrName(query);
+  if (!product) {
+    return { success: false };
+  }
+
+  const prefix = product.id.split("-")[0].toUpperCase();
+  const num = parseInt(product.id.split("-")[1] || "0", 10);
+
+  // Sayaçta bu numaranın kaydedildiğinden emin ol
+  const currentMax = highestAllocatedIdMap.get(prefix) || 0;
+  if (num > currentMax) {
+    highestAllocatedIdMap.set(prefix, num);
+  }
+
+  // Listeden çıkar
+  const index = PRODUCTS.findIndex((p) => p.id === product.id);
+  if (index !== -1) {
+    PRODUCTS.splice(index, 1);
+  }
+
+  const nextNum = (highestAllocatedIdMap.get(prefix) || num) + 1;
+  const nextIdForCategory = `${prefix}-${String(nextNum).padStart(3, "0")}`;
+
+  return {
+    success: true,
+    product,
+    nextIdForCategory,
+  };
 }
 
 // Oturum Doğrulama

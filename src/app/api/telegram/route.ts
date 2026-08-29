@@ -11,6 +11,7 @@ import {
   formatProductDetails,
   CATEGORY_PREFIXES,
   generateNextProductId,
+  deleteProductByIdOrName,
   getWizardState,
   setWizardState,
   clearWizardState,
@@ -111,16 +112,21 @@ export async function POST(req: NextRequest) {
 
 🔍 *Ürün Sorgulama:*
 • \`/urun [ID veya İsim]\`
-  _Örnek: \`/urun AVZ-01\` veya \`/urun padisah\`_
+  _Örnek: \`/urun AVZ-001\` veya \`/urun padisah\`_
   _Ürünün fotoğrafını, teknik özelliklerini ve linkini getirir._
+
+📸 *Yeni Ürün Ekleme (Adım Adım):*
+• \`/ekle\`
+  _Sırayla sorarak otomatik ID (Örn: AVZ-003) ile yeni ürün ekler._
+
+🗑️ *Ürün Silme:*
+• \`/sil [ID veya İsim]\`
+  _Örnek: \`/sil AVZ-001\`_
+  _(Ürün silinse bile ID'ler geri sarmaz, sıradaki numaradan devam eder)._
 
 📋 *Ürün Listesi:*
 • \`/liste\`
   _Sitedeki tüm ürünlerin ID ve kategori dökümünü listeler._
-
-📸 *Yeni Ürün Ekleme (Adım Adım):*
-• \`/ekle\`
-  _Fotoğraftan özelliklere kadar adım adım ürün ekleme sihirbazını başlatır._
 
 ⚡ *Durum & Güvenlik:*
 • \`/durum\`
@@ -160,12 +166,46 @@ export async function POST(req: NextRequest) {
       PRODUCTS.forEach((p, idx) => {
         listMsg += `${idx + 1}. \`[${p.id}]\` *${p.name}*\n   📂 ${p.categoryName} | 🏢 ${p.branch}\n\n`;
       });
-      listMsg += `_Detay görmek için \`/urun [ID]\` yazabilirsiniz._`;
+      listMsg += `_Detay görmek için \`/urun [ID]\`, silmek için \`/sil [ID]\` yazabilirsiniz._`;
       await sendTelegramMessage(chatId, listMsg);
       return NextResponse.json({ ok: true });
     }
 
-    // 9. /urun Sorgulama Komutu
+    // 9. /sil Komutu (Ürün Silme)
+    if (text.startsWith("/sil") || text.startsWith("/delete")) {
+      clearWizardState(fromId);
+      const query = text.replace(/^\/sil\s*/, "").replace(/^\/delete\s*/, "").trim();
+
+      if (!query) {
+        await sendTelegramMessage(
+          chatId,
+          `⚠️ Lütfen silmek istediğiniz ürünün ID'sini veya adını yazın.\nÖrnek: \`/sil AVZ-001\``
+        );
+        return NextResponse.json({ ok: true });
+      }
+
+      const res = deleteProductByIdOrName(query);
+      if (res.success && res.product) {
+        await sendTelegramMessage(
+          chatId,
+          `🗑️ *ÜRÜN BAŞARIYLA SİLİNDİ!*
+━━━━━━━━━━━━━━━━━━━━
+🆔 *Silinen ID:* \`${res.product.id}\`
+🏷️ *Ürün Adı:* ${res.product.name}
+📂 *Kategori:* ${res.product.categoryName}
+
+🔢 *ID Sırası Korundu:* Bu kategorideki sıradaki yeni ürün ID'si \`${res.nextIdForCategory}\` olarak devam edecektir. Eski numara tekrar kullanılmaz.`
+        );
+      } else {
+        await sendTelegramMessage(
+          chatId,
+          `❌ *Ürün Bulunamadı!* \n\n"${query}" aramasına uygun silinecek ürün bulunamadı. \`/liste\` yazarak kayıtlı ID'leri görebilirsiniz.`
+        );
+      }
+      return NextResponse.json({ ok: true });
+    }
+
+    // 10. /urun Sorgulama Komutu
     if (text.startsWith("/urun") || text.startsWith("/bul") || text.toLowerCase().includes("nedir") || text.toLowerCase().includes("ne kadar")) {
       clearWizardState(fromId);
       let query = text.replace(/^\/urun\s*/, "").replace(/^\/bul\s*/, "").trim();
@@ -174,7 +214,7 @@ export async function POST(req: NextRequest) {
       if (!query) {
         await sendTelegramMessage(
           chatId,
-          `⚠️ Lütfen aramak istediğiniz ürünün ID'sini veya adını yazın.\nÖrnek: \`/urun AVZ-01\` veya \`/urun padisah\``
+          `⚠️ Lütfen aramak istediğiniz ürünün ID'sini veya adını yazın.\nÖrnek: \`/urun AVZ-001\` veya \`/urun padisah\``
         );
         return NextResponse.json({ ok: true });
       }
@@ -196,7 +236,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // ─── 10. ADIM ADIM İNTERAKTİF ÜRÜN EKLEME SİHİRBAZI (/ekle) ───
+    // ─── 11. ADIM ADIM İNTERAKTİF ÜRÜN EKLEME SİHİRBAZI (/ekle) ───
 
     // A) /ekle Başlatma
     if (text === "/ekle") {
@@ -282,7 +322,7 @@ _Örnek: 1 veya AVZ yazabilirsiniz._`
           return NextResponse.json({ ok: true });
         }
 
-        // Otomatik sıralı ID üretme
+        // Otomatik sıralı ID üretme (001, 002, 005, 006...)
         const nextId = generateNextProductId(prefix);
         wizard.data.prefix = prefix;
         wizard.data.id = nextId;
@@ -415,7 +455,7 @@ _Örnek:_
 - 8 Adet E14 Kandil Tipi Duy
 - Saf Masif Döküm Pirinç İskelet
 - Kırılmaya Karşı Korumalı Özel Ahşap Kasa
-- Profesyonel Montaj ve Bağlantı Desteği`
+- Profesyonel Montaj Desteği`
         );
         return NextResponse.json({ ok: true });
       }
@@ -476,7 +516,7 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
       }
     }
 
-    // 11. Sadece Ürün Adı veya ID yazıldıysa otomatik algıla
+    // 12. Sadece Ürün Adı veya ID yazıldıysa otomatik algıla
     const autoProduct = findProductByIdOrName(text);
     if (autoProduct) {
       const details = formatProductDetails(autoProduct);
@@ -487,10 +527,10 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
       return NextResponse.json({ ok: true });
     }
 
-    // 12. Bilinmeyen mesajlar
+    // 13. Bilinmeyen mesajlar
     await sendTelegramMessage(
       chatId,
-      `ℹ️ Komutu anlayamadım.\n\nÜrün eklemek için \`/ekle\`, komutları görmek için \`/yardim\` yazabilirsiniz.`
+      `ℹ️ Komutu anlayamadım.\n\nÜrün eklemek için \`/ekle\`, silmek için \`/sil [ID]\`, komutları görmek için \`/yardim\` yazabilirsiniz.`
     );
 
     return NextResponse.json({ ok: true });
