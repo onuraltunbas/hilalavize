@@ -15,7 +15,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   return (
     <div className="bg-[#0F172A] rounded-3xl overflow-hidden border border-amber-500/20 hover:border-amber-500/60 transition-all duration-300 group flex flex-col justify-between shadow-xl">
       {/* Image Area */}
-      <div className="relative h-64 w-full overflow-hidden bg-slate-950">
+      <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
         <Image
           src={product.image}
           alt={`${product.name} - Kahramanmaraş Hilal Avize`}
