@@ -16,6 +16,16 @@ export function ConsultationForm() {
 
   const [submitted, setSubmitted] = useState(false);
 
+  // İsim ve Soyismin ilk harflerini otomatik büyük harf yapan fonksiyon (Türkçe karakter duyarlı)
+  const formatTitleCase = (text: string) => {
+    return text.replace(/(?:^|\s)\S/g, (char) => char.toLocaleUpperCase("tr"));
+  };
+
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatTitleCase(e.target.value);
+    setFormData((prev) => ({ ...prev, name: formatted }));
+  };
+
   // Akıllı, Tek Parça ve Son Derece Sade Mesaj Sentezi
   const generateAiMessage = useMemo(() => {
     // 1. Saate göre dinamik selamlama
@@ -23,12 +33,12 @@ export function ConsultationForm() {
     const isEvening = currentHour >= 17 || currentHour < 6;
     const greeting = isEvening ? "İyi akşamlar" : "İyi günler";
 
-    // 2. İsim
+    // 2. İsim (Her kelimenin ilk harfi otomatik büyük)
     const rawName = formData.name.trim();
     const userName = rawName
       ? rawName
           .split(" ")
-          .map((w) => w.charAt(0).toLocaleUpperCase("tr") + w.slice(1).toLocaleLowerCase("tr"))
+          .map((w) => w.charAt(0).toLocaleUpperCase("tr") + w.slice(1))
           .join(" ")
       : "";
 
@@ -161,7 +171,7 @@ export function ConsultationForm() {
                     type="text"
                     required
                     value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onChange={handleNameChange}
                     placeholder="Örn: Onur Altunbaş"
                     className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none"
                   />
