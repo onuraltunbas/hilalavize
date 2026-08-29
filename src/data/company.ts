@@ -27,6 +27,12 @@ export interface BranchInfo {
   features: string[];
   image: string;
   googleMapsUrl: string;
+  embedMapUrl: string;
+  coordinates: {
+    lat: number;
+    lng: number;
+    formatted: string;
+  };
 }
 
 export const COMPANY_DATA = {
@@ -83,7 +89,13 @@ export const COMPANY_DATA = {
         "İhtişamlı Klasik & Modern Spor Geniş Ürün Yelpazesi",
       ],
       image: "/images/1920x1080_hero_showroom.jpg",
-      googleMapsUrl: "https://maps.google.com/?q=Yirmiikigün+Mahallesi+91056+Sokak+Umut+Kent+Sitesi+Onikisubat+Kahramanmaras",
+      googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=37.585632903905484,36.85069134447522",
+      embedMapUrl: "https://maps.google.com/maps?q=37.585632903905484,36.85069134447522&hl=tr&z=16&output=embed",
+      coordinates: {
+        lat: 37.585632903905484,
+        lng: 36.85069134447522,
+        formatted: "37.585632903905484, 36.85069134447522",
+      },
     },
     {
       id: "elektrik-sube",
@@ -122,7 +134,13 @@ export const COMPANY_DATA = {
         "Konut, Villa ve Ticari Alan Tesisat Desteği",
       ],
       image: "/images/1920x1080_elektrik_sube.jpg",
-      googleMapsUrl: "https://maps.google.com/?q=Yirmiikigün+Mahallesi+Sehit+Polis+Ali+Mulazimoglu+Caddesi+Eymen+Sitesi+Onikisubat+Kahramanmaras",
+      googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=37.59150608778074,36.8587423123147",
+      embedMapUrl: "https://maps.google.com/maps?q=37.59150608778074,36.8587423123147&hl=tr&z=16&output=embed",
+      coordinates: {
+        lat: 37.59150608778074,
+        lng: 36.8587423123147,
+        formatted: "37.59150608778074, 36.8587423123147",
+      },
     },
   ] as BranchInfo[],
   

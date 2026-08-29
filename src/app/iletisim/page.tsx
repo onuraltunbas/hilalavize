@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import { COMPANY_DATA } from "@/data/company";
 import { ConsultationForm } from "@/components/ConsultationForm";
+import { InteractiveMap } from "@/components/InteractiveMap";
 import {
   MapPin,
   MessageCircle,
@@ -197,6 +198,11 @@ export default function BranchesPage() {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Interactive Map */}
+        <div className="mb-16">
+          <InteractiveMap />
         </div>
 
         {/* Consultation Form */}
