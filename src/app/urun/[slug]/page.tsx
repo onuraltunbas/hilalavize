@@ -8,14 +8,12 @@ import { getProductBySlug, getAllProducts } from "@/lib/products-store";
 import { COMPANY_DATA } from "@/data/company";
 import { AiComplementaryProducts } from "@/components/AiComplementaryProducts";
 import {
-  Sparkles,
   ChevronRight,
   MessageCircle,
   Phone,
   ShieldCheck,
   Ruler,
   Lightbulb,
-  CheckCircle2,
 } from "lucide-react";
 
 export const dynamic = "force-dynamic";
@@ -157,45 +155,20 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </h1>
               </div>
 
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                {product.description}
-              </p>
-
               {/* Technical Specifications */}
               <div className="bg-[#0F172A] p-5 rounded-2xl border border-amber-500/20 space-y-3 text-xs sm:text-sm">
                 <div className="flex justify-between py-1.5 border-b border-slate-800">
                   <span className="text-slate-400 flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-amber-400" /> Malzeme / Yapı:
-                  </span>
-                  <span className="font-semibold text-white">{product.material}</span>
-                </div>
-                <div className="flex justify-between py-1.5 border-b border-slate-800">
-                  <span className="text-slate-400 flex items-center gap-2">
-                    <Ruler className="w-4 h-4 text-amber-400" /> Boyutlar:
+                    <Ruler className="w-4 h-4 text-amber-400" /> Boyutlar / Ölçüler:
                   </span>
                   <span className="font-semibold text-white">{product.dimensions}</span>
                 </div>
                 <div className="flex justify-between py-1.5">
                   <span className="text-slate-400 flex items-center gap-2">
-                    <Lightbulb className="w-4 h-4 text-amber-400" /> Aydınlatma / Duy:
+                    <Lightbulb className="w-4 h-4 text-amber-400" /> Aydınlatma / Duy Tipi:
                   </span>
                   <span className="font-semibold text-white">{product.lightingType}</span>
                 </div>
-              </div>
-
-              {/* Features List */}
-              <div className="space-y-2 pt-2">
-                <div className="text-xs font-bold uppercase tracking-wider text-amber-400">
-                  Öne Çıkan Özellikler:
-                </div>
-                <ul className="space-y-1.5 text-xs sm:text-sm text-slate-300">
-                  {product.features.map((feat, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>{feat}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
 

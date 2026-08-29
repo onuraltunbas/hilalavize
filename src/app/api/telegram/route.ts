@@ -138,7 +138,7 @@ export async function POST(req: NextRequest) {
   _Örnek: \`/urun AVZ-001\` veya \`/urun padisah\`_
   _Ürünün fotoğrafını, teknik özelliklerini ve linkini getirir._
 
-📸 *Yeni Ürün Ekleme (Adım Adım):*
+📸 *Hızlı Ürün Ekleme (6 Adım):*
 • \`/ekle\`
   _Sırayla sorarak otomatik ID (Örn: AVZ-003) ile yeni ürün ekler ve tüm yöneticilere duyurur._
 
@@ -267,7 +267,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // ─── 10. ADIM ADIM İNTERAKTİF ÜRÜN EKLEME SİHİRBAZI (/ekle) ───
+    // ─── 10. SADELEŞTİRİLMİŞ 6 ADIMLI HIZLI ÜRÜN EKLEME SİHİRBAZI (/ekle) ───
 
     // A) /ekle Başlatma
     if (text === "/ekle") {
@@ -280,13 +280,13 @@ export async function POST(req: NextRequest) {
 
       await sendTelegramMessage(
         chatId,
-        `📸 *YENİ ÜRÜN EKLEME SİHİRBAZI (Adım 1/9)*
+        `📸 *YENİ ÜRÜN EKLEME (Adım 1/6)*
 ━━━━━━━━━━━━━━━━━━━━
 👤 *Ekleyen:* ${userDisplayName}
 
 Lütfen eklemek istediğiniz ürünün *FOTOĞRAFINI* gönderiniz.
 
-_(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz. İptal edildiğinde tüm geçici bilgiler silinir ve en baştan başlanır.)_`
+_(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz.)_`
       );
       return NextResponse.json({ ok: true });
     }
@@ -417,34 +417,19 @@ _Örnek: 1 veya 2 yazabilirsiniz._`
         }
 
         wizard.data.style = style;
-        wizard.step = "WAITING_MATERIAL";
-        setWizardState(fromId, wizard);
-
-        await sendTelegramMessage(
-          chatId,
-          `✨ *5. Adım: Ürünün Malzemesini yazınız.*
-━━━━━━━━━━━━━━━━━━━━
-_Örnek: Masif Döküm Pirinç & K9 Saf Kristal Prizmalar_`
-        );
-        return NextResponse.json({ ok: true });
-      }
-
-      // ADIM 5: Malzeme
-      if (wizard.step === "WAITING_MATERIAL") {
-        wizard.data.material = text;
         wizard.step = "WAITING_DIMENSIONS";
         setWizardState(fromId, wizard);
 
         await sendTelegramMessage(
           chatId,
-          `📐 *6. Adım: Ürünün Boyutlarını / Ölçülerini yazınız.*
+          `📐 *5. Adım: Ürünün Boyutlarını / Ölçülerini yazınız.*
 ━━━━━━━━━━━━━━━━━━━━
 _Örnek: Çap: 85 cm, Yükseklik: 100 cm (Ayarlanabilir Zincir)_`
         );
         return NextResponse.json({ ok: true });
       }
 
-      // ADIM 6: Boyutlar
+      // ADIM 5: Boyutlar
       if (wizard.step === "WAITING_DIMENSIONS") {
         wizard.data.dimensions = text;
         wizard.step = "WAITING_LIGHTING";
@@ -452,7 +437,7 @@ _Örnek: Çap: 85 cm, Yükseklik: 100 cm (Ayarlanabilir Zincir)_`
 
         await sendTelegramMessage(
           chatId,
-          `💡 *7. Adım: Aydınlatma & Duy Tipini yazınız.*
+          `💡 *6. Adım (Son Adım): Aydınlatma & Duy Tipini yazınız.*
 ━━━━━━━━━━━━━━━━━━━━
 _Örnek: 8x E14 LED Kandil Duy (Sıcak Beyaz Işık Uyumlu)_
 _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
@@ -460,48 +445,9 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
         return NextResponse.json({ ok: true });
       }
 
-      // ADIM 7: Duy / Aydınlatma
+      // ADIM 6: Duy / Aydınlatma (VE DOĞRUDAN TAMAMLAMA & YAYINLAMA)
       if (wizard.step === "WAITING_LIGHTING") {
         wizard.data.lightingType = text;
-        wizard.step = "WAITING_DESCRIPTION";
-        setWizardState(fromId, wizard);
-
-        await sendTelegramMessage(
-          chatId,
-          `📝 *8. Adım: Ürünün Açıklamasını yazınız.*
-━━━━━━━━━━━━━━━━━━━━
-_Örnek: Geniş salonlar ve villalar için özel altın varak kaplama ve ışığı kıran kristal prizmalarla donatılmıştır._`
-        );
-        return NextResponse.json({ ok: true });
-      }
-
-      // ADIM 8: Açıklama
-      if (wizard.step === "WAITING_DESCRIPTION") {
-        wizard.data.description = text;
-        wizard.step = "WAITING_FEATURES";
-        setWizardState(fromId, wizard);
-
-        await sendTelegramMessage(
-          chatId,
-          `⭐ *9. Adım: Öne Çıkan Özellikleri yazınız.*
-━━━━━━━━━━━━━━━━━━━━
-Her satıra bir madde yazınız (veya virgülle ayırınız):
-
-_Örnek:_
-- 8 Adet E14 Kandil Tipi Duy
-- Saf Masif Döküm Pirinç İskelet
-- Kırılmaya Karşı Korumalı Özel Ahşap Kasa
-- Profesyonel Montaj Desteği`
-        );
-        return NextResponse.json({ ok: true });
-      }
-
-      // ADIM 9: Özellikler ve TAMAMLAMA (Ve Diğer Yöneticilere Canlı Yayın)
-      if (wizard.step === "WAITING_FEATURES") {
-        const features: string[] = text
-          .split("\n")
-          .map((l: string) => l.replace(/^[-•*]\s*/, "").trim())
-          .filter(Boolean);
 
         const d = wizard.data;
         const prefix = d.prefix || "AVZ";
@@ -531,15 +477,15 @@ _Örnek:_
           categoryName: cat.name,
           style: d.style || "Modern & Spor",
           badge: "Yeni Sezon Koleksiyon",
-          shortDescription: d.description ? d.description.slice(0, 120) : (d.name || ""),
-          description: d.description || (d.name || ""),
-          material: d.material || "Özel Tasarım Malzeme",
+          shortDescription: d.name || "",
+          description: d.name || "",
+          material: "Özel Tasarım",
           dimensions: d.dimensions || "Standart",
           lightingType: d.lightingType || "LED",
           branch,
           image: d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg",
           images: [d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg"],
-          features: features.length > 0 ? features : ["Yüksek Kaliteli Malzeme", "Özenli İşçilik"],
+          features: [],
           seoTitle: `${d.name} Kahramanmaraş | Hilal Avize`,
           seoDescription: `${d.name} modeli Kahramanmaraş Hilal Avize Showroom'unda.`,
         };
@@ -558,12 +504,8 @@ _Örnek:_
 📂 *Kategori:* ${cat.name} (\`${cat.slug}\`)
 🎨 *Tarz:* ${d.style}
 📐 *Boyut:* ${d.dimensions}
-✨ *Malzeme:* ${d.material}
 💡 *Duy:* ${d.lightingType}
 🏢 *Şube:* ${branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
-
-⭐ *Özellikler:*
-${features.map((f: string) => `• ${f}`).join("\n")}
 
 🌐 *Canlı Web Sayfası:*
 https://hilalavize-five.vercel.app/urun/${slug}
@@ -580,6 +522,7 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
 🏷️ *Ürün Adı:* ${d.name}
 📂 *Kategori:* ${cat.name}
 📐 *Boyut:* ${d.dimensions}
+💡 *Duy:* ${d.lightingType}
 🌐 *İncele:* https://hilalavize-five.vercel.app/urun/${slug}`;
 
         await broadcastToAllAdmins(broadcastAnnouncement, chatId, photoToSend);

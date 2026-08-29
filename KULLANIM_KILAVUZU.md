@@ -392,16 +392,13 @@ Sitedeki ve Telegram'daki tüm ürünler düzen için şu standart ID formatın�
 
 ---
 
-### 📸 14.4. İnteraktif Ürün Ekleme Sihirbazı (`/ekle`):
-Bota **/ekle** yazdığınızda sistem size sırayla sorar:
-1. Ürün Fotoğrafı
-2. Ürün Türü (Otomatik sıradaki ID üretilir, örn: `AVZ-003`)
-3. Ürün Adı
-4. Tarzı (`1: Klasik`, `2: Modern`, `3: Minimalist`)
-5. Malzemesi
-6. Boyutları / Ölçüleri
-7. Duy / Aydınlatma Tipi
-8. Açıklaması
-9. Öne Çıkan Özellikleri
+### 📸 14.4. Hızlı Ürün Ekleme Sihirbazı (`/ekle`):
+Bota **/ekle** yazdığınızda sistem size sırayla sorar (Sadece 6 Hızlı Adım):
+1. 📸 **Ürün Fotoğrafı**
+2. 📂 **Ürün Türü** *(Otomatik sıradaki ID üretilir, örn: `AVZ-003`)*
+3. 🏷️ **Ürün Tam Adı**
+4. 🎨 **Tarzı** *(`1: Klasik`, `2: Modern`, `3: Minimalist`)*
+5. 📐 **Boyutları / Ölçüleri**
+6. 💡 **Aydınlatma / Duy Tipi**
 
-İşlem tamamlandığında ürün sitenize anında eklenir ve canlı web linkiyle teyit kartı gönderilir!
+6. adımı gönderdiğiniz anda ürün sitenize anında eklenir ve canlı web linkiyle teyit kartı oluşturulup yönetim kanalına duyurulur!

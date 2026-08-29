@@ -65,17 +65,14 @@ PRODUCTS.forEach((p) => {
   }
 });
 
-// Adım Adım Ürün Ekleme Sihirbazı Durumları
+// Sadeleştirilmiş Adım Adım Ürün Ekleme Sihirbazı Durumları (6 Hızlı Adım)
 export type WizardStep =
   | "WAITING_PHOTO"
   | "WAITING_CATEGORY"
   | "WAITING_NAME"
   | "WAITING_STYLE"
-  | "WAITING_MATERIAL"
   | "WAITING_DIMENSIONS"
-  | "WAITING_LIGHTING"
-  | "WAITING_DESCRIPTION"
-  | "WAITING_FEATURES";
+  | "WAITING_LIGHTING";
 
 export interface WizardState {
   step: WizardStep;
@@ -87,11 +84,8 @@ export interface WizardState {
     id?: string;
     name?: string;
     style?: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist";
-    material?: string;
     dimensions?: string;
     lightingType?: string;
-    description?: string;
-    features?: string[];
   };
 }
 
@@ -213,7 +207,6 @@ export async function sendTelegramMessage(chatId: number | string, text: string)
     });
     const data = await res.json();
     if (!data.ok) {
-      // Markdown ayrıştırma hatasında biçimlendirmeyi temizleyip tekrar gönder
       await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -245,7 +238,6 @@ export async function sendTelegramPhoto(chatId: number | string, photoUrlOrFileI
     });
     const data = await res.json();
     if (!data.ok) {
-      // Düz metin başlıkla dene
       const retryRes = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -257,7 +249,6 @@ export async function sendTelegramPhoto(chatId: number | string, photoUrlOrFileI
       });
       const retryData = await retryRes.json();
       if (!retryData.ok) {
-        // Fotoğraf gönderilemezse metin olarak kesinlikle ilet
         await sendTelegramMessage(chatId, caption);
       }
     }
@@ -312,24 +303,16 @@ export function findProductByIdOrName(query: string): Product | null {
   );
 }
 
-// Ürün Detay Kartı
+// Sadeleştirilmiş Ürün Detay Kartı
 export function formatProductDetails(product: Product): string {
   return `📦 *Ürün Bilgi Kartı (ID: ${product.id})*
 ━━━━━━━━━━━━━━━━━━━━
 🏷️ *Ürün Adı:* ${product.name}
 📂 *Kategori:* ${product.categoryName} (\`${product.categorySlug}\`)
 🎨 *Tarz:* ${product.style}
-🏢 *Şube:* ${product.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
-
-📝 *Açıklama:*
-${product.description}
-
 📐 *Boyutlar:* ${product.dimensions}
-✨ *Malzeme:* ${product.material}
 💡 *Duy/Aydınlatma:* ${product.lightingType}
-
-⭐ *Öne Çıkan Özellikler:*
-${product.features.map((f) => `• ${f}`).join("\n")}
+🏢 *Şube:* ${product.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
 
 🌐 *Canlı Web Sayfası:*
 https://hilalavize-five.vercel.app/urun/${product.slug}`;
