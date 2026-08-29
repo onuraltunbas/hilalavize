@@ -16,37 +16,67 @@ export function ConsultationForm() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  // Akıllı ve Doğal Dil Mesaj Sentezi (Ücretsiz, Yerel & Anlık Yapay Zeka Mantığı)
+  // Akıllı ve Doğal Dil Mesaj Sentezi (Sade, Teknik, Akıcı ve Resmi)
   const generateAiMessage = useMemo(() => {
-    // 1. Günün saatine göre dinamik karşılama (17:00 - 06:00 arası İyi Akşamlar, 06:00 - 17:00 arası İyi Günler)
+    // 1. Günün saatine göre dinamik selamlama
     const currentHour = new Date().getHours();
     const isEvening = currentHour >= 17 || currentHour < 6;
     const greeting = isEvening ? "İyi akşamlar" : "İyi günler";
 
-    // 2. İsim & Lokasyon formatlama
-    const userName = formData.name.trim() ? formData.name.trim() : "";
-    const namePart = userName ? `${greeting}, ben ${userName}.` : `${greeting},`;
-    const districtPart = formData.district ? `${formData.district}'den ulaşıyorum.` : "Kahramanmaraş'tan ulaşıyorum.";
+    // 2. İsim formatlama (İlk harfler büyük)
+    const rawName = formData.name.trim();
+    const userName = rawName
+      ? rawName
+          .split(" ")
+          .map((w) => w.charAt(0).toLocaleUpperCase("tr") + w.slice(1).toLocaleLowerCase("tr"))
+          .join(" ")
+      : "";
 
-    // 3. Mekan ve Tarz ifadesi
-    const intentPart = `${formData.roomType} için ${formData.stylePreference.toLowerCase()} tarzında avize ve aydınlatma modellerinizi inceliyorum.`;
+    const nameStr = userName ? `${greeting}, ben ${userName}.` : `${greeting},`;
+    const districtStr = formData.district ? `${formData.district}'den yazıyorum.` : "Kahramanmaraş'tan yazıyorum.";
 
-    // 4. Ek notları yapay zeka ile temizleme ve cümle içine akıcı entegre etme
-    let notesFormatted = "";
+    // 3. Mekan türü ve tarzı sadeleştirme
+    const roomClean = formData.roomType.split("/")[0].trim();
+    const styleClean = formData.stylePreference
+      .replace(/^[^\wğüşöçıİĞÜŞÖÇ]+/, "")
+      .replace(/\s*\(.*?\)/, "")
+      .trim();
+
+    // 4. Kullanıcı notlarını teknik, derli toplu ve akıcı hale getirme
+    let noteSentence = "";
     if (formData.notes.trim()) {
-      // Baştaki merhaba/selam gibi mükerrer selamlamaları akıllıca ayıkla
       let cleanNotes = formData.notes.trim();
-      cleanNotes = cleanNotes.replace(/^(merhaba|selam|selamlar|iyi günler|iyi akşamlar)[\s,.\-!]+/gi, "");
-      cleanNotes = cleanNotes.charAt(0).toUpperCase() + cleanNotes.slice(1);
 
-      notesFormatted = `\n\n📌 *Mekan Detayları & Notlarım:* ${cleanNotes}`;
+      // Mükerrer selamlaşmaları temizle
+      cleanNotes = cleanNotes.replace(
+        /^(merhaba|selam|selamlar|iyi günler|iyi akşamlar|iyi calismalar|kolay gelsin)[\s,.\-!]+/gi,
+        ""
+      );
+
+      // Konuşma dili dolgularını temizle
+      cleanNotes = cleanNotes
+        .replace(/\b(falan|filan|vs|gibi|şey|bişey|bi|baya|cok|çook)\b/gi, "")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      // Ölçü birimlerini teknik formata dönüştür (10 metrekare -> 10 m², 2.80 metre -> 2.80 m)
+      cleanNotes = cleanNotes.replace(/(\d+)\s*(metrekare|m2|metre kare)/gi, "$1 m²");
+      cleanNotes = cleanNotes.replace(/(\d+[,.]\d+)\s*(metre|m|mt)/gi, "$1 m");
+
+      if (cleanNotes) {
+        cleanNotes = cleanNotes.charAt(0).toLocaleUpperCase("tr") + cleanNotes.slice(1);
+        if (!cleanNotes.endsWith(".") && !cleanNotes.endsWith("!")) {
+          cleanNotes += ".";
+        }
+        noteSentence = `\n\n${cleanNotes}`;
+      }
     }
 
-    // 5. Nezaket ve Eylem Çağrısı (CTA)
-    const closingPart = `Bu kriterlere uygun elinizdeki hazır modeller, showroom seçenekleri ve fiyat bilgisi hakkında yardımcı olabilir misiniz?`;
-    const phonePart = formData.phone.trim() ? `\n\n📞 *İletişim:* ${formData.phone.trim()}` : "";
+    // 5. Sade ve akıcı kapanış
+    const mainRequest = `${roomClean} için ${styleClean.toLowerCase()} tarzında avize ve aydınlatma modellerinizi inceliyorum.`;
+    const closing = `Bu alana uygun elinizdeki hazır modeller ve fiyat seçenekleri hakkında bilgi alabilir miyim?`;
 
-    return `${namePart} ${districtPart}\n\n${intentPart}${notesFormatted}\n\n${closingPart}${phonePart}\n\n_Hilal Avize web sitesi üzerinden gönderildi._`;
+    return `${nameStr} ${districtStr}\n\n${mainRequest}${noteSentence}\n\n${closing}`;
   }, [formData]);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -78,7 +108,7 @@ export function ConsultationForm() {
               Evinize En Uygun Modeli Birlikte Bulalım
             </h2>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-              Formu doldurun; yapay zeka asistanımız talebinizi derli toplu ve anlaşılır bir WhatsApp mesajına dönüştürsün, danışmanlarımız hemen en uygun modelleri önersin.
+              Formu doldurun; mekanınıza en uygun ölçü, ışık gücü ve avize modelini uzman danışmanlarımızla birlikte belirleyelim.
             </p>
           </div>
 
@@ -89,13 +119,13 @@ export function ConsultationForm() {
               </div>
               <h3 className="text-xl font-bold text-white">Talebiniz WhatsApp&apos;a Aktarıldı!</h3>
               <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">
-                Yapay zeka tarafından hazırlanan özenli mesajınız ile görüşme başlatıldı. Danışmanlarımız en kısa sürede mekanınıza en uygun avize ve aydınlatma önerilerini paylaşacaktır.
+                Mesajınız oluşturularak WhatsApp danışmanımıza iletildi. En kısa sürede odanızın ölçülerine uygun avize ve aydınlatma önerilerimizi paylaşacağız.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
                 className="text-xs text-amber-400 underline font-semibold mt-4"
               >
-                Yeni Bir Danışmanlık Talebi Oluştur
+                Yeni Bir Talep Oluştur
               </button>
             </div>
           ) : (
@@ -194,35 +224,16 @@ export function ConsultationForm() {
               {/* Ek Notlar */}
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1.5">
-                  Ek Notlar / Tavan Yüksekliği / Oda Ölçüleri / Özel İstekleriniz
+                  Ek Notlar / Tavan Yüksekliği / Oda Ölçüleri (Opsiyonel)
                 </label>
                 <textarea
                   rows={3}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  placeholder="Örn: 35 m2 salonumuz var, tavan yüksekliği 2.90m, gold detaylı mobilyalarımız bulunuyor, 8 veya 12 kollu kristal avize bakıyoruz..."
+                  placeholder="Örn: 35 m2 salonumuz var, tavan yüksekliği 2.90m, gold detaylı mobilyalarımız bulunuyor..."
                   className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none"
                 />
               </div>
-
-              {/* 
-              Akıllı Yapay Zeka Mesaj Önizlemesi Kutusu (İleride istenirse açılabilir)
-              <div className="bg-[#111D38] border border-amber-500/30 rounded-2xl p-4 sm:p-5 space-y-2">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-xs font-bold text-amber-400">
-                    <Bot className="w-4 h-4 text-amber-400 animate-pulse" />
-                    <span>Yapay Zeka Tarafından Düzenlenen Akıllı WhatsApp Mesajı:</span>
-                  </div>
-                  <span className="text-[10px] text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded-full flex items-center gap-1">
-                    <RefreshCw className="w-2.5 h-2.5" /> Canlı Düzenleniyor
-                  </span>
-                </div>
-
-                <div className="bg-[#0B132B] border border-slate-800 rounded-xl p-3.5 text-xs text-slate-200 whitespace-pre-line leading-relaxed font-sans border-l-4 border-l-amber-500">
-                  {generateAiMessage}
-                </div>
-              </div>
-              */}
 
               {/* Gönder Butonu */}
               <div className="pt-2">
