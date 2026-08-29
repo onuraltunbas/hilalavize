@@ -26,7 +26,70 @@ export const CATEGORY_PREFIXES: Record<string, { name: string; slug: string }> =
 
 // Aktif Oturumlar
 const activeSessions = new Map<string, number>();
-const SESSION_DURATION_MS = 4 * 60 * 60 * 1000; // 4 saat
+const SESSION_DURATION_MS = 6 * 60 * 60 * 1000; // 6 saat
+
+// Adım Adım Ürün Ekleme Sihirbazı Durumları
+export type WizardStep =
+  | "WAITING_PHOTO"
+  | "WAITING_CATEGORY"
+  | "WAITING_NAME"
+  | "WAITING_STYLE"
+  | "WAITING_MATERIAL"
+  | "WAITING_DIMENSIONS"
+  | "WAITING_LIGHTING"
+  | "WAITING_DESCRIPTION"
+  | "WAITING_FEATURES";
+
+export interface WizardState {
+  step: WizardStep;
+  data: {
+    photoUrl?: string;
+    prefix?: string;
+    id?: string;
+    name?: string;
+    style?: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist";
+    material?: string;
+    dimensions?: string;
+    lightingType?: string;
+    description?: string;
+    features?: string[];
+  };
+}
+
+const wizardStates = new Map<string, WizardState>();
+
+export function getWizardState(userId: number | string): WizardState | undefined {
+  return wizardStates.get(String(userId));
+}
+
+export function setWizardState(userId: number | string, state: WizardState): void {
+  wizardStates.set(String(userId), state);
+}
+
+export function clearWizardState(userId: number | string): void {
+  wizardStates.delete(String(userId));
+}
+
+// Otomatik Sıradaki ID'yi Üretme (Örn: AVZ-03)
+export function generateNextProductId(prefix: string): string {
+  const cleanPrefix = prefix.toUpperCase();
+  const matchingProducts = PRODUCTS.filter((p) =>
+    p.id.toUpperCase().startsWith(`${cleanPrefix}-`)
+  );
+
+  let maxNum = 0;
+  matchingProducts.forEach((p) => {
+    const numPart = p.id.split("-")[1];
+    const num = parseInt(numPart, 10);
+    if (!isNaN(num) && num > maxNum) {
+      maxNum = num;
+    }
+  });
+
+  const nextNum = maxNum + 1;
+  const formattedNum = nextNum < 10 ? `0${nextNum}` : `${nextNum}`;
+  return `${cleanPrefix}-${formattedNum}`;
+}
 
 // Oturum Doğrulama
 export function isUserLoggedIn(userId: number | string): boolean {
@@ -56,6 +119,7 @@ export function loginUser(userId: number | string, passwordAttempt: string): boo
 // Oturum Kapatma
 export function logoutUser(userId: number | string): void {
   activeSessions.delete(String(userId));
+  wizardStates.delete(String(userId));
 }
 
 // Telegram Mesaj Gönderme
@@ -157,157 +221,4 @@ ${product.features.map((f) => `• ${f}`).join("\n")}
 
 🌐 *Canlı Web Sayfası:*
 https://hilalavize-five.vercel.app/urun/${product.slug}`;
-}
-
-// Ürün Ekleme Şablon Metni
-export function getProductAddTemplate(): string {
-  return `📝 *STANDART ÜRÜN EKLEME ŞABLONU*
-━━━━━━━━━━━━━━━━━━━━
-Fotoğraf gönderirken açıklama (caption) kısmına bu şablonu kopyalayıp doldurunuz:
-
-\`\`\`
-/ekle
-ID: AVZ-101
-Ad: Venedik 8 Kollu Gold Kristal Avize
-Tarz: İhtişamlı & Klasik
-Malzeme: Döküm Pirinç & K9 Kristal
-Boyut: Çap: 85cm, Yükseklik: 100cm
-Duy: 8x E14 LED Kandil Duy
-Açıklama: Geniş salonlar için altın varak kaplama kristal avize.
-Özellikler:
-- 8 Adet E14 Kandil Duy
-- Saf döküm pirinç gövde
-- Kırılmaya karşı özel ahşap kasa
-- Ücretsiz montaj
-\`\`\`
-
-🏷️ *Geçerli ID Ön Ekleri:*
-• \`AVZ-\` : Avize
-• \`APL-\` : Aplik
-• \`SPT-\` : Spot & Ray Spot
-• \`ABJ-\` : Abajur & Lambader
-• \`AYN-\` : Ayna
-• \`DST-\` : Duvar & Masa Saati
-• \`SUS-\` : Cam Sanat / Süs Eşyaları
-• \`ANH-\` : Anahtar & Priz
-• \`KOL-\` : Koltuk & Berjer
-• \`SEH-\` : Sehpa`;
-}
-
-// Ayrıştırma ve Alan Doğrulama (Eksik Bilgi Kontrolü)
-export interface ParseResult {
-  success: boolean;
-  product?: Partial<Product>;
-  missingFields?: string[];
-  errorMsg?: string;
-}
-
-export function parseAndValidateProduct(text: string, photoUrl: string): ParseResult {
-  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
-  const getField = (prefix: string) => {
-    const line = lines.find((l) => l.toLowerCase().startsWith(prefix.toLowerCase()));
-    if (!line) return "";
-    return line.substring(line.indexOf(":") + 1).trim();
-  };
-
-  const missingFields: string[] = [];
-
-  const id = getField("id") || getField("ürün id");
-  if (!id) {
-    missingFields.push("❌ *ID* (Örn: AVZ-101, APL-101, SEH-101)");
-  }
-
-  const name = getField("ad") || getField("isim") || getField("ürün adı");
-  if (!name) {
-    missingFields.push("❌ *Ürün Adı* (Örn: Floransa 12 Kollu Kristal Avize)");
-  }
-
-  const material = getField("malzeme");
-  if (!material) {
-    missingFields.push("❌ *Malzeme* (Örn: Döküm Pirinç & K9 Kristal)");
-  }
-
-  const dimensions = getField("boyut") || getField("ölçü") || getField("ebat");
-  if (!dimensions) {
-    missingFields.push("❌ *Boyutlar* (Örn: Çap: 90cm, Yükseklik: 110cm)");
-  }
-
-  const lightingType = getField("duy") || getField("aydınlatma") || getField("ışık");
-  if (!lightingType) {
-    missingFields.push("❌ *Duy/Aydınlatma* (Örn: 12x E14 LED Duy veya Dahili LED)");
-  }
-
-  const description = getField("açıklama");
-  if (!description) {
-    missingFields.push("❌ *Açıklama* (Ürünün mekana kattığı zarafeti anlatan 1-2 cümle)");
-  }
-
-  const features = lines
-    .filter((l) => l.startsWith("-") || l.startsWith("•") || l.startsWith("*"))
-    .map((l) => l.replace(/^[-•*]\s*/, "").trim())
-    .filter(Boolean);
-
-  if (features.length === 0) {
-    missingFields.push("❌ *Öne Çıkan Özellikler* (En az 1-2 madde: - Özellik şeklinde)");
-  }
-
-  if (missingFields.length > 0) {
-    return {
-      success: false,
-      missingFields,
-    };
-  }
-
-  // ID Ön ekine göre otomatik kategori eşleştirme
-  const prefix = id.split("-")[0].toUpperCase();
-  const categoryMatch = CATEGORY_PREFIXES[prefix] || {
-    name: "Lüks & Modern Avizeler",
-    slug: "avizeler",
-  };
-
-  const styleRaw = getField("tarz") || getField("stil");
-  let style: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist" = "Modern & Spor";
-  if (styleRaw.toLowerCase().includes("klasik") || styleRaw.toLowerCase().includes("saray")) {
-    style = "İhtişamlı & Klasik";
-  } else if (styleRaw.toLowerCase().includes("minimal") || styleRaw.toLowerCase().includes("sade")) {
-    style = "Sade & Minimalist";
-  }
-
-  const slug = name
-    .toLowerCase()
-    .replace(/ğ/g, "g")
-    .replace(/ü/g, "u")
-    .replace(/ş/g, "s")
-    .replace(/ı/g, "i")
-    .replace(/ö/g, "o")
-    .replace(/ç/g, "c")
-    .replace(/[^a-z0-9]/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
-
-  const branch = (prefix === "SPT" || prefix === "ANH") ? "electrical" : "showroom";
-
-  return {
-    success: true,
-    product: {
-      id: id.toUpperCase(),
-      slug: slug || id.toLowerCase(),
-      name,
-      categorySlug: categoryMatch.slug,
-      categoryName: categoryMatch.name,
-      style,
-      badge: "Yeni Sezon Koleksiyon",
-      shortDescription: description.slice(0, 120),
-      description,
-      material,
-      dimensions,
-      lightingType,
-      branch,
-      image: photoUrl,
-      images: [photoUrl],
-      features,
-      seoTitle: `${name} Kahramanmaraş | Hilal Avize`,
-      seoDescription: `${name} modeli Kahramanmaraş Hilal Avize Showroom'unda.`,
-    },
-  };
 }

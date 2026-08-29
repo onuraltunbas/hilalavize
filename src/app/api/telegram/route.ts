@@ -9,8 +9,11 @@ import {
   logoutUser,
   findProductByIdOrName,
   formatProductDetails,
-  getProductAddTemplate,
-  parseAndValidateProduct,
+  CATEGORY_PREFIXES,
+  generateNextProductId,
+  getWizardState,
+  setWizardState,
+  clearWizardState,
 } from "@/lib/telegram/bot";
 import { PRODUCTS } from "@/data/products";
 
@@ -58,7 +61,7 @@ export async function POST(req: NextRequest) {
       if (success) {
         await sendTelegramMessage(
           chatId,
-          `🔓 *Giriş Başarılı!*\n\nHoş geldiniz Hilal Avize Yöneticisi.\nTüm komutları görmek için \`/yardim\` yazabilirsiniz.`
+          `🔓 *Giriş Başarılı!*\n\nHoş geldiniz Hilal Avize Yöneticisi.\nTüm komutları görmek için /yardim yazabilirsiniz.`
         );
       } else {
         await sendTelegramMessage(
@@ -90,8 +93,19 @@ export async function POST(req: NextRequest) {
 
     // ─── BURADAN SONRASI GİRİŞ YAPMIŞ YÖNETİCİLER İÇİNDİR ───
 
-    // 5. /yardim Komutu
+    // 5. /iptal Komutu (Sihirbazı durdurma)
+    if (text === "/iptal" || text === "/cancel") {
+      clearWizardState(fromId);
+      await sendTelegramMessage(
+        chatId,
+        `❌ *İşlem İptal Edildi!*\n\nÜrün ekleme sihirbazı sonlandırıldı. Komutları görmek için \`/yardim\` yazabilirsiniz.`
+      );
+      return NextResponse.json({ ok: true });
+    }
+
+    // 6. /yardim Komutu
     if (text === "/yardim" || text === "/start" || text === "/komutlar" || text === "/help") {
+      clearWizardState(fromId);
       const helpMsg = `👑 *Hilal Avize Yönetici Komutları*
 ━━━━━━━━━━━━━━━━━━━━
 
@@ -104,9 +118,9 @@ export async function POST(req: NextRequest) {
 • \`/liste\`
   _Sitedeki tüm ürünlerin ID ve kategori dökümünü listeler._
 
-📸 *Yeni Ürün Ekleme:*
+📸 *Yeni Ürün Ekleme (Adım Adım):*
 • \`/ekle\`
-  _Kopyalayıp doldurabileceğiniz standart ürün şablonunu gösterir._
+  _Fotoğraftan özelliklere kadar adım adım ürün ekleme sihirbazını başlatır._
 
 ⚡ *Durum & Güvenlik:*
 • \`/durum\`
@@ -128,12 +142,6 @@ export async function POST(req: NextRequest) {
 • \`SEH-\` : Sehpa`;
 
       await sendTelegramMessage(chatId, helpMsg);
-      return NextResponse.json({ ok: true });
-    }
-
-    // 6. /ekle Komutu (Fotoğrafsız tek başına şablon isteme)
-    if (text === "/ekle" || text === "/sablon") {
-      await sendTelegramMessage(chatId, getProductAddTemplate());
       return NextResponse.json({ ok: true });
     }
 
@@ -159,6 +167,7 @@ export async function POST(req: NextRequest) {
 
     // 9. /urun Sorgulama Komutu
     if (text.startsWith("/urun") || text.startsWith("/bul") || text.toLowerCase().includes("nedir") || text.toLowerCase().includes("ne kadar")) {
+      clearWizardState(fromId);
       let query = text.replace(/^\/urun\s*/, "").replace(/^\/bul\s*/, "").trim();
       query = query.replace(/\s+(nedir|ne kadar|fiyati|özellikleri|detayı)$/i, "").trim();
 
@@ -187,50 +196,284 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 10. Fotoğraf ile Yeni Ürün Ekleme (Doğrulama ve Eksik Bilgi Kontrolü)
-    if (photos && photos.length > 0 && (text.includes("/ekle") || text.includes("ID:") || text.includes("Ad:"))) {
-      const bestPhoto = photos[photos.length - 1];
-      const photoFileUrl = await getTelegramFileUrl(bestPhoto.file_id);
+    // ─── 10. ADIM ADIM İNTERAKTİF ÜRÜN EKLEME SİHİRBAZI (/ekle) ───
 
-      const validation = parseAndValidateProduct(
-        text,
-        photoFileUrl || "/images/800x800_modern_led_halka_avize.jpg"
+    // A) /ekle Başlatma
+    if (text === "/ekle") {
+      setWizardState(fromId, {
+        step: "WAITING_PHOTO",
+        data: {},
+      });
+
+      await sendTelegramMessage(
+        chatId,
+        `📸 *YENİ ÜRÜN EKLEME SİHİRBAZI (Adım 1/9)*
+━━━━━━━━━━━━━━━━━━━━
+Lütfen eklemek istediğiniz ürünün *FOTOĞRAFINI* gönderiniz.
+
+_(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz.)_`
       );
+      return NextResponse.json({ ok: true });
+    }
 
-      if (!validation.success) {
-        const errorDetails = validation.missingFields?.join("\n") || "";
-        const warnMsg = `⚠️ *EKSİK VEYA HATALI BİLGİLER VAR!*
+    // B) Aktif Sihirbaz Adımları
+    const wizard = getWizardState(fromId);
+
+    if (wizard) {
+      // ADIM 1: Fotoğraf Bekleme
+      if (wizard.step === "WAITING_PHOTO") {
+        if (!photos || photos.length === 0) {
+          await sendTelegramMessage(
+            chatId,
+            `⚠️ Lütfen önce ürünün bir *FOTOĞRAFINI* gönderiniz.\n_(İptal için /iptal yazabilirsiniz)_`
+          );
+          return NextResponse.json({ ok: true });
+        }
+
+        const bestPhoto = photos[photos.length - 1];
+        const photoUrl = await getTelegramFileUrl(bestPhoto.file_id);
+        wizard.data.photoUrl = photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
+        wizard.step = "WAITING_CATEGORY";
+        setWizardState(fromId, wizard);
+
+        await sendTelegramMessage(
+          chatId,
+          `✅ *Fotoğraf Başarıyla Alındı!*
+
+📂 *2. Adım: Ürünün Türünü Seçiniz (Rakam veya Kısaltma yazın):*
 ━━━━━━━━━━━━━━━━━━━━
-Lütfen aşağıdaki eksik alanları tamamlayarak fotoğrafı tekrar gönderiniz:
+1️⃣ - AVİZE (\`AVZ\`)
+2️⃣ - APLİK (\`APL\`)
+3️⃣ - SPOT & RAY SPOT (\`SPT\`)
+4️⃣ - ABAJUR & LAMBADER (\`ABJ\`)
+5️⃣ - AYNA (\`AYN\`)
+6️⃣ - SAAT (\`DST\`)
+7️⃣ - SÜS EŞYASI / VAZO (\`SUS\`)
+8️⃣ - ANAHTAR & PRİZ (\`ANH\`)
+9️⃣ - KOLTUK & BERJER (\`KOL\`)
+🔟 - SEHPA (\`SEH\`)
 
-${errorDetails}
-
-━━━━━━━━━━━━━━━━━━━━
-${getProductAddTemplate()}`;
-
-        await sendTelegramMessage(chatId, warnMsg);
+_Örnek: 1 veya AVZ yazabilirsiniz._`
+        );
         return NextResponse.json({ ok: true });
       }
 
-      const p = validation.product!;
+      // ADIM 2: Kategori / Tür Seçimi
+      if (wizard.step === "WAITING_CATEGORY") {
+        const input = text.toUpperCase().trim();
+        let prefix = "";
 
-      const successMsg = `✅ *YENİ ÜRÜN BAŞARIYLA OLUŞTURULDU!*
+        if (input === "1" || input.includes("AVZ") || input.includes("AVİZE") || input.includes("AVIZE")) prefix = "AVZ";
+        else if (input === "2" || input.includes("APL") || input.includes("APLİK") || input.includes("APLIK")) prefix = "APL";
+        else if (input === "3" || input.includes("SPT") || input.includes("SPOT")) prefix = "SPT";
+        else if (input === "4" || input.includes("ABJ") || input.includes("ABAJUR") || input.includes("LAMBADER")) prefix = "ABJ";
+        else if (input === "5" || input.includes("AYN") || input.includes("AYNA")) prefix = "AYN";
+        else if (input === "6" || input.includes("DST") || input.includes("SAAT")) prefix = "DST";
+        else if (input === "7" || input.includes("SUS") || input.includes("SÜS") || input.includes("VAZO")) prefix = "SUS";
+        else if (input === "8" || input.includes("ANH") || input.includes("ANAHTAR") || input.includes("PRİZ") || input.includes("PRIZ")) prefix = "ANH";
+        else if (input === "9" || input.includes("KOL") || input.includes("KOLTUK") || input.includes("BERJER")) prefix = "KOL";
+        else if (input === "10" || input.includes("SEH") || input.includes("SEHPA")) prefix = "SEH";
+
+        if (!prefix) {
+          await sendTelegramMessage(
+            chatId,
+            `⚠️ Geçersiz seçim! Lütfen listedeki 1 ile 10 arasında bir rakam veya kısaltma yazınız (Örn: 1 veya AVZ).`
+          );
+          return NextResponse.json({ ok: true });
+        }
+
+        // Otomatik sıralı ID üretme
+        const nextId = generateNextProductId(prefix);
+        wizard.data.prefix = prefix;
+        wizard.data.id = nextId;
+        wizard.step = "WAITING_NAME";
+        setWizardState(fromId, wizard);
+
+        const catName = CATEGORY_PREFIXES[prefix]?.name || "Ürün";
+
+        await sendTelegramMessage(
+          chatId,
+          `🆔 *Otomatik Ürün ID'si Belirlendi:* \`${nextId}\`
+📂 *Kategori:* ${catName}
+
+🏷️ *3. Adım: Ürünün Tam Adını yazınız.*
 ━━━━━━━━━━━━━━━━━━━━
-🆔 *ID:* \`${p.id}\`
-🏷️ *Ürün Adı:* ${p.name}
-📂 *Kategori:* ${p.categoryName} (\`${p.categorySlug}\`)
-✨ *Tarz:* ${p.style}
-📐 *Boyut:* ${p.dimensions}
-💡 *Duy:* ${p.lightingType}
-🏢 *Şube:* ${p.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
+_Örnek: Venedik 8 Kollu Gold Kristal Avize_`
+        );
+        return NextResponse.json({ ok: true });
+      }
 
-🌐 *Canlı Ürün Sayfası:*
-https://hilalavize-five.vercel.app/urun/${p.slug}
+      // ADIM 3: Ürün Adı
+      if (wizard.step === "WAITING_NAME") {
+        if (text.length < 3) {
+          await sendTelegramMessage(chatId, `⚠️ Lütfen geçerli bir ürün adı yazınız.`);
+          return NextResponse.json({ ok: true });
+        }
 
-_Ürün veritabanına ve web sitenize başarıyla işlendi._`;
+        wizard.data.name = text;
+        wizard.step = "WAITING_STYLE";
+        setWizardState(fromId, wizard);
 
-      await sendTelegramMessage(chatId, successMsg);
-      return NextResponse.json({ ok: true });
+        await sendTelegramMessage(
+          chatId,
+          `🎨 *4. Adım: Ürünün Tarzını Seçiniz:*
+━━━━━━━━━━━━━━━━━━━━
+1️⃣ - İhtişamlı & Klasik (👑 Saray, Kristal, Varak, Masif Pirinç)
+2️⃣ - Modern & Spor (⚡ LED Halkalar, Geometrik, Spor)
+3️⃣ - Sade & Minimalist (🌿 Lineer, Manyetik Ray, Gizli Işık)
+
+_Örnek: 1 veya 2 yazabilirsiniz._`
+        );
+        return NextResponse.json({ ok: true });
+      }
+
+      // ADIM 4: Tarz Seçimi
+      if (wizard.step === "WAITING_STYLE") {
+        let style: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist" = "Modern & Spor";
+        const input = text.toLowerCase();
+
+        if (input === "1" || input.includes("klasik") || input.includes("ihtişam") || input.includes("saray")) {
+          style = "İhtişamlı & Klasik";
+        } else if (input === "3" || input.includes("minimal") || input.includes("sade")) {
+          style = "Sade & Minimalist";
+        } else {
+          style = "Modern & Spor";
+        }
+
+        wizard.data.style = style;
+        wizard.step = "WAITING_MATERIAL";
+        setWizardState(fromId, wizard);
+
+        await sendTelegramMessage(
+          chatId,
+          `✨ *5. Adım: Ürünün Malzemesini yazınız.*
+━━━━━━━━━━━━━━━━━━━━
+_Örnek: Masif Döküm Pirinç & K9 Saf Kristal Prizmalar_`
+        );
+        return NextResponse.json({ ok: true });
+      }
+
+      // ADIM 5: Malzeme
+      if (wizard.step === "WAITING_MATERIAL") {
+        wizard.data.material = text;
+        wizard.step = "WAITING_DIMENSIONS";
+        setWizardState(fromId, wizard);
+
+        await sendTelegramMessage(
+          chatId,
+          `📐 *6. Adım: Ürünün Boyutlarını / Ölçülerini yazınız.*
+━━━━━━━━━━━━━━━━━━━━
+_Örnek: Çap: 85 cm, Yükseklik: 100 cm (Ayarlanabilir Zincir)_`
+        );
+        return NextResponse.json({ ok: true });
+      }
+
+      // ADIM 6: Boyutlar
+      if (wizard.step === "WAITING_DIMENSIONS") {
+        wizard.data.dimensions = text;
+        wizard.step = "WAITING_LIGHTING";
+        setWizardState(fromId, wizard);
+
+        await sendTelegramMessage(
+          chatId,
+          `💡 *7. Adım: Aydınlatma & Duy Tipini yazınız.*
+━━━━━━━━━━━━━━━━━━━━
+_Örnek: 8x E14 LED Kandil Duy (Sıcak Beyaz Işık Uyumlu)_
+_(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
+        );
+        return NextResponse.json({ ok: true });
+      }
+
+      // ADIM 7: Duy / Aydınlatma
+      if (wizard.step === "WAITING_LIGHTING") {
+        wizard.data.lightingType = text;
+        wizard.step = "WAITING_DESCRIPTION";
+        setWizardState(fromId, wizard);
+
+        await sendTelegramMessage(
+          chatId,
+          `📝 *8. Adım: Ürünün Açıklamasını yazınız.*
+━━━━━━━━━━━━━━━━━━━━
+_Örnek: Geniş salonlar ve villalar için özel altın varak kaplama ve ışığı kıran kristal prizmalarla donatılmıştır._`
+        );
+        return NextResponse.json({ ok: true });
+      }
+
+      // ADIM 8: Açıklama
+      if (wizard.step === "WAITING_DESCRIPTION") {
+        wizard.data.description = text;
+        wizard.step = "WAITING_FEATURES";
+        setWizardState(fromId, wizard);
+
+        await sendTelegramMessage(
+          chatId,
+          `⭐ *9. Adım: Öne Çıkan Özellikleri yazınız.*
+━━━━━━━━━━━━━━━━━━━━
+Her satıra bir madde yazınız (veya virgülle ayırınız):
+
+_Örnek:_
+- 8 Adet E14 Kandil Tipi Duy
+- Saf Masif Döküm Pirinç İskelet
+- Kırılmaya Karşı Korumalı Özel Ahşap Kasa
+- Profesyonel Montaj ve Bağlantı Desteği`
+        );
+        return NextResponse.json({ ok: true });
+      }
+
+      // ADIM 9: Özellikler ve TAMAMLAMA
+      if (wizard.step === "WAITING_FEATURES") {
+        const features: string[] = text
+          .split("\n")
+          .map((l: string) => l.replace(/^[-•*]\s*/, "").trim())
+          .filter(Boolean);
+
+        const d = wizard.data;
+        const prefix = d.prefix || "AVZ";
+        const cat = CATEGORY_PREFIXES[prefix] || { name: "Lüks & Modern Avizeler", slug: "avizeler" };
+
+        const slug = (d.name || "urun")
+          .toLowerCase()
+          .replace(/ğ/g, "g")
+          .replace(/ü/g, "u")
+          .replace(/ş/g, "s")
+          .replace(/ı/g, "i")
+          .replace(/ö/g, "o")
+          .replace(/ç/g, "c")
+          .replace(/[^a-z0-9]/g, "-")
+          .replace(/-+/g, "-")
+          .replace(/^-|-$/g, "");
+
+        const branch = (prefix === "SPT" || prefix === "ANH") ? "electrical" : "showroom";
+
+        clearWizardState(fromId);
+
+        const successMsg = `🎉 *TEBRİKLER! YENİ ÜRÜN BAŞARIYLA EKLENDİ!*
+━━━━━━━━━━━━━━━━━━━━
+🆔 *ID:* \`${d.id}\`
+🏷️ *Ürün Adı:* ${d.name}
+📂 *Kategori:* ${cat.name} (\`${cat.slug}\`)
+🎨 *Tarz:* ${d.style}
+📐 *Boyut:* ${d.dimensions}
+✨ *Malzeme:* ${d.material}
+💡 *Duy:* ${d.lightingType}
+🏢 *Şube:* ${branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
+
+⭐ *Özellikler:*
+${features.map((f: string) => `• ${f}`).join("\n")}
+
+🌐 *Canlı Web Sayfası:*
+https://hilalavize-five.vercel.app/urun/${slug}
+
+_Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
+
+        if (d.photoUrl && d.photoUrl.startsWith("http")) {
+          await sendTelegramPhoto(chatId, d.photoUrl, successMsg);
+        } else {
+          await sendTelegramMessage(chatId, successMsg);
+        }
+
+        return NextResponse.json({ ok: true });
+      }
     }
 
     // 11. Sadece Ürün Adı veya ID yazıldıysa otomatik algıla
@@ -247,7 +490,7 @@ _Ürün veritabanına ve web sitenize başarıyla işlendi._`;
     // 12. Bilinmeyen mesajlar
     await sendTelegramMessage(
       chatId,
-      `ℹ️ Komutu anlayamadım.\n\nKullanabileceğiniz tüm komutlar için \`/yardim\` yazabilirsiniz.`
+      `ℹ️ Komutu anlayamadım.\n\nÜrün eklemek için \`/ekle\`, komutları görmek için \`/yardim\` yazabilirsiniz.`
     );
 
     return NextResponse.json({ ok: true });

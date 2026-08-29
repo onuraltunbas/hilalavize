@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
       "Saf Ağır Döküm Pirinç İskelet",
       "Işığı Kırıcı Özel Kesim Kristal Prizmalar",
       "Kırılmaya Karşı Güvenli Özel Ahşap Kasa ile Nakliye",
-      "Hilal Avize Uzman Ekibi Tarafından Ücretsiz Montaj",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği",
     ],
     seoTitle: "Padişah 24 Kollu Kristal Saray Avizesi Kahramanmaraş | Hilal Avize",
     seoDescription:

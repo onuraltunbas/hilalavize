@@ -404,7 +404,7 @@ Açıklama: Özel altın varak kaplama kristal salon avizesi.
 Özellikler:
 - 12 Adet E14 Duy
 - Saf pirinç döküm iskelet
-- Ücretsiz montaj desteği
+- Profesyonel montaj desteği
 ```
 
 ⚠️ **Otomatik Eksik Bilgi Kontrolü:**
