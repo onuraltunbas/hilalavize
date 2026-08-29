@@ -18,29 +18,43 @@ import {
   registerChat,
   broadcastToAllAdmins,
 } from "@/lib/telegram/bot";
-import { PRODUCTS } from "@/data/products";
+import { PRODUCTS, Product } from "@/data/products";
+import { addDynamicProduct, removeDynamicProduct } from "@/lib/products-store";
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    if (!body || (!body.message && !body.channel_post)) {
+    if (!body) {
       return NextResponse.json({ ok: true });
     }
 
-    const message = body.message || body.channel_post;
-    const chatId = message.chat?.id;
-    const fromId = message.from?.id || chatId;
-    const text = (message.text || message.caption || "").trim();
-    const photos = message.photo;
-    const userDisplayName = getUserDisplayName(message.from);
+    const message = body.message || body.channel_post || body.my_chat_member;
+    const chat = message?.chat;
+    const chatId = chat?.id;
+    const fromId = message?.from?.id || chatId;
+    const text = (message?.text || message?.caption || "").trim();
+    const photos = message?.photo;
+    const userDisplayName = getUserDisplayName(message?.from);
 
     if (!chatId) {
       return NextResponse.json({ ok: true });
     }
 
-    // Grup veya kanalda ise chat ID'sini kaydet
+    // Her gelen chat/kanal ID'sini ortak yayın listesine kaydet
     registerChat(chatId);
+
+    // Kanalda paylaşım veya bot ekleme durumu
+    if (body.channel_post || chat?.type === "channel" || chat?.type === "supergroup" || chat?.type === "group") {
+      registerChat(chatId);
+      if (text.startsWith("/giris") || text === "/start" || text === "/bagla" || text === "/kanal") {
+        await sendTelegramMessage(
+          chatId,
+          `✅ *Kanal Başarıyla Bağlandı!*\n\nBu kanal (*${chat?.title || "Hilal Avize Yönetim"}*) bildirim sistemine eklendi. Artık eklenen ve silinen tüm ürünler canlı olarak buraya aktarılacaktır. 📢`
+        );
+        return NextResponse.json({ ok: true });
+      }
+    }
 
     // 1. /giris [şifre] Komutu
     if (text.startsWith("/giris") || text.startsWith("/login")) {
@@ -195,6 +209,8 @@ export async function POST(req: NextRequest) {
 
       const res = deleteProductByIdOrName(query);
       if (res.success && res.product) {
+        removeDynamicProduct(query);
+
         const deleteMsg = `🗑️ *ÜRÜN BAŞARIYLA SİLİNDİ!*
 ━━━━━━━━━━━━━━━━━━━━
 👤 *Silen Yönetici:* ${userDisplayName}
@@ -506,6 +522,31 @@ _Örnek:_
         const branch = (prefix === "SPT" || prefix === "ANH") ? "electrical" : "showroom";
         const creator = wizard.creatorName || userDisplayName;
         const photoToSend = d.photoFileId || d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
+
+        const newProduct: Product = {
+          id: d.id || `${prefix}-001`,
+          slug,
+          name: d.name || "Yeni Ürün",
+          categorySlug: cat.slug,
+          categoryName: cat.name,
+          style: d.style || "Modern & Spor",
+          badge: "Yeni Sezon Koleksiyon",
+          shortDescription: d.description ? d.description.slice(0, 120) : (d.name || ""),
+          description: d.description || (d.name || ""),
+          material: d.material || "Özel Tasarım Malzeme",
+          dimensions: d.dimensions || "Standart",
+          lightingType: d.lightingType || "LED",
+          branch,
+          image: d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg",
+          images: [d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg"],
+          features: features.length > 0 ? features : ["Yüksek Kaliteli Malzeme", "Özenli İşçilik"],
+          seoTitle: `${d.name} Kahramanmaraş | Hilal Avize`,
+          seoDescription: `${d.name} modeli Kahramanmaraş Hilal Avize Showroom'unda.`,
+        };
+
+        // Ürünü canlı dinamik depoya ekle
+        addDynamicProduct(newProduct);
+        PRODUCTS.unshift(newProduct);
 
         clearWizardState(fromId);
 

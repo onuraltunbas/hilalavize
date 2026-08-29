@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { PRODUCTS } from "@/data/products";
+import { getProductBySlug, getAllProducts } from "@/lib/products-store";
 import { COMPANY_DATA } from "@/data/company";
 import { AiComplementaryProducts } from "@/components/AiComplementaryProducts";
 import {
@@ -17,6 +18,9 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
+
 interface ProductPageProps {
   params: Promise<{
     slug: string;
@@ -24,7 +28,7 @@ interface ProductPageProps {
 }
 
 export async function generateStaticParams() {
-  return PRODUCTS.map((p) => ({
+  return getAllProducts().map((p) => ({
     slug: p.slug,
   }));
 }
@@ -33,7 +37,7 @@ export async function generateMetadata({
   params,
 }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const product = PRODUCTS.find((p) => p.slug === slug);
+  const product = getProductBySlug(slug) || PRODUCTS.find((p) => p.slug === slug);
 
   if (!product) {
     return {
@@ -59,7 +63,7 @@ export async function generateMetadata({
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { slug } = await params;
-  const product = PRODUCTS.find((p) => p.slug === slug);
+  const product = getProductBySlug(slug) || PRODUCTS.find((p) => p.slug === slug);
 
   if (!product) {
     notFound();
