@@ -2,10 +2,6 @@ import { PRODUCTS, Product } from "@/data/products";
 
 // Ortam Değişkenleri ve Sabitler
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "8836427661:AAF0N11G29uJKkTQ0sZO-FzF7QQXRZTrg3Q";
-const ADMIN_IDS = (process.env.TELEGRAM_ADMIN_IDS || "")
-  .split(",")
-  .map((id) => id.trim())
-  .filter(Boolean);
 
 // Yönetici Şifresi
 export const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "hilal1976";
@@ -26,9 +22,32 @@ export const CATEGORY_PREFIXES: Record<string, { name: string; slug: string }> =
 
 // Aktif Oturumlar
 const activeSessions = new Map<string, number>();
-const SESSION_DURATION_MS = 6 * 60 * 60 * 1000; // 6 saat
+const SESSION_DURATION_MS = 12 * 60 * 60 * 1000; // 12 saat
 
-// Kategori Başına En Yüksek Kullanılmış ID Sayaç Takibi (Ürün silinse bile ID geri sarmaz, hep ileri gider)
+// Ortak Bildirim Alacak Yönetici Chat / Kanal / Grup ID'leri
+const registeredChatIds = new Set<string | number>();
+
+export function registerChat(chatId: string | number) {
+  registeredChatIds.add(String(chatId));
+}
+
+// Telegram Kullanıcı Adı ve Profil Bilgisi Formatlayıcı
+export interface TelegramFromUser {
+  id?: number;
+  first_name?: string;
+  last_name?: string;
+  username?: string;
+}
+
+export function getUserDisplayName(from?: TelegramFromUser): string {
+  if (!from) return "Hilal Avize Yöneticisi";
+  const nameParts = [from.first_name, from.last_name].filter(Boolean);
+  const fullName = nameParts.length > 0 ? nameParts.join(" ") : "Yönetici";
+  const username = from.username ? `(@${from.username})` : "";
+  return `${fullName} ${username}`.trim();
+}
+
+// Kategori Başına En Yüksek Kullanılmış ID Sayaç Takibi (Monoton artan, silinse bile geri dönmez)
 const highestAllocatedIdMap = new Map<string, number>();
 
 // İlk yüklemede mevcut ürünlerin en yüksek ID'lerini kaydet
@@ -60,6 +79,7 @@ export type WizardStep =
 
 export interface WizardState {
   step: WizardStep;
+  creatorName?: string;
   data: {
     photoUrl?: string;
     prefix?: string;
@@ -92,7 +112,6 @@ export function clearWizardState(userId: number | string): void {
 export function generateNextProductId(prefix: string): string {
   const cleanPrefix = prefix.toUpperCase();
 
-  // 1. Mevcut ürünlerdeki en büyük numarayı bul
   const matchingProducts = PRODUCTS.filter((p) =>
     p.id.toUpperCase().startsWith(`${cleanPrefix}-`)
   );
@@ -125,13 +144,11 @@ export function deleteProductByIdOrName(query: string): { success: boolean; prod
   const prefix = product.id.split("-")[0].toUpperCase();
   const num = parseInt(product.id.split("-")[1] || "0", 10);
 
-  // Sayaçta bu numaranın kaydedildiğinden emin ol
   const currentMax = highestAllocatedIdMap.get(prefix) || 0;
   if (num > currentMax) {
     highestAllocatedIdMap.set(prefix, num);
   }
 
-  // Listeden çıkar
   const index = PRODUCTS.findIndex((p) => p.id === product.id);
   if (index !== -1) {
     PRODUCTS.splice(index, 1);
@@ -167,6 +184,7 @@ export function isUserLoggedIn(userId: number | string): boolean {
 export function loginUser(userId: number | string, passwordAttempt: string): boolean {
   if (passwordAttempt === ADMIN_PASSWORD) {
     activeSessions.set(String(userId), Date.now());
+    registerChat(userId);
     return true;
   }
   return false;
@@ -217,6 +235,20 @@ export async function sendTelegramPhoto(chatId: number | string, photoUrlOrFileI
   }
 }
 
+// Tüm Yöneticilere / Kanala Canlı Bildirim Yayını (Broadcast)
+export async function broadcastToAllAdmins(text: string, excludeChatId?: string | number, photoUrl?: string) {
+  for (const chatId of registeredChatIds) {
+    if (excludeChatId && String(chatId) === String(excludeChatId)) {
+      continue;
+    }
+    if (photoUrl && photoUrl.startsWith("http")) {
+      await sendTelegramPhoto(chatId, photoUrl, text);
+    } else {
+      await sendTelegramMessage(chatId, text);
+    }
+  }
+}
+
 // Telegram Dosya Linki Alma
 export async function getTelegramFileUrl(fileId: string): Promise<string | null> {
   if (!BOT_TOKEN) return null;
@@ -230,11 +262,6 @@ export async function getTelegramFileUrl(fileId: string): Promise<string | null>
     console.error("Dosya yolu hatası:", e);
   }
   return null;
-}
-
-// Telegram ID Yetki Kontrolü (Şifre yeterli olduğundan herkese açık)
-export function isAuthorizedAdminId(_userId: number | string): boolean {
-  return true;
 }
 
 // Ürün Arama (ID veya İsme Göre)

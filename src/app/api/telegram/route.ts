@@ -14,6 +14,9 @@ import {
   getWizardState,
   setWizardState,
   clearWizardState,
+  getUserDisplayName,
+  registerChat,
+  broadcastToAllAdmins,
 } from "@/lib/telegram/bot";
 import { PRODUCTS } from "@/data/products";
 
@@ -30,10 +33,14 @@ export async function POST(req: NextRequest) {
     const fromId = message.from?.id || chatId;
     const text = (message.text || message.caption || "").trim();
     const photos = message.photo;
+    const userDisplayName = getUserDisplayName(message.from);
 
     if (!chatId) {
       return NextResponse.json({ ok: true });
     }
+
+    // Grup veya kanalda ise chat ID'sini kaydet
+    registerChat(chatId);
 
     // 1. /giris [şifre] Komutu
     if (text.startsWith("/giris") || text.startsWith("/login")) {
@@ -50,9 +57,16 @@ export async function POST(req: NextRequest) {
 
       const success = loginUser(fromId, password);
       if (success) {
+        registerChat(chatId);
         await sendTelegramMessage(
           chatId,
-          `🔓 *Giriş Başarılı!*\n\nHoş geldiniz Hilal Avize Yöneticisi.\nTüm komutları görmek için /yardim yazabilirsiniz.`
+          `🔓 *Giriş Başarılı!*\n\nHoş geldiniz *${userDisplayName}*.\nTüm komutları görmek için /yardim yazabilirsiniz.`
+        );
+
+        // Diğer yöneticilere canlı bildirim
+        await broadcastToAllAdmins(
+          `📢 *YÖNETİM BİLDİRİMİ*\n👤 *${userDisplayName}* az önce sisteme giriş yaptı.`,
+          chatId
         );
       } else {
         await sendTelegramMessage(
@@ -63,17 +77,21 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 3. /cikis Komutu
+    // 2. /cikis Komutu
     if (text === "/cikis" || text === "/logout") {
       logoutUser(fromId);
       await sendTelegramMessage(
         chatId,
         `🔒 *Oturum Kapatıldı!*\n\nGüvenli çıkış yapıldı. Tekrar işlem yapmak için \`/giris [şifre]\` yazınız.`
       );
+      await broadcastToAllAdmins(
+        `📢 *YÖNETİM BİLDİRİMİ*\n👤 *${userDisplayName}* sistemden çıkış yaptı.`,
+        chatId
+      );
       return NextResponse.json({ ok: true });
     }
 
-    // 4. Şifre Doğrulama Kapısı
+    // 3. Şifre Doğrulama Kapısı
     if (!isUserLoggedIn(fromId)) {
       await sendTelegramMessage(
         chatId,
@@ -84,7 +102,7 @@ export async function POST(req: NextRequest) {
 
     // ─── BURADAN SONRASI GİRİŞ YAPMIŞ YÖNETİCİLER İÇİNDİR ───
 
-    // 5. /iptal Komutu (Sihirbazı tamamen sıfırlama ve temizleme)
+    // 4. /iptal Komutu (Sihirbazı tamamen sıfırlama ve temizleme)
     if (text === "/iptal" || text === "/cancel") {
       clearWizardState(fromId);
       await sendTelegramMessage(
@@ -94,11 +112,12 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 6. /yardim Komutu
+    // 5. /yardim Komutu
     if (text === "/yardim" || text === "/start" || text === "/komutlar" || text === "/help") {
       clearWizardState(fromId);
       const helpMsg = `👑 *Hilal Avize Yönetici Komutları*
 ━━━━━━━━━━━━━━━━━━━━
+👤 *Aktif Yönetici:* ${userDisplayName}
 
 🔍 *Ürün Sorgulama:*
 • \`/urun [ID veya İsim]\`
@@ -107,7 +126,7 @@ export async function POST(req: NextRequest) {
 
 📸 *Yeni Ürün Ekleme (Adım Adım):*
 • \`/ekle\`
-  _Sırayla sorarak otomatik ID (Örn: AVZ-003) ile yeni ürün ekler._
+  _Sırayla sorarak otomatik ID (Örn: AVZ-003) ile yeni ürün ekler ve tüm yöneticilere duyurur._
 
 🗑️ *Ürün Silme:*
 • \`/sil [ID veya İsim]\`
@@ -141,16 +160,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 7. /durum Komutu
+    // 6. /durum Komutu
     if (text === "/durum") {
       await sendTelegramMessage(
         chatId,
-        `✅ *Sistem Durumu: Aktif*\n\n👤 *Yönetici ID:* \`${fromId}\`\n🔐 *Oturum:* Açık\n📦 *Yayındaki Ürün Sayısı:* ${PRODUCTS.length}\n🌐 *Web Sitesi:* https://hilalavize-five.vercel.app`
+        `✅ *Sistem Durumu: Aktif*\n\n👤 *Yönetici:* ${userDisplayName}\n🔐 *Oturum:* Açık\n📦 *Yayındaki Ürün Sayısı:* ${PRODUCTS.length}\n🌐 *Web Sitesi:* https://hilalavize-five.vercel.app`
       );
       return NextResponse.json({ ok: true });
     }
 
-    // 8. /liste Komutu
+    // 7. /liste Komutu
     if (text === "/liste") {
       let listMsg = `📋 *Kayıtlı Ürün Listesi (${PRODUCTS.length} Ürün):*\n━━━━━━━━━━━━━━━━━━━━\n`;
       PRODUCTS.forEach((p, idx) => {
@@ -161,7 +180,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 9. /sil Komutu (Ürün Silme)
+    // 8. /sil Komutu (Ürün Silme ve Diğer Yöneticilere Canlı Duyuru)
     if (text.startsWith("/sil") || text.startsWith("/delete")) {
       clearWizardState(fromId);
       const query = text.replace(/^\/sil\s*/, "").replace(/^\/delete\s*/, "").trim();
@@ -176,15 +195,21 @@ export async function POST(req: NextRequest) {
 
       const res = deleteProductByIdOrName(query);
       if (res.success && res.product) {
-        await sendTelegramMessage(
-          chatId,
-          `🗑️ *ÜRÜN BAŞARIYLA SİLİNDİ!*
+        const deleteMsg = `🗑️ *ÜRÜN BAŞARIYLA SİLİNDİ!*
 ━━━━━━━━━━━━━━━━━━━━
+👤 *Silen Yönetici:* ${userDisplayName}
 🆔 *Silinen ID:* \`${res.product.id}\`
 🏷️ *Ürün Adı:* ${res.product.name}
 📂 *Kategori:* ${res.product.categoryName}
 
-🔢 *ID Sırası Korundu:* Bu kategorideki sıradaki yeni ürün ID'si \`${res.nextIdForCategory}\` olarak devam edecektir. Eski numara tekrar kullanılmaz.`
+🔢 *ID Sırası Korundu:* Bu kategorideki sıradaki yeni ürün ID'si \`${res.nextIdForCategory}\` olarak devam edecektir. Eski numara tekrar kullanılmaz.`;
+
+        await sendTelegramMessage(chatId, deleteMsg);
+
+        // Diğer yöneticilere/kanala duyuru
+        await broadcastToAllAdmins(
+          `📢 *YÖNETİM BİLDİRİMİ: ÜRÜN SİLİNDİ!*\n\n👤 *Silen Yönetici:* ${userDisplayName}\n🆔 *Silinen ID:* \`${res.product.id}\`\n🏷️ *Ürün:* ${res.product.name}\n🔢 *Sıradaki Yeni ID:* \`${res.nextIdForCategory}\``,
+          chatId
         );
       } else {
         await sendTelegramMessage(
@@ -195,7 +220,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 10. /urun Sorgulama Komutu
+    // 9. /urun Sorgulama Komutu
     if (text.startsWith("/urun") || text.startsWith("/bul") || text.toLowerCase().includes("nedir") || text.toLowerCase().includes("ne kadar")) {
       clearWizardState(fromId);
       let query = text.replace(/^\/urun\s*/, "").replace(/^\/bul\s*/, "").trim();
@@ -226,13 +251,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // ─── 11. ADIM ADIM İNTERAKTİF ÜRÜN EKLEME SİHİRBAZI (/ekle) ───
+    // ─── 10. ADIM ADIM İNTERAKTİF ÜRÜN EKLEME SİHİRBAZI (/ekle) ───
 
     // A) /ekle Başlatma
     if (text === "/ekle") {
       clearWizardState(fromId);
       setWizardState(fromId, {
         step: "WAITING_PHOTO",
+        creatorName: userDisplayName,
         data: {},
       });
 
@@ -240,6 +266,8 @@ export async function POST(req: NextRequest) {
         chatId,
         `📸 *YENİ ÜRÜN EKLEME SİHİRBAZI (Adım 1/9)*
 ━━━━━━━━━━━━━━━━━━━━
+👤 *Ekleyen:* ${userDisplayName}
+
 Lütfen eklemek istediğiniz ürünün *FOTOĞRAFINI* gönderiniz.
 
 _(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz. İptal edildiğinde tüm geçici bilgiler silinir ve en baştan başlanır.)_`
@@ -451,7 +479,7 @@ _Örnek:_
         return NextResponse.json({ ok: true });
       }
 
-      // ADIM 9: Özellikler ve TAMAMLAMA
+      // ADIM 9: Özellikler ve TAMAMLAMA (Ve Diğer Yöneticilere Canlı Yayın)
       if (wizard.step === "WAITING_FEATURES") {
         const features: string[] = text
           .split("\n")
@@ -475,11 +503,13 @@ _Örnek:_
           .replace(/^-|-$/g, "");
 
         const branch = (prefix === "SPT" || prefix === "ANH") ? "electrical" : "showroom";
+        const creator = wizard.creatorName || userDisplayName;
 
         clearWizardState(fromId);
 
         const successMsg = `🎉 *TEBRİKLER! YENİ ÜRÜN BAŞARIYLA EKLENDİ!*
 ━━━━━━━━━━━━━━━━━━━━
+👤 *Ekleyen Yönetici:* ${creator}
 🆔 *ID:* \`${d.id}\`
 🏷️ *Ürün Adı:* ${d.name}
 📂 *Kategori:* ${cat.name} (\`${cat.slug}\`)
@@ -503,11 +533,23 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
           await sendTelegramMessage(chatId, successMsg);
         }
 
+        // Diğer tüm yöneticilere ve gruba canlı yayın (Broadcast)
+        const broadcastAnnouncement = `📢 *YÖNETİM BİLDİRİMİ: YENİ ÜRÜN EKLENDİ!*
+━━━━━━━━━━━━━━━━━━━━
+👤 *Ekleyen:* ${creator}
+🆔 *ID:* \`${d.id}\`
+🏷️ *Ürün Adı:* ${d.name}
+📂 *Kategori:* ${cat.name}
+📐 *Boyut:* ${d.dimensions}
+🌐 *İncele:* https://hilalavize-five.vercel.app/urun/${slug}`;
+
+        await broadcastToAllAdmins(broadcastAnnouncement, chatId, d.photoUrl);
+
         return NextResponse.json({ ok: true });
       }
     }
 
-    // 12. Sadece Ürün Adı veya ID yazıldıysa otomatik algıla
+    // 11. Sadece Ürün Adı veya ID yazıldıysa otomatik algıla
     const autoProduct = findProductByIdOrName(text);
     if (autoProduct) {
       const details = formatProductDetails(autoProduct);
@@ -518,7 +560,7 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
       return NextResponse.json({ ok: true });
     }
 
-    // 13. Bilinmeyen mesajlar
+    // 12. Bilinmeyen mesajlar
     await sendTelegramMessage(
       chatId,
       `ℹ️ Komutu anlayamadım.\n\nÜrün eklemek için \`/ekle\`, silmek için \`/sil [ID]\`, komutları görmek için \`/yardim\` yazabilirsiniz.`
