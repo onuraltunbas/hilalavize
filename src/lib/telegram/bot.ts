@@ -1,14 +1,53 @@
 import { PRODUCTS, Product } from "@/data/products";
 
-// Ortam Değişkenleri
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "";
+// Ortam Değişkenleri ve Sabitler
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "8836427661:AAF0N11G29uJKkTQ0sZO-FzF7QQXRZTrg3Q";
 const ADMIN_IDS = (process.env.TELEGRAM_ADMIN_IDS || "")
   .split(",")
   .map((id) => id.trim())
   .filter(Boolean);
 
-// Telegram API İstek Yardımcısı
-export async function sendTelegramMessage(chatId: number | string, text: string, parseMode: "Markdown" | "HTML" = "Markdown") {
+// Yönetici Şifresi (Ortam değişkeninden veya varsayılan)
+export const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "hilal1998";
+
+// Aktif Oturumlar (Kullanıcı ID -> Giriş Zamanı)
+// Oturum süresi: 3 saat hareketsizlik sonrası otomatik kilitlenir
+const activeSessions = new Map<string, number>();
+const SESSION_DURATION_MS = 3 * 60 * 60 * 1000; // 3 saat
+
+// Oturum Doğrulama
+export function isUserLoggedIn(userId: number | string): boolean {
+  const uId = String(userId);
+  const lastActive = activeSessions.get(uId);
+  if (!lastActive) return false;
+
+  const now = Date.now();
+  if (now - lastActive > SESSION_DURATION_MS) {
+    activeSessions.delete(uId);
+    return false;
+  }
+
+  // Harekette oturumu yenile
+  activeSessions.set(uId, now);
+  return true;
+}
+
+// Oturum Açma
+export function loginUser(userId: number | string, passwordAttempt: string): boolean {
+  if (passwordAttempt === ADMIN_PASSWORD) {
+    activeSessions.set(String(userId), Date.now());
+    return true;
+  }
+  return false;
+}
+
+// Oturum Kapatma
+export function logoutUser(userId: number | string): void {
+  activeSessions.delete(String(userId));
+}
+
+// Telegram Mesaj Gönderme
+export async function sendTelegramMessage(chatId: number | string, text: string) {
   if (!BOT_TOKEN) return;
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
   try {
@@ -18,7 +57,7 @@ export async function sendTelegramMessage(chatId: number | string, text: string,
       body: JSON.stringify({
         chat_id: chatId,
         text,
-        parse_mode: parseMode,
+        parse_mode: "Markdown",
       }),
     });
   } catch (error) {
@@ -26,6 +65,7 @@ export async function sendTelegramMessage(chatId: number | string, text: string,
   }
 }
 
+// Telegram Fotoğraf Gönderme
 export async function sendTelegramPhoto(chatId: number | string, photoUrlOrFileId: string, caption: string) {
   if (!BOT_TOKEN) return;
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`;
@@ -45,7 +85,7 @@ export async function sendTelegramPhoto(chatId: number | string, photoUrlOrFileI
   }
 }
 
-// Telegram Dosya Linkini Alma
+// Telegram Dosya Linki Alma
 export async function getTelegramFileUrl(fileId: string): Promise<string | null> {
   if (!BOT_TOKEN) return null;
   try {
@@ -55,21 +95,20 @@ export async function getTelegramFileUrl(fileId: string): Promise<string | null>
       return `https://api.telegram.org/file/bot${BOT_TOKEN}/${data.result.file_path}`;
     }
   } catch (e) {
-    console.error("Dosya yolu alma hatası:", e);
+    console.error("Dosya yolu hatası:", e);
   }
   return null;
 }
 
-// Yetki Kontrolü
-export function isAuthorizedAdmin(userId: number | string): boolean {
+// Telegram ID Yetki Kontrolü
+export function isAuthorizedAdminId(userId: number | string): boolean {
   if (ADMIN_IDS.length === 0) {
-    // Eğer henüz admin ID girilmemişse, güvenli olması için false döner veya ilk kurucuya ID'sini bildirir.
-    return false;
+    return true; // Eğer liste henüz boşsa ID gösterip şifreye bırakır
   }
   return ADMIN_IDS.includes(String(userId));
 }
 
-// Ürün Arama & Sorgulama (ID veya İsme Göre)
+// Ürün Arama (ID veya İsme Göre)
 export function findProductByIdOrName(query: string): Product | null {
   const clean = query.trim().toLowerCase();
   if (!clean) return null;
@@ -84,21 +123,21 @@ export function findProductByIdOrName(query: string): Product | null {
   );
 }
 
-// Tüm Ürünleri Formatlı Metin Olarak Döndür
+// Ürün Detay Metni Formatı
 export function formatProductDetails(product: Product): string {
-  return `📦 *Ürün Detayı (ID: ${product.id})*
+  return `📦 *Ürün Bilgi Kartı (ID: ${product.id})*
 ━━━━━━━━━━━━━━━━━━━━
-🏷️ *Adı:* ${product.name}
-📂 *Kategori:* ${product.categoryName} (${product.categorySlug})
+🏷️ *Ürün Adı:* ${product.name}
+📂 *Kategori:* ${product.categoryName} (\`${product.categorySlug}\`)
 🎨 *Tarz:* ${product.style}
-🏢 *Şube:* ${product.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
+🏢 *Şube:* ${product.branch === "showroom" ? "Showroom (Avize & Dekorasyon)" : "Elektrik Şubesi"}
 
 📝 *Açıklama:*
 ${product.description}
 
 📐 *Boyutlar:* ${product.dimensions}
 ✨ *Malzeme:* ${product.material}
-💡 *Duy & Aydınlatma:* ${product.lightingType}
+💡 *Duy/Işık:* ${product.lightingType}
 
 ⭐ *Öne Çıkan Özellikler:*
 ${product.features.map((f) => `• ${f}`).join("\n")}
@@ -107,7 +146,7 @@ ${product.features.map((f) => `• ${f}`).join("\n")}
 https://hilalavize.vercel.app/urun/${product.slug}`;
 }
 
-// Akıllı Mesaj Ayrıştırıcı (Caption veya Text'ten Ürün Nesnesi Çıkarma)
+// Metinden Ürün Nesnesi Çıkarma
 export function parseProductFromText(text: string, photoUrl: string = "/images/800x800_modern_led_halka_avize.jpg"): Partial<Product> | null {
   try {
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
@@ -136,7 +175,6 @@ export function parseProductFromText(text: string, photoUrl: string = "/images/8
     const dimensions = getField("boyut") || getField("ölçü") || getField("ebat") || "Standart Showroom Ölçüsü";
     const lightingType = getField("duy") || getField("aydınlatma") || "E27 / E14 LED Uyumlu";
 
-    // Slug üretme
     const slug = name
       .toLowerCase()
       .replace(/ğ/g, "g")
@@ -149,7 +187,6 @@ export function parseProductFromText(text: string, photoUrl: string = "/images/8
       .replace(/-+/g, "-")
       .replace(/^-|-$/g, "");
 
-    // Özellikler listesi çıkarma (tire ile başlayan satırlar)
     const features = lines
       .filter((l) => l.startsWith("-") || l.startsWith("•") || l.startsWith("*"))
       .map((l) => l.replace(/^[-•*]\s*/, "").trim())
