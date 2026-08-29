@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SERVICES } from "@/data/services";
-import { ConsultationForm } from "@/components/ConsultationForm";
 import {
   Sparkles,
   ChevronRight,
@@ -126,9 +125,6 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             </div>
           </div>
         </div>
-
-        {/* Consultation Form */}
-        <ConsultationForm />
       </div>
     </div>
   );

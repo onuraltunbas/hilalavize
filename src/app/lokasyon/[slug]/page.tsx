@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { LOCATIONS } from "@/data/locations";
 import { COMPANY_DATA } from "@/data/company";
-import { ConsultationForm } from "@/components/ConsultationForm";
 import {
   MapPin,
   ChevronRight,
@@ -126,9 +125,6 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
             </div>
           </div>
         </div>
-
-        {/* Consultation Form */}
-        <ConsultationForm />
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import { Metadata } from "next";
 import { CATEGORIES } from "@/data/categories";
 import { PRODUCTS } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
-import { ConsultationForm } from "@/components/ConsultationForm";
 import {
   Sparkles,
   ChevronRight,
@@ -136,9 +135,6 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
             </div>
           )}
         </div>
-
-        {/* Free Consultation for this Category */}
-        <ConsultationForm />
       </div>
     </div>
   );

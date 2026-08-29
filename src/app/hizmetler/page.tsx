@@ -1,7 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
 import { ServicesSection } from "@/components/ServicesSection";
-import { ConsultationForm } from "@/components/ConsultationForm";
 import { TrustBadges } from "@/components/TrustBadges";
 
 export const metadata: Metadata = {
@@ -15,9 +14,6 @@ export default function ServicesPage() {
     <div className="py-12 bg-[#080D1A] min-h-screen">
       <ServicesSection />
       <TrustBadges />
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-12">
-        <ConsultationForm />
-      </div>
     </div>
   );
 }
