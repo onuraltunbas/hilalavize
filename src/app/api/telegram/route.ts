@@ -94,12 +94,12 @@ export async function POST(req: NextRequest) {
 
     // ─── BURADAN SONRASI GİRİŞ YAPMIŞ YÖNETİCİLER İÇİNDİR ───
 
-    // 5. /iptal Komutu (Sihirbazı durdurma)
+    // 5. /iptal Komutu (Sihirbazı tamamen sıfırlama ve temizleme)
     if (text === "/iptal" || text === "/cancel") {
       clearWizardState(fromId);
       await sendTelegramMessage(
         chatId,
-        `❌ *İşlem İptal Edildi!*\n\nÜrün ekleme sihirbazı sonlandırıldı. Komutları görmek için \`/yardim\` yazabilirsiniz.`
+        `❌ *İşlem Tamamen İptal Edildi!*\n\nYarıda kalan tüm geçici bilgiler silindi ve sıfırlandı.\n\nTekrar ürün eklemek istediğinizde \`/ekle\` yazarak *1. Adımdan (en baştan)* başlayabilirsiniz.`
       );
       return NextResponse.json({ ok: true });
     }
@@ -240,6 +240,7 @@ export async function POST(req: NextRequest) {
 
     // A) /ekle Başlatma
     if (text === "/ekle") {
+      clearWizardState(fromId);
       setWizardState(fromId, {
         step: "WAITING_PHOTO",
         data: {},
@@ -251,7 +252,7 @@ export async function POST(req: NextRequest) {
 ━━━━━━━━━━━━━━━━━━━━
 Lütfen eklemek istediğiniz ürünün *FOTOĞRAFINI* gönderiniz.
 
-_(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz.)_`
+_(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz. İptal edildiğinde tüm geçici bilgiler silinir ve en baştan başlanır.)_`
       );
       return NextResponse.json({ ok: true });
     }
