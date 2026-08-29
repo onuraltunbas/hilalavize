@@ -22,7 +22,7 @@ export const CATEGORY_PREFIXES: Record<string, { name: string; slug: string }> =
 
 // Aktif Oturumlar
 const activeSessions = new Map<string, number>();
-const SESSION_DURATION_MS = 12 * 60 * 60 * 1000; // 12 saat
+const SESSION_DURATION_MS = 24 * 60 * 60 * 1000; // 24 saat
 
 // Ortak Bildirim Alacak Yönetici Chat / Kanal / Grup ID'leri
 const registeredChatIds = new Set<string | number>();
@@ -81,6 +81,7 @@ export interface WizardState {
   step: WizardStep;
   creatorName?: string;
   data: {
+    photoFileId?: string;
     photoUrl?: string;
     prefix?: string;
     id?: string;
@@ -196,12 +197,12 @@ export function logoutUser(userId: number | string): void {
   wizardStates.delete(String(userId));
 }
 
-// Telegram Mesaj Gönderme
+// Telegram Mesaj Gönderme (Markdown Hatasında Otomatik Düz Metin Kurtarma)
 export async function sendTelegramMessage(chatId: number | string, text: string) {
   if (!BOT_TOKEN) return;
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
   try {
-    await fetch(url, {
+    const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -210,17 +211,29 @@ export async function sendTelegramMessage(chatId: number | string, text: string)
         parse_mode: "Markdown",
       }),
     });
+    const data = await res.json();
+    if (!data.ok) {
+      // Markdown ayrıştırma hatasında biçimlendirmeyi temizleyip tekrar gönder
+      await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: text.replace(/[*_`]/g, ""),
+        }),
+      });
+    }
   } catch (error) {
     console.error("Telegram mesaj hatası:", error);
   }
 }
 
-// Telegram Fotoğraf Gönderme
+// Telegram Fotoğraf Gönderme (Hata durumunda otomatik kurtarma)
 export async function sendTelegramPhoto(chatId: number | string, photoUrlOrFileId: string, caption: string) {
   if (!BOT_TOKEN) return;
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`;
   try {
-    await fetch(url, {
+    const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -230,19 +243,38 @@ export async function sendTelegramPhoto(chatId: number | string, photoUrlOrFileI
         parse_mode: "Markdown",
       }),
     });
+    const data = await res.json();
+    if (!data.ok) {
+      // Düz metin başlıkla dene
+      const retryRes = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          photo: photoUrlOrFileId,
+          caption: caption.replace(/[*_`]/g, ""),
+        }),
+      });
+      const retryData = await retryRes.json();
+      if (!retryData.ok) {
+        // Fotoğraf gönderilemezse metin olarak kesinlikle ilet
+        await sendTelegramMessage(chatId, caption);
+      }
+    }
   } catch (error) {
     console.error("Telegram fotoğraf gönderme hatası:", error);
+    await sendTelegramMessage(chatId, caption);
   }
 }
 
 // Tüm Yöneticilere / Kanala Canlı Bildirim Yayını (Broadcast)
-export async function broadcastToAllAdmins(text: string, excludeChatId?: string | number, photoUrl?: string) {
+export async function broadcastToAllAdmins(text: string, excludeChatId?: string | number, photoUrlOrFileId?: string) {
   for (const chatId of registeredChatIds) {
     if (excludeChatId && String(chatId) === String(excludeChatId)) {
       continue;
     }
-    if (photoUrl && photoUrl.startsWith("http")) {
-      await sendTelegramPhoto(chatId, photoUrl, text);
+    if (photoUrlOrFileId) {
+      await sendTelegramPhoto(chatId, photoUrlOrFileId, text);
     } else {
       await sendTelegramMessage(chatId, text);
     }

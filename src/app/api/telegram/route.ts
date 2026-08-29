@@ -290,6 +290,7 @@ _(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz. İptal edildiğin
         }
 
         const bestPhoto = photos[photos.length - 1];
+        wizard.data.photoFileId = bestPhoto.file_id;
         const photoUrl = await getTelegramFileUrl(bestPhoto.file_id);
         wizard.data.photoUrl = photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
         wizard.step = "WAITING_CATEGORY";
@@ -364,7 +365,7 @@ _Örnek: Venedik 8 Kollu Gold Kristal Avize_`
 
       // ADIM 3: Ürün Adı
       if (wizard.step === "WAITING_NAME") {
-        if (text.length < 3) {
+        if (text.length < 2) {
           await sendTelegramMessage(chatId, `⚠️ Lütfen geçerli bir ürün adı yazınız.`);
           return NextResponse.json({ ok: true });
         }
@@ -504,6 +505,7 @@ _Örnek:_
 
         const branch = (prefix === "SPT" || prefix === "ANH") ? "electrical" : "showroom";
         const creator = wizard.creatorName || userDisplayName;
+        const photoToSend = d.photoFileId || d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
 
         clearWizardState(fromId);
 
@@ -527,11 +529,7 @@ https://hilalavize-five.vercel.app/urun/${slug}
 
 _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
 
-        if (d.photoUrl && d.photoUrl.startsWith("http")) {
-          await sendTelegramPhoto(chatId, d.photoUrl, successMsg);
-        } else {
-          await sendTelegramMessage(chatId, successMsg);
-        }
+        await sendTelegramPhoto(chatId, photoToSend, successMsg);
 
         // Diğer tüm yöneticilere ve gruba canlı yayın (Broadcast)
         const broadcastAnnouncement = `📢 *YÖNETİM BİLDİRİMİ: YENİ ÜRÜN EKLENDİ!*
@@ -543,7 +541,7 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
 📐 *Boyut:* ${d.dimensions}
 🌐 *İncele:* https://hilalavize-five.vercel.app/urun/${slug}`;
 
-        await broadcastToAllAdmins(broadcastAnnouncement, chatId, d.photoUrl);
+        await broadcastToAllAdmins(broadcastAnnouncement, chatId, photoToSend);
 
         return NextResponse.json({ ok: true });
       }
