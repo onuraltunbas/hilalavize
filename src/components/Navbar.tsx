@@ -110,24 +110,21 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
           {/* Logo & Brand Name */}
-          <Link href="/" onClick={handleLinkClick} className="flex items-center gap-3 group">
-            <div className="relative w-11 h-11 rounded-full overflow-hidden border border-[#F59E0B]/40 shadow-lg shadow-[#F59E0B]/10 group-hover:border-[#F59E0B] transition-colors">
+          <Link href="/" onClick={handleLinkClick} className="flex items-center gap-3.5 group">
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 transition-transform group-hover:scale-105">
               <Image
-                src="/images/512x512_hilal_logo.jpg"
+                src="/images/512x512_hilal_logo.png"
                 alt="Hilal Elektrik Avize Aksesuar Logo"
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-bold tracking-tight text-white group-hover:text-[#F59E0B] transition-colors flex items-center gap-1.5">
+              <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-white group-hover:text-[#F59E0B] transition-colors">
                 HİLAL AVİZE
-                <span className="text-[#F59E0B] text-xs font-normal px-2 py-0.5 rounded-full bg-[#F59E0B]/10 border border-[#F59E0B]/30 hidden sm:inline-block">
-                  Aydınlatma & Elektrik
-                </span>
               </span>
-              <span className="text-[11px] text-slate-400 font-medium tracking-wide">
+              <span className="text-xs text-slate-400 font-medium tracking-wide">
                 Kahramanmaraş Showroom & Tesisat
               </span>
             </div>

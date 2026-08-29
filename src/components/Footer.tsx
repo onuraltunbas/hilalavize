@@ -65,13 +65,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
         {/* Column 1: Company Profile */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border border-amber-500/40">
+          <div className="flex items-center gap-3.5">
+            <div className="relative w-14 h-14 shrink-0">
               <Image
-                src="/images/512x512_hilal_logo.jpg"
+                src="/images/512x512_hilal_logo.png"
                 alt="Hilal Elektrik Avize Aksesuar"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div>
