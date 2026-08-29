@@ -42,29 +42,29 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+      <div className="p-8 flex-1 flex flex-col justify-between space-y-6">
         <div>
-          <div className="flex items-center justify-between text-[11px] text-amber-400 font-medium mb-1">
+          <div className="flex items-center justify-between text-[11px] text-amber-400 font-medium mb-2">
             <span>{product.categoryName}</span>
             <span className="text-slate-400">
               {product.branch === "showroom" ? "Showroom" : "Elektrik Şube"}
             </span>
           </div>
 
-          <h3 className="text-base font-bold text-white group-hover:text-amber-400 transition-colors leading-snug">
+          <h3 className="text-xl font-bold text-white group-hover:text-amber-400 transition-colors leading-snug">
             {product.name}
           </h3>
 
-          <p className="text-xs text-slate-300 mt-2 line-clamp-2 leading-relaxed">
+          <p className="text-sm text-slate-300 mt-3 line-clamp-2 leading-relaxed">
             {product.shortDescription}
           </p>
         </div>
 
         {/* Specs snippet */}
-        <div className="space-y-1.5 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+        <div className="space-y-2 pt-4 border-t border-slate-800 text-sm text-slate-400">
           <div className="flex items-center justify-between">
-            <span className="flex items-center gap-1">
-              <Sparkles className="w-3 h-3 text-amber-500/70" /> Malzeme:
+            <span className="flex items-center gap-1.5">
+              <Sparkles className="w-4 h-4 text-amber-500/70" /> Malzeme:
             </span>
             <span className="text-slate-200 font-medium truncate max-w-[170px]">
               {product.material}
@@ -72,8 +72,8 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
           </div>
 
           <div className="flex items-center justify-between">
-            <span className="flex items-center gap-1">
-              <Ruler className="w-3 h-3 text-amber-500/70" /> Ölçü:
+            <span className="flex items-center gap-1.5">
+              <Ruler className="w-4 h-4 text-amber-500/70" /> Ölçü:
             </span>
             <span className="text-slate-200 font-medium truncate max-w-[170px]">
               {product.dimensions}
@@ -82,21 +82,21 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
         </div>
 
         {/* Action Buttons */}
-        <div className="pt-2 grid grid-cols-2 gap-2">
+        <div className="pt-4 grid grid-cols-2 gap-3">
           {onOpenModal ? (
             <button
               onClick={() => onOpenModal(product)}
-              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-colors border border-slate-700"
+              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors border border-slate-700"
             >
-              <Eye className="w-3.5 h-3.5 text-amber-400" />
+              <Eye className="w-4 h-4 text-amber-400" />
               Detay Gör
             </button>
           ) : (
             <Link
               href={`/urun/${product.slug}`}
-              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-colors border border-slate-700"
+              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors border border-slate-700"
             >
-              <Eye className="w-3.5 h-3.5 text-amber-400" />
+              <Eye className="w-4 h-4 text-amber-400" />
               Detay Gör
             </Link>
           )}
@@ -107,9 +107,9 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-colors shadow-md"
+            className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors shadow-md"
           >
-            <MessageCircle className="w-3.5 h-3.5" />
+            <MessageCircle className="w-4 h-4" />
             Fiyat Sor
           </a>
         </div>

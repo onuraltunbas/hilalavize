@@ -161,19 +161,7 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Local SEO District Links */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-6 border-b border-slate-800/80 text-xs text-slate-400 flex flex-wrap items-center gap-x-4 gap-y-2 justify-center lg:justify-start">
-        <span className="font-semibold text-amber-400">Hizmet Bölgelerimiz:</span>
-        {LOCATIONS.map((loc) => (
-          <Link
-            key={loc.slug}
-            href={`/lokasyon/${loc.slug}`}
-            className="hover:text-amber-300 underline decoration-slate-700 underline-offset-4"
-          >
-            {loc.name}
-          </Link>
-        ))}
-      </div>
+
 
       {/* Bottom Bar & Legal Links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
