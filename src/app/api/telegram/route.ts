@@ -308,25 +308,7 @@ _(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz.)_`
         const bestPhoto = photos[photos.length - 1];
         wizard.data.photoFileId = bestPhoto.file_id;
         const photoUrl = await getTelegramFileUrl(bestPhoto.file_id);
-        
-        // Fotoğrafı kalıcı Base64'e dönüştür (Hiçbir zaman kırılmaz/silinmez)
-        if (photoUrl) {
-          try {
-            const imgRes = await fetch(photoUrl);
-            if (imgRes.ok) {
-              const arrayBuf = await imgRes.arrayBuffer();
-              const base64 = Buffer.from(arrayBuf).toString("base64");
-              const mime = imgRes.headers.get("content-type") || "image/jpeg";
-              wizard.data.photoUrl = `data:${mime};base64,${base64}`;
-            } else {
-              wizard.data.photoUrl = photoUrl;
-            }
-          } catch {
-            wizard.data.photoUrl = photoUrl;
-          }
-        } else {
-          wizard.data.photoUrl = "/images/800x800_modern_led_halka_avize.jpg";
-        }
+        wizard.data.photoUrl = photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
 
         wizard.step = "WAITING_CATEGORY";
         setWizardState(fromId, wizard);
