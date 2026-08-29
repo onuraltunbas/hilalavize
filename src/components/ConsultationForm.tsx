@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import { COMPANY_DATA } from "@/data/company";
-import { Sparkles, MessageCircle, CheckCircle2, Bot, RefreshCw } from "lucide-react";
+import { Sparkles, MessageCircle, CheckCircle2 } from "lucide-react";
 
 export function ConsultationForm() {
   const [formData, setFormData] = useState({
@@ -205,7 +205,8 @@ export function ConsultationForm() {
                 />
               </div>
 
-              {/* Akıllı Yapay Zeka Mesaj Önizlemesi Kutusu */}
+              {/* 
+              Akıllı Yapay Zeka Mesaj Önizlemesi Kutusu (İleride istenirse açılabilir)
               <div className="bg-[#111D38] border border-amber-500/30 rounded-2xl p-4 sm:p-5 space-y-2">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-xs font-bold text-amber-400">
@@ -221,6 +222,7 @@ export function ConsultationForm() {
                   {generateAiMessage}
                 </div>
               </div>
+              */}
 
               {/* Gönder Butonu */}
               <div className="pt-2">
