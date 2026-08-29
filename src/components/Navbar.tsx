@@ -229,7 +229,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/randevu"
-              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-2.5 py-1.5 rounded-lg text-xs shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5 leading-none"
+              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-2.5 py-2.5 rounded-xl text-xs shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-1.5"
             >
               <Sparkles className="w-3.5 h-3.5 text-slate-950" />
               Ücretsiz Danışmanlık Al
