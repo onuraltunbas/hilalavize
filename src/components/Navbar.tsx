@@ -7,10 +7,7 @@ import { usePathname } from "next/navigation";
 import { COMPANY_DATA } from "@/data/company";
 import { CATEGORIES } from "@/data/categories";
 import {
-  Phone,
   MessageCircle,
-  Clock,
-  MapPin,
   Menu,
   X,
   ChevronDown,
@@ -43,63 +40,6 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
-      {/* Top Announcement & Quick Contact Bar */}
-      <div className="bg-[#0B132B] border-b border-[#F59E0B]/20 text-xs text-slate-300 py-2 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
-          {/* Left: Working hours & City */}
-          <div className="flex items-center gap-4 flex-wrap justify-center md:justify-start">
-            <span className="flex items-center gap-1 text-[#F59E0B] font-medium">
-              <MapPin className="w-3.5 h-3.5" />
-              Onikişubat, Kahramanmaraş (2 Şube)
-            </span>
-            <span className="hidden sm:inline-block text-slate-600">|</span>
-            <span className="flex items-center gap-1 text-slate-300">
-              <Clock className="w-3.5 h-3.5 text-[#F59E0B]" />
-              Pzt - Cmt: 09:00 - 17:00
-            </span>
-          </div>
-
-          {/* Right: Direct Phones & WhatsApp */}
-          <div className="flex items-center gap-4 flex-wrap justify-center md:justify-end text-xs">
-            <div className="flex items-center gap-2">
-              <span className="text-slate-400">Showroom:</span>
-              <a
-                href={`tel:${showroom.contacts[0].phone}`}
-                className="text-amber-400 hover:text-amber-300 font-semibold transition-colors flex items-center gap-1"
-              >
-                <Phone className="w-3 h-3" />
-                {showroom.contacts[0].phoneFormatted}
-              </a>
-            </div>
-
-            <span className="text-slate-600">|</span>
-
-            <div className="flex items-center gap-2">
-              <span className="text-slate-400">Elektrik Şube:</span>
-              <a
-                href={`tel:${electrical.contacts[0].phone}`}
-                className="text-amber-400 hover:text-amber-300 font-semibold transition-colors flex items-center gap-1"
-              >
-                <Phone className="w-3 h-3" />
-                {electrical.contacts[0].phoneFormatted}
-              </a>
-            </div>
-
-            <a
-              href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
-                "Merhaba, Hilal Avize & Aksesuar web sitenizden ulaşıyorum. Bilgi almak istiyorum."
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-0.5 rounded-full font-medium flex items-center gap-1 transition-colors"
-            >
-              <MessageCircle className="w-3 h-3" />
-              WhatsApp Danışma
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navbar */}
       <nav
         className={`w-full transition-all duration-300 ${
