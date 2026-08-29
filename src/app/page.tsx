@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { TrustBadges } from "@/components/TrustBadges";
 import { StyleSelector } from "@/components/StyleSelector";
 import { BranchesSection } from "@/components/BranchesSection";
-import { InteractiveMap } from "@/components/InteractiveMap";
 import { FeaturedCategories } from "@/components/FeaturedCategories";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
@@ -22,13 +21,10 @@ export default function HomePage() {
       {/* 3. Style Selector (İhtişamlı/Klasik vs Modern/Spor vs Sade/Minimalist) */}
       <StyleSelector />
 
-      {/* 4. 2 Physical Branches Comparison (Showroom vs Elektrik) */}
+      {/* 4. 2 Physical Branches Comparison (Showroom vs Elektrik with integrated Live Maps) */}
       <BranchesSection />
 
-      {/* 5. Interactive Live Map with Tabbed Branches and Direct GPS Directions */}
-      <InteractiveMap />
-
-      {/* 6. 10 Product Categories Grid */}
+      {/* 5. 10 Product Categories Grid */}
       <FeaturedCategories />
 
       {/* 6. Professional Services (Danışmanlık, Montaj, Elektrik İşi) */}
