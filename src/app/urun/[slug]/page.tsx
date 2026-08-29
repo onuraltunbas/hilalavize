@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { PRODUCTS } from "@/data/products";
 import { COMPANY_DATA } from "@/data/company";
-import { ProductCard } from "@/components/ProductCard";
+import { AiComplementaryProducts } from "@/components/AiComplementaryProducts";
 import {
   Sparkles,
   ChevronRight,
@@ -68,10 +68,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   const showroom = COMPANY_DATA.branches[0];
   const electrical = COMPANY_DATA.branches[1];
   const activeBranch = product.branch === "showroom" ? showroom : electrical;
-
-  const relatedProducts = PRODUCTS.filter(
-    (p) => p.categorySlug === product.categorySlug && p.id !== product.id
-  ).slice(0, 3);
 
   // Schema.org Product JSON-LD
   const productSchema = {
@@ -231,19 +227,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </div>
         </div>
 
-        {/* Related Products */}
-        {relatedProducts.length > 0 && (
-          <div className="pt-12 border-t border-slate-800">
-            <h2 className="text-2xl font-bold text-white mb-8">
-              İlginizi Çekebilecek Diğer Modeller
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {relatedProducts.map((p) => (
-                <ProductCard key={p.id} product={p} />
-              ))}
-            </div>
-          </div>
-        )}
+        {/* AI-Powered Smart Complementary & Matching Recommendations */}
+        <AiComplementaryProducts currentProduct={product} />
       </div>
     </div>
   );
