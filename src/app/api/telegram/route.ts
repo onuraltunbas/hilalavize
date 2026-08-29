@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
       if (!password) {
         await sendTelegramMessage(
           chatId,
-          `⚠️ *Şifre Girilmedi!*\n\nKullanım: \`/giris [şifreniz]\`\nÖrnek: \`/giris hilal1976\``
+          `⚠️ *Şifre Girilmedi!*\n\nKullanım: \`/giris [şifreniz]\``
         );
         return NextResponse.json({ ok: true });
       }
@@ -83,7 +83,7 @@ export async function POST(req: NextRequest) {
     if (!isUserLoggedIn(fromId)) {
       await sendTelegramMessage(
         chatId,
-        `🔒 *Oturum Kilitli!*\n\nBotu kullanabilmek için lütfen önce giriş yapın:\n\n👉 \`/giris [şifreniz]\`\n_(Örnek: \`/giris hilal1976\`)_`
+        `🔒 *Oturum Kilitli!* Lütfen giriş yapın.`
       );
       return NextResponse.json({ ok: true });
     }
