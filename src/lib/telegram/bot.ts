@@ -156,7 +156,7 @@ ${product.description}
 ${product.features.map((f) => `• ${f}`).join("\n")}
 
 🌐 *Canlı Web Sayfası:*
-https://hilalavize.vercel.app/urun/${product.slug}`;
+https://hilalavize-five.vercel.app/urun/${product.slug}`;
 }
 
 // Ürün Ekleme Şablon Metni

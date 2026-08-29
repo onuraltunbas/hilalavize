@@ -141,7 +141,7 @@ export async function POST(req: NextRequest) {
     if (text === "/durum") {
       await sendTelegramMessage(
         chatId,
-        `✅ *Sistem Durumu: Aktif*\n\n👤 *Yönetici ID:* \`${fromId}\`\n🔐 *Oturum:* Açık\n📦 *Yayındaki Ürün Sayısı:* ${PRODUCTS.length}\n🌐 *Web Sitesi:* https://hilalavize.vercel.app`
+        `✅ *Sistem Durumu: Aktif*\n\n👤 *Yönetici ID:* \`${fromId}\`\n🔐 *Oturum:* Açık\n📦 *Yayındaki Ürün Sayısı:* ${PRODUCTS.length}\n🌐 *Web Sitesi:* https://hilalavize-five.vercel.app`
       );
       return NextResponse.json({ ok: true });
     }
@@ -176,7 +176,7 @@ export async function POST(req: NextRequest) {
         const details = formatProductDetails(foundProduct);
         const fullImageUrl = foundProduct.image.startsWith("http")
           ? foundProduct.image
-          : `https://hilalavize.vercel.app${foundProduct.image}`;
+          : `https://hilalavize-five.vercel.app${foundProduct.image}`;
         await sendTelegramPhoto(chatId, fullImageUrl, details);
       } else {
         await sendTelegramMessage(
@@ -225,7 +225,7 @@ ${getProductAddTemplate()}`;
 🏢 *Şube:* ${p.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
 
 🌐 *Canlı Ürün Sayfası:*
-https://hilalavize.vercel.app/urun/${p.slug}
+https://hilalavize-five.vercel.app/urun/${p.slug}
 
 _Ürün veritabanına ve web sitenize başarıyla işlendi._`;
 
@@ -239,7 +239,7 @@ _Ürün veritabanına ve web sitenize başarıyla işlendi._`;
       const details = formatProductDetails(autoProduct);
       const fullImageUrl = autoProduct.image.startsWith("http")
         ? autoProduct.image
-        : `https://hilalavize.vercel.app${autoProduct.image}`;
+        : `https://hilalavize-five.vercel.app${autoProduct.image}`;
       await sendTelegramPhoto(chatId, fullImageUrl, details);
       return NextResponse.json({ ok: true });
     }

@@ -42,7 +42,7 @@ Bu kılavuz, **Hilal Elektrik Avize Aksesuar** web platformunuzun (Next.js 16 + 
 
 ## 1. GENEL BAKIŞ VE CANLI YAYIN BİLGİLERİ
 
-* **Resmi Web Sitesi Adresi:** [https://hilalavize.vercel.app](https://hilalavize.vercel.app)
+* **Resmi Web Sitesi Adresi:** [https://hilalavize-five.vercel.app](https://hilalavize-five.vercel.app)
 * **GitHub Kaynak Deposu:** [https://github.com/onuraltunbas/hilalavize](https://github.com/onuraltunbas/hilalavize)
 * **Hosting / Sunucu Altyapısı:** Vercel Global Edge Network (Ömür boyu ücretsiz, sınırsız bant genişliği, otomatik SSL güvenlik sertifikalı).
 * **Tasarım & Renk Paleti:**

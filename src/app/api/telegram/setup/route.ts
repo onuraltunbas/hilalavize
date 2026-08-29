@@ -6,7 +6,7 @@ export async function GET(req: NextRequest) {
     process.env.TELEGRAM_BOT_TOKEN ||
     "8836427661:AAF0N11G29uJKkTQ0sZO-FzF7QQXRZTrg3Q";
 
-  const webhookUrl = "https://hilalavize.vercel.app/api/telegram";
+  const webhookUrl = "https://hilalavize-five.vercel.app/api/telegram";
   const telegramApiUrl = `https://api.telegram.org/bot${token}/setWebhook?url=${encodeURIComponent(
     webhookUrl
   )}`;
