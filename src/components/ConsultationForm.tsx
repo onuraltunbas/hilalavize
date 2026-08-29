@@ -16,14 +16,14 @@ export function ConsultationForm() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  // Akıllı ve Doğal Dil Mesaj Sentezi (Sade, Teknik, Akıcı ve Resmi)
+  // Akıllı, Tek Parça ve Son Derece Sade Mesaj Sentezi
   const generateAiMessage = useMemo(() => {
-    // 1. Günün saatine göre dinamik selamlama
+    // 1. Saate göre dinamik selamlama
     const currentHour = new Date().getHours();
     const isEvening = currentHour >= 17 || currentHour < 6;
     const greeting = isEvening ? "İyi akşamlar" : "İyi günler";
 
-    // 2. İsim formatlama (İlk harfler büyük)
+    // 2. İsim
     const rawName = formData.name.trim();
     const userName = rawName
       ? rawName
@@ -33,50 +33,71 @@ export function ConsultationForm() {
       : "";
 
     const nameStr = userName ? `${greeting}, ben ${userName}.` : `${greeting},`;
-    const districtStr = formData.district ? `${formData.district}'den yazıyorum.` : "Kahramanmaraş'tan yazıyorum.";
 
-    // 3. Mekan türü ve tarzı sadeleştirme
-    const roomClean = formData.roomType.split("/")[0].trim();
-    const styleClean = formData.stylePreference
-      .replace(/^[^\wğüşöçıİĞÜŞÖÇ]+/, "")
-      .replace(/\s*\(.*?\)/, "")
-      .trim();
+    // 3. Mekan hitabı
+    let roomStr = "evim için";
+    const rt = formData.roomType.toLowerCase();
+    if (rt.includes("ofis") || rt.includes("mağaza") || rt.includes("kafe")) {
+      roomStr = "ofisim için";
+    } else if (rt.includes("salon")) {
+      roomStr = "salonum için";
+    } else if (rt.includes("oturma")) {
+      roomStr = "oturma odam için";
+    } else if (rt.includes("yatak")) {
+      roomStr = "yatak odam için";
+    } else if (rt.includes("mutfak")) {
+      roomStr = "mutfağım için";
+    } else if (rt.includes("antre") || rt.includes("koridor")) {
+      roomStr = "antrem için";
+    } else if (rt.includes("villa") || rt.includes("tüm ev")) {
+      roomStr = "evimiz için";
+    }
 
-    // 4. Kullanıcı notlarını teknik, derli toplu ve akıcı hale getirme
-    let noteSentence = "";
+    // 4. Tarz hitabı
+    let styleStr = "uygun";
+    const st = formData.stylePreference.toLowerCase();
+    if (st.includes("klasik") || st.includes("kristal")) {
+      styleStr = "klasik kristal";
+    } else if (st.includes("modern") || st.includes("led")) {
+      styleStr = "modern LED";
+    } else if (st.includes("spot") || st.includes("minimalist")) {
+      styleStr = "sade ray spot";
+    }
+
+    // 5. Notları sade bir büyüklük / detay cümlesine çevir
+    let detailSentence = "";
     if (formData.notes.trim()) {
-      let cleanNotes = formData.notes.trim();
+      let n = formData.notes.trim();
 
-      // Mükerrer selamlaşmaları temizle
-      cleanNotes = cleanNotes.replace(
-        /^(merhaba|selam|selamlar|iyi günler|iyi akşamlar|iyi calismalar|kolay gelsin)[\s,.\-!]+/gi,
-        ""
-      );
+      // Selamları temizle
+      n = n.replace(/^(merhaba|selam|selamlar|iyi günler|iyi akşamlar|kolay gelsin)[\s,.\-!]+/gi, "");
 
       // Konuşma dili dolgularını temizle
-      cleanNotes = cleanNotes
+      n = n
         .replace(/\b(falan|filan|vs|gibi|şey|bişey|bi|baya|cok|çook)\b/gi, "")
         .replace(/\s+/g, " ")
         .trim();
 
-      // Ölçü birimlerini teknik formata dönüştür (10 metrekare -> 10 m², 2.80 metre -> 2.80 m)
-      cleanNotes = cleanNotes.replace(/(\d+)\s*(metrekare|m2|metre kare)/gi, "$1 m²");
-      cleanNotes = cleanNotes.replace(/(\d+[,.]\d+)\s*(metre|m|mt)/gi, "$1 m");
+      // Metrekare ve metre dönüştürme
+      n = n.replace(/(\d+)\s*(metrekare|m2|metre kare)/gi, "$1 m²");
+      n = n.replace(/(\d+[,.]\d+)\s*(metre|m|mt)/gi, "$1 m");
 
-      if (cleanNotes) {
-        cleanNotes = cleanNotes.charAt(0).toLocaleUpperCase("tr") + cleanNotes.slice(1);
-        if (!cleanNotes.endsWith(".") && !cleanNotes.endsWith("!")) {
-          cleanNotes += ".";
+      if (n) {
+        // Eğer içinde metrekare veya oda büyüklüğü varsa
+        if (n.includes("m²") || n.toLowerCase().includes("büyük") || n.toLowerCase().includes("küçük")) {
+          const roomSubject = roomStr.replace(" için", "in büyüklüğü");
+          // Sadece ölçüyü veya sadeleştirilmiş hali al
+          detailSentence = ` ${roomSubject.charAt(0).toLocaleUpperCase("tr") + roomSubject.slice(1)} ${n.toLowerCase().replace(/^(ofis|salon|oda|mekan)(in|ın|ün|un)?\s*(büyüklüğü)?\s*/gi, "")}.`.replace(/\.\.+/, ".");
+        } else {
+          n = n.charAt(0).toLocaleUpperCase("tr") + n.slice(1);
+          if (!n.endsWith(".")) n += ".";
+          detailSentence = ` ${n}`;
         }
-        noteSentence = `\n\n${cleanNotes}`;
       }
     }
 
-    // 5. Sade ve akıcı kapanış
-    const mainRequest = `${roomClean} için ${styleClean.toLowerCase()} tarzında avize ve aydınlatma modellerinizi inceliyorum.`;
-    const closing = `Bu alana uygun elinizdeki hazır modeller ve fiyat seçenekleri hakkında bilgi alabilir miyim?`;
-
-    return `${nameStr} ${districtStr}\n\n${mainRequest}${noteSentence}\n\n${closing}`;
+    // 6. Tek, akıcı ve eksiksiz paragraf
+    return `${nameStr} ${roomStr.charAt(0).toLocaleUpperCase("tr") + roomStr.slice(1)} ${styleStr} tarzında bir avize arıyorum.${detailSentence} Elinizdeki hazır modeller ve fiyat seçenekleri hakkında bilgi alabilir miyim?`;
   }, [formData]);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -230,7 +251,7 @@ export function ConsultationForm() {
                   rows={3}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  placeholder="Örn: 35 m2 salonumuz var, tavan yüksekliği 2.90m, gold detaylı mobilyalarımız bulunuyor..."
+                  placeholder="Örn: 10 m2 alanımız var, yeterli ışık sağlayan ledli model arıyoruz..."
                   className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none"
                 />
               </div>
