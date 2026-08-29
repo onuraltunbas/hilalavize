@@ -19,7 +19,7 @@ import {
   broadcastToAllAdmins,
 } from "@/lib/telegram/bot";
 import { PRODUCTS, Product } from "@/data/products";
-import { addDynamicProduct, removeDynamicProduct } from "@/lib/products-store";
+import { saveProductAsync, deleteProductAsync } from "@/lib/products-store";
 
 export async function POST(req: NextRequest) {
   try {
@@ -209,7 +209,7 @@ export async function POST(req: NextRequest) {
 
       const res = deleteProductByIdOrName(query);
       if (res.success && res.product) {
-        removeDynamicProduct(query);
+        await deleteProductAsync(query);
 
         const deleteMsg = `🗑️ *ÜRÜN BAŞARIYLA SİLİNDİ!*
 ━━━━━━━━━━━━━━━━━━━━
@@ -254,7 +254,7 @@ export async function POST(req: NextRequest) {
 
       if (foundProduct) {
         const details = formatProductDetails(foundProduct);
-        const fullImageUrl = foundProduct.image.startsWith("http")
+        const fullImageUrl = foundProduct.image.startsWith("http") || foundProduct.image.startsWith("data:")
           ? foundProduct.image
           : `https://hilalavize-five.vercel.app${foundProduct.image}`;
         await sendTelegramPhoto(chatId, fullImageUrl, details);
@@ -308,7 +308,26 @@ _(İptal etmek için dilediğiniz zaman /iptal yazabilirsiniz.)_`
         const bestPhoto = photos[photos.length - 1];
         wizard.data.photoFileId = bestPhoto.file_id;
         const photoUrl = await getTelegramFileUrl(bestPhoto.file_id);
-        wizard.data.photoUrl = photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
+        
+        // Fotoğrafı kalıcı Base64'e dönüştür (Hiçbir zaman kırılmaz/silinmez)
+        if (photoUrl) {
+          try {
+            const imgRes = await fetch(photoUrl);
+            if (imgRes.ok) {
+              const arrayBuf = await imgRes.arrayBuffer();
+              const base64 = Buffer.from(arrayBuf).toString("base64");
+              const mime = imgRes.headers.get("content-type") || "image/jpeg";
+              wizard.data.photoUrl = `data:${mime};base64,${base64}`;
+            } else {
+              wizard.data.photoUrl = photoUrl;
+            }
+          } catch {
+            wizard.data.photoUrl = photoUrl;
+          }
+        } else {
+          wizard.data.photoUrl = "/images/800x800_modern_led_halka_avize.jpg";
+        }
+
         wizard.step = "WAITING_CATEGORY";
         setWizardState(fromId, wizard);
 
@@ -468,6 +487,7 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
         const branch = (prefix === "SPT" || prefix === "ANH") ? "electrical" : "showroom";
         const creator = wizard.creatorName || userDisplayName;
         const photoToSend = d.photoFileId || d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
+        const finalImage = d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
 
         const newProduct: Product = {
           id: d.id || `${prefix}-001`,
@@ -483,15 +503,15 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
           dimensions: d.dimensions || "Standart",
           lightingType: d.lightingType || "LED",
           branch,
-          image: d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg",
-          images: [d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg"],
+          image: finalImage,
+          images: [finalImage],
           features: [],
           seoTitle: `${d.name} Kahramanmaraş | Hilal Avize`,
           seoDescription: `${d.name} modeli Kahramanmaraş Hilal Avize Showroom'unda.`,
         };
 
-        // Ürünü canlı dinamik depoya ekle
-        addDynamicProduct(newProduct);
+        // Ürünü kalıcı depoya kaydet ve belleğe işle
+        await saveProductAsync(newProduct);
         PRODUCTS.unshift(newProduct);
 
         clearWizardState(fromId);
@@ -535,7 +555,7 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
     const autoProduct = findProductByIdOrName(text);
     if (autoProduct) {
       const details = formatProductDetails(autoProduct);
-      const fullImageUrl = autoProduct.image.startsWith("http")
+      const fullImageUrl = autoProduct.image.startsWith("http") || autoProduct.image.startsWith("data:")
         ? autoProduct.image
         : `https://hilalavize-five.vercel.app${autoProduct.image}`;
       await sendTelegramPhoto(chatId, fullImageUrl, details);

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { PRODUCTS } from "@/data/products";
-import { getProductBySlug, getAllProducts } from "@/lib/products-store";
+import { getProductBySlugAsync, getAllProductsAsync } from "@/lib/products-store";
 import { COMPANY_DATA } from "@/data/company";
 import { AiComplementaryProducts } from "@/components/AiComplementaryProducts";
 import {
@@ -26,7 +26,8 @@ interface ProductPageProps {
 }
 
 export async function generateStaticParams() {
-  return getAllProducts().map((p) => ({
+  const all = await getAllProductsAsync();
+  return all.map((p) => ({
     slug: p.slug,
   }));
 }
@@ -35,7 +36,7 @@ export async function generateMetadata({
   params,
 }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const product = getProductBySlug(slug) || PRODUCTS.find((p) => p.slug === slug);
+  const product = (await getProductBySlugAsync(slug)) || PRODUCTS.find((p) => p.slug === slug);
 
   if (!product) {
     return {
@@ -61,7 +62,7 @@ export async function generateMetadata({
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { slug } = await params;
-  const product = getProductBySlug(slug) || PRODUCTS.find((p) => p.slug === slug);
+  const product = (await getProductBySlugAsync(slug)) || PRODUCTS.find((p) => p.slug === slug);
 
   if (!product) {
     notFound();

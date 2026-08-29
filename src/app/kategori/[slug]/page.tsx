@@ -3,13 +3,16 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
 import { CATEGORIES } from "@/data/categories";
-import { PRODUCTS } from "@/data/products";
+import { getAllProductsAsync } from "@/lib/products-store";
 import { ProductCard } from "@/components/ProductCard";
 import {
   Sparkles,
   ChevronRight,
   MessageCircle,
 } from "lucide-react";
+
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 interface CategoryPageProps {
   params: Promise<{
@@ -59,7 +62,8 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
     notFound();
   }
 
-  const categoryProducts = PRODUCTS.filter((p) => p.categorySlug === category.slug);
+  const allProducts = await getAllProductsAsync();
+  const categoryProducts = allProducts.filter((p) => p.categorySlug === category.slug);
 
   return (
     <div className="py-12 sm:py-16 bg-[#080D1A] min-h-screen">

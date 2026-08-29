@@ -13,13 +13,25 @@ import {
 } from "lucide-react";
 
 export default function CollectionsPage() {
+  const [productsList, setProductsList] = useState<Product[]>(PRODUCTS);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedStyle, setSelectedStyle] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeModalProduct, setActiveModalProduct] = useState<Product | null>(null);
 
+  React.useEffect(() => {
+    fetch("/api/products")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && Array.isArray(data.products) && data.products.length > 0) {
+          setProductsList(data.products);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   const filteredProducts = useMemo(() => {
-    return PRODUCTS.filter((product) => {
+    return productsList.filter((product) => {
       const matchCategory =
         selectedCategory === "all" || product.categorySlug === selectedCategory;
       const matchStyle =
@@ -27,12 +39,12 @@ export default function CollectionsPage() {
       const matchSearch =
         searchQuery === "" ||
         product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.material.toLowerCase().includes(searchQuery.toLowerCase());
+        product.dimensions.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.lightingType.toLowerCase().includes(searchQuery.toLowerCase());
 
       return matchCategory && matchStyle && matchSearch;
     });
-  }, [selectedCategory, selectedStyle, searchQuery]);
+  }, [productsList, selectedCategory, selectedStyle, searchQuery]);
 
   return (
     <div className="py-12 sm:py-16 bg-[#080D1A] min-h-screen">

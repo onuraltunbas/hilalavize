@@ -1,0 +1,59 @@
+[
+  {
+    "id": "AVZ-001",
+    "slug": "padisah-kristal-kollu-saray-avizesi",
+    "name": "Padişah 24 Kollu Asfour Kristal Saray Avizesi",
+    "categorySlug": "avizeler",
+    "categoryName": "Lüks & Modern Avizeler",
+    "style": "İhtişamlı & Klasik",
+    "badge": "Özel Tasarım Koleksiyon",
+    "shortDescription": "Ağır döküm pirinç gövde ve Asfour berrak kristal prizmalarla donatılmış 24 kollu saray zarafeti.",
+    "description": "Geniş salonlar, villalar ve yüksek tavanlı mekanlar için özel olarak üretilen Padişah Serisi; saf pirinç üzerine altın varak kaplama ve ışığı gökkuşağı renginde kıran K9/Asfour kristal taşlarla donatılmıştır. Görkemi ve ihtişamı evinizin merkezine taşır.",
+    "material": "Döküm Pirinç & K9 Saf Kristal Taşlar",
+    "dimensions": "Çap: 120 cm, Yükseklik: 140 cm (Ayarlanabilir Zincir)",
+    "lightingType": "24x E14 Duy (Dimmerlenebilir Sıcak Beyaz LED Uyumlu)",
+    "branch": "showroom",
+    "image": "/images/800x800_klasik_kollu_kristal_avize.jpg",
+    "images": [
+      "/images/800x800_klasik_kollu_kristal_avize.jpg",
+      "/images/1920x1080_hero_showroom.jpg"
+    ],
+    "features": [
+      "24 Adet E14 Kandil Tipi Duy",
+      "Saf Ağır Döküm Pirinç İskelet",
+      "Işığı Kırıcı Özel Kesim Kristal Prizmalar",
+      "Kırılmaya Karşı Güvenli Özel Ahşap Kasa ile Nakliye",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Padişah 24 Kollu Kristal Saray Avizesi Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Ağır pirinç döküm ve K9 kristal taşlı 24 kollu saray avizesi modeli. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AVZ-002",
+    "slug": "solaris-gold-uc-halkali-led-avize",
+    "name": "Solaris Üçlü Geometrik Halka LED Sarkıt Avize",
+    "categorySlug": "avizeler",
+    "categoryName": "Lüks & Modern Avizeler",
+    "style": "Modern & Spor",
+    "badge": "En Çok Satan Modern Seri",
+    "shortDescription": "Fırçalanmış marigold altın gövdeli, 3 halkalı mimari modern LED avize.",
+    "description": "Modern ve spor salonların vazgeçilmezi Solaris Serisi, farklı açılarda konumlandırılabilen bağımsız 3 halkasıyla mekana dinamik bir hava katar. Yüksek verimli Samsung LED çipleri ve homojen difüzör camı sayesinde gözü yormayan sıcak amber ışık yayar.",
+    "material": "Eloksallı Alüminyum & Silikon Opal Difüzör",
+    "dimensions": "Halka Çapları: 80 cm + 60 cm + 40 cm, Yükseklik: Max 150 cm",
+    "lightingType": "Dahili 95W 3 Renk Kademeli (3000K-4000K-6500K) LED Çip",
+    "branch": "showroom",
+    "image": "/images/800x800_modern_led_halka_avize.jpg",
+    "images": [
+      "/images/800x800_modern_led_halka_avize.jpg",
+      "/images/1920x1080_hero_showroom.jpg"
+    ],
+    "features": [
+      "Uzaktan Kumanda & Duvar Anahtarı ile Işık Tonu Ayarı",
+      "Ayarlanabilir Çelik Askı Halatları ile İstenilen Formu Verme",
+      "50.000 Saat Kesintisiz LED Ömrü",
+      "A++ Enerji Tasarrufu"
+    ],
+    "seoTitle": "Solaris 3 Halkalı Modern LED Avize Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Gold fırçalanmış 3 halkalı modern LED sarkıt avize modeli. Yüksek ışık gücü ve kumandalı renk değişimi Hilal Avize'de."
+  }
+]
