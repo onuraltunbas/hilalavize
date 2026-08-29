@@ -231,7 +231,7 @@ export function ConsultationForm() {
                   className="w-full bg-gradient-to-r from-amber-500 via-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold py-4 px-6 rounded-2xl text-sm shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5"
                 >
                   <MessageCircle className="w-5 h-5 text-slate-950" />
-                  Yapay Zeka ile Düzenlenen Mesajı WhatsApp&apos;tan Gönder
+                  Danışmanlık Talebini Gönder (WhatsApp)
                 </button>
               </div>
             </form>
