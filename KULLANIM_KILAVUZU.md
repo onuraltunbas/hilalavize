@@ -351,72 +351,61 @@ Eğer ileride kendinize ait bir `.com` veya `.com.tr` alan adı satın alırsan�
 
 ---
 
-## 14. 🤖 TELEGRAM İLE ÜRÜN EKLEME & YÖNETİCİ BOTU KURULUMU
+## 14. 🤖 TELEGRAM İLE ÜRÜN EKLEME & YÖNETİCİ BOTU KILAVUZU
 
-Sitenize **yalnızca sizin yetki verdiğiniz kişilerin** Telegram üzerinden fotoğraf ve detay göndererek ürün eklemesini ve ürün sorgulamasını sağlayan akıllı Telegram Botu entegre edilmiştir.
+Sitenize **yalnızca yetkili yöneticilerin** Telegram üzerinden fotoğraf ve detay göndererek ürün eklemesini ve ürün sorgulamasını sağlayan akıllı Telegram Botu entegre edilmiştir.
 
-### 🔑 14.1. Botun Kurulumu (2 Dakikalık İşlem):
-1. Telegram'ı açın ve arama çubuğuna `@BotFather` yazın.
-2. `/newbot` komutunu gönderin.
-3. Botunuz için bir isim (örn: `Hilal Avize Yönetim`) ve kullanıcı adı (örn: `hilal_avize_admin_bot`) belirleyin.
-4. BotFather size bir **HTTP API Token** verecektir (Örn: `7123456789:AAFn9...`).
-5. Telegram ID'nizi öğrenmek için Telegram'da `@userinfobot` botuna `/start` yazın (size `123456789` gibi bir sayı verir).
-
-### ⚙️ 14.2. Vercel Ortam Değişkenlerini Tanımlama:
-1. [vercel.com](https://vercel.com) Dashboard -> **hilalavize** projesi -> **Settings** -> **Environment Variables** bölümüne gidin.
-2. Şu değişkenleri ekleyin:
-   * `TELEGRAM_BOT_TOKEN`: BotFather'dan aldığınız API Token.
-   * `TELEGRAM_ADMIN_IDS`: Sizin ve yetki vermek istediğiniz diğer kişilerin Telegram ID'leri (virgülle ayırarak: `123456789,987654321`).
-
-### 🔗 14.3. Webhook'u Aktif Etme (Tek Seferlik):
-Tarayıcınızın adres çubuğuna şu linki yapıştırıp Enter'a basın:
-```text
-https://api.telegram.org/bot<BURAYA_BOT_TOKEN_YAZIN>/setWebhook?url=https://hilalavize.vercel.app/api/telegram
-```
-Ekranda `{"ok":true,"result":true,"description":"Webhook was set"}` yazdığında botunuz tamamen canlıdadır!
+### 🔑 14.1. Güvenlik & Giriş Şifresi:
+* **Yönetici Giriş Şifresi:** `hilal1976`
+* Botu açtığınızda işlem yapabilmek için önce şu komutu yazmalısınız:
+  👉 `/giris hilal1976`
+* Güvenli çıkış için:
+  👉 `/cikis`
 
 ---
 
-### 📱 14.4. Telegram Bot Komutları ve Kullanımı:
+### 🏷️ 14.2. Standart Ürün ID Ön Ekleri:
+Sitedeki ve Telegram'daki tüm ürünler düzen için şu standart ID formatını kullanır:
+* `AVZ-` : Avizeler (Örn: `AVZ-01`, `AVZ-101`)
+* `APL-` : Duvar Aplikleri (Örn: `APL-01`, `APL-101`)
+* `SPT-` : Spot & Ray Spot Sistemleri (Örn: `SPT-01`, `SPT-101`)
+* `ABJ-` : Abajur & Lambaderler (Örn: `ABJ-01`, `ABJ-101`)
+* `AYN-` : Aynalar (Örn: `AYN-01`, `AYN-101`)
+* `DST-` : Duvar & Masa Saatleri (Örn: `DST-01`, `DST-101`)
+* `SUS-` : Cam Sanat / Süs Eşyaları (Örn: `SUS-01`, `SUS-101`)
+* `ANH-` : Lüks Anahtar & Priz Serileri (Örn: `ANH-01`, `ANH-101`)
+* `KOL-` : Koltuk & Berjerler (Örn: `KOL-01`, `KOL-101`)
+* `SEH-` : Orta & Yan Sehpalar (Örn: `SEH-01`, `SEH-101`)
 
-#### A) Ürün Detaylarını ve Fotoğrafını Sorgulama:
-Bota doğrudan ürünün ID'sini veya adını yazabilirsiniz:
-* `/urun HL-AVZ-101`
-* `/urun padisah`
-* Veya direkt: `Solaris LED avize nedir`
+---
 
-🤖 **Botun Yanıtı:**
-* Ürünün yüksek çözünürlüklü fotoğrafını gönderir.
-* Dahili ID'sini, kategorisini, boyutunu, duy tipini, malzeme detayını ve özelliklerini döker.
-* Doğrudan canlı web sitesi linkini verir.
+### 📱 14.3. Telegram Bot Komutları:
 
-#### B) Fotoğraf Göndererek Siteye Yeni Ürün Ekleme:
-Bota ürünün fotoğrafını atarken açıklama (caption) kısmına şu formatta yazın:
+* 📖 **`/yardim`** : Tüm komutları ve kullanım detaylarını listeler.
+* 📝 **`/ekle`** : Kopyalayıp doldurabileceğiniz standart ürün şablonunu döker.
+* 🔍 **`/urun [ID veya İsim]`** : Ürünün fotoğrafını, teknik özelliklerini ve linkini getirir (Örn: `/urun AVZ-01` veya `/urun padisah`).
+* 📋 **`/liste`** : Sitedeki tüm ürünlerin ID listesini verir.
+* ⚡ **`/durum`** : Oturum ve site bağlantı durumunu gösterir.
+
+---
+
+### 📸 14.4. Telegram'dan Ürün Ekleme & Otomatik Doğrulama:
+Bota fotoğraf gönderirken açıklama (caption) kısmına şu şablonu yazın:
 
 ```text
 /ekle
-ID: HL-AVZ-102
+ID: AVZ-105
 Ad: Floransa 12 Kollu Gold Kristal Avize
-Kategori: avizeler
 Tarz: İhtişamlı & Klasik
 Malzeme: Döküm Pirinç & K9 Kristal
 Boyut: Çap: 95cm, Yükseklik: 110cm
-Duy: 12x E14 LED Kandil Duy
-Açıklama: Geniş salonlar için özel altın varak kaplama kristal avize.
+Duy: 12x E14 LED Duy
+Açıklama: Özel altın varak kaplama kristal salon avizesi.
 Özellikler:
 - 12 Adet E14 Duy
-- Saf döküm pirinç gövde
-- Ücretsiz montaj
+- Saf pirinç döküm iskelet
+- Ücretsiz montaj desteği
 ```
 
-🤖 **Bot:**
-1. Fotoğrafı indirir ve sisteme işler.
-2. Ürün ID'sini (`HL-AVZ-102`) sizin istediğiniz gibi tanımlar.
-3. Ürünün canlı web linkini anında size geri bildirir!
-
-#### C) Tüm Kayıtlı Ürünleri Listeleme:
-* `/liste` yazarak sitedeki tüm ürünlerin ID ve kategori dökümünü alabilirsiniz.
-
-#### D) Güvenlik & Yetkisiz Kişi Engeli:
-Listede ID'si olmayan yabancı bir kullanıcı bota mesaj atarsa bot:
-`⛔ Yetkisiz Erişim: Bu bot sadece Hilal Avize yöneticilerine özeldir.` uyarısı vererek işlemi engeller.
+⚠️ **Otomatik Eksik Bilgi Kontrolü:**
+Eğer ID, Ad, Malzeme veya Boyut gibi zorunlu alanlardan biri eksik bırakılırsa, bot sizi hemen uyarır (`❌ Boyut girilmemiş` vb.) ve doğru şablonu tekrar gönderir!

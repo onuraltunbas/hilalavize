@@ -23,10 +23,11 @@ export async function GET(req: NextRequest) {
       telegramResponse: data,
       botWebhookUrl: webhookUrl,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const errorMsg = error instanceof Error ? error.message : "Sunucu hatası";
     return NextResponse.json({
       success: false,
-      error: error?.message || "Sunucu hatası",
+      error: errorMsg,
     });
   }
 }

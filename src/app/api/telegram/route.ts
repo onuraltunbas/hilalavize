@@ -9,7 +9,8 @@ import {
   logoutUser,
   findProductByIdOrName,
   formatProductDetails,
-  parseProductFromText,
+  getProductAddTemplate,
+  parseAndValidateProduct,
 } from "@/lib/telegram/bot";
 import { PRODUCTS } from "@/data/products";
 
@@ -48,7 +49,7 @@ export async function POST(req: NextRequest) {
       if (!password) {
         await sendTelegramMessage(
           chatId,
-          `⚠️ *Şifre Girilmedi!*\n\nKullanım: \`/giris [şifreniz]\`\nÖrnek: \`/giris hilal1998\``
+          `⚠️ *Şifre Girilmedi!*\n\nKullanım: \`/giris [şifreniz]\`\nÖrnek: \`/giris hilal1976\``
         );
         return NextResponse.json({ ok: true });
       }
@@ -78,64 +79,65 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 4. Şifre Doğrulama Kapısı (Giriş yapılmamışsa hiçbir işlem yapmaz)
+    // 4. Şifre Doğrulama Kapısı
     if (!isUserLoggedIn(fromId)) {
       await sendTelegramMessage(
         chatId,
-        `🔒 *Oturum Kilitli!*\n\nBotu kullanabilmek için lütfen önce giriş yapın:\n\n👉 \`/giris [şifre]\`\n_(Örnek: \`/giris hilal1998\`)_`
+        `🔒 *Oturum Kilitli!*\n\nBotu kullanabilmek için lütfen önce giriş yapın:\n\n👉 \`/giris [şifreniz]\`\n_(Örnek: \`/giris hilal1976\`)_`
       );
       return NextResponse.json({ ok: true });
     }
 
-    // ─── BURADAN SONRASI GİRİŞ YAPMIŞ YETKİLİ YÖNETİCİLER İÇİNDİR ───
+    // ─── BURADAN SONRASI GİRİŞ YAPMIŞ YÖNETİCİLER İÇİNDİR ───
 
-    // 5. /yardim veya /start Komutu
+    // 5. /yardim Komutu
     if (text === "/yardim" || text === "/start" || text === "/komutlar" || text === "/help") {
       const helpMsg = `👑 *Hilal Avize Yönetici Komutları*
 ━━━━━━━━━━━━━━━━━━━━
 
 🔍 *Ürün Sorgulama:*
 • \`/urun [ID veya İsim]\`
-  _Örnek: \`/urun HL-01\` veya \`/urun padisah\`_
+  _Örnek: \`/urun AVZ-01\` veya \`/urun padisah\`_
   _Ürünün fotoğrafını, teknik özelliklerini ve linkini getirir._
 
 📋 *Ürün Listesi:*
 • \`/liste\`
-  _Sitede kayıtlı tüm ürünlerin ID ve kategori listesini döker._
+  _Sitedeki tüm ürünlerin ID ve kategori dökümünü listeler._
 
 📸 *Yeni Ürün Ekleme:*
 • \`/ekle\`
-  _Ürün fotoğrafı ile birlikte gönderilir._
+  _Kopyalayıp doldurabileceğiniz standart ürün şablonunu gösterir._
 
 ⚡ *Durum & Güvenlik:*
 • \`/durum\`
-  _Oturum durumunu ve site bağlantısını gösterir._
+  _Oturum ve sistem durumunu gösterir._
 • \`/cikis\`
   _Güvenli çıkış yapar ve botu kilitler._
 
 ━━━━━━━━━━━━━━━━━━━━
-📸 *Ürün Ekleme Şablonu (Fotoğraf Açıklamasına):*
-\`\`\`
-/ekle
-ID: HL-AVZ-101
-Ad: Floransa 12 Kollu Gold Kristal Avize
-Kategori: avizeler
-Tarz: İhtişamlı & Klasik
-Malzeme: Döküm Pirinç & K9 Kristal
-Boyut: Çap 95cm, Yükseklik 110cm
-Duy: 12x E14 LED Duy
-Açıklama: Özel altın varak kaplama salon avizesi.
-Özellikler:
-- 12 Adet E14 Duy
-- Saf pirinç gövde
-- Ücretsiz montaj
-\`\`\``;
+🏷️ *Standart ID Ön Ekleri:*
+• \`AVZ-\` : Avize
+• \`APL-\` : Aplik
+• \`SPT-\` : Spot
+• \`ABJ-\` : Abajur
+• \`AYN-\` : Ayna
+• \`DST-\` : Saat
+• \`SUS-\` : Süs Eşyaları
+• \`ANH-\` : Anahtar & Priz
+• \`KOL-\` : Koltuk
+• \`SEH-\` : Sehpa`;
 
       await sendTelegramMessage(chatId, helpMsg);
       return NextResponse.json({ ok: true });
     }
 
-    // 6. /durum Komutu
+    // 6. /ekle Komutu (Fotoğrafsız tek başına şablon isteme)
+    if (text === "/ekle" || text === "/sablon") {
+      await sendTelegramMessage(chatId, getProductAddTemplate());
+      return NextResponse.json({ ok: true });
+    }
+
+    // 7. /durum Komutu
     if (text === "/durum") {
       await sendTelegramMessage(
         chatId,
@@ -144,7 +146,7 @@ Açıklama: Özel altın varak kaplama salon avizesi.
       return NextResponse.json({ ok: true });
     }
 
-    // 7. /liste Komutu
+    // 8. /liste Komutu
     if (text === "/liste") {
       let listMsg = `📋 *Kayıtlı Ürün Listesi (${PRODUCTS.length} Ürün):*\n━━━━━━━━━━━━━━━━━━━━\n`;
       PRODUCTS.forEach((p, idx) => {
@@ -155,7 +157,7 @@ Açıklama: Özel altın varak kaplama salon avizesi.
       return NextResponse.json({ ok: true });
     }
 
-    // 8. /urun Sorgulama Komutu
+    // 9. /urun Sorgulama Komutu
     if (text.startsWith("/urun") || text.startsWith("/bul") || text.toLowerCase().includes("nedir") || text.toLowerCase().includes("ne kadar")) {
       let query = text.replace(/^\/urun\s*/, "").replace(/^\/bul\s*/, "").trim();
       query = query.replace(/\s+(nedir|ne kadar|fiyati|özellikleri|detayı)$/i, "").trim();
@@ -163,7 +165,7 @@ Açıklama: Özel altın varak kaplama salon avizesi.
       if (!query) {
         await sendTelegramMessage(
           chatId,
-          `⚠️ Lütfen aramak istediğiniz ürünün ID'sini veya adını yazın.\nÖrnek: \`/urun padisah\` veya \`/urun p1\``
+          `⚠️ Lütfen aramak istediğiniz ürünün ID'sini veya adını yazın.\nÖrnek: \`/urun AVZ-01\` veya \`/urun padisah\``
         );
         return NextResponse.json({ ok: true });
       }
@@ -185,32 +187,45 @@ Açıklama: Özel altın varak kaplama salon avizesi.
       return NextResponse.json({ ok: true });
     }
 
-    // 9. Fotoğraf ile Yeni Ürün Ekleme
+    // 10. Fotoğraf ile Yeni Ürün Ekleme (Doğrulama ve Eksik Bilgi Kontrolü)
     if (photos && photos.length > 0 && (text.includes("/ekle") || text.includes("ID:") || text.includes("Ad:"))) {
       const bestPhoto = photos[photos.length - 1];
       const photoFileUrl = await getTelegramFileUrl(bestPhoto.file_id);
 
-      const parsedProduct = parseProductFromText(text, photoFileUrl || "/images/800x800_modern_led_halka_avize.jpg");
+      const validation = parseAndValidateProduct(
+        text,
+        photoFileUrl || "/images/800x800_modern_led_halka_avize.jpg"
+      );
 
-      if (!parsedProduct || !parsedProduct.name) {
-        await sendTelegramMessage(
-          chatId,
-          `⚠️ *Eksik Bilgi!*\n\nLütfen ürün adı ve ID'sini şablona uygun belirtin:\n\n\`\`\`\n/ekle\nID: HL-01\nAd: Kristal Avize\nKategori: avizeler\n\`\`\``
-        );
+      if (!validation.success) {
+        const errorDetails = validation.missingFields?.join("\n") || "";
+        const warnMsg = `⚠️ *EKSİK VEYA HATALI BİLGİLER VAR!*
+━━━━━━━━━━━━━━━━━━━━
+Lütfen aşağıdaki eksik alanları tamamlayarak fotoğrafı tekrar gönderiniz:
+
+${errorDetails}
+
+━━━━━━━━━━━━━━━━━━━━
+${getProductAddTemplate()}`;
+
+        await sendTelegramMessage(chatId, warnMsg);
         return NextResponse.json({ ok: true });
       }
 
-      const successMsg = `✅ *YENİ ÜRÜN BAŞARIYLA EKLENDİ!*
-━━━━━━━━━━━━━━━━━━━━
-🆔 *ID:* \`${parsedProduct.id}\`
-🏷️ *Ürün Adı:* ${parsedProduct.name}
-📂 *Kategori:* ${parsedProduct.categoryName}
-✨ *Tarz:* ${parsedProduct.style}
-📐 *Boyut:* ${parsedProduct.dimensions}
-💡 *Duy:* ${parsedProduct.lightingType}
+      const p = validation.product!;
 
-🌐 *Canlı Web Sayfası:*
-https://hilalavize.vercel.app/urun/${parsedProduct.slug}
+      const successMsg = `✅ *YENİ ÜRÜN BAŞARIYLA OLUŞTURULDU!*
+━━━━━━━━━━━━━━━━━━━━
+🆔 *ID:* \`${p.id}\`
+🏷️ *Ürün Adı:* ${p.name}
+📂 *Kategori:* ${p.categoryName} (\`${p.categorySlug}\`)
+✨ *Tarz:* ${p.style}
+📐 *Boyut:* ${p.dimensions}
+💡 *Duy:* ${p.lightingType}
+🏢 *Şube:* ${p.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
+
+🌐 *Canlı Ürün Sayfası:*
+https://hilalavize.vercel.app/urun/${p.slug}
 
 _Ürün veritabanına ve web sitenize başarıyla işlendi._`;
 
@@ -218,7 +233,7 @@ _Ürün veritabanına ve web sitenize başarıyla işlendi._`;
       return NextResponse.json({ ok: true });
     }
 
-    // 10. Sadece Ürün Adı veya ID yazıldıysa otomatik algıla
+    // 11. Sadece Ürün Adı veya ID yazıldıysa otomatik algıla
     const autoProduct = findProductByIdOrName(text);
     if (autoProduct) {
       const details = formatProductDetails(autoProduct);
@@ -229,7 +244,7 @@ _Ürün veritabanına ve web sitenize başarıyla işlendi._`;
       return NextResponse.json({ ok: true });
     }
 
-    // 11. Bilinmeyen mesajlar
+    // 12. Bilinmeyen mesajlar
     await sendTelegramMessage(
       chatId,
       `ℹ️ Komutu anlayamadım.\n\nKullanabileceğiniz tüm komutlar için \`/yardim\` yazabilirsiniz.`

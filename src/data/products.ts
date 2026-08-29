@@ -21,7 +21,7 @@ export interface Product {
 
 export const PRODUCTS: Product[] = [
   {
-    id: "p1",
+    id: "AVZ-01",
     slug: "padisah-kristal-kollu-saray-avizesi",
     name: "Padişah 24 Kollu Asfour Kristal Saray Avizesi",
     categorySlug: "avizeler",
@@ -52,7 +52,7 @@ export const PRODUCTS: Product[] = [
       "Ağır pirinç döküm ve K9 kristal taşlı 24 kollu saray avizesi modeli. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin.",
   },
   {
-    id: "p2",
+    id: "AVZ-02",
     slug: "solaris-gold-uc-halkali-led-avize",
     name: "Solaris Üçlü Geometrik Halka LED Sarkıt Avize",
     categorySlug: "avizeler",
@@ -82,7 +82,7 @@ export const PRODUCTS: Product[] = [
       "Gold fırçalanmış 3 halkalı modern LED sarkıt avize modeli. Yüksek ışık gücü ve kumandalı renk değişimi Hilal Avize'de.",
   },
   {
-    id: "p3",
+    id: "APL-01",
     slug: "aurora-fluteli-kristal-duvar-apligi",
     name: "Aurora Çift Yönlü Yivli Kristal Duvar Apliği",
     categorySlug: "aplikler",
@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
     seoDescription: "Yivli kristal camlı ve gold gövdeli lüks salon duvar apliği modeli Hilal Avize Showroom'unda.",
   },
   {
-    id: "p4",
+    id: "SPT-01",
     slug: "invisa-manyetik-ray-spot-aydinlatma-sistemi",
     name: "Invisa Manyetik Ray Spot & Lineer Tavan Sistemi",
     categorySlug: "spot-ve-ray-spot",
@@ -134,7 +134,7 @@ export const PRODUCTS: Product[] = [
       "Modern manyetik ray spot sistemleri ve armatürleri. Kahramanmaraş Hilal Elektrik şubesinde teknik destek ve montaj.",
   },
   {
-    id: "p5",
+    id: "AYN-01",
     slug: "luna-dokunmatik-led-bugu-onleyicili-ayna",
     name: "Luna Gold Çerçeveli Akıllı Dokunmatik LED Ayna",
     categorySlug: "dekoratif-aynalar",
@@ -160,7 +160,7 @@ export const PRODUCTS: Product[] = [
     seoDescription: "Gold çerçeveli yuvarlak LED ayna ve buğu önleyicili banyo/salon aynası Hilal Avize Showroom'unda.",
   },
   {
-    id: "p6",
+    id: "DST-01",
     slug: "artisan-mermer-kadranli-metal-duvar-saati",
     name: "Artisan Çift Çemberli Mermer Kadranlı Lüks Duvar Saati",
     categorySlug: "duvar-ve-masa-saatleri",
@@ -185,7 +185,7 @@ export const PRODUCTS: Product[] = [
     seoDescription: "Lüks dekoratif salon duvar saatleri ve büyük boy mermer saat modelleri Hilal Aksesuar'da.",
   },
   {
-    id: "p7",
+    id: "SUS-01",
     slug: "murano-altin-varakli-ufleme-cam-vazo-seti",
     name: "Murano Amber & Altın Varaklı El Üfleme Cam Vazo Seti",
     categorySlug: "cam-sus-esyalari",
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     seoDescription: "Altın varaklı el üfleme cam süs eşyaları ve lüks masa üstü objeler Hilal Avize & Aksesuar'da.",
   },
   {
-    id: "p8",
+    id: "ANH-01",
     slug: "prestige-temperli-siyah-cam-cerceveli-anahtar-priz",
     name: "Prestige Temperli Siyah Cam & Gold Çerçeveli Anahtar Priz Serisi",
     categorySlug: "anahtar-ve-priz-serileri",
@@ -236,7 +236,7 @@ export const PRODUCTS: Product[] = [
     seoDescription: "Siyah ve beyaz cam çerçeveli lüks anahtar priz çeşitleri Kahramanmaraş Hilal Elektrik şubesinde.",
   },
   {
-    id: "p9",
+    id: "KOL-01",
     slug: "majestic-kraliyet-mavisi-kadife-berjer",
     name: "Majestic Gold Ayaklı Gece Mavisi Kadife Tasarım Berjer",
     categorySlug: "dekoratif-koltuk-ve-berjerler",
@@ -261,7 +261,7 @@ export const PRODUCTS: Product[] = [
     seoDescription: "Gold ayaklı tasarım kadife berjer modelleri Hilal Avize & Aksesuar Showroom'unda.",
   },
   {
-    id: "p10",
+    id: "SEH-01",
     slug: "imperia-italyan-calacatta-mermer-ikili-orta-sehpa",
     name: "Imperia İtalyan Calacatta Mermer İkili İç İçe Orta Sehpa",
     categorySlug: "dekoratif-sehpalar",
