@@ -232,12 +232,9 @@ export async function getTelegramFileUrl(fileId: string): Promise<string | null>
   return null;
 }
 
-// Telegram ID Yetki Kontrolü
-export function isAuthorizedAdminId(userId: number | string): boolean {
-  if (ADMIN_IDS.length === 0) {
-    return true;
-  }
-  return ADMIN_IDS.includes(String(userId));
+// Telegram ID Yetki Kontrolü (Şifre yeterli olduğundan herkese açık)
+export function isAuthorizedAdminId(_userId: number | string): boolean {
+  return true;
 }
 
 // Ürün Arama (ID veya İsme Göre)

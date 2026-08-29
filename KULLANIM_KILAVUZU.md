@@ -364,48 +364,44 @@ Sitenize **yalnızca yetkili yöneticilerin** Telegram üzerinden fotoğraf ve d
 
 ---
 
-### 🏷️ 14.2. Standart Ürün ID Ön Ekleri:
+### 🏷️ 14.2. Standart Ürün ID Ön Ekleri (3 Haneli Monoton Artan):
 Sitedeki ve Telegram'daki tüm ürünler düzen için şu standart ID formatını kullanır:
-* `AVZ-` : Avizeler (Örn: `AVZ-01`, `AVZ-101`)
-* `APL-` : Duvar Aplikleri (Örn: `APL-01`, `APL-101`)
-* `SPT-` : Spot & Ray Spot Sistemleri (Örn: `SPT-01`, `SPT-101`)
-* `ABJ-` : Abajur & Lambaderler (Örn: `ABJ-01`, `ABJ-101`)
-* `AYN-` : Aynalar (Örn: `AYN-01`, `AYN-101`)
-* `DST-` : Duvar & Masa Saatleri (Örn: `DST-01`, `DST-101`)
-* `SUS-` : Cam Sanat / Süs Eşyaları (Örn: `SUS-01`, `SUS-101`)
-* `ANH-` : Lüks Anahtar & Priz Serileri (Örn: `ANH-01`, `ANH-101`)
-* `KOL-` : Koltuk & Berjerler (Örn: `KOL-01`, `KOL-101`)
-* `SEH-` : Orta & Yan Sehpalar (Örn: `SEH-01`, `SEH-101`)
+* `AVZ-` : Avizeler (Örn: `AVZ-001`, `AVZ-002`, `AVZ-006`...)
+* `APL-` : Duvar Aplikleri (Örn: `APL-001`, `APL-002`...)
+* `SPT-` : Spot & Ray Spot Sistemleri (Örn: `SPT-001`...)
+* `ABJ-` : Abajur & Lambaderler (Örn: `ABJ-001`...)
+* `AYN-` : Aynalar (Örn: `AYN-001`...)
+* `DST-` : Duvar & Masa Saatleri (Örn: `DST-001`...)
+* `SUS-` : Cam Sanat / Süs Eşyaları (Örn: `SUS-001`...)
+* `ANH-` : Lüks Anahtar & Priz Serileri (Örn: `ANH-001`...)
+* `KOL-` : Koltuk & Berjerler (Örn: `KOL-001`...)
+* `SEH-` : Orta & Yan Sehpalar (Örn: `SEH-001`...)
 
 ---
 
 ### 📱 14.3. Telegram Bot Komutları:
 
 * 📖 **`/yardim`** : Tüm komutları ve kullanım detaylarını listeler.
-* 📝 **`/ekle`** : Kopyalayıp doldurabileceğiniz standart ürün şablonunu döker.
-* 🔍 **`/urun [ID veya İsim]`** : Ürünün fotoğrafını, teknik özelliklerini ve linkini getirir (Örn: `/urun AVZ-01` veya `/urun padisah`).
+* 📸 **`/ekle`** : Adım adım konuşarak yeni ürün ekleme sihirbazını başlatır.
+* 🗑️ **`/sil [ID]`** : Ürünü siler; ID sırasını korur (Örn: `/sil AVZ-005`).
+* 🔍 **`/urun [ID veya İsim]`** : Ürünün fotoğrafını, teknik özelliklerini ve linkini getirir (Örn: `/urun AVZ-001`).
 * 📋 **`/liste`** : Sitedeki tüm ürünlerin ID listesini verir.
+* ❌ **`/iptal`** : Yarıda kalan işlemi tamamen temizler ve sıfırlar.
 * ⚡ **`/durum`** : Oturum ve site bağlantı durumunu gösterir.
+* 🔒 **`/cikis`** : Güvenli çıkış yapar ve botu kilitler.
 
 ---
 
-### 📸 14.4. Telegram'dan Ürün Ekleme & Otomatik Doğrulama:
-Bota fotoğraf gönderirken açıklama (caption) kısmına şu şablonu yazın:
+### 📸 14.4. İnteraktif Ürün Ekleme Sihirbazı (`/ekle`):
+Bota **/ekle** yazdığınızda sistem size sırayla sorar:
+1. Ürün Fotoğrafı
+2. Ürün Türü (Otomatik sıradaki ID üretilir, örn: `AVZ-003`)
+3. Ürün Adı
+4. Tarzı (`1: Klasik`, `2: Modern`, `3: Minimalist`)
+5. Malzemesi
+6. Boyutları / Ölçüleri
+7. Duy / Aydınlatma Tipi
+8. Açıklaması
+9. Öne Çıkan Özellikleri
 
-```text
-/ekle
-ID: AVZ-105
-Ad: Floransa 12 Kollu Gold Kristal Avize
-Tarz: İhtişamlı & Klasik
-Malzeme: Döküm Pirinç & K9 Kristal
-Boyut: Çap: 95cm, Yükseklik: 110cm
-Duy: 12x E14 LED Duy
-Açıklama: Özel altın varak kaplama kristal salon avizesi.
-Özellikler:
-- 12 Adet E14 Duy
-- Saf pirinç döküm iskelet
-- Profesyonel montaj desteği
-```
-
-⚠️ **Otomatik Eksik Bilgi Kontrolü:**
-Eğer ID, Ad, Malzeme veya Boyut gibi zorunlu alanlardan biri eksik bırakılırsa, bot sizi hemen uyarır (`❌ Boyut girilmemiş` vb.) ve doğru şablonu tekrar gönderir!
+İşlem tamamlandığında ürün sitenize anında eklenir ve canlı web linkiyle teyit kartı gönderilir!

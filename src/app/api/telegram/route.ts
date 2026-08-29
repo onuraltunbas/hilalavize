@@ -3,7 +3,6 @@ import {
   sendTelegramMessage,
   sendTelegramPhoto,
   getTelegramFileUrl,
-  isAuthorizedAdminId,
   isUserLoggedIn,
   loginUser,
   logoutUser,
@@ -36,16 +35,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // 1. Yetkili ID Kontrolü
-    if (!isAuthorizedAdminId(fromId)) {
-      await sendTelegramMessage(
-        chatId,
-        `⛔ *Yetkisiz Erişim!*\n\nBu bot sadece Hilal Avize yöneticilerine özeldir.\n\n🔑 *Telegram ID'niz:* \`${fromId}\``
-      );
-      return NextResponse.json({ ok: true });
-    }
-
-    // 2. /giris [şifre] Komutu
+    // 1. /giris [şifre] Komutu
     if (text.startsWith("/giris") || text.startsWith("/login")) {
       const parts = text.split(/\s+/);
       const password = parts[1] || "";
