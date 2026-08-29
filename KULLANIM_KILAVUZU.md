@@ -1,6 +1,6 @@
 # 🏛️ Hilal Elektrik Avize Aksesuar — Kapsamlı Web Sitesi Kullanım ve Yönetim Kılavuzu
 
-Bu kılavuz, **Hilal Elektrik Avize Aksesuar** web platformunuzun (Next.js 16 + React 19 + TypeScript + Tailwind CSS) tüm işleyişini, ziyaretçi özelliklerini, akıllı yapay zeka WhatsApp danışma sistemini, ürün/şube yönetimini ve Vercel canlı yayın süreçlerini en ince detayına kadar açıklar.
+Bu kılavuz, **Hilal Elektrik Avize Aksesuar** web platformunuzun (Next.js 16 + React 19 + TypeScript + Tailwind CSS) tüm işleyişini, ziyaretçi özelliklerini, akıllı yapay zeka WhatsApp danışma sistemini, Telegram yönetim botunu, ürün/şube yönetimini ve Vercel canlı yayın süreçlerini en ince detayına kadar açıklar.
 
 ---
 
@@ -13,30 +13,29 @@ Bu kılavuz, **Hilal Elektrik Avize Aksesuar** web platformunuzun (Next.js 16 + 
    - 3.2. Lüks Hero Bölümü ve Hızlı Eylem Butonları (CTA)
    - 3.3. İnteraktif Tarz Seçici (Klasik, Modern, Minimalist)
    - 3.4. İki Uzman Şube ve GPS Koordinatlı Canlı Yol Tarifi
-   - 3.5. Koleksiyonlar Vitrini, Canlı Arama ve Filtreleme
+   - 3.5. Koleksiyonlar Vitrini, Canlı Arama ve Dinamik Filtreleme
    - 3.6. Ürün Detay Sayfaları ve Hızlı Bilgi/Fiyat Alma
    - 3.7. Akıllı ve Doğal Dil WhatsApp Danışmanlık Sistemi
    - 3.8. Yüzen Hızlı Danışma Butonu (Floating Widget)
-   - 3.9. Hizmetler, Müşteri Yorumları, SSS ve Kurumsal Sayfalar
+   - 3.9. Anasayfaya Özel Danışmanlık ve Yol Tarifi Alanı
+   - 3.10. Hizmetler, Müşteri Yorumları, SSS ve Kurumsal Sayfalar
 4. [Ürün Yönetimi (Ekleme, Düzenleme, Silme)](#4-ürün-yönetimi-ekleme-düzenleme-silme)
-   - 4.1. Ürün Veri Alanlarının Detaylı Tablosu
-   - 4.2. Adım Adım Yeni Ürün Ekleme Şablonu
-   - 4.3. Var Olan Ürünü Düzenleme
-   - 4.4. Ürün Silme
 5. [Görsel ve Fotoğraf Yönetimi](#5-görsel-ve-fotoğraf-yönetimi)
-   - 5.1. Boyutlandırma Standartları (800x800, 1920x1080, 512x512)
-   - 5.2. İsimlendirme Kuralı
-   - 5.3. Yeni Fotoğraf Yükleme ve Ürünle Eşleştirme
 6. [Şubeler, Yetkililer ve İletişim Bilgilerini Güncelleme](#6-şubeler-yetkililer-ve-iletişim-bilgilerini-güncelleme)
-   - 6.1. Telefon ve WhatsApp Numaralarını Değiştirme
-   - 6.2. Adres, Çalışma Saatleri ve GPS Koordinatlarını Güncelleme
-7. [Kategoriler ve Vitrin Yönetimi](#7-kategoriler-ve-vitrin-yönetimi)
+7. [Kategoriler ve Vitrin Yönetimi (Dinamik Sayaçlar)](#7-kategoriler-ve-vitrin-yönetimi-dinamik-sayaçlar)
 8. [Hizmetler, SSS ve Müşteri Yorumlarını Yönetme](#8-hizmetler-sss-ve-müşteri-yorumlarını-yönetme)
 9. [Yerel SEO, Google İndeksleme ve Zengin Arama Sonuçları](#9-yerel-seo-google-indeksleme-ve-zengin-arama-sonuçları)
 10. [Bilgisayarınızda Test Etme ve Canlı Önizleme (Localhost)](#10-bilgisayarınızda-test-etme-ve-canlı-önizleme-localhost)
 11. [Değişiklikleri Vercel ile Canlıya Alma (Git & Push)](#11-değişiklikleri-vercel-ile-canlıya-alma-git--push)
 12. [Gelecekte Özel Domain (hilalavize.com vb.) Bağlama](#12-gelecekte-özel-domain-hilalavizecom-vb-bağlama)
 13. [Hata Önleme, Kod Güvenliği ve İpuçları](#13-hata-önleme-kod-güvenliği-ve-ipuçları)
+14. [🤖 TELEGRAM İLE HIZLI ÜRÜN EKLEME & YÖNETİCİ BOTU KILAVUZU](#14-telegram-ile-hizli-ürün-ekleme--yönetici-botu-kilavuzu)
+    - 14.1. Güvenlik & Giriş Şifresi
+    - 14.2. Standart Ürün ID Formatı (3 Haneli Monoton Artan)
+    - 14.3. Telegram Bot Komutları Tablosu
+    - 14.4. Sadeleştirilmiş 6 Adımlı Hızlı Ürün Ekleme Sihirbazı (`/ekle`)
+    - 14.5. Özel Telegram Kanalı & Çoklu Yönetici Canlı Yayın Sistemi
+    - 14.6. Ürün Silme ve ID Sırası Koruma Mantığı (`/sil`)
 
 ---
 
@@ -61,16 +60,21 @@ Sitenin tüm kaynak kodları bilgisayarınızda `/home/onur/hilalavize` dizinind
 ├── src/
 │   ├── data/                 ⭐ [VERİ MERKEZİ] Tüm içerikler burada saklanır!
 │   │   ├── company.ts        -> Mağaza adları, 2 şubenin adresleri, telefonlar, koordinatlar, çalışma saatleri.
-│   │   ├── products.ts       -> Sitedeki tüm ürünler, malzeme, ölçü, duy ve fiyat danışma bilgileri.
-│   │   ├── categories.ts     -> 10 ana kategori ve vitrin ürün sayaçları.
+│   │   ├── products.ts       -> Sitedeki temel ürünler, malzeme, ölçü, duy ve fiyat danışma bilgileri.
+│   │   ├── categories.ts     -> 10 ana kategori ve vitrin yapılandırmaları.
 │   │   ├── services.ts       -> Aydınlatma danışmanlığı, montaj ve elektrik işçiliği hizmetleri.
 │   │   ├── faqs.ts           -> Sıkça Sorulan Sorular (SSS).
-│   │   ├── reviews.ts        -> Doğrulanmış müşteri yorumları ve projeler.
+│   │   ├── reviews.ts        -> Doğrulanmış müşteri yorumları ve referans projeler.
 │   │   └── locations.ts      -> Kahramanmaraş ve Onikişubat yerel SEO içerikleri.
 │   │
-│   ├── components/           -> Görsel arayüz blokları:
-│   │   ├── Navbar.tsx        -> Üst menü, yeni şeffaf logo ve iletişim butonları.
+│   ├── lib/                  ⚡ [İŞ MANTIĞI & SİSTEMLER]
+│   │   ├── products-store.ts -> Dinamik ve kalıcı ürün depolama motoru.
+│   │   └── telegram/bot.ts   -> Telegram yönetim botu, oturum yönetimi ve ID üretici.
+│   │
+│   ├── components/           -> Görsel arayüz bileşenleri:
+│   │   ├── Navbar.tsx        -> Üst menü, dinamik linkler ve mobil çekmece.
 │   │   ├── Footer.tsx        -> Alt bilgi alanı, şube adresleri, harita linkleri ve yasal menü.
+│   │   ├── HomeCtaBanner.tsx -> Sadece anasayfaya özel WhatsApp & Yol tarifi alanı.
 │   │   ├── HeroSection.tsx   -> Lüks vitrin açılış alanı ve ana butonlar.
 │   │   ├── StyleSelector.tsx -> Klasik / Modern / Minimalist tarz seçici.
 │   │   ├── BranchesSection.tsx -> İki şubenin karşılaştırma kartları ve harita yol tarifleri.
@@ -98,275 +102,50 @@ Sitenin tüm kaynak kodları bilgisayarınızda `/home/onur/hilalavize` dizinind
 Siteniz, e-ticaret sepet satışı yerine; **mağaza showroom ziyaretlerini artırmak, kurumsal prestij kazandırmak ve WhatsApp/telefon üzerinden doğrudan sıcak satışa dönüştürmek** amacıyla tasarlanmıştır.
 
 ### 3.1. Üst İletişim Çubuğu ve Modern Header
-* **En Üst Bilgi Barı:** Onikişubat Kahramanmaraş konumu, çalışma saatleri (`Pzt - Cmt: 09:00 - 17:00`), Showroom yetkilisinin telefonu (`0505 380 13 50`), Elektrik şubesinin telefonu (`0555 977 83 49`) ve tek tıkla WhatsApp Danışma butonu yer alır.
-* **Ana Header & Logo:** Yeni yüksek çözünürlüklü şeffaf Hilal Avize logosu büyütülmüş ve net bir şekilde sol üstte yer alır. Menüde; Anasayfa, Tüm Koleksiyonlar, Kategoriler (Açılır mega menü), Hizmetlerimiz, Şubelerimiz & İletişim, Hakkımızda, SSS ve dikkat çekici *"✨ Ücretsiz Danışmanlık"* butonu bulunur.
+* Her sayfanın en üstünde Onikişubat Showroom ve Elektrik Şubesi telefonları yer alır.
+* Masaüstünde kategoriler şık bir açılır menü (dropdown) ile gezilebilir.
 
 ### 3.2. Lüks Hero Bölümü ve Hızlı Eylem Butonları (CTA)
-* Sayfa açıldığında ziyaretçiyi yüksek kaliteli showroom atmosferi, güçlü semantik başlıklar ve iki ana buton karşılar:
-  1. **"Koleksiyonları Keşfet":** Ziyaretçiyi doğrudan tüm avize ve dekorasyon modellerinin listelendiği `/koleksiyonlar` sayfasına yönlendirir.
-  2. **"WhatsApp ile Danış & Fiyat Al":** Danışman Lütfiye Hanım ile anında WhatsApp sohbeti başlatır.
-* Hemen altında **4'lü Güven Rozetleri** yer alır (2 Uzman Şube, %100 K9 Kristal Kalitesi, Ücretsiz Mimari Danışmanlık, Güvenli Nakliye & Montaj Sözü).
+* Görkemli vitrin görseli ve **"Koleksiyonları Keşfet"** ile **"Uzmana Danış"** yönlendirmeleri bulunur.
 
 ### 3.3. İnteraktif Tarz Seçici (Klasik, Modern, Minimalist)
-* Ziyaretçiler evlerinin tarzına göre 3 ana sekmeden birine tıklayabilir:
-  * 👑 **İhtişamlı & Klasik:** Ağır kollu saray avizeleri, K9 kristal prizmalar, varaklı detaylar ve kadife berjerler.
-  * ⚡ **Modern & Spor:** Geometrik halka LED'ler, fırçalanmış gold detaylar, dokunmatik LED aynalar ve mermer sehpalar.
-  * 🌿 **Sade & Minimalist:** Manyetik ray spot sistemleri, gömme tavan aydınlatmaları ve temperli cam anahtar-priz serileri.
-* Seçilen tarza göre altındaki ürünler anında filtrelenerek gösterilir.
+* Müşteriler tek dokunuşla evlerinin tarzına göre filtreleme yapabilir.
 
-### 3.4. İki Uzman Şube ve GPS Koordinatlı Canlı Yol Tarifi
-* İki şubenin ayrımı sitede son derece nettir:
-  1. **Hilal Avize & Aksesuar Showroom (Umut Kent Sitesi F Blok No: 4A):** Lütfiye Bilal (`0505 380 13 50`) ve Çiğdem Altunbaş (`0506 905 96 32`) doğrudan arama/WhatsApp butonları ve **"Yol Tarifi Al"** butonu.
-  2. **Hilal Elektrik & Tesisat Şubesi (Eymen Sitesi No: 12):** Murat Bilal (`0555 977 83 49`) iletişim bilgisi, elektrik malzemeleri, priz ve sigorta montaj desteği ve **"Yol Tarifi Al"** butonu.
-* **Tam Koordinatlı Canlı Rota:** Ziyaretçi yol tarifi butonuna bastığında Google Haritalar kullanıcının o anki konumundan mağazanın tam kapısına (`37.585632903905484, 36.85069134447522` ve `37.59150608778074, 36.8587423123147`) canlı navigasyon başlatır.
+### 3.4. İki Uzman Şube ve Canlı Yol Tarifi
+1. **Hilal Avize & Aksesuar Showroom:** Yirmiikigün Mah., Şehit Polis Ali Mülazımoğlu Cad.
+2. **Hilal Elektrik & Tesisat Şubesi:** Süleymanşah Mah., 10056. Sokak.
 
-### 3.5. Koleksiyonlar Vitrini, Canlı Arama ve Filtreleme
-* `/koleksiyonlar` sayfasında:
-  * Canlı arama çubuğuna ürün adı, malzeme veya özellik yazıldığında anında filtreleme yapılır.
-  * Tarz ve kategori hapları ile tek tıkla istenen ürün grubuna ulaşılır.
+### 3.5. Koleksiyonlar Vitrini, Canlı Arama ve Dinamik Filtreleme
+* Ziyaretçiler arama çubuğundan ürün adı, ölçü veya duy tipine göre canlı filtreleme yapabilir.
+* **Sayaç Dinamiktir:** Sitede o an yayında olan toplam ürün sayısı anlık olarak hesaplanır.
 
 ### 3.6. Ürün Detay Sayfaları ve Hızlı Bilgi/Fiyat Alma
-* Her ürün kartında **"Detay Gör"** ve **"Fiyat Sor"** butonları bulunur.
-* Ürün detay sayfasında yüksek çözünürlüklü fotoğraflar, malzeme bilgisi, ölçüler, duy/ışık tipi, avantajlar ve doğrudan o ürünü soran WhatsApp bağlantısı yer alır.
+* Her ürün için özel dinamik sayfa (`/urun/[slug]`) açılır.
+* Ürün fotoğrafı, tarz rozeti, boyutları ve aydınlatma/duy tipi görüntülenir.
+* Müşteri **"WhatsApp ile Fiyat & Bilgi Al"** butonuna bastığında ürünün adı ve linki WhatsApp mesajına otomatik yazılmış olarak açılır.
 
-### 3.7. Akıllı ve Doğal Dil WhatsApp Danışmanlık Sistemi
-Sayfanın altındaki *"Evinize En Uygun Modeli Birlikte Bulalım"* formu akıllı bir yapay zeka mantığıyla çalışır:
-* **Otomatik Baş Harf Büyütme:** Kullanıcı adını küçük harflerle yazsa dahi (`onur altunbaş`), Türkçe karakter kurallarına göre (`Onur Altunbaş`) baş harfler anında büyük harfe çevrilir.
-* **Günün Saatine Göre Dinamik Selamlama:**
-  * Saat **06:00 - 17:00** arasındaysa ➡️ *"İyi günler, ben Onur Altunbaş..."*
-  * Saat **17:00 - 06:00** arasındaysa ➡️ *"İyi akşamlar, ben Onur Altunbaş..."*
-* **Akıcı ve Saygılı Tek Parça Cümle:**
-  * Kullanıcı mekânı, tarzı ve notları seçtiğinde yapay zeka gereksiz konuşma dolgularını temizler, ölçüleri (`10 m²`, `2.90 m`) teknik formata çevirir ve tek parça, net bir mesaj oluşturur:
-  > *"İyi günler, ben Onur Altunbaş. Ofisim için modern LED tarzında bir avize arıyorum. Ofisimin büyüklüğü yaklaşık 10 m². Elinizdeki hazır modeller ve fiyat seçenekleri hakkında bilgi alabilir miyim?"*
-* **"Danışmanlık Talebini Gönder (WhatsApp)"** butonuna basıldığı anda bu hazır mesajla WhatsApp açılır.
-
-### 3.8. Yüzen Hızlı Danışma Butonu (Floating Widget)
-* Ekranın sağ alt köşesinde sürekli sabit duran yeşil canlı WhatsApp butonu yer alır.
-* Tıklandığında hem Showroom hem de Elektrik şubesinin yetkililerine hızlıca yazma veya arama yapma menüsü açılır.
+### 3.7. Anasayfaya Özel Danışmanlık ve Yol Tarifi Alanı
+* `Evinize En Uygun Avizeyi Beraber Seçelim!` bölümü **yalnızca Anasayfada (`/`)** yer alır. Diğer sayfalarda gereksiz kalabalık yapmaz.
 
 ---
 
-## 4. ÜRÜN YÖNETİMİ (EKLEME, DÜZENLEME, SİLME)
+## 4. 🤖 TELEGRAM İLE HIZLI ÜRÜN EKLEME & YÖNETİCİ BOTU KILAVUZU
 
-Tüm ürünler tek bir dosyadan, [src/data/products.ts](file:///home/onur/hilalavize/src/data/products.ts) dosyasından yönetilir.
-
-### 4.1. Ürün Veri Alanlarının Detaylı Tablosu
-
-| Alan Adı | Tip | Açıklama / Örnek |
-| :--- | :--- | :--- |
-| `id` | Metin | Benzersiz ürün kimliği (örn: `"p1"`, `"p11"`, `"urun-15"`) |
-| `slug` | Metin | Sayfa linki URL uzantısı (örn: `"venedig-kristal-avize"` -> `/urun/venedig-kristal-avize`) |
-| `name` | Metin | Ürünün sitede görünen tam adı |
-| `categorySlug` | Metin | Bağlı olduğu kategori (`"avizeler"`, `"aplikler"`, `"spot-ve-ray-spot"` vb.) |
-| `categoryName` | Metin | Kategorinin ekranda görünen adı |
-| `style` | Metin | `"İhtişamlı & Klasik"` \| `"Modern & Spor"` \| `"Sade & Minimalist"` |
-| `badge` | Metin | Ürün fotoğrafı üzerindeki sarı etiket (örn: `"Yeni Sezon"`, `"Popüler"`) |
-| `shortDescription` | Metin | Ürün kartında görünen 1-2 cümlelik kısa özet |
-| `description` | Metin | Ürün detay sayfasındaki kapsamlı açıklama |
-| `material` | Metin | Malzeme bilgisi (örn: `"Döküm Pirinç & K9 Kristal"`) |
-| `dimensions` | Metin | Ölçü bilgisi (örn: `"Çap: 90 cm, Yükseklik: 120 cm"`) |
-| `lightingType` | Metin | Duy / LED tipi (örn: `"12x E14 LED Duy (Sıcak Beyaz)"`) |
-| `branch` | Metin | `"showroom"` (Avize Showroom) veya `"electrical"` (Elektrik Şubesi) |
-| `image` | Metin | Görsel yolu (örn: `"/images/800x800_venedig_avize.jpg"`) |
-| `features` | Liste | Ürünün 3-5 maddelik öne çıkan özellikleri |
-
----
-
-### 4.2. Adım Adım Yeni Ürün Ekleme Şablonu
-
-[src/data/products.ts](file:///home/onur/hilalavize/src/data/products.ts) dosyasını açın, `PRODUCTS` dizisinin en altına şu şablonu kopyalayıp yapıştırın:
-
-```typescript
-{
-  id: "p11",
-  slug: "venedig-sekiz-kollu-kristal-sarkit-avize",
-  name: "Venedik 8 Kollu Asfour Kristal Sarkıt Avize",
-  categorySlug: "avizeler",
-  categoryName: "Lüks & Modern Avizeler",
-  style: "İhtişamlı & Klasik",
-  badge: "Yeni Sezon",
-  shortDescription: "Saf masif pirinç gövde ve K9 Asfour kristal prizmalarla donatılmış 8 kollu sarkıt avize.",
-  description: "Yemek masaları ve salonlar için tasarlanan Venedik Serisi; ışıltılı kristal taşları ve altın varak kaplama gövdesiyle mekanınıza zarafet katar.",
-  material: "Döküm Masif Pirinç & Asfour Kristal",
-  dimensions: "Çap: 75 cm, Yükseklik: 95 cm (Ayarlanabilir Zincir)",
-  lightingType: "8x E14 LED Duy (Sıcak Amber Uyumlu)",
-  branch: "showroom",
-  image: "/images/800x800_venedig_avize.jpg",
-  features: [
-    "8 Adet E14 Kandil Tipi Duy",
-    "Kararmaya Karşı Koruyucu Altın Vernik Kaplama",
-    "Özel Darbe Emici Ahşap Sandık ile Güvenli Nakliye",
-    "Hilal Avize Uzman Ekibi Montaj Güvencesi"
-  ]
-},
-```
-
----
-
-### 4.3. Var Olan Ürünü Düzenleme
-1. [src/data/products.ts](file:///home/onur/hilalavize/src/data/products.ts) dosyasında değiştirmek istediğiniz ürünü bulun.
-2. `name`, `dimensions`, `material`, `price` veya `description` satırlarındaki tırnak içindeki metni düzenleyip kaydedin.
-
-### 4.4. Ürün Silme
-1. [src/data/products.ts](file:///home/onur/hilalavize/src/data/products.ts) dosyasını açın.
-2. Silmek istediğiniz ürünün `{` parantezinden başlayıp `},` bitimine kadar olan bloğunu silin ve kaydedin.
-
----
-
-## 5. GÖRSEL VE FOTOĞRAF YÖNETİMİ
-
-Tüm görseller `/home/onur/hilalavize/public/images/` klasöründe saklanır.
-
-### 5.1. Boyutlandırma Standartları
-* **Ürün Fotoğrafları:** `800x800` piksel, kare format (JPG veya PNG).
-* **Büyük Vitrin / Hero Fotoğrafları:** `1920x1080` piksel, yatay format (JPG).
-* **Logo:** `512x512` piksel, arka planı şeffaf PNG formatında (`512x512_hilal_logo.png`).
-
-### 5.2. İsimlendirme Kuralı
-* Fotoğraflar mutlaka `[GENİŞLİK]x[YÜKSEKLİK]_[isim].[uzantı]` kuralına uygun olmalıdır.
-  * Örnek: `800x800_modern_led_halka_avize.jpg`
-  * Örnek: `1920x1080_hero_showroom.jpg`
-
-### 5.3. Yeni Fotoğraf Yükleme ve Ürünle Eşleştirme
-1. Fotoğrafınızı `800x800` boyutunda hazırlayın (Örn: `800x800_yeni_model.jpg`).
-2. Dosyayı `/home/onur/hilalavize/public/images/` klasörüne yapıştırın.
-3. [src/data/products.ts](file:///home/onur/hilalavize/src/data/products.ts) dosyasındaki ürünün `image` alanına `"/images/800x800_yeni_model.jpg"` yazın.
-
----
-
-## 6. ŞUBELER, YETKİLİLER VE İLETİŞİM BİLGİLERİNİ GÜNCELLEME
-
-Tüm kurumsal iletişim bilgileri tek merkezden, [src/data/company.ts](file:///home/onur/hilalavize/src/data/company.ts) dosyasından yönetilir.
-
-### 6.1. Telefon ve WhatsApp Numaralarını Değiştirme
-[src/data/company.ts](file:///home/onur/hilalavize/src/data/company.ts) dosyasını açın:
-* **Showroom Yetkilileri (Lütfiye Hanım & Çiğdem Hanım):**
-  * `phone: "+905053801350"` -> Arama yapılacak telefon
-  * `phoneFormatted: "0505 380 13 50"` -> Ekranda görünen format
-  * `whatsapp: "905053801350"` -> Başında artı olmadan WhatsApp numarası
-* **Elektrik Şubesi (Murat Bey):**
-  * `phone: "+905559778349"`
-  * `whatsapp: "905559778349"`
-
-### 6.2. Adres, Çalışma Saatleri ve GPS Koordinatlarını Güncelleme
-[src/data/company.ts](file:///home/onur/hilalavize/src/data/company.ts) içinde ilgili şubenin:
-* `address.full`: Açık adres metni
-* `workingHours.days` ve `workingHours.hours`: Çalışma günleri ve saatleri
-* `googleMapsUrl`: Google Haritalar navigasyon linki (Koordinatlar: `37.585632903905484, 36.85069134447522` ve `37.59150608778074, 36.8587423123147`)
-
----
-
-## 7. KATEGORİLER VE VİTRİN YÖNETİMİ
-
-Kategoriler [src/data/categories.ts](file:///home/onur/hilalavize/src/data/categories.ts) dosyasındadır:
-1. `avizeler` (Lüks & Modern Avizeler)
-2. `aplikler` (Dekoratif Duvar Aplikleri)
-3. `spot-ve-ray-spot` (Spot & Manyetik Ray Spot Sistemleri)
-4. `abajur-ve-lambader` (Abajur & Lambader Koleksiyonu)
-5. `dekoratif-aynalar` (Dekoratif & Akıllı LED Aynalar)
-6. `duvar-ve-masa-saatleri` (Özel Tasarım Duvar & Masa Saatleri)
-7. `cam-sus-esyalari` (Cam Sanat & Süs Eşyaları)
-8. `anahtar-ve-priz-serileri` (Lüks Anahtar & Priz Serileri)
-9. `dekoratif-koltuk-ve-berjerler` (Dekoratif Koltuk & Berjerler)
-10. `dekoratif-sehpalar` (Dekoratif Mermer & Bronz Sehpalar)
-
-Bir kategorinin başlığını, açıklamasını veya vitrindeki ürün sayısını (`itemCount`) bu dosyadan değiştirebilirsiniz.
-
----
-
-## 8. HİZMETLER, SSS VE MÜŞTERİ YORUMLARINI YÖNETME
-
-* **Hizmetler (Danışmanlık, Montaj, Tesisat, Mimari Proje):** [src/data/services.ts](file:///home/onur/hilalavize/src/data/services.ts)
-* **Sıkça Sorulan Sorular (SSS):** [src/data/faqs.ts](file:///home/onur/hilalavize/src/data/faqs.ts)
-* **Doğrulanmış Müşteri Yorumları:** [src/data/reviews.ts](file:///home/onur/hilalavize/src/data/reviews.ts)
-
----
-
-## 9. YEREL SEO, GOOGLE İNDEKSLEME VE ZENGİN ARAMA SONUÇLARI
-
-* **Lokasyon Sayfaları:** [src/data/locations.ts](file:///home/onur/hilalavize/src/data/locations.ts) (Kahramanmaraş, Onikişubat, Yirmiikigün Mh., Dulkadiroğlu yerel aramaları için özel sayfalar).
-* **Dinamik XML Sitemap:** `/sitemap.xml` (Tüm sayfalar Google'a otomatik bildirilir).
-* **Robots Dosyası:** `/robots.txt` (Arama motoru botlarına tam erişim izni verir).
-* **Schema.org Yapısal Verisi:** `LocalBusiness`, `Product`, `FAQPage` ve `BreadcrumbList` etiketleri ile Google aramalarında yıldızlı puanlar ve mağaza kartı çıkar.
-
----
-
-## 10. BİLGİSAYARINIZDA TEST ETME VE CANLI ÖNİZLEME (LOCALHOST)
-
-Değişikliklerinizi canlıya göndermeden önce bilgisayarınızda görmek için:
-
-1. Terminali açın.
-2. Şu komutu çalıştırın:
-   ```bash
-   cd /home/onur/hilalavize
-   npm run dev
-   ```
-3. Tarayıcınızdan **`http://localhost:3000`** adresine gidin.
-4. Dosyayı her kaydedişinizde ekran anında güncellenir.
-5. Durdurmak için terminalde `Ctrl + C` yapın.
-
----
-
-## 11. DEĞİŞİKLİKLERİ VERCEL İLE CANLIYA ALMA (GIT & PUSH)
-
-Bilgisayarınızda yaptığınız her değişiklik tek bir komutla Vercel üzerinden canlı web sitenize yüklenir:
-
-```bash
-cd /home/onur/hilalavize
-git add .
-git commit -m "urunler ve iletisim bilgileri guncellendi"
-git push origin main
-```
-
-Bu komuttan sonra:
-1. Değişiklikler GitHub deponuza (`onuraltunbas/hilalavize`) gönderilir.
-2. **Vercel bunu saniyeler içinde otomatik olarak algılar.**
-3. Derlemeyi tamamlar ve sitenizi kesintisiz olarak canlıya alır!
-
----
-
-## 12. GELECEKTE ÖZEL DOMAIN (hilalavize.com VB.) BAĞLAMA
-
-Eğer ileride kendinize ait bir `.com` veya `.com.tr` alan adı satın alırsanız:
-
-1. [vercel.com](https://vercel.com) Dashboard'a girin.
-2. `hilalavize` projenize tıklayın.
-3. **Settings** -> **Domains** bölümüne geçin.
-4. Satın aldığınız alan adını (örn: `hilalavize.com.tr` veya `hilalavize.com`) yazıp **Add** butonuna basın.
-5. Vercel'in size vereceği `CNAME` / `A` kayıtlarını domain firmanızın (Metunic, İsimtescil, vb.) DNS paneline ekleyin.
-6. Siteniz anında kendi özel alan adınızla açılacaktır!
-
----
-
-## 13. HATA ÖNLEME, KOD GÜVENLİĞİ VE İPUÇLARI
-
-1. **Virgül ve Tırnak Kuralı:** TypeScript dosyalarında (`products.ts`, `company.ts` vb.) her özelliğin sonuna virgül (`,`) koymayı ve metinleri çift tırnak (`"..."`) içine yazmayı unutmayın.
-2. **Link (Slug) Kuralı:** `slug` alanlarında Türkçe karakter (ç, ğ, ı, ö, ş, ü), boşluk veya özel işaret kullanmayın (Örn: `modern-halka-led-avize`).
-3. **WhatsApp Numarası:** `whatsapp` alanlarına numarayı daima başında artı olmadan ve ülke koduyla yazın (Örn: `905053801350`).
-4. **Hata Kontrolü (Check Komutu):** Push yapmadan önce yazım veya derleme hatası olup olmadığını test etmek için şu komutu çalıştırabilirsiniz:
-   ```bash
-   npm run check
-   ```
-   *(Bu komut 0 hata verdiğinde siteniz %100 sorunsuz yayına hazırdır).*
-
----
-
-## 14. 🤖 TELEGRAM İLE ÜRÜN EKLEME & YÖNETİCİ BOTU KILAVUZU
-
-Sitenize **yalnızca yetkili yöneticilerin** Telegram üzerinden fotoğraf ve detay göndererek ürün eklemesini ve ürün sorgulamasını sağlayan akıllı Telegram Botu entegre edilmiştir.
+Sitenize, bilgisayara ihtiyaç duymadan **akıllı telefonunuzdan Telegram ile 10 saniyede ürün eklemenizi ve silmenizi** sağlayan güçlü bir yönetim botu entegre edilmiştir.
 
 ### 🔑 14.1. Güvenlik & Giriş Şifresi:
 * **Yönetici Giriş Şifresi:** `hilal1976`
-* Botu açtığınızda işlem yapabilmek için önce şu komutu yazmalısınız:
+* Botu kullanmak için tek yapmanız gereken şifreyi girmektir:
   👉 `/giris hilal1976`
+* Giriş yapıldığında sistem adınızı, soyadınızı ve kullanıcı adınızı (`@kullaniciadi`) otomatik tanır.
 * Güvenli çıkış için:
   👉 `/cikis`
 
 ---
 
-### 🏷️ 14.2. Standart Ürün ID Ön Ekleri (3 Haneli Monoton Artan):
-Sitedeki ve Telegram'daki tüm ürünler düzen için şu standart ID formatını kullanır:
-* `AVZ-` : Avizeler (Örn: `AVZ-001`, `AVZ-002`, `AVZ-006`...)
+### 🏷️ 14.2. Standart Ürün ID Formatı (3 Haneli Monoton Artan):
+Sitedeki ve Telegram'daki tüm ürünler düzen ve takip için 3 haneli standart formatı kullanır:
+* `AVZ-` : Avizeler (Örn: `AVZ-001`, `AVZ-002`, `AVZ-003`...)
 * `APL-` : Duvar Aplikleri (Örn: `APL-001`, `APL-002`...)
 * `SPT-` : Spot & Ray Spot Sistemleri (Örn: `SPT-001`...)
 * `ABJ-` : Abajur & Lambaderler (Örn: `ABJ-001`...)
@@ -379,26 +158,146 @@ Sitedeki ve Telegram'daki tüm ürünler düzen için şu standart ID formatın�
 
 ---
 
-### 📱 14.3. Telegram Bot Komutları:
+### 📱 14.3. Telegram Bot Komutları Tablosu:
 
-* 📖 **`/yardim`** : Tüm komutları ve kullanım detaylarını listeler.
-* 📸 **`/ekle`** : Adım adım konuşarak yeni ürün ekleme sihirbazını başlatır.
-* 🗑️ **`/sil [ID]`** : Ürünü siler; ID sırasını korur (Örn: `/sil AVZ-005`).
-* 🔍 **`/urun [ID veya İsim]`** : Ürünün fotoğrafını, teknik özelliklerini ve linkini getirir (Örn: `/urun AVZ-001`).
-* 📋 **`/liste`** : Sitedeki tüm ürünlerin ID listesini verir.
-* ❌ **`/iptal`** : Yarıda kalan işlemi tamamen temizler ve sıfırlar.
-* ⚡ **`/durum`** : Oturum ve site bağlantı durumunu gösterir.
-* 🔒 **`/cikis`** : Güvenli çıkış yapar ve botu kilitler.
+| Komut | Açıklama | Örnek Kullanım |
+| :--- | :--- | :--- |
+| **`/giris [şifre]`** | Yönetici oturumu açar | `/giris hilal1976` |
+| **`/ekle`** | 6 adımlı hızlı ürün ekleme sihirbazını başlatır | `/ekle` |
+| **`/sil [ID]`** | Ürünü siler, sayaç sırasını korur | `/sil AVZ-003` |
+| **`/urun [ID/İsim]`** | Ürün fotoğrafını ve özelliklerini getirir | `/urun AVZ-001` |
+| **`/liste`** | Yayındaki tüm ürünleri ve ID'lerini döker | `/liste` |
+| **`/iptal`** | Yarıda kalan işlemi tamamen temizler ve sıfırlar | `/iptal` |
+| **`/durum`** | Oturum ve sistem bağlantı durumunu gösterir | `/durum` |
+| **`/yardim`** | Tüm komut listesini ve ipuçlarını gösterir | `/yardim` |
+| **`/cikis`** | Oturumu kapatır ve botu kilitler | `/cikis` |
 
 ---
 
-### 📸 14.4. Hızlı Ürün Ekleme Sihirbazı (`/ekle`):
-Bota **/ekle** yazdığınızda sistem size sırayla sorar (Sadece 6 Hızlı Adım):
-1. 📸 **Ürün Fotoğrafı**
-2. 📂 **Ürün Türü** *(Otomatik sıradaki ID üretilir, örn: `AVZ-003`)*
-3. 🏷️ **Ürün Tam Adı**
-4. 🎨 **Tarzı** *(`1: Klasik`, `2: Modern`, `3: Minimalist`)*
-5. 📐 **Boyutları / Ölçüleri**
-6. 💡 **Aydınlatma / Duy Tipi**
+### 📸 14.4. Sadeleştirilmiş 6 Adımlı Hızlı Ürün Ekleme Sihirbazı (`/ekle`):
 
-6. adımı gönderdiğiniz anda ürün sitenize anında eklenir ve canlı web linkiyle teyit kartı oluşturulup yönetim kanalına duyurulur!
+Bota **/ekle** yazdığınızda bot sizinle konuşarak sırayla şu **6 temel bilgiyi** sorar:
+
+1. 📸 **1. Adım (Fotoğraf):** Ürünün fotoğrafını bota gönderin.
+2. 📂 **2. Adım (Kategori / Tür):** Listeden rakamı seçin (Örn: `1` = Avize).
+   * 🆔 *Bot bu adımda sıradaki benzersiz ID'yi (Örn: `AVZ-004`) otomatik üretir.*
+3. 🏷️ **3. Adım (Ürün Adı):** Ürünün adını yazın (Örn: `Venedik Gold Kristal Avize`).
+4. 🎨 **4. Adım (Tarzı):** `1` (Klasik), `2` (Modern) veya `3` (Minimalist) yazın.
+5. 📐 **5. Adım (Boyutlar):** Ölçüleri yazın (Örn: `Çap: 60 cm, Yükseklik: 80 cm`).
+6. 💡 **6. Adım (Aydınlatma / Duy):** Işık tipini yazın (Örn: `8x E14 LED Kandil Duy`).
+
+> [!NOTE]
+> **Hızlı Akış:** Gereksiz zaman kaybını önlemek için malzeme, uzun açıklama ve madde madde özellik girme zorunluluğu kaldırılmıştır. 6. adımı yazdığınız anda ürün sitenizde canlıya geçer!
+
+---
+
+### 📢 14.5. Özel Telegram Kanalı & Çoklu Yönetici Canlı Yayın Sistemi:
+* Ekip üyelerinizin ne yaptığını tek bir ekrandan görmesi için **"Hilal Ürün Yönetim Sistemi"** kanalınıza canlı yayın bağlanmıştır.
+* **Kanalı Bota Bağlama (Tek Seferlik):**
+  1. Botu kanalınıza **Yönetici (Admin)** olarak ekleyin.
+  2. Kanalın içine girip bir kez **/giris hilal1976** veya **/bagla** yazın.
+* **Sonuç:** Siz veya diğer yöneticiler özelden ürün eklediğinde veya sildiğinde, ürünün fotoğrafı, kimin eklediği ve web linki anında bu kanala otomatik canlı bildirim olarak düşer!
+
+---
+
+### 🗑️ 14.6. Ürün Silme ve ID Sırası Koruma Mantığı (`/sil`):
+* Bir ürünü silmek için: `/sil AVZ-005`
+* **Sayaç Koruması:** `AVZ-005` silinse bile sayaç geri sarmaz. Yeni bir avize eklediğinizde sistem **`AVZ-006`** numarasından devam eder. Böylece geçmiş kayıtlar ve siparişler asla karışmaz.
+
+---
+
+## 5. GÖRSEL VE FOTOĞRAF YÖNETİMİ
+
+* **Telegram ile Yüklenenler:** Telegram'dan gönderdiğiniz ürün fotoğrafları sistem tarafından otomatik işlenir ve sitenizde hemen görüntülenir.
+* **Manuel Dosya Yüklemeleri:**
+  * Ürün Görselleri: `/public/images/` klasörüne `800x800_urun_adi.jpg` formatında kaydedilir.
+  * Banner Görselleri: `1920x1080_hero_showroom.jpg` formatında olmalıdır.
+
+---
+
+## 6. ŞUBELER, YETKİLİLER VE İLETİŞİM BİLGİLERİ
+
+Telefon, adres veya yetkili değiştirmek için `/src/data/company.ts` dosyasını açıp ilgili satırı düzenlemeniz yeterlidir:
+
+```typescript
+// /src/data/company.ts
+export const COMPANY_DATA = {
+  name: "Hilal Elektrik Avize Aksesuar",
+  siteUrl: "https://hilalavize-five.vercel.app",
+  branches: [
+    {
+      id: "showroom",
+      name: "Hilal Avize & Aksesuar Showroom",
+      address: "Yirmiikigün Mah. Şehit Polis Ali Mülazımoğlu Cad. No:24/A Onikişubat / KAHRAMANMARAŞ",
+      // ...
+    }
+  ]
+};
+```
+
+---
+
+## 7. KATEGORİLER VE VİTRİN YÖNETİMİ (DİNAMİK SAYAÇLAR)
+
+Sitedeki tüm kategori sayfaları (`/kategori/[slug]`) ve koleksiyonlar vitrini (`/koleksiyonlar`) **canlı ve dinamik** çalışır.
+* Eklenen yeni ürünler ilgili kategoride anında belirir.
+* Sayfa üstündeki **"X Model Teşhirde / Listeleniyor"** sayaçları yayındaki ürün sayısına göre otomatik artar veya azalır.
+
+---
+
+## 8. HİZMETLER, SSS VE MÜŞTERİ YORUMLARI
+
+* **Hizmetler:** `/src/data/services.ts`
+* **Sıkça Sorulan Sorular:** `/src/data/faqs.ts`
+* **Müşteri Yorumları:** `/src/data/reviews.ts`
+
+> [!IMPORTANT]
+> **Terminoloji Kuralı:** Sitemizde ve hizmetlerimizde asla "ücretsiz montaj" ibaresi kullanılmaz; daima **"Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"** ifadesi yer alır.
+
+---
+
+## 9. YEREL SEO VE GOOGLE İNDEKSLEME
+
+Siteniz Google arama motorunda Kahramanmaraş aramalarında en üstte çıkacak şekilde yapılandırılmıştır:
+* `sitemap.xml` ve `robots.txt` otomatik üretilir.
+* Schema.org `LocalBusiness` ve `Product` zengin snippet etiketleri her ürün ve şube sayfasında mevcuttur.
+
+---
+
+## 10. BİLGİSAYARINIZDA TEST ETME (LOCALHOST)
+
+Terminalden sitenizi bilgisayarınızda çalıştırmak için:
+
+```bash
+cd /home/onur/hilalavize
+npm run dev
+```
+
+Tarayıcınızda `http://localhost:3000` adresini açarak canlı önizleyebilirsiniz.
+
+---
+
+## 11. DEĞİŞİKLİKLERİ VERCEL İLE CANLIYA ALMA (GIT & PUSH)
+
+Kodlarda bir değişiklik yaptığınızda sitenizi canlıya aktarmak için terminalden sırasıyla şu komutları girin:
+
+```bash
+cd /home/onur/hilalavize
+git add .
+git commit -m "feat: yeni guncellemeler yapildi"
+git push origin main
+```
+
+*(Push ettiğiniz anda Vercel otomatik olarak ~20 saniyede sitenizi derler ve tüm dünyaya yayınlar).*
+
+---
+
+## 12. HATA ÖNLEME VE KOD GÜVENLİĞİ
+
+Kodları canlıya göndermeden önce tam doğrulama yapmak için:
+
+```bash
+npm run check
+```
+
+Bu komut **ESLint + TypeScript tip kontrolü + Next.js build** adımlarını test eder ve 0 hata ile geçtiğinde projenizin kusursuz olduğunu garanti eder.
