@@ -13,6 +13,7 @@ import {
   Store,
   ChevronRight,
 } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
 export function Footer() {
   const showroom = COMPANY_DATA.branches[0];
@@ -82,7 +83,7 @@ export function Footer() {
           <p className="text-xs text-slate-400 leading-relaxed">
             Kahramanmaraş Onikişubat&apos;ta 2 uzman şubemizle hizmetinizdeyiz. Klasik saray tipi kristal avizelerden modern spor sarkıtlara, dekoratif mobilyalardan tam donanımlı elektrik malzemelerine ve montajına kadar güvenin adresi.
           </p>
-          <div className="pt-2 flex flex-col gap-1.5 text-xs text-slate-300">
+          <div className="pt-2 flex flex-col gap-2 text-xs text-slate-300">
             <span className="flex items-center gap-2 text-amber-400 font-semibold">
               <Clock className="w-4 h-4" />
               Pzt - Cmt: 09:00 - 17:00 (Pazar Kapalı)
@@ -90,6 +91,17 @@ export function Footer() {
             <span className="text-[11px] text-slate-500">
               *Pazar günleri özel randevu ile showroomumuz açılabilmektedir.
             </span>
+            <div className="pt-1">
+              <a
+                href={COMPANY_DATA.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs shadow-lg shadow-pink-500/20 transition-all hover:scale-105"
+              >
+                <InstagramIcon className="w-4 h-4" />
+                <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>
+              </a>
+            </div>
           </div>
         </div>
 

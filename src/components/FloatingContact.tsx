@@ -9,6 +9,7 @@ import {
   Zap,
   X,
 } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
 export function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false);
@@ -89,6 +90,17 @@ export function FloatingContact() {
                 </a>
               </div>
             </div>
+
+            {/* Instagram Follow */}
+            <a
+              href={COMPANY_DATA.socials.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-2.5 px-3 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-pink-500/20 transition-all hover:scale-[1.02]"
+            >
+              <InstagramIcon className="w-4 h-4" />
+              <span>Instagram&apos;da Takip Edin ({COMPANY_DATA.socials.instagramHandle})</span>
+            </a>
           </div>
 
           <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">

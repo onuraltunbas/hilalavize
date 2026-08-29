@@ -15,6 +15,7 @@ import {
   Zap,
   Store,
 } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -282,7 +283,17 @@ export function Navbar() {
               </Link>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 space-y-2">
+              <a
+                href={COMPANY_DATA.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 text-white font-bold py-2.5 rounded-xl text-center text-xs flex items-center justify-center gap-2 shadow-lg shadow-pink-500/20"
+              >
+                <InstagramIcon className="w-4 h-4" />
+                <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>
+              </a>
+
               <Link
                 href="/randevu"
                 onClick={handleLinkClick}
