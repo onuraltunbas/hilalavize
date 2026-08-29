@@ -73,26 +73,34 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
           <span className="text-amber-400 font-semibold">{category.name}</span>
         </nav>
 
-        {/* Category Hero Banner */}
-        <div className="relative rounded-3xl overflow-hidden bg-[#0F172A] border border-amber-500/30 p-8 sm:p-12 mb-12 shadow-2xl">
-          <div className="relative z-10 max-w-3xl space-y-4">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/30">
-              <Sparkles className="w-3.5 h-3.5" />
-              Kahramanmaraş Showroom Koleksiyonu
-            </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
+        {/* Compact Category Hero Banner */}
+        <div className="relative rounded-2xl overflow-hidden bg-[#0F172A] border border-amber-500/25 p-5 sm:p-6 mb-8 shadow-lg">
+          <div className="relative z-10 space-y-2.5">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/30">
+                <Sparkles className="w-3 h-3" />
+                Showroom Koleksiyonu
+              </span>
+              <span className="text-slate-600 text-xs">•</span>
+              <span className="text-[11px] text-amber-400 font-medium">
+                {category.itemCount}+ Model Teşhirde
+              </span>
+            </div>
+
+            <h1 className="text-xl sm:text-2xl font-extrabold text-white">
               {category.name}
             </h1>
-            <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
               {category.description}
             </p>
 
-            {/* Subcategories Tags */}
-            <div className="flex flex-wrap gap-2 pt-2">
+            {/* Compact Subcategories Tags */}
+            <div className="flex flex-wrap gap-1.5 pt-1">
               {category.subcategories.map((sub, i) => (
                 <span
                   key={i}
-                  className="text-xs bg-[#132238] text-amber-300 border border-amber-500/20 px-3 py-1 rounded-xl"
+                  className="text-[11px] bg-[#132238] text-amber-300/90 border border-amber-500/20 px-2.5 py-0.5 rounded-lg"
                 >
                   {sub}
                 </span>
