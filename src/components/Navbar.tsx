@@ -11,7 +11,6 @@ import {
   Menu,
   X,
   ChevronDown,
-  Sparkles,
   Zap,
   Store,
 } from "lucide-react";

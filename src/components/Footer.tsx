@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY_DATA } from "@/data/company";
 import { CATEGORIES } from "@/data/categories";
-import { LOCATIONS } from "@/data/locations";
 import {
   MapPin,
   Clock,

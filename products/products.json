@@ -1,0 +1,122 @@
+[
+  {
+    "id": "AVZ-001",
+    "name": "Padişah 24 Kollu Asfour Kristal Saray Avizesi",
+    "category": "avizeler",
+    "style": "İhtişamlı & Klasik",
+    "badge": "Özel Tasarım Koleksiyon",
+    "dimensions": "Çap: 120 cm, Yükseklik: 140 cm (Ayarlanabilir Zincir)",
+    "lightingType": "24x E14 Duy (Dimmerlenebilir Sıcak Beyaz LED Uyumlu)",
+    "material": "Döküm Pirinç & K9 Saf Kristal Taşlar",
+    "shortDescription": "Ağır döküm pirinç gövde ve Asfour berrak kristal prizmalarla donatılmış 24 kollu saray zarafeti.",
+    "branch": "showroom"
+  },
+  {
+    "id": "AVZ-002",
+    "name": "Solaris Üçlü Geometrik Halka LED Sarkıt Avize",
+    "category": "avizeler",
+    "style": "Modern & Spor",
+    "badge": "En Çok Satan Modern Seri",
+    "dimensions": "Halka Çapları: 80 cm + 60 cm + 40 cm, Yükseklik: Max 150 cm",
+    "lightingType": "Dahili 95W 3 Renk Kademeli (3000K-4000K-6500K) LED Çip",
+    "material": "Eloksallı Alüminyum & Silikon Opal Difüzör",
+    "shortDescription": "Fırçalanmış marigold altın gövdeli, 3 halkalı mimari modern LED avize.",
+    "branch": "showroom"
+  },
+  {
+    "id": "APL-001",
+    "name": "Aurora Çift Yönlü Yivli Kristal Duvar Apliği",
+    "category": "aplikler",
+    "style": "İhtişamlı & Klasik",
+    "badge": "Popüler Ürün",
+    "dimensions": "Genişlik: 12 cm, Yükseklik: 48 cm, Derinlik: 10 cm",
+    "lightingType": "2x G9 LED Duy (3000K Sıcak Amber Işık Dahil)",
+    "material": "Fırçalanmış Masif Pirinç & Yivli Optik Cam",
+    "shortDescription": "Fırçalanmış pirinç gövdeli, boru yivli kristal camlı lüks duvar apliği.",
+    "branch": "showroom"
+  },
+  {
+    "id": "SPT-001",
+    "name": "Invisa Manyetik Ray Spot & Lineer Tavan Sistemi",
+    "category": "spot-ve-ray-spot",
+    "style": "Sade & Minimalist",
+    "badge": "Mimarların Tercihi",
+    "dimensions": "Ray Uzunluğu: 1m, 2m, 3m (Birbirine Eklenebilir Modüler)",
+    "lightingType": "24V / 48V Güvenli Düşük Gerilim Osram LED Modüller",
+    "material": "Ekstrüde Alüminyum & Manyetik Bakır İletken Ray",
+    "shortDescription": "Gömme ve sıva üstü manyetik ray profili, tak-çıkar spot modülleri.",
+    "branch": "electrical"
+  },
+  {
+    "id": "AYN-001",
+    "name": "Luna Gold Çerçeveli Akıllı Dokunmatik LED Ayna",
+    "category": "dekoratif-aynalar",
+    "style": "Modern & Spor",
+    "badge": "Akıllı Teknoloji",
+    "dimensions": "Çap: 80 cm, Kalınlık: 3.5 cm",
+    "lightingType": "CRI>90 Yüksek Renk Doğruluğu Sağlayan IP44 Su Geçirmez LED",
+    "material": "Flotal Ekolojik Ayna & Fırçalanmış Alüminyum Gövde",
+    "shortDescription": "Halo ambiyans arka aydınlatmalı, dijital saatli ve buğu önleyicili banyo & salon aynası.",
+    "branch": "showroom"
+  },
+  {
+    "id": "DST-001",
+    "name": "Artisan Çift Çemberli Mermer Kadranlı Lüks Duvar Saati",
+    "category": "duvar-ve-masa-saatleri",
+    "style": "Modern & Spor",
+    "badge": "Tasarım Ödüllü",
+    "dimensions": "Çap: 70 cm, Derinlik: 5 cm",
+    "lightingType": "Mekanik Saat (Pil ile Çalışır)",
+    "material": "Doğal Calacatta Mermer & Elektrostatik Fırın Boyalı Metal",
+    "shortDescription": "Hakiki beyaz Calacatta mermer göbekli ve mat siyah/gold metal çift çemberli salon saati.",
+    "branch": "showroom"
+  },
+  {
+    "id": "SUS-001",
+    "name": "Murano Amber & Altın Varaklı El Üfleme Cam Vazo Seti",
+    "category": "cam-sus-esyalari",
+    "style": "İhtişamlı & Klasik",
+    "badge": "El İşçiliği Özel Seri",
+    "dimensions": "Büyük Vazo: 38 cm, Orta Vazo: 28 cm, Kase: 22 cm Çap",
+    "lightingType": "Dekoratif Obje",
+    "material": "El Üfleme Kristal Cam & 24K Altın Varak Taneleri",
+    "shortDescription": "Geleneksel üfleme tekniğiyle üretilmiş, 24K altın tozlu amber kristal vazo ve kase seti.",
+    "branch": "showroom"
+  },
+  {
+    "id": "ANH-001",
+    "name": "Prestige Temperli Siyah Cam & Gold Çerçeveli Anahtar Priz Serisi",
+    "category": "anahtar-ve-priz-serileri",
+    "style": "Modern & Spor",
+    "badge": "Lüks Elektrik Serisi",
+    "dimensions": "Standart Sıva Altı Kasa Uyumlu (Modüler 1'li, 2'li, 3'lü, 4'lü Kombinasyon)",
+    "lightingType": "Gece Konumunu Gösteren Yumuşak LED Işıklı Butonlar",
+    "material": "4mm Temperli Kristal Cam & Masif Alüminyum Çerçeve",
+    "shortDescription": "Çizilmez temperli kristal cam panel, şampanya gold fırçalanmış dış çerçeve.",
+    "branch": "electrical"
+  },
+  {
+    "id": "KOL-001",
+    "name": "Majestic Gold Ayaklı Gece Mavisi Kadife Tasarım Berjer",
+    "category": "dekoratif-koltuk-ve-berjerler",
+    "style": "İhtişamlı & Klasik",
+    "badge": "Showroom Özel Ürünü",
+    "dimensions": "Genişlik: 82 cm, Derinlik: 85 cm, Yükseklik: 95 cm",
+    "lightingType": "Dekoratif Mobilya",
+    "material": "İthal Soft Kadife & Fırınlanmış Gürgen İskelet & Titanyum Gold Metal Ayak",
+    "shortDescription": "Su itici birinci sınıf lüks kadife kumaş, ergonomik sırt ve titanyum gold paslanmaz ayaklar.",
+    "branch": "showroom"
+  },
+  {
+    "id": "SEH-001",
+    "name": "Imperia İtalyan Calacatta Mermer İkili İç İçe Orta Sehpa",
+    "category": "dekoratif-sehpalar",
+    "style": "Modern & Spor",
+    "badge": "Hakiki Doğal Mermer",
+    "dimensions": "Büyük: Çap 85 cm - Yükseklik 45 cm, Küçük: Çap 65 cm - Yükseklik 38 cm",
+    "lightingType": "Dekoratif Mobilya",
+    "material": "Doğal Calacatta Beyaz Mermer & Paslanmaz Bronz Çelik",
+    "shortDescription": "Özel koruma cilalı hakiki mermer tabla ve fırçalanmış marigold bronz çember ayaklar.",
+    "branch": "showroom"
+  }
+]

@@ -18,8 +18,11 @@
     "node": ">=24"
   },
   "scripts": {
+    "predev": "node scripts/sync-products.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/sync-products.mjs",
     "build": "next build",
+    "sync": "node scripts/sync-products.mjs",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",

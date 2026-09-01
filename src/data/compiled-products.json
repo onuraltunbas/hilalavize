@@ -1,28 +1,4 @@
-// BU DOSYA OTOMATİK OLUŞTURULMAKTADIR.
-// Ürün eklemek veya düzenlemek için 'products/products.json' dosyasını ve 'products/photo/' klasörünü kullanınız.
-
-export interface Product {
-  id: string;
-  slug: string;
-  name: string;
-  categorySlug: string;
-  categoryName: string;
-  style: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist";
-  badge?: string;
-  description: string;
-  shortDescription: string;
-  material: string;
-  dimensions: string;
-  lightingType: string;
-  branch: "showroom" | "electrical";
-  image: string;
-  images: string[];
-  features: string[];
-  seoTitle: string;
-  seoDescription: string;
-}
-
-export const PRODUCTS: Product[] = [
+[
   {
     "id": "AVZ-001",
     "slug": "padisah-24-kollu-asfour-kristal-saray-avizesi",
@@ -303,4 +279,4 @@ export const PRODUCTS: Product[] = [
     "seoTitle": "Imperia İtalyan Calacatta Mermer İkili İç İçe Orta Sehpa Kahramanmaraş | Hilal Avize",
     "seoDescription": "Imperia İtalyan Calacatta Mermer İkili İç İçe Orta Sehpa modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   }
-];
+]

@@ -129,7 +129,46 @@ Siteniz, e-ticaret sepet satışı yerine; **mağaza showroom ziyaretlerini art�
 
 ---
 
-## 4. 🤖 TELEGRAM İLE HIZLI ÜRÜN EKLEME & YÖNETİCİ BOTU KILAVUZU
+## 4. 📂 PRODUCTS KLASÖRÜ İLE YENİ ÜRÜN EKLEME (GITHUB & VERCEL)
+
+Sitenize yeni ürün eklemek için projenin ana dizininde bulunan **`products/`** klasörünü kullanabilirsiniz.
+
+```text
+/home/onur/hilalavize/
+├── products/
+│   ├── photo/            🖼️ [ÜRÜN FOTOĞRAFLARI] ID ile adlandırılmış görseller (Örn: AVZ-001.jpg, APL-001.png)
+│   ├── products.json     📄 [ÜRÜN BİLGİLERİ] Tüm ürünlerin listesi ve teknik özellikleri
+│   └── README.md         📖 Hızlı kullanım kılavuzu ve hazır şablonlar
+```
+
+### ⚡ 3 Adımda Kolay Ürün Ekleme:
+
+1. **Fotoğrafı Ekleyin:** Ürünün fotoğrafını `products/photo/` klasörüne atın ve adını ürünün ID'si yapın (Örn: `AVZ-003.jpg`).
+2. **Bilgileri Girin:** `products/products.json` dosyasına ürünü ekleyin:
+   ```json
+   {
+     "id": "AVZ-003",
+     "name": "Kapadokya Bal Kristal Sarkıt Avize",
+     "category": "avizeler",
+     "style": "İhtişamlı & Klasik",
+     "dimensions": "Çap: 80 cm, Yükseklik: 110 cm",
+     "lightingType": "12x E14 LED Duy",
+     "material": "Döküm Pirinç & Bal Rengi Kristal Taşlar",
+     "badge": "Yeni Sezon",
+     "shortDescription": "Özel bal kristal prizmalar ve döküm pirinç gövdesiyle lüks avize."
+   }
+   ```
+3. **GitHub'a Pushlayın:**
+   ```bash
+   git add .
+   git commit -m "feat: yeni urun eklendi"
+   git push origin main
+   ```
+   *(Vercel ~20 saniyede otomatik derler ve ürün sitenizde anında yayına girer!)*
+
+---
+
+## 5. 🤖 TELEGRAM İLE HIZLI ÜRÜN EKLEME & YÖNETİCİ BOTU KILAVUZU
 
 Sitenize, bilgisayara ihtiyaç duymadan **akıllı telefonunuzdan Telegram ile 10 saniyede ürün eklemenizi ve silmenizi** sağlayan güçlü bir yönetim botu entegre edilmiştir.
 
