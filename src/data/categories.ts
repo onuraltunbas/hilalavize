@@ -77,6 +77,26 @@ export const CATEGORIES: Category[] = [
     itemCount: 20,
   },
   {
+    slug: "tekli-avizeler",
+    name: "Tekli Avizeler & Sarkıtlar",
+    shortName: "Tekli Avizeler",
+    tagline: "Ada Tezgahı, Yemek Masası ve Köşe Alanlar İçin Şık Tekli Sarkıtlar",
+    description:
+      "Mutfak adaları, yemek masaları, yatak başları ve antreler için özel tasarlanmış E27 duy uyumlu lüks tekli sarkıt avizeler.",
+    seoTitle: "Tekli Avize ve Sarkıt Modelleri Kahramanmaraş | Hilal Avize",
+    seoDescription:
+      "Mutfak adası ve yemek masası tekli sarkıt modelleri, cam ve metal tekli avizeler Kahramanmaraş Hilal Avize Showroom'unda.",
+    image: "/images/800x800_modern_led_halka_avize.jpg",
+    featured: true,
+    subcategories: [
+      "Modern Tekli Sarkıtlar",
+      "Cam Fanuslu Modeller",
+      "Metal Sarkıtlar",
+      "Ada Üstü Aydınlatma",
+    ],
+    itemCount: 6,
+  },
+  {
     slug: "aplik-ve-spotlar",
     name: "Aplik & Spot Aydınlatma",
     shortName: "Aplik & Spot",

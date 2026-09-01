@@ -33,6 +33,13 @@ const CATEGORY_CONFIGS = {
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
   },
+  "tekli-avizeler": {
+    slug: "tekli-avizeler",
+    name: "Tekli Avizeler & Sarkıtlar",
+    prefix: "TKL",
+    defaultBranch: "showroom",
+    defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
+  },
   "aplik-ve-spotlar": {
     slug: "aplik-ve-spotlar",
     name: "Aplik & Spot Aydınlatma",

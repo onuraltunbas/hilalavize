@@ -122,6 +122,156 @@ export const PRODUCTS: Product[] = [
     "seoDescription": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
+    "id": "TKL-001",
+    "slug": "dekoratif-tekli-sarkit-avize-model-1",
+    "name": "Dekoratif Tekli Sarkıt Avize - Model 1",
+    "categorySlug": "tekli-avizeler",
+    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "badge": "Tekli Sarkıt",
+    "description": "Dekoratif Tekli Sarkıt Avize - Model 1, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 1.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/tekli-avizeler/photo/10.jpeg",
+    "images": [
+      "/products/tekli-avizeler/photo/10.jpeg"
+    ],
+    "features": [
+      "E27 Standart Duy (LED Ampul Uyumlu)",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 1 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 1 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TKL-002",
+    "slug": "dekoratif-tekli-sarkit-avize-model-2",
+    "name": "Dekoratif Tekli Sarkıt Avize - Model 2",
+    "categorySlug": "tekli-avizeler",
+    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "badge": "Tekli Sarkıt",
+    "description": "Dekoratif Tekli Sarkıt Avize - Model 2, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 2.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/tekli-avizeler/photo/20.jpeg",
+    "images": [
+      "/products/tekli-avizeler/photo/20.jpeg"
+    ],
+    "features": [
+      "E27 Standart Duy (LED Ampul Uyumlu)",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 2 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TKL-003",
+    "slug": "dekoratif-tekli-sarkit-avize-model-3",
+    "name": "Dekoratif Tekli Sarkıt Avize - Model 3",
+    "categorySlug": "tekli-avizeler",
+    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "badge": "Tekli Sarkıt",
+    "description": "Dekoratif Tekli Sarkıt Avize - Model 3, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 3.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/tekli-avizeler/photo/30.jpeg",
+    "images": [
+      "/products/tekli-avizeler/photo/30.jpeg"
+    ],
+    "features": [
+      "E27 Standart Duy (LED Ampul Uyumlu)",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 3 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 3 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TKL-004",
+    "slug": "dekoratif-tekli-sarkit-avize-model-4",
+    "name": "Dekoratif Tekli Sarkıt Avize - Model 4",
+    "categorySlug": "tekli-avizeler",
+    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "badge": "Tekli Sarkıt",
+    "description": "Dekoratif Tekli Sarkıt Avize - Model 4, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 4.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/tekli-avizeler/photo/40.jpeg",
+    "images": [
+      "/products/tekli-avizeler/photo/40.jpeg"
+    ],
+    "features": [
+      "E27 Standart Duy (LED Ampul Uyumlu)",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 4 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 4 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TKL-005",
+    "slug": "dekoratif-tekli-sarkit-avize-model-5",
+    "name": "Dekoratif Tekli Sarkıt Avize - Model 5",
+    "categorySlug": "tekli-avizeler",
+    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "badge": "Tekli Sarkıt",
+    "description": "Dekoratif Tekli Sarkıt Avize - Model 5, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 5.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/tekli-avizeler/photo/50.jpeg",
+    "images": [
+      "/products/tekli-avizeler/photo/50.jpeg"
+    ],
+    "features": [
+      "E27 Standart Duy (LED Ampul Uyumlu)",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 5 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 5 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TKL-006",
+    "slug": "dekoratif-tekli-sarkit-avize-model-6",
+    "name": "Dekoratif Tekli Sarkıt Avize - Model 6",
+    "categorySlug": "tekli-avizeler",
+    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "badge": "Tekli Sarkıt",
+    "description": "Dekoratif Tekli Sarkıt Avize - Model 6, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 6.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/tekli-avizeler/photo/60.jpeg",
+    "images": [
+      "/products/tekli-avizeler/photo/60.jpeg"
+    ],
+    "features": [
+      "E27 Standart Duy (LED Ampul Uyumlu)",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 6 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 6 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
     "id": "AVZ-001",
     "slug": "maxira-modern-led-sarkit-avize",
     "name": "Maxira Modern LED Sarkıt Avize",
