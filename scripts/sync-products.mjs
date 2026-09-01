@@ -19,6 +19,20 @@ const CATEGORY_CONFIGS = {
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
   },
+  theresa: {
+    slug: "theresa",
+    name: "Maria Theresa Avize Koleksiyonu",
+    prefix: "MTR",
+    defaultBranch: "showroom",
+    defaultImage: "/images/theresa_kapak.jpeg",
+  },
+  bacarat: {
+    slug: "bacarat",
+    name: "Baccarat Kristal Avize Koleksiyonu",
+    prefix: "BCR",
+    defaultBranch: "showroom",
+    defaultImage: "/images/bacarat_kapak.jpeg",
+  },
   "ledli-grup": {
     slug: "ledli-grup",
     name: "LED'li Avizeler",

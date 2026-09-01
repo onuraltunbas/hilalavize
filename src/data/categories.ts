@@ -7,6 +7,7 @@ export interface Category {
   seoTitle: string;
   seoDescription: string;
   image: string;
+  coverImage?: string;
   featured: boolean;
   styles?: string[];
   subcategories: string[];
@@ -20,10 +21,10 @@ export const CATEGORIES: Category[] = [
     shortName: "Klasik",
     tagline: "Kollu, Taşlı, Maria Theresa ve Baccarat Saray Serileri",
     description:
-      "Tamamı %100 yerli üretim saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa ve Baccarat zarafeti.",
+      "Saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa ve Baccarat zarafeti.",
     seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Kollu & Taşlı Kristal Avize - Hilal Avize",
     seoDescription:
-      "Kahramanmaraş'ta %100 yerli üretim saray tipi klasik avizeler, Maria Theresa ve Baccarat taşlı avize modelleri Hilal Avize Showroom'unda.",
+      "Kahramanmaraş'ta saray tipi klasik avizeler, Maria Theresa ve Baccarat taşlı avize modelleri Hilal Avize Showroom'unda.",
     image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
     featured: true,
     subcategories: [
@@ -35,12 +36,52 @@ export const CATEGORIES: Category[] = [
     itemCount: 24,
   },
   {
+    slug: "theresa",
+    name: "Maria Theresa Avize Koleksiyonu",
+    shortName: "Maria Theresa",
+    tagline: "Cam Giydirmeli Kollar, Altın Rozetler ve Avusturya Saray Zarafeti",
+    description:
+      "Tarihin en zarif saray tasarımı olan Maria Theresa serisi; cam giydirme kolları, altın rozetleri ve berrak kristal sarkıt prizmalarıyla mekanlarınıza asalet katar.",
+    seoTitle: "Maria Theresa Avize Modelleri Kahramanmaraş | Hilal Avize",
+    seoDescription:
+      "Lüks Maria Theresa kristal kollu saray avizeleri Kahramanmaraş Hilal Avize Showroom'unda.",
+    image: "/images/theresa_kapak.jpeg",
+    coverImage: "/images/theresa_kapak.jpeg",
+    featured: true,
+    subcategories: [
+      "Saray Tipi Maria Theresa",
+      "Altın Rozetli Modeller",
+      "Kollu Kristal Seriler",
+    ],
+    itemCount: 18,
+  },
+  {
+    slug: "bacarat",
+    name: "Baccarat Kristal Avize Koleksiyonu",
+    shortName: "Baccarat",
+    tagline: "Ağır Döküm Prizmatik Kristal ve Fransız Lüks Aydınlatma Zarafeti",
+    description:
+      "Dünyaca ünlü Fransız kristal işçiliği stilini yansıtan Baccarat serisi; kalın kesme kristal kolları, yakut detayları ve kusursuz ışık kırılmalarıyla büyüleyici bir zarafet sunar.",
+    seoTitle: "Baccarat Kristal Avize Modelleri Kahramanmaraş | Hilal Avize",
+    seoDescription:
+      "Görkemli Baccarat kristal avize koleksiyonu Kahramanmaraş Hilal Avize Showroom'unda sizleri bekliyor.",
+    image: "/images/bacarat_kapak.jpeg",
+    coverImage: "/images/bacarat_kapak.jpeg",
+    featured: true,
+    subcategories: [
+      "Baccarat Kristal Kollu",
+      "Yakut & Şeffaf Kristal",
+      "Lüks Lobi & Salon Avizeleri",
+    ],
+    itemCount: 16,
+  },
+  {
     slug: "ledli-grup",
     name: "LED'li Avizeler",
     shortName: "LED'li Grup",
     tagline: "Modern Geometrik LED Sarkıtlar ve Halka Avize Sistemleri",
     description:
-      "Tamamı %100 yerli üretim modern mimari LED avizeler. 3 renk kademeli ışık modları, estetik halkalar ve enerji tasarruflu yüksek ışık kalitesi.",
+      "Modern mimari LED avizeler. 3 renk kademeli ışık modları, estetik halkalar ve enerji tasarruflu yüksek ışık kalitesi.",
     seoTitle: "Modern LED Avize Modelleri Kahramanmaraş | LED Sarkıtlar - Hilal Avize",
     seoDescription:
       "Modern halka LED avizeler, 3 renk kademeli sarkıt modelleri ve mimari aydınlatma çeşitleri Kahramanmaraş Hilal Avize'de.",
@@ -60,7 +101,7 @@ export const CATEGORIES: Category[] = [
     shortName: "Metal Grup",
     tagline: "Fırçalanmış Gold, Mat Siyah ve Antik Eskitme Metal Gövdeler",
     description:
-      "Tamamı %100 yerli üretim elektrostatik fırın boyalı metal avizeler. Modern, endüstriyel ve loft mekanlar için sağlam ve estetik tasarımlar.",
+      "Elektrostatik fırın boyalı metal avizeler. Modern, endüstriyel ve loft mekanlar için sağlam ve estetik tasarımlar.",
     seoTitle: "Metal Avize Modelleri Kahramanmaraş | Gold & Siyah Metal Avize - Hilal Avize",
     seoDescription:
       "Fırçalanmış gold ve mat siyah metal avize çeşitleri, modern ve endüstriyel aydınlatmalar Kahramanmaraş Hilal Avize Showroom'unda.",
@@ -80,7 +121,7 @@ export const CATEGORIES: Category[] = [
     shortName: "Galeri Boşluğu",
     tagline: "Yüksek Tavanlı Villalar, Dubleks Merdiven Boşlukları ve Otel Lobileri",
     description:
-      "Tamamı %100 yerli üretim, yüksek tavanlı dubleks villalar, sarmal merdiven boşlukları ve prestijli lobiler için özel ölçüde üretilen anıtsal dev avizeler.",
+      "Yüksek tavanlı dubleks villalar, sarmal merdiven boşlukları ve prestijli lobiler için özel ölçüde üretilen anıtsal dev avizeler.",
     seoTitle: "Galeri Boşluğu ve Merdiven Avizeleri Kahramanmaraş | Hilal Avize",
     seoDescription:
       "Dubleks villalar ve yüksek tavanlı mekanlar için özel üretim sarmal galeri boşluğu avizeleri Hilal Avize Kahramanmaraş'ta.",
@@ -159,18 +200,17 @@ export const CATEGORIES: Category[] = [
     slug: "kategorisiz",
     name: "Tüm Avizeler (Yeni Eklenenler)",
     shortName: "Tüm Avizeler",
-    tagline: "Hilal Avize Showroom %100 Yerli Üretim Tüm Modeller",
+    tagline: "Hilal Avize Showroom Tüm Modeller",
     description:
-      "Kahramanmaraş showroomumuzda sergilenen %100 yerli üretim avize modellerimiz. Yeni eklenen ve sınıflandırılmayı bekleyen tüm seçkin tasarımlar.",
-    seoTitle: "Tüm Avize Koleksiyonu Kahramanmaraş | Yerli Üretim Avizeler - Hilal Avize",
+      "Kahramanmaraş showroomumuzda sergilenen avize modellerimiz. Yeni eklenen ve sınıflandırılmayı bekleyen tüm seçkin tasarımlar.",
+    seoTitle: "Tüm Avize Koleksiyonu Kahramanmaraş | Hilal Avize",
     seoDescription:
-      "Hilal Avize Kahramanmaraş %100 yerli üretim tüm avize modelleri tek vitrinde. Canlı showroom modelleri ve teknik detaylar.",
+      "Hilal Avize Kahramanmaraş tüm avize modelleri tek vitrinde. Canlı showroom modelleri ve teknik detaylar.",
     image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
     featured: true,
     subcategories: [
       "Yeni Eklenen Modeller",
       "Showroom Koleksiyonu",
-      "%100 Yerli Üretim Avizeler",
     ],
     itemCount: 53,
   },

@@ -11,7 +11,13 @@ products/
 ├── kategorisiz/          📦 YENİ EKLENEN TÜM AVİZELER (Ana Havuz)
 │   ├── photo/            🖼️ 10.jpg, 11.jpg, 20.jpg, 30.jpg...
 │   └── urunler.json      📄 Modellerin listesi (no: 1, no: 2...)
-├── klasik/               👑 1. Klasik (Kollu, Taşlı, Maria Theresa, Baccarat)
+├── klasik/               👑 1. Klasik (Kollu & Taşlı Saray Modelleri)
+│   ├── photo/
+│   └── urunler.json
+├── theresa/              ✨ Maria Theresa Koleksiyonu
+│   ├── photo/
+│   └── urunler.json
+├── bacarat/              💎 Baccarat Kristal Koleksiyonu
 │   ├── photo/
 │   └── urunler.json
 ├── ledli-grup/           ⚡ 2. LED'li Grup
@@ -34,7 +40,7 @@ products/
     └── urunler.json
 ```
 
-> **📌 Önemli Not:** Tüm avizelerimiz **%100 Yerli Üretimdir**. Yeni bir görsel ekleyeceğinizde aksini belirtmediğiniz sürece fotoğrafları ve bilgileri `products/kategorisiz/` klasörüne ekleyebilirsiniz!
+> **📌 Bilgi:** Yeni bir görsel ekleyeceğinizde aksini belirtmediğiniz sürece fotoğrafları ve bilgileri `products/kategorisiz/` klasörüne ekleyebilirsiniz!
 
 ---
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { CATEGORIES } from "@/data/categories";
 import { getAllProductsAsync } from "@/lib/products-store";
@@ -77,34 +78,49 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
           <span className="text-amber-400 font-semibold">{category.name}</span>
         </nav>
 
-        {/* Compact Category Hero Banner */}
-        <div className="relative rounded-2xl overflow-hidden bg-[#0F172A] border border-amber-500/25 p-5 sm:p-6 mb-8 shadow-lg">
-          <div className="relative z-10 space-y-2.5">
+        {/* Category Hero Banner with Background Image */}
+        <div className="relative rounded-3xl overflow-hidden bg-[#0F172A] border border-amber-500/25 p-6 sm:p-10 mb-10 shadow-2xl min-h-[200px] flex flex-col justify-center">
+          {/* Background Image */}
+          {(category.coverImage || category.image) && (
+            <div className="absolute inset-0 z-0">
+              <Image
+                src={category.coverImage || category.image}
+                alt={category.name}
+                fill
+                className="object-cover object-center opacity-30 filter brightness-75 scale-105"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#080D1A] via-[#080D1A]/90 to-[#080D1A]/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080D1A] via-transparent to-transparent" />
+            </div>
+          )}
+
+          <div className="relative z-10 space-y-3">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/30">
-                <Sparkles className="w-3 h-3" />
-                Showroom Koleksiyonu
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40 backdrop-blur-md">
+                <Sparkles className="w-3.5 h-3.5" />
+                Showroom Özel Koleksiyonu
               </span>
-              <span className="text-slate-600 text-xs">•</span>
-              <span className="text-[11px] text-amber-400 font-medium">
+              <span className="text-slate-500 text-xs">•</span>
+              <span className="text-xs text-amber-400 font-semibold">
                 {categoryProducts.length} Model Teşhirde
               </span>
             </div>
 
-            <h1 className="text-xl sm:text-2xl font-extrabold text-white">
+            <h1 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight drop-shadow-md">
               {category.name}
             </h1>
 
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+            <p className="text-sm sm:text-base text-slate-200 leading-relaxed max-w-3xl drop-shadow">
               {category.description}
             </p>
 
-            {/* Compact Subcategories Tags */}
-            <div className="flex flex-wrap gap-1.5 pt-1">
+            {/* Subcategories Tags */}
+            <div className="flex flex-wrap gap-2 pt-2">
               {category.subcategories.map((sub, i) => (
                 <span
                   key={i}
-                  className="text-[11px] bg-[#132238] text-amber-300/90 border border-amber-500/20 px-2.5 py-0.5 rounded-lg"
+                  className="text-xs bg-[#132238]/90 backdrop-blur-md text-amber-300 border border-amber-500/30 px-3 py-1 rounded-xl shadow-sm"
                 >
                   {sub}
                 </span>
