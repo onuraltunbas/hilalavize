@@ -11,14 +11,8 @@ products/
 ├── kategorisiz/          📦 YENİ EKLENEN TÜM AVİZELER (Ana Havuz)
 │   ├── photo/            🖼️ 10.jpg, 11.jpg, 20.jpg, 30.jpg...
 │   └── urunler.json      📄 Modellerin listesi (no: 1, no: 2...)
-├── klasik/               👑 1. Klasik (Kollu & Taşlı Saray Modelleri)
-│   ├── photo/
-│   └── urunler.json
-├── theresa/              ✨ Maria Theresa Koleksiyonu
-│   ├── photo/
-│   └── urunler.json
-├── bacarat/              💎 Baccarat Kristal Koleksiyonu
-│   ├── photo/
+├── klasik/               👑 1. Klasik (Maria Theresa, Baccarat, Kollu & Taşlı)
+│   ├── photo/            🖼️ 10.jpeg (580), 20.jpeg (590), 30.jpeg (600), 40.jpeg (610)...
 │   └── urunler.json
 ├── ledli-grup/           ⚡ 2. LED'li Grup
 │   ├── photo/
@@ -26,16 +20,13 @@ products/
 ├── metal-grup/           🔩 3. Metal Grup
 │   ├── photo/
 │   └── urunler.json
-├── galeri-boslugu/       🏛️ 4. Galeri Boşluğu & Merdiven Avizeleri
+├── aplik-ve-spotlar/     💡 4. Aplik & Spot Aydınlatma (Duvar Aplikleri + Ray/Gömme Spotlar)
 │   ├── photo/
 │   └── urunler.json
-├── aplikler/             💡 5. Aplikler
+├── aksesuar/             🏺 5. Aksesuar (El yapımı çini, İthal aksesuarlar)
 │   ├── photo/
 │   └── urunler.json
-├── spotlar/              🎯 6. Spotlar & Manyetik Ray
-│   ├── photo/
-│   └── urunler.json
-└── aksesuar/             🏺 7. Aksesuar (El yapımı çini, İthal aksesuarlar)
+└── yerli-urunler/        🇹🇷 6. Yerli Üretim Aydınlatma Koleksiyonu
     ├── photo/
     └── urunler.json
 ```

@@ -17,21 +17,7 @@ const CATEGORY_CONFIGS = {
     name: "Klasik Avizeler",
     prefix: "KLS",
     defaultBranch: "showroom",
-    defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
-  },
-  theresa: {
-    slug: "theresa",
-    name: "Maria Theresa Avize Koleksiyonu",
-    prefix: "MTR",
-    defaultBranch: "showroom",
     defaultImage: "/images/theresa_kapak.jpeg",
-  },
-  bacarat: {
-    slug: "bacarat",
-    name: "Baccarat Kristal Avize Koleksiyonu",
-    prefix: "BCR",
-    defaultBranch: "showroom",
-    defaultImage: "/images/bacarat_kapak.jpeg",
   },
   "ledli-grup": {
     slug: "ledli-grup",
@@ -47,26 +33,12 @@ const CATEGORY_CONFIGS = {
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
   },
-  "galeri-boslugu": {
-    slug: "galeri-boslugu",
-    name: "Galeri Boşluğu & Merdiven Avizeleri",
-    prefix: "GLR",
-    defaultBranch: "showroom",
-    defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
-  },
-  aplikler: {
-    slug: "aplikler",
-    name: "Dekoratif Duvar Aplikleri",
-    prefix: "APL",
+  "aplik-ve-spotlar": {
+    slug: "aplik-ve-spotlar",
+    name: "Aplik & Spot Aydınlatma",
+    prefix: "ASP",
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_dekoratif_duvar_aplik.jpg",
-  },
-  spotlar: {
-    slug: "spotlar",
-    name: "Spot & Manyetik Ray Sistemleri",
-    prefix: "SPT",
-    defaultBranch: "electrical",
-    defaultImage: "/images/800x800_manyetik_ray_spot_sistem.jpg",
   },
   aksesuar: {
     slug: "aksesuar",
@@ -74,6 +46,13 @@ const CATEGORY_CONFIGS = {
     prefix: "AKS",
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_ufleme_cam_vazo_aksesuar.jpg",
+  },
+  "yerli-urunler": {
+    slug: "yerli-urunler",
+    name: "Yerli Üretim Koleksiyonu",
+    prefix: "YRL",
+    defaultBranch: "showroom",
+    defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
   },
   kategorisiz: {
     slug: "kategorisiz",

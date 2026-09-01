@@ -19,61 +19,22 @@ export const CATEGORIES: Category[] = [
     slug: "klasik",
     name: "Klasik Avizeler",
     shortName: "Klasik",
-    tagline: "Kollu, Taşlı, Maria Theresa ve Baccarat Saray Serileri",
+    tagline: "Maria Theresa & Baccarat Aileleri, Kollu ve Taşlı Saray Serileri",
     description:
-      "Saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa ve Baccarat zarafeti.",
-    seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Kollu & Taşlı Kristal Avize - Hilal Avize",
+      "Saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa cam giydirmeli kollar ve Baccarat kalın kesme kristal avizeler.",
+    seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Maria Theresa & Baccarat - Hilal Avize",
     seoDescription:
-      "Kahramanmaraş'ta saray tipi klasik avizeler, Maria Theresa ve Baccarat taşlı avize modelleri Hilal Avize Showroom'unda.",
-    image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
-    featured: true,
-    subcategories: [
-      "Kollu Grup",
-      "Taşlı Grup",
-      "Maria Theresa Ailesi",
-      "Baccarat Ailesi",
-    ],
-    itemCount: 24,
-  },
-  {
-    slug: "theresa",
-    name: "Maria Theresa Avize Koleksiyonu",
-    shortName: "Maria Theresa",
-    tagline: "Cam Giydirmeli Kollar, Altın Rozetler ve Avusturya Saray Zarafeti",
-    description:
-      "Tarihin en zarif saray tasarımı olan Maria Theresa serisi; cam giydirme kolları, altın rozetleri ve berrak kristal sarkıt prizmalarıyla mekanlarınıza asalet katar.",
-    seoTitle: "Maria Theresa Avize Modelleri Kahramanmaraş | Hilal Avize",
-    seoDescription:
-      "Lüks Maria Theresa kristal kollu saray avizeleri Kahramanmaraş Hilal Avize Showroom'unda.",
+      "Kahramanmaraş'ta saray tipi klasik avizeler, Maria Theresa ve Baccarat kristal taşlı avize modelleri Hilal Avize Showroom'unda.",
     image: "/images/theresa_kapak.jpeg",
     coverImage: "/images/theresa_kapak.jpeg",
     featured: true,
     subcategories: [
-      "Saray Tipi Maria Theresa",
-      "Altın Rozetli Modeller",
-      "Kollu Kristal Seriler",
+      "Maria Theresa Ailesi",
+      "Baccarat Ailesi",
+      "Kollu Grup",
+      "Taşlı Grup",
     ],
-    itemCount: 18,
-  },
-  {
-    slug: "bacarat",
-    name: "Baccarat Kristal Avize Koleksiyonu",
-    shortName: "Baccarat",
-    tagline: "Ağır Döküm Prizmatik Kristal ve Fransız Lüks Aydınlatma Zarafeti",
-    description:
-      "Dünyaca ünlü Fransız kristal işçiliği stilini yansıtan Baccarat serisi; kalın kesme kristal kolları, yakut detayları ve kusursuz ışık kırılmalarıyla büyüleyici bir zarafet sunar.",
-    seoTitle: "Baccarat Kristal Avize Modelleri Kahramanmaraş | Hilal Avize",
-    seoDescription:
-      "Görkemli Baccarat kristal avize koleksiyonu Kahramanmaraş Hilal Avize Showroom'unda sizleri bekliyor.",
-    image: "/images/bacarat_kapak.jpeg",
-    coverImage: "/images/bacarat_kapak.jpeg",
-    featured: true,
-    subcategories: [
-      "Baccarat Kristal Kollu",
-      "Yakut & Şeffaf Kristal",
-      "Lüks Lobi & Salon Avizeleri",
-    ],
-    itemCount: 16,
+    itemCount: 24,
   },
   {
     slug: "ledli-grup",
@@ -116,64 +77,24 @@ export const CATEGORIES: Category[] = [
     itemCount: 20,
   },
   {
-    slug: "galeri-boslugu",
-    name: "Galeri Boşluğu & Merdiven Avizeleri",
-    shortName: "Galeri Boşluğu",
-    tagline: "Yüksek Tavanlı Villalar, Dubleks Merdiven Boşlukları ve Otel Lobileri",
+    slug: "aplik-ve-spotlar",
+    name: "Aplik & Spot Aydınlatma",
+    shortName: "Aplik & Spot",
+    tagline: "Dekoratif Duvar Aplikleri, Manyetik Ray ve Gömme Spot Sistemleri",
     description:
-      "Yüksek tavanlı dubleks villalar, sarmal merdiven boşlukları ve prestijli lobiler için özel ölçüde üretilen anıtsal dev avizeler.",
-    seoTitle: "Galeri Boşluğu ve Merdiven Avizeleri Kahramanmaraş | Hilal Avize",
+      "Klasik ve modern duvar aplikleri, manyetik ray spot sistemleri, gömme ve sıva üstü mimari tavan spotları.",
+    seoTitle: "Aplik ve Spot Aydınlatma Modelleri Kahramanmaraş | Hilal Avize & Elektrik",
     seoDescription:
-      "Dubleks villalar ve yüksek tavanlı mekanlar için özel üretim sarmal galeri boşluğu avizeleri Hilal Avize Kahramanmaraş'ta.",
-    image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
-    featured: true,
-    subcategories: [
-      "Sarmal Kristal Avizeler",
-      "Çok Katlı Sarkıtlar",
-      "Villa Merdiven Boşluğu",
-      "Otel & Lobi Avizeleri",
-    ],
-    itemCount: 16,
-  },
-  {
-    slug: "aplikler",
-    name: "Dekoratif Duvar Aplikleri",
-    shortName: "Aplikler",
-    tagline: "Duvarlarınıza Zarafet ve Sıcak Ambiyans Katan Klasik & LED Aplikler",
-    description:
-      "Klasik kristal, modern LED ve fırçalanmış metal duvar aplikleri. Koridor, yatak başı, salon ve merdiven duvar aydınlatmaları.",
-    seoTitle: "Kahramanmaraş Duvar Aplikleri Modelleri | Kristal & LED Aplik - Hilal Avize",
-    seoDescription:
-      "Salon, koridor ve yatak odaları için lüks kristal ve modern LED duvar aplik çeşitleri Hilal Avize'de. Şık ve dayanıklı tasarımlar.",
+      "Lüks duvar aplikleri, mimari manyetik ray spotlar ve tavan spot lambaları Kahramanmaraş Hilal Avize & Elektrik şubelerinde.",
     image: "/images/800x800_dekoratif_duvar_aplik.jpg",
     featured: true,
     subcategories: [
-      "Kristal Aplikler",
-      "Modern LED Aplikler",
-      "Metal Kollu Aplikler",
-      "Tablo & Ayna Üstü Aplikler",
-    ],
-    itemCount: 32,
-  },
-  {
-    slug: "spotlar",
-    name: "Spot & Manyetik Ray Sistemleri",
-    shortName: "Spotlar",
-    tagline: "Manyetik Ray Spot Sistemleri ve Gömme Tavan Spotları",
-    description:
-      "Manyetik ray spot sistemleri, sıva altı ve sıva üstü tavan spotları, yönlendirilebilir odak ışıkları ve modern mimari aydınlatma armatürleri.",
-    seoTitle: "Manyetik Ray Spot ve Gömme Spot Aydınlatma Kahramanmaraş | Hilal Elektrik",
-    seoDescription:
-      "Mimari ray spot sistemleri, manyetik tavan spotları ve gömme spot lambalar Kahramanmaraş Hilal Elektrik şubesinde.",
-    image: "/images/800x800_manyetik_ray_spot_sistem.jpg",
-    featured: true,
-    subcategories: [
+      "Duvar Aplikleri",
       "Manyetik Ray Spotlar",
       "Gömme Tavan Spotları",
       "Sıva Üstü Silindir Spotlar",
-      "Dekoratif LED Spotlar",
     ],
-    itemCount: 28,
+    itemCount: 32,
   },
   {
     slug: "aksesuar",
@@ -197,6 +118,25 @@ export const CATEGORIES: Category[] = [
     itemCount: 36,
   },
   {
+    slug: "yerli-urunler",
+    name: "Yerli Üretim Koleksiyonu",
+    shortName: "Yerli Ürünler",
+    tagline: "Yüksek Kalite Standartlarında Özel İmalat Yerli Tasarımlar",
+    description:
+      "Usta ellerde titizlikle üretilen, uzun ömürlü malzeme kalitesi ve özgün tasarımlara sahip yerli üretim aydınlatma modelleri.",
+    seoTitle: "Yerli Üretim Aydınlatma ve Avize Çeşitleri Kahramanmaraş | Hilal Avize",
+    seoDescription:
+      "Yerli üretim aydınlatmalar, özel imalat şık avizeler ve aplikler Kahramanmaraş Hilal Avize Showroom'unda.",
+    image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
+    featured: true,
+    subcategories: [
+      "Yerli Üretim Avizeler",
+      "Yerli İmalat Aplikler",
+      "Özel Proje Aydınlatmaları",
+    ],
+    itemCount: 20,
+  },
+  {
     slug: "kategorisiz",
     name: "Tüm Avizeler (Yeni Eklenenler)",
     shortName: "Tüm Avizeler",
@@ -212,6 +152,6 @@ export const CATEGORIES: Category[] = [
       "Yeni Eklenen Modeller",
       "Showroom Koleksiyonu",
     ],
-    itemCount: 53,
+    itemCount: 54,
   },
 ];

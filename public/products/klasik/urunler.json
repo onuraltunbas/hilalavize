@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "no": 1,
+    "name": "Maria Theresa Klasik Cam Giydirmeli Kristal Saray Avizesi",
+    "dimensions": "Çap: 90 cm",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "badge": "Maria Theresa Ailesi",
+    "shortDescription": "Cam giydirmeli kıvrımlı kolları, altın rozet detayları ve parıltılı kristal prizmalarıyla görkemli Maria Theresa saray avizesi."
+  },
+  {
+    "no": 2,
+    "name": "Maria Theresa Çok Kollu Asil Kristal Avize",
+    "dimensions": "Çap: 90 cm",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "badge": "Maria Theresa Ailesi",
+    "shortDescription": "İhtişamlı cam kase göbeği, berrak kristal sarkıt taşları ve E14 kandil aydınlatmasıyla salonunuza saray zarafeti katar."
+  },
+  {
+    "no": 3,
+    "name": "Maria Theresa İhtişamlı Kristal Salon Avizesi",
+    "dimensions": "Çap: 90 cm",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "badge": "Maria Theresa Ailesi",
+    "shortDescription": "Geniş hacimli şaşalı kristal dizilimi, özel cam rozetleri ve yüksek ışık kapasitesiyle seçkin mekanlar için tasarlandı."
+  },
+  {
+    "no": 4,
+    "name": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize",
+    "dimensions": "Çap: 90 cm",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "badge": "Baccarat Ailesi",
+    "shortDescription": "Ağır döküm kalın kesme kristal kolları, kusursuz ışık kırılımları ve E14 kandil duylarıyla lüksün ve asaletin simgesi Baccarat avize."
+  }
+]
