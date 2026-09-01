@@ -321,18 +321,18 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "aplik-ve-spotlar",
     "categoryName": "Aplik & Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
-    "description": "Modern Dekoratif LED Duvar Apliği - Model 1, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 1, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ230*H230mm ölçüleri, Dahili LED 8W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 1.",
-    "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "Φ230*H230mm",
+    "lightingType": "Dahili LED 8W",
     "branch": "showroom",
     "image": "/products/aplik-ve-spotlar/photo/10.jpeg",
     "images": [
       "/products/aplik-ve-spotlar/photo/10.jpeg"
     ],
     "features": [
-      "Dahili LED Aydınlatma Modülü",
-      "Standart Duvar Ölçüsü",
+      "Dahili LED 8W",
+      "Φ230*H230mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -347,17 +347,17 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "aplik-ve-spotlar",
     "categoryName": "Aplik & Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
-    "description": "Modern Dekoratif LED Duvar Apliği - Model 2, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 2, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 2.",
     "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/aplik-ve-spotlar/photo/20.jpeg",
     "images": [
       "/products/aplik-ve-spotlar/photo/20.jpeg"
     ],
     "features": [
-      "Dahili LED Aydınlatma Modülü",
+      "Dahili LED Modülü",
       "Standart Duvar Ölçüsü",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
@@ -373,17 +373,17 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "aplik-ve-spotlar",
     "categoryName": "Aplik & Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
-    "description": "Modern Dekoratif LED Duvar Apliği - Model 3, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 3, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 3.",
     "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/aplik-ve-spotlar/photo/30.jpeg",
     "images": [
       "/products/aplik-ve-spotlar/photo/30.jpeg"
     ],
     "features": [
-      "Dahili LED Aydınlatma Modülü",
+      "Dahili LED Modülü",
       "Standart Duvar Ölçüsü",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
@@ -477,18 +477,18 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "aplik-ve-spotlar",
     "categoryName": "Aplik & Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
-    "description": "Modern Dekoratif LED Duvar Apliği - Model 7, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 7, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 240*H230mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 7.",
-    "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "240*H230mm",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/aplik-ve-spotlar/photo/70.jpeg",
     "images": [
       "/products/aplik-ve-spotlar/photo/70.jpeg"
     ],
     "features": [
-      "Dahili LED Aydınlatma Modülü",
-      "Standart Duvar Ölçüsü",
+      "Dahili LED Modülü",
+      "240*H230mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -770,10 +770,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Yeni Sezon",
-    "description": "Maxira Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 80 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Maxira Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L600*W435*H1500mm / L530*W340*H1500mm / Φ800*H2000mm ölçüleri, Dahili LED (18W / 21W / 86W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "80 cm geniş çapı ve yüksek ışık verimiyle salon ve yemek masaları için tasarlanmış modern LED avize.",
-    "dimensions": "Çap: 80 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "L600*W435*H1500mm / L530*W340*H1500mm / Φ800*H2000mm",
+    "lightingType": "Dahili LED (18W / 21W / 86W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/10.jpeg",
     "images": [
@@ -781,8 +781,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/11.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 80 cm",
+      "Dahili LED (18W / 21W / 86W)",
+      "L600*W435*H1500mm / L530*W340*H1500mm / Φ800*H2000mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -797,18 +797,18 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Popüler Model",
-    "description": "Renvio Gold LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Renvio Gold LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ400*H1200mm / Φ600*H1200mm / Φ800*H1200mm ölçüleri, Dahili LED (15W / 25W / 32W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "60 cm çapında şık gold gövdeli ve homojen ışık yayan modern LED sarkıt avize.",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ400*H1200mm / Φ600*H1200mm / Φ800*H1200mm",
+    "lightingType": "Dahili LED (15W / 25W / 32W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/20.jpeg",
     "images": [
       "/products/kategorisiz/photo/20.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 60 cm",
+      "Dahili LED (15W / 25W / 32W)",
+      "Φ400*H1200mm / Φ600*H1200mm / Φ800*H1200mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -823,10 +823,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Büyük Boy Seri",
-    "description": "Carvella Lineer LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 180 x 35 cm ölçüleri, Dahili Yüksek Güçlü LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Carvella Lineer LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 1800*350*H1700mm ölçüleri, Dahili LED 58W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "180x35 cm uzun formuyla geniş ada tezgahları ve uzun yemek masaları için mimari lineer avize.",
-    "dimensions": "180 x 35 cm",
-    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "dimensions": "1800*350*H1700mm",
+    "lightingType": "Dahili LED 58W",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/30.jpeg",
     "images": [
@@ -834,8 +834,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/31.jpeg"
     ],
     "features": [
-      "Dahili Yüksek Güçlü LED Modülü",
-      "180 x 35 cm",
+      "Dahili LED 58W",
+      "1800*350*H1700mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -850,10 +850,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Yeni Model",
-    "description": "Carvella Kompakt Lineer LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 120 x 35 cm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Carvella Kompakt Lineer LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 1200*380*H1400mm / Φ280*H1950mm ölçüleri, Dahili LED (42W / 52W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "120x35 cm ideal ebadıyla mutfak adaları ve modern salonlar için minimalist lineer avize.",
-    "dimensions": "120 x 35 cm",
-    "lightingType": "Dahili LED Modülü",
+    "dimensions": "1200*380*H1400mm / Φ280*H1950mm",
+    "lightingType": "Dahili LED (42W / 52W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/40.jpeg",
     "images": [
@@ -861,8 +861,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/41.jpeg"
     ],
     "features": [
-      "Dahili LED Modülü",
-      "120 x 35 cm",
+      "Dahili LED (42W / 52W)",
+      "1200*380*H1400mm / Φ280*H1950mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -876,10 +876,10 @@ export const PRODUCTS: Product[] = [
     "name": "Sevona Dairesel LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Sevona Dairesel LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Sevona Dairesel LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ800*H1500mm / Φ600*H1200mm ölçüleri, Dahili LED (92W / 196W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "60 cm çapında dairesel akıcı formu ve yumuşak ışık dağılımıyla ferah mekanlar oluşturan LED avize.",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ800*H1500mm / Φ600*H1200mm",
+    "lightingType": "Dahili LED (92W / 196W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/50.jpeg",
     "images": [
@@ -887,8 +887,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/51.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 60 cm",
+      "Dahili LED (92W / 196W)",
+      "Φ800*H1500mm / Φ600*H1200mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -903,10 +903,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Geniş Salonlar İçin",
-    "description": "Addo Büyük Boy LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, Dahili Yüksek Güçlü LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Addo Büyük Boy LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ900*H2100mm ölçüleri, Dahili LED 400W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "90 cm dev çapı ve estetik halka tasarımıyla yüksek tavanlı salonlara prestij katan LED avize.",
-    "dimensions": "Çap: 90 cm",
-    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "dimensions": "Φ900*H2100mm",
+    "lightingType": "Dahili LED 400W",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/60.jpeg",
     "images": [
@@ -914,8 +914,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/61.jpeg"
     ],
     "features": [
-      "Dahili Yüksek Güçlü LED Modülü",
-      "Çap: 90 cm",
+      "Dahili LED 400W",
+      "Φ900*H2100mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -929,10 +929,10 @@ export const PRODUCTS: Product[] = [
     "name": "Addo Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Addo Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Addo Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ600*H2200mm / Φ450*H1500mm ölçüleri, Dahili LED (128W / 192W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "60 cm çapında kompakt ve zarif tasarımıyla oturma odaları ve salonlar için ideal aydınlatma.",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ600*H2200mm / Φ450*H1500mm",
+    "lightingType": "Dahili LED (128W / 192W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/70.jpeg",
     "images": [
@@ -940,8 +940,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/71.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 60 cm",
+      "Dahili LED (128W / 192W)",
+      "Φ600*H2200mm / Φ450*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -956,10 +956,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Tasarım Seri",
-    "description": "Trivon Üçlü Tasarım LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Trivon Üçlü Tasarım LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ800*H1200mm / Φ600*H1200mm ölçüleri, Dahili LED (50W / 86W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "60 cm çapında mimari açılı formuyla mekana derinlik kazandıran özel tasarım LED avize.",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ800*H1200mm / Φ600*H1200mm",
+    "lightingType": "Dahili LED (50W / 86W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/80.jpeg",
     "images": [
@@ -967,8 +967,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/81.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 60 cm",
+      "Dahili LED (50W / 86W)",
+      "Φ800*H1200mm / Φ600*H1200mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -982,10 +982,10 @@ export const PRODUCTS: Product[] = [
     "name": "Trivon Kristal Vurgulu LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Trivon Kristal Vurgulu LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Trivon Kristal Vurgulu LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ600*H1200mm / L1200*W300*H1200mm ölçüleri, Dahili LED (40W / 60W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "60 cm çapında ışığı kıran özel difüzör camı ve yüksek ışık gücüne sahip modern avize.",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ600*H1200mm / L1200*W300*H1200mm",
+    "lightingType": "Dahili LED (40W / 60W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/90.jpeg",
     "images": [
@@ -993,8 +993,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/91.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 60 cm",
+      "Dahili LED (40W / 60W)",
+      "Φ600*H1200mm / L1200*W300*H1200mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1013,11 +1013,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 60 cm",
     "lightingType": "Dahili LED Aydınlatma Modülü",
     "branch": "showroom",
-    "image": "/products/kategorisiz/photo/10.jpeg",
+    "image": "/products/kategorisiz/photo/100.jpeg",
     "images": [
-      "/products/kategorisiz/photo/10.jpeg",
       "/products/kategorisiz/photo/100.jpeg",
-      "/products/kategorisiz/photo/101.jpeg"
+      "/products/kategorisiz/photo/110.jpeg"
     ],
     "features": [
       "Dahili LED Aydınlatma Modülü",
@@ -1035,10 +1034,10 @@ export const PRODUCTS: Product[] = [
     "name": "Minvex Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Minvex Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm ölçüleri, Dahili 3 Renk LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Minvex Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. nope ölçüleri, nope aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "60 cm çapında minimalist profili ve enerji tasarruflu yüksek parlaklık sunan LED avize.",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "Dahili 3 Renk LED Modülü",
+    "dimensions": "nope",
+    "lightingType": "nope",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/11.jpeg",
     "images": [
@@ -1047,8 +1046,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/111.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk LED Modülü",
-      "Çap: 60 cm",
+      "nope",
+      "nope",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1063,10 +1062,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Lüks Koleksiyon",
-    "description": "Avsıra Lüks LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 75 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Avsıra Lüks LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ950*H1500mm / Φ760*H1500mm ölçüleri, Dahili LED (80W / 100W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "75 cm geniş çapıyla salonunuzun merkezinde ışıltılı bir odak noktası oluşturan lüks LED avize.",
-    "dimensions": "Çap: 75 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ950*H1500mm / Φ760*H1500mm",
+    "lightingType": "Dahili LED (80W / 100W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/120.jpeg",
     "images": [
@@ -1074,8 +1073,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/121.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 75 cm",
+      "Dahili LED (80W / 100W)",
+      "Φ950*H1500mm / Φ760*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1089,10 +1088,10 @@ export const PRODUCTS: Product[] = [
     "name": "Seralya Zarif LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Seralya Zarif LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 65 cm ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Seralya Zarif LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ780*H1500mm / Φ680*H1500mm ölçüleri, Dahili LED (60W / 80W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "65 cm çapında estetik kıvrımları ve gözü yormayan sıcak amber ışığıyla zarif bir avize modeli.",
-    "dimensions": "Çap: 65 cm",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "Φ780*H1500mm / Φ680*H1500mm",
+    "lightingType": "Dahili LED (60W / 80W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/130.jpeg",
     "images": [
@@ -1100,8 +1099,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/131.jpeg"
     ],
     "features": [
-      "Dahili LED Aydınlatma Modülü",
-      "Çap: 65 cm",
+      "Dahili LED (60W / 80W)",
+      "Φ780*H1500mm / Φ680*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1116,10 +1115,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Özel Tasarım",
-    "description": "Porenya Dalgalı LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 75 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Porenya Dalgalı LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ720*H1100mm / Φ980*H1100mm ölçüleri, Dahili LED (80W / 160W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "75 cm çapında organik dalgalı formuyla modern dekorasyonlara dinamizm katan heykelsi LED avize.",
-    "dimensions": "Çap: 75 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ720*H1100mm / Φ980*H1100mm",
+    "lightingType": "Dahili LED (80W / 160W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/140.jpeg",
     "images": [
@@ -1127,8 +1126,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/141.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 75 cm",
+      "Dahili LED (80W / 160W)",
+      "Φ720*H1100mm / Φ980*H1100mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1142,10 +1141,10 @@ export const PRODUCTS: Product[] = [
     "name": "Ekerd Mimari LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Ekerd Mimari LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 80 cm ölçüleri, Dahili Yüksek Güçlü LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Ekerd Mimari LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ860*H1500mm / Φ740*H1500mm / L840*W480*H1500mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "80 cm çapında güçlü aydınlatma performansı ve fırçalanmış gövde kalitesiyle üst segment avize.",
-    "dimensions": "Çap: 80 cm",
-    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "dimensions": "Φ860*H1500mm / Φ740*H1500mm / L840*W480*H1500mm",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/150.jpeg",
     "images": [
@@ -1153,8 +1152,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/151.jpeg"
     ],
     "features": [
-      "Dahili Yüksek Güçlü LED Modülü",
-      "Çap: 80 cm",
+      "Dahili LED Modülü",
+      "Φ860*H1500mm / Φ740*H1500mm / L840*W480*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1169,10 +1168,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Çok Satan",
-    "description": "Orvella Büyük Boy LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 85 cm ölçüleri, Dahili Yüksek Güçlü LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Orvella Büyük Boy LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 850*H1500mm ölçüleri, Dahili LED 40W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "85 cm geniş çapıyla büyük metrekareli salonlar ve villalar için tasarlanmış görkemli LED avize.",
-    "dimensions": "Çap: 85 cm",
-    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "dimensions": "850*H1500mm",
+    "lightingType": "Dahili LED 40W",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/160.jpeg",
     "images": [
@@ -1180,8 +1179,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/161.jpeg"
     ],
     "features": [
-      "Dahili Yüksek Güçlü LED Modülü",
-      "Çap: 85 cm",
+      "Dahili LED 40W",
+      "850*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1195,10 +1194,10 @@ export const PRODUCTS: Product[] = [
     "name": "Orvella Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Orvella Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 65 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Orvella Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ530*H1500mm / Φ630*H1500mm ölçüleri, Dahili LED (48W / 64W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "65 cm çapında zarif ölçüleri ve ayarlanabilir askı yüksekliği ile şık salon aydınlatması.",
-    "dimensions": "Çap: 65 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ530*H1500mm / Φ630*H1500mm",
+    "lightingType": "Dahili LED (48W / 64W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/170.jpeg",
     "images": [
@@ -1206,8 +1205,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/171.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 65 cm",
+      "Dahili LED (48W / 64W)",
+      "Φ530*H1500mm / Φ630*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1221,10 +1220,10 @@ export const PRODUCTS: Product[] = [
     "name": "Peroria Tasarım LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Peroria Tasarım LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 70 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Peroria Tasarım LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 700*80*H1200mm / Φ100*H1200mm ölçüleri, Dahili LED (14W / 70W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "70 cm çapında modern ışık halkaları ve homojen parlaklığıyla çağdaş mekanlar için üretildi.",
-    "dimensions": "Çap: 70 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "700*80*H1200mm / Φ100*H1200mm",
+    "lightingType": "Dahili LED (14W / 70W)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/180.jpeg",
     "images": [
@@ -1232,8 +1231,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/181.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 70 cm",
+      "Dahili LED (14W / 70W)",
+      "700*80*H1200mm / Φ100*H1200mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1247,10 +1246,10 @@ export const PRODUCTS: Product[] = [
     "name": "Yomıra Geometrik LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Yomıra Geometrik LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 70 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Yomıra Geometrik LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ810*H660mm / Φ660*H660mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "70 cm çapında estetik geometrik formuyla yaşam alanınıza modern bir sanat dokunuşu kazandırır.",
-    "dimensions": "Çap: 70 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ810*H660mm / Φ660*H660mm",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/190.jpeg",
     "images": [
@@ -1258,8 +1257,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/191.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 70 cm",
+      "Dahili LED Modülü",
+      "Φ810*H660mm / Φ660*H660mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1279,11 +1278,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 80 cm",
     "lightingType": "Dahili Yüksek Güçlü LED Modülü",
     "branch": "showroom",
-    "image": "/products/kategorisiz/photo/20.jpeg",
+    "image": "/products/kategorisiz/photo/200.jpeg",
     "images": [
-      "/products/kategorisiz/photo/20.jpeg",
-      "/products/kategorisiz/photo/200.jpeg",
-      "/products/kategorisiz/photo/201.jpeg"
+      "/products/kategorisiz/photo/200.jpeg"
     ],
     "features": [
       "Dahili Yüksek Güçlü LED Modülü",
@@ -1301,10 +1298,10 @@ export const PRODUCTS: Product[] = [
     "name": "Serry Lüks LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Serry Lüks LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 70 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Serry Lüks LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ750*H550mm / 950*H710mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "70 cm çapında ışıltılı detayları ve 3 farklı renk sıcaklığı seçeneğiyle lüks salon avizesi.",
-    "dimensions": "Çap: 70 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ750*H550mm / 950*H710mm",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/210.jpeg",
     "images": [
@@ -1312,8 +1309,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/211.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 70 cm",
+      "Dahili LED Modülü",
+      "Φ750*H550mm / 950*H710mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1327,10 +1324,10 @@ export const PRODUCTS: Product[] = [
     "name": "Zevrox Kompakt LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Zevrox Kompakt LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 50 cm ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Zevrox Kompakt LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ600*H1500mm / Φ500*H1500mm / Φ800*H1500mm ölçüleri, Dahili LED (3000K Sıcak Beyaz) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "50 cm çapında kompakt odalar, antreler ve mutfak masaları için zarif ve verimli LED avize.",
-    "dimensions": "Çap: 50 cm",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "Φ600*H1500mm / Φ500*H1500mm / Φ800*H1500mm",
+    "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/220.jpeg",
     "images": [
@@ -1338,8 +1335,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/221.jpeg"
     ],
     "features": [
-      "Dahili LED Aydınlatma Modülü",
-      "Çap: 50 cm",
+      "Dahili LED (3000K Sıcak Beyaz)",
+      "Φ600*H1500mm / Φ500*H1500mm / Φ800*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1354,10 +1351,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Dev Boyut (120 cm)",
-    "description": "Zevrox Büyük Salon LED Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 120 cm ölçüleri, Dahili Yüksek Güçlü LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Zevrox Büyük Salon LED Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L1200*H1500mm ölçüleri, Dahili LED (3000K Sıcak Beyaz) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "120 cm devasa çapı ile villa salonları, otel lobileri ve geniş yaşam alanları için anıtsal LED avize.",
-    "dimensions": "Çap: 120 cm",
-    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "dimensions": "L1200*H1500mm",
+    "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/230.jpeg",
     "images": [
@@ -1365,8 +1362,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/231.jpeg"
     ],
     "features": [
-      "Dahili Yüksek Güçlü LED Modülü",
-      "Çap: 120 cm",
+      "Dahili LED (3000K Sıcak Beyaz)",
+      "L1200*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1381,10 +1378,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Premium Koleksiyon",
-    "description": "Liria Saray Tipi Geniş LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 100 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Liria Saray Tipi Geniş LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 1100*500*H1500mm / Φ400*H1200mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "100 cm geniş çapı, çoklu ışık katmanları ve göz alıcı parlaklığıyla üst segment lüks LED avize.",
-    "dimensions": "Çap: 100 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "1100*500*H1500mm / Φ400*H1200mm",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/240.jpeg",
     "images": [
@@ -1392,8 +1389,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/241.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 100 cm",
+      "Dahili LED Modülü",
+      "1100*500*H1500mm / Φ400*H1200mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1407,10 +1404,10 @@ export const PRODUCTS: Product[] = [
     "name": "Relvolia Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Relvolia Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 55 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Relvolia Modern LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ300*H1200mm / Φ450*H1500mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "55 cm çapında estetik halka yapısı ve 3 renk kademeli ışık moduyla modern salon ve oturma odası avizesi.",
-    "dimensions": "Çap: 55 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ300*H1200mm / Φ450*H1500mm",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/250.jpeg",
     "images": [
@@ -1418,8 +1415,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/251.jpeg"
     ],
     "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 55 cm",
+      "Dahili LED Modülü",
+      "Φ300*H1200mm / Φ450*H1500mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1540,10 +1537,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Yükseklik: 130 cm",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/kategorisiz/photo/30.jpeg",
+    "image": "/products/kategorisiz/photo/300.jpeg",
     "images": [
-      "/products/kategorisiz/photo/30.jpeg",
-      "/products/kategorisiz/photo/300.jpeg"
+      "/products/kategorisiz/photo/300.jpeg",
+      "/products/kategorisiz/photo/310.jpeg"
     ],
     "features": [
       "E27 Standart Duy (LED Ampul Uyumlu)",
@@ -1562,10 +1559,10 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
     "badge": "Zarif Seri",
-    "description": "Laura Lüks Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Yükseklik: 120 cm ölçüleri, E14 Kandil Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Laura Lüks Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. nope ölçüleri, nope aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "120 cm ayarlanabilir sarkıt zinciri ve E14 kandil duylarıyla yemek odaları ve salonlar için lüks avize.",
-    "dimensions": "Yükseklik: 120 cm",
-    "lightingType": "E14 Kandil Duy (LED Ampul Uyumlu)",
+    "dimensions": "nope",
+    "lightingType": "nope",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/31.jpeg",
     "images": [
@@ -1574,8 +1571,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/311.jpeg"
     ],
     "features": [
-      "E14 Kandil Duy (LED Ampul Uyumlu)",
-      "Yükseklik: 120 cm",
+      "nope",
+      "nope",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -1803,11 +1800,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 55 cm",
     "lightingType": "Dahili LED + E14/E27 Ampul Kombinasyonu",
     "branch": "showroom",
-    "image": "/products/kategorisiz/photo/40.jpeg",
+    "image": "/products/kategorisiz/photo/400.jpeg",
     "images": [
-      "/products/kategorisiz/photo/40.jpeg",
       "/products/kategorisiz/photo/400.jpeg",
-      "/products/kategorisiz/photo/401.jpeg"
+      "/products/kategorisiz/photo/410.jpeg"
     ],
     "features": [
       "Dahili LED + E14/E27 Ampul Kombinasyonu",
@@ -1825,10 +1821,10 @@ export const PRODUCTS: Product[] = [
     "name": "Dekoratif Kompakt LED Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Dekoratif Kompakt LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 45 cm ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Dekoratif Kompakt LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. nope ölçüleri, nope aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "45 cm çapında minimalist çizgileri ve enerji tasarruflu LED teknolojisiyle modern yaşam alanlarına özel.",
-    "dimensions": "Çap: 45 cm",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "nope",
+    "lightingType": "nope",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/41.jpeg",
     "images": [
@@ -1837,8 +1833,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/411.jpeg"
     ],
     "features": [
-      "Dahili LED Aydınlatma Modülü",
-      "Çap: 45 cm",
+      "nope",
+      "nope",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -2066,10 +2062,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
-    "image": "/products/kategorisiz/photo/50.jpeg",
+    "image": "/products/kategorisiz/photo/500.jpeg",
     "images": [
-      "/products/kategorisiz/photo/50.jpeg",
-      "/products/kategorisiz/photo/500.jpeg"
+      "/products/kategorisiz/photo/500.jpeg",
+      "/products/kategorisiz/photo/510.jpeg"
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
@@ -2087,10 +2083,10 @@ export const PRODUCTS: Product[] = [
     "name": "Kristal Taşlı Dairesel LED Avize",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Kristal Taşlı Dairesel LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, Dahili Kristal LED Işık Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Kristal Taşlı Dairesel LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. nope ölçüleri, nope aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Kristal prizmalar arasından süzülen homojen LED ışığıyla ferah ve lüks mekanlar oluşturan avize.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili Kristal LED Işık Modülü",
+    "dimensions": "nope",
+    "lightingType": "nope",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/51.jpeg",
     "images": [
@@ -2098,8 +2094,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/510.jpeg"
     ],
     "features": [
-      "Dahili Kristal LED Işık Modülü",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "nope",
+      "nope",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -2215,10 +2211,10 @@ export const PRODUCTS: Product[] = [
     "name": "Dekoratif Modern Avize - Model 56",
     "categorySlug": "kategorisiz",
     "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "description": "Dekoratif Modern Avize - Model 56, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, Dahili LED / E14-E27 Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Dekoratif Modern Avize - Model 56, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ500*H500mm / 880*H780mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Modern formu ve estetik ışık dağılımıyla mekanlarınıza zarafet katan dekoratif avize Model 56.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED / E14-E27 Uyumlu",
+    "dimensions": "Φ500*H500mm / 880*H780mm",
+    "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/560.jpeg",
     "images": [
@@ -2226,8 +2222,8 @@ export const PRODUCTS: Product[] = [
       "/products/kategorisiz/photo/561.jpeg"
     ],
     "features": [
-      "Dahili LED / E14-E27 Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Dahili LED Modülü",
+      "Φ500*H500mm / 880*H780mm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],

@@ -57,18 +57,22 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
             {/* Specifications */}
             <div className="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 space-y-2 text-xs">
-              <div className="flex justify-between py-1 border-b border-slate-800">
-                <span className="text-slate-400 flex items-center gap-1.5">
-                  <Ruler className="w-3.5 h-3.5 text-amber-400" /> Boyutlar / Ölçüler
-                </span>
-                <span className="font-semibold text-slate-200">{product.dimensions}</span>
-              </div>
-              <div className="flex justify-between py-1 border-b border-slate-800">
-                <span className="text-slate-400 flex items-center gap-1.5">
-                  <Lightbulb className="w-3.5 h-3.5 text-amber-400" /> Işık / Duy
-                </span>
-                <span className="font-semibold text-slate-200">{product.lightingType}</span>
-              </div>
+              {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
+                <div className="flex justify-between py-1 border-b border-slate-800">
+                  <span className="text-slate-400 flex items-center gap-1.5">
+                    <Ruler className="w-3.5 h-3.5 text-amber-400" /> Boyutlar / Ölçüler
+                  </span>
+                  <span className="font-semibold text-slate-200">{product.dimensions}</span>
+                </div>
+              )}
+              {product.lightingType && product.lightingType.toLowerCase() !== "nope" && (
+                <div className="flex justify-between py-1 border-b border-slate-800">
+                  <span className="text-slate-400 flex items-center gap-1.5">
+                    <Lightbulb className="w-3.5 h-3.5 text-amber-400" /> Işık / Duy
+                  </span>
+                  <span className="font-semibold text-slate-200">{product.lightingType}</span>
+                </div>
+              )}
               <div className="flex justify-between py-1 text-xs">
                 <span className="text-slate-400 flex items-center gap-1.5">
                   🏷️ Ürün Kodu

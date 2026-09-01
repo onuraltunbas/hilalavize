@@ -55,23 +55,27 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
 
         {/* Specs snippet */}
         <div className="space-y-2 pt-4 border-t border-slate-800 text-sm text-slate-400">
-          <div className="flex items-center justify-between">
-            <span className="flex items-center gap-1.5">
-              <Ruler className="w-4 h-4 text-amber-500/70" /> Ölçü:
-            </span>
-            <span className="text-slate-200 font-medium truncate max-w-[170px]">
-              {product.dimensions}
-            </span>
-          </div>
+          {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
+            <div className="flex items-center justify-between">
+              <span className="flex items-center gap-1.5">
+                <Ruler className="w-4 h-4 text-amber-500/70" /> Ölçü:
+              </span>
+              <span className="text-slate-200 font-medium truncate max-w-[170px]" title={product.dimensions}>
+                {product.dimensions}
+              </span>
+            </div>
+          )}
 
-          <div className="flex items-center justify-between">
-            <span className="flex items-center gap-1.5">
-              <Sparkles className="w-4 h-4 text-amber-500/70" /> Işık / Duy:
-            </span>
-            <span className="text-slate-200 font-medium truncate max-w-[170px]">
-              {product.lightingType}
-            </span>
-          </div>
+          {product.lightingType && product.lightingType.toLowerCase() !== "nope" && (
+            <div className="flex items-center justify-between">
+              <span className="flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-amber-500/70" /> Işık / Duy:
+              </span>
+              <span className="text-slate-200 font-medium truncate max-w-[170px]" title={product.lightingType}>
+                {product.lightingType}
+              </span>
+            </div>
+          )}
 
           <div className="flex items-center justify-between pt-1.5 border-t border-slate-800/60 text-xs">
             <span className="text-slate-400">Ürün Kodu:</span>

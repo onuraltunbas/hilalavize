@@ -2,8 +2,8 @@
   {
     "no": 1,
     "name": "Modern Dekoratif LED Duvar Apliği - Model 1",
-    "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "Φ230*H230mm",
+    "lightingType": "Dahili LED 8W",
     "badge": "LED Duvar Apliği",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 1."
   },
@@ -11,7 +11,7 @@
     "no": 2,
     "name": "Modern Dekoratif LED Duvar Apliği - Model 2",
     "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 2."
   },
@@ -19,7 +19,7 @@
     "no": 3,
     "name": "Modern Dekoratif LED Duvar Apliği - Model 3",
     "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 3."
   },
@@ -50,8 +50,8 @@
   {
     "no": 7,
     "name": "Modern Dekoratif LED Duvar Apliği - Model 7",
-    "dimensions": "Standart Duvar Ölçüsü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "240*H230mm",
+    "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 7."
   },
