@@ -3,6 +3,7 @@
 
 export interface Product {
   id: string;
+  code: string;
   slug: string;
   name: string;
   categorySlug: string;
@@ -23,6 +24,7 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     "id": "KLS-001",
+    "code": "HL-KLS-001",
     "slug": "maria-theresa-klasik-cam-giydirmeli-kristal-saray-avizesi",
     "name": "Maria Theresa Klasik Cam Giydirmeli Kristal Saray Avizesi",
     "categorySlug": "klasik",
@@ -48,6 +50,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "KLS-002",
+    "code": "HL-KLS-002",
     "slug": "maria-theresa-cok-kollu-asil-kristal-avize",
     "name": "Maria Theresa Çok Kollu Asil Kristal Avize",
     "categorySlug": "klasik",
@@ -73,6 +76,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "KLS-003",
+    "code": "HL-KLS-003",
     "slug": "maria-theresa-ihtisamli-kristal-salon-avizesi",
     "name": "Maria Theresa İhtişamlı Kristal Salon Avizesi",
     "categorySlug": "klasik",
@@ -98,6 +102,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "KLS-004",
+    "code": "HL-KLS-004",
     "slug": "baccarat-prizmatik-agir-kesme-kristal-luks-avize",
     "name": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize",
     "categorySlug": "klasik",
@@ -123,6 +128,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "TKL-001",
+    "code": "HL-TKL-001",
     "slug": "dekoratif-tekli-sarkit-avize-model-1",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 1",
     "categorySlug": "tekli-avizeler",
@@ -148,6 +154,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "TKL-002",
+    "code": "HL-TKL-002",
     "slug": "dekoratif-tekli-sarkit-avize-model-2",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 2",
     "categorySlug": "tekli-avizeler",
@@ -173,6 +180,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "TKL-003",
+    "code": "HL-TKL-003",
     "slug": "dekoratif-tekli-sarkit-avize-model-3",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 3",
     "categorySlug": "tekli-avizeler",
@@ -198,6 +206,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "TKL-004",
+    "code": "HL-TKL-004",
     "slug": "dekoratif-tekli-sarkit-avize-model-4",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 4",
     "categorySlug": "tekli-avizeler",
@@ -223,6 +232,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "TKL-005",
+    "code": "HL-TKL-005",
     "slug": "dekoratif-tekli-sarkit-avize-model-5",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 5",
     "categorySlug": "tekli-avizeler",
@@ -248,6 +258,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "TKL-006",
+    "code": "HL-TKL-006",
     "slug": "dekoratif-tekli-sarkit-avize-model-6",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 6",
     "categorySlug": "tekli-avizeler",
@@ -273,6 +284,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-001",
+    "code": "HL-AVZ-001",
     "slug": "maxira-modern-led-sarkit-avize",
     "name": "Maxira Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -299,6 +311,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-002",
+    "code": "HL-AVZ-002",
     "slug": "renvio-gold-led-sarkit-avize",
     "name": "Renvio Gold LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -324,6 +337,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-003",
+    "code": "HL-AVZ-003",
     "slug": "carvella-lineer-led-avize",
     "name": "Carvella Lineer LED Avize",
     "categorySlug": "kategorisiz",
@@ -350,6 +364,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-004",
+    "code": "HL-AVZ-004",
     "slug": "carvella-kompakt-lineer-led-avize",
     "name": "Carvella Kompakt Lineer LED Avize",
     "categorySlug": "kategorisiz",
@@ -376,6 +391,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-005",
+    "code": "HL-AVZ-005",
     "slug": "sevona-dairesel-led-sarkit-avize",
     "name": "Sevona Dairesel LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -401,6 +417,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-006",
+    "code": "HL-AVZ-006",
     "slug": "addo-buyuk-boy-led-sarkit-avize",
     "name": "Addo Büyük Boy LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -427,6 +444,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-007",
+    "code": "HL-AVZ-007",
     "slug": "addo-modern-led-sarkit-avize",
     "name": "Addo Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -452,6 +470,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-008",
+    "code": "HL-AVZ-008",
     "slug": "trivon-uclu-tasarim-led-sarkit-avize",
     "name": "Trivon Üçlü Tasarım LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -478,6 +497,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-009",
+    "code": "HL-AVZ-009",
     "slug": "trivon-kristal-vurgulu-led-sarkit-avize",
     "name": "Trivon Kristal Vurgulu LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -503,6 +523,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-010",
+    "code": "HL-AVZ-010",
     "slug": "operis-geometrik-led-sarkit-avize",
     "name": "Operis Geometrik LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -529,6 +550,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-011",
+    "code": "HL-AVZ-011",
     "slug": "minvex-modern-led-sarkit-avize",
     "name": "Minvex Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -555,6 +577,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-012",
+    "code": "HL-AVZ-012",
     "slug": "avsira-luks-led-sarkit-avize",
     "name": "Avsıra Lüks LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -581,6 +604,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-013",
+    "code": "HL-AVZ-013",
     "slug": "seralya-zarif-led-sarkit-avize",
     "name": "Seralya Zarif LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -606,6 +630,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-014",
+    "code": "HL-AVZ-014",
     "slug": "porenya-dalgali-led-sarkit-avize",
     "name": "Porenya Dalgalı LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -632,6 +657,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-015",
+    "code": "HL-AVZ-015",
     "slug": "ekerd-mimari-led-sarkit-avize",
     "name": "Ekerd Mimari LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -657,6 +683,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-016",
+    "code": "HL-AVZ-016",
     "slug": "orvella-buyuk-boy-led-avize",
     "name": "Orvella Büyük Boy LED Avize",
     "categorySlug": "kategorisiz",
@@ -683,6 +710,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-017",
+    "code": "HL-AVZ-017",
     "slug": "orvella-modern-led-sarkit-avize",
     "name": "Orvella Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -708,6 +736,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-018",
+    "code": "HL-AVZ-018",
     "slug": "peroria-tasarim-led-sarkit-avize",
     "name": "Peroria Tasarım LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -733,6 +762,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-019",
+    "code": "HL-AVZ-019",
     "slug": "yomira-geometrik-led-sarkit-avize",
     "name": "Yomıra Geometrik LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -758,6 +788,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-020",
+    "code": "HL-AVZ-020",
     "slug": "juvex-halka-led-sarkit-avize",
     "name": "Juvex Halka LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -785,6 +816,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-021",
+    "code": "HL-AVZ-021",
     "slug": "serry-luks-led-sarkit-avize",
     "name": "Serry Lüks LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -810,6 +842,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-022",
+    "code": "HL-AVZ-022",
     "slug": "zevrox-kompakt-led-sarkit-avize",
     "name": "Zevrox Kompakt LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -835,6 +868,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-023",
+    "code": "HL-AVZ-023",
     "slug": "zevrox-buyuk-salon-led-avizesi",
     "name": "Zevrox Büyük Salon LED Avizesi",
     "categorySlug": "kategorisiz",
@@ -861,6 +895,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-024",
+    "code": "HL-AVZ-024",
     "slug": "liria-saray-tipi-genis-led-avize",
     "name": "Liria Saray Tipi Geniş LED Avize",
     "categorySlug": "kategorisiz",
@@ -887,6 +922,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-025",
+    "code": "HL-AVZ-025",
     "slug": "relvolia-modern-led-sarkit-avize",
     "name": "Relvolia Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -912,6 +948,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-026",
+    "code": "HL-AVZ-026",
     "slug": "vella-minimalist-led-sarkit-avize",
     "name": "Vella Minimalist LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -937,6 +974,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-027",
+    "code": "HL-AVZ-027",
     "slug": "menekse-modern-led-avize",
     "name": "Menekşe Modern LED Avize",
     "categorySlug": "kategorisiz",
@@ -961,6 +999,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-028",
+    "code": "HL-AVZ-028",
     "slug": "menekse-luks-led-avize-model-2",
     "name": "Menekşe Lüks LED Avize Model 2",
     "categorySlug": "kategorisiz",
@@ -985,6 +1024,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-029",
+    "code": "HL-AVZ-029",
     "slug": "carles-geometrik-led-avize",
     "name": "Carles Geometrik LED Avize",
     "categorySlug": "kategorisiz",
@@ -1010,6 +1050,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-030",
+    "code": "HL-AVZ-030",
     "slug": "loya-tasarim-sarkit-avize",
     "name": "Loya Tasarım Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1035,6 +1076,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-031",
+    "code": "HL-AVZ-031",
     "slug": "laura-luks-sarkit-avize",
     "name": "Laura Lüks Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1062,6 +1104,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-032",
+    "code": "HL-AVZ-032",
     "slug": "norelia-kompakt-led-sarkit-avize",
     "name": "Norelia Kompakt LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1087,6 +1130,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-033",
+    "code": "HL-AVZ-033",
     "slug": "zoye-dekoratif-sarkit-avize",
     "name": "Zoye Dekoratif Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1112,6 +1156,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-034",
+    "code": "HL-AVZ-034",
     "slug": "ophelia-mini-led-sarkit-avize",
     "name": "Ophelia Mini LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1137,6 +1182,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-035",
+    "code": "HL-AVZ-035",
     "slug": "vintage-tasarim-led-sarkit-avize",
     "name": "Vintage Tasarım LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1162,6 +1208,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-036",
+    "code": "HL-AVZ-036",
     "slug": "dekoratif-modern-led-avize",
     "name": "Dekoratif Modern LED Avize",
     "categorySlug": "kategorisiz",
@@ -1187,6 +1234,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-037",
+    "code": "HL-AVZ-037",
     "slug": "dekoratif-modern-led-sarkit-avize",
     "name": "Dekoratif Modern LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1212,6 +1260,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-038",
+    "code": "HL-AVZ-038",
     "slug": "dekoratif-dairesel-led-sarkit-avize",
     "name": "Dekoratif Dairesel LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1236,6 +1285,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-039",
+    "code": "HL-AVZ-039",
     "slug": "dekoratif-genis-halka-led-avize",
     "name": "Dekoratif Geniş Halka LED Avize",
     "categorySlug": "kategorisiz",
@@ -1262,6 +1312,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-040",
+    "code": "HL-AVZ-040",
     "slug": "dekoratif-hibrit-led-ve-ampullu-avize",
     "name": "Dekoratif Hibrit LED ve Ampullü Avize",
     "categorySlug": "kategorisiz",
@@ -1289,6 +1340,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-041",
+    "code": "HL-AVZ-041",
     "slug": "dekoratif-kompakt-led-avize",
     "name": "Dekoratif Kompakt LED Avize",
     "categorySlug": "kategorisiz",
@@ -1315,6 +1367,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-042",
+    "code": "HL-AVZ-042",
     "slug": "dekoratif-tasarim-led-sarkit-avize",
     "name": "Dekoratif Tasarım LED Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1340,6 +1393,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-043",
+    "code": "HL-AVZ-043",
     "slug": "plafonyer-tavana-monteli-led-avize",
     "name": "Plafonyer Tavana Monteli LED Avize",
     "categorySlug": "kategorisiz",
@@ -1365,6 +1419,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-044",
+    "code": "HL-AVZ-044",
     "slug": "dekoratif-kure-sarkit-avize",
     "name": "Dekoratif Küre Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1390,6 +1445,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-045",
+    "code": "HL-AVZ-045",
     "slug": "kristal-tasli-modern-led-avize",
     "name": "Kristal Taşlı Modern LED Avize",
     "categorySlug": "kategorisiz",
@@ -1416,6 +1472,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-046",
+    "code": "HL-AVZ-046",
     "slug": "saray-tipi-dev-kristal-led-avize",
     "name": "Saray Tipi Dev Kristal LED Avize",
     "categorySlug": "kategorisiz",
@@ -1441,6 +1498,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-047",
+    "code": "HL-AVZ-047",
     "slug": "klasik-cam-kollu-luks-avize",
     "name": "Klasik Cam Kollu Lüks Avize",
     "categorySlug": "kategorisiz",
@@ -1467,6 +1525,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-048",
+    "code": "HL-AVZ-048",
     "slug": "kristal-tasli-hibrit-led-avize",
     "name": "Kristal Taşlı Hibrit LED Avize",
     "categorySlug": "kategorisiz",
@@ -1491,6 +1550,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-049",
+    "code": "HL-AVZ-049",
     "slug": "kristal-tasli-tasarim-led-avize",
     "name": "Kristal Taşlı Tasarım LED Avize",
     "categorySlug": "kategorisiz",
@@ -1515,6 +1575,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-050",
+    "code": "HL-AVZ-050",
     "slug": "kirpi-model-modern-sarkit-avize",
     "name": "Kirpi Model Modern Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1541,6 +1602,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-051",
+    "code": "HL-AVZ-051",
     "slug": "kristal-tasli-dairesel-led-avize",
     "name": "Kristal Taşlı Dairesel LED Avize",
     "categorySlug": "kategorisiz",
@@ -1566,6 +1628,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-052",
+    "code": "HL-AVZ-052",
     "slug": "minimalist-cizgisel-sarkit-led-avize",
     "name": "Minimalist Çizgisel Sarkıt LED Avize",
     "categorySlug": "kategorisiz",
@@ -1590,6 +1653,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-053",
+    "code": "HL-AVZ-053",
     "slug": "modern-metal-kollu-sarkit-avize",
     "name": "Modern Metal Kollu Sarkıt Avize",
     "categorySlug": "kategorisiz",
@@ -1614,6 +1678,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     "id": "AVZ-054",
+    "code": "HL-AVZ-054",
     "slug": "dekoratif-dairesel-led-sarkit-avize-avz-054",
     "name": "Dekoratif Dairesel LED Sarkıt Avize",
     "categorySlug": "kategorisiz",

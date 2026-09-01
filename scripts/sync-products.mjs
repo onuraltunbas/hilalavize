@@ -26,13 +26,6 @@ const CATEGORY_CONFIGS = {
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
   },
-  "metal-grup": {
-    slug: "metal-grup",
-    name: "Metal Avizeler",
-    prefix: "MTL",
-    defaultBranch: "showroom",
-    defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
-  },
   "tekli-avizeler": {
     slug: "tekli-avizeler",
     name: "Tekli Avizeler & Sarkıtlar",
@@ -225,6 +218,7 @@ function processAllProducts() {
     items.forEach((item, index) => {
       const itemNo = item.no || index + 1;
       const id = (item.id || `${catConfig.prefix}-${String(itemNo).padStart(3, "0")}`).toUpperCase().trim();
+      const code = item.code || `HL-${id}`;
       usedIds.add(id);
 
       // Fotoğrafları bul (10.jpg, 11.jpg vb.)
@@ -307,6 +301,7 @@ function processAllProducts() {
 
       allProcessedProducts.push({
         id,
+        code,
         slug,
         name,
         categorySlug: catConfig.slug,
@@ -334,6 +329,7 @@ function processAllProducts() {
 
 export interface Product {
   id: string;
+  code: string;
   slug: string;
   name: string;
   categorySlug: string;

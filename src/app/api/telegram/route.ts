@@ -440,9 +440,11 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
         const creator = wizard.creatorName || userDisplayName;
         const photoToSend = d.photoFileId || d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
         const finalImage = d.photoUrl || "/images/800x800_modern_led_halka_avize.jpg";
+        const newId = d.id || `${prefix}-001`;
 
         const newProduct: Product = {
-          id: d.id || `${prefix}-001`,
+          id: newId,
+          code: `HL-${newId}`,
           slug,
           name: d.name || "Yeni Ürün",
           categorySlug: cat.slug,

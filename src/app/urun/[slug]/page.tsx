@@ -148,11 +148,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   </span>
                   <span className="font-semibold text-white">{product.dimensions}</span>
                 </div>
-                <div className="flex justify-between py-1.5">
+                <div className="flex justify-between py-1.5 border-b border-slate-800">
                   <span className="text-slate-400 flex items-center gap-2">
                     <Lightbulb className="w-4 h-4 text-amber-400" /> Aydınlatma / Duy Tipi:
                   </span>
                   <span className="font-semibold text-white">{product.lightingType}</span>
+                </div>
+                <div className="flex justify-between py-1.5 text-xs">
+                  <span className="text-slate-400 flex items-center gap-2">
+                    🏷️ Ürün Kodu:
+                  </span>
+                  <span className="font-mono font-bold text-amber-400 tracking-wider">{product.code || product.id}</span>
                 </div>
               </div>
             </div>

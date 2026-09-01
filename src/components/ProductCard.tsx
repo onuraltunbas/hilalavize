@@ -72,6 +72,13 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
               {product.lightingType}
             </span>
           </div>
+
+          <div className="flex items-center justify-between pt-1.5 border-t border-slate-800/60 text-xs">
+            <span className="text-slate-400">Ürün Kodu:</span>
+            <span className="font-mono font-semibold text-amber-400 tracking-wider">
+              {product.code || product.id}
+            </span>
+          </div>
         </div>
 
         {/* Action Buttons */}

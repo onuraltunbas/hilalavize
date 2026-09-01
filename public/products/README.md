@@ -17,13 +17,10 @@ products/
 ├── ledli-grup/           ⚡ 2. LED'li Grup
 │   ├── photo/
 │   └── urunler.json
-├── metal-grup/           🔩 3. Metal Grup
-│   ├── photo/
-│   └── urunler.json
-├── tekli-avizeler/       🌟 4. Tekli Avizeler & Sarkıtlar (E27 Duy)
+├── tekli-avizeler/       🌟 3. Tekli Avizeler & Sarkıtlar (E27 Duy)
 │   ├── photo/            🖼️ 10.jpeg (620), 20.jpeg (630)...
 │   └── urunler.json
-├── aplik-ve-spotlar/     💡 5. Aplik & Spot Aydınlatma (Duvar Aplikleri + Ray/Gömme Spotlar)
+├── aplik-ve-spotlar/     💡 4. Aplik & Spot Aydınlatma (Duvar Aplikleri + Ray/Gömme Spotlar)
 │   ├── photo/
 │   └── urunler.json
 ├── aksesuar/             🏺 5. Aksesuar (El yapımı çini, İthal aksesuarlar)

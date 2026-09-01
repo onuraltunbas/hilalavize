@@ -63,11 +63,17 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                 </span>
                 <span className="font-semibold text-slate-200">{product.dimensions}</span>
               </div>
-              <div className="flex justify-between py-1">
+              <div className="flex justify-between py-1 border-b border-slate-800">
                 <span className="text-slate-400 flex items-center gap-1.5">
                   <Lightbulb className="w-3.5 h-3.5 text-amber-400" /> Işık / Duy
                 </span>
                 <span className="font-semibold text-slate-200">{product.lightingType}</span>
+              </div>
+              <div className="flex justify-between py-1 text-xs">
+                <span className="text-slate-400 flex items-center gap-1.5">
+                  🏷️ Ürün Kodu
+                </span>
+                <span className="font-mono font-bold text-amber-400">{product.code || product.id}</span>
               </div>
             </div>
 

@@ -19,18 +19,19 @@ export const CATEGORIES: Category[] = [
     slug: "klasik",
     name: "Klasik Avizeler",
     shortName: "Klasik",
-    tagline: "Maria Theresa & Baccarat Aileleri, Kollu ve Taşlı Saray Serileri",
+    tagline: "Maria Theresa & Baccarat Aileleri, Kollu, Taşlı ve Metal Kollu Saray Serileri",
     description:
-      "Saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa cam giydirmeli kollar ve Baccarat kalın kesme kristal avizeler.",
+      "Saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa cam giydirmeli kollar, Baccarat kalın kesme kristal ve metal kollu avizeler.",
     seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Maria Theresa & Baccarat - Hilal Avize",
     seoDescription:
-      "Kahramanmaraş'ta saray tipi klasik avizeler, Maria Theresa ve Baccarat kristal taşlı avize modelleri Hilal Avize Showroom'unda.",
+      "Kahramanmaraş'ta saray tipi klasik avizeler, Maria Theresa, Baccarat ve metal kollu klasik avize modelleri Hilal Avize Showroom'unda.",
     image: "/images/theresa_kapak.jpeg",
     coverImage: "/images/theresa_kapak.jpeg",
     featured: true,
     subcategories: [
       "Maria Theresa Ailesi",
       "Baccarat Ailesi",
+      "Metal Kollular",
       "Kollu Grup",
       "Taşlı Grup",
     ],
@@ -55,26 +56,6 @@ export const CATEGORIES: Category[] = [
       "3 Renk Kademeli LED Modeller",
     ],
     itemCount: 28,
-  },
-  {
-    slug: "metal-grup",
-    name: "Metal Avizeler",
-    shortName: "Metal Grup",
-    tagline: "Fırçalanmış Gold, Mat Siyah ve Antik Eskitme Metal Gövdeler",
-    description:
-      "Elektrostatik fırın boyalı metal avizeler. Modern, endüstriyel ve loft mekanlar için sağlam ve estetik tasarımlar.",
-    seoTitle: "Metal Avize Modelleri Kahramanmaraş | Gold & Siyah Metal Avize - Hilal Avize",
-    seoDescription:
-      "Fırçalanmış gold ve mat siyah metal avize çeşitleri, modern ve endüstriyel aydınlatmalar Kahramanmaraş Hilal Avize Showroom'unda.",
-    image: "/images/800x800_modern_led_halka_avize.jpg",
-    featured: true,
-    subcategories: [
-      "Gold Metal Avizeler",
-      "Mat Siyah & Antrasit",
-      "Endüstriyel & Loft Modeller",
-      "Metal Kollu Avizeler",
-    ],
-    itemCount: 20,
   },
   {
     slug: "tekli-avizeler",
