@@ -8,170 +8,170 @@ export interface Category {
   seoDescription: string;
   image: string;
   featured: boolean;
-  styles: string[];
+  styles?: string[];
   subcategories: string[];
   itemCount: number;
 }
 
 export const CATEGORIES: Category[] = [
   {
-    slug: "avizeler",
-    name: "Lüks & Modern Avizeler",
-    shortName: "Avizeler",
-    tagline: "Salonlarınızı ve Yaşam Alanlarınızı Büyüleyen Işık Şaheserleri",
+    slug: "klasik",
+    name: "Klasik Avizeler",
+    shortName: "Klasik",
+    tagline: "Kollu, Taşlı, Maria Theresa ve Baccarat Saray Serileri",
     description:
-      "Ağır kollu saray tipi kristal avizelerden modern spor geometrik LED sarkıtlara, sade ve şık tasarımlardan ihtişamlı çok katlı modellere kadar Kahramanmaraş'ın en zengin avize koleksiyonu.",
-    seoTitle: "Kahramanmaraş Avize Modelleri | Kristal & Modern LED Avizeler - Hilal Avize",
+      "Tamamı %100 yerli üretim saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa ve Baccarat zarafeti.",
+    seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Kollu & Taşlı Kristal Avize - Hilal Avize",
     seoDescription:
-      "Kahramanmaraş'ta en şık lüks kristal avizeler, modern LED sarkıtlar ve spor aydınlatma modelleri Hilal Avize Showroom'unda. Ücretsiz danışmanlık ve montaj güvencesiyle.",
+      "Kahramanmaraş'ta %100 yerli üretim saray tipi klasik avizeler, Maria Theresa ve Baccarat taşlı avize modelleri Hilal Avize Showroom'unda.",
     image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
     featured: true,
-    styles: ["İhtişamlı & Klasik", "Modern & Spor", "Sade & Minimalist"],
-    subcategories: ["Kristal Kollu Avizeler", "Modern LED Halkalar", "Sarkıt Avizeler", "Tekli & Çoklu Sarkıtlar", "Otel & Salon Avizeleri"],
-    itemCount: 48,
+    subcategories: [
+      "Kollu Grup",
+      "Taşlı Grup",
+      "Maria Theresa Ailesi",
+      "Baccarat Ailesi",
+    ],
+    itemCount: 24,
+  },
+  {
+    slug: "ledli-grup",
+    name: "LED'li Avizeler",
+    shortName: "LED'li Grup",
+    tagline: "Modern Geometrik LED Sarkıtlar ve Halka Avize Sistemleri",
+    description:
+      "Tamamı %100 yerli üretim modern mimari LED avizeler. 3 renk kademeli ışık modları, estetik halkalar ve enerji tasarruflu yüksek ışık kalitesi.",
+    seoTitle: "Modern LED Avize Modelleri Kahramanmaraş | LED Sarkıtlar - Hilal Avize",
+    seoDescription:
+      "Modern halka LED avizeler, 3 renk kademeli sarkıt modelleri ve mimari aydınlatma çeşitleri Kahramanmaraş Hilal Avize'de.",
+    image: "/images/800x800_modern_led_halka_avize.jpg",
+    featured: true,
+    subcategories: [
+      "Modern LED Halkalar",
+      "Lineer LED Sarkıtlar",
+      "Geometrik Tasarımlar",
+      "3 Renk Kademeli LED Modeller",
+    ],
+    itemCount: 28,
+  },
+  {
+    slug: "metal-grup",
+    name: "Metal Avizeler",
+    shortName: "Metal Grup",
+    tagline: "Fırçalanmış Gold, Mat Siyah ve Antik Eskitme Metal Gövdeler",
+    description:
+      "Tamamı %100 yerli üretim elektrostatik fırın boyalı metal avizeler. Modern, endüstriyel ve loft mekanlar için sağlam ve estetik tasarımlar.",
+    seoTitle: "Metal Avize Modelleri Kahramanmaraş | Gold & Siyah Metal Avize - Hilal Avize",
+    seoDescription:
+      "Fırçalanmış gold ve mat siyah metal avize çeşitleri, modern ve endüstriyel aydınlatmalar Kahramanmaraş Hilal Avize Showroom'unda.",
+    image: "/images/800x800_modern_led_halka_avize.jpg",
+    featured: true,
+    subcategories: [
+      "Gold Metal Avizeler",
+      "Mat Siyah & Antrasit",
+      "Endüstriyel & Loft Modeller",
+      "Metal Kollu Avizeler",
+    ],
+    itemCount: 20,
+  },
+  {
+    slug: "galeri-boslugu",
+    name: "Galeri Boşluğu & Merdiven Avizeleri",
+    shortName: "Galeri Boşluğu",
+    tagline: "Yüksek Tavanlı Villalar, Dubleks Merdiven Boşlukları ve Otel Lobileri",
+    description:
+      "Tamamı %100 yerli üretim, yüksek tavanlı dubleks villalar, sarmal merdiven boşlukları ve prestijli lobiler için özel ölçüde üretilen anıtsal dev avizeler.",
+    seoTitle: "Galeri Boşluğu ve Merdiven Avizeleri Kahramanmaraş | Hilal Avize",
+    seoDescription:
+      "Dubleks villalar ve yüksek tavanlı mekanlar için özel üretim sarmal galeri boşluğu avizeleri Hilal Avize Kahramanmaraş'ta.",
+    image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
+    featured: true,
+    subcategories: [
+      "Sarmal Kristal Avizeler",
+      "Çok Katlı Sarkıtlar",
+      "Villa Merdiven Boşluğu",
+      "Otel & Lobi Avizeleri",
+    ],
+    itemCount: 16,
   },
   {
     slug: "aplikler",
     name: "Dekoratif Duvar Aplikleri",
     shortName: "Aplikler",
-    tagline: "Duvarlarınıza Zarafet ve Sıcak Ambiyans Katan Işık Dokunuşları",
+    tagline: "Duvarlarınıza Zarafet ve Sıcak Ambiyans Katan Klasik & LED Aplikler",
     description:
-      "Klasik pirinç gövdeli kristal duvar aplikleri, modern çizgili çift yönlü LED aplikler, merdiven ve koridor aydınlatmaları ile tablo spotları.",
+      "Klasik kristal, modern LED ve fırçalanmış metal duvar aplikleri. Koridor, yatak başı, salon ve merdiven duvar aydınlatmaları.",
     seoTitle: "Kahramanmaraş Duvar Aplikleri Modelleri | Kristal & LED Aplik - Hilal Avize",
     seoDescription:
-      "Salon, koridor ve yatak odaları için lüks kristal ve modern LED duvar aplik çeşitleri Hilal Avize'de. Şık ve dayanıklı aydınlatma tasarımları.",
+      "Salon, koridor ve yatak odaları için lüks kristal ve modern LED duvar aplik çeşitleri Hilal Avize'de. Şık ve dayanıklı tasarımlar.",
     image: "/images/800x800_dekoratif_duvar_aplik.jpg",
     featured: true,
-    styles: ["İhtişamlı & Klasik", "Modern & Spor", "Sade & Minimalist"],
-    subcategories: ["Kristal Aplikler", "Modern LED Aplikler", "Tablo & Ayna Üstü Aplikler", "Dış Mekan & Bahçe Aplikleri"],
+    subcategories: [
+      "Kristal Aplikler",
+      "Modern LED Aplikler",
+      "Metal Kollu Aplikler",
+      "Tablo & Ayna Üstü Aplikler",
+    ],
     itemCount: 32,
   },
   {
-    slug: "spot-ve-ray-spot",
-    name: "Spot & Manyetik Ray Spot Sistemleri",
-    shortName: "Spot Aydınlatma",
-    tagline: "Mimari ve Modern Mekanlar İçin Kusursuz Işık Yönlendirmesi",
+    slug: "spotlar",
+    name: "Spot & Manyetik Ray Sistemleri",
+    shortName: "Spotlar",
+    tagline: "Manyetik Ray Spot Sistemleri ve Gömme Tavan Spotları",
     description:
       "Manyetik ray spot sistemleri, sıva altı ve sıva üstü tavan spotları, yönlendirilebilir odak ışıkları ve modern mimari aydınlatma armatürleri.",
     seoTitle: "Manyetik Ray Spot ve Gömme Spot Aydınlatma Kahramanmaraş | Hilal Elektrik",
     seoDescription:
-      "Mimari ray spot sistemleri, manyetik tavan spotları ve gömme spot lambalar Kahramanmaraş Hilal Elektrik şubesinde. Profesyonel montaj desteğiyle.",
+      "Mimari ray spot sistemleri, manyetik tavan spotları ve gömme spot lambalar Kahramanmaraş Hilal Elektrik şubesinde.",
     image: "/images/800x800_manyetik_ray_spot_sistem.jpg",
     featured: true,
-    styles: ["Modern & Spor", "Sade & Minimalist", "Mimari Çözümler"],
-    subcategories: ["Manyetik Ray Spotlar", "Gömme Tavan Spotları", "Sıva Üstü Silindir Spotlar", "Dekoratif LED Spotlar"],
+    subcategories: [
+      "Manyetik Ray Spotlar",
+      "Gömme Tavan Spotları",
+      "Sıva Üstü Silindir Spotlar",
+      "Dekoratif LED Spotlar",
+    ],
     itemCount: 28,
   },
   {
-    slug: "abajur-ve-lambader",
-    name: "Abajur & Lambader Koleksiyonu",
-    shortName: "Abajur & Lambader",
-    tagline: "Masa Üstü ve Köşe Alanlarda Zarafet Dolu Sıcak Işık",
+    slug: "aksesuar",
+    name: "Lüks Aksesuar & Çini Koleksiyonu",
+    shortName: "Aksesuar",
+    tagline: "El Yapımı Çini Sanat Eserleri ve Seçkin İthal Aksesuarlar",
     description:
-      "Kristal gövdeli komodin abajurları, ipek başlıklı salon abajurları, pirinç detaylı heykelsi lambaderler ve okuma lambaları.",
-    seoTitle: "Lüks Abajur ve Lambader Modelleri Kahramanmaraş | Hilal Avize",
+      "Geleneksel Türk el işçiliği çini vazolar, kaseler ve panolar; yaşam alanlarınızı tamamlayan seçkin ithal konsol objeleri, tasarım aynalar ve saatler.",
+    seoTitle: "El Yapımı Çini ve İthal Aksesuarlar Kahramanmaraş | Hilal Aksesuar",
     seoDescription:
-      "Yatak odası abajurları, salon köşe lambaderleri ve kristal dekoratif masa lambaları Hilal Avize Showroom'unda sizleri bekliyor.",
-    image: "/images/800x800_kadife_tasarim_berjer.jpg",
-    featured: true,
-    styles: ["İhtişamlı & Klasik", "Modern & Spor", "Sade & Minimalist"],
-    subcategories: ["Klasik Kristal Abajurlar", "Modern Köşe Lambaderleri", "Masa & Çalışma Lambaları", "Otel Tipi Abajurlar"],
-    itemCount: 24,
-  },
-  {
-    slug: "dekoratif-aynalar",
-    name: "Dekoratif & Akıllı LED Aynalar",
-    shortName: "Aynalar",
-    tagline: "Mekanlara Derinlik, Işık ve Lüks Kazandıran Tasarım Aynalar",
-    description:
-      "Dokunmatik buğu önleyicili LED banyo ve salon aynaları, varaklı oymalı ihtişamlı klasik aynalar, bronz ve füme metal çerçeveli modern konsol aynaları.",
-    seoTitle: "Dekoratif LED ve Varaklı Duvar Aynaları Kahramanmaraş | Hilal Avize",
-    seoDescription:
-      "Kahramanmaraş dekoratif ayna modelleri: Dokunmatik LED ışıklı banyo ve salon aynaları, varaklı klasik aynalar Hilal Avize Showroom'da.",
-    image: "/images/800x800_dokunmatik_led_ayna.jpg",
-    featured: true,
-    styles: ["İhtişamlı & Klasik", "Modern & Spor", "Sade & Minimalist"],
-    subcategories: ["Dokunmatik LED Aynalar", "Varaklı Klasik Aynalar", "Metal & Bronz Konsol Aynaları", "Boy Aynaları"],
-    itemCount: 22,
-  },
-  {
-    slug: "duvar-ve-masa-saatleri",
-    name: "Özel Tasarım Duvar & Masa Saatleri",
-    shortName: "Saatler",
-    tagline: "Zamanı Zarafetle Gösteren Heykelsi Duvar Aksesuarları",
-    description:
-      "Hakiki mermer kadranlı büyük salon duvar saatleri, çark mekanizmalı metal lüks saatler, pirinç ve gold masa saatleri.",
-    seoTitle: "Lüks Duvar ve Masa Saatleri Kahramanmaraş | Hilal Aksesuar",
-    seoDescription:
-      "Büyük boy dekoratif duvar saatleri, mermer kadranlı lüks salon saatleri Hilal Avize & Aksesuar mağazasında.",
-    image: "/images/800x800_ozel_tasarim_duvar_saati.jpg",
-    featured: true,
-    styles: ["Modern & Spor", "İhtişamlı & Klasik", "Sade & Minimalist"],
-    subcategories: ["Büyük Boy Duvar Saatleri", "Mermer Kadranlı Saatler", "Çarklı Metal Saatler", "Masa & Konsol Saatleri"],
-    itemCount: 18,
-  },
-  {
-    slug: "cam-sus-esyalari",
-    name: "Cam Sanat & Süs Eşyaları",
-    shortName: "Cam Eşyalar",
-    tagline: "El İşçiliği Üfleme Cam, Vazo ve Kristal Dekoratif Objeler",
-    description:
-      "Altın varak detaylı el üfleme cam vazolar, Murano tarzı kristal kaseler, renkli cam heykeller ve seçkin konsol aksesuarları.",
-    seoTitle: "El Yapımı Cam Süs Eşyaları & Kristal Objeler Kahramanmaraş | Hilal Aksesuar",
-    seoDescription:
-      "Özel el üfleme cam vazolar, kristal kaseler ve lüks dekorasyon aksesuarları Hilal Aksesuar Showroom'unda.",
+      "El yapımı çini sanat eserleri, ithal lüks konsol aksesuarları, dekoratif aynalar ve saatler Hilal Avize & Aksesuar Showroom'unda.",
     image: "/images/800x800_ufleme_cam_vazo_aksesuar.jpg",
     featured: true,
-    styles: ["İhtişamlı & Klasik", "Modern & Spor"],
-    subcategories: ["Üfleme Cam Vazolar", "Kristal Meyvelikler & Kaseler", "Dekoratif Cam Objeler", "Altın Varaklı Cam Aksesuarlar"],
+    subcategories: [
+      "El Yapımı Çini Aksesuarlar",
+      "İthal Aksesuarlar",
+      "Dekoratif Aynalar",
+      "Tasarım Saatler",
+      "Cam Sanat Eserleri",
+    ],
     itemCount: 36,
   },
   {
-    slug: "anahtar-ve-priz-serileri",
-    name: "Lüks Anahtar & Priz Serileri",
-    shortName: "Anahtar & Priz",
-    tagline: "Temperli Cam, Fırçalanmış Metal ve Akıllı Dokunmatik Butonlar",
+    slug: "kategorisiz",
+    name: "Tüm Avizeler (Yeni Eklenenler)",
+    shortName: "Tüm Avizeler",
+    tagline: "Hilal Avize Showroom %100 Yerli Üretim Tüm Modeller",
     description:
-      "Siyah, beyaz ve füme cam çerçeveli lüks anahtar-prizler, şampanya gold fırçalanmış metal seriler, akıllı aydınlatma anahtarları ve priz kombinasyonları.",
-    seoTitle: "Lüks Cam ve Metal Çerçeveli Anahtar Priz Çeşitleri Kahramanmaraş | Hilal Elektrik",
+      "Kahramanmaraş showroomumuzda sergilenen %100 yerli üretim avize modellerimiz. Yeni eklenen ve sınıflandırılmayı bekleyen tüm seçkin tasarımlar.",
+    seoTitle: "Tüm Avize Koleksiyonu Kahramanmaraş | Yerli Üretim Avizeler - Hilal Avize",
     seoDescription:
-      "Ev ve villalar için lüks cam çerçeveli anahtar ve priz takımları, güvenilir elektrik malzemeleri Kahramanmaraş Hilal Elektrik şubesinde.",
-    image: "/images/800x800_luks_cam_anahtar_priz.jpg",
+      "Hilal Avize Kahramanmaraş %100 yerli üretim tüm avize modelleri tek vitrinde. Canlı showroom modelleri ve teknik detaylar.",
+    image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
     featured: true,
-    styles: ["Modern & Spor", "Sade & Minimalist", "Lüks Seri"],
-    subcategories: ["Cam Çerçeveli Anahtarlar", "Metal Butonlu Prizler", "Dimmer & Işık Ayarlayıcılar", "Akıllı Ev Anahtarları"],
-    itemCount: 42,
-  },
-  {
-    slug: "dekoratif-koltuk-ve-berjerler",
-    name: "Dekoratif Koltuk & Berjerler",
-    shortName: "Koltuk & Berjer",
-    tagline: "Aydınlatmanızla Bütünleşen Konforlu ve Gösterişli Oturma Köşeleri",
-    description:
-      "Kraliyet mavisi ve zümrüt yeşili kadife berjerler, gold ayaklı tasarım dinlenme koltukları, gösterişli ve modern tekli koltuk modelleri.",
-    seoTitle: "Lüks Tasarım Berjer ve Dekoratif Koltuklar Kahramanmaraş | Hilal Avize & Aksesuar",
-    seoDescription:
-      "Salon ve dinlenme köşeleri için şık kadife berjerler, tasarım dekoratif koltuklar Hilal Avize Showroom'unda.",
-    image: "/images/800x800_kadife_tasarim_berjer.jpg",
-    featured: true,
-    styles: ["İhtişamlı & Klasik", "Modern & Spor"],
-    subcategories: ["Kadife Lüks Berjerler", "Gold Ayaklı Dinlenme Koltukları", "Tasarım Tekli Koltuklar"],
-    itemCount: 14,
-  },
-  {
-    slug: "dekoratif-sehpalar",
-    name: "Dekoratif Mermer & Bronz Sehpalar",
-    shortName: "Sehpalar",
-    tagline: "İtalyan Mermeri ve Bronz Metalin Kusursuz Uyumu",
-    description:
-      "Calacatta mermer tablalı yuvarlak orta sehpalar, bronz ve gold metal ayaklı zigon sehpalar, füme camlı modern yan sehpalar.",
-    seoTitle: "Mermer Orta Sehpa ve Yan Sehpa Modelleri Kahramanmaraş | Hilal Aksesuar",
-    seoDescription:
-      "Doğal mermer orta sehpalar, gold ayaklı zigon ve yan sehpa takımları Hilal Avize & Aksesuar Showroom'unda sizleri bekliyor.",
-    image: "/images/800x800_mermer_bronz_orta_sehpa.jpg",
-    featured: true,
-    styles: ["İhtişamlı & Klasik", "Modern & Spor", "Sade & Minimalist"],
-    subcategories: ["Mermer Orta Sehpalar", "Bronz & Gold Zigon Sehpalar", "Cam Tablalı Yan Sehpalar", "Tasarım C Sehpalar"],
-    itemCount: 16,
+    subcategories: [
+      "Yeni Eklenen Modeller",
+      "Showroom Koleksiyonu",
+      "%100 Yerli Üretim Avizeler",
+    ],
+    itemCount: 53,
   },
 ];

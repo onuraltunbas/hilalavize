@@ -4,41 +4,37 @@ Tüm ürünler kategorilerine ayrılmış klasörlerde saklanır. Artık karmaş
 
 ---
 
-## 📂 KATEGORİ KLASÖRLERİ YAPISI
+## 📂 YENİ KATEGORİ KLASÖRLERİ YAPISI
 
 ```text
 products/
-├── avizeler/
-│   ├── photo/            🖼️ 10.jpg (1. ürün kapak), 11.jpg (1. ürün 2. foto), 20.jpg (2. ürün)...
-│   └── urunler.json      📄 Avize modellerinin listesi
-├── aplikler/
-│   ├── photo/            🖼️ 10.jpg, 11.jpg, 20.jpg...
-│   └── urunler.json
-├── spot-ve-ray-spot/
+├── kategorisiz/          📦 YENİ EKLENEN TÜM AVİZELER (Ana Havuz)
+│   ├── photo/            🖼️ 10.jpg, 11.jpg, 20.jpg, 30.jpg...
+│   └── urunler.json      📄 Modellerin listesi (no: 1, no: 2...)
+├── klasik/               👑 1. Klasik (Kollu, Taşlı, Maria Theresa, Baccarat)
 │   ├── photo/
 │   └── urunler.json
-├── abajur-ve-lambader/
+├── ledli-grup/           ⚡ 2. LED'li Grup
 │   ├── photo/
 │   └── urunler.json
-├── dekoratif-aynalar/
+├── metal-grup/           🔩 3. Metal Grup
 │   ├── photo/
 │   └── urunler.json
-├── duvar-ve-masa-saatleri/
+├── galeri-boslugu/       🏛️ 4. Galeri Boşluğu & Merdiven Avizeleri
 │   ├── photo/
 │   └── urunler.json
-├── cam-sus-esyalari/
+├── aplikler/             💡 5. Aplikler
 │   ├── photo/
 │   └── urunler.json
-├── anahtar-ve-priz-serileri/
+├── spotlar/              🎯 6. Spotlar & Manyetik Ray
 │   ├── photo/
 │   └── urunler.json
-├── dekoratif-koltuk-ve-berjerler/
-│   ├── photo/
-│   └── urunler.json
-└── dekoratif-sehpalar/
+└── aksesuar/             🏺 7. Aksesuar (El yapımı çini, İthal aksesuarlar)
     ├── photo/
     └── urunler.json
 ```
+
+> **📌 Önemli Not:** Tüm avizelerimiz **%100 Yerli Üretimdir**. Yeni bir görsel ekleyeceğinizde aksini belirtmediğiniz sürece fotoğrafları ve bilgileri `products/kategorisiz/` klasörüne ekleyebilirsiniz!
 
 ---
 

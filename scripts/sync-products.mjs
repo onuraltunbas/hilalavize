@@ -12,10 +12,31 @@ const COMPILED_JSON_PATH = path.join(rootDir, "src", "data", "compiled-products.
 const GENERATED_TS_PATH = path.join(rootDir, "src", "data", "products.ts");
 
 const CATEGORY_CONFIGS = {
-  avizeler: {
-    slug: "avizeler",
-    name: "Lüks & Modern Avizeler",
-    prefix: "AVZ",
+  klasik: {
+    slug: "klasik",
+    name: "Klasik Avizeler",
+    prefix: "KLS",
+    defaultBranch: "showroom",
+    defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
+  },
+  "ledli-grup": {
+    slug: "ledli-grup",
+    name: "LED'li Avizeler",
+    prefix: "LED",
+    defaultBranch: "showroom",
+    defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
+  },
+  "metal-grup": {
+    slug: "metal-grup",
+    name: "Metal Avizeler",
+    prefix: "MTL",
+    defaultBranch: "showroom",
+    defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
+  },
+  "galeri-boslugu": {
+    slug: "galeri-boslugu",
+    name: "Galeri Boşluğu & Merdiven Avizeleri",
+    prefix: "GLR",
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
   },
@@ -26,61 +47,26 @@ const CATEGORY_CONFIGS = {
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_dekoratif_duvar_aplik.jpg",
   },
-  "spot-ve-ray-spot": {
-    slug: "spot-ve-ray-spot",
-    name: "Spot & Manyetik Ray Spot Sistemleri",
+  spotlar: {
+    slug: "spotlar",
+    name: "Spot & Manyetik Ray Sistemleri",
     prefix: "SPT",
     defaultBranch: "electrical",
     defaultImage: "/images/800x800_manyetik_ray_spot_sistem.jpg",
   },
-  "abajur-ve-lambader": {
-    slug: "abajur-ve-lambader",
-    name: "Abajur & Lambader Koleksiyonu",
-    prefix: "ABJ",
-    defaultBranch: "showroom",
-    defaultImage: "/images/800x800_kadife_tasarim_berjer.jpg",
-  },
-  "dekoratif-aynalar": {
-    slug: "dekoratif-aynalar",
-    name: "Dekoratif & Akıllı LED Aynalar",
-    prefix: "AYN",
-    defaultBranch: "showroom",
-    defaultImage: "/images/800x800_dokunmatik_led_ayna.jpg",
-  },
-  "duvar-ve-masa-saatleri": {
-    slug: "duvar-ve-masa-saatleri",
-    name: "Özel Tasarım Duvar & Masa Saatleri",
-    prefix: "DST",
-    defaultBranch: "showroom",
-    defaultImage: "/images/800x800_ozel_tasarim_duvar_saati.jpg",
-  },
-  "cam-sus-esyalari": {
-    slug: "cam-sus-esyalari",
-    name: "Cam Sanat & Süs Eşyaları",
-    prefix: "SUS",
+  aksesuar: {
+    slug: "aksesuar",
+    name: "Lüks Aksesuar & Çini Koleksiyonu",
+    prefix: "AKS",
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_ufleme_cam_vazo_aksesuar.jpg",
   },
-  "anahtar-ve-priz-serileri": {
-    slug: "anahtar-ve-priz-serileri",
-    name: "Lüks Anahtar & Priz Serileri",
-    prefix: "ANH",
-    defaultBranch: "electrical",
-    defaultImage: "/images/800x800_luks_cam_anahtar_priz.jpg",
-  },
-  "dekoratif-koltuk-ve-berjerler": {
-    slug: "dekoratif-koltuk-ve-berjerler",
-    name: "Dekoratif Koltuk & Berjerler",
-    prefix: "KOL",
+  kategorisiz: {
+    slug: "kategorisiz",
+    name: "Tüm Avizeler (Yeni Eklenenler)",
+    prefix: "AVZ",
     defaultBranch: "showroom",
-    defaultImage: "/images/800x800_kadife_tasarim_berjer.jpg",
-  },
-  "dekoratif-sehpalar": {
-    slug: "dekoratif-sehpalar",
-    name: "Dekoratif Mermer & Bronz Sehpalar",
-    prefix: "SEH",
-    defaultBranch: "showroom",
-    defaultImage: "/images/800x800_mermer_bronz_orta_sehpa.jpg",
+    defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
   },
 };
 
