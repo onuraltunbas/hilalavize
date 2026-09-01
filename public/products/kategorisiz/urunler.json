@@ -71,8 +71,8 @@
   {
     "no": 10,
     "name": "Operis Geometrik LED Sarkıt Avize",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "L1000*H1500mm",
+    "lightingType": "Dahili LED Modülü",
     "shortDescription": "60 cm çapında geometrik hatları ve göz alıcı parlaklığıyla modern konutların vazgeçilmez modeli.",
     "images": [
       "/products/kategorisiz/photo/100.jpeg"
@@ -81,8 +81,8 @@
   {
     "no": 11,
     "name": "Minvex Modern LED Sarkıt Avize",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "Φ600*H1200mm / Φ600*H1000mm",
+    "lightingType": "Dahili LED (40W / 67W)",
     "shortDescription": "60 cm çapında minimalist profili ve enerji tasarruflu yüksek parlaklık sunan LED avize.",
     "images": [
       "/products/kategorisiz/photo/110.jpeg",
@@ -195,15 +195,15 @@
   {
     "no": 27,
     "name": "Menekşe Modern LED Avize",
-    "dimensions": "Çap: 70 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "450*800mm",
+    "lightingType": "Dahili LED Modülü",
     "shortDescription": "70 cm çapında çiçek formlu modern ışık yapısıyla yaşam alanınıza ferah ve sıcak bir ambiyans katar."
   },
   {
     "no": 28,
     "name": "Menekşe Lüks LED Avize Model 2",
-    "dimensions": "Çap: 70 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "450*800mm",
+    "lightingType": "Dahili LED Modülü",
     "shortDescription": "70 cm geniş çapı, fırçalanmış gövde detayları ve homojen LED parlaklığı ile salonlar için özel seri."
   },
   {
@@ -217,8 +217,8 @@
   {
     "no": 30,
     "name": "Loya Tasarım Sarkıt Avize",
-    "dimensions": "Yükseklik: 130 cm",
-    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "dimensions": "950*380*H1200mm",
+    "lightingType": "Dahili LED 100W",
     "shortDescription": "130 cm sarkıt uzunluğu ve E27 duy seçeneğiyle rustik ve modern mekanlar için heykelsi avize.",
     "images": [
       "/products/kategorisiz/photo/300.jpeg"
@@ -228,7 +228,7 @@
     "no": 31,
     "name": "Laura Lüks Sarkıt Avize",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "lightingType": "Dahili LED Modülü",
     "badge": "Zarif Seri",
     "shortDescription": "120 cm ayarlanabilir sarkıt zinciri ve E14 kandil duylarıyla yemek odaları ve salonlar için lüks avize.",
     "images": [
@@ -239,22 +239,22 @@
   {
     "no": 32,
     "name": "Norelia Kompakt LED Sarkıt Avize",
-    "dimensions": "Çap: 45 cm",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "440*320*H1500mm / 440*310*H1500mm",
+    "lightingType": "Dahili LED (30W / 45W)",
     "shortDescription": "45 cm çapında minimal şıklığı ve göz kamaştırmayan homojen LED ışığıyla modern yaşam alanlarına özel."
   },
   {
     "no": 33,
     "name": "Zoye Dekoratif Sarkıt Avize",
-    "dimensions": "Çap: 60 cm",
-    "lightingType": "E14 Duy (LED Ampul Uyumlu)",
+    "dimensions": "Φ750*H500mm / Φ900*H530mm",
+    "lightingType": "Dahili LED Modülü",
     "shortDescription": "60 cm çapında klasik ve moderni birleştiren tasarımıyla salon ve oturma odalarına ışıltı katan model."
   },
   {
     "no": 34,
     "name": "Ophelia Mini LED Sarkıt Avize",
-    "dimensions": "Çap: 30 cm",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "Φ600*H1300mm / Φ830*H1400mm",
+    "lightingType": "Dahili LED (64W / 110W)",
     "shortDescription": "30 cm mini çapıyla ikili veya üçlü ada üstü kombinasyonları ve yatak başı sarkıtları için ideal."
   },
   {
