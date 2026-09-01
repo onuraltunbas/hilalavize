@@ -159,10 +159,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   </div>
                 )}
                 <div className="flex justify-between py-1.5 text-xs">
-                  <span className="text-slate-400 flex items-center gap-2">
+                  <span className="text-slate-500 flex items-center gap-2">
                     🏷️ Ürün Kodu:
                   </span>
-                  <span className="font-mono font-bold text-amber-400 tracking-wider">{product.code || product.id}</span>
+                  <span className="font-mono text-slate-400 tracking-wider">{product.code || product.id}</span>
                 </div>
               </div>
             </div>

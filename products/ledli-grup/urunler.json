@@ -6,5 +6,505 @@
     "lightingType": "Dahili Yüksek Verimli LED Modülü",
     "badge": "Modern LED Seri",
     "shortDescription": "L1000*H1500mm ebatlarında dinamik çapraz çubuk tasarımı ve kristal uçlu LED aydınlatmasıyla salon ve yemek masaları için tasarlanmış lüks LED avize."
+  },
+  {
+    "no": 2,
+    "name": "Maxira Modern LED Sarkıt Avize",
+    "dimensions": "L600*W435*H1500mm / L530*W340*H1500mm / Φ800*H2000mm",
+    "lightingType": "Dahili LED (18W / 21W / 86W)",
+    "badge": "Yeni Sezon",
+    "shortDescription": "80 cm geniş çapı ve yüksek ışık verimiyle salon ve yemek masaları için tasarlanmış modern LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/20.jpeg",
+      "/products/ledli-grup/photo/21.jpeg"
+    ]
+  },
+  {
+    "no": 3,
+    "name": "Renvio Gold LED Sarkıt Avize",
+    "dimensions": "Φ400*H1200mm / Φ600*H1200mm / Φ800*H1200mm",
+    "lightingType": "Dahili LED (15W / 25W / 32W)",
+    "badge": "Popüler Model",
+    "shortDescription": "60 cm çapında şık gold gövdeli ve homojen ışık yayan modern LED sarkıt avize.",
+    "images": [
+      "/products/ledli-grup/photo/30.jpeg"
+    ]
+  },
+  {
+    "no": 4,
+    "name": "Carvella Lineer LED Avize",
+    "dimensions": "1800*350*H1700mm",
+    "lightingType": "Dahili LED 58W",
+    "badge": "Büyük Boy Seri",
+    "shortDescription": "180x35 cm uzun formuyla geniş ada tezgahları ve uzun yemek masaları için mimari lineer avize.",
+    "images": [
+      "/products/ledli-grup/photo/40.jpeg",
+      "/products/ledli-grup/photo/41.jpeg"
+    ]
+  },
+  {
+    "no": 5,
+    "name": "Carvella Kompakt Lineer LED Avize",
+    "dimensions": "1200*380*H1400mm / Φ280*H1950mm",
+    "lightingType": "Dahili LED (42W / 52W)",
+    "badge": "Yeni Model",
+    "shortDescription": "120x35 cm ideal ebadıyla mutfak adaları ve modern salonlar için minimalist lineer avize.",
+    "images": [
+      "/products/ledli-grup/photo/50.jpeg",
+      "/products/ledli-grup/photo/51.jpeg"
+    ]
+  },
+  {
+    "no": 6,
+    "name": "Sevona Dairesel LED Sarkıt Avize",
+    "dimensions": "Φ800*H1500mm / Φ600*H1200mm",
+    "lightingType": "Dahili LED (92W / 196W)",
+    "shortDescription": "60 cm çapında dairesel akıcı formu ve yumuşak ışık dağılımıyla ferah mekanlar oluşturan LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/60.jpeg",
+      "/products/ledli-grup/photo/61.jpeg"
+    ]
+  },
+  {
+    "no": 7,
+    "name": "Addo Büyük Boy LED Sarkıt Avize",
+    "dimensions": "Φ900*H2100mm",
+    "lightingType": "Dahili LED 400W",
+    "badge": "Geniş Salonlar İçin",
+    "shortDescription": "90 cm dev çapı ve estetik halka tasarımıyla yüksek tavanlı salonlara prestij katan LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/70.jpeg",
+      "/products/ledli-grup/photo/71.jpeg"
+    ]
+  },
+  {
+    "no": 8,
+    "name": "Addo Modern LED Sarkıt Avize",
+    "dimensions": "Φ600*H2200mm / Φ450*H1500mm",
+    "lightingType": "Dahili LED (128W / 192W)",
+    "shortDescription": "60 cm çapında kompakt ve zarif tasarımıyla oturma odaları ve salonlar için ideal aydınlatma.",
+    "images": [
+      "/products/ledli-grup/photo/80.jpeg",
+      "/products/ledli-grup/photo/81.jpeg"
+    ]
+  },
+  {
+    "no": 9,
+    "name": "Trivon Üçlü Tasarım LED Sarkıt Avize",
+    "dimensions": "Φ800*H1200mm / Φ600*H1200mm",
+    "lightingType": "Dahili LED (50W / 86W)",
+    "badge": "Tasarım Seri",
+    "shortDescription": "60 cm çapında mimari açılı formuyla mekana derinlik kazandıran özel tasarım LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/90.jpeg",
+      "/products/ledli-grup/photo/91.jpeg"
+    ]
+  },
+  {
+    "no": 10,
+    "name": "Trivon Kristal Vurgulu LED Sarkıt Avize",
+    "dimensions": "Φ600*H1200mm / L1200*W300*H1200mm",
+    "lightingType": "Dahili LED (40W / 60W)",
+    "shortDescription": "60 cm çapında ışığı kıran özel difüzör camı ve yüksek ışık gücüne sahip modern avize.",
+    "images": [
+      "/products/ledli-grup/photo/100.jpeg",
+      "/products/ledli-grup/photo/101.jpeg"
+    ]
+  },
+  {
+    "no": 11,
+    "name": "Operis Geometrik LED Sarkıt Avize",
+    "dimensions": "L1000*H1500mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "60 cm çapında geometrik hatları ve göz alıcı parlaklığıyla modern konutların vazgeçilmez modeli.",
+    "images": [
+      "/products/ledli-grup/photo/110.jpeg"
+    ]
+  },
+  {
+    "no": 12,
+    "name": "Minvex Modern LED Sarkıt Avize",
+    "dimensions": "Φ600*H1200mm / Φ600*H1000mm",
+    "lightingType": "Dahili LED (40W / 67W)",
+    "shortDescription": "60 cm çapında minimalist profili ve enerji tasarruflu yüksek parlaklık sunan LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/120.jpeg",
+      "/products/ledli-grup/photo/121.jpeg"
+    ]
+  },
+  {
+    "no": 13,
+    "name": "Avsıra Lüks LED Sarkıt Avize",
+    "dimensions": "Φ950*H1500mm / Φ760*H1500mm",
+    "lightingType": "Dahili LED (80W / 100W)",
+    "badge": "Lüks Koleksiyon",
+    "shortDescription": "75 cm geniş çapıyla salonunuzun merkezinde ışıltılı bir odak noktası oluşturan lüks LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/130.jpeg",
+      "/products/ledli-grup/photo/131.jpeg"
+    ]
+  },
+  {
+    "no": 14,
+    "name": "Seralya Zarif LED Sarkıt Avize",
+    "dimensions": "Φ780*H1500mm / Φ680*H1500mm",
+    "lightingType": "Dahili LED (60W / 80W)",
+    "shortDescription": "65 cm çapında estetik kıvrımları ve gözü yormayan sıcak amber ışığıyla zarif bir avize modeli.",
+    "images": [
+      "/products/ledli-grup/photo/140.jpeg",
+      "/products/ledli-grup/photo/141.jpeg"
+    ]
+  },
+  {
+    "no": 15,
+    "name": "Porenya Dalgalı LED Sarkıt Avize",
+    "dimensions": "Φ720*H1100mm / Φ980*H1100mm",
+    "lightingType": "Dahili LED (80W / 160W)",
+    "badge": "Özel Tasarım",
+    "shortDescription": "75 cm çapında organik dalgalı formuyla modern dekorasyonlara dinamizm katan heykelsi LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/150.jpeg",
+      "/products/ledli-grup/photo/151.jpeg"
+    ]
+  },
+  {
+    "no": 16,
+    "name": "Ekerd Mimari LED Sarkıt Avize",
+    "dimensions": "Φ860*H1500mm / Φ740*H1500mm / L840*W480*H1500mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "80 cm çapında güçlü aydınlatma performansı ve fırçalanmış gövde kalitesiyle üst segment avize.",
+    "images": [
+      "/products/ledli-grup/photo/160.jpeg",
+      "/products/ledli-grup/photo/161.jpeg"
+    ]
+  },
+  {
+    "no": 17,
+    "name": "Orvella Büyük Boy LED Avize",
+    "dimensions": "850*H1500mm",
+    "lightingType": "Dahili LED 40W",
+    "badge": "Çok Satan",
+    "shortDescription": "85 cm geniş çapıyla büyük metrekareli salonlar ve villalar için tasarlanmış görkemli LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/170.jpeg",
+      "/products/ledli-grup/photo/171.jpeg"
+    ]
+  },
+  {
+    "no": 18,
+    "name": "Orvella Modern LED Sarkıt Avize",
+    "dimensions": "Φ530*H1500mm / Φ630*H1500mm",
+    "lightingType": "Dahili LED (48W / 64W)",
+    "shortDescription": "65 cm çapında zarif ölçüleri ve ayarlanabilir askı yüksekliği ile şık salon aydınlatması.",
+    "images": [
+      "/products/ledli-grup/photo/180.jpeg",
+      "/products/ledli-grup/photo/181.jpeg"
+    ]
+  },
+  {
+    "no": 19,
+    "name": "Peroria Tasarım LED Sarkıt Avize",
+    "dimensions": "700*80*H1200mm / Φ100*H1200mm",
+    "lightingType": "Dahili LED (14W / 70W)",
+    "shortDescription": "70 cm çapında modern ışık halkaları ve homojen parlaklığıyla çağdaş mekanlar için üretildi.",
+    "images": [
+      "/products/ledli-grup/photo/190.jpeg",
+      "/products/ledli-grup/photo/191.jpeg"
+    ]
+  },
+  {
+    "no": 20,
+    "name": "Yomıra Geometrik LED Sarkıt Avize",
+    "dimensions": "Φ810*H660mm / Φ660*H660mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "70 cm çapında estetik geometrik formuyla yaşam alanınıza modern bir sanat dokunuşu kazandırır.",
+    "images": [
+      "/products/ledli-grup/photo/200.jpeg",
+      "/products/ledli-grup/photo/201.jpeg"
+    ]
+  },
+  {
+    "no": 21,
+    "name": "Serry Lüks LED Sarkıt Avize",
+    "dimensions": "Φ750*H550mm / 950*H710mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "70 cm çapında ışıltılı detayları ve 3 farklı renk sıcaklığı seçeneğiyle lüks salon avizesi.",
+    "images": [
+      "/products/ledli-grup/photo/210.jpeg",
+      "/products/ledli-grup/photo/211.jpeg"
+    ]
+  },
+  {
+    "no": 22,
+    "name": "Zevrox Kompakt LED Sarkıt Avize",
+    "dimensions": "Φ600*H1500mm / Φ500*H1500mm / Φ800*H1500mm",
+    "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
+    "shortDescription": "50 cm çapında kompakt odalar, antreler ve mutfak masaları için zarif ve verimli LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/220.jpeg",
+      "/products/ledli-grup/photo/221.jpeg"
+    ]
+  },
+  {
+    "no": 23,
+    "name": "Zevrox Büyük Salon LED Avizesi",
+    "dimensions": "L1200*H1500mm",
+    "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
+    "badge": "Dev Boyut (120 cm)",
+    "shortDescription": "120 cm devasa çapı ile villa salonları, otel lobileri ve geniş yaşam alanları için anıtsal LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/230.jpeg",
+      "/products/ledli-grup/photo/231.jpeg"
+    ]
+  },
+  {
+    "no": 24,
+    "name": "Liria Saray Tipi Geniş LED Avize",
+    "dimensions": "1100*500*H1500mm / Φ400*H1200mm",
+    "lightingType": "Dahili LED Modülü",
+    "badge": "Premium Koleksiyon",
+    "shortDescription": "100 cm geniş çapı, çoklu ışık katmanları ve göz alıcı parlaklığıyla üst segment lüks LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/240.jpeg",
+      "/products/ledli-grup/photo/241.jpeg"
+    ]
+  },
+  {
+    "no": 25,
+    "name": "Relvolia Modern LED Sarkıt Avize",
+    "dimensions": "Φ300*H1200mm / Φ450*H1500mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "55 cm çapında estetik halka yapısı ve 3 renk kademeli ışık moduyla modern salon ve oturma odası avizesi.",
+    "images": [
+      "/products/ledli-grup/photo/250.jpeg",
+      "/products/ledli-grup/photo/251.jpeg"
+    ]
+  },
+  {
+    "no": 26,
+    "name": "Vella Minimalist LED Sarkıt Avize",
+    "dimensions": "Çap: 45 cm",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "shortDescription": "45 cm kompakt ebadı ve zarif kıvrımlarıyla antre, mutfak masası ve oturma köşeleri için şık LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/260.jpeg",
+      "/products/ledli-grup/photo/261.jpeg"
+    ]
+  },
+  {
+    "no": 27,
+    "name": "Menekşe Modern LED Avize",
+    "dimensions": "450*800mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "70 cm çapında çiçek formlu modern ışık yapısıyla yaşam alanınıza ferah ve sıcak bir ambiyans katar.",
+    "images": [
+      "/products/ledli-grup/photo/270.jpeg"
+    ]
+  },
+  {
+    "no": 28,
+    "name": "Menekşe Lüks LED Avize Model 2",
+    "dimensions": "450*800mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "70 cm geniş çapı, fırçalanmış gövde detayları ve homojen LED parlaklığı ile salonlar için özel seri.",
+    "images": [
+      "/products/ledli-grup/photo/280.jpeg"
+    ]
+  },
+  {
+    "no": 29,
+    "name": "Norelia Kompakt LED Sarkıt Avize",
+    "dimensions": "440*320*H1500mm / 440*310*H1500mm",
+    "lightingType": "Dahili LED (30W / 45W)",
+    "shortDescription": "45 cm çapında minimal şıklığı ve göz kamaştırmayan homojen LED ışığıyla modern yaşam alanlarına özel.",
+    "images": [
+      "/products/ledli-grup/photo/290.jpeg",
+      "/products/ledli-grup/photo/291.jpeg"
+    ]
+  },
+  {
+    "no": 30,
+    "name": "Ophelia Mini LED Sarkıt Avize",
+    "dimensions": "Φ600*H1300mm / Φ830*H1400mm",
+    "lightingType": "Dahili LED (64W / 110W)",
+    "shortDescription": "30 cm mini çapıyla ikili veya üçlü ada üstü kombinasyonları ve yatak başı sarkıtları için ideal.",
+    "images": [
+      "/products/ledli-grup/photo/300.jpeg",
+      "/products/ledli-grup/photo/301.jpeg"
+    ]
+  },
+  {
+    "no": 31,
+    "name": "Dekoratif Modern LED Avize",
+    "dimensions": "Çap: 70 cm, Yükseklik: 100 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "70 cm çapı ve 100 cm sarkıt yüksekliğiyle salon ve yemek masaları üzerinde kusursuz bir ışık şaheseri.",
+    "images": [
+      "/products/ledli-grup/photo/310.jpeg",
+      "/products/ledli-grup/photo/311.jpeg"
+    ]
+  },
+  {
+    "no": 32,
+    "name": "Dekoratif Modern LED Sarkıt Avize",
+    "dimensions": "Çap: 50 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "50 cm çapında dairesel formu ve 3 renk kademeli ışık moduyla modern LED sarkıt avize.",
+    "images": [
+      "/products/ledli-grup/photo/320.jpeg",
+      "/products/ledli-grup/photo/321.jpeg"
+    ]
+  },
+  {
+    "no": 33,
+    "name": "Dekoratif Dairesel LED Sarkıt Avize",
+    "dimensions": "Çap: 60 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "60 cm ideal ebadı ve homojen parlaklığıyla yemek masaları ve salonlar için şık LED sarkıt.",
+    "images": [
+      "/products/ledli-grup/photo/330.jpeg"
+    ]
+  },
+  {
+    "no": 34,
+    "name": "Dekoratif Geniş Halka LED Avize",
+    "dimensions": "Φ600mm",
+    "lightingType": "Dahili LED 60W",
+    "badge": "Büyük Boy",
+    "shortDescription": "80 cm geniş çapı ve güçlü ışık yayılımıyla salon ve oturma alanlarına ferahlık katan model.",
+    "images": [
+      "/products/ledli-grup/photo/340.jpeg",
+      "/products/ledli-grup/photo/341.jpeg"
+    ]
+  },
+  {
+    "no": 35,
+    "name": "Dekoratif Hibrit LED ve Ampullü Avize",
+    "dimensions": "Φ700*H1500mm",
+    "lightingType": "Dahili LED 80W",
+    "badge": "Çift Işık Modu",
+    "shortDescription": "55 cm çapında hem dahili LED şeritleri hem de ampul duy yuvalarıyla zengin bir ışık kombinasyonu.",
+    "images": [
+      "/products/ledli-grup/photo/350.jpeg"
+    ]
+  },
+  {
+    "no": 36,
+    "name": "Dekoratif Kompakt LED Avize",
+    "dimensions": "Φ700*H1000mm / L920*H1000mm",
+    "lightingType": "Dahili LED 30W",
+    "shortDescription": "45 cm çapında minimalist çizgileri ve enerji tasarruflu LED teknolojisiyle modern yaşam alanlarına özel.",
+    "images": [
+      "/products/ledli-grup/photo/360.jpeg",
+      "/products/ledli-grup/photo/361.jpeg"
+    ]
+  },
+  {
+    "no": 37,
+    "name": "Dekoratif Tasarım LED Sarkıt Avize",
+    "dimensions": "Φ690*H1200mm / 880*280*1200mm",
+    "lightingType": "Dahili LED 84W",
+    "shortDescription": "50 cm çapında estetik halka dizilimi ve ayarlanabilir askı boyuyla odanıza değer katan LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/370.jpeg",
+      "/products/ledli-grup/photo/371.jpeg"
+    ]
+  },
+  {
+    "no": 38,
+    "name": "Plafonyer Tavana Monteli LED Avize",
+    "dimensions": "Φ500mm / 570*570mm / 500*120mm",
+    "lightingType": "Dahili LED (40W / 60W / 80W)",
+    "shortDescription": "40 cm çapında tavana sıfır montajlı, modern ve alçak tavanlı odalar için ferah aydınlatma sağlayan plafonyer LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/380.jpeg",
+      "/products/ledli-grup/photo/381.jpeg"
+    ]
+  },
+  {
+    "no": 39,
+    "name": "Dekoratif Küre Sarkıt Avize",
+    "dimensions": "Çap: 55 cm",
+    "lightingType": "E14 Kandil Duy (LED Ampul Uyumlu)",
+    "shortDescription": "55 cm çapında modern sarkıt gövdesi ve E14 duy tipiyle yemek odaları ve salonlar için şık avize.",
+    "images": [
+      "/products/ledli-grup/photo/390.jpeg",
+      "/products/ledli-grup/photo/391.jpeg"
+    ]
+  },
+  {
+    "no": 40,
+    "name": "Kristal Taşlı Tasarım LED Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "Dahili Kristal LED Işık Modülü",
+    "shortDescription": "Işıltılı kristal taşlarla çevrili modern halka gövdesiyle göz kamaştıran LED avize modeli.",
+    "images": [
+      "/products/ledli-grup/photo/400.jpeg"
+    ]
+  },
+  {
+    "no": 41,
+    "name": "Kirpi Model Modern Sarkıt Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "badge": "Özel Tasarım",
+    "shortDescription": "Kirpi formunda ışığı 360 derece saçan metalik çubukları ve E14 duylarıyla mekana modern bir derinlik katar.",
+    "images": [
+      "/products/ledli-grup/photo/410.jpeg"
+    ]
+  },
+  {
+    "no": 42,
+    "name": "Minimalist Çizgisel Sarkıt LED Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "Akıcı ve zarif sarkıt formuyla oturma odaları ve salonlar için çağdaş LED aydınlatma.",
+    "images": [
+      "/products/ledli-grup/photo/420.jpeg"
+    ]
+  },
+  {
+    "no": 43,
+    "name": "Dekoratif Dairesel LED Sarkıt Avize",
+    "dimensions": "Çap: 60 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "60 cm çapında modern dairesel formu ve 3 renk kademeli ışık moduyla salon ve oturma alanlarına zarafet katan LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/430.jpeg",
+      "/products/ledli-grup/photo/431.jpeg"
+    ]
+  },
+  {
+    "no": 44,
+    "name": "Dekoratif Modern LED Avize 120cm",
+    "dimensions": "L1200mm",
+    "lightingType": "Dahili LED 40W",
+    "badge": "Modern LED Seri",
+    "shortDescription": "120 cm geniş ebatlı modern formu ve 3 renk kademeli yüksek verimli LED ışık sistemiyle salon ve prestijli alanlar için tasarlandı.",
+    "images": [
+      "/products/ledli-grup/photo/440.jpeg"
+    ]
+  },
+  {
+    "no": 45,
+    "name": "Dekoratif Modern Avize - Model 56",
+    "dimensions": "Φ500*H500mm / 880*H780mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "Modern formu ve estetik ışık dağılımıyla mekanlarınıza zarafet katan dekoratif avize Model 56.",
+    "images": [
+      "/products/ledli-grup/photo/450.jpeg",
+      "/products/ledli-grup/photo/451.jpeg"
+    ]
+  },
+  {
+    "no": 46,
+    "name": "Kristal Taşlı Modern Dairesel LED Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "badge": "Kristal LED Seri",
+    "shortDescription": "Kristal taş detayları ve modern dairesel formuyla salon ve yaşam alanları için özel tasarlanmış şık LED avize.",
+    "images": [
+      "/products/ledli-grup/photo/460.jpeg"
+    ]
   }
 ]

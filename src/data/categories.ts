@@ -35,7 +35,7 @@ export const CATEGORIES: Category[] = [
       "Kollu Grup",
       "Taşlı Grup",
     ],
-    itemCount: 4,
+    itemCount: 14,
   },
   {
     slug: "ledli-grup",
@@ -55,7 +55,7 @@ export const CATEGORIES: Category[] = [
       "Geometrik Tasarımlar",
       "3 Renk Kademeli LED Modeller",
     ],
-    itemCount: 1,
+    itemCount: 46,
   },
   {
     slug: "tekli-avizeler",
@@ -148,11 +148,11 @@ export const CATEGORIES: Category[] = [
     seoDescription:
       "Hilal Avize Kahramanmaraş tüm avize modelleri tek vitrinde. Canlı showroom modelleri ve teknik detaylar.",
     image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
-    featured: true,
+    featured: false,
     subcategories: [
       "Yeni Eklenen Modeller",
       "Showroom Koleksiyonu",
     ],
-    itemCount: 56,
+    itemCount: 0,
   },
 ];

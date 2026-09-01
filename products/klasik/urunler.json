@@ -1,30 +1,30 @@
 [
   {
     "no": 1,
-    "name": "Maria Theresa Klasik Cam Giydirmeli Kristal Saray Avizesi",
+    "name": "Maria Theresa 68032 Klasik Kristal Saray Avizesi",
     "subcategory": "Maria Theresa",
-    "dimensions": "Çap: 90 cm",
-    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "dimensions": "Q: 120 H: 125 cm / Q: 105 H: 80 cm / L: 300 W: 90 H: 120 cm",
+    "lightingType": "E14 Duy (18x40W / 28x40W)",
     "badge": "Maria Theresa Ailesi",
-    "shortDescription": "Cam giydirmeli kıvrımlı kolları, altın rozet detayları ve parıltılı kristal prizmalarıyla görkemli Maria Theresa saray avizesi."
+    "shortDescription": "68032 Serisi Krom Füme ve Gold Bal/Şeffaf renk seçenekleriyle 18 ve 28 kollu saray tipi klasik kristal avize."
   },
   {
     "no": 2,
-    "name": "Maria Theresa Çok Kollu Asil Kristal Avize",
+    "name": "Maria Theresa 68032 Aplik ve Lambader Koleksiyonu",
     "subcategory": "Maria Theresa",
-    "dimensions": "Çap: 90 cm",
-    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "dimensions": "Q: 35 W: 45 H: 25 cm / Q: 40 H: 160 cm / Q: 33 H: 35 cm / Q: 85 W: 60 H: 35 cm",
+    "lightingType": "E14 Duy (3x40W / 5x40W / 6x40W / 9x40W)",
     "badge": "Maria Theresa Ailesi",
-    "shortDescription": "İhtişamlı cam kase göbeği, berrak kristal sarkıt taşları ve E14 kandil aydınlatmasıyla salonunuza saray zarafeti katar."
+    "shortDescription": "68032 Gold serisi duvar apliği, lambader (F68032-5L), abajur (T68032-5L) ve tavan/duvar kombinasyonu."
   },
   {
     "no": 3,
-    "name": "Maria Theresa İhtişamlı Kristal Salon Avizesi",
+    "name": "Maria Theresa 68032 Kristal Salon ve Masa Avizesi",
     "subcategory": "Maria Theresa",
-    "dimensions": "Çap: 90 cm",
-    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "dimensions": "L: 105 W: 60 H: 100 cm / L: 150 W: 90 H: 120 cm / Q: 70-90 H: 100 cm",
+    "lightingType": "E14 Duy (6x40W / 8x40W / 10x40W / 15x40W / 16x40W)",
     "badge": "Maria Theresa Ailesi",
-    "shortDescription": "Geniş hacimli şaşalı kristal dizilimi, özel cam rozetleri ve yüksek ışık kapasitesiyle seçkin mekanlar için tasarlandı."
+    "shortDescription": "68032 Krom Füme ve Gold Bal/Şeffaf seçenekleriyle 6, 8, 10, 15 ve 16 kollu lüks kristal salon avizeleri."
   },
   {
     "no": 4,
@@ -34,5 +34,115 @@
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "badge": "Baccarat Ailesi",
     "shortDescription": "Ağır döküm kalın kesme kristal kolları, kusursuz ışık kırılımları ve E14 kandil duylarıyla lüksün ve asaletin simgesi Baccarat avize."
+  },
+  {
+    "no": 5,
+    "name": "Carles Geometrik LED Avize",
+    "dimensions": "Çap: 95 cm, Uzunluk: 100 cm",
+    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "badge": "Büyük Salon Modeli",
+    "shortDescription": "95 cm çapı ve 100 cm ayarlanabilir uzunluğuyla yüksek tavanlı geniş salonlara mimari prestij kazandırır.",
+    "images": [
+      "/products/klasik/photo/50.jpeg"
+    ]
+  },
+  {
+    "no": 6,
+    "name": "Loya Tasarım Sarkıt Avize",
+    "dimensions": "950*380*H1200mm",
+    "lightingType": "Dahili LED 100W",
+    "shortDescription": "130 cm sarkıt uzunluğu ve E27 duy seçeneğiyle rustik ve modern mekanlar için heykelsi avize.",
+    "images": [
+      "/products/klasik/photo/60.jpeg"
+    ]
+  },
+  {
+    "no": 7,
+    "name": "Laura Lüks Sarkıt Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "Dahili LED Modülü",
+    "badge": "Zarif Seri",
+    "shortDescription": "120 cm ayarlanabilir sarkıt zinciri ve E14 kandil duylarıyla yemek odaları ve salonlar için lüks avize.",
+    "images": [
+      "/products/klasik/photo/70.jpeg",
+      "/products/klasik/photo/71.jpeg"
+    ]
+  },
+  {
+    "no": 8,
+    "name": "Zoye Dekoratif Sarkıt Avize",
+    "dimensions": "Φ750*H500mm / Φ900*H530mm",
+    "lightingType": "Dahili LED Modülü",
+    "shortDescription": "60 cm çapında klasik ve moderni birleştiren tasarımıyla salon ve oturma odalarına ışıltı katan model.",
+    "images": [
+      "/products/klasik/photo/80.jpeg",
+      "/products/klasik/photo/81.jpeg"
+    ]
+  },
+  {
+    "no": 9,
+    "name": "Vintage Tasarım LED Sarkıt Avize",
+    "dimensions": "Çap: 70 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "badge": "Özel Tasarım",
+    "shortDescription": "70 cm çapında vintage esintili mimari hatları ve modern LED teknolojisiyle göz alıcı bir tasarım.",
+    "images": [
+      "/products/klasik/photo/90.jpeg"
+    ]
+  },
+  {
+    "no": 10,
+    "name": "Kristal Taşlı Modern LED Avize",
+    "dimensions": "Çap: 65 cm",
+    "lightingType": "Dahili LED Modülü",
+    "badge": "Kristal Seri",
+    "shortDescription": "65 cm çapında berrak kristal taş detayları ve güçlü LED ışığıyla salonlara ışıltı katan model.",
+    "images": [
+      "/products/klasik/photo/100.jpeg",
+      "/products/klasik/photo/101.jpeg"
+    ]
+  },
+  {
+    "no": 11,
+    "name": "Saray Tipi Dev Kristal LED Avize",
+    "dimensions": "Çap: 120 cm",
+    "lightingType": "Dahili LED Modülü",
+    "badge": "Dev Boyut (120 cm)",
+    "shortDescription": "120 cm görkemli çapı, parıltılı kristal taş dizilimi ve yüksek ışık kapasitesiyle büyük salon ve villa avizesi.",
+    "images": [
+      "/products/klasik/photo/110.jpeg"
+    ]
+  },
+  {
+    "no": 12,
+    "name": "Klasik Cam Kollu Lüks Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "badge": "Cam İşçiliği",
+    "shortDescription": "Özel kıvrımlı cam kolları ve E14 kandil duylarıyla zamansız klasik salon zarafeti.",
+    "images": [
+      "/products/klasik/photo/120.jpeg",
+      "/products/klasik/photo/121.jpeg"
+    ]
+  },
+  {
+    "no": 13,
+    "name": "Kristal Taşlı Hibrit LED Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E14 Duy + Dahili LED Aydınlatma",
+    "shortDescription": "Kristal prizmaların ışıltısı ve E14 + LED çift ışık moduyla zenginleştirilmiş salon avizesi.",
+    "images": [
+      "/products/klasik/photo/130.jpeg"
+    ]
+  },
+  {
+    "no": 14,
+    "name": "Modern Metal Kollu Sarkıt Avize",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "shortDescription": "Fırçalanmış metal kolları ve E14 kandil duylarıyla modern ve endüstriyel çizgileri birleştiren avize.",
+    "images": [
+      "/products/klasik/photo/140.jpeg"
+    ]
   }
 ]

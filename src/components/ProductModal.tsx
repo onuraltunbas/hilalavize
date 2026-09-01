@@ -74,10 +74,10 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                 </div>
               )}
               <div className="flex justify-between py-1 text-xs">
-                <span className="text-slate-400 flex items-center gap-1.5">
+                <span className="text-slate-500 flex items-center gap-1.5">
                   🏷️ Ürün Kodu
                 </span>
-                <span className="font-mono font-bold text-amber-400">{product.code || product.id}</span>
+                <span className="font-mono text-slate-400">{product.code || product.id}</span>
               </div>
             </div>
 
