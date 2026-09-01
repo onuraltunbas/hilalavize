@@ -283,6 +283,429 @@ export const PRODUCTS: Product[] = [
     "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 6 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
+    "id": "ASP-001",
+    "code": "HL-ASP-001",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-1",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 1",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 1, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 1.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/10.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/10.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 1 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 1 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-002",
+    "code": "HL-ASP-002",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-2",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 2",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 2, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 2.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/20.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/20.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 2 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-003",
+    "code": "HL-ASP-003",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-3",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 3",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 3, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 3.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/30.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/30.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 3 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 3 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-004",
+    "code": "HL-ASP-004",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-4",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 4",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 4, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 4.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/40.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/40.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 4 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 4 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-005",
+    "code": "HL-ASP-005",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-5",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 5",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 5, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 5.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/50.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/50.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 5 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 5 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-006",
+    "code": "HL-ASP-006",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-6",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 6",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 6, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 6.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/60.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/60.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 6 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 6 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-007",
+    "code": "HL-ASP-007",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-7",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 7",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 7, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 7.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/70.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/70.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 7 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 7 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-008",
+    "code": "HL-ASP-008",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-8",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 8",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 8, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 8.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/80.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/80.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 8 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 8 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-009",
+    "code": "HL-ASP-009",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-9",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 9",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 9, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 9.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/90.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/90.jpeg",
+      "/products/aplik-ve-spotlar/photo/91.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 9 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 9 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-010",
+    "code": "HL-ASP-010",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-10",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 10",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 10, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 10.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/10.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/10.jpeg",
+      "/products/aplik-ve-spotlar/photo/100.jpeg",
+      "/products/aplik-ve-spotlar/photo/101.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 10 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 10 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-011",
+    "code": "HL-ASP-011",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-11",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 11",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 11, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 11.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/110.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/110.jpeg",
+      "/products/aplik-ve-spotlar/photo/111.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 11 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 11 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-012",
+    "code": "HL-ASP-012",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-12",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 12",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 12, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 12.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/120.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/120.jpeg",
+      "/products/aplik-ve-spotlar/photo/121.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 12 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 12 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-013",
+    "code": "HL-ASP-013",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-13",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 13",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 13, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 13.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/130.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/130.jpeg",
+      "/products/aplik-ve-spotlar/photo/131.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 13 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 13 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-014",
+    "code": "HL-ASP-014",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-14",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 14",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 14, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 14.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/140.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/140.jpeg",
+      "/products/aplik-ve-spotlar/photo/141.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 14 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 14 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-015",
+    "code": "HL-ASP-015",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-15",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 15",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 15, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 15.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/150.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/150.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 15 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 15 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "ASP-016",
+    "code": "HL-ASP-016",
+    "slug": "modern-dekoratif-led-duvar-apligi-model-16",
+    "name": "Modern Dekoratif LED Duvar Apliği - Model 16",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "LED Duvar Apliği",
+    "description": "Modern Dekoratif LED Duvar Apliği - Model 16, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 16.",
+    "dimensions": "Standart Duvar Ölçüsü",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/160.jpeg",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/160.jpeg"
+    ],
+    "features": [
+      "Dahili LED Aydınlatma Modülü",
+      "Standart Duvar Ölçüsü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 16 Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 16 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
     "id": "AVZ-001",
     "code": "HL-AVZ-001",
     "slug": "maxira-modern-led-sarkit-avize",
@@ -1701,5 +2124,31 @@ export const PRODUCTS: Product[] = [
     ],
     "seoTitle": "Dekoratif Dairesel LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
     "seoDescription": "Dekoratif Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AVZ-055",
+    "code": "HL-AVZ-055",
+    "slug": "dekoratif-modern-led-avize-120cm",
+    "name": "Dekoratif Modern LED Avize 120cm",
+    "categorySlug": "kategorisiz",
+    "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
+    "badge": "Modern LED Seri",
+    "description": "Dekoratif Modern LED Avize 120cm, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Boy / Çap: 120 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "120 cm geniş ebatlı modern formu ve 3 renk kademeli yüksek verimli LED ışık sistemiyle salon ve prestijli alanlar için tasarlandı.",
+    "dimensions": "Boy / Çap: 120 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "branch": "showroom",
+    "image": "/products/kategorisiz/photo/550.jpeg",
+    "images": [
+      "/products/kategorisiz/photo/550.jpeg"
+    ],
+    "features": [
+      "Dahili 3 Renk Kademeli LED Modülü",
+      "Boy / Çap: 120 cm",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Modern LED Avize 120cm Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Modern LED Avize 120cm modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   }
 ];

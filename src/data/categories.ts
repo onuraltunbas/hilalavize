@@ -35,7 +35,7 @@ export const CATEGORIES: Category[] = [
       "Kollu Grup",
       "Taşlı Grup",
     ],
-    itemCount: 24,
+    itemCount: 4,
   },
   {
     slug: "ledli-grup",
@@ -95,7 +95,7 @@ export const CATEGORIES: Category[] = [
       "Gömme Tavan Spotları",
       "Sıva Üstü Silindir Spotlar",
     ],
-    itemCount: 32,
+    itemCount: 16,
   },
   {
     slug: "aksesuar",
@@ -153,6 +153,6 @@ export const CATEGORIES: Category[] = [
       "Yeni Eklenen Modeller",
       "Showroom Koleksiyonu",
     ],
-    itemCount: 54,
+    itemCount: 55,
   },
 ];
