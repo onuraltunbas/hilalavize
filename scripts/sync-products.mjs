@@ -257,9 +257,41 @@ function processAllProducts() {
       }
       usedSlugs.add(slug);
 
-      const name = item.name || `${catConfig.name} - Model ${itemNo}`;
-      const dimensions = item.dimensions || item.olculer || item.boyutlar || "Standart Ölçü";
-      const lightingType = item.lightingType || item.duy || item.aydinlatma || "E14 / E27 / LED Uyumlu";
+      // Akıllı İsimlendirme (İsim yazılmazsa kategoriye uygun otomatik lüks isim atanır)
+      let name = item.name;
+      if (!name || name.trim() === "") {
+        if (catSlug === "avizeler") {
+          name = `Dekoratif Modern LED Avize - Model ${itemNo}`;
+        } else if (catSlug === "aplikler") {
+          name = `Dekoratif Duvar Apliği - Model ${itemNo}`;
+        } else if (catSlug === "spot-ve-ray-spot") {
+          name = `Dekoratif Manyetik Ray Spot - Model ${itemNo}`;
+        } else if (catSlug === "abajur-ve-lambader") {
+          name = `Dekoratif Lüks Lambader - Model ${itemNo}`;
+        } else if (catSlug === "dekoratif-aynalar") {
+          name = `Dekoratif Akıllı LED Ayna - Model ${itemNo}`;
+        } else if (catSlug === "duvar-ve-masa-saatleri") {
+          name = `Özel Tasarım Dekoratif Saat - Model ${itemNo}`;
+        } else if (catSlug === "cam-sus-esyalari") {
+          name = `El Yapımı Cam Süs Eşyası - Model ${itemNo}`;
+        } else if (catSlug === "anahtar-ve-priz-serileri") {
+          name = `Lüks Cam Anahtar & Priz - Model ${itemNo}`;
+        } else if (catSlug === "dekoratif-koltuk-ve-berjerler") {
+          name = `Özel Tasarım Lüks Berjer - Model ${itemNo}`;
+        } else if (catSlug === "dekoratif-sehpalar") {
+          name = `Dekoratif Mermer & Bronz Sehpa - Model ${itemNo}`;
+        } else {
+          name = `${catConfig.name} - Model ${itemNo}`;
+        }
+      }
+
+      // Akıllı Ölçü / Boyut (Ölçü yazılmazsa 'Ayarlanabilir Yükseklik / Standart Ölçü' atanır)
+      const rawDim = item.dimensions || item.olculer || item.boyutlar;
+      const dimensions = rawDim && rawDim.trim() !== "" ? rawDim.trim() : "Ayarlanabilir Yükseklik / Standart Ölçü";
+
+      // Akıllı Aydınlatma / Duy
+      const rawLight = item.lightingType || item.duy || item.aydinlatma;
+      const lightingType = rawLight && rawLight.trim() !== "" ? rawLight.trim() : (catSlug === "avizeler" || catSlug === "aplikler" || catSlug === "spot-ve-ray-spot" ? "Dahili LED / E14-E27 Uyumlu" : "Dekoratif Aydınlatma / Obje");
       const branch = item.branch || catConfig.defaultBranch;
       const badge = item.badge || undefined;
 

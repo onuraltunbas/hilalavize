@@ -82,6 +82,14 @@ Her kategori klasöründeki `photo/` dizinine fotoğrafları atarken şu basit k
 
 ---
 
+## 💡 AKILLI OTOMATİK DOLDURMA (ZAMAN KAZANDIRAN ÖZELLİK)
+* **İsim Yazmazsanız:** Otomatik olarak `"Dekoratif Modern LED Avize - Model X"` gibi şık ve SEO uyumlu bir isim atanır.
+* **Ölçü Yazmazsanız:** Otomatik olarak `"Ayarlanabilir Yükseklik / Standart Ölçü"` atanır.
+* **Aydınlatma Yazmazsanız:** Otomatik olarak `"Dahili LED / E14-E27 Uyumlu"` atanır.
+* *(Yani sadece fotoğrafı atıp `{"no": 25}` yazmanız bile ürünü canlıya almak için yeterlidir!)*
+
+---
+
 ## 🚀 3 ADIMDA CANLIYA ALMA
 
 1. Fotoğrafları `products/[kategori]/photo/` klasörüne atın (`10.jpg`, `11.jpg` vb.).
