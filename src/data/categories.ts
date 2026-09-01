@@ -95,7 +95,7 @@ export const CATEGORIES: Category[] = [
       "Gömme Tavan Spotları",
       "Sıva Üstü Silindir Spotlar",
     ],
-    itemCount: 16,
+    itemCount: 17,
   },
   {
     slug: "aksesuar",

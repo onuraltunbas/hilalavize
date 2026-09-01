@@ -737,6 +737,32 @@ export const PRODUCTS: Product[] = [
     "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 16 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
+    "id": "ASP-017",
+    "code": "HL-ASP-017",
+    "slug": "loya-luks-kristal-led-duvar-apligi",
+    "name": "LOYA Lüks Kristal LED Duvar Apliği",
+    "categorySlug": "aplik-ve-spotlar",
+    "categoryName": "Aplik & Spot Aydınlatma",
+    "badge": "Lüks Kristal Aplik",
+    "description": "LOYA Lüks Kristal LED Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 360*200*H230mm (G: 36 cm / D: 20 cm / Y: 23 cm) ölçüleri, Dahili LED 20W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "360*200*H230mm boyutlarında altın sarısı gövde, prizmatik kristal taş dizilimi ve 20W LED ışık gücüyle göz alıcı LOYA aplik.",
+    "dimensions": "360*200*H230mm (G: 36 cm / D: 20 cm / Y: 23 cm)",
+    "lightingType": "Dahili LED 20W",
+    "branch": "showroom",
+    "image": "/products/aplik-ve-spotlar/photo/170.png",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/170.png"
+    ],
+    "features": [
+      "Dahili LED 20W",
+      "360*200*H230mm (G: 36 cm / D: 20 cm / Y: 23 cm)",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "LOYA Lüks Kristal LED Duvar Apliği Kahramanmaraş | Hilal Avize",
+    "seoDescription": "LOYA Lüks Kristal LED Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
     "id": "AVZ-001",
     "code": "HL-AVZ-001",
     "slug": "maxira-modern-led-sarkit-avize",
