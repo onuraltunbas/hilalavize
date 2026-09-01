@@ -28,9 +28,9 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "theresa",
     "categoryName": "Maria Theresa Avize Koleksiyonu",
     "badge": "Lüks Saray Koleksiyonu",
-    "description": "Maria Theresa Klasik Cam Giydirmeli Kristal Saray Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Maria Theresa Klasik Cam Giydirmeli Kristal Saray Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Cam giydirmeli kıvrımlı kolları, altın rozet detayları ve parıltılı kristal prizmalarıyla görkemli Maria Theresa saray avizesi.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "dimensions": "Çap: 90 cm",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
     "image": "/products/theresa/photo/10.jpeg",
@@ -39,7 +39,7 @@ export const PRODUCTS: Product[] = [
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Çap: 90 cm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -53,9 +53,9 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "theresa",
     "categoryName": "Maria Theresa Avize Koleksiyonu",
     "badge": "Özel Tasarım Seri",
-    "description": "Maria Theresa Çok Kollu Asil Kristal Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Maria Theresa Çok Kollu Asil Kristal Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "İhtişamlı cam kase göbeği, berrak kristal sarkıt taşları ve E14 kandil aydınlatmasıyla salonunuza saray zarafeti katar.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "dimensions": "Çap: 90 cm",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
     "image": "/products/theresa/photo/20.jpeg",
@@ -64,7 +64,7 @@ export const PRODUCTS: Product[] = [
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Çap: 90 cm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -78,9 +78,9 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "theresa",
     "categoryName": "Maria Theresa Avize Koleksiyonu",
     "badge": "Premium Koleksiyon",
-    "description": "Maria Theresa İhtişamlı Kristal Salon Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Maria Theresa İhtişamlı Kristal Salon Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Geniş hacimli şaşalı kristal dizilimi, özel cam rozetleri ve yüksek ışık kapasitesiyle seçkin mekanlar için tasarlandı.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "dimensions": "Çap: 90 cm",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
     "image": "/products/theresa/photo/30.jpeg",
@@ -89,7 +89,7 @@ export const PRODUCTS: Product[] = [
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Çap: 90 cm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -103,9 +103,9 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "bacarat",
     "categoryName": "Baccarat Kristal Avize Koleksiyonu",
     "badge": "Baccarat Kristal Özel Seri",
-    "description": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ağır döküm kalın kesme kristal kolları, kusursuz ışık kırılımları ve E14 kandil duylarıyla lüksün ve asaletin simgesi Baccarat avize.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "dimensions": "Çap: 90 cm",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
     "image": "/products/bacarat/photo/10.jpeg",
@@ -114,7 +114,7 @@ export const PRODUCTS: Product[] = [
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Çap: 90 cm",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
