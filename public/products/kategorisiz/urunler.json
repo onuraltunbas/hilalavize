@@ -85,7 +85,8 @@
     "lightingType": "Dahili LED Aydınlatma Modülü",
     "shortDescription": "60 cm çapında minimalist profili ve enerji tasarruflu yüksek parlaklık sunan LED avize.",
     "images": [
-      "/products/kategorisiz/photo/110.jpeg"
+      "/products/kategorisiz/photo/110.jpeg",
+      "/products/kategorisiz/photo/111.jpeg"
     ]
   },
   {
@@ -420,17 +421,6 @@
     "dimensions": "Φ500*H500mm / 880*H780mm",
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "Modern formu ve estetik ışık dağılımıyla mekanlarınıza zarafet katan dekoratif avize Model 56."
-  },
-  {
-    "no": 57,
-    "name": "Kompakt Geometrik LED Sarkıt Avize",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
-    "badge": "Modern LED Seri",
-    "shortDescription": "Kompakt geometrik formu ve zarif LED aydınlatmasıyla modern mekanlar için tasarlanmış şık sarkıt avize.",
-    "images": [
-      "/products/kategorisiz/photo/111.jpeg"
-    ]
   },
   {
     "no": 58,

@@ -1016,7 +1016,8 @@
     "branch": "showroom",
     "image": "/products/kategorisiz/photo/110.jpeg",
     "images": [
-      "/products/kategorisiz/photo/110.jpeg"
+      "/products/kategorisiz/photo/110.jpeg",
+      "/products/kategorisiz/photo/111.jpeg"
     ],
     "features": [
       "Dahili LED Aydınlatma Modülü",
@@ -2145,32 +2146,6 @@
     ],
     "seoTitle": "Dekoratif Modern Avize - Model 56 Kahramanmaraş | Hilal Avize",
     "seoDescription": "Dekoratif Modern Avize - Model 56 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "AVZ-057",
-    "code": "HL-AVZ-057",
-    "slug": "kompakt-geometrik-led-sarkit-avize",
-    "name": "Kompakt Geometrik LED Sarkıt Avize",
-    "categorySlug": "kategorisiz",
-    "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
-    "badge": "Modern LED Seri",
-    "description": "Kompakt Geometrik LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, Dahili LED Aydınlatma Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Kompakt geometrik formu ve zarif LED aydınlatmasıyla modern mekanlar için tasarlanmış şık sarkıt avize.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
-    "branch": "showroom",
-    "image": "/products/kategorisiz/photo/111.jpeg",
-    "images": [
-      "/products/kategorisiz/photo/111.jpeg"
-    ],
-    "features": [
-      "Dahili LED Aydınlatma Modülü",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "Kompakt Geometrik LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kompakt Geometrik LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "AVZ-058",
