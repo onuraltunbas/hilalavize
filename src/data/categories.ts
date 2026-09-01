@@ -153,6 +153,6 @@ export const CATEGORIES: Category[] = [
       "Yeni Eklenen Modeller",
       "Showroom Koleksiyonu",
     ],
-    itemCount: 55,
+    itemCount: 56,
   },
 ];
