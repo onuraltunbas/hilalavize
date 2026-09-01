@@ -289,16 +289,16 @@
   {
     "no": 39,
     "name": "Dekoratif Geniş Halka LED Avize",
-    "dimensions": "Çap: 80 cm",
-    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "dimensions": "Φ600mm",
+    "lightingType": "Dahili LED 60W",
     "badge": "Büyük Boy",
     "shortDescription": "80 cm geniş çapı ve güçlü ışık yayılımıyla salon ve oturma alanlarına ferahlık katan model."
   },
   {
     "no": 40,
     "name": "Dekoratif Hibrit LED ve Ampullü Avize",
-    "dimensions": "Çap: 55 cm",
-    "lightingType": "Dahili LED + E14/E27 Ampul Kombinasyonu",
+    "dimensions": "Φ700*H1500mm",
+    "lightingType": "Dahili LED 80W",
     "badge": "Çift Işık Modu",
     "shortDescription": "55 cm çapında hem dahili LED şeritleri hem de ampul duy yuvalarıyla zengin bir ışık kombinasyonu.",
     "images": [
@@ -308,8 +308,8 @@
   {
     "no": 41,
     "name": "Dekoratif Kompakt LED Avize",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "dimensions": "Φ700*H1000mm / L920*H1000mm",
+    "lightingType": "Dahili LED 30W",
     "shortDescription": "45 cm çapında minimalist çizgileri ve enerji tasarruflu LED teknolojisiyle modern yaşam alanlarına özel.",
     "images": [
       "/products/kategorisiz/photo/410.jpeg",
@@ -319,15 +319,15 @@
   {
     "no": 42,
     "name": "Dekoratif Tasarım LED Sarkıt Avize",
-    "dimensions": "Çap: 50 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ690*H1200mm / 880*280*1200mm",
+    "lightingType": "Dahili LED 84W",
     "shortDescription": "50 cm çapında estetik halka dizilimi ve ayarlanabilir askı boyuyla odanıza değer katan LED avize."
   },
   {
     "no": 43,
     "name": "Plafonyer Tavana Monteli LED Avize",
-    "dimensions": "Çap: 40 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "Φ500mm / 570*570mm / 500*120mm",
+    "lightingType": "Dahili LED (40W / 60W / 80W)",
     "shortDescription": "40 cm çapında tavana sıfır montajlı, modern ve alçak tavanlı odalar için ferah aydınlatma sağlayan plafonyer LED avize."
   },
   {
@@ -341,7 +341,7 @@
     "no": 45,
     "name": "Kristal Taşlı Modern LED Avize",
     "dimensions": "Çap: 65 cm",
-    "lightingType": "Dahili Kristal Difüzörlü LED Modülü",
+    "lightingType": "Dahili LED Modülü",
     "badge": "Kristal Seri",
     "shortDescription": "65 cm çapında berrak kristal taş detayları ve güçlü LED ışığıyla salonlara ışıltı katan model."
   },
@@ -349,7 +349,7 @@
     "no": 46,
     "name": "Saray Tipi Dev Kristal LED Avize",
     "dimensions": "Çap: 120 cm",
-    "lightingType": "Dahili Yüksek Güçlü Kristal LED Modülü",
+    "lightingType": "Dahili LED Modülü",
     "badge": "Dev Boyut (120 cm)",
     "shortDescription": "120 cm görkemli çapı, parıltılı kristal taş dizilimi ve yüksek ışık kapasitesiyle büyük salon ve villa avizesi."
   },
@@ -410,8 +410,8 @@
   {
     "no": 55,
     "name": "Dekoratif Modern LED Avize 120cm",
-    "dimensions": "Boy / Çap: 120 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "dimensions": "L1200mm",
+    "lightingType": "Dahili LED 40W",
     "badge": "Modern LED Seri",
     "shortDescription": "120 cm geniş ebatlı modern formu ve 3 renk kademeli yüksek verimli LED ışık sistemiyle salon ve prestijli alanlar için tasarlandı."
   },
