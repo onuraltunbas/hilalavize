@@ -1386,5 +1386,30 @@ export const PRODUCTS: Product[] = [
     ],
     "seoTitle": "Modern Metal Kollu Sarkıt Avize Kahramanmaraş | Hilal Avize",
     "seoDescription": "Modern Metal Kollu Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AVZ-054",
+    "slug": "dekoratif-dairesel-led-sarkit-avize-avz-054",
+    "name": "Dekoratif Dairesel LED Sarkıt Avize",
+    "categorySlug": "kategorisiz",
+    "categoryName": "Tüm Avizeler (Yeni Eklenenler)",
+    "description": "Dekoratif Dairesel LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "60 cm çapında modern dairesel formu ve 3 renk kademeli ışık moduyla salon ve oturma alanlarına zarafet katan LED avize.",
+    "dimensions": "Çap: 60 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "branch": "showroom",
+    "image": "/products/kategorisiz/photo/540.jpeg",
+    "images": [
+      "/products/kategorisiz/photo/540.jpeg",
+      "/products/kategorisiz/photo/541.jpeg"
+    ],
+    "features": [
+      "Dahili 3 Renk Kademeli LED Modülü",
+      "Çap: 60 cm",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Dekoratif Dairesel LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dekoratif Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   }
 ];
