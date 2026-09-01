@@ -55,7 +55,7 @@ export const CATEGORIES: Category[] = [
       "Geometrik Tasarımlar",
       "3 Renk Kademeli LED Modeller",
     ],
-    itemCount: 28,
+    itemCount: 1,
   },
   {
     slug: "tekli-avizeler",

@@ -108,6 +108,32 @@
     "seoDescription": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
+    "id": "LED-001",
+    "code": "HL-LED-001",
+    "slug": "modern-geometrik-cubuk-led-sarkit-avize-l1000h1500",
+    "name": "Modern Geometrik Çubuk LED Sarkıt Avize (L1000*H1500)",
+    "categorySlug": "ledli-grup",
+    "categoryName": "LED'li Avizeler",
+    "badge": "Modern LED Seri",
+    "description": "Modern Geometrik Çubuk LED Sarkıt Avize (L1000*H1500), Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Uzunluk: 100 cm / Yükseklik: 150 cm (L1000*H1500mm) ölçüleri, Dahili Yüksek Verimli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "L1000*H1500mm ebatlarında dinamik çapraz çubuk tasarımı ve kristal uçlu LED aydınlatmasıyla salon ve yemek masaları için tasarlanmış lüks LED avize.",
+    "dimensions": "Uzunluk: 100 cm / Yükseklik: 150 cm (L1000*H1500mm)",
+    "lightingType": "Dahili Yüksek Verimli LED Modülü",
+    "branch": "showroom",
+    "image": "/products/ledli-grup/photo/10.png",
+    "images": [
+      "/products/ledli-grup/photo/10.png"
+    ],
+    "features": [
+      "Dahili Yüksek Verimli LED Modülü",
+      "Uzunluk: 100 cm / Yükseklik: 150 cm (L1000*H1500mm)",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Modern Geometrik Çubuk LED Sarkıt Avize (L1000*H1500) Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Modern Geometrik Çubuk LED Sarkıt Avize (L1000*H1500) modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
     "id": "TKL-001",
     "code": "HL-TKL-001",
     "slug": "dekoratif-tekli-sarkit-avize-model-1",
