@@ -53,7 +53,7 @@ export function Navbar() {
           <Link href="/" onClick={handleLinkClick} className="flex items-center gap-3.5 group">
             <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 transition-transform group-hover:scale-105">
               <Image
-                src="/images/512x512_hilal_logo.png"
+                src="/images/hilal_logo.png"
                 alt="Hilal Elektrik Avize Aksesuar Logo"
                 fill
                 className="object-contain"

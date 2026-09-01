@@ -25,7 +25,7 @@ export function Footer() {
           <div className="flex items-center gap-3.5">
             <div className="relative w-14 h-14 shrink-0">
               <Image
-                src="/images/512x512_hilal_logo.png"
+                src="/images/hilal_logo.png"
                 alt="Hilal Elektrik Avize Aksesuar"
                 fill
                 className="object-contain"

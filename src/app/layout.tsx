@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/images/512x512_hilal_logo.jpg",
-    shortcut: "/images/512x512_hilal_logo.jpg",
-    apple: "/images/512x512_hilal_logo.jpg",
+    icon: "/images/hilal_logo.png",
+    shortcut: "/images/hilal_logo.png",
+    apple: "/images/hilal_logo.png",
   },
   verification: {
     google: "google-site-verification-kodunuz-buraya",

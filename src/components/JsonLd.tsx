@@ -12,7 +12,7 @@ export function JsonLd() {
     name: COMPANY_DATA.name,
     alternateName: "Hilal Avize Kahramanmaraş",
     url: COMPANY_DATA.siteUrl,
-    logo: `${COMPANY_DATA.siteUrl}/images/512x512_hilal_logo.jpg`,
+    logo: `${COMPANY_DATA.siteUrl}/images/hilal_logo.png`,
     image: `${COMPANY_DATA.siteUrl}/images/1920x1080_hero_showroom.jpg`,
     description: COMPANY_DATA.description,
     priceRange: "$$",
