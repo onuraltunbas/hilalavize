@@ -265,5 +265,49 @@
     "dimensions": "Çap: 70 cm, Yükseklik: 100 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "shortDescription": "70 cm çapı ve 100 cm sarkıt yüksekliğiyle salon ve yemek masaları üzerinde kusursuz bir ışık şaheseri."
+  },
+  {
+    "no": 37,
+    "name": "Dekoratif Modern LED Sarkıt Avize",
+    "dimensions": "Çap: 50 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "50 cm çapında dairesel formu ve 3 renk kademeli ışık moduyla modern LED sarkıt avize."
+  },
+  {
+    "no": 38,
+    "name": "Dekoratif Dairesel LED Sarkıt Avize",
+    "dimensions": "Çap: 60 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "60 cm ideal ebadı ve homojen parlaklığıyla yemek masaları ve salonlar için şık LED sarkıt."
+  },
+  {
+    "no": 39,
+    "name": "Dekoratif Geniş Halka LED Avize",
+    "dimensions": "Çap: 80 cm",
+    "lightingType": "Dahili Yüksek Güçlü LED Modülü",
+    "badge": "Büyük Boy",
+    "shortDescription": "80 cm geniş çapı ve güçlü ışık yayılımıyla salon ve oturma alanlarına ferahlık katan model."
+  },
+  {
+    "no": 40,
+    "name": "Dekoratif Hibrit LED ve Ampullü Avize",
+    "dimensions": "Çap: 55 cm",
+    "lightingType": "Dahili LED + E14/E27 Ampul Kombinasyonu",
+    "badge": "Çift Işık Modu",
+    "shortDescription": "55 cm çapında hem dahili LED şeritleri hem de ampul duy yuvalarıyla zengin bir ışık kombinasyonu."
+  },
+  {
+    "no": 41,
+    "name": "Dekoratif Kompakt LED Avize",
+    "dimensions": "Çap: 45 cm",
+    "lightingType": "Dahili LED Aydınlatma Modülü",
+    "shortDescription": "45 cm çapında minimalist çizgileri ve enerji tasarruflu LED teknolojisiyle modern yaşam alanlarına özel."
+  },
+  {
+    "no": 42,
+    "name": "Dekoratif Tasarım LED Sarkıt Avize",
+    "dimensions": "Çap: 50 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "shortDescription": "50 cm çapında estetik halka dizilimi ve ayarlanabilir askı boyuyla odanıza değer katan LED avize."
   }
 ]
