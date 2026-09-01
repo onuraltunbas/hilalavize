@@ -54,13 +54,6 @@ const CATEGORY_CONFIGS = {
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
   },
-  kategorisiz: {
-    slug: "kategorisiz",
-    name: "Tüm Avizeler (Yeni Eklenenler)",
-    prefix: "AVZ",
-    defaultBranch: "showroom",
-    defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
-  },
 };
 
 function turkishToSlug(text) {

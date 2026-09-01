@@ -137,22 +137,4 @@ export const CATEGORIES: Category[] = [
     ],
     itemCount: 20,
   },
-  {
-    slug: "kategorisiz",
-    name: "Tüm Avizeler (Yeni Eklenenler)",
-    shortName: "Tüm Avizeler",
-    tagline: "Hilal Avize Showroom Tüm Modeller",
-    description:
-      "Kahramanmaraş showroomumuzda sergilenen avize modellerimiz. Yeni eklenen ve sınıflandırılmayı bekleyen tüm seçkin tasarımlar.",
-    seoTitle: "Tüm Avize Koleksiyonu Kahramanmaraş | Hilal Avize",
-    seoDescription:
-      "Hilal Avize Kahramanmaraş tüm avize modelleri tek vitrinde. Canlı showroom modelleri ve teknik detaylar.",
-    image: "/images/800x800_klasik_kollu_kristal_avize.jpg",
-    featured: false,
-    subcategories: [
-      "Yeni Eklenen Modeller",
-      "Showroom Koleksiyonu",
-    ],
-    itemCount: 0,
-  },
 ];
