@@ -274,6 +274,7 @@ function processAllProducts() {
       const lightingType = rawLight && rawLight.trim() !== "" ? rawLight.trim() : (catSlug === "avizeler" || catSlug === "aplikler" || catSlug === "spot-ve-ray-spot" ? "Dahili LED / E14-E27 Uyumlu" : "Dekoratif Aydınlatma / Obje");
       const branch = item.branch || catConfig.defaultBranch;
       const badge = item.badge || undefined;
+      const subcategory = item.subcategory || item.altKategori || undefined;
 
       const shortDescription =
         item.shortDescription ||
@@ -307,6 +308,7 @@ function processAllProducts() {
         categorySlug: catConfig.slug,
         categoryName: catConfig.name,
         badge,
+        subcategory,
         description,
         shortDescription,
         dimensions,
@@ -335,6 +337,7 @@ export interface Product {
   categorySlug: string;
   categoryName: string;
   badge?: string;
+  subcategory?: string;
   description: string;
   shortDescription: string;
   dimensions: string;

@@ -9,6 +9,7 @@ export interface Product {
   categorySlug: string;
   categoryName: string;
   badge?: string;
+  subcategory?: string;
   description: string;
   shortDescription: string;
   dimensions: string;
@@ -30,6 +31,7 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "klasik",
     "categoryName": "Klasik Avizeler",
     "badge": "Maria Theresa Ailesi",
+    "subcategory": "Maria Theresa",
     "description": "Maria Theresa Klasik Cam Giydirmeli Kristal Saray Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Cam giydirmeli kıvrımlı kolları, altın rozet detayları ve parıltılı kristal prizmalarıyla görkemli Maria Theresa saray avizesi.",
     "dimensions": "Çap: 90 cm",
@@ -56,6 +58,7 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "klasik",
     "categoryName": "Klasik Avizeler",
     "badge": "Maria Theresa Ailesi",
+    "subcategory": "Maria Theresa",
     "description": "Maria Theresa Çok Kollu Asil Kristal Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "İhtişamlı cam kase göbeği, berrak kristal sarkıt taşları ve E14 kandil aydınlatmasıyla salonunuza saray zarafeti katar.",
     "dimensions": "Çap: 90 cm",
@@ -82,6 +85,7 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "klasik",
     "categoryName": "Klasik Avizeler",
     "badge": "Maria Theresa Ailesi",
+    "subcategory": "Maria Theresa",
     "description": "Maria Theresa İhtişamlı Kristal Salon Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Geniş hacimli şaşalı kristal dizilimi, özel cam rozetleri ve yüksek ışık kapasitesiyle seçkin mekanlar için tasarlandı.",
     "dimensions": "Çap: 90 cm",
@@ -108,6 +112,7 @@ export const PRODUCTS: Product[] = [
     "categorySlug": "klasik",
     "categoryName": "Klasik Avizeler",
     "badge": "Baccarat Ailesi",
+    "subcategory": "Baccarat",
     "description": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ağır döküm kalın kesme kristal kolları, kusursuz ışık kırılımları ve E14 kandil duylarıyla lüksün ve asaletin simgesi Baccarat avize.",
     "dimensions": "Çap: 90 cm",
