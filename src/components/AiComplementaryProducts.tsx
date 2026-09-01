@@ -27,24 +27,19 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
     };
 
     const currentKeywords = extractKeywords(
-      `${currentProduct.name} ${currentProduct.material} ${currentProduct.description} ${currentProduct.style}`
+      `${currentProduct.name} ${currentProduct.description}`
     );
 
     // 2. Tüm katalog ürünlerini yapay zeka uyum puanına göre derecelendir
     const scoredProducts = PRODUCTS.filter((p) => p.id !== currentProduct.id).map((p) => {
-      let score = 50; // Başlangıç taban puanı
+      let score = 55; // Başlangıç taban puanı
 
-      // A. Tarz Uyumu (Aynı tasarım dili: Klasik vs Modern vs Minimalist)
-      if (p.style === currentProduct.style) {
-        score += 35;
-      }
-
-      // B. Malzeme & Renk & Doku Eşleşmesi (Gold ile Gold, Mermer ile Mermer vb.)
+      // A. İsim & Renk & Işık Uyumu
       const pKeywords = extractKeywords(
-        `${p.name} ${p.material} ${p.description} ${p.style}`
+        `${p.name} ${p.description}`
       );
       const matchingKeywords = pKeywords.filter((kw) => currentKeywords.includes(kw));
-      score += matchingKeywords.length * 12;
+      score += matchingKeywords.length * 15;
 
       // C. Çapraz Kategori Tamamlayıcılığı (Aynı ürün yerine odayı tamamlayan parçalar)
       if (p.categorySlug !== currentProduct.categorySlug) {

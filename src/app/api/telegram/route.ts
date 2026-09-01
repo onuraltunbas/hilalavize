@@ -388,49 +388,19 @@ _Örnek: Venedik 8 Kollu Gold Kristal Avize_`
         }
 
         wizard.data.name = text;
-        wizard.step = "WAITING_STYLE";
-        setWizardState(fromId, wizard);
-
-        await sendTelegramMessage(
-          chatId,
-          `🎨 *4. Adım: Ürünün Tarzını Seçiniz:*
-━━━━━━━━━━━━━━━━━━━━
-1️⃣ - İhtişamlı & Klasik (👑 Saray, Kristal, Varak, Masif Pirinç)
-2️⃣ - Modern & Spor (⚡ LED Halkalar, Geometrik, Spor)
-3️⃣ - Sade & Minimalist (🌿 Lineer, Manyetik Ray, Gizli Işık)
-
-_Örnek: 1 veya 2 yazabilirsiniz._`
-        );
-        return NextResponse.json({ ok: true });
-      }
-
-      // ADIM 4: Tarz Seçimi
-      if (wizard.step === "WAITING_STYLE") {
-        let style: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist" = "Modern & Spor";
-        const input = text.toLowerCase();
-
-        if (input === "1" || input.includes("klasik") || input.includes("ihtişam") || input.includes("saray")) {
-          style = "İhtişamlı & Klasik";
-        } else if (input === "3" || input.includes("minimal") || input.includes("sade")) {
-          style = "Sade & Minimalist";
-        } else {
-          style = "Modern & Spor";
-        }
-
-        wizard.data.style = style;
         wizard.step = "WAITING_DIMENSIONS";
         setWizardState(fromId, wizard);
 
         await sendTelegramMessage(
           chatId,
-          `📐 *5. Adım: Ürünün Boyutlarını / Ölçülerini yazınız.*
+          `📐 *4. Adım: Ürünün Boyutlarını / Ölçülerini yazınız.*
 ━━━━━━━━━━━━━━━━━━━━
 _Örnek: Çap: 85 cm, Yükseklik: 100 cm (Ayarlanabilir Zincir)_`
         );
         return NextResponse.json({ ok: true });
       }
 
-      // ADIM 5: Boyutlar
+      // ADIM 4: Boyutlar
       if (wizard.step === "WAITING_DIMENSIONS") {
         wizard.data.dimensions = text;
         wizard.step = "WAITING_LIGHTING";
@@ -438,7 +408,7 @@ _Örnek: Çap: 85 cm, Yükseklik: 100 cm (Ayarlanabilir Zincir)_`
 
         await sendTelegramMessage(
           chatId,
-          `💡 *6. Adım (Son Adım): Aydınlatma & Duy Tipini yazınız.*
+          `💡 *5. Adım (Son Adım): Aydınlatma & Duy Tipini yazınız.*
 ━━━━━━━━━━━━━━━━━━━━
 _Örnek: 8x E14 LED Kandil Duy (Sıcak Beyaz Işık Uyumlu)_
 _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
@@ -446,7 +416,7 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
         return NextResponse.json({ ok: true });
       }
 
-      // ADIM 6: Duy / Aydınlatma (VE DOĞRUDAN TAMAMLAMA & YAYINLAMA)
+      // ADIM 5: Duy / Aydınlatma (VE DOĞRUDAN TAMAMLAMA & YAYINLAMA)
       if (wizard.step === "WAITING_LIGHTING") {
         wizard.data.lightingType = text;
 
@@ -477,11 +447,9 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
           name: d.name || "Yeni Ürün",
           categorySlug: cat.slug,
           categoryName: cat.name,
-          style: d.style || "Modern & Spor",
           badge: "Yeni Sezon Koleksiyon",
           shortDescription: d.name || "",
           description: d.name || "",
-          material: "Özel Tasarım",
           dimensions: d.dimensions || "Standart",
           lightingType: d.lightingType || "LED",
           branch,
@@ -504,7 +472,6 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
 🆔 *ID:* \`${d.id}\`
 🏷️ *Ürün Adı:* ${d.name}
 📂 *Kategori:* ${cat.name} (\`${cat.slug}\`)
-🎨 *Tarz:* ${d.style}
 📐 *Boyut:* ${d.dimensions}
 💡 *Duy:* ${d.lightingType}
 🏢 *Şube:* ${branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}

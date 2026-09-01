@@ -65,12 +65,11 @@ PRODUCTS.forEach((p) => {
   }
 });
 
-// Sadeleştirilmiş Adım Adım Ürün Ekleme Sihirbazı Durumları (6 Hızlı Adım)
+// Sadeleştirilmiş Adım Adım Ürün Ekleme Sihirbazı Durumları (4 Hızlı Adım)
 export type WizardStep =
   | "WAITING_PHOTO"
   | "WAITING_CATEGORY"
   | "WAITING_NAME"
-  | "WAITING_STYLE"
   | "WAITING_DIMENSIONS"
   | "WAITING_LIGHTING";
 
@@ -83,7 +82,6 @@ export interface WizardState {
     prefix?: string;
     id?: string;
     name?: string;
-    style?: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist";
     dimensions?: string;
     lightingType?: string;
   };
@@ -309,7 +307,6 @@ export function formatProductDetails(product: Product): string {
 ━━━━━━━━━━━━━━━━━━━━
 🏷️ *Ürün Adı:* ${product.name}
 📂 *Kategori:* ${product.categoryName} (\`${product.categorySlug}\`)
-🎨 *Tarz:* ${product.style}
 📐 *Boyutlar:* ${product.dimensions}
 💡 *Duy/Aydınlatma:* ${product.lightingType}
 🏢 *Şube:* ${product.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}

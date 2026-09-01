@@ -75,10 +75,8 @@ Her kategori klasöründeki `photo/` dizinine fotoğrafları atarken şu basit k
     "name": "Padişah 24 Kollu Asfour Kristal Saray Avizesi",
     "dimensions": "Çap: 120 cm, Yükseklik: 140 cm",
     "lightingType": "24x E14 Duy (LED Uyumlu)",
-    "style": "İhtişamlı & Klasik",
-    "material": "Döküm Pirinç & K9 Saf Kristal Taşlar",
     "badge": "Özel Tasarım Koleksiyon",
-    "shortDescription": "Ağır döküm pirinç gövde ve kristal prizmalarla donatılmış saray zarafeti."
+    "shortDescription": "Ağır döküm gövde ve berrak kristal prizmalarla donatılmış saray zarafeti."
   }
 ```
 

@@ -258,17 +258,15 @@ function processAllProducts() {
       usedSlugs.add(slug);
 
       const name = item.name || `${catConfig.name} - Model ${itemNo}`;
-      const style = item.style || "Modern & Spor";
       const dimensions = item.dimensions || item.olculer || item.boyutlar || "Standart Ölçü";
       const lightingType = item.lightingType || item.duy || item.aydinlatma || "E14 / E27 / LED Uyumlu";
-      const material = item.material || item.malzeme || "Özel Hilal Tasarım";
       const branch = item.branch || catConfig.defaultBranch;
       const badge = item.badge || undefined;
 
       const shortDescription =
         item.shortDescription ||
         item.kisaAciklama ||
-        `${name}; ${material} gövde yapısı ve ${dimensions} ölçüleriyle yaşam alanlarınıza değer katar.`;
+        `${name}; ${dimensions} ölçüleri ve ${lightingType} aydınlatması ile yaşam alanlarınıza değer katar.`;
 
       const description =
         item.description ||
@@ -280,7 +278,6 @@ function processAllProducts() {
         : [
             `${lightingType}`,
             `${dimensions}`,
-            `${material}`,
             "Hilal Avize Güvencesiyle Hasarsız Teslimat",
             "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği",
           ];
@@ -296,11 +293,9 @@ function processAllProducts() {
         name,
         categorySlug: catConfig.slug,
         categoryName: catConfig.name,
-        style,
         badge,
         description,
         shortDescription,
-        material,
         dimensions,
         lightingType,
         branch,
@@ -325,11 +320,9 @@ export interface Product {
   name: string;
   categorySlug: string;
   categoryName: string;
-  style: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist";
   badge?: string;
   description: string;
   shortDescription: string;
-  material: string;
   dimensions: string;
   lightingType: string;
   branch: "showroom" | "electrical";

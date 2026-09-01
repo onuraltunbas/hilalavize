@@ -7,11 +7,9 @@ export interface Product {
   name: string;
   categorySlug: string;
   categoryName: string;
-  style: "İhtişamlı & Klasik" | "Modern & Spor" | "Sade & Minimalist";
   badge?: string;
   description: string;
   shortDescription: string;
-  material: string;
   dimensions: string;
   lightingType: string;
   branch: "showroom" | "electrical";
@@ -29,11 +27,9 @@ export const PRODUCTS: Product[] = [
     "name": "Padişah 24 Kollu Asfour Kristal Saray Avizesi",
     "categorySlug": "avizeler",
     "categoryName": "Lüks & Modern Avizeler",
-    "style": "İhtişamlı & Klasik",
     "badge": "Özel Tasarım Koleksiyon",
     "description": "Padişah 24 Kollu Asfour Kristal Saray Avizesi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 120 cm, Yükseklik: 140 cm (Ayarlanabilir Zincir) ölçüleri, 24x E14 Duy (Dimmerlenebilir Sıcak Beyaz LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ağır döküm pirinç gövde ve Asfour berrak kristal prizmalarla donatılmış 24 kollu saray zarafeti.",
-    "material": "Döküm Pirinç & K9 Saf Kristal Taşlar",
     "dimensions": "Çap: 120 cm, Yükseklik: 140 cm (Ayarlanabilir Zincir)",
     "lightingType": "24x E14 Duy (Dimmerlenebilir Sıcak Beyaz LED Uyumlu)",
     "branch": "showroom",
@@ -45,7 +41,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "24x E14 Duy (Dimmerlenebilir Sıcak Beyaz LED Uyumlu)",
       "Çap: 120 cm, Yükseklik: 140 cm (Ayarlanabilir Zincir)",
-      "Döküm Pirinç & K9 Saf Kristal Taşlar",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -58,11 +53,9 @@ export const PRODUCTS: Product[] = [
     "name": "Solaris Üçlü Geometrik Halka LED Sarkıt Avize",
     "categorySlug": "avizeler",
     "categoryName": "Lüks & Modern Avizeler",
-    "style": "Modern & Spor",
     "badge": "En Çok Satan Modern Seri",
     "description": "Solaris Üçlü Geometrik Halka LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Halka Çapları: 80 cm + 60 cm + 40 cm, Yükseklik: Max 150 cm ölçüleri, Dahili 95W 3 Renk Kademeli (3000K-4000K-6500K) LED Çip aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Fırçalanmış marigold altın gövdeli, 3 halkalı mimari modern LED avize.",
-    "material": "Eloksallı Alüminyum & Silikon Opal Difüzör",
     "dimensions": "Halka Çapları: 80 cm + 60 cm + 40 cm, Yükseklik: Max 150 cm",
     "lightingType": "Dahili 95W 3 Renk Kademeli (3000K-4000K-6500K) LED Çip",
     "branch": "showroom",
@@ -74,7 +67,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "Dahili 95W 3 Renk Kademeli (3000K-4000K-6500K) LED Çip",
       "Halka Çapları: 80 cm + 60 cm + 40 cm, Yükseklik: Max 150 cm",
-      "Eloksallı Alüminyum & Silikon Opal Difüzör",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -87,11 +79,9 @@ export const PRODUCTS: Product[] = [
     "name": "Aurora Çift Yönlü Yivli Kristal Duvar Apliği",
     "categorySlug": "aplikler",
     "categoryName": "Dekoratif Duvar Aplikleri",
-    "style": "İhtişamlı & Klasik",
     "badge": "Popüler Ürün",
     "description": "Aurora Çift Yönlü Yivli Kristal Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 12 cm, Yükseklik: 48 cm, Derinlik: 10 cm ölçüleri, 2x G9 LED Duy (3000K Sıcak Amber Işık Dahil) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Fırçalanmış pirinç gövdeli, boru yivli kristal camlı lüks duvar apliği.",
-    "material": "Fırçalanmış Masif Pirinç & Yivli Optik Cam",
     "dimensions": "Genişlik: 12 cm, Yükseklik: 48 cm, Derinlik: 10 cm",
     "lightingType": "2x G9 LED Duy (3000K Sıcak Amber Işık Dahil)",
     "branch": "showroom",
@@ -102,7 +92,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "2x G9 LED Duy (3000K Sıcak Amber Işık Dahil)",
       "Genişlik: 12 cm, Yükseklik: 48 cm, Derinlik: 10 cm",
-      "Fırçalanmış Masif Pirinç & Yivli Optik Cam",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -115,11 +104,9 @@ export const PRODUCTS: Product[] = [
     "name": "Invisa Manyetik Ray Spot & Lineer Tavan Sistemi",
     "categorySlug": "spot-ve-ray-spot",
     "categoryName": "Spot & Manyetik Ray Spot Sistemleri",
-    "style": "Sade & Minimalist",
     "badge": "Mimarların Tercihi",
     "description": "Invisa Manyetik Ray Spot & Lineer Tavan Sistemi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ray Uzunluğu: 1m, 2m, 3m (Birbirine Eklenebilir Modüler) ölçüleri, 24V / 48V Güvenli Düşük Gerilim Osram LED Modüller aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Gömme ve sıva üstü manyetik ray profili, tak-çıkar spot modülleri.",
-    "material": "Ekstrüde Alüminyum & Manyetik Bakır İletken Ray",
     "dimensions": "Ray Uzunluğu: 1m, 2m, 3m (Birbirine Eklenebilir Modüler)",
     "lightingType": "24V / 48V Güvenli Düşük Gerilim Osram LED Modüller",
     "branch": "electrical",
@@ -130,7 +117,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "24V / 48V Güvenli Düşük Gerilim Osram LED Modüller",
       "Ray Uzunluğu: 1m, 2m, 3m (Birbirine Eklenebilir Modüler)",
-      "Ekstrüde Alüminyum & Manyetik Bakır İletken Ray",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -143,11 +129,9 @@ export const PRODUCTS: Product[] = [
     "name": "Luna Gold Çerçeveli Akıllı Dokunmatik LED Ayna",
     "categorySlug": "dekoratif-aynalar",
     "categoryName": "Dekoratif & Akıllı LED Aynalar",
-    "style": "Modern & Spor",
     "badge": "Akıllı Teknoloji",
     "description": "Luna Gold Çerçeveli Akıllı Dokunmatik LED Ayna, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 80 cm, Kalınlık: 3.5 cm ölçüleri, CRI>90 Yüksek Renk Doğruluğu Sağlayan IP44 Su Geçirmez LED aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Halo ambiyans arka aydınlatmalı, dijital saatli ve buğu önleyicili banyo & salon aynası.",
-    "material": "Flotal Ekolojik Ayna & Fırçalanmış Alüminyum Gövde",
     "dimensions": "Çap: 80 cm, Kalınlık: 3.5 cm",
     "lightingType": "CRI>90 Yüksek Renk Doğruluğu Sağlayan IP44 Su Geçirmez LED",
     "branch": "showroom",
@@ -158,7 +142,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "CRI>90 Yüksek Renk Doğruluğu Sağlayan IP44 Su Geçirmez LED",
       "Çap: 80 cm, Kalınlık: 3.5 cm",
-      "Flotal Ekolojik Ayna & Fırçalanmış Alüminyum Gövde",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -171,11 +154,9 @@ export const PRODUCTS: Product[] = [
     "name": "Artisan Çift Çemberli Mermer Kadranlı Lüks Duvar Saati",
     "categorySlug": "duvar-ve-masa-saatleri",
     "categoryName": "Özel Tasarım Duvar & Masa Saatleri",
-    "style": "Modern & Spor",
     "badge": "Tasarım Ödüllü",
     "description": "Artisan Çift Çemberli Mermer Kadranlı Lüks Duvar Saati, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 70 cm, Derinlik: 5 cm ölçüleri, Mekanik Saat (Pil ile Çalışır) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Hakiki beyaz Calacatta mermer göbekli ve mat siyah/gold metal çift çemberli salon saati.",
-    "material": "Doğal Calacatta Mermer & Elektrostatik Fırın Boyalı Metal",
     "dimensions": "Çap: 70 cm, Derinlik: 5 cm",
     "lightingType": "Mekanik Saat (Pil ile Çalışır)",
     "branch": "showroom",
@@ -186,7 +167,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "Mekanik Saat (Pil ile Çalışır)",
       "Çap: 70 cm, Derinlik: 5 cm",
-      "Doğal Calacatta Mermer & Elektrostatik Fırın Boyalı Metal",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -199,11 +179,9 @@ export const PRODUCTS: Product[] = [
     "name": "Murano Amber & Altın Varaklı El Üfleme Cam Vazo Seti",
     "categorySlug": "cam-sus-esyalari",
     "categoryName": "Cam Sanat & Süs Eşyaları",
-    "style": "İhtişamlı & Klasik",
     "badge": "El İşçiliği Özel Seri",
     "description": "Murano Amber & Altın Varaklı El Üfleme Cam Vazo Seti, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Büyük Vazo: 38 cm, Orta Vazo: 28 cm, Kase: 22 cm Çap ölçüleri, Dekoratif Obje aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Geleneksel üfleme tekniğiyle üretilmiş, 24K altın tozlu amber kristal vazo ve kase seti.",
-    "material": "El Üfleme Kristal Cam & 24K Altın Varak Taneleri",
     "dimensions": "Büyük Vazo: 38 cm, Orta Vazo: 28 cm, Kase: 22 cm Çap",
     "lightingType": "Dekoratif Obje",
     "branch": "showroom",
@@ -214,7 +192,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "Dekoratif Obje",
       "Büyük Vazo: 38 cm, Orta Vazo: 28 cm, Kase: 22 cm Çap",
-      "El Üfleme Kristal Cam & 24K Altın Varak Taneleri",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -227,11 +204,9 @@ export const PRODUCTS: Product[] = [
     "name": "Prestige Temperli Siyah Cam & Gold Çerçeveli Anahtar Priz Serisi",
     "categorySlug": "anahtar-ve-priz-serileri",
     "categoryName": "Lüks Anahtar & Priz Serileri",
-    "style": "Modern & Spor",
     "badge": "Lüks Elektrik Serisi",
     "description": "Prestige Temperli Siyah Cam & Gold Çerçeveli Anahtar Priz Serisi, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Sıva Altı Kasa Uyumlu (Modüler 1'li, 2'li, 3'lü, 4'lü Kombinasyon) ölçüleri, Gece Konumunu Gösteren Yumuşak LED Işıklı Butonlar aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Çizilmez temperli kristal cam panel, şampanya gold fırçalanmış dış çerçeve.",
-    "material": "4mm Temperli Kristal Cam & Masif Alüminyum Çerçeve",
     "dimensions": "Standart Sıva Altı Kasa Uyumlu (Modüler 1'li, 2'li, 3'lü, 4'lü Kombinasyon)",
     "lightingType": "Gece Konumunu Gösteren Yumuşak LED Işıklı Butonlar",
     "branch": "electrical",
@@ -242,7 +217,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "Gece Konumunu Gösteren Yumuşak LED Işıklı Butonlar",
       "Standart Sıva Altı Kasa Uyumlu (Modüler 1'li, 2'li, 3'lü, 4'lü Kombinasyon)",
-      "4mm Temperli Kristal Cam & Masif Alüminyum Çerçeve",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -255,11 +229,9 @@ export const PRODUCTS: Product[] = [
     "name": "Majestic Gold Ayaklı Gece Mavisi Kadife Tasarım Berjer",
     "categorySlug": "dekoratif-koltuk-ve-berjerler",
     "categoryName": "Dekoratif Koltuk & Berjerler",
-    "style": "İhtişamlı & Klasik",
     "badge": "Showroom Özel Ürünü",
     "description": "Majestic Gold Ayaklı Gece Mavisi Kadife Tasarım Berjer, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 82 cm, Derinlik: 85 cm, Yükseklik: 95 cm ölçüleri, Dekoratif Mobilya aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Su itici birinci sınıf lüks kadife kumaş, ergonomik sırt ve titanyum gold paslanmaz ayaklar.",
-    "material": "İthal Soft Kadife & Fırınlanmış Gürgen İskelet & Titanyum Gold Metal Ayak",
     "dimensions": "Genişlik: 82 cm, Derinlik: 85 cm, Yükseklik: 95 cm",
     "lightingType": "Dekoratif Mobilya",
     "branch": "showroom",
@@ -270,7 +242,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "Dekoratif Mobilya",
       "Genişlik: 82 cm, Derinlik: 85 cm, Yükseklik: 95 cm",
-      "İthal Soft Kadife & Fırınlanmış Gürgen İskelet & Titanyum Gold Metal Ayak",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
@@ -283,11 +254,9 @@ export const PRODUCTS: Product[] = [
     "name": "Imperia İtalyan Calacatta Mermer İkili İç İçe Orta Sehpa",
     "categorySlug": "dekoratif-sehpalar",
     "categoryName": "Dekoratif Mermer & Bronz Sehpalar",
-    "style": "Modern & Spor",
     "badge": "Hakiki Doğal Mermer",
     "description": "Imperia İtalyan Calacatta Mermer İkili İç İçe Orta Sehpa, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Büyük: Çap 85 cm - Yükseklik 45 cm, Küçük: Çap 65 cm - Yükseklik 38 cm ölçüleri, Dekoratif Mobilya aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Özel koruma cilalı hakiki mermer tabla ve fırçalanmış marigold bronz çember ayaklar.",
-    "material": "Doğal Calacatta Beyaz Mermer & Paslanmaz Bronz Çelik",
     "dimensions": "Büyük: Çap 85 cm - Yükseklik 45 cm, Küçük: Çap 65 cm - Yükseklik 38 cm",
     "lightingType": "Dekoratif Mobilya",
     "branch": "showroom",
@@ -298,7 +267,6 @@ export const PRODUCTS: Product[] = [
     "features": [
       "Dekoratif Mobilya",
       "Büyük: Çap 85 cm - Yükseklik 45 cm, Küçük: Çap 65 cm - Yükseklik 38 cm",
-      "Doğal Calacatta Beyaz Mermer & Paslanmaz Bronz Çelik",
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],

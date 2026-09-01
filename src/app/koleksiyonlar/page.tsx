@@ -8,14 +8,12 @@ import { ProductModal } from "@/components/ProductModal";
 import {
   Sparkles,
   Search,
-  SlidersHorizontal,
   Layers,
 } from "lucide-react";
 
 export default function CollectionsPage() {
   const [productsList, setProductsList] = useState<Product[]>(PRODUCTS);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-  const [selectedStyle, setSelectedStyle] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeModalProduct, setActiveModalProduct] = useState<Product | null>(null);
 
@@ -34,17 +32,15 @@ export default function CollectionsPage() {
     return productsList.filter((product) => {
       const matchCategory =
         selectedCategory === "all" || product.categorySlug === selectedCategory;
-      const matchStyle =
-        selectedStyle === "all" || product.style === selectedStyle;
       const matchSearch =
         searchQuery === "" ||
         product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         product.dimensions.toLowerCase().includes(searchQuery.toLowerCase()) ||
         product.lightingType.toLowerCase().includes(searchQuery.toLowerCase());
 
-      return matchCategory && matchStyle && matchSearch;
+      return matchCategory && matchSearch;
     });
-  }, [productsList, selectedCategory, selectedStyle, searchQuery]);
+  }, [productsList, selectedCategory, searchQuery]);
 
   return (
     <div className="py-12 sm:py-16 bg-[#080D1A] min-h-screen">
@@ -70,36 +66,11 @@ export default function CollectionsPage() {
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
             <input
               type="text"
-              placeholder="Ürün adı, kristal, pirinç, mermer veya stil ara..."
+              placeholder="Ürün adı, kristal, pirinç, mermer veya ölçü ara..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-2xl pl-12 pr-4 py-3.5 text-sm text-white placeholder-slate-400 focus:outline-none"
             />
-          </div>
-
-          {/* Style Filter Tabs */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-            <span className="text-xs font-bold text-amber-400 flex items-center gap-1 shrink-0 mr-2">
-              <SlidersHorizontal className="w-3.5 h-3.5" /> Tarz:
-            </span>
-            {[
-              { id: "all", label: "Tüm Tarzlar" },
-              { id: "İhtişamlı & Klasik", label: "👑 İhtişamlı & Klasik" },
-              { id: "Modern & Spor", label: "⚡ Modern & Spor" },
-              { id: "Sade & Minimalist", label: "🌿 Sade & Minimalist" },
-            ].map((st) => (
-              <button
-                key={st.id}
-                onClick={() => setSelectedStyle(st.id)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
-                  selectedStyle === st.id
-                    ? "bg-amber-500 text-slate-950 font-bold shadow-md shadow-amber-500/20"
-                    : "bg-[#132238] text-slate-300 hover:text-white hover:bg-slate-800"
-                }`}
-              >
-                {st.label}
-              </button>
-            ))}
           </div>
 
           {/* Categories Filter Pills */}
@@ -115,7 +86,7 @@ export default function CollectionsPage() {
                   : "bg-slate-900 text-slate-400 hover:text-slate-200"
               }`}
             >
-              Hepsi ({PRODUCTS.length})
+              Hepsi ({productsList.length})
             </button>
             {CATEGORIES.map((cat) => (
               <button
@@ -124,33 +95,32 @@ export default function CollectionsPage() {
                 className={`px-3 py-1 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
                   selectedCategory === cat.slug
                     ? "bg-amber-500/20 text-amber-300 border border-amber-500/40"
-                    : "bg-slate-900 text-slate-400 hover:text-slate-200"
-                }`}
-              >
-                {cat.shortName}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Results Counter */}
-        <div className="flex items-center justify-between text-xs text-slate-400 mb-6">
-          <span>
-            Toplam <strong className="text-amber-400">{filteredProducts.length}</strong> model listeleniyor
-          </span>
-          {(selectedCategory !== "all" || selectedStyle !== "all" || searchQuery) && (
-            <button
-              onClick={() => {
-                setSelectedCategory("all");
-                setSelectedStyle("all");
-                setSearchQuery("");
-              }}
-              className="text-amber-400 hover:underline font-medium"
+                  : "bg-slate-900 text-slate-400 hover:text-slate-200"
+              }`}
             >
-              Filtreleri Temizle
+              {cat.shortName}
             </button>
-          )}
+          ))}
         </div>
+      </div>
+
+      {/* Results Counter */}
+      <div className="flex items-center justify-between text-xs text-slate-400 mb-6">
+        <span>
+          Toplam <strong className="text-amber-400">{filteredProducts.length}</strong> model listeleniyor
+        </span>
+        {(selectedCategory !== "all" || searchQuery) && (
+          <button
+            onClick={() => {
+              setSelectedCategory("all");
+              setSearchQuery("");
+            }}
+            className="text-amber-400 hover:underline font-medium"
+          >
+            Filtreleri Temizle
+          </button>
+        )}
+      </div>
 
         {/* Products Grid */}
         {filteredProducts.length > 0 ? (
@@ -172,7 +142,6 @@ export default function CollectionsPage() {
             <button
               onClick={() => {
                 setSelectedCategory("all");
-                setSelectedStyle("all");
                 setSearchQuery("");
               }}
               className="mt-2 bg-amber-500 text-slate-950 px-4 py-2 rounded-xl text-xs font-bold"

@@ -24,13 +24,6 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
 
-        {/* Style Badge */}
-        <div className="absolute top-3 left-3">
-          <span className="px-2.5 py-1 rounded-xl text-[10px] font-bold bg-[#0B132B]/90 text-amber-400 border border-amber-500/40 backdrop-blur-md">
-            {product.style}
-          </span>
-        </div>
-
         {/* Custom badge */}
         {product.badge && (
           <div className="absolute top-3 right-3">
@@ -64,19 +57,19 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
         <div className="space-y-2 pt-4 border-t border-slate-800 text-sm text-slate-400">
           <div className="flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <Sparkles className="w-4 h-4 text-amber-500/70" /> Malzeme:
+              <Ruler className="w-4 h-4 text-amber-500/70" /> Ölçü:
             </span>
             <span className="text-slate-200 font-medium truncate max-w-[170px]">
-              {product.material}
+              {product.dimensions}
             </span>
           </div>
 
           <div className="flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <Ruler className="w-4 h-4 text-amber-500/70" /> Ölçü:
+              <Sparkles className="w-4 h-4 text-amber-500/70" /> Işık / Duy:
             </span>
             <span className="text-slate-200 font-medium truncate max-w-[170px]">
-              {product.dimensions}
+              {product.lightingType}
             </span>
           </div>
         </div>

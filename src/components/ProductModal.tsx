@@ -6,7 +6,6 @@ import {
   X,
   MessageCircle,
   Phone,
-  Sparkles,
   Ruler,
   Lightbulb,
   CheckCircle2,
@@ -37,7 +36,6 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             <ProductGallery
               images={product.images || [product.image]}
               productName={product.name}
-              styleBadge={product.style}
               customBadge={product.badge}
             />
           </div>
@@ -61,13 +59,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             <div className="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 space-y-2 text-xs">
               <div className="flex justify-between py-1 border-b border-slate-800">
                 <span className="text-slate-400 flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Malzeme
-                </span>
-                <span className="font-semibold text-slate-200">{product.material}</span>
-              </div>
-              <div className="flex justify-between py-1 border-b border-slate-800">
-                <span className="text-slate-400 flex items-center gap-1.5">
-                  <Ruler className="w-3.5 h-3.5 text-amber-400" /> Boyutlar
+                  <Ruler className="w-3.5 h-3.5 text-amber-400" /> Boyutlar / Ölçüler
                 </span>
                 <span className="font-semibold text-slate-200">{product.dimensions}</span>
               </div>

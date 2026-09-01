@@ -7,14 +7,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 interface ProductGalleryProps {
   images: string[];
   productName: string;
-  styleBadge?: string;
   customBadge?: string;
 }
 
 export function ProductGallery({
   images,
   productName,
-  styleBadge,
   customBadge,
 }: ProductGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,15 +41,6 @@ export function ProductGallery({
           priority
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-
-        {/* Style Badge */}
-        {styleBadge && (
-          <div className="absolute top-4 left-4 z-10">
-            <span className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-[#0B132B]/90 text-amber-400 border border-amber-500/40 backdrop-blur-md shadow-md">
-              {styleBadge}
-            </span>
-          </div>
-        )}
 
         {/* Custom Badge */}
         {customBadge && (

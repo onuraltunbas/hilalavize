@@ -124,7 +124,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             <ProductGallery
               images={product.images || [product.image]}
               productName={product.name}
-              styleBadge={product.style}
               customBadge={product.badge}
             />
           </div>
