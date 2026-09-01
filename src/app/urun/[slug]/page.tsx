@@ -1,12 +1,12 @@
 import React from "react";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { PRODUCTS } from "@/data/products";
 import { getProductBySlugAsync, getAllProductsAsync } from "@/lib/products-store";
 import { COMPANY_DATA } from "@/data/company";
 import { AiComplementaryProducts } from "@/components/AiComplementaryProducts";
+import { ProductGallery } from "@/components/ProductGallery";
 import {
   ChevronRight,
   MessageCircle,
@@ -120,28 +120,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         {/* Product Details Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-20">
           {/* Product Image Gallery */}
-          <div className="space-y-4">
-            <div className="relative h-96 sm:h-[480px] w-full rounded-3xl overflow-hidden bg-slate-950 border border-amber-500/30 shadow-2xl">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                priority
-                className="object-cover"
-              />
-              <div className="absolute top-4 left-4">
-                <span className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-[#0B132B]/90 text-amber-400 border border-amber-500/40 backdrop-blur-md">
-                  {product.style}
-                </span>
-              </div>
-              {product.badge && (
-                <div className="absolute top-4 right-4">
-                  <span className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-amber-500 text-slate-950 shadow-lg">
-                    {product.badge}
-                  </span>
-                </div>
-              )}
-            </div>
+          <div>
+            <ProductGallery
+              images={product.images || [product.image]}
+              productName={product.name}
+              styleBadge={product.style}
+              customBadge={product.badge}
+            />
           </div>
 
           {/* Product Info & Inquiries */}

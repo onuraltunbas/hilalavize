@@ -1,5 +1,5 @@
 // BU DOSYA OTOMATİK OLUŞTURULMAKTADIR.
-// Ürün eklemek veya düzenlemek için 'products/products.json' dosyasını ve 'products/photo/' klasörünü kullanınız.
+// Ürün eklemek için 'products/[kategori]/urunler.json' dosyasını ve 'products/[kategori]/photo/' klasörünü kullanınız.
 
 export interface Product {
   id: string;
@@ -37,9 +37,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 120 cm, Yükseklik: 140 cm (Ayarlanabilir Zincir)",
     "lightingType": "24x E14 Duy (Dimmerlenebilir Sıcak Beyaz LED Uyumlu)",
     "branch": "showroom",
-    "image": "/products/photo/AVZ-001.jpg",
+    "image": "/products/avizeler/photo/10.jpg",
     "images": [
-      "/products/photo/AVZ-001.jpg"
+      "/products/avizeler/photo/10.jpg",
+      "/products/avizeler/photo/11.jpg"
     ],
     "features": [
       "24x E14 Duy (Dimmerlenebilir Sıcak Beyaz LED Uyumlu)",
@@ -65,9 +66,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Halka Çapları: 80 cm + 60 cm + 40 cm, Yükseklik: Max 150 cm",
     "lightingType": "Dahili 95W 3 Renk Kademeli (3000K-4000K-6500K) LED Çip",
     "branch": "showroom",
-    "image": "/products/photo/AVZ-002.jpg",
+    "image": "/products/avizeler/photo/20.jpg",
     "images": [
-      "/products/photo/AVZ-002.jpg"
+      "/products/avizeler/photo/20.jpg",
+      "/products/avizeler/photo/21.jpg"
     ],
     "features": [
       "Dahili 95W 3 Renk Kademeli (3000K-4000K-6500K) LED Çip",
@@ -93,9 +95,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Genişlik: 12 cm, Yükseklik: 48 cm, Derinlik: 10 cm",
     "lightingType": "2x G9 LED Duy (3000K Sıcak Amber Işık Dahil)",
     "branch": "showroom",
-    "image": "/products/photo/APL-001.jpg",
+    "image": "/products/aplikler/photo/10.jpg",
     "images": [
-      "/products/photo/APL-001.jpg"
+      "/products/aplikler/photo/10.jpg"
     ],
     "features": [
       "2x G9 LED Duy (3000K Sıcak Amber Işık Dahil)",
@@ -121,9 +123,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Ray Uzunluğu: 1m, 2m, 3m (Birbirine Eklenebilir Modüler)",
     "lightingType": "24V / 48V Güvenli Düşük Gerilim Osram LED Modüller",
     "branch": "electrical",
-    "image": "/products/photo/SPT-001.jpg",
+    "image": "/products/spot-ve-ray-spot/photo/10.jpg",
     "images": [
-      "/products/photo/SPT-001.jpg"
+      "/products/spot-ve-ray-spot/photo/10.jpg"
     ],
     "features": [
       "24V / 48V Güvenli Düşük Gerilim Osram LED Modüller",
@@ -149,9 +151,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 80 cm, Kalınlık: 3.5 cm",
     "lightingType": "CRI>90 Yüksek Renk Doğruluğu Sağlayan IP44 Su Geçirmez LED",
     "branch": "showroom",
-    "image": "/products/photo/AYN-001.jpg",
+    "image": "/products/dekoratif-aynalar/photo/10.jpg",
     "images": [
-      "/products/photo/AYN-001.jpg"
+      "/products/dekoratif-aynalar/photo/10.jpg"
     ],
     "features": [
       "CRI>90 Yüksek Renk Doğruluğu Sağlayan IP44 Su Geçirmez LED",
@@ -177,9 +179,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 70 cm, Derinlik: 5 cm",
     "lightingType": "Mekanik Saat (Pil ile Çalışır)",
     "branch": "showroom",
-    "image": "/products/photo/DST-001.jpg",
+    "image": "/products/duvar-ve-masa-saatleri/photo/10.jpg",
     "images": [
-      "/products/photo/DST-001.jpg"
+      "/products/duvar-ve-masa-saatleri/photo/10.jpg"
     ],
     "features": [
       "Mekanik Saat (Pil ile Çalışır)",
@@ -205,9 +207,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Büyük Vazo: 38 cm, Orta Vazo: 28 cm, Kase: 22 cm Çap",
     "lightingType": "Dekoratif Obje",
     "branch": "showroom",
-    "image": "/products/photo/SUS-001.jpg",
+    "image": "/products/cam-sus-esyalari/photo/10.jpg",
     "images": [
-      "/products/photo/SUS-001.jpg"
+      "/products/cam-sus-esyalari/photo/10.jpg"
     ],
     "features": [
       "Dekoratif Obje",
@@ -233,9 +235,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Standart Sıva Altı Kasa Uyumlu (Modüler 1'li, 2'li, 3'lü, 4'lü Kombinasyon)",
     "lightingType": "Gece Konumunu Gösteren Yumuşak LED Işıklı Butonlar",
     "branch": "electrical",
-    "image": "/products/photo/ANH-001.jpg",
+    "image": "/products/anahtar-ve-priz-serileri/photo/10.jpg",
     "images": [
-      "/products/photo/ANH-001.jpg"
+      "/products/anahtar-ve-priz-serileri/photo/10.jpg"
     ],
     "features": [
       "Gece Konumunu Gösteren Yumuşak LED Işıklı Butonlar",
@@ -261,9 +263,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Genişlik: 82 cm, Derinlik: 85 cm, Yükseklik: 95 cm",
     "lightingType": "Dekoratif Mobilya",
     "branch": "showroom",
-    "image": "/products/photo/KOL-001.jpg",
+    "image": "/products/dekoratif-koltuk-ve-berjerler/photo/10.jpg",
     "images": [
-      "/products/photo/KOL-001.jpg"
+      "/products/dekoratif-koltuk-ve-berjerler/photo/10.jpg"
     ],
     "features": [
       "Dekoratif Mobilya",
@@ -289,9 +291,9 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Büyük: Çap 85 cm - Yükseklik 45 cm, Küçük: Çap 65 cm - Yükseklik 38 cm",
     "lightingType": "Dekoratif Mobilya",
     "branch": "showroom",
-    "image": "/products/photo/SEH-001.jpg",
+    "image": "/products/dekoratif-sehpalar/photo/10.jpg",
     "images": [
-      "/products/photo/SEH-001.jpg"
+      "/products/dekoratif-sehpalar/photo/10.jpg"
     ],
     "features": [
       "Dekoratif Mobilya",

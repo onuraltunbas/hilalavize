@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
 import { Product } from "@/data/products";
+import { ProductGallery } from "@/components/ProductGallery";
 import {
   X,
   MessageCircle,
@@ -33,19 +32,14 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          {/* Image */}
-          <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden bg-slate-950 border border-slate-800">
-            <Image
-              src={product.image}
-              alt={product.name}
-              fill
-              className="object-cover"
+          {/* Image Gallery */}
+          <div>
+            <ProductGallery
+              images={product.images || [product.image]}
+              productName={product.name}
+              styleBadge={product.style}
+              customBadge={product.badge}
             />
-            <div className="absolute top-3 left-3">
-              <span className="px-3 py-1 rounded-xl text-xs font-bold bg-[#0B132B]/90 text-amber-400 border border-amber-500/40">
-                {product.style}
-              </span>
-            </div>
           </div>
 
           {/* Details */}
