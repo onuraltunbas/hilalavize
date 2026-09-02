@@ -167,11 +167,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </div>
               </div>
 
-              {/* Ürün Notu - Aydınlatmanın Güzelliği & Mekan Uyumu */}
-              <div className="p-4 rounded-xl bg-surface-subtle border border-border space-y-1.5">
-                <div className="text-xs font-bold text-bronze flex items-center gap-1.5 uppercase tracking-wider">
-                  <Sparkles className="w-3.5 h-3.5 text-bronze" /> Ürün Notu & Aydınlatma Zarafeti
-                </div>
+              {/* Aydınlatma Zarafeti Notu */}
+              <div className="p-4 rounded-xl bg-surface-subtle border border-border">
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed italic">
                   {product.categorySlug === "klasik" && "Kristalin büyüleyici ışık kırma sanatı, mekana sadece aydınlık değil; tavan ve duvarlarda dans eden prizmatik ışıltılar ve asil bir saray zarafeti kazandırır. Odanızın en prestijli odak noktasıdır."}
                   {product.categorySlug === "modern" && "Modern mimari çizgiler ve homojen difüzör teknolojisiyle gözü yormayan, mekana derinlik ve çağdaş bir ferahlık katan heykelsi bir aydınlatma atmosferi sunar."}
