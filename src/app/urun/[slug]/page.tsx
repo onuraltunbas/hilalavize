@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   Ruler,
   Lightbulb,
+  Sparkles,
 } from "lucide-react";
 
 export const dynamic = "force-dynamic";
@@ -140,6 +141,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </h1>
               </div>
 
+              {/* Description */}
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                {product.description}
+              </p>
+
               {/* Technical Specifications */}
               <div className="dgaraj-card p-4 sm:p-5 space-y-2.5 text-xs sm:text-sm">
                 {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
@@ -164,6 +170,26 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   </span>
                   <span className="font-mono text-muted-foreground tracking-wider">{product.code || product.id}</span>
                 </div>
+              </div>
+
+              {/* Ürün Notu - Aydınlatmanın Güzelliği & Mekan Uyumu */}
+              <div className="p-4 rounded-xl bg-surface-subtle border border-border space-y-1.5">
+                <div className="text-xs font-bold text-bronze flex items-center gap-1.5 uppercase tracking-wider">
+                  <Sparkles className="w-3.5 h-3.5 text-bronze" /> Ürün Notu & Aydınlatma Zarafeti
+                </div>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed italic">
+                  {product.categorySlug === "klasik" && "Kristalin büyüleyici ışık kırma sanatı, mekana sadece aydınlık değil; tavan ve duvarlarda dans eden prizmatik ışıltılar ve asil bir saray zarafeti kazandırır. Odanızın en prestijli odak noktasıdır."}
+                  {product.categorySlug === "modern" && "Modern mimari çizgiler ve homojen difüzör teknolojisiyle gözü yormayan, mekana derinlik ve çağdaş bir ferahlık katan heykelsi bir aydınlatma atmosferi sunar."}
+                  {product.categorySlug === "aplikler" && "Duvar dokusunu ve mimari detayları vurgulayan yumuşak endirekt ışık yayılımı ile dinlenme saatlerinde huzurlu ve samimi bir loş atmosfer yaratır."}
+                  {product.categorySlug === "ray-spot-ve-siva-ustu" && "Işığı istediğiniz tabloya, masaya veya mimari köşeye yönlendirme özgürlüğü vererek mekana dinamik gölge-ışık dengesi ve modern bir stüdyo şıklığı katar."}
+                  {product.categorySlug === "tekli-ve-uclu-sarkitlar" && "Yemek masası veya ada tezgahı üzerinde odaklanmış samimi bir ışık huzmesi oluşturarak sohbetlerin ve mekanın sıcaklığını artırır."}
+                  {product.categorySlug === "dekoratif-aynalar" && "Mekandaki tüm ışık huzmelerini katlayarak yansıtır; odayı olduğundan çok daha aydınlık, ferah ve derin gösteren vazgeçilmez bir ışık çoğaltıcıdır."}
+                  {product.categorySlug === "duvar-ve-masa-saatleri" && "Zamanı gösterirken ışığın metal ve cam üzerindeki zarif yansımalarıyla duvarlarınıza sanatsal bir derinlik ve asalet kazandırır."}
+                  {(product.categorySlug === "dekoratif-koltuk-ve-berjerler" || product.categorySlug === "dekoratif-sehpalar") && "Aydınlatma armatürlerinizin ışığı altında kadife dokusu ve pirinç/mermer hatlarıyla parıldayarak yaşam alanınızda kusursuz bir estetik köşesi oluşturur."}
+                  {product.categorySlug === "cam-sus-esyalari" && "El işçiliği camın ışıkla buluştuğu an ortaya çıkan renk geçişleri ve pırıltı, evinize butik bir sanat galerisi havası katar."}
+                  {product.categorySlug === "anahtar-ve-priz-serileri" && "Temperli lüks cam dokusuyla duvarlarınızda ışığın kontrolünü estetik bir zarafet ve güven deneyimine dönüştürür."}
+                  {!["klasik", "modern", "aplikler", "ray-spot-ve-siva-ustu", "tekli-ve-uclu-sarkitlar", "dekoratif-aynalar", "duvar-ve-masa-saatleri", "dekoratif-koltuk-ve-berjerler", "dekoratif-sehpalar", "cam-sus-esyalari", "anahtar-ve-priz-serileri"].includes(product.categorySlug) && "Doğru ışık bir evin ruhudur. Bu özel model; mekanın enerjisini yükseltmek, mobilyalarınızın renklerini en doğal haliyle ortaya çıkarmak ve huzurlu bir yaşam alanı sunmak üzere tasarlanmıştır."}
+                </p>
               </div>
             </div>
 
