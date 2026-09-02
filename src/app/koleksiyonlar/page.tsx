@@ -126,7 +126,6 @@ export default function CollectionsPage() {
               <ProductCard
                 key={product.id}
                 product={product}
-                onOpenModal={(p) => setActiveModalProduct(p)}
               />
             ))}
           </div>

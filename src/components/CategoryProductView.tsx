@@ -177,7 +177,6 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
               <ProductCard
                 key={prod.id}
                 product={prod}
-                onOpenModal={(p) => setSelectedProduct(p)}
               />
             ))}
           </div>
