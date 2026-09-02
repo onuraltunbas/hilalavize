@@ -151,8 +151,15 @@ export function Footer() {
               </Link>
             ))}
             <Link
+              href="/aydinlatma-nedir"
+              className="text-foreground hover:text-bronze font-semibold flex items-center gap-1 transition-colors pt-1"
+            >
+              <ChevronRight className="w-3 h-3 text-bronze" />
+              Aydınlatma Nedir? (Rehber)
+            </Link>
+            <Link
               href="/koleksiyonlar"
-              className="text-bronze hover:underline font-medium pt-1 block text-xs"
+              className="text-bronze hover:underline font-medium pt-0.5 block text-xs"
             >
               Tüm Ürünleri Gör ({CATEGORIES.length} Kategori) →
             </Link>

@@ -149,6 +149,15 @@ export function Navbar() {
             </div>
 
             <Link
+              href="/aydinlatma-nedir"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/aydinlatma-nedir" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Aydınlatma Nedir
+            </Link>
+
+            <Link
               href="/hizmetler"
               className={`transition-colors hover:text-bronze ${
                 pathname.startsWith("/hizmetler") ? "text-bronze font-semibold" : "text-foreground/80"
@@ -291,6 +300,13 @@ export function Navbar() {
                   </Link>
                 ))}
               </div>
+              <Link
+                href="/aydinlatma-nedir"
+                onClick={handleLinkClick}
+                className="px-3 py-2 rounded-lg hover:bg-surface-subtle text-foreground/80 hover:text-foreground font-semibold text-bronze"
+              >
+                💡 Aydınlatma Nedir? (Işık Rehberi)
+              </Link>
               <Link
                 href="/hizmetler"
                 onClick={handleLinkClick}
