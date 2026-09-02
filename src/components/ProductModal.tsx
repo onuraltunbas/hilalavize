@@ -52,10 +52,6 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               </h3>
             </div>
 
-            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              {product.description}
-            </p>
-
             {/* Specifications */}
             <div className="bg-surface-subtle p-3.5 rounded-xl border border-border space-y-2 text-xs">
               {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (

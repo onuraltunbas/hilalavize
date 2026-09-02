@@ -141,11 +141,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </h1>
               </div>
 
-              {/* Description */}
-              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                {product.description}
-              </p>
-
               {/* Technical Specifications */}
               <div className="dgaraj-card p-4 sm:p-5 space-y-2.5 text-xs sm:text-sm">
                 {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
