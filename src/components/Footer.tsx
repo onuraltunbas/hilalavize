@@ -186,10 +186,6 @@ export function Footer() {
           <Link href="/cerez-politikasi" className="hover:text-foreground transition-colors">
             Çerez Politikası
           </Link>
-          <span>•</span>
-          <Link href="/sitemap.xml" className="hover:text-foreground transition-colors">
-            XML Sitemap
-          </Link>
         </div>
       </div>
     </footer>
