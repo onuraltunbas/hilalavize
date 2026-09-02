@@ -16,13 +16,13 @@ export function HeroSection() {
       {/* Background Image with Adaptive Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/1920x1080_hero_showroom.jpg"
+          src="/images/1920x1080_hero_showroom.jpeg"
           alt="Hilal Avize Lüks Showroom Kahramanmaraş"
           fill
           priority
-          className="object-cover object-center scale-105 transition-transform duration-1000 opacity-20 dark:opacity-30"
+          className="object-cover object-center scale-100 transition-transform duration-1000 opacity-30 dark:opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/50" />
       </div>
 
       {/* Content Container */}
