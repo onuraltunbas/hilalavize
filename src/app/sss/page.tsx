@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function SssPage() {
   return (
-    <div className="py-12 bg-[#080D1A] min-h-screen">
+    <div className="py-12 bg-background min-h-screen">
       <FaqSection />
     </div>
   );

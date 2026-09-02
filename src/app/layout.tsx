@@ -6,7 +6,7 @@ import { FloatingContact } from "@/components/FloatingContact";
 import { JsonLd } from "@/components/JsonLd";
 
 export const viewport: Viewport = {
-  themeColor: "#0B132B",
+  themeColor: "#FAF9F6",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -91,11 +91,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="dark">
+    <html lang="tr" suppressHydrationWarning>
       <head>
         <JsonLd />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else if (savedTheme === 'light') {
+                  document.documentElement.classList.remove('dark');
+                } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  document.documentElement.classList.add('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
       </head>
-      <body className="min-h-screen bg-[#080D1A] text-slate-100 antialiased selection:bg-[#F59E0B] selection:text-slate-950">
+      <body className="min-h-screen bg-background text-foreground antialiased selection:bg-[#93826E] selection:text-white">
         <Navbar />
         <main>{children}</main>
         <Footer />

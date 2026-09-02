@@ -7,19 +7,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans, "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  --font-sans: var(--font-sans, "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
   --font-heading: var(--font-heading, "Playfair Display", "Geist", serif);
   
-  --color-noctis: #0B132B;
-  --color-noctis-surface: #111D38;
-  --color-noctis-border: #1C2D4A;
+  --color-bronze: var(--bronze);
+  --color-bronze-dark: var(--bronze-dark);
+  --color-bronze-light: var(--bronze-light);
   
-  --color-marigold: #F59E0B;
-  --color-marigold-light: #FBBF24;
-  --color-marigold-dark: #D97706;
-  
-  --color-cream: #FAF7F2;
-  --color-cream-muted: #EADFCB;
+  --color-surface: var(--surface);
+  --color-surface-subtle: var(--surface-subtle);
   
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
@@ -37,30 +33,72 @@
 }
 
 :root {
-  /* Default Luxury Noctis Dark Theme with Marigold & Cream Accents */
-  --background: #080D1A;
-  --foreground: #F8FAFC;
-  --card: #0F172A;
-  --card-foreground: #F8FAFC;
-  --popover: #0F172A;
-  --popover-foreground: #F8FAFC;
+  /* D'GARAJ Light Theme - Signature Clean Gallery Aesthetic */
+  --background: #FAF9F6;
+  --foreground: #141414;
+  --surface: #FFFFFF;
+  --surface-subtle: #F4F4F1;
   
-  --primary: #F59E0B;
-  --primary-foreground: #080D1A;
+  --card: #FFFFFF;
+  --card-foreground: #141414;
+  --popover: #FFFFFF;
+  --popover-foreground: #141414;
   
-  --secondary: #1E293B;
-  --secondary-foreground: #F8FAFC;
+  --primary: #141414;
+  --primary-foreground: #FFFFFF;
   
-  --muted: #131F37;
-  --muted-foreground: #94A3B8;
+  --secondary: #F3F2EE;
+  --secondary-foreground: #141414;
   
-  --accent: #F59E0B;
-  --accent-foreground: #080D1A;
+  --muted: #F0EFEB;
+  --muted-foreground: #6B6A66;
+  
+  --bronze: #93826E;
+  --bronze-dark: #7A6956;
+  --bronze-light: #C5A880;
+  
+  --accent: #93826E;
+  --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
-  --border: rgba(245, 158, 11, 0.15);
-  --input: rgba(255, 255, 255, 0.1);
-  --ring: #F59E0B;
+  --border: #E6E5E0;
+  --input: #E6E5E0;
+  --ring: #93826E;
+  --radius: 0.75rem;
+}
+
+.dark {
+  /* D'GARAJ Dark Theme - Refined Architectural Luxury */
+  --background: #0E1013;
+  --foreground: #F4F4F5;
+  --surface: #16181D;
+  --surface-subtle: #1E2127;
+  
+  --card: #16181D;
+  --card-foreground: #F4F4F5;
+  --popover: #16181D;
+  --popover-foreground: #F4F4F5;
+  
+  --primary: #F4F4F5;
+  --primary-foreground: #0E1013;
+  
+  --secondary: #1F2228;
+  --secondary-foreground: #F4F4F5;
+  
+  --muted: #1B1E24;
+  --muted-foreground: #94A3B8;
+  
+  --bronze: #C5A880;
+  --bronze-dark: #A3835B;
+  --bronze-light: #DFCCA9;
+  
+  --accent: #C5A880;
+  --accent-foreground: #0E1013;
+  
+  --destructive: #EF4444;
+  --border: #262930;
+  --input: #2B2E36;
+  --ring: #C5A880;
   --radius: 0.75rem;
 }
 
@@ -73,50 +111,47 @@
     color: var(--foreground);
     font-feature-settings: "rlig" 1, "calt" 1;
     overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
   html {
     scroll-behavior: smooth;
   }
 }
 
-/* Custom Luxury Gradients & Shimmers */
+/* D'GARAJ Bronze & Editorial Custom Classes */
 .gold-gradient-text {
-  background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D97706 100%);
+  background: linear-gradient(135deg, #DFCCA9 0%, #C5A880 50%, #93826E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.gold-border-glow {
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  box-shadow: 0 0 25px rgba(245, 158, 11, 0.08);
-}
-
-.gold-border-glow:hover {
-  border-color: rgba(245, 158, 11, 0.6);
-  box-shadow: 0 0 35px rgba(245, 158, 11, 0.18);
-}
-
-.noctis-card {
-  background: linear-gradient(180deg, rgba(17, 29, 56, 0.85) 0%, rgba(11, 19, 43, 0.95) 100%);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(245, 158, 11, 0.15);
-}
-
-.noctis-card-hover {
+.dgaraj-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.noctis-card-hover:hover {
-  transform: translateY(-4px);
-  border-color: rgba(245, 158, 11, 0.45);
-  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(245, 158, 11, 0.15);
+.dgaraj-card:hover {
+  border-color: var(--bronze);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
 }
 
-.ambient-light-glow {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0) 70%);
-  pointer-events: none;
-  filter: blur(40px);
+.dark .dgaraj-card:hover {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4), 0 0 15px rgba(197, 168, 128, 0.1);
+}
+
+.editorial-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: color-mix(in srgb, var(--bronze) 12%, transparent);
+  color: var(--bronze);
+  border: 1px solid color-mix(in srgb, var(--bronze) 35%, transparent);
 }

@@ -7,20 +7,19 @@ export function HomeCtaBanner() {
   const showroom = COMPANY_DATA.branches[0];
 
   return (
-    <section className="bg-[#050811] py-12">
+    <section className="bg-surface-subtle py-14 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#0B132B] via-[#111D38] to-[#0B132B] border border-[#F59E0B]/30 p-8 sm:p-12 shadow-2xl">
-          <div className="absolute -right-16 -bottom-16 w-64 h-64 bg-[#F59E0B]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="dgaraj-card p-6 sm:p-10 relative overflow-hidden bg-surface">
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
-            <div className="space-y-3 max-w-2xl">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#F59E0B]/15 text-amber-400 border border-[#F59E0B]/30">
-                <Sparkles className="w-3.5 h-3.5" />
+            <div className="space-y-2.5 max-w-2xl">
+              <span className="editorial-tag">
+                <Sparkles className="w-3.5 h-3.5 text-bronze" />
                 Kahramanmaraş&apos;ın En Kapsamlı Aydınlatma Vitrini
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
+              <h2 className="text-xl sm:text-3xl font-extrabold text-foreground tracking-tight">
                 Evinize En Uygun Avizeyi Beraber Seçelim!
               </h2>
-              <p className="text-sm text-slate-300">
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 Odanızın fotoğrafını WhatsApp&apos;tan bize iletin veya Onikişubat&apos;taki showroomumuza gelin; ücretsiz aydınlatma danışmanlığı ile doğru ebat, doğru ışık gücü ve tarzı belirleyelim.
               </p>
             </div>
@@ -31,16 +30,16 @@ export function HomeCtaBanner() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5"
+                className="bg-[#059669] hover:bg-[#047857] text-white font-bold px-6 py-3 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp&apos;tan Fotoğraf Gönder
               </a>
               <Link
                 href="/subelerimiz"
-                className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5"
+                className="bg-primary text-primary-foreground hover:opacity-90 font-bold px-6 py-3 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 border border-border shadow-sm transition-transform hover:-translate-y-0.5"
               >
-                <Store className="w-4 h-4" />
+                <Store className="w-4 h-4 text-bronze" />
                 Showroom Yol Tarifi Al
               </Link>
             </div>

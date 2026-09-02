@@ -20,14 +20,14 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   if (!product) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#0B132B] border border-amber-500/40 rounded-3xl shadow-2xl p-6 sm:p-8 text-white animate-in zoom-in-95 duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
+      <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-surface border border-border rounded-2xl shadow-2xl p-6 sm:p-8 text-foreground animate-in zoom-in-95 duration-200">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 rounded-full bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-colors z-10"
+          className="absolute top-4 right-4 p-2 rounded-lg bg-surface-subtle text-muted-foreground hover:text-foreground hover:bg-border transition-colors z-10"
         >
-          <X className="w-5 h-5" />
+          <X className="w-4 h-4" />
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
@@ -43,68 +43,68 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           {/* Details */}
           <div className="space-y-4">
             <div>
-              <span className="text-xs text-amber-400 font-semibold uppercase tracking-wider">
+              <span className="text-xs text-bronze font-semibold uppercase tracking-wider">
                 {product.categoryName}
               </span>
-              <h3 className="text-xl sm:text-2xl font-extrabold text-white mt-1">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-foreground mt-1">
                 {product.name}
               </h3>
             </div>
 
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
               {product.description}
             </p>
 
             {/* Specifications */}
-            <div className="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 space-y-2 text-xs">
+            <div className="bg-surface-subtle p-3.5 rounded-xl border border-border space-y-2 text-xs">
               {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
-                <div className="flex justify-between py-1 border-b border-slate-800">
-                  <span className="text-slate-400 flex items-center gap-1.5">
-                    <Ruler className="w-3.5 h-3.5 text-amber-400" /> Boyutlar / Ölçüler
+                <div className="flex justify-between py-1 border-b border-border">
+                  <span className="text-muted-foreground flex items-center gap-1.5">
+                    <Ruler className="w-3.5 h-3.5 text-bronze" /> Boyutlar / Ölçüler
                   </span>
-                  <span className="font-semibold text-slate-200">{product.dimensions}</span>
+                  <span className="font-semibold text-foreground">{product.dimensions}</span>
                 </div>
               )}
               {product.lightingType && product.lightingType.toLowerCase() !== "nope" && (
-                <div className="flex justify-between py-1 border-b border-slate-800">
-                  <span className="text-slate-400 flex items-center gap-1.5">
-                    <Lightbulb className="w-3.5 h-3.5 text-amber-400" /> Işık / Duy
+                <div className="flex justify-between py-1 border-b border-border">
+                  <span className="text-muted-foreground flex items-center gap-1.5">
+                    <Lightbulb className="w-3.5 h-3.5 text-bronze" /> Işık / Duy
                   </span>
-                  <span className="font-semibold text-slate-200">{product.lightingType}</span>
+                  <span className="font-semibold text-foreground">{product.lightingType}</span>
                 </div>
               )}
               <div className="flex justify-between py-1 text-xs">
-                <span className="text-slate-500 flex items-center gap-1.5">
+                <span className="text-muted-foreground flex items-center gap-1.5">
                   🏷️ Ürün Kodu
                 </span>
-                <span className="font-mono text-slate-400">{product.code || product.id}</span>
+                <span className="font-mono text-muted-foreground">{product.code || product.id}</span>
               </div>
             </div>
 
             {/* Features */}
             <div className="space-y-1.5">
-              <div className="text-xs font-bold text-amber-400 uppercase tracking-wider">
+              <div className="text-xs font-bold text-bronze uppercase tracking-wider">
                 Öne Çıkan Ayrıcalıklar:
               </div>
-              <ul className="space-y-1 text-xs text-slate-300">
+              <ul className="space-y-1 text-xs text-muted-foreground">
                 {product.features.map((feat, i) => (
                   <li key={i} className="flex items-start gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span>{feat}</span>
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+                    <span className="text-foreground/90">{feat}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Action Buttons */}
-            <div className="pt-3 space-y-2">
+            <div className="pt-2 space-y-2">
               <a
                 href={`https://wa.me/905053801350?text=${encodeURIComponent(
                   `Merhaba, Hilal Avize'den "${product.name}" hakkında detaylı bilgi ve fiyat almak istiyorum.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg transition-colors"
+                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp ile Fiyat & Bilgi Al
@@ -112,9 +112,9 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
               <a
                 href="tel:+905053801350"
-                className="w-full bg-slate-800 hover:bg-slate-700 text-amber-400 font-semibold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-colors border border-amber-500/20"
+                className="w-full bg-surface-subtle hover:bg-border text-foreground font-semibold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-colors border border-border"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-3.5 h-3.5 text-bronze" />
                 Showroomu Telefonla Ara (0505 380 13 50)
               </a>
             </div>

@@ -62,15 +62,15 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
   const categoryProducts = allProducts.filter((p) => p.categorySlug === category.slug);
 
   return (
-    <div className="py-12 sm:py-16 bg-[#080D1A] min-h-screen">
+    <div className="py-12 sm:py-16 bg-background min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-xs text-slate-400 mb-8" aria-label="Breadcrumb">
-          <Link href="/" className="hover:text-amber-400">Anasayfa</Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-          <Link href="/koleksiyonlar" className="hover:text-amber-400">Koleksiyonlar</Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-          <span className="text-amber-400 font-semibold">{category.name}</span>
+        <nav className="flex items-center gap-2 text-xs text-muted-foreground mb-8" aria-label="Breadcrumb">
+          <Link href="/" className="hover:text-foreground">Anasayfa</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
+          <Link href="/koleksiyonlar" className="hover:text-foreground">Koleksiyonlar</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
+          <span className="text-bronze font-semibold">{category.name}</span>
         </nav>
 
         {/* Category Product View with Subcategories Filter and Dynamic Banners */}

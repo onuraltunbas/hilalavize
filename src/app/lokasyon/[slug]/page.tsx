@@ -52,57 +52,57 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
   const showroom = COMPANY_DATA.branches[0];
 
   return (
-    <div className="py-12 sm:py-16 bg-[#080D1A] min-h-screen">
+    <div className="py-12 sm:py-16 bg-background min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-xs text-slate-400 mb-8">
-          <Link href="/" className="hover:text-amber-400">Anasayfa</Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+        <nav className="flex items-center gap-2 text-xs text-muted-foreground mb-8">
+          <Link href="/" className="hover:text-foreground">Anasayfa</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
           <span>Lokasyonlar</span>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-          <span className="text-amber-400 font-semibold">{location.name}</span>
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
+          <span className="text-bronze font-semibold">{location.name}</span>
         </nav>
 
         {/* Hero Banner */}
-        <div className="relative rounded-3xl bg-[#0F172A] border border-amber-500/30 p-8 sm:p-12 mb-12 shadow-2xl space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/30">
-            <MapPin className="w-3.5 h-3.5" />
+        <div className="relative rounded-2xl dgaraj-card p-6 sm:p-10 mb-10 space-y-3">
+          <span className="editorial-tag">
+            <MapPin className="w-3.5 h-3.5 text-bronze" />
             {location.district}, {location.city}
           </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
+          <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
             {location.title}
           </h1>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+          <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-3xl">
             {location.description}
           </p>
         </div>
 
         {/* Details Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <div className="bg-[#0F172A] p-8 rounded-3xl border border-amber-500/20 space-y-6">
-            <h2 className="text-xl font-bold text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-16">
+          <div className="dgaraj-card p-6 sm:p-8 space-y-5">
+            <h2 className="text-lg sm:text-xl font-bold text-foreground">
               {location.name} Bölgesi Hizmetlerimiz
             </h2>
-            <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
+            <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
               {location.highlights.map((h, i) => (
-                <li key={i} className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>{h}</span>
+                <li key={i} className="flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+                  <span className="text-foreground/90">{h}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="bg-[#0F172A] p-8 rounded-3xl border border-amber-500/20 space-y-6 flex flex-col justify-between">
+          <div className="dgaraj-card p-6 sm:p-8 space-y-5 flex flex-col justify-between">
             <div className="space-y-4">
-              <h2 className="text-xl font-bold text-white">
+              <h2 className="text-lg sm:text-xl font-bold text-foreground">
                 Hizmet Verilen Yakın Bölgeler
               </h2>
               <div className="flex flex-wrap gap-2">
                 {location.nearbyDistricts.map((d, i) => (
                   <span
                     key={i}
-                    className="text-xs bg-[#132238] text-amber-300 border border-amber-500/20 px-3 py-1.5 rounded-xl"
+                    className="text-xs bg-surface-subtle text-foreground/90 border border-border px-3 py-1 rounded-lg"
                   >
                     {d}
                   </span>
@@ -110,14 +110,14 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               </div>
             </div>
 
-            <div className="pt-6 border-t border-slate-800 space-y-3">
+            <div className="pt-4 border-t border-border space-y-3">
               <a
                 href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
                   `Merhaba, ${location.name} bölgesinden yazıyorum. Avize ve aydınlatma modelleriniz hakkında bilgi almak istiyorum.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5"
+                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 {location.name} İçin WhatsApp Danışma

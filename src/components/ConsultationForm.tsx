@@ -124,47 +124,45 @@ export function ConsultationForm() {
   };
 
   return (
-    <section className="py-20 bg-[#080D1A] relative" id="randevu">
+    <section className="py-20 bg-background relative border-b border-border" id="randevu">
       <div className="max-w-4xl mx-auto px-4 sm:px-8">
-        <div className="relative rounded-3xl bg-[#0F172A] border border-amber-500/30 p-8 sm:p-12 shadow-2xl overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
-
+        <div className="dgaraj-card p-6 sm:p-12 relative overflow-hidden">
           {/* Başlık */}
-          <div className="relative z-10 text-center max-w-2xl mx-auto mb-10 space-y-3">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/15 text-amber-400 border border-amber-500/30">
-              <Sparkles className="w-3.5 h-3.5" />
+          <div className="text-center max-w-2xl mx-auto mb-10 space-y-3">
+            <span className="editorial-tag">
+              <Sparkles className="w-3.5 h-3.5 text-bronze" />
               Ücretsiz Mimari & Aydınlatma Desteği
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-white">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
               Evinize En Uygun Modeli Birlikte Bulalım
             </h2>
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
               Formu doldurun; mekanınıza en uygun ölçü, ışık gücü ve avize modelini uzman danışmanlarımızla birlikte belirleyelim.
             </p>
           </div>
 
           {submitted ? (
             <div className="text-center py-10 space-y-4 animate-in fade-in duration-300">
-              <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto border border-emerald-500/40">
-                <CheckCircle2 className="w-8 h-8" />
+              <div className="w-14 h-14 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto border border-emerald-500/30">
+                <CheckCircle2 className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white">Talebiniz WhatsApp&apos;a Aktarıldı!</h3>
-              <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground">Talebiniz WhatsApp&apos;a Aktarıldı!</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground max-w-md mx-auto">
                 Mesajınız oluşturularak WhatsApp danışmanımıza iletildi. En kısa sürede odanızın ölçülerine uygun avize ve aydınlatma önerilerimizi paylaşacağız.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
-                className="text-xs text-amber-400 underline font-semibold mt-4"
+                className="text-xs text-bronze underline font-semibold mt-4"
               >
                 Yeni Bir Talep Oluştur
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+            <form onSubmit={handleSubmit} className="space-y-5">
               {/* İsim ve Telefon */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label className="block text-xs font-semibold text-foreground/80 mb-1.5">
                     Adınız Soyadınız *
                   </label>
                   <input
@@ -173,12 +171,12 @@ export function ConsultationForm() {
                     value={formData.name}
                     onChange={handleNameChange}
                     placeholder="Örn: Onur Altunbaş"
-                    className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label className="block text-xs font-semibold text-foreground/80 mb-1.5">
                     Telefon Numaranız *
                   </label>
                   <input
@@ -187,7 +185,7 @@ export function ConsultationForm() {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="05XX XXX XX XX"
-                    className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -195,13 +193,13 @@ export function ConsultationForm() {
               {/* Seçimler */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label className="block text-xs font-semibold text-foreground/80 mb-1.5">
                     Bulunduğunuz İlçe
                   </label>
                   <select
                     value={formData.district}
                     onChange={(e) => setFormData({ ...formData, district: e.target.value })}
-                    className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
                   >
                     <option value="Onikişubat">Onikişubat / K.Maraş</option>
                     <option value="Dulkadiroğlu">Dulkadiroğlu / K.Maraş</option>
@@ -215,13 +213,13 @@ export function ConsultationForm() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label className="block text-xs font-semibold text-foreground/80 mb-1.5">
                     Aydınlatılacak Mekan
                   </label>
                   <select
                     value={formData.roomType}
                     onChange={(e) => setFormData({ ...formData, roomType: e.target.value })}
-                    className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
                   >
                     <option value="Salon / Yemek Odası">Salon / Yemek Odası</option>
                     <option value="Oturma Odası / TV Odası">Oturma Odası / TV Odası</option>
@@ -234,7 +232,7 @@ export function ConsultationForm() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label className="block text-xs font-semibold text-foreground/80 mb-1.5">
                     Beğendiğiniz Tarz
                   </label>
                   <select
@@ -242,7 +240,7 @@ export function ConsultationForm() {
                     onChange={(e) =>
                       setFormData({ ...formData, stylePreference: e.target.value })
                     }
-                    className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
                   >
                     <option value="İhtişamlı & Klasik Kristal">👑 İhtişamlı & Klasik Kristal</option>
                     <option value="Modern & Spor LED">⚡ Modern & Spor LED</option>
@@ -254,7 +252,7 @@ export function ConsultationForm() {
 
               {/* Ek Notlar */}
               <div>
-                <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                <label className="block text-xs font-semibold text-foreground/80 mb-1.5">
                   Ek Notlar / Tavan Yüksekliği / Oda Ölçüleri (Opsiyonel)
                 </label>
                 <textarea
@@ -262,7 +260,7 @@ export function ConsultationForm() {
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   placeholder="Örn: 10 m2 alanımız var, yeterli ışık sağlayan ledli model arıyoruz..."
-                  className="w-full bg-[#132238] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none"
+                  className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
                 />
               </div>
 
@@ -270,9 +268,9 @@ export function ConsultationForm() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-amber-500 via-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold py-4 px-6 rounded-2xl text-sm shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5"
+                  className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-6 rounded-xl text-sm shadow-md flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5"
                 >
-                  <MessageCircle className="w-5 h-5 text-slate-950" />
+                  <MessageCircle className="w-4 h-4" />
                   Danışmanlık Talebini Gönder (WhatsApp)
                 </button>
               </div>

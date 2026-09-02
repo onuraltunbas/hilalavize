@@ -13,21 +13,21 @@ interface ProductCardProps {
 
 export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   return (
-    <div className="bg-[#0F172A] rounded-3xl overflow-hidden border border-amber-500/20 hover:border-amber-500/60 transition-all duration-300 group flex flex-col justify-between shadow-xl">
+    <div className="dgaraj-card overflow-hidden group flex flex-col justify-between">
       {/* Image Area */}
-      <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
+      <div className="relative aspect-4/3 w-full overflow-hidden bg-surface-subtle">
         <Image
           src={product.image}
           alt={`${product.name} - Kahramanmaraş Hilal Avize`}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-40" />
 
         {/* Custom badge */}
         {product.badge && (
           <div className="absolute top-3 right-3">
-            <span className="px-2.5 py-1 rounded-xl text-[10px] font-bold bg-amber-500 text-slate-950 shadow-md">
+            <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-primary text-primary-foreground border border-border shadow-sm">
               {product.badge}
             </span>
           </div>
@@ -35,32 +35,32 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-8 flex-1 flex flex-col justify-between space-y-6">
+      <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
         <div>
-          <div className="flex items-center justify-between text-[11px] text-amber-400 font-medium mb-2">
+          <div className="flex items-center justify-between text-[11px] text-bronze font-semibold mb-1.5 uppercase tracking-wider">
             <span>{product.categoryName}</span>
-            <span className="text-slate-400">
-              {product.branch === "showroom" ? "Showroom" : "Elektrik Şube"}
+            <span className="text-muted-foreground font-normal lowercase">
+              {product.branch === "showroom" ? "showroom" : "elektrik"}
             </span>
           </div>
 
-          <h3 className="text-xl font-bold text-white group-hover:text-amber-400 transition-colors leading-snug">
+          <h3 className="text-base sm:text-lg font-bold text-foreground group-hover:text-bronze transition-colors leading-snug">
             {product.name}
           </h3>
 
-          <p className="text-sm text-slate-300 mt-3 line-clamp-2 leading-relaxed">
+          <p className="text-xs text-muted-foreground mt-2 line-clamp-2 leading-relaxed">
             {product.shortDescription}
           </p>
         </div>
 
         {/* Specs snippet */}
-        <div className="space-y-2 pt-4 border-t border-slate-800 text-sm text-slate-400">
+        <div className="space-y-1.5 pt-3 border-t border-border text-xs text-muted-foreground">
           {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
             <div className="flex items-center justify-between">
-              <span className="flex items-center gap-1.5">
-                <Ruler className="w-4 h-4 text-amber-500/70" /> Ölçü:
+              <span className="flex items-center gap-1">
+                <Ruler className="w-3.5 h-3.5 text-bronze" /> Ölçü:
               </span>
-              <span className="text-slate-200 font-medium truncate max-w-[170px]" title={product.dimensions}>
+              <span className="text-foreground font-medium truncate max-w-[170px]" title={product.dimensions}>
                 {product.dimensions}
               </span>
             </div>
@@ -68,39 +68,39 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
 
           {product.lightingType && product.lightingType.toLowerCase() !== "nope" && (
             <div className="flex items-center justify-between">
-              <span className="flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-amber-500/70" /> Işık / Duy:
+              <span className="flex items-center gap-1">
+                <Sparkles className="w-3.5 h-3.5 text-bronze" /> Işık / Duy:
               </span>
-              <span className="text-slate-200 font-medium truncate max-w-[170px]" title={product.lightingType}>
+              <span className="text-foreground font-medium truncate max-w-[170px]" title={product.lightingType}>
                 {product.lightingType}
               </span>
             </div>
           )}
 
-          <div className="flex items-center justify-between pt-1.5 border-t border-slate-800/60 text-xs">
-            <span className="text-slate-500">Ürün Kodu:</span>
-            <span className="font-mono text-slate-400 tracking-wider">
+          <div className="flex items-center justify-between pt-1 border-t border-border/60 text-[11px]">
+            <span>Kod:</span>
+            <span className="font-mono text-muted-foreground">
               {product.code || product.id}
             </span>
           </div>
         </div>
 
         {/* Action Buttons */}
-        <div className="pt-4 grid grid-cols-2 gap-3">
+        <div className="pt-2 grid grid-cols-2 gap-2">
           {onOpenModal ? (
             <button
               onClick={() => onOpenModal(product)}
-              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors border border-slate-700"
+              className="bg-surface-subtle hover:bg-border text-foreground font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors border border-border"
             >
-              <Eye className="w-4 h-4 text-amber-400" />
+              <Eye className="w-3.5 h-3.5 text-bronze" />
               Detay Gör
             </button>
           ) : (
             <Link
               href={`/urun/${product.slug}`}
-              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors border border-slate-700"
+              className="bg-surface-subtle hover:bg-border text-foreground font-semibold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors border border-border"
             >
-              <Eye className="w-4 h-4 text-amber-400" />
+              <Eye className="w-3.5 h-3.5 text-bronze" />
               Detay Gör
             </Link>
           )}
@@ -111,9 +111,9 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors shadow-md"
+            className="bg-[#059669] hover:bg-[#047857] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors shadow-sm"
           >
-            <MessageCircle className="w-4 h-4" />
+            <MessageCircle className="w-3.5 h-3.5" />
             Fiyat Sor
           </a>
         </div>

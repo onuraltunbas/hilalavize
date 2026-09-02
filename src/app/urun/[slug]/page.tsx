@@ -95,7 +95,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   };
 
   return (
-    <div className="py-12 sm:py-16 bg-[#080D1A] min-h-screen">
+    <div className="py-12 sm:py-16 bg-background min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
@@ -103,22 +103,22 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-xs text-slate-400 mb-8" aria-label="Breadcrumb">
-          <Link href="/" className="hover:text-amber-400">Anasayfa</Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-          <Link href="/koleksiyonlar" className="hover:text-amber-400">Koleksiyonlar</Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-          <Link href={`/kategori/${product.categorySlug}`} className="hover:text-amber-400">
+        <nav className="flex items-center gap-2 text-xs text-muted-foreground mb-8" aria-label="Breadcrumb">
+          <Link href="/" className="hover:text-foreground">Anasayfa</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
+          <Link href="/koleksiyonlar" className="hover:text-foreground">Koleksiyonlar</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
+          <Link href={`/kategori/${product.categorySlug}`} className="hover:text-foreground">
             {product.categoryName}
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-          <span className="text-amber-400 font-semibold truncate max-w-[200px]">
+          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/60" />
+          <span className="text-bronze font-semibold truncate max-w-[200px]">
             {product.name}
           </span>
         </nav>
 
         {/* Product Details Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-16">
           {/* Product Image Gallery */}
           <div>
             <ProductGallery
@@ -132,66 +132,66 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="space-y-6 flex flex-col justify-between">
             <div className="space-y-4">
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-amber-400">
+                <span className="text-xs font-bold uppercase tracking-wider text-bronze">
                   {product.categoryName}
                 </span>
-                <h1 className="text-2xl sm:text-4xl font-extrabold text-white mt-1 leading-tight">
+                <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground mt-1 leading-tight tracking-tight">
                   {product.name}
                 </h1>
               </div>
 
               {/* Technical Specifications */}
-              <div className="bg-[#0F172A] p-5 rounded-2xl border border-amber-500/20 space-y-3 text-xs sm:text-sm">
+              <div className="dgaraj-card p-4 sm:p-5 space-y-2.5 text-xs sm:text-sm">
                 {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
-                  <div className="flex justify-between py-1.5 border-b border-slate-800">
-                    <span className="text-slate-400 flex items-center gap-2">
-                      <Ruler className="w-4 h-4 text-amber-400" /> Boyutlar / Ölçüler:
+                  <div className="flex justify-between py-1 border-b border-border">
+                    <span className="text-muted-foreground flex items-center gap-2">
+                      <Ruler className="w-3.5 h-3.5 text-bronze" /> Boyutlar / Ölçüler:
                     </span>
-                    <span className="font-semibold text-white">{product.dimensions}</span>
+                    <span className="font-semibold text-foreground">{product.dimensions}</span>
                   </div>
                 )}
                 {product.lightingType && product.lightingType.toLowerCase() !== "nope" && (
-                  <div className="flex justify-between py-1.5 border-b border-slate-800">
-                    <span className="text-slate-400 flex items-center gap-2">
-                      <Lightbulb className="w-4 h-4 text-amber-400" /> Aydınlatma / Duy Tipi:
+                  <div className="flex justify-between py-1 border-b border-border">
+                    <span className="text-muted-foreground flex items-center gap-2">
+                      <Lightbulb className="w-3.5 h-3.5 text-bronze" /> Aydınlatma / Duy Tipi:
                     </span>
-                    <span className="font-semibold text-white">{product.lightingType}</span>
+                    <span className="font-semibold text-foreground">{product.lightingType}</span>
                   </div>
                 )}
-                <div className="flex justify-between py-1.5 text-xs">
-                  <span className="text-slate-500 flex items-center gap-2">
+                <div className="flex justify-between py-1 text-xs">
+                  <span className="text-muted-foreground flex items-center gap-2">
                     🏷️ Ürün Kodu:
                   </span>
-                  <span className="font-mono text-slate-400 tracking-wider">{product.code || product.id}</span>
+                  <span className="font-mono text-muted-foreground tracking-wider">{product.code || product.id}</span>
                 </div>
               </div>
             </div>
 
             {/* Inquiries & CTAs */}
-            <div className="p-5 rounded-2xl bg-[#0F172A] border border-amber-500/30 space-y-3">
-              <div className="text-xs text-slate-300 flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-amber-400" />
+            <div className="p-5 rounded-xl dgaraj-card space-y-3">
+              <div className="text-xs text-muted-foreground flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-bronze" />
                 <span>Kırılmaya karşı garantili ambalaj & Uzman montaj desteği</span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 <a
                   href={`https://wa.me/${activeBranch.contacts[0].whatsapp}?text=${encodeURIComponent(
                     `Merhaba, Hilal Avize web sitenizden "${product.name}" modelini inceledim. Fiyat ve stok bilgisi rica ediyorum.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xl transition-transform hover:-translate-y-0.5"
+                  className="bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  <MessageCircle className="w-4 h-4" />
                   WhatsApp ile Fiyat & Bilgi Al
                 </a>
 
                 <a
                   href={`tel:${activeBranch.contacts[0].phone}`}
-                  className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xl transition-transform hover:-translate-y-0.5"
+                  className="bg-primary text-primary-foreground hover:opacity-90 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 border border-border shadow-sm transition-transform hover:-translate-y-0.5"
                 >
-                  <Phone className="w-5 h-5" />
+                  <Phone className="w-4 h-4 text-bronze" />
                   Hemen Ara ({activeBranch.contacts[0].phoneFormatted})
                 </a>
               </div>

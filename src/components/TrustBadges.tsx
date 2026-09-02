@@ -11,24 +11,24 @@ export function TrustBadges() {
   };
 
   return (
-    <section className="py-14 bg-[#0B132B] border-y border-[#F59E0B]/20">
+    <section className="py-14 bg-surface-subtle border-y border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {COMPANY_DATA.trustBadges.map((badge, idx) => {
             const Icon = iconMap[badge.icon] || ShieldCheck;
             return (
               <div
                 key={idx}
-                className="bg-[#0F172A]/80 p-6 rounded-2xl border border-amber-500/20 hover:border-amber-500/40 transition-all flex items-start gap-4"
+                className="dgaraj-card p-5 flex items-start gap-4"
               >
-                <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
-                  <Icon className="w-6 h-6" />
+                <div className="w-11 h-11 rounded-lg bg-surface-subtle border border-border flex items-center justify-center text-bronze shrink-0 shadow-sm">
+                  <Icon className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-sm font-bold text-white leading-snug">
+                  <h3 className="text-sm font-bold text-foreground leading-snug">
                     {badge.title}
                   </h3>
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     {badge.description}
                   </p>
                 </div>

@@ -84,21 +84,19 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
   const showroom = COMPANY_DATA.branches[0];
 
   return (
-    <div className="pt-14 border-t border-slate-800 space-y-8">
+    <div className="pt-14 border-t border-border space-y-8">
       {/* AI Header Box */}
-      <div className="rounded-2xl bg-gradient-to-r from-[#0F172A] via-[#111D38] to-[#0F172A] border border-amber-500/30 p-6 sm:p-8 shadow-xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
-
+      <div className="rounded-xl bg-surface border border-border p-6 sm:p-8 shadow-sm relative overflow-hidden">
         <div className="space-y-2 max-w-3xl relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30">
-            <Bot className="w-4 h-4 text-amber-400 animate-pulse" />
+          <div className="editorial-tag">
+            <Bot className="w-3.5 h-3.5 text-bronze animate-pulse" />
             <span>Yapay Zeka Mekan & Stil Eşleştirme Motoru</span>
           </div>
-          <h2 className="text-xl sm:text-2xl font-extrabold text-white">
+          <h2 className="text-xl sm:text-2xl font-extrabold text-foreground tracking-tight">
             Bunu Alanlar Bu Tamamlayıcı Seçenekleri de İnceledi
           </h2>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Yapay zekamız; incelenen <span className="text-amber-400 font-semibold">{currentProduct.name}</span> modelinin renk tonları, kristal/metal dokusu ve tarzıyla mekanınızda en kusursuz uyumu sağlayacak tamamlayıcı modelleri belirledi. Aşağıdaki ürünlerle birlikte sorarak avantajlı paket fiyatı alabilirsiniz.
+          <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+            Yapay zekamız; incelenen <span className="text-foreground font-semibold">{currentProduct.name}</span> modelinin renk tonları, kristal/metal dokusu ve tarzıyla mekanınızda en kusursuz uyumu sağlayacak tamamlayıcı modelleri belirledi. Aşağıdaki ürünlerle birlikte sorarak avantajlı paket fiyatı alabilirsiniz.
           </p>
         </div>
       </div>
@@ -108,15 +106,15 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
         {recommendations.map(({ product, score, reason }) => (
           <div
             key={product.id}
-            className="relative flex flex-col bg-[#0F172A] p-3.5 rounded-3xl border border-amber-500/20 shadow-xl justify-between space-y-3"
+            className="relative flex flex-col dgaraj-card p-3.5 justify-between space-y-3"
           >
             {/* AI Compatibility Badge */}
-            <div className="flex items-center justify-between bg-[#132238] border border-amber-500/30 rounded-xl px-3 py-1.5 text-xs shadow-sm">
-              <span className="font-bold text-amber-400 flex items-center gap-1.5 text-[11px]">
-                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <div className="flex items-center justify-between bg-surface-subtle border border-border rounded-lg px-3 py-1.5 text-xs shadow-sm">
+              <span className="font-bold text-bronze flex items-center gap-1.5 text-[11px]">
+                <Sparkles className="w-3 h-3 text-bronze" />
                 {reason}
               </span>
-              <span className="text-[10px] font-extrabold text-emerald-400 bg-emerald-950/80 border border-emerald-500/30 px-2 py-0.5 rounded-full flex items-center gap-1">
+              <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3" /> %{score} Uyum
               </span>
             </div>
@@ -134,7 +132,7 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold py-3 px-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5"
+                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4 shrink-0" />
                 <span className="truncate">Bu 2 Ürünü Birlikte Sor (WhatsApp)</span>

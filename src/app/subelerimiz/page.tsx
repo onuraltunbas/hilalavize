@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function BranchesPage() {
   return (
-    <div className="bg-[#080D1A] min-h-screen">
+    <div className="bg-background min-h-screen">
       <BranchesSection />
     </div>
   );
