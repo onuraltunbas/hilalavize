@@ -54,9 +54,6 @@ export default function CollectionsPage() {
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight">
             Hilal Avize Tüm Koleksiyonlar
           </h1>
-          <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-            Kahramanmaraş Showroomumuzda sergilenen lüks saray tipi kristal avizeler, modern LED sarkıtlar, aynalar, saatler, cam sanat eserleri ve lüks anahtar-prizler.
-          </p>
         </div>
 
         {/* Search and Filters Bar */}
