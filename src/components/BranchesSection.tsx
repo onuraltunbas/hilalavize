@@ -7,7 +7,6 @@ import {
   Store,
   Zap,
   MapPin,
-  Phone,
   MessageCircle,
   Clock,
   CheckCircle2,
@@ -184,33 +183,24 @@ export function BranchesSection() {
 
                   {/* Contacts & CTAs */}
                   <div className="pt-3 border-t border-border space-y-3">
-                    <div className="flex items-center justify-between flex-wrap gap-2">
-                      <span className="text-xs font-semibold text-muted-foreground">Yetkililer:</span>
-                      <div className="flex items-center gap-1.5 flex-wrap">
-                        {branch.contacts.map((c, i) => (
-                          <a
-                            key={i}
-                            href={`tel:${c.phone}`}
-                            className="text-xs font-bold text-foreground hover:text-bronze bg-surface-subtle px-2.5 py-1 rounded-md border border-border flex items-center gap-1 transition-colors"
-                          >
-                            <Phone className="w-3 h-3 text-bronze" />
-                            {c.name}: {c.phoneFormatted}
-                          </a>
-                        ))}
-                      </div>
+                    <div className="flex items-center justify-between flex-wrap gap-2 text-xs">
+                      <span className="font-semibold text-muted-foreground">Şube İlgilileri:</span>
+                      <span className="font-bold text-foreground">
+                        {branch.contacts.map((c) => c.name).join(", ")}
+                      </span>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                       <a
                         href={`https://wa.me/${branch.contacts[0].whatsapp}?text=${encodeURIComponent(
-                          `Merhaba, ${branch.name} hakkında bilgi almak istiyorum.`
+                          `Merhaba, ${branch.name} ürünleri ve danışmanlık hizmeti hakkında teklif ve bilgi almak istiyorum.`
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-[#059669] hover:bg-[#047857] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-colors"
                       >
                         <MessageCircle className="w-4 h-4" />
-                        WhatsApp&apos;tan Yaz
+                        WhatsApp&apos;tan Teklif Al
                       </a>
 
                       <a

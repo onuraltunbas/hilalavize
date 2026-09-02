@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { COMPANY_DATA } from "@/data/company";
 import {
   MessageCircle,
-  Phone,
   Store,
   Zap,
   X,
@@ -43,22 +42,16 @@ export function FloatingContact() {
               <p className="text-[11px] text-muted-foreground mb-2.5">
                 Avize danışmanlığı, lüks koleksiyonlar ve showroom randevusu.
               </p>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="pt-1">
                 <a
                   href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
-                    "Merhaba, Hilal Avize showroomunuzdaki ürünler ve danışmanlık hakkında bilgi almak istiyorum."
+                    "Merhaba, Hilal Avize showroomunuzdaki ürünler ve aydınlatma hakkında bilgi ve fiyat teklifi almak istiyorum."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-semibold py-2 px-2.5 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" /> WhatsApp
-                </a>
-                <a
-                  href={`tel:${showroom.contacts[0].phone}`}
-                  className="bg-primary text-primary-foreground hover:opacity-90 text-xs font-bold py-2 px-2.5 rounded-lg flex items-center justify-center gap-1.5 transition-colors border border-border shadow-sm"
-                >
-                  <Phone className="w-3.5 h-3.5 text-bronze" /> Ara
+                  <MessageCircle className="w-4 h-4" /> WhatsApp ile Teklif Al
                 </a>
               </div>
             </div>
@@ -71,22 +64,16 @@ export function FloatingContact() {
               <p className="text-[11px] text-muted-foreground mb-2.5">
                 Elektrik malzemeleri, cam anahtar-priz, priz montajı & sigorta işleri (Murat Bilal).
               </p>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="pt-1">
                 <a
                   href={`https://wa.me/${electrical.contacts[0].whatsapp}?text=${encodeURIComponent(
-                    "Merhaba, elektrik malzemesi ve montaj hizmeti hakkında bilgi almak istiyorum."
+                    "Merhaba, elektrik malzemesi ve montaj hizmeti hakkında bilgi ve fiyat teklifi almak istiyorum."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-semibold py-2 px-2.5 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" /> WhatsApp
-                </a>
-                <a
-                  href={`tel:${electrical.contacts[0].phone}`}
-                  className="bg-primary text-primary-foreground hover:opacity-90 text-xs font-bold py-2 px-2.5 rounded-lg flex items-center justify-center gap-1.5 transition-colors border border-border shadow-sm"
-                >
-                  <Phone className="w-3.5 h-3.5 text-bronze" /> Ara
+                  <MessageCircle className="w-4 h-4" /> WhatsApp ile Teklif Al
                 </a>
               </div>
             </div>

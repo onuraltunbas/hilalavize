@@ -194,27 +194,17 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Right Actions: Theme Toggle & Direct Contact */}
+          {/* Desktop Right Actions: Theme Toggle */}
           <div className="hidden lg:flex items-center gap-3">
             {/* Theme Switcher */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-xl border border-border text-foreground/70 hover:text-foreground hover:bg-surface-subtle transition-colors"
+              className="p-2.5 rounded-xl border border-border text-foreground/70 hover:text-foreground hover:bg-surface-subtle transition-colors"
               title={isDarkMode ? "Açık Temaya Geç" : "Koyu Temaya Geç"}
               aria-label="Tema Değiştir"
             >
               {isDarkMode ? <Sun className="w-4 h-4 text-amber-300" /> : <Moon className="w-4 h-4 text-slate-700" />}
             </button>
-
-            <a
-              href={`https://wa.me/${showroom.contacts[0].whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm transition-all"
-            >
-              <MessageCircle className="w-3.5 h-3.5" />
-              <span>WhatsApp</span>
-            </a>
           </div>
 
           {/* Mobile Menu Button & Theme Toggle */}
@@ -226,12 +216,6 @@ export function Navbar() {
             >
               {isDarkMode ? <Sun className="w-4 h-4 text-amber-300" /> : <Moon className="w-4 h-4 text-slate-700" />}
             </button>
-            <a
-              href={`https://wa.me/${showroom.contacts[0].whatsapp}`}
-              className="p-2 rounded-xl bg-[#059669] text-white text-xs font-bold flex items-center gap-1"
-            >
-              <MessageCircle className="w-4 h-4" />
-            </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-xl border border-border text-foreground hover:bg-surface-subtle transition-colors"
@@ -246,28 +230,36 @@ export function Navbar() {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-surface border-b border-border px-4 py-6 space-y-4 animate-in slide-in-from-top-4 duration-300">
             <div className="grid grid-cols-2 gap-2 pb-3 border-b border-border">
-              <div className="p-3 rounded-xl bg-surface-subtle border border-border">
-                <div className="text-[11px] font-bold text-bronze flex items-center gap-1 mb-1">
-                  <Store className="w-3.5 h-3.5" /> Avize Showroom
+              <div className="p-3 rounded-xl bg-surface-subtle border border-border flex flex-col justify-between">
+                <div>
+                  <div className="text-[11px] font-bold text-bronze flex items-center gap-1 mb-1">
+                    <Store className="w-3.5 h-3.5" /> Avize Showroom
+                  </div>
+                  <div className="text-[10px] text-muted-foreground mb-2">Lütfiye & Çiğdem Hanım</div>
                 </div>
-                <div className="text-[10px] text-muted-foreground">Lütfiye & Çiğdem Hanım</div>
                 <a
-                  href={`tel:${showroom.contacts[0].phone}`}
-                  className="text-xs text-foreground font-semibold block mt-1 hover:text-bronze"
+                  href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, Hilal Avize Showroom ürünleri hakkında bilgi ve teklif almak istiyorum.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#059669] text-white text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 mt-1 shadow-sm"
                 >
-                  {showroom.contacts[0].phoneFormatted}
+                  <MessageCircle className="w-3 h-3" /> WhatsApp
                 </a>
               </div>
-              <div className="p-3 rounded-xl bg-surface-subtle border border-border">
-                <div className="text-[11px] font-bold text-bronze flex items-center gap-1 mb-1">
-                  <Zap className="w-3.5 h-3.5" /> Elektrik Şube
+              <div className="p-3 rounded-xl bg-surface-subtle border border-border flex flex-col justify-between">
+                <div>
+                  <div className="text-[11px] font-bold text-bronze flex items-center gap-1 mb-1">
+                    <Zap className="w-3.5 h-3.5" /> Elektrik Şube
+                  </div>
+                  <div className="text-[10px] text-muted-foreground mb-2">Murat Bilal</div>
                 </div>
-                <div className="text-[10px] text-muted-foreground">Murat Bilal</div>
                 <a
-                  href={`tel:${electrical.contacts[0].phone}`}
-                  className="text-xs text-foreground font-semibold block mt-1 hover:text-bronze"
+                  href={`https://wa.me/${electrical.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, elektrik tesisat ve malzeme konusunda teklif ve bilgi almak istiyorum.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#059669] text-white text-[11px] font-bold py-1.5 px-2 rounded-lg flex items-center justify-center gap-1 mt-1 shadow-sm"
                 >
-                  {electrical.contacts[0].phoneFormatted}
+                  <MessageCircle className="w-3 h-3" /> WhatsApp
                 </a>
               </div>
             </div>

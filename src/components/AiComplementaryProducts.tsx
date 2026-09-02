@@ -85,38 +85,31 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
 
   return (
     <div className="pt-14 border-t border-border space-y-8">
-      {/* AI Header Box */}
+      {/* Header Box */}
       <div className="rounded-xl bg-surface border border-border p-6 sm:p-8 shadow-sm relative overflow-hidden">
         <div className="space-y-2 max-w-3xl relative z-10">
-          <div className="editorial-tag">
-            <Bot className="w-3.5 h-3.5 text-bronze animate-pulse" />
-            <span>Yapay Zeka Mekan & Stil Eşleştirme Motoru</span>
-          </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-foreground tracking-tight">
             Bunu Alanlar Bu Tamamlayıcı Seçenekleri de İnceledi
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-            Yapay zekamız; incelenen <span className="text-foreground font-semibold">{currentProduct.name}</span> modelinin renk tonları, kristal/metal dokusu ve tarzıyla mekanınızda en kusursuz uyumu sağlayacak tamamlayıcı modelleri belirledi. Aşağıdaki ürünlerle birlikte sorarak avantajlı paket fiyatı alabilirsiniz.
+            İncelenen <span className="text-foreground font-semibold">{currentProduct.name}</span> modelinin renk tonları, kristal/metal dokusu ve tarzıyla mekanınızda en kusursuz uyumu sağlayacak tamamlayıcı modeller. Birlikte sorarak avantajlı teklif alabilirsiniz.
           </p>
         </div>
       </div>
 
-      {/* AI Matched Products Grid */}
+      {/* Matched Products Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
         {recommendations.map(({ product, score, reason }) => (
           <div
             key={product.id}
             className="relative flex flex-col dgaraj-card p-3.5 justify-between space-y-3"
           >
-            {/* AI Compatibility Badge */}
-            <div className="flex items-center justify-between bg-surface-subtle border border-border rounded-lg px-3 py-1.5 text-xs shadow-sm">
-              <span className="font-bold text-bronze flex items-center gap-1.5 text-[11px]">
-                <Sparkles className="w-3 h-3 text-bronze" />
-                {reason}
+            {/* Match Badge */}
+            <div className="flex items-center justify-between text-[11px] pb-2 border-b border-border">
+              <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                %{score} Uyum
               </span>
-              <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3" /> %{score} Uyum
-              </span>
+              <span className="text-muted-foreground truncate max-w-[150px]">{reason}</span>
             </div>
 
             {/* Product Card */}
@@ -124,20 +117,18 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
               <ProductCard product={product} />
             </div>
 
-            {/* Specific Exact Names WhatsApp Combo Button */}
-            <div className="pt-1">
-              <a
-                href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
-                  `Merhaba, Hilal Avize web sitenizden "${currentProduct.name}" ve yanında önerilen "${product.name}" modellerini birlikte inceledim. Bu iki ürün için kombin paket fiyatı ve stok bilgisi alabilir miyim?`
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
-              >
-                <MessageCircle className="w-4 h-4 shrink-0" />
-                <span className="truncate">Bu 2 Ürünü Birlikte Sor (WhatsApp)</span>
-              </a>
-            </div>
+            {/* Combined Inquiry CTA */}
+            <a
+              href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
+                `Merhaba, Hilal Avize'den "${currentProduct.name}" ve tamamlayıcı model "${product.name}" hakkında birlikte fiyat teklifi almak istiyorum.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              Birlikte Teklif Al
+            </a>
           </div>
         ))}
       </div>

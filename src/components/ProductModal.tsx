@@ -5,11 +5,9 @@ import { ProductGallery } from "@/components/ProductGallery";
 import {
   X,
   MessageCircle,
-  Phone,
   Ruler,
   Lightbulb,
   CheckCircle2,
-  Sparkles,
 } from "lucide-react";
 
 interface ProductModalProps {
@@ -111,25 +109,17 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             </div>
 
             {/* Action Buttons */}
-            <div className="pt-2 space-y-2">
+            <div className="pt-2">
               <a
                 href={`https://wa.me/905053801350?text=${encodeURIComponent(
-                  `Merhaba, Hilal Avize'den "${product.name}" hakkında detaylı bilgi ve fiyat almak istiyorum.`
+                  `Merhaba, Hilal Avize'den "${product.name}" hakkında detaylı bilgi ve fiyat teklifi almak istiyorum.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
+                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
-                WhatsApp ile Fiyat & Bilgi Al
-              </a>
-
-              <a
-                href="tel:+905053801350"
-                className="w-full bg-surface-subtle hover:bg-border text-foreground font-semibold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-colors border border-border"
-              >
-                <Phone className="w-3.5 h-3.5 text-bronze" />
-                Showroomu Telefonla Ara (0505 380 13 50)
+                WhatsApp ile Teklif Al
               </a>
             </div>
           </div>

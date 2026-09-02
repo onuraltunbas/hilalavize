@@ -10,11 +10,9 @@ import { ProductGallery } from "@/components/ProductGallery";
 import {
   ChevronRight,
   MessageCircle,
-  Phone,
   ShieldCheck,
   Ruler,
   Lightbulb,
-  Sparkles,
 } from "lucide-react";
 
 export const dynamic = "force-dynamic";
@@ -192,25 +190,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 <span>Kırılmaya karşı garantili ambalaj & Uzman montaj desteği</span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div>
                 <a
                   href={`https://wa.me/${activeBranch.contacts[0].whatsapp}?text=${encodeURIComponent(
-                    `Merhaba, Hilal Avize web sitenizden "${product.name}" modelini inceledim. Fiyat ve stok bilgisi rica ediyorum.`
+                    `Merhaba, Hilal Avize web sitenizden "${product.name}" modelini inceledim. Fiyat teklifi ve detaylı bilgi alabilir miyim?`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                  className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-5 rounded-xl text-sm flex items-center justify-center gap-2.5 shadow-sm transition-transform hover:-translate-y-0.5"
                 >
-                  <MessageCircle className="w-4 h-4" />
-                  WhatsApp ile Fiyat & Bilgi Al
-                </a>
-
-                <a
-                  href={`tel:${activeBranch.contacts[0].phone}`}
-                  className="bg-primary text-primary-foreground hover:opacity-90 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 border border-border shadow-sm transition-transform hover:-translate-y-0.5"
-                >
-                  <Phone className="w-4 h-4 text-bronze" />
-                  Hemen Ara ({activeBranch.contacts[0].phoneFormatted})
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp ile Teklif Al
                 </a>
               </div>
             </div>

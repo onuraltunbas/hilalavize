@@ -9,6 +9,7 @@ import {
   Zap,
   Store,
   ChevronRight,
+  MessageCircle,
 } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
@@ -62,30 +63,30 @@ export function Footer() {
         </div>
 
         {/* Column 2: Branch 1 (Showroom) */}
-        <div className="space-y-3 dgaraj-card p-4">
-          <div className="flex items-center gap-2 text-bronze font-bold text-xs uppercase tracking-wider">
-            <Store className="w-3.5 h-3.5" />
-            Avize & Aksesuar Showroom
+        <div className="space-y-3 dgaraj-card p-4 flex flex-col justify-between">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-bronze font-bold text-xs uppercase tracking-wider">
+              <Store className="w-3.5 h-3.5" />
+              Avize & Aksesuar Showroom
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
+              {showroom.address.full}
+            </p>
+            <div className="text-xs text-muted-foreground pt-1">
+              Yetkililer: <strong className="text-foreground">Lütfiye & Çiğdem Hanım</strong>
+            </div>
           </div>
-          <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5">
-            <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
-            {showroom.address.full}
-          </p>
-          <div className="space-y-1 text-xs pt-1">
-            <div className="text-foreground font-semibold">İletişim & Danışmanlık:</div>
-            {showroom.contacts.map((c, i) => (
-              <div key={i} className="flex items-center justify-between text-xs py-0.5">
-                <span className="text-muted-foreground">{c.name}:</span>
-                <a
-                  href={`tel:${c.phone}`}
-                  className="text-foreground hover:text-bronze font-semibold"
-                >
-                  {c.phoneFormatted}
-                </a>
-              </div>
-            ))}
-          </div>
-          <div className="pt-2">
+          <div className="space-y-2 pt-2 border-t border-border">
+            <a
+              href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, Hilal Avize Showroom ürünleri için bilgi ve teklif almak istiyorum.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              WhatsApp&apos;tan Teklif Al
+            </a>
             <a
               href={showroom.googleMapsUrl}
               target="_blank"
@@ -98,33 +99,30 @@ export function Footer() {
         </div>
 
         {/* Column 3: Branch 2 (Elektrik & Tesisat) */}
-        <div className="space-y-3 dgaraj-card p-4">
-          <div className="flex items-center gap-2 text-bronze font-bold text-xs uppercase tracking-wider">
-            <Zap className="w-3.5 h-3.5" />
-            Elektrik & Tesisat Şubesi
+        <div className="space-y-3 dgaraj-card p-4 flex flex-col justify-between">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-bronze font-bold text-xs uppercase tracking-wider">
+              <Zap className="w-3.5 h-3.5" />
+              Elektrik & Tesisat Şubesi
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
+              {electrical.address.full}
+            </p>
+            <div className="text-xs text-muted-foreground pt-1">
+              Yetkili Sorumlu: <strong className="text-foreground">Murat Bilal</strong>
+            </div>
           </div>
-          <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5">
-            <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
-            {electrical.address.full}
-          </p>
-          <div className="space-y-1 text-xs pt-1">
-            <div className="text-foreground font-semibold">Yetkili Sorumlu:</div>
-            {electrical.contacts.map((c, i) => (
-              <div key={i} className="flex items-center justify-between text-xs py-0.5">
-                <span className="text-muted-foreground">{c.name}:</span>
-                <a
-                  href={`tel:${c.phone}`}
-                  className="text-foreground hover:text-bronze font-semibold"
-                >
-                  {c.phoneFormatted}
-                </a>
-              </div>
-            ))}
-          </div>
-          <p className="text-[11px] text-muted-foreground pt-1">
-            Elektrik malzemeleri, cam anahtar-prizler, sigorta değişimi ve montaj hizmetleri.
-          </p>
-          <div className="pt-1">
+          <div className="space-y-2 pt-2 border-t border-border">
+            <a
+              href={`https://wa.me/${electrical.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, elektrik tesisat ve malzeme için teklif ve bilgi almak istiyorum.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              WhatsApp&apos;tan Teklif Al
+            </a>
             <a
               href={electrical.googleMapsUrl}
               target="_blank"
