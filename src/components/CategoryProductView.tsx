@@ -172,7 +172,7 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
         </div>
 
         {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
             {filteredProducts.map((prod) => (
               <ProductCard
                 key={prod.id}
