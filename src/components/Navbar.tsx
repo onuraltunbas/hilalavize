@@ -13,8 +13,6 @@ import {
   ChevronDown,
   Zap,
   Store,
-  Sun,
-  Moon,
 } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
@@ -23,32 +21,15 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
-    
-    // Check initial theme
-    const isDark = document.documentElement.classList.contains("dark");
-    setIsDarkMode(isDark);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleTheme = () => {
-    const newDark = !isDarkMode;
-    setIsDarkMode(newDark);
-    if (newDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  };
 
   const showroom = COMPANY_DATA.branches[0];
   const electrical = COMPANY_DATA.branches[1];
@@ -186,18 +167,6 @@ export function Navbar() {
           </div>
 
           {/* Desktop Right Actions: Theme Toggle */}
-          <div className="hidden lg:flex items-center gap-3">
-            {/* Theme Switcher */}
-            <button
-              onClick={toggleTheme}
-              className="p-2.5 rounded-xl border border-border text-foreground/70 hover:text-foreground hover:bg-surface-subtle transition-colors"
-              title={isDarkMode ? "Açık Temaya Geç" : "Koyu Temaya Geç"}
-              aria-label="Tema Değiştir"
-            >
-              {isDarkMode ? <Sun className="w-4 h-4 text-amber-300" /> : <Moon className="w-4 h-4 text-slate-700" />}
-            </button>
-          </div>
-
           {/* Mobile Menu Button - 3 Clean Lines */}
           <div className="flex items-center gap-2 lg:hidden">
             <button
@@ -221,17 +190,6 @@ export function Navbar() {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-surface border-b border-border px-4 py-6 space-y-4 animate-in slide-in-from-top-4 duration-300">
-            {/* Theme Toggle inside drawer */}
-            <div className="flex items-center justify-between px-3 py-2 rounded-xl bg-surface-subtle border border-border text-xs">
-              <span className="font-semibold text-foreground">Görünüm Teması</span>
-              <button
-                onClick={toggleTheme}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border text-foreground text-xs font-semibold hover:bg-surface transition-colors"
-              >
-                {isDarkMode ? <Sun className="w-3.5 h-3.5 text-amber-300" /> : <Moon className="w-3.5 h-3.5 text-slate-700" />}
-                <span>{isDarkMode ? "Açık Tema" : "Koyu Tema"}</span>
-              </button>
-            </div>
             <div className="grid grid-cols-2 gap-2 pb-3 border-b border-border">
               <div className="p-3 rounded-xl bg-surface-subtle border border-border flex flex-col justify-between">
                 <div>
