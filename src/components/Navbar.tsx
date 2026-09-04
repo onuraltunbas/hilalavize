@@ -72,10 +72,10 @@ export function Navbar() {
           {/* Logo & Brand Name */}
           <Link href="/" onClick={handleLinkClick} className="flex items-center group">
             <Image
-              src="/images/Gemini_Generated_Image_6kicah6kicah6kic.jpeg"
+              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
               alt="Hilal Elektrik & Avize"
-              width={3808}
-              height={1088}
+              width={935}
+              height={267}
               className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
               priority
             />
@@ -198,21 +198,22 @@ export function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Menu Button & Theme Toggle */}
+          {/* Mobile Menu Button - 3 Clean Lines */}
           <div className="flex items-center gap-2 lg:hidden">
             <button
-              onClick={toggleTheme}
-              className="p-2 rounded-xl border border-border text-foreground/70 hover:bg-surface-subtle transition-colors"
-              aria-label="Tema Değiştir"
-            >
-              {isDarkMode ? <Sun className="w-4 h-4 text-amber-300" /> : <Moon className="w-4 h-4 text-slate-700" />}
-            </button>
-            <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl border border-border text-foreground hover:bg-surface-subtle transition-colors"
-              aria-label="Menüyü Aç"
+              className="p-2.5 rounded-xl border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
+              aria-label={mobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? (
+                <X className="w-5 h-5 text-foreground" />
+              ) : (
+                <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
+                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+                </div>
+              )}
             </button>
           </div>
         </div>
@@ -220,6 +221,17 @@ export function Navbar() {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-surface border-b border-border px-4 py-6 space-y-4 animate-in slide-in-from-top-4 duration-300">
+            {/* Theme Toggle inside drawer */}
+            <div className="flex items-center justify-between px-3 py-2 rounded-xl bg-surface-subtle border border-border text-xs">
+              <span className="font-semibold text-foreground">Görünüm Teması</span>
+              <button
+                onClick={toggleTheme}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border text-foreground text-xs font-semibold hover:bg-surface transition-colors"
+              >
+                {isDarkMode ? <Sun className="w-3.5 h-3.5 text-amber-300" /> : <Moon className="w-3.5 h-3.5 text-slate-700" />}
+                <span>{isDarkMode ? "Açık Tema" : "Koyu Tema"}</span>
+              </button>
+            </div>
             <div className="grid grid-cols-2 gap-2 pb-3 border-b border-border">
               <div className="p-3 rounded-xl bg-surface-subtle border border-border flex flex-col justify-between">
                 <div>

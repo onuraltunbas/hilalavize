@@ -1,26 +1,30 @@
 import React from "react";
 import { HeroSection } from "@/components/HeroSection";
-import { TrustBadges } from "@/components/TrustBadges";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { ShowroomGallerySection } from "@/components/ShowroomGallerySection";
+import { CampaignBannerSection } from "@/components/CampaignBannerSection";
+import { BrandHeritageSection } from "@/components/BrandHeritageSection";
 import { ConsultationForm } from "@/components/ConsultationForm";
 import { HomeCtaBanner } from "@/components/HomeCtaBanner";
 
 export default function HomePage() {
   return (
     <>
-      {/* 1. Hero Showcase Banner */}
+      {/* Ana Ekran: Video + Slogan (Minimal Porsche Stili) */}
       <HeroSection />
 
-      {/* 2. Trust Badges & Guarantee Bar */}
-      <TrustBadges />
+      {/* 1. Bölüm: Fotoğraf & Video (Mağaza ve Ürün Vitrini) */}
+      <ShowroomGallerySection />
 
-      {/* 3. Real Customer Reviews & References */}
-      <TestimonialsSection />
+      {/* 2. Bölüm: Kampanya Görseli */}
+      <CampaignBannerSection />
 
-      {/* 4. Free Lighting Consultation Form */}
+      {/* 3. Bölüm: Vizyon, Misyon, Tarihçe */}
+      <BrandHeritageSection />
+
+      {/* Aydınlatma Danışmanlığı Formu */}
       <ConsultationForm />
 
-      {/* 5. Home Specific CTA Banner */}
+      {/* Alt Hızlı İletişim Bandı */}
       <HomeCtaBanner />
     </>
   );
