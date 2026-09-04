@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { COMPANY_DATA } from "@/data/company";
-import { Sparkles, MessageCircle, MapPin, ArrowRight } from "lucide-react";
+import { MessageCircle, MapPin, ArrowRight } from "lucide-react";
 
 export function CampaignBannerSection() {
   const showroom = COMPANY_DATA.branches[0];
@@ -28,11 +28,6 @@ export function CampaignBannerSection() {
 
           {/* Content Block */}
           <div className="relative z-10 max-w-2xl p-8 sm:p-12 lg:p-16 flex flex-col items-start">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 backdrop-blur-md border border-amber-400/40 text-[11px] sm:text-xs font-bold tracking-widest uppercase mb-5 text-amber-300">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>2. Bölüm • Özel Kampanya & Fırsat</span>
-            </div>
-
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] mb-5 font-heading text-white">
               Evinizin Havasını Değiştirecek <br />
               <span className="text-amber-200">Showroom Kampanyası.</span>

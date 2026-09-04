@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { History, Eye, Target, Award, CheckCircle2, ArrowRight } from "lucide-react";
+import { History, Eye, Target, CheckCircle2, ArrowRight } from "lucide-react";
 
 export function BrandHeritageSection() {
   const pillars = [
@@ -36,10 +36,6 @@ export function BrandHeritageSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <div className="editorial-tag mb-4 inline-flex">
-            <Award className="w-3.5 h-3.5 text-bronze" />
-            <span>3. Bölüm • Tarihçe, Vizyon & Misyon</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight font-heading mb-4">
             Güvenle Parlayan Bir Miras.
           </h2>

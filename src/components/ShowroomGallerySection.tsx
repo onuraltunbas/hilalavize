@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export function ShowroomGallerySection() {
   const showcases = [
@@ -53,10 +53,6 @@ export function ShowroomGallerySection() {
         {/* Section Header - Porsche Minimal Style */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="editorial-tag mb-4">
-              <Sparkles className="w-3.5 h-3.5 text-bronze" />
-              <span>1. Bölüm • Mağaza & Ürün Vitrini</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight font-heading">
               Göz Alıcı Modeller, <br className="hidden sm:inline" />
               Canlı Mağaza Deneyimi.
