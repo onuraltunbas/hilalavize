@@ -70,24 +70,15 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
           {/* Logo & Brand Name */}
-          <Link href="/" onClick={handleLinkClick} className="flex items-center gap-3.5 group">
-            <div className="relative w-12 h-12 sm:w-14 sm:h-14 shrink-0 transition-transform group-hover:scale-105">
-              <Image
-                src="/images/hilal_logo.png"
-                alt="Hilal Elektrik Avize Aksesuar Logo"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-extrabold tracking-tight text-foreground group-hover:text-bronze transition-colors">
-                HİLAL AVİZE
-              </span>
-              <span className="text-[11px] text-muted-foreground font-medium tracking-wide">
-                Kahramanmaraş Showroom & Tesisat
-              </span>
-            </div>
+          <Link href="/" onClick={handleLinkClick} className="flex items-center group">
+            <Image
+              src="/images/Gemini_Generated_Image_6kicah6kicah6kic.jpeg"
+              alt="Hilal Elektrik & Avize"
+              width={3808}
+              height={1088}
+              className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

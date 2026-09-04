@@ -7,8 +7,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans, "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
-  --font-heading: var(--font-heading, "Playfair Display", "Geist", serif);
+  --font-sans: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-heading: var(--font-cinzel), "Cinzel", var(--font-playfair), "Playfair Display", serif;
   
   --color-bronze: var(--bronze);
   --color-bronze-dark: var(--bronze-dark);
@@ -109,9 +109,13 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
+    font-family: var(--font-sans);
     font-feature-settings: "rlig" 1, "calt" 1;
     overflow-x: hidden;
     transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
   }
   html {
     scroll-behavior: smooth;

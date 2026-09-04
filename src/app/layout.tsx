@@ -1,5 +1,18 @@
 import type { Metadata, Viewport } from "next";
+import { Cinzel, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+const cinzel = Cinzel({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-cinzel",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
@@ -112,7 +125,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-background text-foreground antialiased selection:bg-[#93826E] selection:text-white">
+      <body className={`${cinzel.variable} ${playfair.variable} min-h-screen bg-background text-foreground antialiased selection:bg-[#93826E] selection:text-white font-sans`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
