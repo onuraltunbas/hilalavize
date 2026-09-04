@@ -76,10 +76,6 @@ export default function LightingGuidePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
         {/* Page Hero */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="editorial-tag">
-            <Lightbulb className="w-3.5 h-3.5 text-bronze" />
-            Mimari & Estetik Işık Rehberi
-          </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight">
             Aydınlatma Nedir ve Neden Bu Kadar Önemlidir?
           </h1>
@@ -101,10 +97,6 @@ export default function LightingGuidePage() {
           </div>
 
           <div className="space-y-5 text-muted-foreground text-sm leading-relaxed">
-            <div className="editorial-tag">
-              <Sparkles className="w-3.5 h-3.5 text-bronze" />
-              Doğru Işığın Gücü
-            </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
               Evinizin En Pahalı Mobilyası Bile Yanlış Işıkta Sönük Kalır
             </h2>
@@ -136,10 +128,6 @@ export default function LightingGuidePage() {
         {/* Section 2: 4 Layers of Lighting */}
         <div className="space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="editorial-tag">
-              <Layers className="w-3.5 h-3.5 text-bronze" />
-              Mimari Tasarım
-            </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
               Kusursuz Bir Mekan İçin 4 Aydınlatma Katmanı
             </h2>
@@ -171,10 +159,6 @@ export default function LightingGuidePage() {
         {/* Section 3: Kelvin & Color Temperature Guide */}
         <div className="dgaraj-card p-6 sm:p-10 space-y-6">
           <div className="space-y-2">
-            <span className="editorial-tag">
-              <Sun className="w-3.5 h-3.5 text-bronze" />
-              Işık Rengi Seçimi
-            </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
               Kelvin (Işık Rengi) Nedir? Hangi Odaya Hangi Işık?
             </h2>

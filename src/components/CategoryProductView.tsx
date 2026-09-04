@@ -6,7 +6,7 @@ import { Product } from "@/data/products";
 import { Category } from "@/data/categories";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductModal } from "@/components/ProductModal";
-import { Sparkles, MessageCircle, Layers } from "lucide-react";
+import { MessageCircle, Layers } from "lucide-react";
 
 interface CategoryProductViewProps {
   category: Category;
@@ -68,17 +68,6 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
         )}
 
         <div className="relative z-10 space-y-3 max-w-3xl">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="editorial-tag">
-              <Sparkles className="w-3.5 h-3.5 text-bronze" />
-              Showroom Özel Koleksiyonu
-            </span>
-            <span className="text-muted-foreground text-xs">•</span>
-            <span className="text-xs text-bronze font-semibold">
-              {products.length} Model Teşhirde
-            </span>
-          </div>
-
           <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
             {category.name}
           </h1>
