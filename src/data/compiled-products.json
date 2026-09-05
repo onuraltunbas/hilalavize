@@ -186,111 +186,6 @@
     "seoDescription": "Laura Lüks Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
-    "id": "KLS-008",
-    "code": "HL-KLS-008",
-    "slug": "zoye-dekoratif-sarkit-avize",
-    "name": "Zoye Dekoratif Sarkıt Avize",
-    "categorySlug": "klasik",
-    "categoryName": "Klasik Avizeler",
-    "description": "Zoye Dekoratif Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ750*H500mm / Φ900*H530mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "60 cm çapında klasik ve moderni birleştiren tasarımıyla salon ve oturma odalarına ışıltı katan model.",
-    "dimensions": "Φ750*H500mm / Φ900*H530mm",
-    "lightingType": "Dahili LED Modülü",
-    "branch": "showroom",
-    "image": "/products/klasik/photo/80.jpeg",
-    "images": [
-      "/products/klasik/photo/80.jpeg",
-      "/products/klasik/photo/81.jpeg"
-    ],
-    "features": [
-      "Dahili LED Modülü",
-      "Φ750*H500mm / Φ900*H530mm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "Zoye Dekoratif Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Zoye Dekoratif Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "KLS-009",
-    "code": "HL-KLS-009",
-    "slug": "vintage-tasarim-led-sarkit-avize",
-    "name": "Vintage Tasarım LED Sarkıt Avize",
-    "categorySlug": "klasik",
-    "categoryName": "Klasik Avizeler",
-    "badge": "Özel Tasarım",
-    "description": "Vintage Tasarım LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 70 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "70 cm çapında vintage esintili mimari hatları ve modern LED teknolojisiyle göz alıcı bir tasarım.",
-    "dimensions": "Çap: 70 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
-    "branch": "showroom",
-    "image": "/products/klasik/photo/90.jpeg",
-    "images": [
-      "/products/klasik/photo/90.jpeg"
-    ],
-    "features": [
-      "Dahili 3 Renk Kademeli LED Modülü",
-      "Çap: 70 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "Vintage Tasarım LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Vintage Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "KLS-010",
-    "code": "HL-KLS-010",
-    "slug": "kristal-tasli-modern-led-avize",
-    "name": "Kristal Taşlı Modern LED Avize",
-    "categorySlug": "klasik",
-    "categoryName": "Klasik Avizeler",
-    "badge": "Kristal Seri",
-    "description": "Kristal Taşlı Modern LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 65 cm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "65 cm çapında berrak kristal taş detayları ve güçlü LED ışığıyla salonlara ışıltı katan model.",
-    "dimensions": "Çap: 65 cm",
-    "lightingType": "Dahili LED Modülü",
-    "branch": "showroom",
-    "image": "/products/klasik/photo/100.jpeg",
-    "images": [
-      "/products/klasik/photo/100.jpeg",
-      "/products/klasik/photo/101.jpeg"
-    ],
-    "features": [
-      "Dahili LED Modülü",
-      "Çap: 65 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "Kristal Taşlı Modern LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kristal Taşlı Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "KLS-011",
-    "code": "HL-KLS-011",
-    "slug": "saray-tipi-dev-kristal-led-avize",
-    "name": "Saray Tipi Dev Kristal LED Avize",
-    "categorySlug": "klasik",
-    "categoryName": "Klasik Avizeler",
-    "badge": "Dev Boyut (120 cm)",
-    "description": "Saray Tipi Dev Kristal LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 120 cm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "120 cm görkemli çapı, parıltılı kristal taş dizilimi ve yüksek ışık kapasitesiyle büyük salon ve villa avizesi.",
-    "dimensions": "Çap: 120 cm",
-    "lightingType": "Dahili LED Modülü",
-    "branch": "showroom",
-    "image": "/products/klasik/photo/110.jpeg",
-    "images": [
-      "/products/klasik/photo/110.jpeg"
-    ],
-    "features": [
-      "Dahili LED Modülü",
-      "Çap: 120 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "Saray Tipi Dev Kristal LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Saray Tipi Dev Kristal LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
-  },
-  {
     "id": "KLS-012",
     "code": "HL-KLS-012",
     "slug": "klasik-cam-kollu-luks-avize",
@@ -316,31 +211,6 @@
     ],
     "seoTitle": "Klasik Cam Kollu Lüks Avize Kahramanmaraş | Hilal Avize",
     "seoDescription": "Klasik Cam Kollu Lüks Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "KLS-013",
-    "code": "HL-KLS-013",
-    "slug": "kristal-tasli-hibrit-led-avize",
-    "name": "Kristal Taşlı Hibrit LED Avize",
-    "categorySlug": "klasik",
-    "categoryName": "Klasik Avizeler",
-    "description": "Kristal Taşlı Hibrit LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Duy + Dahili LED Aydınlatma aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Kristal prizmaların ışıltısı ve E14 + LED çift ışık moduyla zenginleştirilmiş salon avizesi.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E14 Duy + Dahili LED Aydınlatma",
-    "branch": "showroom",
-    "image": "/products/klasik/photo/130.jpeg",
-    "images": [
-      "/products/klasik/photo/130.jpeg"
-    ],
-    "features": [
-      "E14 Duy + Dahili LED Aydınlatma",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "Kristal Taşlı Hibrit LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kristal Taşlı Hibrit LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-014",
@@ -1567,6 +1437,136 @@
     ],
     "seoTitle": "Kristal Taşlı Modern Dairesel LED Avize Kahramanmaraş | Hilal Avize",
     "seoDescription": "Kristal Taşlı Modern Dairesel LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "LED-047",
+    "code": "HL-LED-047",
+    "slug": "zoye-dekoratif-sarkit-avize",
+    "name": "Zoye Dekoratif Sarkıt Avize",
+    "categorySlug": "ledli-grup",
+    "categoryName": "LED'li Avizeler",
+    "description": "Zoye Dekoratif Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ750*H500mm / Φ900*H530mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "60 cm çapında klasik ve moderni birleştiren tasarımıyla salon ve oturma odalarına ışıltı katan model.",
+    "dimensions": "Φ750*H500mm / Φ900*H530mm",
+    "lightingType": "Dahili LED Modülü",
+    "branch": "showroom",
+    "image": "/products/klasik/photo/80.jpeg",
+    "images": [
+      "/products/klasik/photo/80.jpeg",
+      "/products/klasik/photo/81.jpeg"
+    ],
+    "features": [
+      "Dahili LED Modülü",
+      "Φ750*H500mm / Φ900*H530mm",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Zoye Dekoratif Sarkıt Avize Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Zoye Dekoratif Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "LED-048",
+    "code": "HL-LED-048",
+    "slug": "vintage-tasarim-led-sarkit-avize",
+    "name": "Vintage Tasarım LED Sarkıt Avize",
+    "categorySlug": "ledli-grup",
+    "categoryName": "LED'li Avizeler",
+    "badge": "Özel Tasarım",
+    "description": "Vintage Tasarım LED Sarkıt Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 70 cm ölçüleri, Dahili 3 Renk Kademeli LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "70 cm çapında vintage esintili mimari hatları ve modern LED teknolojisiyle göz alıcı bir tasarım.",
+    "dimensions": "Çap: 70 cm",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
+    "branch": "showroom",
+    "image": "/products/klasik/photo/90.jpeg",
+    "images": [
+      "/products/klasik/photo/90.jpeg"
+    ],
+    "features": [
+      "Dahili 3 Renk Kademeli LED Modülü",
+      "Çap: 70 cm",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Vintage Tasarım LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Vintage Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "LED-049",
+    "code": "HL-LED-049",
+    "slug": "kristal-tasli-modern-led-avize",
+    "name": "Kristal Taşlı Modern LED Avize",
+    "categorySlug": "ledli-grup",
+    "categoryName": "LED'li Avizeler",
+    "badge": "Kristal Seri",
+    "description": "Kristal Taşlı Modern LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 65 cm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "65 cm çapında berrak kristal taş detayları ve güçlü LED ışığıyla salonlara ışıltı katan model.",
+    "dimensions": "Çap: 65 cm",
+    "lightingType": "Dahili LED Modülü",
+    "branch": "showroom",
+    "image": "/products/klasik/photo/100.jpeg",
+    "images": [
+      "/products/klasik/photo/100.jpeg",
+      "/products/klasik/photo/101.jpeg"
+    ],
+    "features": [
+      "Dahili LED Modülü",
+      "Çap: 65 cm",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Kristal Taşlı Modern LED Avize Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Kristal Taşlı Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "LED-050",
+    "code": "HL-LED-050",
+    "slug": "saray-tipi-dev-kristal-led-avize",
+    "name": "Saray Tipi Dev Kristal LED Avize",
+    "categorySlug": "ledli-grup",
+    "categoryName": "LED'li Avizeler",
+    "badge": "Dev Boyut (120 cm)",
+    "description": "Saray Tipi Dev Kristal LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 120 cm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "120 cm görkemli çapı, parıltılı kristal taş dizilimi ve yüksek ışık kapasitesiyle büyük salon ve villa avizesi.",
+    "dimensions": "Çap: 120 cm",
+    "lightingType": "Dahili LED Modülü",
+    "branch": "showroom",
+    "image": "/products/klasik/photo/110.jpeg",
+    "images": [
+      "/products/klasik/photo/110.jpeg"
+    ],
+    "features": [
+      "Dahili LED Modülü",
+      "Çap: 120 cm",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Saray Tipi Dev Kristal LED Avize Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Saray Tipi Dev Kristal LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "LED-051",
+    "code": "HL-LED-051",
+    "slug": "kristal-tasli-hibrit-led-avize",
+    "name": "Kristal Taşlı Hibrit LED Avize",
+    "categorySlug": "ledli-grup",
+    "categoryName": "LED'li Avizeler",
+    "description": "Kristal Taşlı Hibrit LED Avize, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Duy + Dahili LED Aydınlatma aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Kristal prizmaların ışıltısı ve E14 + LED çift ışık moduyla zenginleştirilmiş salon avizesi.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E14 Duy + Dahili LED Aydınlatma",
+    "branch": "showroom",
+    "image": "/products/klasik/photo/130.jpeg",
+    "images": [
+      "/products/klasik/photo/130.jpeg"
+    ],
+    "features": [
+      "E14 Duy + Dahili LED Aydınlatma",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "Kristal Taşlı Hibrit LED Avize Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Kristal Taşlı Hibrit LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "TKL-001",

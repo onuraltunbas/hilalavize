@@ -56,7 +56,7 @@ export const CATEGORIES: Category[] = [
       "Kollu Grup",
       "Taşlı Grup",
     ],
-    itemCount: 14,
+    itemCount: 9,
   },
   {
     slug: "ledli-grup",
@@ -77,7 +77,7 @@ export const CATEGORIES: Category[] = [
       "Geometrik Tasarımlar",
       "3 Renk Kademeli LED Modeller",
     ],
-    itemCount: 46,
+    itemCount: 51,
   },
   {
     slug: "aplik-ve-spotlar",

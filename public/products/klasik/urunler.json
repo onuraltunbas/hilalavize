@@ -69,51 +69,6 @@
     ]
   },
   {
-    "no": 8,
-    "name": "Zoye Dekoratif Sarkıt Avize",
-    "dimensions": "Φ750*H500mm / Φ900*H530mm",
-    "lightingType": "Dahili LED Modülü",
-    "shortDescription": "60 cm çapında klasik ve moderni birleştiren tasarımıyla salon ve oturma odalarına ışıltı katan model.",
-    "images": [
-      "/products/klasik/photo/80.jpeg",
-      "/products/klasik/photo/81.jpeg"
-    ]
-  },
-  {
-    "no": 9,
-    "name": "Vintage Tasarım LED Sarkıt Avize",
-    "dimensions": "Çap: 70 cm",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
-    "badge": "Özel Tasarım",
-    "shortDescription": "70 cm çapında vintage esintili mimari hatları ve modern LED teknolojisiyle göz alıcı bir tasarım.",
-    "images": [
-      "/products/klasik/photo/90.jpeg"
-    ]
-  },
-  {
-    "no": 10,
-    "name": "Kristal Taşlı Modern LED Avize",
-    "dimensions": "Çap: 65 cm",
-    "lightingType": "Dahili LED Modülü",
-    "badge": "Kristal Seri",
-    "shortDescription": "65 cm çapında berrak kristal taş detayları ve güçlü LED ışığıyla salonlara ışıltı katan model.",
-    "images": [
-      "/products/klasik/photo/100.jpeg",
-      "/products/klasik/photo/101.jpeg"
-    ]
-  },
-  {
-    "no": 11,
-    "name": "Saray Tipi Dev Kristal LED Avize",
-    "dimensions": "Çap: 120 cm",
-    "lightingType": "Dahili LED Modülü",
-    "badge": "Dev Boyut (120 cm)",
-    "shortDescription": "120 cm görkemli çapı, parıltılı kristal taş dizilimi ve yüksek ışık kapasitesiyle büyük salon ve villa avizesi.",
-    "images": [
-      "/products/klasik/photo/110.jpeg"
-    ]
-  },
-  {
     "no": 12,
     "name": "Klasik Cam Kollu Lüks Avize",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
@@ -123,16 +78,6 @@
     "images": [
       "/products/klasik/photo/120.jpeg",
       "/products/klasik/photo/121.jpeg"
-    ]
-  },
-  {
-    "no": 13,
-    "name": "Kristal Taşlı Hibrit LED Avize",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E14 Duy + Dahili LED Aydınlatma",
-    "shortDescription": "Kristal prizmaların ışıltısı ve E14 + LED çift ışık moduyla zenginleştirilmiş salon avizesi.",
-    "images": [
-      "/products/klasik/photo/130.jpeg"
     ]
   },
   {

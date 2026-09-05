@@ -91,15 +91,12 @@ export function ShowroomGallerySection() {
 
               {/* Card Content */}
               <div className="relative z-10 text-white">
-                <span className="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[11px] font-bold tracking-wider uppercase mb-3 border border-white/20">
+                <span className="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[11px] font-bold tracking-wider uppercase mb-2.5 border border-white/20">
                   {item.tag}
                 </span>
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight mb-2 font-heading group-hover:text-amber-200 transition-colors">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight mb-3 font-heading group-hover:text-amber-200 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-white/80 font-light max-w-lg mb-4 line-clamp-2">
-                  {item.subtitle}
-                </p>
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-200 tracking-wide">
                   Modeli İncele
                   <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
