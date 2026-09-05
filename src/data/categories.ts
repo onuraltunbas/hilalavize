@@ -46,8 +46,8 @@ export const CATEGORIES: Category[] = [
     seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Maria Theresa & Baccarat - Hilal Avize",
     seoDescription:
       "Kahramanmaraş'ta saray tipi klasik avizeler, Maria Theresa, Baccarat ve metal kollu klasik avize modelleri Hilal Avize Showroom'unda.",
-    image: "/images/categories/banner_klasik.jpg",
-    coverImage: "/images/categories/banner_klasik.jpg",
+    image: "/images/categories/theresa_kapak.jpeg",
+    coverImage: "/images/categories/theresa_kapak.jpeg",
     featured: true,
     subcategories: [
       "Maria Theresa Ailesi",

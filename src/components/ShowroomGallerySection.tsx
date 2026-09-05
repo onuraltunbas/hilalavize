@@ -8,10 +8,11 @@ export function ShowroomGallerySection() {
     {
       title: "Lüks Kristal Saray Koleksiyonu",
       subtitle: "Saf K9 Berrak Kristaller & El İşçiliği İskelet",
-      image: "/images/categories/banner_klasik.jpg",
+      image: "/images/categories/theresa_kapak.jpeg",
       link: "/kategori/klasik",
       colSpan: "lg:col-span-8",
       tag: "Öne Çıkan Seri",
+      objectPosition: "object-[center_20%]",
     },
     {
       title: "Modern LED & Mimari Sarkıtlar",
@@ -81,11 +82,11 @@ export function ShowroomGallerySection() {
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  className={`object-cover ${item.objectPosition || "object-center"} transition-transform duration-700 ease-out group-hover:scale-105`}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                {/* Gradient Overlays for Porsche-like depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 transition-opacity duration-300 group-hover:opacity-85" />
+                {/* Gradient Overlays for depth while keeping image colors vibrant */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent transition-opacity duration-300 group-hover:opacity-75" />
               </div>
 
               {/* Card Content */}
