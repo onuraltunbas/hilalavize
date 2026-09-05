@@ -122,9 +122,9 @@ export function MekanlarGallery() {
         <div className="text-center pt-4">
           <button
             onClick={() => setVisibleCount((prev) => prev + 24)}
-            className="px-6 py-3 rounded-xl bg-surface border border-border hover:border-bronze text-foreground text-xs sm:text-sm font-bold shadow-xs hover:bg-surface-subtle transition-all cursor-pointer"
+            className="px-8 py-3 rounded-xl bg-surface border border-border hover:border-bronze text-foreground text-xs sm:text-sm font-bold shadow-xs hover:bg-surface-subtle transition-all cursor-pointer"
           >
-            Daha Fazla Proje Gör ({filteredProjects.length - visibleCount} proje kaldı)
+            Daha Fazla
           </button>
         </div>
       )}

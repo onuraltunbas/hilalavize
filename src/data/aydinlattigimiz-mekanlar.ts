@@ -12,7 +12,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-1",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-01.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #1",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Üngüt / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -21,7 +21,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-2",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-02.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #2",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -30,7 +30,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-3",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-03.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #3",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -39,7 +39,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-4",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-04.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #4",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -48,7 +48,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-5",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-05.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #5",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -57,7 +57,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-6",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-06.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #6",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Binevler / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -66,7 +66,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-7",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-07.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #7",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -75,7 +75,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-8",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-08.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #8",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -84,7 +84,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-9",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-09.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #9",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Üngüt / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -93,7 +93,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-10",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-10.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #10",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -102,7 +102,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-11",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-11.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #11",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Tekerek / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -111,7 +111,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-12",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-12.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #12",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -120,7 +120,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-13",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-13.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #13",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -129,7 +129,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-14",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-14.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #14",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Binevler / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -138,7 +138,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-15",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-15.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #15",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -147,7 +147,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-16",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-16.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #16",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -156,7 +156,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-17",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-17.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #17",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Üngüt / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -165,7 +165,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-18",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-18.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #18",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -174,7 +174,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-19",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-19.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #19",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -183,7 +183,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-20",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-20.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #20",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -192,7 +192,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-21",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-21.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #21",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -201,7 +201,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-22",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-22.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #22",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Binevler / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -210,7 +210,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-23",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-23.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #23",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -219,7 +219,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-24",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-24.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #24",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -228,7 +228,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-25",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-25.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #25",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Üngüt / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -237,7 +237,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-26",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-26.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #26",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -246,7 +246,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-27",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-27.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #27",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -255,7 +255,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-28",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-28.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #28",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -264,7 +264,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-29",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-29.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #29",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -273,7 +273,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-30",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-30.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #30",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Binevler / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -282,7 +282,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-31",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-31.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #31",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -291,7 +291,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-32",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-32.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #32",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -300,7 +300,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-33",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-33.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #33",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Üngüt / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -309,7 +309,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-34",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-34.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #34",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -318,7 +318,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-35",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-35.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #35",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Tekerek / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -327,7 +327,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-36",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-36.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #36",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -336,7 +336,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-37",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-37.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #37",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -345,7 +345,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-38",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-38.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #38",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Binevler / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -354,7 +354,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-39",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-39.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #39",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -363,7 +363,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-40",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-40.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #40",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -372,7 +372,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-41",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-41.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #41",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Üngüt / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -381,7 +381,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-42",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-42.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #42",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -390,7 +390,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-43",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-43.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #43",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -399,7 +399,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-44",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-44.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #44",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -408,7 +408,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-45",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-45.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #45",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -417,7 +417,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-46",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-46.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #46",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Binevler / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -426,7 +426,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-47",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-47.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #47",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -435,7 +435,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-48",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-48.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #48",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -444,7 +444,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-49",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-49.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #49",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Üngüt / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -453,7 +453,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-50",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-50.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #50",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -462,7 +462,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-51",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-51.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #51",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -471,7 +471,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-52",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-52.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #52",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -480,7 +480,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-53",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-53.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #53",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -489,7 +489,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-54",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-54.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #54",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Binevler / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -498,7 +498,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-55",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-55.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #55",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -507,7 +507,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-56",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-56.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #56",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -516,7 +516,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-57",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-57.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #57",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Üngüt / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -525,7 +525,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-58",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-58.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #58",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -534,7 +534,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-59",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-59.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #59",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Tekerek / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -543,7 +543,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-60",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-60.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #60",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -552,7 +552,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-61",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-61.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #61",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -561,7 +561,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-62",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-62.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #62",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Binevler / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -570,7 +570,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-63",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-63.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #63",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -579,7 +579,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-64",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-64.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #64",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -588,7 +588,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-65",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-65.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #65",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Üngüt / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -597,7 +597,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-66",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-66.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #66",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -606,7 +606,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-67",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-67.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #67",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -615,7 +615,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-68",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-68.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #68",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -624,7 +624,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-69",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-69.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #69",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -633,7 +633,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-70",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-70.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #70",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Binevler / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -642,7 +642,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-71",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-71.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #71",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -651,7 +651,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-72",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-72.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #72",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -660,7 +660,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-73",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-73.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #73",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Üngüt / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -669,7 +669,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-74",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-74.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #74",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -678,7 +678,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-75",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-75.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #75",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -687,7 +687,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-76",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-76.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #76",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -696,7 +696,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-77",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-77.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #77",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -705,7 +705,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-78",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-78.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #78",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Binevler / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -714,7 +714,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-79",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-79.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #79",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -723,7 +723,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-80",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-80.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #80",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -732,7 +732,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-81",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-81.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #81",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Üngüt / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -741,7 +741,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-82",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-82.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #82",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -750,7 +750,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-83",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-83.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #83",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Tekerek / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -759,7 +759,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-84",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-84.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #84",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -768,7 +768,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-85",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-85.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #85",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -777,7 +777,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-86",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-86.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #86",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Binevler / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -786,7 +786,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-87",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-87.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #87",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -795,7 +795,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-88",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-88.jpg",
-    "title": "Modern Geometrik LED Halka Salon Avizesi #88",
+    "title": "Modern Geometrik LED Halka Salon Avizesi",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -804,7 +804,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-89",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-89.jpg",
-    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma #89",
+    "title": "Klasik Baccarat Kollarla Saray Tipi Aydınlatma",
     "location": "Üngüt / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -813,7 +813,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-90",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-90.jpg",
-    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı #90",
+    "title": "Minimalist Mutfak Adası Aydınlatma Tasarımı",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -822,7 +822,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-91",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-91.jpg",
-    "title": "Geniş Salon Katlı Kristal Prizma Avize #91",
+    "title": "Geniş Salon Katlı Kristal Prizma Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -831,7 +831,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-92",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-92.jpg",
-    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı #92",
+    "title": "Modern Bronz Detaylı Yemek Odası Sarkıtı",
     "location": "Yirmiikigün / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -840,7 +840,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-93",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-93.jpg",
-    "title": "Oturma Odası Kademeli Işık LED Avize #93",
+    "title": "Oturma Odası Kademeli Işık LED Avize",
     "location": "Boğaziçi / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -849,7 +849,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-94",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-94.jpg",
-    "title": "Asil Şampanya Kristal Taşlı Kollu Avize #94",
+    "title": "Asil Şampanya Kristal Taşlı Kollu Avize",
     "location": "Binevler / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -858,7 +858,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-95",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-95.jpg",
-    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı #95",
+    "title": "Çağdaş Çizgili Lineer Yemek Masası Sarkıtı",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -867,7 +867,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-96",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-96.jpg",
-    "title": "Lüks Daire Özel Proje Kristal Avize Montajı #96",
+    "title": "Lüks Daire Özel Proje Kristal Avize Montajı",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -876,7 +876,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-97",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-97.jpg",
-    "title": "Özel Tasarım Salon Kristal Avize Montajı #97",
+    "title": "Özel Tasarım Salon Kristal Avize Montajı",
     "location": "Üngüt / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",
@@ -885,7 +885,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-98",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-98.jpg",
-    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması #98",
+    "title": "Yemek Masası Üstü Lüks Sarkıt Uygulaması",
     "location": "Bağlarbaşı / Kahramanmaraş",
     "category": "modern-led",
     "categoryLabel": "Modern LED Aydınlatma",
@@ -894,7 +894,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-99",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-99.jpg",
-    "title": "Villa Girişi Yüksek Tavan Kristal Avize #99",
+    "title": "Villa Girişi Yüksek Tavan Kristal Avize",
     "location": "Tekerek / Kahramanmaraş",
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
@@ -903,7 +903,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-100",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-100.jpg",
-    "title": "Özel Tasarım Kristal Salon Avize Uygulaması #100",
+    "title": "Özel Tasarım Kristal Salon Avize Uygulaması",
     "location": "Onikişubat / Kahramanmaraş",
     "category": "salon",
     "categoryLabel": "Salon ve Oturma Alanı",
@@ -912,7 +912,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-101",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-101.jpg",
-    "title": "Modern Sarkıt Yemek Odası Aydınlatması #101",
+    "title": "Modern Sarkıt Yemek Odası Aydınlatması",
     "location": "Dulkadiroğlu / Kahramanmaraş",
     "category": "yemek-odasi",
     "categoryLabel": "Yemek Masası ve Ada",
@@ -921,7 +921,7 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
     "id": "mekan-102",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-102.jpg",
-    "title": "Lüks Villa Girişi Yüksek Tavan Kristal Montajı #102",
+    "title": "Lüks Villa Girişi Yüksek Tavan Kristal Montajı",
     "location": "Tekerek / Kahramanmaraş",
     "category": "villa",
     "categoryLabel": "Villa ve Yüksek Tavan",

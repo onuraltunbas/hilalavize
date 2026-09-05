@@ -26,15 +26,11 @@ export default function AydinlattigimizMekanlarPage() {
 
         {/* Hero Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bronze/10 border border-bronze/30 text-bronze text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-            <span>Gerçek Evler • Gerçek Işıltılar</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl font-black text-foreground tracking-tight">
             Aydınlattığımız Mekanlar
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Kahramanmaraş ve çevre illerde yüzlerce seçkin evin salonlarını, yemek odalarını ve villalarını Hilal Avize kalitesiyle buluşturduk. İşte uzman montaj ekibimizin müşteri evlerinde uyguladığı gerçek avize projelerimiz.
+            Yüzlerce seçkin evin salonlarını, yemek odalarını ve villalarını Hilal Avize kalitesiyle buluşturduk.
           </p>
         </div>
 

@@ -80,7 +80,7 @@ export function HomeMekanlarSection() {
             href="/aydinlattigimiz-mekanlar"
             className="inline-flex items-center justify-center w-full py-3 px-6 rounded-xl bg-surface border border-border font-bold text-xs text-foreground shadow-xs hover:bg-surface-subtle"
           >
-            Tüm 99 Müşteri Evi Montajını İncele →
+            Tüm {INSTALLATION_PROJECTS.length} Müşteri Evi Montajını İncele →
           </Link>
         </div>
       </div>
