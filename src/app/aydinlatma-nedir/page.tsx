@@ -206,10 +206,10 @@ export default function LightingGuidePage() {
               <div className="p-4 rounded-xl dgaraj-card space-y-1.5">
                 <div className="font-bold text-foreground">💡 Pratik Avize Çapı Formülü:</div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Odanızın eni ve boyunu metre cinsinden toplayın, çıkan sayıyı 10 ile çarpın. Çıkan sonuç (cm) ideal avize çapınızı verir.
+                  Odanızın eni ve boyunu metre cinsinden toplayın, çıkan sayıyı <strong className="text-foreground">6 ile çarpın</strong>. Çıkan sonuç (cm) ideal avize çapınızı verir.
                 </p>
                 <div className="text-[11px] text-bronze font-medium">
-                  Örn: 4m x 5m oda = 4 + 5 = 9 → İdeal avize çapı yaklaşık 90 cm&apos;dir.
+                  Örn: 4m x 5m oda = 4 + 5 = 9 → 9 x 6 = İdeal avize çapı yaklaşık 54 cm&apos;dir. (Geniş salonlarda 50-60 cm arası modeller tercih edilebilir).
                 </div>
               </div>
 

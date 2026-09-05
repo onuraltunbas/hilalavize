@@ -23,24 +23,19 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-border">
         {/* Column 1: Company Profile */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="relative w-12 h-12 shrink-0">
-              <Image
-                src="/images/hilal_logo.png"
-                alt="Hilal Elektrik Avize Aksesuar"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div>
-              <h3 className="font-extrabold text-foreground text-sm tracking-tight">HİLAL ELEKTRİK AVİZE</h3>
-              <p className="text-xs text-bronze font-medium">Aksesuar & Aydınlatma</p>
-            </div>
-          </div>
+          <Link href="/" className="inline-block py-1">
+            <Image
+              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+              alt="Hilal Elektrik & Avize"
+              width={935}
+              height={267}
+              className="h-16 sm:h-20 w-auto object-contain"
+            />
+          </Link>
           <p className="text-xs text-muted-foreground leading-relaxed">
             Kahramanmaraş Onikişubat&apos;ta avize mağazamız ve elektrik malzemesi şubemiz ile hizmetinizdeyiz. Klasik saray tipi kristal avizelerden modern spor sarkıtlara, toptan ve perakende elektrik malzemelerinden profesyonel montaj ve usta işçiliğine kadar güvenin adresi.
           </p>
-          <div className="pt-2 flex flex-col gap-2 text-xs text-foreground/80">
+          <div className="pt-2 flex flex-col gap-2.5 text-xs text-foreground/80">
             <span className="flex items-center gap-2 text-bronze font-semibold">
               <Clock className="w-3.5 h-3.5" />
               Pzt - Cmt: 09:00 - 18:30 (Pazar Kapalı)
@@ -48,14 +43,14 @@ export function Footer() {
             <span className="text-[11px] text-muted-foreground">
               *Pazar günleri özel randevu ile showroomumuz açılabilmektedir.
             </span>
-            <div className="pt-1">
+            <div className="pt-2 w-full">
               <a
                 href={COMPANY_DATA.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 text-white font-bold px-3 py-1.5 rounded-lg text-xs shadow-sm transition-all hover:opacity-90"
+                className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm shadow-sm transition-all flex items-center justify-center gap-2.5 border border-purple-500/20"
               >
-                <InstagramIcon className="w-3.5 h-3.5" />
+                <InstagramIcon className="w-4 h-4 text-pink-400" />
                 <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>
               </a>
             </div>
@@ -63,13 +58,15 @@ export function Footer() {
         </div>
 
         {/* Column 2: Branch 1 (Showroom) */}
-        <div className="space-y-3 dgaraj-card p-4 flex flex-col justify-between">
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-bronze font-bold text-xs uppercase tracking-wider">
-              <Store className="w-3.5 h-3.5" />
-              Avize & Aksesuar Showroom
+        <div className="space-y-3.5 dgaraj-card p-5 flex flex-col justify-between border-2 hover:border-bronze/60 transition-colors">
+          <div className="space-y-2.5">
+            <div className="flex items-center gap-2.5 text-foreground font-black text-sm sm:text-base tracking-tight">
+              <div className="w-8 h-8 rounded-lg bg-bronze/15 flex items-center justify-center text-bronze shrink-0">
+                <Store className="w-4 h-4 text-bronze" />
+              </div>
+              <span className="text-foreground font-extrabold">Avize & Aksesuar Showroom</span>
             </div>
-            <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5">
+            <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5 pt-1">
               <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
               {showroom.address.full}
             </p>
@@ -79,7 +76,7 @@ export function Footer() {
               href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, Hilal Avize Showroom ürünleri için bilgi ve teklif almak istiyorum.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
+              className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               WhatsApp&apos;tan Teklif Al
@@ -96,13 +93,15 @@ export function Footer() {
         </div>
 
         {/* Column 3: Branch 2 (Elektrik & Tesisat) */}
-        <div className="space-y-3 dgaraj-card p-4 flex flex-col justify-between">
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-bronze font-bold text-xs uppercase tracking-wider">
-              <Zap className="w-3.5 h-3.5" />
-              Elektrik & Tesisat Şubesi
+        <div className="space-y-3.5 dgaraj-card p-5 flex flex-col justify-between border-2 hover:border-amber-500/60 transition-colors">
+          <div className="space-y-2.5">
+            <div className="flex items-center gap-2.5 text-foreground font-black text-sm sm:text-base tracking-tight">
+              <div className="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-600 shrink-0">
+                <Zap className="w-4 h-4 text-amber-600" />
+              </div>
+              <span className="text-foreground font-extrabold">Elektrik & Tesisat Şubesi</span>
             </div>
-            <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5">
+            <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5 pt-1">
               <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
               {electrical.address.full}
             </p>

@@ -10,7 +10,7 @@ export const FAQS: FAQItem[] = [
     id: "faq-1",
     question: "Evin tavan yüksekliğine ve oda büyüklüğüne göre avize nasıl seçilir?",
     answer:
-      "Avize seçiminde odanın eni ve boyunun toplamı (metre cinsinden) yaklaşık avize çapını (cm cinsinden) verir. Örneğin 4x5 metrelik bir salon için 90 cm çapında bir avize idealdir. Standart 2.60m tavanlarda sarkıt payı ayarlanabilir modeller veya tavan göbeğine yakın tasarımlar; 3 metre ve üzeri yüksek tavanlarda ise katlı ve kollu kristal avizeler tercih edilir. Hilal Avize showroomumuzda odanızın fotoğrafına göre ücretsiz mimari danışmanlık veriyoruz.",
+      "Avize seçiminde odanın eni ve boyunun toplamının 6 ile çarpımı (cm cinsinden) ideal avize çapını verir. Örneğin 4x5 metrelik bir salon için (4 + 5) x 6 = yaklaşık 54-60 cm çapında bir avize idealdir. Standart 2.60m tavanlarda sarkıt payı ayarlanabilir modeller veya tavan göbeğine yakın tasarımlar; 3 metre ve üzeri yüksek tavanlarda ise katlı ve kollu kristal avizeler tercih edilir. Hilal Avize showroomumuzda odanızın fotoğrafına göre ücretsiz mimari danışmanlık veriyoruz.",
     category: "avize",
   },
   {
