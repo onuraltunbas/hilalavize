@@ -49,21 +49,12 @@ export function Navbar() {
             : "bg-background/80 backdrop-blur-sm border-b border-border/60 py-4.5"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
-          {/* Logo & Brand Name */}
-          <Link href="/" onClick={handleLinkClick} className="flex items-center group">
-            <Image
-              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik & Avize"
-              width={935}
-              height={267}
-              className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
-              priority
-            />
-          </Link>
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between relative">
+          {/* Mobile Left Spacer (Balances hamburger menu button to dead-center the logo) */}
+          <div className="w-10 lg:hidden" aria-hidden="true" />
 
-          {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex items-center gap-7 text-[13px] font-medium tracking-wide">
+          {/* Desktop Left Navigation Links */}
+          <div className="hidden lg:flex items-center gap-6 text-[13px] font-medium tracking-wide">
             <Link
               href="/"
               className={`transition-colors hover:text-bronze ${
@@ -128,7 +119,24 @@ export function Navbar() {
             >
               Aydınlatma Nedir
             </Link>
+          </div>
 
+          {/* Centered & Enlarged Logo */}
+          <div className="flex-1 lg:flex-initial flex justify-center py-1">
+            <Link href="/" onClick={handleLinkClick} className="flex items-center group">
+              <Image
+                src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+                alt="Hilal Elektrik & Avize"
+                width={935}
+                height={267}
+                className="h-13 sm:h-16 lg:h-20 w-auto object-contain transition-transform group-hover:scale-105"
+                priority
+              />
+            </Link>
+          </div>
+
+          {/* Desktop Right Navigation Links */}
+          <div className="hidden lg:flex items-center gap-6 text-[13px] font-medium tracking-wide">
             <Link
               href="/hizmetler"
               className={`transition-colors hover:text-bronze ${
@@ -166,9 +174,8 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Right Actions: Theme Toggle */}
           {/* Mobile Menu Button - 3 Clean Lines */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="w-10 flex justify-end lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2.5 rounded-xl border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
