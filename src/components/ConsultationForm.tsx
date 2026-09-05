@@ -124,7 +124,7 @@ export function ConsultationForm() {
   };
 
   return (
-    <section className="py-20 bg-background relative border-b border-border" id="randevu">
+    <section className="py-20 bg-background relative border-b border-border scroll-mt-20 sm:scroll-mt-28" id="randevu">
       <div className="max-w-4xl mx-auto px-4 sm:px-8">
         <div className="dgaraj-card p-6 sm:p-12 relative overflow-hidden">
           {/* Başlık */}
