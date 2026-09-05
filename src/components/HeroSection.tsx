@@ -6,7 +6,7 @@ export function HeroSection() {
 
   return (
     <section className="relative w-full bg-black text-white overflow-hidden">
-      {/* Mobile & Tablet View: 100% Uncropped Full Video + Slogan & Button directly below */}
+      {/* Mobile ve Tablet View: 100% Uncropped Full Video + Slogan ve Button directly below */}
       <div className="block md:hidden">
         {/* Full Uncropped Video */}
         <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl">

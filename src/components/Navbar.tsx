@@ -21,6 +21,7 @@ import {
   MapPin,
   HelpCircle,
   Info,
+  Camera,
 } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
@@ -91,7 +92,7 @@ export function Navbar() {
           <div className="w-10 lg:hidden" aria-hidden="true" />
 
           {/* Desktop Left Navigation Links */}
-          <div className="hidden lg:flex items-center gap-6 text-[13px] font-medium tracking-wide">
+          <div className="hidden lg:flex items-center gap-5 text-[13px] font-medium tracking-wide">
             <Link
               href="/"
               className={`transition-colors hover:text-bronze ${
@@ -129,7 +130,7 @@ export function Navbar() {
               {categoryDropdownOpen && (
                 <div className="absolute top-full left-0 w-80 bg-surface border border-border rounded-xl shadow-xl p-3 grid grid-cols-1 gap-1 animate-in fade-in slide-in-from-top-2 duration-200 z-50">
                   <div className="text-[10px] font-bold uppercase tracking-wider text-bronze px-3 py-1.5 border-b border-border/60">
-                    Aydınlatma & Dekorasyon Kategorileri
+                    Aydınlatma ve Dekorasyon Kategorileri
                   </div>
                   {CATEGORIES.map((cat) => (
                     <Link
@@ -149,6 +150,15 @@ export function Navbar() {
             </div>
 
             <Link
+              href="/aydinlattigimiz-mekanlar"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/aydinlattigimiz-mekanlar" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Aydınlattığımız Mekanlar
+            </Link>
+
+            <Link
               href="/aydinlatma-nedir"
               className={`transition-colors hover:text-bronze ${
                 pathname === "/aydinlatma-nedir" ? "text-bronze font-semibold" : "text-foreground/80"
@@ -163,7 +173,7 @@ export function Navbar() {
             <Link href="/" onClick={handleLinkClick} className="flex items-center group">
               <Image
                 src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-                alt="Hilal Elektrik & Avize"
+                alt="Hilal Elektrik • Avize"
                 width={935}
                 height={267}
                 className="h-13 sm:h-16 lg:h-20 w-auto object-contain transition-transform group-hover:scale-105"
@@ -173,7 +183,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Right Navigation Links */}
-          <div className="hidden lg:flex items-center gap-6 text-[13px] font-medium tracking-wide">
+          <div className="hidden lg:flex items-center gap-5 text-[13px] font-medium tracking-wide">
             <Link
               href="/hizmetler"
               className={`transition-colors hover:text-bronze ${
@@ -189,7 +199,7 @@ export function Navbar() {
                 pathname === "/subelerimiz" || pathname === "/iletisim" ? "text-bronze font-semibold" : "text-foreground/80"
               }`}
             >
-              Şubelerimiz & İletişim
+              Şubelerimiz ve İletişim
             </Link>
 
             <Link
@@ -249,7 +259,7 @@ export function Navbar() {
           <Link href="/" onClick={handleLinkClick} className="flex items-center">
             <Image
               src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik & Avize"
+              alt="Hilal Elektrik • Avize"
               width={160}
               height={45}
               className="h-10 sm:h-12 w-auto object-contain"
@@ -289,6 +299,28 @@ export function Navbar() {
             <ChevronRight className="w-4 h-4 opacity-70" />
           </Link>
 
+          {/* 2. AYDINLATTIĞIMIZ MEKANLAR (Yeni Sayfa Butonu) */}
+          <Link
+            href="/aydinlattigimiz-mekanlar"
+            onClick={handleLinkClick}
+            className={`flex items-center justify-between p-3 rounded-xl transition-all border ${
+              pathname === "/aydinlattigimiz-mekanlar"
+                ? "bg-bronze text-white border-bronze shadow-sm"
+                : "bg-bronze/10 hover:bg-bronze/20 text-foreground border-bronze/30"
+            }`}
+          >
+            <div className="flex items-center gap-3">
+              <div className="p-1.5 rounded-lg bg-bronze text-white">
+                <Camera className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="font-bold text-sm block">Aydınlattığımız Mekanlar</span>
+                <span className="text-[10px] text-muted-foreground block">Müşteri Evlerinden Kareler</span>
+              </div>
+            </div>
+            <ChevronRight className="w-4 h-4 text-bronze" />
+          </Link>
+
           {/* Menü Maddeleri */}
           <div className="space-y-1 text-sm font-medium">
             <Link
@@ -302,7 +334,7 @@ export function Navbar() {
             >
               <div className="flex items-center gap-3">
                 <Layers className="w-4 h-4 text-bronze" />
-                <span>Tüm Koleksiyonlar & Modeller</span>
+                <span>Tüm Koleksiyonlar</span>
               </div>
               <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
             </Link>
@@ -370,7 +402,7 @@ export function Navbar() {
             >
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-bronze" />
-                <span>Şubelerimiz & İletişim</span>
+                <span>Şubelerimiz ve İletişim</span>
               </div>
               <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
             </Link>

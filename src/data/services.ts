@@ -19,7 +19,7 @@ export interface Service {
 export const SERVICES: Service[] = [
   {
     slug: "aydinlatma-danismanligi",
-    title: "Ücretsiz Mekan & Aydınlatma Danışmanlığı",
+    title: "Ücretsiz Mekan ve Aydınlatma Danışmanlığı",
     shortTitle: "Aydınlatma Danışmanlığı",
     tagline: "Evinizin ve Projenizin Mimarisine En Uygun Avize ve Işık Tasarımı",
     description:
@@ -35,15 +35,15 @@ export const SERVICES: Service[] = [
     ],
     steps: [
       {
-        title: "1. Mekan Bilgisi & Fotoğraf Paylaşımı",
+        title: "1. Mekan Bilgisi ve Fotoğraf Paylaşımı",
         description: "Odanızın fotoğrafını veya planını bize WhatsApp üzerinden iletin ya da showroomumuza getirin.",
       },
       {
-        title: "2. Ölçü & Işık İhtiyacı Analizi",
+        title: "2. Ölçü ve Işık İhtiyacı Analizi",
         description: "Danışmanlarımız mekanınız için gerekli lamba sayısı, duy tipi ve ebatı belirler.",
       },
       {
-        title: "3. Model Seçimi & Önizleme",
+        title: "3. Model Seçimi ve Önizleme",
         description: "Beğendiğiniz modeller arasından bütçenize ve zevkinize en uygun koleksiyon seçilir.",
       },
     ],
@@ -53,8 +53,8 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "montaj-ve-guvenli-teslimat",
-    title: "Özenli Nakliye & Profesyonel Montaj Hizmeti",
-    shortTitle: "Nakliye & Montaj",
+    title: "Özenli Nakliye ve Profesyonel Montaj Hizmeti",
+    shortTitle: "Nakliye ve Montaj",
     tagline: "Kırılmaya Karşı %100 Güvenceli Taşıma ve Uzman Montaj Ustaları",
     description:
       "Kristal avizelerin ve hassas cam ürünlerin taşınması özel uzmanlık gerektirir. Hilal Avize olarak tüm ürünlerimizi darbeye dayanıklı özel paketlerle adresinize ulaştırıyor, tavan taşıma kapasitesini kontrol ederek güvenli şekilde asıyoruz.",
@@ -69,7 +69,7 @@ export const SERVICES: Service[] = [
     ],
     steps: [
       {
-        title: "1. Randevu & Planlama",
+        title: "1. Randevu ve Planlama",
         description: "Sizin için en uygun gün ve saatte teslimat ve montaj randevusu oluşturulur.",
       },
       {
@@ -87,8 +87,8 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "elektrik-montaj-ve-tadilat",
-    title: "Profesyonel Elektrik & Tesisat Uygulamaları",
-    shortTitle: "Elektrik & Tesisat Hizmeti",
+    title: "Profesyonel Elektrik ve Tesisat Uygulamaları",
+    shortTitle: "Elektrik ve Tesisat Hizmeti",
     tagline: "Priz Montajı, Sigorta Değişimi, Spot Delimi ve Tesisat İşleri",
     description:
       "Hilal Elektrik şubemiz; anahtar-priz montajı, sigorta panosu değişimi ve bakımı, alçıpan spot delimi, ray spot hat çekimi ve bina içi elektrik arıza/onarım işlerinde profesyonel ustalarımızla çözüm sunar.",
@@ -115,7 +115,7 @@ export const SERVICES: Service[] = [
         description: "Ustalarımız adresinize gelerek temiz, güvenli ve nizami bir montaj gerçekleştirir.",
       },
     ],
-    seoTitle: "Kahramanmaraş Elektrik Ustası, Priz Montajı & Tesisat | Hilal Elektrik",
+    seoTitle: "Kahramanmaraş Elektrik Ustası, Priz Montajı ve Tesisat | Hilal Elektrik",
     seoDescription:
       "Kahramanmaraş Onikişubat elektrik tesisat ustası, priz değişimi, sigorta panosu montajı ve ray spot uygulaması.",
   },
@@ -137,15 +137,15 @@ export const SERVICES: Service[] = [
     ],
     steps: [
       {
-        title: "1. Proje & Pafta İncelemesi",
+        title: "1. Proje ve Pafta İncelemesi",
         description: "Mimari projeniz ve aydınlatma planınız teknik ekibimizce incelenir.",
       },
       {
-        title: "2. Numune & Teklif Sunumu",
+        title: "2. Numune ve Teklif Sunumu",
         description: "Uygun ürün alternatifleri, katalog ve proje teklif dosyası hazırlanır.",
       },
       {
-        title: "3. Tedarik & Lojistik",
+        title: "3. Tedarik ve Lojistik",
         description: "Ürünler proje takvimine uygun şekilde partiler halinde şantiyeye teslim edilir.",
       },
     ],

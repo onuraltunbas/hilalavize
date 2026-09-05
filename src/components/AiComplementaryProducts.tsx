@@ -34,7 +34,7 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
     const scoredProducts = PRODUCTS.filter((p) => p.id !== currentProduct.id).map((p) => {
       let score = 55; // Başlangıç taban puanı
 
-      // A. İsim & Renk & Işık Uyumu
+      // A. İsim ve Renk ve Işık Uyumu
       const pKeywords = extractKeywords(
         `${p.name} ${p.description}`
       );
@@ -53,17 +53,17 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
 
       const finalPercentage = Math.min(99, Math.max(84, Math.round(score)));
 
-      let reason = "Stil & Renk Uyumu";
+      let reason = "Stil ve Renk Uyumu";
       if (p.categorySlug === "aplikler") {
         reason = "Tamamlayıcı Duvar Aydınlatması";
       } else if (p.categorySlug === "dekoratif-sehpalar" || p.categorySlug === "dekoratif-koltuk-ve-berjerler") {
         reason = "Mekanı Bütünleyen Mobilya Kombini";
       } else if (p.categorySlug === "cam-sus-esyalari" || p.categorySlug === "duvar-ve-masa-saatleri" || p.categorySlug === "dekoratif-aynalar") {
-        reason = "Aksesuar & Işıltı Uyumu";
+        reason = "Aksesuar ve Işıltı Uyumu";
       } else if (p.categorySlug === "anahtar-ve-priz-serileri") {
         reason = "Lüks Donanım Tamamlayıcısı";
       } else if (matchingKeywords.length > 0) {
-        reason = `${matchingKeywords.slice(0, 2).map((k) => k.toUpperCase()).join(" & ")} Uyumu`;
+        reason = `${matchingKeywords.slice(0, 2).map((k) => k.toUpperCase()).join(" ve ")} Uyumu`;
       }
 
       return {

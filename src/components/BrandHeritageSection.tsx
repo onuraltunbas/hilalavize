@@ -8,10 +8,10 @@ export function BrandHeritageSection() {
     {
       icon: History,
       badge: "",
-      title: "Köklü Tarihçe & Tecrübe",
+      title: "Köklü Tarihçe ve Tecrübe",
       description:
         "Kahramanmaraş'ta elektrik tesisatı ve aydınlatma sektöründe yıllar önce attığımız adımlar; bugün Onikişubat'ta avize mağazamız ve elektrik malzemesi şubemiz ile toptanda, perakendede ve her türlü proje işlerinde bölgenin en güvenilir çözüm ortağına dönüştü. Dürüst esnaflık, profesyonel usta ve işçilik hizmeti ile kaliteli malzeme anlayışını nesiller boyu yaşatıyoruz.",
-      highlight: "Toptan, Perakende & Proje İşleri",
+      highlight: "Toptan, Perakende ve Proje İşleri",
     },
     {
       icon: Eye,
@@ -40,7 +40,7 @@ export function BrandHeritageSection() {
             Aydınlatmanın Sanata Dönüştüğü Mekanlar.
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground font-light leading-relaxed">
-            Hilal Elektrik & Avize olarak geçmişten aldığımız ustalık mirasını, modern tasarım anlayışı ve kusursuz müşteri deneyimiyle buluşturuyoruz.
+            Hilal Elektrik ve Avize olarak geçmişten aldığımız ustalık mirasını, modern tasarım anlayışı ve kusursuz müşteri deneyimiyle buluşturuyoruz.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export function BrandHeritageSection() {
                 className="dgaraj-card p-7 sm:p-9 flex flex-col justify-between relative group hover:border-bronze transition-all duration-300"
               >
                 <div>
-                  {/* Top Icon & Tag */}
+                  {/* Top Icon ve Tag */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="w-12 h-12 rounded-2xl bg-surface-subtle border border-border flex items-center justify-center text-bronze group-hover:scale-110 transition-transform">
                       <Icon className="w-6 h-6" />
@@ -91,7 +91,7 @@ export function BrandHeritageSection() {
         <div className="p-8 sm:p-10 rounded-2xl bg-surface-subtle border border-border flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
             <div className="text-xs font-bold text-bronze tracking-wider uppercase">
-              Hilal Avize & Hilal Elektrik
+              Hilal Avize ve Hilal Elektrik
             </div>
             <h4 className="text-lg sm:text-xl font-bold text-foreground font-heading">
               Showroomumuzda Bir Kahve Eşliğinde Hayalinizdeki Aydınlatmayı Seçin

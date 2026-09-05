@@ -48,7 +48,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Maria Theresa 68032 Klasik Kristal Saray Avizesi Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Maria Theresa 68032 Klasik Kristal Saray Avizesi modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Maria Theresa 68032 Klasik Kristal Saray Avizesi modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-002",
@@ -75,7 +75,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Maria Theresa 68032 Aplik ve Lambader Koleksiyonu Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Maria Theresa 68032 Aplik ve Lambader Koleksiyonu modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Maria Theresa 68032 Aplik ve Lambader Koleksiyonu modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-003",
@@ -102,7 +102,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Maria Theresa 68032 Kristal Salon ve Masa Avizesi Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Maria Theresa 68032 Kristal Salon ve Masa Avizesi modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Maria Theresa 68032 Kristal Salon ve Masa Avizesi modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-004",
@@ -129,7 +129,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Baccarat Prizmatik Ağır Kesme Kristal Lüks Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-005",
@@ -155,7 +155,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Carles Geometrik LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Carles Geometrik LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Carles Geometrik LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-006",
@@ -180,7 +180,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Loya Tasarım Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Loya Tasarım Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Loya Tasarım Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-007",
@@ -207,7 +207,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Laura Lüks Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Laura Lüks Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Laura Lüks Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-012",
@@ -234,7 +234,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Klasik Cam Kollu Lüks Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Klasik Cam Kollu Lüks Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Klasik Cam Kollu Lüks Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "KLS-014",
@@ -259,7 +259,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Metal Kollu Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Metal Kollu Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Metal Kollu Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-001",
@@ -285,7 +285,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Geometrik Çubuk LED Sarkıt Avize (L1000*H1500) Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Geometrik Çubuk LED Sarkıt Avize (L1000*H1500) modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Geometrik Çubuk LED Sarkıt Avize (L1000*H1500) modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-002",
@@ -312,7 +312,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Maxira Modern LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Maxira Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Maxira Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-003",
@@ -338,7 +338,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Renvio Gold LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Renvio Gold LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Renvio Gold LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-004",
@@ -365,7 +365,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Carvella Lineer LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Carvella Lineer LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Carvella Lineer LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-005",
@@ -392,7 +392,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Carvella Kompakt Lineer LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Carvella Kompakt Lineer LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Carvella Kompakt Lineer LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-006",
@@ -418,7 +418,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Sevona Dairesel LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Sevona Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Sevona Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-007",
@@ -445,7 +445,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Addo Büyük Boy LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Addo Büyük Boy LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Addo Büyük Boy LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-008",
@@ -471,7 +471,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Addo Modern LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Addo Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Addo Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-009",
@@ -498,7 +498,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Trivon Üçlü Tasarım LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Trivon Üçlü Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Trivon Üçlü Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-010",
@@ -524,7 +524,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Trivon Kristal Vurgulu LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Trivon Kristal Vurgulu LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Trivon Kristal Vurgulu LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-011",
@@ -549,7 +549,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Operis Geometrik LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Operis Geometrik LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Operis Geometrik LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-012",
@@ -575,7 +575,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Minvex Modern LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Minvex Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Minvex Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-013",
@@ -602,7 +602,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Avsıra Lüks LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Avsıra Lüks LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Avsıra Lüks LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-014",
@@ -628,7 +628,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Seralya Zarif LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Seralya Zarif LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Seralya Zarif LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-015",
@@ -655,7 +655,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Porenya Dalgalı LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Porenya Dalgalı LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Porenya Dalgalı LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-016",
@@ -681,7 +681,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Ekerd Mimari LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Ekerd Mimari LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Ekerd Mimari LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-017",
@@ -708,7 +708,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Orvella Büyük Boy LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Orvella Büyük Boy LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Orvella Büyük Boy LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-018",
@@ -734,7 +734,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Orvella Modern LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Orvella Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Orvella Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-019",
@@ -760,7 +760,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Peroria Tasarım LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Peroria Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Peroria Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-020",
@@ -786,7 +786,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Yomıra Geometrik LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Yomıra Geometrik LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Yomıra Geometrik LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-021",
@@ -812,7 +812,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Serry Lüks LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Serry Lüks LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Serry Lüks LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-022",
@@ -838,7 +838,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Zevrox Kompakt LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Zevrox Kompakt LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Zevrox Kompakt LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-023",
@@ -865,7 +865,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Zevrox Büyük Salon LED Avizesi Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Zevrox Büyük Salon LED Avizesi modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Zevrox Büyük Salon LED Avizesi modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-024",
@@ -892,7 +892,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Liria Saray Tipi Geniş LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Liria Saray Tipi Geniş LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Liria Saray Tipi Geniş LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-025",
@@ -918,7 +918,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Relvolia Modern LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Relvolia Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Relvolia Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-026",
@@ -944,7 +944,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Vella Minimalist LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Vella Minimalist LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Vella Minimalist LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-027",
@@ -969,7 +969,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Menekşe Modern LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Menekşe Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Menekşe Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-028",
@@ -994,7 +994,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Menekşe Lüks LED Avize Model 2 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Menekşe Lüks LED Avize Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Menekşe Lüks LED Avize Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-029",
@@ -1020,7 +1020,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Norelia Kompakt LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Norelia Kompakt LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Norelia Kompakt LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-030",
@@ -1046,7 +1046,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Ophelia Mini LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Ophelia Mini LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Ophelia Mini LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-031",
@@ -1072,7 +1072,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Modern LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-032",
@@ -1098,7 +1098,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Modern LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Modern LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-033",
@@ -1123,7 +1123,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Dairesel LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-034",
@@ -1150,7 +1150,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Geniş Halka LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Geniş Halka LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Geniş Halka LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-035",
@@ -1176,7 +1176,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Hibrit LED ve Ampullü Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Hibrit LED ve Ampullü Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Hibrit LED ve Ampullü Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-036",
@@ -1202,7 +1202,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Kompakt LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Kompakt LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Kompakt LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-037",
@@ -1228,7 +1228,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Tasarım LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-038",
@@ -1254,7 +1254,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Plafonyer Tavana Monteli LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Plafonyer Tavana Monteli LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Plafonyer Tavana Monteli LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-039",
@@ -1280,7 +1280,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Küre Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Küre Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Küre Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-040",
@@ -1305,7 +1305,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Kristal Taşlı Tasarım LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kristal Taşlı Tasarım LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Kristal Taşlı Tasarım LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-041",
@@ -1331,7 +1331,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Kirpi Model Modern Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kirpi Model Modern Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Kirpi Model Modern Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-042",
@@ -1356,7 +1356,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Minimalist Çizgisel Sarkıt LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Minimalist Çizgisel Sarkıt LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Minimalist Çizgisel Sarkıt LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-043",
@@ -1382,7 +1382,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Dairesel LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Dairesel LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-044",
@@ -1408,7 +1408,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Modern LED Avize 120cm Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Modern LED Avize 120cm modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Modern LED Avize 120cm modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-045",
@@ -1434,7 +1434,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Modern Avize - Model 56 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Modern Avize - Model 56 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Modern Avize - Model 56 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-046",
@@ -1460,7 +1460,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Kristal Taşlı Modern Dairesel LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kristal Taşlı Modern Dairesel LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Kristal Taşlı Modern Dairesel LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-047",
@@ -1486,7 +1486,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Zoye Dekoratif Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Zoye Dekoratif Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Zoye Dekoratif Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-048",
@@ -1512,7 +1512,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Vintage Tasarım LED Sarkıt Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Vintage Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Vintage Tasarım LED Sarkıt Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-049",
@@ -1539,7 +1539,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Kristal Taşlı Modern LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kristal Taşlı Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Kristal Taşlı Modern LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-050",
@@ -1565,7 +1565,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Saray Tipi Dev Kristal LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Saray Tipi Dev Kristal LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Saray Tipi Dev Kristal LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-051",
@@ -1590,7 +1590,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Kristal Taşlı Hibrit LED Avize Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Kristal Taşlı Hibrit LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Kristal Taşlı Hibrit LED Avize modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "TKL-001",
@@ -1598,7 +1598,7 @@ export const PRODUCTS: Product[] = [
     "slug": "dekoratif-tekli-sarkit-avize-model-1",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 1",
     "categorySlug": "tekli-avizeler",
-    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "categoryName": "Tekli Avizeler ve Sarkıtlar",
     "badge": "Tekli Sarkıt",
     "description": "Dekoratif Tekli Sarkıt Avize - Model 1, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 1.",
@@ -1616,7 +1616,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 1 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 1 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 1 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "TKL-002",
@@ -1624,7 +1624,7 @@ export const PRODUCTS: Product[] = [
     "slug": "dekoratif-tekli-sarkit-avize-model-2",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 2",
     "categorySlug": "tekli-avizeler",
-    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "categoryName": "Tekli Avizeler ve Sarkıtlar",
     "badge": "Tekli Sarkıt",
     "description": "Dekoratif Tekli Sarkıt Avize - Model 2, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 2.",
@@ -1642,7 +1642,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 2 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "TKL-003",
@@ -1650,7 +1650,7 @@ export const PRODUCTS: Product[] = [
     "slug": "dekoratif-tekli-sarkit-avize-model-3",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 3",
     "categorySlug": "tekli-avizeler",
-    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "categoryName": "Tekli Avizeler ve Sarkıtlar",
     "badge": "Tekli Sarkıt",
     "description": "Dekoratif Tekli Sarkıt Avize - Model 3, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 3.",
@@ -1668,7 +1668,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 3 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 3 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 3 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "TKL-004",
@@ -1676,7 +1676,7 @@ export const PRODUCTS: Product[] = [
     "slug": "dekoratif-tekli-sarkit-avize-model-4",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 4",
     "categorySlug": "tekli-avizeler",
-    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "categoryName": "Tekli Avizeler ve Sarkıtlar",
     "badge": "Tekli Sarkıt",
     "description": "Dekoratif Tekli Sarkıt Avize - Model 4, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 4.",
@@ -1694,7 +1694,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 4 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 4 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 4 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "TKL-005",
@@ -1702,7 +1702,7 @@ export const PRODUCTS: Product[] = [
     "slug": "dekoratif-tekli-sarkit-avize-model-5",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 5",
     "categorySlug": "tekli-avizeler",
-    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "categoryName": "Tekli Avizeler ve Sarkıtlar",
     "badge": "Tekli Sarkıt",
     "description": "Dekoratif Tekli Sarkıt Avize - Model 5, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 5.",
@@ -1720,7 +1720,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 5 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 5 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 5 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "TKL-006",
@@ -1728,7 +1728,7 @@ export const PRODUCTS: Product[] = [
     "slug": "dekoratif-tekli-sarkit-avize-model-6",
     "name": "Dekoratif Tekli Sarkıt Avize - Model 6",
     "categorySlug": "tekli-avizeler",
-    "categoryName": "Tekli Avizeler & Sarkıtlar",
+    "categoryName": "Tekli Avizeler ve Sarkıtlar",
     "badge": "Tekli Sarkıt",
     "description": "Dekoratif Tekli Sarkıt Avize - Model 6, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 6.",
@@ -1746,7 +1746,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Dekoratif Tekli Sarkıt Avize - Model 6 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 6 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Dekoratif Tekli Sarkıt Avize - Model 6 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-001",
@@ -1754,7 +1754,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-1",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 1",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 1, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ230*H230mm ölçüleri, Dahili LED 8W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 1.",
@@ -1772,7 +1772,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 1 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 1 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 1 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-002",
@@ -1780,7 +1780,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-2",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 2",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 2, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 2.",
@@ -1798,7 +1798,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 2 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 2 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-003",
@@ -1806,7 +1806,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-3",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 3",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 3, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Duvar Ölçüsü ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 3.",
@@ -1824,7 +1824,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 3 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 3 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 3 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-004",
@@ -1832,7 +1832,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-4",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 4",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 4, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ120*H360mm ölçüleri, Dahili LED 5W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 4.",
@@ -1850,7 +1850,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 4 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 4 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 4 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-005",
@@ -1858,7 +1858,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-5",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 5",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 5, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 140*H800mm ölçüleri, Dahili LED 10W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 5.",
@@ -1876,7 +1876,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 5 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 5 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 5 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-006",
@@ -1884,7 +1884,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-6",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 6",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 6, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 200*H280mm ölçüleri, Dahili LED 15W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 6.",
@@ -1902,7 +1902,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 6 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 6 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 6 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-007",
@@ -1910,7 +1910,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-7",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 7",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 7, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 240*H230mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 7.",
@@ -1928,7 +1928,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 7 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 7 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 7 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-008",
@@ -1936,7 +1936,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-8",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 8",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 8, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 420*H360mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 8.",
@@ -1954,17 +1954,17 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 8 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 8 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 8 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-009",
     "code": "HL-ASP-009",
-    "slug": "belvai-sorea-modern-led-duvar-apligi",
-    "name": "Belvai & Sorea Modern LED Duvar Apliği",
+    "slug": "belvai-ve-sorea-modern-led-duvar-apligi",
+    "name": "Belvai ve Sorea Modern LED Duvar Apliği",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
-    "description": "Belvai & Sorea Modern LED Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ190*H35.5mm (Belvai) / Φ240*H300mm (Sorea) ölçüleri, Dahili LED (3000K Sıcak Beyaz) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Belvai ve Sorea Modern LED Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ190*H35.5mm (Belvai) / Φ240*H300mm (Sorea) ölçüleri, Dahili LED (3000K Sıcak Beyaz) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 9.",
     "dimensions": "Φ190*H35.5mm (Belvai) / Φ240*H300mm (Sorea)",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
@@ -1980,8 +1980,8 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
-    "seoTitle": "Belvai & Sorea Modern LED Duvar Apliği Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Belvai & Sorea Modern LED Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoTitle": "Belvai ve Sorea Modern LED Duvar Apliği Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Belvai ve Sorea Modern LED Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-010",
@@ -1989,7 +1989,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-10",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 10",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 10, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ230*H230mm ölçüleri, Dahili LED 8W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 10.",
@@ -2009,7 +2009,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 10 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 10 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 10 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-011",
@@ -2017,7 +2017,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-11",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 11",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 11, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ95*H330mm ölçüleri, Dahili LED (3000K Sıcak Beyaz) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 11.",
@@ -2036,7 +2036,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 11 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 11 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 11 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-012",
@@ -2044,7 +2044,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-12",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 12",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 12, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Φ240*H380mm ölçüleri, Dahili LED (3000K Sıcak Beyaz) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 12.",
@@ -2063,17 +2063,17 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 12 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 12 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 12 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-013",
     "code": "HL-ASP-013",
-    "slug": "tirra-eira-tasarim-duvar-apligi",
-    "name": "Tirra & Eira Tasarım Duvar Apliği",
+    "slug": "tirra-ve-eira-tasarim-duvar-apligi",
+    "name": "Tirra ve Eira Tasarım Duvar Apliği",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
-    "description": "Tirra & Eira Tasarım Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L180*W140*H100mm (Tirra-01) / L310*W140*H100mm (Tirra-02) / Φ200mm (Eira) ölçüleri, G9 Duy (1-2 Adet) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Tirra ve Eira Tasarım Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L180*W140*H100mm (Tirra-01) / L310*W140*H100mm (Tirra-02) / Φ200mm (Eira) ölçüleri, G9 Duy (1-2 Adet) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 13.",
     "dimensions": "L180*W140*H100mm (Tirra-01) / L310*W140*H100mm (Tirra-02) / Φ200mm (Eira)",
     "lightingType": "G9 Duy (1-2 Adet)",
@@ -2089,8 +2089,8 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
-    "seoTitle": "Tirra & Eira Tasarım Duvar Apliği Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Tirra & Eira Tasarım Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoTitle": "Tirra ve Eira Tasarım Duvar Apliği Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Tirra ve Eira Tasarım Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-014",
@@ -2098,7 +2098,7 @@ export const PRODUCTS: Product[] = [
     "slug": "modern-dekoratif-led-duvar-apligi-model-14",
     "name": "Modern Dekoratif LED Duvar Apliği - Model 14",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Modern Dekoratif LED Duvar Apliği - Model 14, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L55*W95*H450mm ölçüleri, Dahili LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 14.",
@@ -2117,17 +2117,17 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Modern Dekoratif LED Duvar Apliği - Model 14 Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 14 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Modern Dekoratif LED Duvar Apliği - Model 14 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-015",
     "code": "HL-ASP-015",
-    "slug": "lunis-vion-duvar-apligi",
-    "name": "Lunis & Vion Duvar Apliği",
+    "slug": "lunis-ve-vion-duvar-apligi",
+    "name": "Lunis ve Vion Duvar Apliği",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
-    "description": "Lunis & Vion Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L325*W150*H800mm (Lunis) / L180*W70*H410mm (Vion) ölçüleri, G9*3 Duy (Lunis) / Dahili LED 8W (Vion) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "description": "Lunis ve Vion Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L325*W150*H800mm (Lunis) / L180*W70*H410mm (Vion) ölçüleri, G9*3 Duy (Lunis) / Dahili LED 8W (Vion) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 15.",
     "dimensions": "L325*W150*H800mm (Lunis) / L180*W70*H410mm (Vion)",
     "lightingType": "G9*3 Duy (Lunis) / Dahili LED 8W (Vion)",
@@ -2142,8 +2142,8 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Güvencesiyle Hasarsız Teslimat",
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
-    "seoTitle": "Lunis & Vion Duvar Apliği Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Lunis & Vion Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoTitle": "Lunis ve Vion Duvar Apliği Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Lunis ve Vion Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-016",
@@ -2151,7 +2151,7 @@ export const PRODUCTS: Product[] = [
     "slug": "alba-luks-duvar-apligi",
     "name": "Alba Lüks Duvar Apliği",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "LED Duvar Apliği",
     "description": "Alba Lüks Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. L125*W100*H610mm (Alba) ölçüleri, G9*3 Duy aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 16.",
@@ -2169,7 +2169,7 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "Alba Lüks Duvar Apliği Kahramanmaraş | Hilal Avize",
-    "seoDescription": "Alba Lüks Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "Alba Lüks Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-017",
@@ -2177,7 +2177,7 @@ export const PRODUCTS: Product[] = [
     "slug": "loya-luks-kristal-led-duvar-apligi",
     "name": "LOYA Lüks Kristal LED Duvar Apliği",
     "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik & Spot Aydınlatma",
+    "categoryName": "Aplik ve Spot Aydınlatma",
     "badge": "Lüks Kristal Aplik",
     "description": "LOYA Lüks Kristal LED Duvar Apliği, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. 360*200*H230mm (G: 36 cm / D: 20 cm / Y: 23 cm) ölçüleri, Dahili LED 20W aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
     "shortDescription": "360*200*H230mm boyutlarında altın sarısı gövde, prizmatik kristal taş dizilimi ve 20W LED ışık gücüyle göz alıcı LOYA aplik.",
@@ -2195,6 +2195,866 @@ export const PRODUCTS: Product[] = [
       "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
     ],
     "seoTitle": "LOYA Lüks Kristal LED Duvar Apliği Kahramanmaraş | Hilal Avize",
-    "seoDescription": "LOYA Lüks Kristal LED Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin."
+    "seoDescription": "LOYA Lüks Kristal LED Duvar Apliği modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-001",
+    "code": "HL-AKS-001",
+    "slug": "klasik-lale-ve-karanfil-motifli-el-boyama-cini-kase",
+    "name": "Klasik Lale ve Karanfil Motifli El Boyama Çini Kase",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "El İşçiliği",
+    "description": "Geleneksel Türk çini sanatının zarif siyah, kırmızı ve beyaz kontrastıyla bezenmiş el işçiliği lüks dekoratif sunum ve salon kasesi.",
+    "shortDescription": "Klasik Lale ve Karanfil Motifli El Boyama Çini Kase; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/10.jpg",
+    "images": [
+      "/products/aksesuar/photo/10.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Klasik Lale ve Karanfil Motifli El Boyama Çini Kase Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Klasik Lale ve Karanfil Motifli El Boyama Çini Kase modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-002",
+    "code": "HL-AKS-002",
+    "slug": "kutahya-sanati-cok-renkli-cicekli-cini-meyvelik-kase",
+    "name": "Kütahya Sanatı Çok Renkli Çiçekli Çini Meyvelik Kase",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Geleneksel Sanat",
+    "description": "Zengin floral desenlerle fırınlanmış, salon konsolları ve orta sehpalar için göz alıcı renkli çini kase.",
+    "shortDescription": "Kütahya Sanatı Çok Renkli Çiçekli Çini Meyvelik Kase; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/20.jpg",
+    "images": [
+      "/products/aksesuar/photo/20.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Kütahya Sanatı Çok Renkli Çiçekli Çini Meyvelik Kase Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Kütahya Sanatı Çok Renkli Çiçekli Çini Meyvelik Kase modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-003",
+    "code": "HL-AKS-003",
+    "slug": "mavi-beyaz-kus-motifli-cift-kapakli-luks-cini-kup-vazo",
+    "name": "Mavi Beyaz Kuş Motifli Çift Kapaklı Lüks Çini Küp Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "İkili Set",
+    "description": "Asil kobalt mavisi kuş ve dalga desenleriyle bezeli, altın tepelikli ikili dekoratif kapaklı porselen çini küp vazo.",
+    "shortDescription": "Mavi Beyaz Kuş Motifli Çift Kapaklı Lüks Çini Küp Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/30.jpg",
+    "images": [
+      "/products/aksesuar/photo/30.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Mavi Beyaz Kuş Motifli Çift Kapaklı Lüks Çini Küp Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Mavi Beyaz Kuş Motifli Çift Kapaklı Lüks Çini Küp Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-004",
+    "code": "HL-AKS-004",
+    "slug": "halic-isi-spiral-desenli-kapakli-cini-kup-vazo",
+    "name": "Haliç İşi Spiral Desenli Kapaklı Çini Küp Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Saray Serisi",
+    "description": "Osmanlı Haliç motifi spiral kıvrımları ve altın yaldız detaylı kapağıyla konsol ve büfeler için saray tipi çini küp.",
+    "shortDescription": "Haliç İşi Spiral Desenli Kapaklı Çini Küp Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/40.jpg",
+    "images": [
+      "/products/aksesuar/photo/40.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Haliç İşi Spiral Desenli Kapaklı Çini Küp Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Haliç İşi Spiral Desenli Kapaklı Çini Küp Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-005",
+    "code": "HL-AKS-005",
+    "slug": "turkuaz-zeminli-klasik-lale-cini-ibrik-ve-vazo-takimi",
+    "name": "Turkuaz Zeminli Klasik Lale Çini İbrik ve Vazo Takımı",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Özel Koleksiyon",
+    "description": "Saray mutfağı ve köşk dekorasyonunun simgesi olan el boyaması zarif boyunlu çini ibrik ve vazo tasarımı.",
+    "shortDescription": "Turkuaz Zeminli Klasik Lale Çini İbrik ve Vazo Takımı; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/50.jpg",
+    "images": [
+      "/products/aksesuar/photo/50.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Turkuaz Zeminli Klasik Lale Çini İbrik ve Vazo Takımı Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Turkuaz Zeminli Klasik Lale Çini İbrik ve Vazo Takımı modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-006",
+    "code": "HL-AKS-006",
+    "slug": "geleneksel-rumi-ve-hatayi-desenli-genis-cini-ayakli-tabak",
+    "name": "Geleneksel Rumi ve Hatayi Desenli Geniş Çini Ayaklı Tabak",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Büyük Boy",
+    "description": "Büyük boy el işçiliği ayaklı dekoratif sunum tabağı; yemek masası ve vitrinler için prestijli sanat eseri.",
+    "shortDescription": "Geleneksel Rumi ve Hatayi Desenli Geniş Çini Ayaklı Tabak; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/60.jpg",
+    "images": [
+      "/products/aksesuar/photo/60.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Geleneksel Rumi ve Hatayi Desenli Geniş Çini Ayaklı Tabak Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Geleneksel Rumi ve Hatayi Desenli Geniş Çini Ayaklı Tabak modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-007",
+    "code": "HL-AKS-007",
+    "slug": "kobalt-mavisi-ve-altin-yaldizli-kapakli-zencefil-kupu",
+    "name": "Kobalt Mavisi ve Altın Yaldızlı Kapaklı Zencefil Küpü",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "İthal Tasarım",
+    "description": "Uzak Doğu porselen geleneğiyle Türk çinisini harmanlayan gösterişli kapaklı dekoratif zencefil küpü.",
+    "shortDescription": "Kobalt Mavisi ve Altın Yaldızlı Kapaklı Zencefil Küpü; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/70.jpg",
+    "images": [
+      "/products/aksesuar/photo/70.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Kobalt Mavisi ve Altın Yaldızlı Kapaklı Zencefil Küpü Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Kobalt Mavisi ve Altın Yaldızlı Kapaklı Zencefil Küpü modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-008",
+    "code": "HL-AKS-008",
+    "slug": "osmanli-bahce-kuslari-ve-cicek-motifli-silindir-cini-vazo",
+    "name": "Osmanlı Bahçe Kuşları ve Çiçek Motifli Silindir Çini Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Doğal Boya",
+    "description": "Canlı doğal tonlarda el boyaması çiçekler ve kuş figürleriyle baharın enerjisini mekanınıza taşıyan çini vazo.",
+    "shortDescription": "Osmanlı Bahçe Kuşları ve Çiçek Motifli Silindir Çini Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/80.jpg",
+    "images": [
+      "/products/aksesuar/photo/80.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Osmanlı Bahçe Kuşları ve Çiçek Motifli Silindir Çini Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Osmanlı Bahçe Kuşları ve Çiçek Motifli Silindir Çini Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-009",
+    "code": "HL-AKS-009",
+    "slug": "zumrut-yesili-ve-altin-patineli-dekoratif-cini-gondol-kase",
+    "name": "Zümrüt Yeşili ve Altın Patineli Dekoratif Çini Gondol Kase",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Gondol Tasarım",
+    "description": "Özgün formlu gondol yapısı ve yeşil-altın tonlarıyla konsol ve dresuar üstü için lüks odak noktası.",
+    "shortDescription": "Zümrüt Yeşili ve Altın Patineli Dekoratif Çini Gondol Kase; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/90.jpg",
+    "images": [
+      "/products/aksesuar/photo/90.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Zümrüt Yeşili ve Altın Patineli Dekoratif Çini Gondol Kase Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Zümrüt Yeşili ve Altın Patineli Dekoratif Çini Gondol Kase modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-010",
+    "code": "HL-AKS-010",
+    "slug": "el-isciligi-kirmizi-mercan-ve-nar-motifli-cini-bereket-kupu",
+    "name": "El İşçiliği Kırmızı Mercan ve Nar Motifli Çini Bereket Küpü",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Bereket Serisi",
+    "description": "Bolluk ve bereketin kadim simgesi nar desenleriyle bezeli, parlak sırlı el yapımı dekoratif küp.",
+    "shortDescription": "El İşçiliği Kırmızı Mercan ve Nar Motifli Çini Bereket Küpü; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/10.jpg",
+    "images": [
+      "/products/aksesuar/photo/10.jpg",
+      "/products/aksesuar/photo/100.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "El İşçiliği Kırmızı Mercan ve Nar Motifli Çini Bereket Küpü Kahramanmaraş | Hilal Avize",
+    "seoDescription": "El İşçiliği Kırmızı Mercan ve Nar Motifli Çini Bereket Küpü modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-011",
+    "code": "HL-AKS-011",
+    "slug": "geometrik-selcuklu-yildizi-motifli-el-yapimi-cini-kase",
+    "name": "Geometrik Selçuklu Yıldızı Motifli El Yapımı Çini Kase",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Selçuklu Koleksiyonu",
+    "description": "Sekiz köşeli Selçuklu yıldızı ve geometrik hatlarıyla modern ve klasik mekanlara derinlik katan özel çini kase.",
+    "shortDescription": "Geometrik Selçuklu Yıldızı Motifli El Yapımı Çini Kase; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/110.jpg",
+    "images": [
+      "/products/aksesuar/photo/110.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Geometrik Selçuklu Yıldızı Motifli El Yapımı Çini Kase Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Geometrik Selçuklu Yıldızı Motifli El Yapımı Çini Kase modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-012",
+    "code": "HL-AKS-012",
+    "slug": "cintemani-ve-benek-desenli-masif-dekoratif-cini-samdan",
+    "name": "Çintemani ve Benek Desenli Masif Dekoratif Çini Şamdan",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Çintemani Serisi",
+    "description": "Güç ve asaleti simgeleyen üç benek çintemani motifiyle işlenmiş, romantik akşam yemekleri için ikili çini şamdan.",
+    "shortDescription": "Çintemani ve Benek Desenli Masif Dekoratif Çini Şamdan; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/120.jpg",
+    "images": [
+      "/products/aksesuar/photo/120.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Çintemani ve Benek Desenli Masif Dekoratif Çini Şamdan Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Çintemani ve Benek Desenli Masif Dekoratif Çini Şamdan modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-013",
+    "code": "HL-AKS-013",
+    "slug": "ozel-tasarim-cicek-acmis-nar-agaci-figurlu-cini-pano-tabak",
+    "name": "Özel Tasarım Çiçek Açmış Nar Ağacı Figürlü Çini Pano Tabak",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Pano / Tabak",
+    "description": "Masa üstü standı veya duvar askısı ile sergilenebilen, el boyaması nar ağacı motifli özel çini pano tabak.",
+    "shortDescription": "Özel Tasarım Çiçek Açmış Nar Ağacı Figürlü Çini Pano Tabak; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/130.jpg",
+    "images": [
+      "/products/aksesuar/photo/130.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Özel Tasarım Çiçek Açmış Nar Ağacı Figürlü Çini Pano Tabak Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Özel Tasarım Çiçek Açmış Nar Ağacı Figürlü Çini Pano Tabak modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-014",
+    "code": "HL-AKS-014",
+    "slug": "siyah-zemin-uzeri-altin-yaldiz-islemeli-luks-dekoratif-vazo",
+    "name": "Siyah Zemin Üzeri Altın Yaldız İşlemeli Lüks Dekoratif Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Modern ve Klasik",
+    "description": "Modern siyah mat zemin ile parıltılı altın yaldız işlemelerin kusursuz uyumunu sunan seçkin vazo.",
+    "shortDescription": "Siyah Zemin Üzeri Altın Yaldız İşlemeli Lüks Dekoratif Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/140.jpg",
+    "images": [
+      "/products/aksesuar/photo/140.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Siyah Zemin Üzeri Altın Yaldız İşlemeli Lüks Dekoratif Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Siyah Zemin Üzeri Altın Yaldız İşlemeli Lüks Dekoratif Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-015",
+    "code": "HL-AKS-015",
+    "slug": "klasik-turk-cinisi-balik-ve-deniz-dalgalari-motifli-kase",
+    "name": "Klasik Türk Çinisi Balık ve Deniz Dalgaları Motifli Kase",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Mavi Beyaz",
+    "description": "Mavinin en derin tonlarında deniz canlıları ve akışkan su desenleriyle tasarlanmış ferahlatıcı çini kase.",
+    "shortDescription": "Klasik Türk Çinisi Balık ve Deniz Dalgaları Motifli Kase; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/150.jpg",
+    "images": [
+      "/products/aksesuar/photo/150.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Klasik Türk Çinisi Balık ve Deniz Dalgaları Motifli Kase Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Klasik Türk Çinisi Balık ve Deniz Dalgaları Motifli Kase modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-016",
+    "code": "HL-AKS-016",
+    "slug": "dikey-formlu-ince-boyunlu-el-boyamasi-cini-karaf-vazo",
+    "name": "Dikey Formlu İnce Boyunlu El Boyaması Çini Karaf Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Zarif Silüet",
+    "description": "İnce uzun silüeti ve zarif kıvrımlarıyla sehpa ve kitaplık köşeleri için heykelsi bir estetik sunar.",
+    "shortDescription": "Dikey Formlu İnce Boyunlu El Boyaması Çini Karaf Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/160.jpg",
+    "images": [
+      "/products/aksesuar/photo/160.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Dikey Formlu İnce Boyunlu El Boyaması Çini Karaf Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dikey Formlu İnce Boyunlu El Boyaması Çini Karaf Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-017",
+    "code": "HL-AKS-017",
+    "slug": "cok-renkli-cini-ciceklik-ve-ozel-tasarim-bahce-saksisi",
+    "name": "Çok Renkli Çini Çiçeklik ve Özel Tasarım Bahçe Saksısı",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Çiçeklik Saksı",
+    "description": "İç mekan bitkileri ve kuru çiçek aranjmanları için lüks sırlı fırın çini dekoratif çiçeklik saksı.",
+    "shortDescription": "Çok Renkli Çini Çiçeklik ve Özel Tasarım Bahçe Saksısı; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/170.jpg",
+    "images": [
+      "/products/aksesuar/photo/170.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Çok Renkli Çini Çiçeklik ve Özel Tasarım Bahçe Saksısı Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Çok Renkli Çini Çiçeklik ve Özel Tasarım Bahçe Saksısı modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-018",
+    "code": "HL-AKS-018",
+    "slug": "osmanli-tugrali-ve-rumi-kivrimli-prestij-cini-vazo",
+    "name": "Osmanlı Tuğralı ve Rumi Kıvrımlı Prestij Çini Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Prestij Obje",
+    "description": "Tarihi derinliği olan motifler ve altın varak süslemeleriyle çalışma odaları ve lüks salonlar için ideal prestij obje.",
+    "shortDescription": "Osmanlı Tuğralı ve Rumi Kıvrımlı Prestij Çini Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/180.jpg",
+    "images": [
+      "/products/aksesuar/photo/180.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Osmanlı Tuğralı ve Rumi Kıvrımlı Prestij Çini Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Osmanlı Tuğralı ve Rumi Kıvrımlı Prestij Çini Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-019",
+    "code": "HL-AKS-019",
+    "slug": "iki-kulplu-antik-formlu-saray-cini-amfora-vazo",
+    "name": "İki Kulplu Antik Formlu Saray Çini Amfora Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Amfora Form",
+    "description": "Grek ve Osmanlı formlarının sentezi olan iki kulplu zarif amfora formunda el boyaması sanat eseri.",
+    "shortDescription": "İki Kulplu Antik Formlu Saray Çini Amfora Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/190.jpg",
+    "images": [
+      "/products/aksesuar/photo/190.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "İki Kulplu Antik Formlu Saray Çini Amfora Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "İki Kulplu Antik Formlu Saray Çini Amfora Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-020",
+    "code": "HL-AKS-020",
+    "slug": "minyatur-bahce-sahneli-el-boyamasi-oval-cini-tabak",
+    "name": "Minyatür Bahçe Sahneli El Boyaması Oval Çini Tabak",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Minyatür Sanatı",
+    "description": "Usta minyatür sanatçılarının elinden çıkmış, saray bahçesindeki yaşamı resmeden özel koleksiyon tabağı.",
+    "shortDescription": "Minyatür Bahçe Sahneli El Boyaması Oval Çini Tabak; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/20.jpg",
+    "images": [
+      "/products/aksesuar/photo/20.jpg",
+      "/products/aksesuar/photo/200.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Minyatür Bahçe Sahneli El Boyaması Oval Çini Tabak Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Minyatür Bahçe Sahneli El Boyaması Oval Çini Tabak modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-021",
+    "code": "HL-AKS-021",
+    "slug": "turkuaz-ve-lacivert-kademeli-cini-cerezlik-ve-mezelik-seti",
+    "name": "Turkuaz ve Lacivert Kademeli Çini Çerezlik ve Mezelik Seti",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Sunum Seti",
+    "description": "Seçkin davet sofralarınızda ve çay saatlerinizde kullanabileceğiniz el yapımı çini sunumluk kase seti.",
+    "shortDescription": "Turkuaz ve Lacivert Kademeli Çini Çerezlik ve Mezelik Seti; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/210.jpg",
+    "images": [
+      "/products/aksesuar/photo/210.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Turkuaz ve Lacivert Kademeli Çini Çerezlik ve Mezelik Seti Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Turkuaz ve Lacivert Kademeli Çini Çerezlik ve Mezelik Seti modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-022",
+    "code": "HL-AKS-022",
+    "slug": "gul-goncasi-ve-bulbul-motifli-klasik-kapakli-cini-sekerlik",
+    "name": "Gül Goncası ve Bülbül Motifli Klasik Kapaklı Çini Şekerlik",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Kapaklı Tasarım",
+    "description": "Türk edebiyatı ve sanatının klasik gül ve bülbül temasını taşıyan, zarif tutma kulplu kapaklı porselen şekerlik.",
+    "shortDescription": "Gül Goncası ve Bülbül Motifli Klasik Kapaklı Çini Şekerlik; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/220.jpg",
+    "images": [
+      "/products/aksesuar/photo/220.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Gül Goncası ve Bülbül Motifli Klasik Kapaklı Çini Şekerlik Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Gül Goncası ve Bülbül Motifli Klasik Kapaklı Çini Şekerlik modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-023",
+    "code": "HL-AKS-023",
+    "slug": "kabartma-dokulu-el-imalati-cini-duvar-askili-sus-tabagi",
+    "name": "Kabartma Dokulu El İmalatı Çini Duvar Askılı Süs Tabağı",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Rölyef Kabartma",
+    "description": "Fasetli kabartma rölyef tekniğiyle üretilmiş, ışık altında üç boyutlu gölgeler oluşturan dekoratif duvar tabağı.",
+    "shortDescription": "Kabartma Dokulu El İmalatı Çini Duvar Askılı Süs Tabağı; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/230.jpg",
+    "images": [
+      "/products/aksesuar/photo/230.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Kabartma Dokulu El İmalatı Çini Duvar Askılı Süs Tabağı Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Kabartma Dokulu El İmalatı Çini Duvar Askılı Süs Tabağı modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-024",
+    "code": "HL-AKS-024",
+    "slug": "karakalem-teknigi-cini-desenli-modern-monokrom-vazo",
+    "name": "Karakalem Tekniği Çini Desenli Modern Monokrom Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Monokrom Seri",
+    "description": "Klasik motiflerin siyah-beyaz çağdaş bir illüstrasyon diliyle yeniden yorumlandığı modern çini vazo.",
+    "shortDescription": "Karakalem Tekniği Çini Desenli Modern Monokrom Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/240.jpg",
+    "images": [
+      "/products/aksesuar/photo/240.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Karakalem Tekniği Çini Desenli Modern Monokrom Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Karakalem Tekniği Çini Desenli Modern Monokrom Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-025",
+    "code": "HL-AKS-025",
+    "slug": "altin-varak-kenarli-gece-mavisi-luks-cini-meyve-tabagi",
+    "name": "Altın Varak Kenarlı Gece Mavisi Lüks Çini Meyve Tabağı",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Altın Varak",
+    "description": "Koyu gece mavisi derin sır üzerine altın yaprak işlemeleriyle ışıldayan geniş servis ve meyve tabağı.",
+    "shortDescription": "Altın Varak Kenarlı Gece Mavisi Lüks Çini Meyve Tabağı; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/250.jpg",
+    "images": [
+      "/products/aksesuar/photo/250.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Altın Varak Kenarlı Gece Mavisi Lüks Çini Meyve Tabağı Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Altın Varak Kenarlı Gece Mavisi Lüks Çini Meyve Tabağı modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-026",
+    "code": "HL-AKS-026",
+    "slug": "lale-devri-motifli-ikili-masa-ustu-cini-biblo-seti",
+    "name": "Lale Devri Motifli İkili Masa Üstü Çini Biblo Seti",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "İkili Biblo",
+    "description": "Konsol, şömine üstü ve dresuar için tasarlanmış ikili zarif dekoratif seramik figüratif obje seti.",
+    "shortDescription": "Lale Devri Motifli İkili Masa Üstü Çini Biblo Seti; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/260.jpg",
+    "images": [
+      "/products/aksesuar/photo/260.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Lale Devri Motifli İkili Masa Üstü Çini Biblo Seti Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Lale Devri Motifli İkili Masa Üstü Çini Biblo Seti modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-027",
+    "code": "HL-AKS-027",
+    "slug": "mavi-halic-isi-el-yapimi-dekoratif-cini-ayakli-vazo",
+    "name": "Mavi Haliç İşi El Yapımı Dekoratif Çini Ayaklı Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Ayaklı Kaide",
+    "description": "Yüksek ayaklı kaidesi ve ince detaylı Haliç deseniyle salonunuzun baş köşesine yakışan seçkin bir vazo.",
+    "shortDescription": "Mavi Haliç İşi El Yapımı Dekoratif Çini Ayaklı Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/270.jpg",
+    "images": [
+      "/products/aksesuar/photo/270.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Mavi Haliç İşi El Yapımı Dekoratif Çini Ayaklı Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Mavi Haliç İşi El Yapımı Dekoratif Çini Ayaklı Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "AKS-028",
+    "code": "HL-AKS-028",
+    "slug": "ozel-firin-cini-sanati-cicek-buketi-motifli-buyuk-boy-vazo",
+    "name": "Özel Fırın Çini Sanatı Çiçek Buketi Motifli Büyük Boy Vazo",
+    "categorySlug": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "badge": "Büyük Boy Salon",
+    "description": "Dört mevsim çiçeklerinin en canlı tonlarıyla bezenmiş, gösterişli ve göz alıcı büyük boy salon vazosu.",
+    "shortDescription": "Özel Fırın Çini Sanatı Çiçek Buketi Motifli Büyük Boy Vazo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Dekoratif Çini / Sanat Objesi",
+    "branch": "showroom",
+    "image": "/products/aksesuar/photo/280.jpg",
+    "images": [
+      "/products/aksesuar/photo/280.jpg"
+    ],
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ],
+    "seoTitle": "Özel Fırın Çini Sanatı Çiçek Buketi Motifli Büyük Boy Vazo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Özel Fırın Çini Sanatı Çiçek Buketi Motifli Büyük Boy Vazo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TBL-001",
+    "code": "HL-TBL-001",
+    "slug": "iznik-cini-sanati-aynali-pano-tablo",
+    "name": "İznik Çini Sanatı Özel Tasarım Aynalı Pano Tablo",
+    "categorySlug": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "badge": "Özel Sanat Eseri",
+    "description": "Geleneksel İznik lale ve karanfil motifleriyle bezenmiş el boyaması çini karolar ve özel oymalı ahşap çerçeve içine yerleştirilmiş lüks aynalı dekoratif pano tablo. Mekana hem derinlik hem de asil bir saray zarafeti katar.",
+    "shortDescription": "İznik Çini Sanatı Özel Tasarım Aynalı Pano Tablo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Duvar Sanat Eseri",
+    "branch": "showroom",
+    "image": "/products/tablo/photo/10.jpg",
+    "images": [
+      "/products/tablo/photo/10.jpg"
+    ],
+    "features": [
+      "Orijinal el boyaması İznik çini karolar",
+      "Özel oymalı lüks ahşap varak çerçeve",
+      "İç aynalı derinlik katan tasarım",
+      "Salon, antre ve konsol üstü için mükemmel odak noktası"
+    ],
+    "seoTitle": "İznik Çini Sanatı Özel Tasarım Aynalı Pano Tablo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "İznik Çini Sanatı Özel Tasarım Aynalı Pano Tablo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TBL-002",
+    "code": "HL-TBL-002",
+    "slug": "dolunayda-sahlanan-asil-at-cini-tablo",
+    "name": "Dolunayda Şahlanan Asil At Çini Sanat Tablosu",
+    "categorySlug": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "badge": "Nadir Koleksiyon",
+    "description": "Dolunay fonunda koşan siyah asil at figürünün el işçiliği çini seramik üzerine işlendiği, kadife paspartu ve altın patineli oymalı çerçevesiyle büyüleyen seçkin bir sanat eseri.",
+    "shortDescription": "Dolunayda Şahlanan Asil At Çini Sanat Tablosu; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Duvar Sanat Eseri",
+    "branch": "showroom",
+    "image": "/products/tablo/photo/20.jpg",
+    "images": [
+      "/products/tablo/photo/20.jpg"
+    ],
+    "features": [
+      "Kabartmalı el yapımı seramik çini pano",
+      "Altın varak patineli masif ahşap çerçeve",
+      "Siyah kadife lüks paspartu koruma",
+      "Koleksiyonluk prestijli duvar sanatı"
+    ],
+    "seoTitle": "Dolunayda Şahlanan Asil At Çini Sanat Tablosu Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Dolunayda Şahlanan Asil At Çini Sanat Tablosu modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TBL-003",
+    "code": "HL-TBL-003",
+    "slug": "cifte-kumru-seramik-sanat-tablosu",
+    "name": "Çifte Kumru ve Çiçek Dalı El Boyama Seramik Tablo",
+    "categorySlug": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "badge": "El İşçiliği",
+    "description": "Bahar dalında huzurla tüneyen çifte kumru kuşlarının zarafetini yansıtan porselen seramik karo, derin siyah dokulu ahşap çerçeve ve kadife paspartu ile çerçevelenmiştir.",
+    "shortDescription": "Çifte Kumru ve Çiçek Dalı El Boyama Seramik Tablo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Duvar Sanat Eseri",
+    "branch": "showroom",
+    "image": "/products/tablo/photo/30.jpg",
+    "images": [
+      "/products/tablo/photo/30.jpg"
+    ],
+    "features": [
+      "Özel fırınlanmış dayanıklı porselen karo",
+      "Dokulu siyah masif ahşap çerçeve",
+      "El boyaması özgün sanatçı imzası",
+      "Huzur veren doğal renk tonları"
+    ],
+    "seoTitle": "Çifte Kumru ve Çiçek Dalı El Boyama Seramik Tablo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Çifte Kumru ve Çiçek Dalı El Boyama Seramik Tablo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TBL-004",
+    "code": "HL-TBL-004",
+    "slug": "kis-manzarasi-oval-porselen-sanat-tablosu",
+    "name": "Kış Manzarası Oval Porselen Sanat Tablosu",
+    "categorySlug": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "badge": "Özel Tasarım",
+    "description": "Kar altındaki tarihi malikane ve kış ormanını betimleyen kobalt mavisi el boyaması oval porselen levha, marin lacivert paspartu ve beyaz masif çerçevesiyle ferah bir atmosfer sunar.",
+    "shortDescription": "Kış Manzarası Oval Porselen Sanat Tablosu; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Duvar Sanat Eseri",
+    "branch": "showroom",
+    "image": "/products/tablo/photo/40.jpg",
+    "images": [
+      "/products/tablo/photo/40.jpg"
+    ],
+    "features": [
+      "Özel oval fırın porselen levha",
+      "Klasik kobalt mavisi kış peyzajı",
+      "Beyaz eskitme ahşap çerçeve",
+      "Sanatçı sertifikalı özel üretim"
+    ],
+    "seoTitle": "Kış Manzarası Oval Porselen Sanat Tablosu Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Kış Manzarası Oval Porselen Sanat Tablosu modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "TBL-005",
+    "code": "HL-TBL-005",
+    "slug": "naturmort-zeytinyagi-ve-meyveler-oval-porselen-tablo",
+    "name": "Natürmort Zeytinyağı ve Meyveler Oval Porselen Tablo",
+    "categorySlug": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "badge": "El Boyaması",
+    "description": "Zeytinyağı karafı, üzüm salkımları ve taze şeftali kompozisyonunu sıcak Akdeniz renkleriyle buluşturan oval porselen sanat panosu. Eskitme çerçevesi ve lacivert kadife fonu ile mutfak, yemek odası ve salonlar için idealdir.",
+    "shortDescription": "Natürmort Zeytinyağı ve Meyveler Oval Porselen Tablo; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.",
+    "dimensions": "",
+    "lightingType": "Duvar Sanat Eseri",
+    "branch": "showroom",
+    "image": "/products/tablo/photo/50.jpg",
+    "images": [
+      "/products/tablo/photo/50.jpg"
+    ],
+    "features": [
+      "Canlı mineral boyalarla el yapımı porselen",
+      "Eskitme altın ve mavi tonlu özel çerçeve",
+      "Lacivert kadife paspartu",
+      "Yemek odası ve salonlar için sıcak bir dokunuş"
+    ],
+    "seoTitle": "Natürmort Zeytinyağı ve Meyveler Oval Porselen Tablo Kahramanmaraş | Hilal Avize",
+    "seoDescription": "Natürmort Zeytinyağı ve Meyveler Oval Porselen Tablo modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin."
   }
 ];

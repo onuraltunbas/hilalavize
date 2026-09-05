@@ -1,0 +1,87 @@
+[
+  {
+    "no": 1,
+    "id": "TBL-001",
+    "name": "İznik Çini Sanatı Özel Tasarım Aynalı Pano Tablo",
+    "slug": "iznik-cini-sanati-aynali-pano-tablo",
+    "category": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "categorySlug": "tablo",
+    "badge": "Özel Sanat Eseri",
+    "description": "Geleneksel İznik lale ve karanfil motifleriyle bezenmiş el boyaması çini karolar ve özel oymalı ahşap çerçeve içine yerleştirilmiş lüks aynalı dekoratif pano tablo. Mekana hem derinlik hem de asil bir saray zarafeti katar.",
+    "features": [
+      "Orijinal el boyaması İznik çini karolar",
+      "Özel oymalı lüks ahşap varak çerçeve",
+      "İç aynalı derinlik katan tasarım",
+      "Salon, antre ve konsol üstü için mükemmel odak noktası"
+    ]
+  },
+  {
+    "no": 2,
+    "id": "TBL-002",
+    "name": "Dolunayda Şahlanan Asil At Çini Sanat Tablosu",
+    "slug": "dolunayda-sahlanan-asil-at-cini-tablo",
+    "category": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "categorySlug": "tablo",
+    "badge": "Nadir Koleksiyon",
+    "description": "Dolunay fonunda koşan siyah asil at figürünün el işçiliği çini seramik üzerine işlendiği, kadife paspartu ve altın patineli oymalı çerçevesiyle büyüleyen seçkin bir sanat eseri.",
+    "features": [
+      "Kabartmalı el yapımı seramik çini pano",
+      "Altın varak patineli masif ahşap çerçeve",
+      "Siyah kadife lüks paspartu koruma",
+      "Koleksiyonluk prestijli duvar sanatı"
+    ]
+  },
+  {
+    "no": 3,
+    "id": "TBL-003",
+    "name": "Çifte Kumru ve Çiçek Dalı El Boyama Seramik Tablo",
+    "slug": "cifte-kumru-seramik-sanat-tablosu",
+    "category": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "categorySlug": "tablo",
+    "badge": "El İşçiliği",
+    "description": "Bahar dalında huzurla tüneyen çifte kumru kuşlarının zarafetini yansıtan porselen seramik karo, derin siyah dokulu ahşap çerçeve ve kadife paspartu ile çerçevelenmiştir.",
+    "features": [
+      "Özel fırınlanmış dayanıklı porselen karo",
+      "Dokulu siyah masif ahşap çerçeve",
+      "El boyaması özgün sanatçı imzası",
+      "Huzur veren doğal renk tonları"
+    ]
+  },
+  {
+    "no": 4,
+    "id": "TBL-004",
+    "name": "Kış Manzarası Oval Porselen Sanat Tablosu",
+    "slug": "kis-manzarasi-oval-porselen-sanat-tablosu",
+    "category": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "categorySlug": "tablo",
+    "badge": "Özel Tasarım",
+    "description": "Kar altındaki tarihi malikane ve kış ormanını betimleyen kobalt mavisi el boyaması oval porselen levha, marin lacivert paspartu ve beyaz masif çerçevesiyle ferah bir atmosfer sunar.",
+    "features": [
+      "Özel oval fırın porselen levha",
+      "Klasik kobalt mavisi kış peyzajı",
+      "Beyaz eskitme ahşap çerçeve",
+      "Sanatçı sertifikalı özel üretim"
+    ]
+  },
+  {
+    "no": 5,
+    "id": "TBL-005",
+    "name": "Natürmort Zeytinyağı ve Meyveler Oval Porselen Tablo",
+    "slug": "naturmort-zeytinyagi-ve-meyveler-oval-porselen-tablo",
+    "category": "tablo",
+    "categoryName": "Dekoratif Tablo Koleksiyonu",
+    "categorySlug": "tablo",
+    "badge": "El Boyaması",
+    "description": "Zeytinyağı karafı, üzüm salkımları ve taze şeftali kompozisyonunu sıcak Akdeniz renkleriyle buluşturan oval porselen sanat panosu. Eskitme çerçevesi ve lacivert kadife fonu ile mutfak, yemek odası ve salonlar için idealdir.",
+    "features": [
+      "Canlı mineral boyalarla el yapımı porselen",
+      "Eskitme altın ve mavi tonlu özel çerçeve",
+      "Lacivert kadife paspartu",
+      "Yemek odası ve salonlar için sıcak bir dokunuş"
+    ]
+  }
+]

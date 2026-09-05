@@ -36,7 +36,7 @@ export default function LightingGuidePage() {
       desc: "Yemek masası üstü, mutfak tezgahı veya okuma köşesi gibi spesifik alanlara odaklanan fonksiyonel sarkıtlar ve yönlendirilebilir spotlardır.",
     },
     {
-      title: "3. Vurgu & Derinlik Aydınlatması",
+      title: "3. Vurgu ve Derinlik Aydınlatması",
       icon: Layers,
       desc: "Tabloları, duvar dokularını, nişleri veya mimari detayları öne çıkaran şık duvar aplikleri ve ray spot sistemleridir.",
     },
@@ -84,7 +84,7 @@ export default function LightingGuidePage() {
           </p>
         </div>
 
-        {/* Section 1: Visual & Core Definition */}
+        {/* Section 1: Visual ve Core Definition */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="relative h-80 sm:h-[450px] w-full rounded-2xl overflow-hidden bg-surface-subtle border border-border shadow-sm">
             <Image
@@ -110,7 +110,7 @@ export default function LightingGuidePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               <div className="p-3.5 rounded-xl dgaraj-card space-y-1">
                 <div className="text-xs font-bold text-foreground flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-bronze" /> Derinlik & Hacim
+                  <CheckCircle2 className="w-3.5 h-3.5 text-bronze" /> Derinlik ve Hacim
                 </div>
                 <p className="text-[11px] text-muted-foreground">Odanızı olduğundan daha geniş ve ferah gösterir.</p>
               </div>
@@ -156,7 +156,7 @@ export default function LightingGuidePage() {
           </div>
         </div>
 
-        {/* Section 3: Kelvin & Color Temperature Guide */}
+        {/* Section 3: Kelvin ve Color Temperature Guide */}
         <div className="dgaraj-card p-6 sm:p-10 space-y-6">
           <div className="space-y-2">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">

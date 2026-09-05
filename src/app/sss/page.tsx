@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { FaqSection } from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Sıkça Sorulan Sorular (SSS) | Hilal Avize & Elektrik",
+  title: "Sıkça Sorulan Sorular (SSS) | Hilal Avize ve Elektrik",
   description:
     "Avize seçimi, kristal taş kalitesi, montaj ve teslimat garantisi, elektrik işlemleri hakkında merak edilen tüm sorular ve yanıtları.",
 };

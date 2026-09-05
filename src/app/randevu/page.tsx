@@ -4,7 +4,7 @@ import { ConsultationForm } from "@/components/ConsultationForm";
 import { TrustBadges } from "@/components/TrustBadges";
 
 export const metadata: Metadata = {
-  title: "Ücretsiz Aydınlatma Danışmanlığı & Randevu | Hilal Avize",
+  title: "Ücretsiz Aydınlatma Danışmanlığı ve Randevu | Hilal Avize",
   description:
     "Evinize en uygun avize ve aydınlatma modelini seçmek için uzman danışmanlarımızla iletişime geçin veya showroom randevusu oluşturun.",
 };

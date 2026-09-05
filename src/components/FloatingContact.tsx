@@ -23,7 +23,7 @@ export function FloatingContact() {
           <div className="flex items-center justify-between pb-3 border-b border-border">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-sm font-bold text-foreground">Canlı İletişim & Danışma</span>
+              <span className="text-sm font-bold text-foreground">Canlı İletişim ve Danışma</span>
             </div>
             <button
               onClick={() => setIsOpen(false)}
@@ -37,7 +37,7 @@ export function FloatingContact() {
             {/* Showroom Contact */}
             <div className="bg-surface-subtle p-3.5 rounded-xl border border-border">
               <div className="text-xs font-bold text-bronze flex items-center gap-1.5 mb-1 uppercase tracking-wider">
-                <Store className="w-3.5 h-3.5" /> Avize & Dekorasyon Showroom
+                <Store className="w-3.5 h-3.5" /> Avize ve Dekorasyon Showroom
               </div>
               <p className="text-[11px] text-muted-foreground mb-2.5">
                 Avize danışmanlığı, lüks koleksiyonlar ve showroom randevusu.
@@ -59,10 +59,10 @@ export function FloatingContact() {
             {/* Electrical Store Contact */}
             <div className="bg-surface-subtle p-3.5 rounded-xl border border-border">
               <div className="text-xs font-bold text-bronze flex items-center gap-1.5 mb-1 uppercase tracking-wider">
-                <Zap className="w-3.5 h-3.5" /> Elektrik & Tesisat Şubesi
+                <Zap className="w-3.5 h-3.5" /> Elektrik ve Tesisat Şubesi
               </div>
               <p className="text-[11px] text-muted-foreground mb-2.5">
-                Elektrik malzemeleri, cam anahtar-priz, priz montajı & sigorta işleri (Murat Bilal).
+                Elektrik malzemeleri, cam anahtar-priz, priz montajı ve sigorta işleri (Murat Bilal).
               </p>
               <div className="pt-1">
                 <a
@@ -108,7 +108,7 @@ export function FloatingContact() {
           <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
         </span>
         <MessageCircle className="w-4 h-4" />
-        <span className="text-xs tracking-wide pr-0.5">Danışma & Fiyat</span>
+        <span className="text-xs tracking-wide pr-0.5">Danışma ve Fiyat</span>
       </button>
     </div>
   );

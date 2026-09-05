@@ -38,7 +38,7 @@ export const FAQS: FAQItem[] = [
     id: "faq-5",
     question: "İki şubenizin çalışma saatleri ve adresleri nedir?",
     answer:
-      "Her iki şubemiz de Kahramanmaraş Onikişubat Yirmiikigün Mahallesi'ndedir. Pazar hariç haftanın 6 günü 09:00 - 17:00 saatleri arasında kesintisiz hizmet vermekteyiz. Avize & Aksesuar Showroomumuz Umut Kent Sitesi F Blok altı No: 4A'da, Elektrik Şubemiz ise Eymen Sitesi altı No: 12'dedir.",
+      "Her iki şubemiz de Kahramanmaraş Onikişubat Yirmiikigün Mahallesi'ndedir. Pazar hariç haftanın 6 günü 09:00 - 17:00 saatleri arasında kesintisiz hizmet vermekteyiz. Avize ve Aksesuar Showroomumuz Umut Kent Sitesi F Blok altı No: 4A'da, Elektrik Şubemiz ise Eymen Sitesi altı No: 12'dedir.",
     category: "showroom",
   },
   {

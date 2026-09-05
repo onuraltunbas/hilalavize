@@ -80,7 +80,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     description: product.description,
     brand: {
       "@type": "Brand",
-      name: "Hilal Avize & Elektrik",
+      name: "Hilal Avize ve Elektrik",
     },
     offers: {
       "@type": "AggregateOffer",
@@ -141,14 +141,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
               {/* Technical Specifications */}
               <div className="dgaraj-card p-4 sm:p-5 space-y-2.5 text-xs sm:text-sm">
-                {product.dimensions && product.dimensions.toLowerCase() !== "nope" && (
-                  <div className="flex justify-between py-1 border-b border-border">
-                    <span className="text-muted-foreground flex items-center gap-2">
-                      <Ruler className="w-3.5 h-3.5 text-bronze" /> Boyutlar / Ölçüler:
-                    </span>
-                    <span className="font-semibold text-foreground">{product.dimensions}</span>
-                  </div>
-                )}
+                {product.dimensions &&
+                  product.dimensions.toLowerCase() !== "nope" &&
+                  product.categorySlug !== "tablo" &&
+                  product.categorySlug !== "aksesuar" && (
+                    <div className="flex justify-between py-1 border-b border-border">
+                      <span className="text-muted-foreground flex items-center gap-2">
+                        <Ruler className="w-3.5 h-3.5 text-bronze" /> Boyutlar / Ölçüler:
+                      </span>
+                      <span className="font-semibold text-foreground">{product.dimensions}</span>
+                    </div>
+                  )}
                 {product.lightingType && product.lightingType.toLowerCase() !== "nope" && (
                   <div className="flex justify-between py-1 border-b border-border">
                     <span className="text-muted-foreground flex items-center gap-2">
@@ -187,7 +190,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             <div className="p-5 rounded-xl dgaraj-card space-y-3">
               <div className="text-xs text-muted-foreground flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-bronze" />
-                <span>Kırılmaya karşı garantili ambalaj & Uzman montaj desteği</span>
+                <span>Kırılmaya karşı garantili ambalaj ve Uzman montaj desteği</span>
               </div>
 
               <div>

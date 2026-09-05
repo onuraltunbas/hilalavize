@@ -28,24 +28,31 @@ const CATEGORY_CONFIGS = {
   },
   "tekli-avizeler": {
     slug: "tekli-avizeler",
-    name: "Tekli Avizeler & Sarkıtlar",
+    name: "Tekli Avizeler ve Sarkıtlar",
     prefix: "TKL",
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
   },
   "aplik-ve-spotlar": {
     slug: "aplik-ve-spotlar",
-    name: "Aplik & Spot Aydınlatma",
+    name: "Aplik ve Spot Aydınlatma",
     prefix: "ASP",
     defaultBranch: "showroom",
     defaultImage: "/images/800x800_dekoratif_duvar_aplik.jpg",
   },
   aksesuar: {
     slug: "aksesuar",
-    name: "Lüks Aksesuar & Çini Koleksiyonu",
+    name: "Lüks Aksesuar ve Çini Koleksiyonu",
     prefix: "AKS",
     defaultBranch: "showroom",
-    defaultImage: "/images/800x800_ufleme_cam_vazo_aksesuar.jpg",
+    defaultImage: "/products/aksesuar/photo/10.jpg",
+  },
+  tablo: {
+    slug: "tablo",
+    name: "Dekoratif Tablo Koleksiyonu",
+    prefix: "TBL",
+    defaultBranch: "showroom",
+    defaultImage: "/products/tablo/photo/10.jpg",
   },
   "yerli-urunler": {
     slug: "yerli-urunler",
@@ -258,13 +265,20 @@ function processAllProducts() {
         }
       }
 
-      // Akıllı Ölçü / Boyut (Ölçü yazılmazsa 'Ayarlanabilir Yükseklik / Standart Ölçü' atanır)
-      const rawDim = item.dimensions || item.olculer || item.boyutlar;
-      const dimensions = rawDim && rawDim.trim() !== "" ? rawDim.trim() : "Ayarlanabilir Yükseklik / Standart Ölçü";
+      // Akıllı Ölçü / Boyut (Tablo ve aksesuar için kullanıcı talebiyle boyut yazılmaz)
+      const isDimensionless = catSlug === "tablo" || catSlug === "aksesuar";
+      const rawDim = isDimensionless ? "" : (item.dimensions || item.olculer || item.boyutlar);
+      const dimensions = isDimensionless ? "" : (rawDim && rawDim.trim() !== "" ? rawDim.trim() : "Ayarlanabilir Yükseklik / Standart Ölçü");
 
       // Akıllı Aydınlatma / Duy
       const rawLight = item.lightingType || item.duy || item.aydinlatma;
-      const lightingType = rawLight && rawLight.trim() !== "" ? rawLight.trim() : (catSlug === "avizeler" || catSlug === "aplikler" || catSlug === "spot-ve-ray-spot" ? "Dahili LED / E14-E27 Uyumlu" : "Dekoratif Aydınlatma / Obje");
+      const lightingType = isDimensionless
+        ? (catSlug === "tablo" ? "Duvar Sanat Eseri" : "Dekoratif Çini / Sanat Objesi")
+        : (rawLight && rawLight.trim() !== ""
+          ? rawLight.trim()
+          : (catSlug === "avizeler" || catSlug === "aplikler" || catSlug === "spot-ve-ray-spot"
+            ? "Dahili LED / E14-E27 Uyumlu"
+            : "Dekoratif Aydınlatma / Obje"));
       const branch = item.branch || catConfig.defaultBranch;
       const badge = item.badge || undefined;
       const subcategory = item.subcategory || item.altKategori || undefined;
@@ -272,26 +286,36 @@ function processAllProducts() {
       const shortDescription =
         item.shortDescription ||
         item.kisaAciklama ||
-        `${name}; ${dimensions} ölçüleri ve ${lightingType} aydınlatması ile yaşam alanlarınıza değer katar.`;
+        (isDimensionless
+          ? `${name}; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.`
+          : `${name}; ${dimensions} ölçüleri ve ${lightingType} aydınlatması ile yaşam alanlarınıza değer katar.`);
 
       const description =
         item.description ||
         item.aciklama ||
-        `${name}, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. ${dimensions} ölçüleri, ${lightingType} aydınlatması ile estetik ve yüksek verimli ışık sağlar.`;
+        (isDimensionless
+          ? `${name}, Kahramanmaraş Hilal Showroom özel koleksiyonu olarak sunulmaktadır. El işçiliği detayları ve estetik hatlarıyla mekanınızın en prestijli odak noktasıdır.`
+          : `${name}, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. ${dimensions} ölçüleri, ${lightingType} aydınlatması ile estetik ve yüksek verimli ışık sağlar.`);
 
       const features = Array.isArray(item.features)
         ? item.features
-        : [
-            `${lightingType}`,
-            `${dimensions}`,
-            "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-            "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği",
-          ];
+        : (isDimensionless
+            ? [
+                `${lightingType}`,
+                "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+                "Showroom Özel Tasarım Koleksiyonu",
+              ]
+            : [
+                `${lightingType}`,
+                `${dimensions}`,
+                "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+                "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği",
+              ]);
 
       const seoTitle = item.seoTitle || `${name} Kahramanmaraş | Hilal Avize`;
       const seoDescription =
         item.seoDescription ||
-        `${name} modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize & Elektrik Showroom'unda canlı inceleyin.`;
+        `${name} modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin.`;
 
       allProcessedProducts.push({
         id,

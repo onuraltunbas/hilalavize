@@ -6,18 +6,20 @@ const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "8836427661:AAF0N11G29uJKkTQ
 // Yönetici Şifresi
 export const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "hilal1976";
 
-// Kategori & ID Ön Ek Eşleşmeleri
+// Kategori ve ID Ön Ek Eşleşmeleri
 export const CATEGORY_PREFIXES: Record<string, { name: string; slug: string }> = {
-  AVZ: { name: "Lüks & Modern Avizeler", slug: "avizeler" },
+  AVZ: { name: "Lüks ve Modern Avizeler", slug: "avizeler" },
   APL: { name: "Dekoratif Duvar Aplikleri", slug: "aplikler" },
-  SPT: { name: "Spot & Manyetik Ray Spot Sistemleri", slug: "spot-ve-ray-spot" },
-  ABJ: { name: "Abajur & Lambader Koleksiyonu", slug: "abajur-ve-lambaderler" },
-  AYN: { name: "Dekoratif & Akıllı LED Aynalar", slug: "dekoratif-aynalar" },
-  DST: { name: "Özel Tasarım Duvar & Masa Saatleri", slug: "duvar-ve-masa-saatleri" },
-  SUS: { name: "Cam Sanat & Süs Eşyaları", slug: "cam-sus-esyalari" },
-  ANH: { name: "Lüks Anahtar & Priz Serileri", slug: "anahtar-ve-priz-serileri" },
-  KOL: { name: "Dekoratif Koltuk & Berjerler", slug: "dekoratif-koltuk-ve-berjerler" },
-  SEH: { name: "Dekoratif Mermer & Bronz Sehpalar", slug: "dekoratif-sehpalar" },
+  SPT: { name: "Spot ve Manyetik Ray Spot Sistemleri", slug: "spot-ve-ray-spot" },
+  ABJ: { name: "Abajur ve Lambader Koleksiyonu", slug: "abajur-ve-lambaderler" },
+  AYN: { name: "Dekoratif ve Akıllı LED Aynalar", slug: "dekoratif-aynalar" },
+  DST: { name: "Özel Tasarım Duvar ve Masa Saatleri", slug: "duvar-ve-masa-saatleri" },
+  SUS: { name: "Cam Sanat ve Süs Eşyaları", slug: "cam-sus-esyalari" },
+  ANH: { name: "Lüks Anahtar ve Priz Serileri", slug: "anahtar-ve-priz-serileri" },
+  KOL: { name: "Dekoratif Koltuk ve Berjerler", slug: "dekoratif-koltuk-ve-berjerler" },
+  SEH: { name: "Dekoratif Mermer ve Bronz Sehpalar", slug: "dekoratif-sehpalar" },
+  TBL: { name: "Dekoratif Tablo Koleksiyonu", slug: "tablo" },
+  AKS: { name: "Lüks Aksesuar ve Çini Koleksiyonu", slug: "aksesuar" },
 };
 
 // Aktif Oturumlar

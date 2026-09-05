@@ -26,7 +26,7 @@ export function Footer() {
           <Link href="/" className="inline-block py-1">
             <Image
               src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik & Avize"
+              alt="Hilal Elektrik • Avize"
               width={935}
               height={267}
               className="h-16 sm:h-20 w-auto object-contain"
@@ -64,7 +64,7 @@ export function Footer() {
               <div className="w-8 h-8 rounded-lg bg-bronze/15 flex items-center justify-center text-bronze shrink-0">
                 <Store className="w-4 h-4 text-bronze" />
               </div>
-              <span className="text-foreground font-extrabold">Avize & Aksesuar Showroom</span>
+              <span className="text-foreground font-extrabold">Avize ve Aksesuar Showroom</span>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5 pt-1">
               <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
@@ -87,7 +87,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-[11px] text-bronze hover:underline font-medium"
             >
-              Google Haritalarda Aç & Yol Tarifi →
+              Google Haritalarda Aç ve Yol Tarifi →
             </a>
           </div>
         </div>
@@ -99,7 +99,7 @@ export function Footer() {
               <div className="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-600 shrink-0">
                 <Zap className="w-4 h-4 text-amber-600" />
               </div>
-              <span className="text-foreground font-extrabold">Elektrik & Tesisat Şubesi</span>
+              <span className="text-foreground font-extrabold">Elektrik ve Tesisat Şubesi</span>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed flex items-start gap-1.5 pt-1">
               <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
@@ -122,7 +122,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-[11px] text-bronze hover:underline font-medium"
             >
-              Google Haritalarda Aç & Yol Tarifi →
+              Google Haritalarda Aç ve Yol Tarifi →
             </a>
           </div>
         </div>
@@ -131,6 +131,13 @@ export function Footer() {
         <div className="space-y-3">
           <h4 className="font-bold text-foreground text-xs uppercase tracking-wider">Koleksiyonlar</h4>
           <div className="grid grid-cols-1 gap-1.5 text-xs">
+            <Link
+              href="/aydinlattigimiz-mekanlar"
+              className="text-foreground hover:text-bronze font-bold flex items-center gap-1 transition-colors pb-0.5"
+            >
+              <ChevronRight className="w-3 h-3 text-bronze" />
+              Aydınlattığımız Mekanlar
+            </Link>
             {CATEGORIES.slice(0, 7).map((c) => (
               <Link
                 key={c.slug}

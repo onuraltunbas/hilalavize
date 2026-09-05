@@ -90,7 +90,7 @@ export function ServicesSection() {
                     href={`/hizmetler/${srv.slug}`}
                     className="text-xs font-bold text-foreground hover:text-bronze flex items-center gap-1 transition-colors"
                   >
-                    Detaylı Bilgi & Adımlar
+                    Detaylı Bilgi ve Adımlar
                     <ChevronRight className="w-3.5 h-3.5 text-bronze" />
                   </Link>
 

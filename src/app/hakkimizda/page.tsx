@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <span className="editorial-tag">
             <Sparkles className="w-3.5 h-3.5 text-bronze" />
-            25+ Yıllık Tecrübe & Güven
+            25+ Yıllık Tecrübe ve Güven
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight">
             Işığın ve Zarafetin Hikayesi
@@ -42,16 +42,16 @@ export default function AboutPage() {
 
           <div className="space-y-5 text-muted-foreground text-sm leading-relaxed">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
-              Hilal Avize & Hilal Elektrik ile Kesintisiz Hizmet
+              Hilal Avize ve Hilal Elektrik ile Kesintisiz Hizmet
             </h2>
             <p>
               Kurulduğumuz günden bu yana temel felsefemiz, müşterilerimizin evlerine ve projelerine en doğru, en kaliteli ve en estetik aydınlatma çözümlerini sunmaktır.
             </p>
             <p>
-              <strong className="text-foreground">Avize & Aksesuar Showroomumuzda;</strong> saf K9 kristal saray avizelerinden modern geometrik LED sarkıtlara, el üfleme cam sanat ürünlerinden lüks dokunmatik LED aynalara, kadife berjerlerden doğal mermer sehpalara kadar seçkin bir koleksiyon sergiliyoruz.
+              <strong className="text-foreground">Avize ve Aksesuar Showroomumuzda;</strong> saf K9 kristal saray avizelerinden modern geometrik LED sarkıtlara, el üfleme cam sanat ürünlerinden lüks dokunmatik LED aynalara, kadife berjerlerden doğal mermer sehpalara kadar seçkin bir koleksiyon sergiliyoruz.
             </p>
             <p>
-              <strong className="text-foreground">Elektrik & Tesisat Şubemizde ise;</strong> TSE ve CE standartlarında elektrik malzemeleri, lüks temperli cam anahtar-priz serileri ve profesyonel usta ve işçilik hizmeti sunuyoruz.
+              <strong className="text-foreground">Elektrik ve Tesisat Şubemizde ise;</strong> TSE ve CE standartlarında elektrik malzemeleri, lüks temperli cam anahtar-priz serileri ve profesyonel usta ve işçilik hizmeti sunuyoruz.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-3 border-t border-border">
@@ -67,7 +67,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Mağaza & Showroom Fotoğraf Vitrini */}
+        {/* Mağaza ve Showroom Fotoğraf Vitrini */}
         <div className="space-y-6">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-foreground font-heading">
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
-                <span className="text-xs font-bold text-white tracking-wide">Avize & Aksesuar Showroom</span>
+                <span className="text-xs font-bold text-white tracking-wide">Avize ve Aksesuar Showroom</span>
               </div>
             </div>
 
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 className="object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
-                <span className="text-xs font-bold text-white tracking-wide">Klasik & Kristal Saray Serisi</span>
+                <span className="text-xs font-bold text-white tracking-wide">Klasik ve Kristal Saray Serisi</span>
               </div>
             </div>
 
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
-                <span className="text-xs font-bold text-white tracking-wide">Elektrik Malzemeleri & Uygulama Şubesi</span>
+                <span className="text-xs font-bold text-white tracking-wide">Elektrik Malzemeleri ve Uygulama Şubesi</span>
               </div>
             </div>
           </div>

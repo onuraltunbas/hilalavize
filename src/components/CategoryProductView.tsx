@@ -81,7 +81,7 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
             <div className="pt-3">
               <div className="flex items-center gap-2 mb-2 text-xs text-bronze font-semibold uppercase tracking-wider">
                 <Layers className="w-3.5 h-3.5" />
-                <span>Seriler & Alt Kategoriler:</span>
+                <span>Seriler ve Alt Kategoriler:</span>
               </div>
               <div className="flex flex-wrap gap-2">
                 <button

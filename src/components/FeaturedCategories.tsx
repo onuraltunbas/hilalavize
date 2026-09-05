@@ -16,7 +16,7 @@ export function FeaturedCategories() {
               Geniş Ürün Yelpazesi
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-              Aydınlatma & Dekorasyon Kategorilerimiz
+              Aydınlatma ve Dekorasyon Kategorilerimiz
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
               Evinizin ve iş yerinizin ihtiyacı olan tüm lüks avize, aplik, ray spot, ayna, saat ve elektrik donanımları tek çatı altında.

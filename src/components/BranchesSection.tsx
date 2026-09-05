@@ -147,7 +147,7 @@ export function BranchesSection() {
                     {branch.description}
                   </p>
 
-                  {/* Address & Hours */}
+                  {/* Address ve Hours */}
                   <div className="space-y-2 bg-surface-subtle p-3.5 rounded-xl border border-border">
                     <div className="flex items-start gap-2 text-xs">
                       <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
@@ -181,7 +181,7 @@ export function BranchesSection() {
                     </ul>
                   </div>
 
-                  {/* Contacts & CTAs */}
+                  {/* Contacts ve CTAs */}
                   <div className="pt-3 border-t border-border space-y-3">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                       <a

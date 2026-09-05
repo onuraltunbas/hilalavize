@@ -17,8 +17,8 @@ export interface Category {
 export const CATEGORIES: Category[] = [
   {
     slug: "tekli-avizeler",
-    name: "Tekli Avizeler & Sarkıtlar",
-    shortName: "Tekli & Sarkıt",
+    name: "Tekli Avizeler ve Sarkıtlar",
+    shortName: "Tekli ve Sarkıt",
     tagline: "Ada Tezgahı, Yemek Masası ve Köşe Alanlar İçin Şık Tekli Sarkıtlar",
     description:
       "Mutfak adaları, yemek masaları, yatak başları ve antreler için özel tasarlanmış modern ve cam fanuslu tekli sarkıt avizeler.",
@@ -38,12 +38,12 @@ export const CATEGORIES: Category[] = [
   },
   {
     slug: "klasik",
-    name: "Klasik & Kristal Avizeler",
+    name: "Klasik ve Kristal Avizeler",
     shortName: "Klasik",
-    tagline: "Maria Theresa & Baccarat Aileleri, Kollu, Taşlı ve Metal Kollu Saray Serileri",
+    tagline: "Maria Theresa ve Baccarat Aileleri, Kollu, Taşlı ve Metal Kollu Saray Serileri",
     description:
       "Saray tipi klasik avizeler. Ağır döküm pirinç gövdeler, birinci sınıf kristal prizmalar, Maria Theresa cam giydirmeli kollar, Baccarat kalın kesme kristal ve metal kollu avizeler.",
-    seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Maria Theresa & Baccarat - Hilal Avize",
+    seoTitle: "Klasik Avize Modelleri Kahramanmaraş | Maria Theresa ve Baccarat - Hilal Avize",
     seoDescription:
       "Kahramanmaraş'ta saray tipi klasik avizeler, Maria Theresa, Baccarat ve metal kollu klasik avize modelleri Hilal Avize Showroom'unda.",
     image: "/images/categories/theresa_kapak.jpeg",
@@ -81,14 +81,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     slug: "aplik-ve-spotlar",
-    name: "Aplik & Spot Aydınlatma",
-    shortName: "Aplik & Spot",
+    name: "Aplik ve Spot Aydınlatma",
+    shortName: "Aplik ve Spot",
     tagline: "Dekoratif Duvar Aplikleri, Manyetik Ray ve Gömme Spot Sistemleri",
     description:
       "Klasik ve modern duvar aplikleri, manyetik ray spot sistemleri, gömme ve sıva üstü mimari tavan spotları.",
-    seoTitle: "Aplik ve Spot Aydınlatma Modelleri Kahramanmaraş | Hilal Avize & Elektrik",
+    seoTitle: "Aplik ve Spot Aydınlatma Modelleri Kahramanmaraş | Hilal Avize ve Elektrik",
     seoDescription:
-      "Lüks duvar aplikleri, mimari manyetik ray spotlar ve tavan spot lambaları Kahramanmaraş Hilal Avize & Elektrik şubelerinde.",
+      "Lüks duvar aplikleri, mimari manyetik ray spotlar ve tavan spot lambaları Kahramanmaraş Hilal Avize ve Elektrik şubelerinde.",
     image: "/images/categories/banner_aplikler.jpg",
     coverImage: "/images/categories/banner_aplikler.jpg",
     featured: true,
@@ -101,17 +101,38 @@ export const CATEGORIES: Category[] = [
     itemCount: 17,
   },
   {
+    slug: "tablo",
+    name: "Dekoratif Tablo Koleksiyonu",
+    shortName: "Tablo",
+    tagline: "El Boyaması Çini Panolar, Özel Çerçeveli Sanat Eserleri ve Aynalı Tablolar",
+    description:
+      "Yaşam alanlarınıza derinlik ve sanatsal değer katan el yapımı çini sanat tabloları, özel ahşap ve varak çerçeveli yağlı boya ve seramik sanat eserleri.",
+    seoTitle: "Dekoratif Tablo ve Çini Sanat Eserleri Kahramanmaraş | Hilal Avize",
+    seoDescription:
+      "Kahramanmaraş Hilal Avize Showroom'unda el yapımı çini tablolar, aynalı panolar ve özel çerçeveli sanat eserleri.",
+    image: "/products/tablo/photo/10.jpg",
+    coverImage: "/products/tablo/photo/10.jpg",
+    featured: true,
+    subcategories: [
+      "El Boyaması Çini Tablolar",
+      "Aynalı Dekoratif Panolar",
+      "Seramik Sanat Eserleri",
+      "Özel Tasarım Çerçeveli Eserler",
+    ],
+    itemCount: 5,
+  },
+  {
     slug: "aksesuar",
-    name: "Lüks Aksesuar & Çini Koleksiyonu",
-    shortName: "Aksesuar & Çini",
+    name: "Lüks Aksesuar ve Çini Koleksiyonu",
+    shortName: "Aksesuar ve Çini",
     tagline: "El Yapımı Çini Sanat Eserleri ve Seçkin İthal Aksesuarlar",
     description:
       "Geleneksel Türk el işçiliği çini vazolar, kaseler ve panolar; yaşam alanlarınızı tamamlayan seçkin ithal konsol objeleri, tasarım aynalar ve saatler.",
     seoTitle: "El Yapımı Çini ve İthal Aksesuarlar Kahramanmaraş | Hilal Aksesuar",
     seoDescription:
-      "El yapımı çini sanat eserleri, ithal lüks konsol aksesuarları, dekoratif aynalar ve saatler Hilal Avize & Aksesuar Showroom'unda.",
-    image: "/images/categories/banner_aksesuarlar.jpg",
-    coverImage: "/images/categories/banner_aksesuarlar.jpg",
+      "El yapımı çini sanat eserleri, ithal lüks konsol aksesuarları, dekoratif aynalar ve saatler Hilal Avize ve Aksesuar Showroom'unda.",
+    image: "/products/aksesuar/photo/10.jpg",
+    coverImage: "/products/aksesuar/photo/10.jpg",
     featured: true,
     subcategories: [
       "El Yapımı Çini Aksesuarlar",
@@ -120,7 +141,7 @@ export const CATEGORIES: Category[] = [
       "Tasarım Saatler",
       "Cam Sanat Eserleri",
     ],
-    itemCount: 36,
+    itemCount: 28,
   },
   {
     slug: "yerli-urunler",

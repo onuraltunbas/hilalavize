@@ -1,1 +1,450 @@
-[]
+[
+  {
+    "no": 1,
+    "id": "AKS-001",
+    "name": "Klasik Lale ve Karanfil Motifli El Boyama Çini Kase",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "El İşçiliği",
+    "description": "Geleneksel Türk çini sanatının zarif siyah, kırmızı ve beyaz kontrastıyla bezenmiş el işçiliği lüks dekoratif sunum ve salon kasesi.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 2,
+    "id": "AKS-002",
+    "name": "Kütahya Sanatı Çok Renkli Çiçekli Çini Meyvelik Kase",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Geleneksel Sanat",
+    "description": "Zengin floral desenlerle fırınlanmış, salon konsolları ve orta sehpalar için göz alıcı renkli çini kase.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 3,
+    "id": "AKS-003",
+    "name": "Mavi Beyaz Kuş Motifli Çift Kapaklı Lüks Çini Küp Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "İkili Set",
+    "description": "Asil kobalt mavisi kuş ve dalga desenleriyle bezeli, altın tepelikli ikili dekoratif kapaklı porselen çini küp vazo.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 4,
+    "id": "AKS-004",
+    "name": "Haliç İşi Spiral Desenli Kapaklı Çini Küp Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Saray Serisi",
+    "description": "Osmanlı Haliç motifi spiral kıvrımları ve altın yaldız detaylı kapağıyla konsol ve büfeler için saray tipi çini küp.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 5,
+    "id": "AKS-005",
+    "name": "Turkuaz Zeminli Klasik Lale Çini İbrik ve Vazo Takımı",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Özel Koleksiyon",
+    "description": "Saray mutfağı ve köşk dekorasyonunun simgesi olan el boyaması zarif boyunlu çini ibrik ve vazo tasarımı.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 6,
+    "id": "AKS-006",
+    "name": "Geleneksel Rumi ve Hatayi Desenli Geniş Çini Ayaklı Tabak",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Büyük Boy",
+    "description": "Büyük boy el işçiliği ayaklı dekoratif sunum tabağı; yemek masası ve vitrinler için prestijli sanat eseri.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 7,
+    "id": "AKS-007",
+    "name": "Kobalt Mavisi ve Altın Yaldızlı Kapaklı Zencefil Küpü",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "İthal Tasarım",
+    "description": "Uzak Doğu porselen geleneğiyle Türk çinisini harmanlayan gösterişli kapaklı dekoratif zencefil küpü.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 8,
+    "id": "AKS-008",
+    "name": "Osmanlı Bahçe Kuşları ve Çiçek Motifli Silindir Çini Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Doğal Boya",
+    "description": "Canlı doğal tonlarda el boyaması çiçekler ve kuş figürleriyle baharın enerjisini mekanınıza taşıyan çini vazo.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 9,
+    "id": "AKS-009",
+    "name": "Zümrüt Yeşili ve Altın Patineli Dekoratif Çini Gondol Kase",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Gondol Tasarım",
+    "description": "Özgün formlu gondol yapısı ve yeşil-altın tonlarıyla konsol ve dresuar üstü için lüks odak noktası.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 10,
+    "id": "AKS-010",
+    "name": "El İşçiliği Kırmızı Mercan ve Nar Motifli Çini Bereket Küpü",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Bereket Serisi",
+    "description": "Bolluk ve bereketin kadim simgesi nar desenleriyle bezeli, parlak sırlı el yapımı dekoratif küp.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 11,
+    "id": "AKS-011",
+    "name": "Geometrik Selçuklu Yıldızı Motifli El Yapımı Çini Kase",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Selçuklu Koleksiyonu",
+    "description": "Sekiz köşeli Selçuklu yıldızı ve geometrik hatlarıyla modern ve klasik mekanlara derinlik katan özel çini kase.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 12,
+    "id": "AKS-012",
+    "name": "Çintemani ve Benek Desenli Masif Dekoratif Çini Şamdan",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Çintemani Serisi",
+    "description": "Güç ve asaleti simgeleyen üç benek çintemani motifiyle işlenmiş, romantik akşam yemekleri için ikili çini şamdan.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 13,
+    "id": "AKS-013",
+    "name": "Özel Tasarım Çiçek Açmış Nar Ağacı Figürlü Çini Pano Tabak",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Pano / Tabak",
+    "description": "Masa üstü standı veya duvar askısı ile sergilenebilen, el boyaması nar ağacı motifli özel çini pano tabak.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 14,
+    "id": "AKS-014",
+    "name": "Siyah Zemin Üzeri Altın Yaldız İşlemeli Lüks Dekoratif Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Modern ve Klasik",
+    "description": "Modern siyah mat zemin ile parıltılı altın yaldız işlemelerin kusursuz uyumunu sunan seçkin vazo.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 15,
+    "id": "AKS-015",
+    "name": "Klasik Türk Çinisi Balık ve Deniz Dalgaları Motifli Kase",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Mavi Beyaz",
+    "description": "Mavinin en derin tonlarında deniz canlıları ve akışkan su desenleriyle tasarlanmış ferahlatıcı çini kase.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 16,
+    "id": "AKS-016",
+    "name": "Dikey Formlu İnce Boyunlu El Boyaması Çini Karaf Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Zarif Silüet",
+    "description": "İnce uzun silüeti ve zarif kıvrımlarıyla sehpa ve kitaplık köşeleri için heykelsi bir estetik sunar.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 17,
+    "id": "AKS-017",
+    "name": "Çok Renkli Çini Çiçeklik ve Özel Tasarım Bahçe Saksısı",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Çiçeklik Saksı",
+    "description": "İç mekan bitkileri ve kuru çiçek aranjmanları için lüks sırlı fırın çini dekoratif çiçeklik saksı.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 18,
+    "id": "AKS-018",
+    "name": "Osmanlı Tuğralı ve Rumi Kıvrımlı Prestij Çini Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Prestij Obje",
+    "description": "Tarihi derinliği olan motifler ve altın varak süslemeleriyle çalışma odaları ve lüks salonlar için ideal prestij obje.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 19,
+    "id": "AKS-019",
+    "name": "İki Kulplu Antik Formlu Saray Çini Amfora Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Amfora Form",
+    "description": "Grek ve Osmanlı formlarının sentezi olan iki kulplu zarif amfora formunda el boyaması sanat eseri.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 20,
+    "id": "AKS-020",
+    "name": "Minyatür Bahçe Sahneli El Boyaması Oval Çini Tabak",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Minyatür Sanatı",
+    "description": "Usta minyatür sanatçılarının elinden çıkmış, saray bahçesindeki yaşamı resmeden özel koleksiyon tabağı.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 21,
+    "id": "AKS-021",
+    "name": "Turkuaz ve Lacivert Kademeli Çini Çerezlik ve Mezelik Seti",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Sunum Seti",
+    "description": "Seçkin davet sofralarınızda ve çay saatlerinizde kullanabileceğiniz el yapımı çini sunumluk kase seti.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 22,
+    "id": "AKS-022",
+    "name": "Gül Goncası ve Bülbül Motifli Klasik Kapaklı Çini Şekerlik",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Kapaklı Tasarım",
+    "description": "Türk edebiyatı ve sanatının klasik gül ve bülbül temasını taşıyan, zarif tutma kulplu kapaklı porselen şekerlik.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 23,
+    "id": "AKS-023",
+    "name": "Kabartma Dokulu El İmalatı Çini Duvar Askılı Süs Tabağı",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Rölyef Kabartma",
+    "description": "Fasetli kabartma rölyef tekniğiyle üretilmiş, ışık altında üç boyutlu gölgeler oluşturan dekoratif duvar tabağı.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 24,
+    "id": "AKS-024",
+    "name": "Karakalem Tekniği Çini Desenli Modern Monokrom Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Monokrom Seri",
+    "description": "Klasik motiflerin siyah-beyaz çağdaş bir illüstrasyon diliyle yeniden yorumlandığı modern çini vazo.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 25,
+    "id": "AKS-025",
+    "name": "Altın Varak Kenarlı Gece Mavisi Lüks Çini Meyve Tabağı",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Altın Varak",
+    "description": "Koyu gece mavisi derin sır üzerine altın yaprak işlemeleriyle ışıldayan geniş servis ve meyve tabağı.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 26,
+    "id": "AKS-026",
+    "name": "Lale Devri Motifli İkili Masa Üstü Çini Biblo Seti",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "İkili Biblo",
+    "description": "Konsol, şömine üstü ve dresuar için tasarlanmış ikili zarif dekoratif seramik figüratif obje seti.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 27,
+    "id": "AKS-027",
+    "name": "Mavi Haliç İşi El Yapımı Dekoratif Çini Ayaklı Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Ayaklı Kaide",
+    "description": "Yüksek ayaklı kaidesi ve ince detaylı Haliç deseniyle salonunuzun baş köşesine yakışan seçkin bir vazo.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  },
+  {
+    "no": 28,
+    "id": "AKS-028",
+    "name": "Özel Fırın Çini Sanatı Çiçek Buketi Motifli Büyük Boy Vazo",
+    "category": "aksesuar",
+    "categoryName": "Lüks Aksesuar ve Çini Koleksiyonu",
+    "categorySlug": "aksesuar",
+    "badge": "Büyük Boy Salon",
+    "description": "Dört mevsim çiçeklerinin en canlı tonlarıyla bezenmiş, gösterişli ve göz alıcı büyük boy salon vazosu.",
+    "features": [
+      "Birinci sınıf el işçiliği fırınlanmış seramik çini",
+      "Solmayan mineral doğal sır boyaları",
+      "Konsol, dresuar, orta sehpa ve vitrinler için kusursuz uyum",
+      "Hilal Avize ve Aksesuar Showroom özel koleksiyonu"
+    ]
+  }
+]

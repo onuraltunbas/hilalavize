@@ -64,7 +64,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         <div className="relative rounded-2xl dgaraj-card p-6 sm:p-10 mb-10 space-y-3">
           <span className="editorial-tag">
             <Sparkles className="w-3.5 h-3.5 text-bronze" />
-            Hilal Avize & Elektrik Güvencesi
+            Hilal Avize ve Elektrik Güvencesi
           </span>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
             {service.title}
@@ -77,7 +77,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </p>
         </div>
 
-        {/* Steps & Benefits */}
+        {/* Steps ve Benefits */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-16">
           {/* Steps */}
           <div className="dgaraj-card p-6 sm:p-8 space-y-5">

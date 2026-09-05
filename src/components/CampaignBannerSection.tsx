@@ -44,7 +44,7 @@ export function CampaignBannerSection() {
               </div>
               <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-xl">
                 <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
-                <span className="font-medium text-white/90">Eksiksiz & Güvenli Montaj</span>
+                <span className="font-medium text-white/90">Eksiksiz ve Güvenli Montaj</span>
               </div>
               <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-xl">
                 <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />

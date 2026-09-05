@@ -16,12 +16,12 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "kahramanmaras-avize-aydinlatma",
     name: "Kahramanmaraş Genel",
-    district: "Merkez & Tüm İlçeler",
+    district: "Merkez ve Tüm İlçeler",
     city: "Kahramanmaraş",
-    title: "Kahramanmaraş Lüks Avize, Aydınlatma & Elektrik Mağazası",
+    title: "Kahramanmaraş Lüks Avize, Aydınlatma ve Elektrik Mağazası",
     description:
       "Kahramanmaraş'ın tüm ilçe ve mahallelerine lüks saray avizeleri, modern LED sarkıtlar, dekoratif aynalar, cam süs eşyaları, saatler ve elektrik malzemeleri tedarik ediyoruz. Yerinde montaj ve uzman danışmanlık ayrıcalığıyla.",
-    seoTitle: "Kahramanmaraş Avize Mağazaları & Elektrikçiler | Hilal Avize & Elektrik",
+    seoTitle: "Kahramanmaraş Avize Mağazaları ve Elektrikçiler | Hilal Avize ve Elektrik",
     seoDescription:
       "Kahramanmaraş'ın en zengin avize, aplik, spot, ayna ve elektrik malzemeleri çeşitleri Hilal Elektrik Avize Aksesuar'da. Showroomumuza bekleriz.",
     highlights: [
@@ -40,8 +40,8 @@ export const LOCATIONS: LocationPage[] = [
     city: "Kahramanmaraş",
     title: "Onikişubat Avize, Aydınlatma, Priz ve Elektrik Malzemeleri",
     description:
-      "Onikişubat ilçesinde yer alan 2 ayrı şubemizle (Avize & Dekorasyon Showroom ve Elektrik Tesisat Şubesi) Onikişubat sakinlerine en yakın, en kaliteli aydınlatma ve elektrik çözümlerini sunuyoruz.",
-    seoTitle: "Onikişubat Avizeciler & Elektrik Malzemesi | Hilal Avize Showroom",
+      "Onikişubat ilçesinde yer alan 2 ayrı şubemizle (Avize ve Dekorasyon Showroom ve Elektrik Tesisat Şubesi) Onikişubat sakinlerine en yakın, en kaliteli aydınlatma ve elektrik çözümlerini sunuyoruz.",
+    seoTitle: "Onikişubat Avizeciler ve Elektrik Malzemesi | Hilal Avize Showroom",
     seoDescription:
       "Onikişubat Kahramanmaraş'ta modern ve klasik avize çeşitleri, LED spotlar, cam çerçeveli anahtar prizler Hilal Avize ve Elektrik şubelerinde.",
     highlights: [
@@ -58,12 +58,12 @@ export const LOCATIONS: LocationPage[] = [
     name: "Yirmiikigün Mahallesi",
     district: "Onikişubat",
     city: "Kahramanmaraş",
-    title: "Yirmiikigün Mahallesi Hilal Avize & Elektrik Şubeleri",
+    title: "Yirmiikigün Mahallesi Hilal Avize ve Elektrik Şubeleri",
     description:
       "Yirmiikigün Mahallesi Umut Kent Sitesi ve Eymen Sitesi altındaki mağazalarımızla mahallemize ve tüm şehre en üstün hizmeti vermekten gurur duyuyoruz.",
     seoTitle: "Yirmiikigün Mahallesi Avize ve Elektrikçi | Hilal Avize Showroom",
     seoDescription:
-      "Yirmiikigün Mah. Umut Kent ve Eymen Sitesi altı Hilal Avize & Elektrik. Avize, ayna, saat, abajur ve elektrik montajı.",
+      "Yirmiikigün Mah. Umut Kent ve Eymen Sitesi altı Hilal Avize ve Elektrik. Avize, ayna, saat, abajur ve elektrik montajı.",
     highlights: [
       "Umut Kent Sitesi F Blok Altı No: 4A Avize Showroom",
       "Şehit Polis Ali Mülazımoğlu Cad. Eymen Sitesi No: 12 Elektrik Şubesi",

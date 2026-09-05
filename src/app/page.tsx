@@ -1,6 +1,7 @@
 import React from "react";
 import { HeroSection } from "@/components/HeroSection";
 import { ShowroomGallerySection } from "@/components/ShowroomGallerySection";
+import { HomeMekanlarSection } from "@/components/HomeMekanlarSection";
 import { CampaignBannerSection } from "@/components/CampaignBannerSection";
 import { BrandHeritageSection } from "@/components/BrandHeritageSection";
 import { ConsultationForm } from "@/components/ConsultationForm";
@@ -15,7 +16,10 @@ export default function HomePage() {
       {/* Aydınlatma Danışmanlığı (Videonun hemen altında) */}
       <CampaignBannerSection />
 
-      {/* Showroom & Mağaza Deneyimi Vitrini (Aydınlatmanın Sanata Dönüştüğü Mekanlar'ın hemen üstünde) */}
+      {/* Aydınlattığımız Mekanlar: Gerçek Müşteri Evlerinden Kareler */}
+      <HomeMekanlarSection />
+
+      {/* Showroom ve Mağaza Deneyimi Vitrini */}
       <ShowroomGallerySection />
 
       {/* Aydınlatmanın Sanata Dönüştüğü Mekanlar: Vizyon, Misyon, Tarihçe */}

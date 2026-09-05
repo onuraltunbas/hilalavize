@@ -10,7 +10,7 @@ export function ConsultationForm() {
     phone: "",
     district: "Onikişubat",
     roomType: "Salon / Yemek Odası",
-    stylePreference: "İhtişamlı & Klasik Kristal",
+    stylePreference: "İhtişamlı ve Klasik Kristal",
     notes: "",
   });
 
@@ -131,7 +131,7 @@ export function ConsultationForm() {
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-3">
             <span className="editorial-tag">
               <Sparkles className="w-3.5 h-3.5 text-bronze" />
-              Ücretsiz Mimari & Aydınlatma Desteği
+              Ücretsiz Mimari ve Aydınlatma Desteği
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
               Evinize En Uygun Modeli Birlikte Bulalım
@@ -226,7 +226,7 @@ export function ConsultationForm() {
                     <option value="Yatak Odası / Giyinme Odası">Yatak Odası / Giyinme Odası</option>
                     <option value="Mutfak / Ada Tezgah">Mutfak / Ada Tezgah</option>
                     <option value="Antre / Koridor / Merdiven Boşluğu">Antre / Koridor / Merdiven Boşluğu</option>
-                    <option value="Tüm Ev & Villa Projesi">Tüm Ev & Villa Projesi</option>
+                    <option value="Tüm Ev ve Villa Projesi">Tüm Ev ve Villa Projesi</option>
                     <option value="Ofis / Mağaza / Kafe">Ofis / Mağaza / Kafe</option>
                   </select>
                 </div>
@@ -242,9 +242,9 @@ export function ConsultationForm() {
                     }
                     className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
                   >
-                    <option value="İhtişamlı & Klasik Kristal">👑 İhtişamlı & Klasik Kristal</option>
-                    <option value="Modern & Spor LED">⚡ Modern & Spor LED</option>
-                    <option value="Sade & Minimalist Ray Spot">🌿 Sade & Minimalist Ray Spot</option>
+                    <option value="İhtişamlı ve Klasik Kristal">👑 İhtişamlı ve Klasik Kristal</option>
+                    <option value="Modern ve Spor LED">⚡ Modern ve Spor LED</option>
+                    <option value="Sade ve Minimalist Ray Spot">🌿 Sade ve Minimalist Ray Spot</option>
                     <option value="Kararsızım / Uzman Önerisi İstiyorum">💡 Kararsızım / Öneri İstiyorum</option>
                   </select>
                 </div>

@@ -52,7 +52,7 @@ export default function CollectionsPage() {
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <span className="editorial-tag">
             <Sparkles className="w-3.5 h-3.5 text-bronze" />
-            Seçkin Aydınlatma & Dekorasyon Vitrini
+            Seçkin Aydınlatma ve Dekorasyon Vitrini
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight">
             Hilal Avize Tüm Koleksiyonlar
@@ -109,7 +109,7 @@ export default function CollectionsPage() {
           ))}
         </div>
 
-        {/* 2. DIRECTORY & SEARCH SECTION */}
+        {/* 2. DIRECTORY ve SEARCH SECTION */}
         <div id="tum-urunler" className="pt-8 border-t border-border space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="editorial-tag">
@@ -117,7 +117,7 @@ export default function CollectionsPage() {
               Tüm Ürün Kataloğu
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
-              Modellere Göre Hızlı Arama & Filtreleme
+              Modellere Göre Hızlı Arama ve Filtreleme
             </h2>
           </div>
 
