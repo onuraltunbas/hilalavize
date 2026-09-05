@@ -38,12 +38,12 @@ export function Footer() {
             </div>
           </div>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Kahramanmaraş Onikişubat&apos;ta 2 uzman şubemizle hizmetinizdeyiz. Klasik saray tipi kristal avizelerden modern spor sarkıtlara, dekoratif mobilyalardan tam donanımlı elektrik malzemelerine ve montajına kadar güvenin adresi.
+            Kahramanmaraş Onikişubat&apos;ta avize mağazamız ve elektrik malzemesi şubemiz ile hizmetinizdeyiz. Klasik saray tipi kristal avizelerden modern spor sarkıtlara, toptan ve perakende elektrik malzemelerinden profesyonel montaj ve usta işçiliğine kadar güvenin adresi.
           </p>
           <div className="pt-2 flex flex-col gap-2 text-xs text-foreground/80">
             <span className="flex items-center gap-2 text-bronze font-semibold">
               <Clock className="w-3.5 h-3.5" />
-              Pzt - Cmt: 09:00 - 17:00 (Pazar Kapalı)
+              Pzt - Cmt: 09:00 - 18:30 (Pazar Kapalı)
             </span>
             <span className="text-[11px] text-muted-foreground">
               *Pazar günleri özel randevu ile showroomumuz açılabilmektedir.
@@ -73,9 +73,6 @@ export function Footer() {
               <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
               {showroom.address.full}
             </p>
-            <div className="text-xs text-muted-foreground pt-1">
-              Yetkililer: <strong className="text-foreground">Lütfiye & Çiğdem Hanım</strong>
-            </div>
           </div>
           <div className="space-y-2 pt-2 border-t border-border">
             <a
@@ -109,9 +106,6 @@ export function Footer() {
               <MapPin className="w-3.5 h-3.5 text-bronze shrink-0 mt-0.5" />
               {electrical.address.full}
             </p>
-            <div className="text-xs text-muted-foreground pt-1">
-              Yetkili Sorumlu: <strong className="text-foreground">Murat Bilal</strong>
-            </div>
           </div>
           <div className="space-y-2 pt-2 border-t border-border">
             <a

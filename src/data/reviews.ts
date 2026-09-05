@@ -19,7 +19,7 @@ export const REVIEWS: Review[] = [
     rating: 5,
     date: "2026-02-15",
     comment:
-      "Evimizin 6 metrelik galeri boşluğu için avize bulmakta çok zorlanıyorduk. Lütfiye Hanım ve Çiğdem Hanım salonumuzun fotoğraflarını inceleyip harika bir saray tipi kristal avize önerdiler. Taşıması ve montajı da ustaları tarafından sıfır hatayla yapıldı. Işıl ışıl bir salonumuz oldu, emeğinize sağlık!",
+      "Evimizin 6 metrelik galeri boşluğu için avize bulmakta çok zorlanıyorduk. Hilal Avize uzman ekibi salonumuzun fotoğraflarını inceleyip harika bir saray tipi kristal avize önerdiler. Taşıması ve montajı da ustaları tarafından sıfır hatayla yapıldı. Işıl ışıl bir salonumuz oldu, emeğinize sağlık!",
     productMentioned: "Padişah 24 Kollu Kristal Avize",
     verified: true,
   },

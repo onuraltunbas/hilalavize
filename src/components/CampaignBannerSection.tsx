@@ -28,9 +28,8 @@ export function CampaignBannerSection() {
 
           {/* Content Block */}
           <div className="relative z-10 max-w-2xl p-8 sm:p-12 lg:p-16 flex flex-col items-start">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] mb-5 font-heading text-white">
-              Evinizin Havasını Değiştirecek <br />
-              <span className="text-amber-200">Showroom Kampanyası.</span>
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] mb-5 font-heading text-white uppercase">
+              Aydınlatma <span className="text-amber-200">Danışmanlığı</span>
             </h2>
 
             <p className="text-sm sm:text-base text-white/80 font-light leading-relaxed mb-8">

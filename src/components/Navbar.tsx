@@ -203,7 +203,6 @@ export function Navbar() {
                   <div className="text-[11px] font-bold text-bronze flex items-center gap-1 mb-1">
                     <Store className="w-3.5 h-3.5" /> Avize Showroom
                   </div>
-                  <div className="text-[10px] text-muted-foreground mb-2">Lütfiye & Çiğdem Hanım</div>
                 </div>
                 <a
                   href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, Hilal Avize Showroom ürünleri hakkında bilgi ve teklif almak istiyorum.")}`}
@@ -219,7 +218,6 @@ export function Navbar() {
                   <div className="text-[11px] font-bold text-bronze flex items-center gap-1 mb-1">
                     <Zap className="w-3.5 h-3.5" /> Elektrik Şube
                   </div>
-                  <div className="text-[10px] text-muted-foreground mb-2">Murat Bilal</div>
                 </div>
                 <a
                   href={`https://wa.me/${electrical.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, elektrik tesisat ve malzeme konusunda teklif ve bilgi almak istiyorum.")}`}

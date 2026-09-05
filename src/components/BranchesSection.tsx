@@ -183,13 +183,6 @@ export function BranchesSection() {
 
                   {/* Contacts & CTAs */}
                   <div className="pt-3 border-t border-border space-y-3">
-                    <div className="flex items-center justify-between flex-wrap gap-2 text-xs">
-                      <span className="font-semibold text-muted-foreground">Şube İlgilileri:</span>
-                      <span className="font-bold text-foreground">
-                        {branch.contacts.map((c) => c.name).join(", ")}
-                      </span>
-                    </div>
-
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                       <a
                         href={`https://wa.me/${branch.contacts[0].whatsapp}?text=${encodeURIComponent(

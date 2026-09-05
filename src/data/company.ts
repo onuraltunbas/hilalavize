@@ -66,23 +66,16 @@ export const COMPANY_DATA = {
       },
       contacts: [
         {
-          name: "Lütfiye Bilal",
+          name: "Showroom Danışma Ekibi",
           role: "Showroom & Aydınlatma Danışmanı",
           phone: "+905053801350",
           phoneFormatted: "0505 380 13 50",
           whatsapp: "905053801350",
         },
-        {
-          name: "Çiğdem Altunbaş",
-          role: "Dekorasyon & Müşteri İlişkileri",
-          phone: "+905069059632",
-          phoneFormatted: "0506 905 96 32",
-          whatsapp: "905069059632",
-        },
       ],
       workingHours: {
         days: "Pazartesi - Cumartesi",
-        hours: "09:00 - 17:00",
+        hours: "09:00 - 18:30",
         sunday: "Pazar Günleri Kapalı (Özel Randevu ile Açılabilir)",
       },
       features: [
@@ -108,7 +101,7 @@ export const COMPANY_DATA = {
       type: "electrical",
       headline: "Toptan & Perakende Elektrik Malzemeleri ve Profesyonel Uygulama",
       description:
-        "Tüm elektrik malzemeleri, lüks anahtar & priz serileri, sigorta kutuları, kablo ve aydınlatma armatürleri satışı ile profesyonel montaj, sigorta değişimi ve elektrik uygulama hizmetleri.",
+        "Tüm elektrik malzemeleri, lüks anahtar & priz serileri, sigorta kutuları, kablo ve aydınlatma armatürleri satışı ile profesyonel montaj, anahtar teslim tesisat, profesyonel usta ve işçilik hizmetleri sunuyoruz.",
       address: {
         street: "Şehit Polis Ali Mülazımoğlu Caddesi Eymen Sitesi Altı No: 12",
         neighborhood: "Yirmiikigün Mahallesi",
@@ -118,7 +111,7 @@ export const COMPANY_DATA = {
       },
       contacts: [
         {
-          name: "Murat Bilal",
+          name: "Elektrik & Proje Ekibi",
           role: "Elektrik & Proje Sorumlusu",
           phone: "+905559778349",
           phoneFormatted: "0555 977 83 49",
@@ -127,7 +120,7 @@ export const COMPANY_DATA = {
       ],
       workingHours: {
         days: "Pazartesi - Cumartesi",
-        hours: "09:00 - 17:00",
+        hours: "09:00 - 18:30",
         sunday: "Pazar Günleri Kapalı",
       },
       features: [

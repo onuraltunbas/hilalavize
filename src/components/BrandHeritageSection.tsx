@@ -7,18 +7,18 @@ export function BrandHeritageSection() {
   const pillars = [
     {
       icon: History,
-      badge: "Mirasımız",
+      badge: "",
       title: "Köklü Tarihçe & Tecrübe",
       description:
-        "Kahramanmaraş'ta elektrik tesisatı ve aydınlatma sektöründe yıllar önce attığımız adımlar, bugün Onikişubat'ta 2 uzman şubemizle bölgenin en prestijli avize ve elektrik vitrinine dönüştü. Dürüst esnaflık ve güvenilir usta işçiliğini nesiller boyu yaşatıyoruz.",
-      highlight: "2 Uzman Şube • Onikişubat",
+        "Kahramanmaraş'ta elektrik tesisatı ve aydınlatma sektöründe yıllar önce attığımız adımlar; bugün Onikişubat'ta avize mağazamız ve elektrik malzemesi şubemiz ile toptanda, perakendede ve her türlü proje işlerinde bölgenin en güvenilir çözüm ortağına dönüştü. Dürüst esnaflık, profesyonel usta ve işçilik hizmeti ile kaliteli malzeme anlayışını nesiller boyu yaşatıyoruz.",
+      highlight: "Toptan, Perakende & Proje İşleri",
     },
     {
       icon: Eye,
       badge: "Geleceğe Bakışımız",
       title: "Vizyonumuz",
       description:
-        "Aydınlatmayı yalnızca karanlığı aydınlatan bir araç değil; yaşam alanlarına ruh, derinlik ve asalet katan mimari bir sanat eseri olarak görüyoruz. Kahramanmaraş'ın her evinde zamansız zarafeti ve üst düzey ışık konforunu standart kılmayı hedefliyoruz.",
+        "Aydınlatmayı yalnızca karanlığı aydınlatan bir araç değil; yaşam alanlarına ruh, derinlik ve asalet katan mimari bir sanat eseri olarak görüyoruz. Dokunduğumuz her mekanda zamansız zarafeti ve üst düzey ışık konforunu standart kılmayı hedefliyoruz.",
       highlight: "Zamansız Mimari Zarafet",
     },
     {
@@ -26,7 +26,7 @@ export function BrandHeritageSection() {
       badge: "Varlık Sebebimiz",
       title: "Misyonumuz",
       description:
-        "Kararmayan birinci sınıf kaplamalar, ışığı kusursuz kıran saf K9 kristaller ve kaliteli elektrik komponentleri ile ömürlük ürünler sunmak. Ücretsiz yerinde keşiften anahtar teslim güvenli montaja kadar her aşamada koşulsuz memnuniyet sağlamak.",
+        "Kararmayan birinci sınıf kaplamalar, ışığı kusursuz kıran saf K9 kristaller ve kaliteli elektrik malzemeleri ile ömürlük ürünler sunmak. Ücretsiz yerinde keşiften anahtar teslim güvenli montaja kadar her aşamada koşulsuz memnuniyet sağlamak.",
       highlight: "%100 Müşteri Memnuniyeti",
     },
   ];
@@ -37,7 +37,7 @@ export function BrandHeritageSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight font-heading mb-4">
-            Güvenle Parlayan Bir Miras.
+            Aydınlatmanın Sanata Dönüştüğü Mekanlar.
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground font-light leading-relaxed">
             Hilal Elektrik & Avize olarak geçmişten aldığımız ustalık mirasını, modern tasarım anlayışı ve kusursuz müşteri deneyimiyle buluşturuyoruz.
@@ -59,9 +59,11 @@ export function BrandHeritageSection() {
                     <div className="w-12 h-12 rounded-2xl bg-surface-subtle border border-border flex items-center justify-center text-bronze group-hover:scale-110 transition-transform">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-[11px] font-bold tracking-wider uppercase text-bronze px-2.5 py-1 rounded-full bg-surface-subtle border border-border">
-                      {item.badge}
-                    </span>
+                    {item.badge && (
+                      <span className="text-[11px] font-bold tracking-wider uppercase text-bronze px-2.5 py-1 rounded-full bg-surface-subtle border border-border">
+                        {item.badge}
+                      </span>
+                    )}
                   </div>
 
                   {/* Title */}
@@ -89,7 +91,7 @@ export function BrandHeritageSection() {
         <div className="p-8 sm:p-10 rounded-2xl bg-surface-subtle border border-border flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
             <div className="text-xs font-bold text-bronze tracking-wider uppercase">
-              Kahramanmaraş&apos;ta 2 Ayrı Uzman Nokta
+              Hilal Avize & Hilal Elektrik
             </div>
             <h4 className="text-lg sm:text-xl font-bold text-foreground font-heading">
               Showroomumuzda Bir Kahve Eşliğinde Hayalinizdeki Aydınlatmayı Seçin

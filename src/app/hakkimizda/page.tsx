@@ -42,7 +42,7 @@ export default function AboutPage() {
 
           <div className="space-y-5 text-muted-foreground text-sm leading-relaxed">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
-              Kahramanmaraş&apos;ta 2 Uzman Şube ile Kesintisiz Hizmet
+              Hilal Avize & Hilal Elektrik ile Kesintisiz Hizmet
             </h2>
             <p>
               Kurulduğumuz günden bu yana temel felsefemiz, müşterilerimizin evlerine ve projelerine en doğru, en kaliteli ve en estetik aydınlatma çözümlerini sunmaktır.
@@ -51,17 +51,66 @@ export default function AboutPage() {
               <strong className="text-foreground">Avize & Aksesuar Showroomumuzda;</strong> saf K9 kristal saray avizelerinden modern geometrik LED sarkıtlara, el üfleme cam sanat ürünlerinden lüks dokunmatik LED aynalara, kadife berjerlerden doğal mermer sehpalara kadar seçkin bir koleksiyon sergiliyoruz.
             </p>
             <p>
-              <strong className="text-foreground">Elektrik & Tesisat Şubemizde ise;</strong> TSE ve CE standartlarında elektrik malzemeleri, lüks temperli cam anahtar-priz serileri ve profesyonel montaj desteği sunuyoruz.
+              <strong className="text-foreground">Elektrik & Tesisat Şubemizde ise;</strong> TSE ve CE standartlarında elektrik malzemeleri, lüks temperli cam anahtar-priz serileri ve profesyonel usta ve işçilik hizmeti sunuyoruz.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-3 border-t border-border">
               <div className="p-4 rounded-xl dgaraj-card">
-                <div className="text-2xl font-extrabold text-bronze">500+</div>
+                <div className="text-2xl font-extrabold text-bronze">1000+</div>
                 <div className="text-xs text-foreground font-semibold">Aktif Ürün Çeşidi</div>
               </div>
               <div className="p-4 rounded-xl dgaraj-card">
                 <div className="text-2xl font-extrabold text-bronze">%100</div>
                 <div className="text-xs text-foreground font-semibold">Müşteri Memnuniyeti</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mağaza & Showroom Fotoğraf Vitrini */}
+        <div className="space-y-6">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-foreground font-heading">
+              Mağazalarımızdan Kareler
+            </h3>
+            <p className="text-xs sm:text-sm text-muted-foreground">
+              Onikişubat&apos;ta yer alan 2 katlı avize showroomumuz ve elektrik şubemizden canlı vitrin detayları.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-border group shadow-sm">
+              <Image
+                src="/images/1920x1080_hero_showroom.jpeg"
+                alt="Hilal Avize Showroom Cephe ve Vitrin"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
+                <span className="text-xs font-bold text-white tracking-wide">Avize & Aksesuar Showroom</span>
+              </div>
+            </div>
+
+            <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-border group shadow-sm">
+              <Image
+                src="/images/categories/theresa_kapak.jpeg"
+                alt="Maria Theresa Saray Koleksiyonu"
+                fill
+                className="object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
+                <span className="text-xs font-bold text-white tracking-wide">Klasik & Kristal Saray Serisi</span>
+              </div>
+            </div>
+
+            <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-border group shadow-sm sm:col-span-2 lg:col-span-1">
+              <Image
+                src="/images/1920x1080_elektrik_sube.jpg"
+                alt="Hilal Elektrik ve Tesisat Şubesi"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
+                <span className="text-xs font-bold text-white tracking-wide">Elektrik Malzemeleri & Uygulama Şubesi</span>
               </div>
             </div>
           </div>

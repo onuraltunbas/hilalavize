@@ -12,13 +12,13 @@ export default function HomePage() {
       {/* Ana Ekran: Video + Slogan (Minimal Porsche Stili) */}
       <HeroSection />
 
-      {/* 1. Bölüm: Fotoğraf & Video (Mağaza ve Ürün Vitrini) */}
-      <ShowroomGallerySection />
-
-      {/* 2. Bölüm: Kampanya Görseli */}
+      {/* Aydınlatma Danışmanlığı (Videonun hemen altında) */}
       <CampaignBannerSection />
 
-      {/* 3. Bölüm: Vizyon, Misyon, Tarihçe */}
+      {/* Showroom & Mağaza Deneyimi Vitrini (Aydınlatmanın Sanata Dönüştüğü Mekanlar'ın hemen üstünde) */}
+      <ShowroomGallerySection />
+
+      {/* Aydınlatmanın Sanata Dönüştüğü Mekanlar: Vizyon, Misyon, Tarihçe */}
       <BrandHeritageSection />
 
       {/* Aydınlatma Danışmanlığı Formu */}
