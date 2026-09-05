@@ -7,7 +7,6 @@ export function ShowroomGallerySection() {
   const showcases = [
     {
       title: "Lüks Kristal Saray Koleksiyonu",
-      subtitle: "Saf K9 Berrak Kristaller & El İşçiliği İskelet",
       image: "/images/categories/theresa_kapak.jpeg",
       link: "/kategori/klasik",
       colSpan: "lg:col-span-8",
@@ -16,7 +15,6 @@ export function ShowroomGallerySection() {
     },
     {
       title: "Modern LED & Mimari Sarkıtlar",
-      subtitle: "Akıllı Aydınlatma & Geometrik Zarafet",
       image: "/images/categories/banner_led.jpg",
       link: "/kategori/ledli-grup",
       colSpan: "lg:col-span-4",
@@ -24,7 +22,6 @@ export function ShowroomGallerySection() {
     },
     {
       title: "Showroom & Mağaza Deneyimi",
-      subtitle: "Kahramanmaraş Onikişubat'ta 2 Katlı Canlı Vitrin",
       image: "/images/1920x1080_hero_showroom.jpeg",
       link: "/subelerimiz",
       colSpan: "lg:col-span-4",
@@ -32,7 +29,6 @@ export function ShowroomGallerySection() {
     },
     {
       title: "Tasarım Duvar Aplikleri & Ray Spotlar",
-      subtitle: "Mekanlara Derinlik Katan Mimari Vurgu Işıkları",
       image: "/images/categories/banner_aplikler.jpg",
       link: "/kategori/aplik-ve-spotlar",
       colSpan: "lg:col-span-4",
@@ -40,7 +36,6 @@ export function ShowroomGallerySection() {
     },
     {
       title: "Dekoratif Aynalar & Özel Berjerler",
-      subtitle: "Işığınızla Bütünleşen Prestijli Yaşam Alanları",
       image: "/images/categories/banner_aksesuarlar.jpg",
       link: "/kategori/aksesuar",
       colSpan: "lg:col-span-4",
