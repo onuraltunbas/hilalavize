@@ -72,7 +72,7 @@ export function CookieConsent() {
         <div className="flex items-center gap-2 pt-1">
           <button
             onClick={handleAcceptAll}
-            className="flex-1 bg-primary text-primary-foreground hover:opacity-90 font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm"
+            className="flex-1 bg-primary text-primary-foreground hover:opacity-90 font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm"
           >
             <ShieldCheck className="w-3.5 h-3.5 text-bronze" />
             Kabul Et
@@ -80,7 +80,7 @@ export function CookieConsent() {
 
           <button
             onClick={handleAcceptEssential}
-            className="bg-surface-subtle hover:bg-border text-foreground font-semibold py-2.5 px-3 rounded-xl text-xs transition-colors border border-border shrink-0"
+            className="bg-surface-subtle hover:bg-border text-foreground font-semibold py-2.5 px-3 rounded-lg text-xs transition-colors border border-border shrink-0"
           >
             Yalnızca Zorunlu
           </button>

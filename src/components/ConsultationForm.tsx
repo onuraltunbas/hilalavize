@@ -171,7 +171,7 @@ export function ConsultationForm() {
                     value={formData.name}
                     onChange={handleNameChange}
                     placeholder="Örn: Onur Altunbaş"
-                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-lg px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
                   />
                 </div>
 
@@ -185,7 +185,7 @@ export function ConsultationForm() {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="05XX XXX XX XX"
-                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-lg px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -199,7 +199,7 @@ export function ConsultationForm() {
                   <select
                     value={formData.district}
                     onChange={(e) => setFormData({ ...formData, district: e.target.value })}
-                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-lg px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
                   >
                     <option value="Onikişubat">Onikişubat / K.Maraş</option>
                     <option value="Dulkadiroğlu">Dulkadiroğlu / K.Maraş</option>
@@ -219,7 +219,7 @@ export function ConsultationForm() {
                   <select
                     value={formData.roomType}
                     onChange={(e) => setFormData({ ...formData, roomType: e.target.value })}
-                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-lg px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
                   >
                     <option value="Salon / Yemek Odası">Salon / Yemek Odası</option>
                     <option value="Oturma Odası / TV Odası">Oturma Odası / TV Odası</option>
@@ -240,7 +240,7 @@ export function ConsultationForm() {
                     onChange={(e) =>
                       setFormData({ ...formData, stylePreference: e.target.value })
                     }
-                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
+                    className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-lg px-4 py-3 text-xs sm:text-sm text-foreground focus:outline-none transition-colors"
                   >
                     <option value="İhtişamlı ve Klasik Kristal">👑 İhtişamlı ve Klasik Kristal</option>
                     <option value="Modern ve Spor LED">⚡ Modern ve Spor LED</option>
@@ -260,7 +260,7 @@ export function ConsultationForm() {
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   placeholder="Örn: 10 m2 alanımız var, yeterli ışık sağlayan ledli model arıyoruz..."
-                  className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
+                  className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-lg px-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"
                 />
               </div>
 
@@ -268,7 +268,7 @@ export function ConsultationForm() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-6 rounded-xl text-sm shadow-md flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5"
+                  className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-6 rounded-lg text-sm shadow-md flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5"
                 >
                   <MessageCircle className="w-4 h-4" />
                   Danışmanlık Talebini Gönder (WhatsApp)

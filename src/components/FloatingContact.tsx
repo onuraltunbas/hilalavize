@@ -35,7 +35,7 @@ export function FloatingContact() {
 
           <div className="space-y-3 py-3">
             {/* Showroom Contact */}
-            <div className="bg-surface-subtle p-3.5 rounded-xl border border-border">
+            <div className="bg-surface-subtle p-3.5 rounded-lg border border-border">
               <div className="text-xs font-bold text-bronze flex items-center gap-1.5 mb-1 uppercase tracking-wider">
                 <Store className="w-3.5 h-3.5" /> Avize ve Dekorasyon Showroom
               </div>
@@ -49,7 +49,7 @@ export function FloatingContact() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
                 >
                   <MessageCircle className="w-4 h-4" /> WhatsApp ile Teklif Al
                 </a>
@@ -57,7 +57,7 @@ export function FloatingContact() {
             </div>
 
             {/* Electrical Store Contact */}
-            <div className="bg-surface-subtle p-3.5 rounded-xl border border-border">
+            <div className="bg-surface-subtle p-3.5 rounded-lg border border-border">
               <div className="text-xs font-bold text-bronze flex items-center gap-1.5 mb-1 uppercase tracking-wider">
                 <Zap className="w-3.5 h-3.5" /> Elektrik ve Tesisat Şubesi
               </div>
@@ -71,7 +71,7 @@ export function FloatingContact() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
                 >
                   <MessageCircle className="w-4 h-4" /> WhatsApp ile Teklif Al
                 </a>
@@ -83,7 +83,7 @@ export function FloatingContact() {
               href={COMPANY_DATA.socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 hover:opacity-95 text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition-all"
+              className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 hover:opacity-95 text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-all"
             >
               <InstagramIcon className="w-4 h-4" />
               <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>

@@ -31,7 +31,7 @@ export function HeroSection() {
 
           <Link
             href="/koleksiyonlar"
-            className="w-full max-w-xs bg-white text-black hover:bg-white/90 font-bold py-3.5 px-6 rounded-full text-xs tracking-wide transition-all shadow-xl flex items-center justify-center gap-2"
+            className="w-full max-w-xs bg-white text-black hover:bg-white/90 font-bold py-3.5 px-6 rounded-lg text-xs tracking-wide transition-all shadow-xl flex items-center justify-center gap-2"
           >
             Koleksiyonları Keşfet
             <ChevronRight className="w-4 h-4" />
@@ -63,7 +63,7 @@ export function HeroSection() {
 
           <Link
             href="/koleksiyonlar"
-            className="bg-white text-black hover:bg-white/90 font-bold px-9 py-4 rounded-full text-sm tracking-wide transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center gap-2"
+            className="bg-white text-black hover:bg-white/90 font-bold px-9 py-4 rounded-lg text-sm tracking-wide transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center gap-2"
           >
             Koleksiyonları Keşfet
             <ChevronRight className="w-4 h-4" />

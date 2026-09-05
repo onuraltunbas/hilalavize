@@ -48,7 +48,7 @@ export function Footer() {
                 href={COMPANY_DATA.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm shadow-sm transition-all flex items-center justify-center gap-2.5 border border-purple-500/20"
+                className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm shadow-sm transition-all flex items-center justify-center gap-2.5 border border-purple-500/20"
               >
                 <InstagramIcon className="w-4 h-4 text-pink-400" />
                 <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>

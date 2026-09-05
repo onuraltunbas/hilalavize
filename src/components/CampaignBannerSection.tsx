@@ -38,19 +38,19 @@ export function CampaignBannerSection() {
 
             {/* Campaign Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full mb-10 text-xs sm:text-sm">
-              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-xl">
+              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-lg">
                 <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
                 <span className="font-medium text-white/90">Ücretsiz Aydınlatma Danışmanlığı</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-xl">
+              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-lg">
                 <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
                 <span className="font-medium text-white/90">Eksiksiz ve Güvenli Montaj</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-xl">
+              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-lg">
                 <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
                 <span className="font-medium text-white/90">Saf K9 Berrak Kristal Garantisi</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-xl">
+              <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3 rounded-lg">
                 <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
                 <span className="font-medium text-white/90">Showrooma Özel Teklifler</span>
               </div>
@@ -64,7 +64,7 @@ export function CampaignBannerSection() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-[#059669] hover:bg-[#047857] text-white font-bold px-8 py-3.5 rounded-xl text-xs sm:text-sm tracking-wide transition-all transform hover:scale-105 shadow-xl flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-[#059669] hover:bg-[#047857] text-white font-bold px-8 py-3.5 rounded-lg text-xs sm:text-sm tracking-wide transition-all transform hover:scale-105 shadow-xl flex items-center justify-center gap-2"
               >
                 <MessageCircle className="w-4 h-4 fill-white text-[#059669]" />
                 Kampanya Teklifi Al (WhatsApp)
@@ -74,7 +74,7 @@ export function CampaignBannerSection() {
                 href={showroom.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/30 font-medium px-6 py-3.5 rounded-xl text-xs sm:text-sm tracking-wide transition-all flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/30 font-medium px-6 py-3.5 rounded-lg text-xs sm:text-sm tracking-wide transition-all flex items-center justify-center gap-2"
               >
                 <MapPin className="w-4 h-4 text-amber-300" />
                 Showroom Yol Tarifi

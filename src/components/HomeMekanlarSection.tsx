@@ -78,7 +78,7 @@ export function HomeMekanlarSection() {
         <div className="mt-8 text-center md:hidden">
           <Link
             href="/aydinlattigimiz-mekanlar"
-            className="inline-flex items-center justify-center w-full py-3 px-6 rounded-xl bg-surface border border-border font-bold text-xs text-foreground shadow-xs hover:bg-surface-subtle"
+            className="inline-flex items-center justify-center w-full py-3 px-6 rounded-lg bg-surface border border-border font-bold text-xs text-foreground shadow-xs hover:bg-surface-subtle"
           >
             Tüm {INSTALLATION_PROJECTS.length} Müşteri Evi Montajını İncele →
           </Link>

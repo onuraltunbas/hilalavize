@@ -117,7 +117,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 {location.name} İçin WhatsApp Danışma

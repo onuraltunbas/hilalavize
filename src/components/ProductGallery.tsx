@@ -33,7 +33,7 @@ export function ProductGallery({
   return (
     <div className="space-y-3">
       {/* Main Image Container */}
-      <div className="relative h-80 sm:h-[450px] w-full rounded-xl overflow-hidden bg-surface-subtle border border-border shadow-sm group">
+      <div className="relative h-80 sm:h-[450px] w-full rounded-lg overflow-hidden bg-surface-subtle border border-border shadow-sm group">
         <Image
           src={activeImage}
           alt={`${productName} - Görsel ${currentIndex + 1}`}
@@ -57,7 +57,7 @@ export function ProductGallery({
             <button
               onClick={handlePrev}
               aria-label="Önceki Görsel"
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-surface/80 hover:bg-primary hover:text-primary-foreground text-foreground border border-border flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-sm z-10 backdrop-blur-sm"
+              className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-lg bg-surface/80 hover:bg-primary hover:text-primary-foreground text-foreground border border-border flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-sm z-10 backdrop-blur-sm"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -65,7 +65,7 @@ export function ProductGallery({
             <button
               onClick={handleNext}
               aria-label="Sonraki Görsel"
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-surface/80 hover:bg-primary hover:text-primary-foreground text-foreground border border-border flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-sm z-10 backdrop-blur-sm"
+              className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-lg bg-surface/80 hover:bg-primary hover:text-primary-foreground text-foreground border border-border flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-sm z-10 backdrop-blur-sm"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

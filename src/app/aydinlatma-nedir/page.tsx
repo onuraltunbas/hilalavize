@@ -244,7 +244,7 @@ export default function LightingGuidePage() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp&apos;tan Oda Fotoğrafı Gönder
@@ -252,7 +252,7 @@ export default function LightingGuidePage() {
 
               <Link
                 href="/koleksiyonlar"
-                className="w-full bg-primary text-primary-foreground hover:opacity-90 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 border border-border shadow-sm transition-transform hover:-translate-y-0.5"
+                className="w-full bg-primary text-primary-foreground hover:opacity-90 font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 border border-border shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <Eye className="w-4 h-4 text-bronze" />
                 Tüm Koleksiyonlarımızı İnceleyin

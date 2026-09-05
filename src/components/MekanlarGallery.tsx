@@ -63,7 +63,7 @@ export function MekanlarGallery() {
                 setSelectedCategory(cat.key);
                 setVisibleCount(24);
               }}
-              className={`px-4 py-2 rounded-full text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
+              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
                 isActive
                   ? "bg-bronze text-white shadow-md scale-105"
                   : "bg-surface border border-border text-muted-foreground hover:text-foreground hover:bg-surface-subtle"
@@ -122,7 +122,7 @@ export function MekanlarGallery() {
         <div className="text-center pt-4">
           <button
             onClick={() => setVisibleCount((prev) => prev + 24)}
-            className="px-8 py-3 rounded-xl bg-surface border border-border hover:border-bronze text-foreground text-xs sm:text-sm font-bold shadow-xs hover:bg-surface-subtle transition-all cursor-pointer"
+            className="px-8 py-3 rounded-lg bg-surface border border-border hover:border-bronze text-foreground text-xs sm:text-sm font-bold shadow-xs hover:bg-surface-subtle transition-all cursor-pointer"
           >
             Daha Fazla
           </button>
@@ -142,7 +142,7 @@ export function MekanlarGallery() {
             {/* Modal Kapatma Butonu */}
             <button
               onClick={() => setActiveProject(null)}
-              className="absolute top-3 right-3 z-20 p-2 rounded-full bg-black/60 hover:bg-black text-white transition-colors cursor-pointer"
+              className="absolute top-3 right-3 z-20 p-2 rounded-lg bg-black/60 hover:bg-black text-white transition-colors cursor-pointer"
               aria-label="Kapat"
             >
               <X className="w-5 h-5" />
@@ -161,14 +161,14 @@ export function MekanlarGallery() {
               {/* Önceki - Sonraki Butonları */}
               <button
                 onClick={handlePrev}
-                className="absolute left-3 p-2 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer"
+                className="absolute left-3 p-2 rounded-lg bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer"
                 aria-label="Önceki Görsel"
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
               <button
                 onClick={handleNext}
-                className="absolute right-3 p-2 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer"
+                className="absolute right-3 p-2 rounded-lg bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer"
                 aria-label="Sonraki Görsel"
               >
                 <ChevronRight className="w-6 h-6" />
@@ -210,7 +210,7 @@ export function MekanlarGallery() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                  className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
                 >
                   <MessageCircle className="w-4 h-4" />
                   Bu Model Hakkında Bilgi Al

@@ -100,7 +100,7 @@ export function BrandHeritageSection() {
           <div className="flex items-center gap-3">
             <Link
               href="/hakkimizda"
-              className="bg-primary text-primary-foreground hover:opacity-90 font-bold px-6 py-3 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-2 shadow-sm"
+              className="bg-primary text-primary-foreground hover:opacity-90 font-bold px-6 py-3 rounded-lg text-xs sm:text-sm transition-all flex items-center gap-2 shadow-sm"
             >
               Hikayemizi İnceleyin
               <ArrowRight className="w-3.5 h-3.5" />

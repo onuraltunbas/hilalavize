@@ -116,7 +116,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
+                className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-4 rounded-lg text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp ile Teklif Al

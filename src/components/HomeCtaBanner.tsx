@@ -30,14 +30,14 @@ export function HomeCtaBanner() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#059669] hover:bg-[#047857] text-white font-bold px-6 py-3 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                className="bg-[#059669] hover:bg-[#047857] text-white font-bold px-6 py-3 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp&apos;tan Fotoğraf Gönder
               </a>
               <Link
                 href="/subelerimiz"
-                className="bg-primary text-primary-foreground hover:opacity-90 font-bold px-6 py-3 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 border border-border shadow-sm transition-transform hover:-translate-y-0.5"
+                className="bg-primary text-primary-foreground hover:opacity-90 font-bold px-6 py-3 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 border border-border shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <Store className="w-4 h-4 text-bronze" />
                 Showroom Yol Tarifi Al

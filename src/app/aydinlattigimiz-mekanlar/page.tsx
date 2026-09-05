@@ -57,7 +57,7 @@ export default function AydinlattigimizMekanlarPage() {
               href="https://wa.me/905053801350?text=Merhaba%2C%20evimin%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20ayd%C4%B1nlatma%20ve%20avize%20se%C3%A7imi%20i%C3%A7in%20dan%C4%B1%C5%9Fmanl%C4%B1k%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-8 rounded-xl text-sm flex items-center justify-center gap-2.5 shadow-md transition-transform hover:-translate-y-0.5"
+              className="w-full sm:w-auto bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-8 rounded-lg text-sm flex items-center justify-center gap-2.5 shadow-md transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="w-4 h-4" />
               WhatsApp ile Oda Fotoğrafı Gönder
@@ -65,7 +65,7 @@ export default function AydinlattigimizMekanlarPage() {
 
             <Link
               href="/koleksiyonlar"
-              className="w-full sm:w-auto bg-surface border border-border hover:border-bronze text-foreground font-bold py-3.5 px-8 rounded-xl text-sm transition-all"
+              className="w-full sm:w-auto bg-surface border border-border hover:border-bronze text-foreground font-bold py-3.5 px-8 rounded-lg text-sm transition-all"
             >
               Tüm Koleksiyonları İncele
             </Link>

@@ -129,7 +129,7 @@ export function Navbar() {
                 </button>
 
                 {categoryDropdownOpen && (
-                  <div className="absolute top-full left-0 w-80 bg-surface border border-border rounded-xl shadow-xl p-3 grid grid-cols-1 gap-1 animate-in fade-in slide-in-from-top-2 duration-200 z-50">
+                  <div className="absolute top-full left-0 w-80 bg-surface border border-border rounded-lg shadow-xl p-3 grid grid-cols-1 gap-1 animate-in fade-in slide-in-from-top-2 duration-200 z-50">
                     <div className="text-[10px] font-bold uppercase tracking-wider text-bronze px-3 py-1.5 border-b border-border/60">
                       Aydınlatma ve Dekorasyon Kategorileri
                     </div>
@@ -227,7 +227,7 @@ export function Navbar() {
             {/* Mobile Menu Button - 3 Clean Lines */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2.5 rounded-xl border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
+              className="lg:hidden p-2.5 rounded-lg border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
               aria-label="Menüyü Aç"
             >
               <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
@@ -269,7 +269,7 @@ export function Navbar() {
           </Link>
           <button
             onClick={() => setMobileMenuOpen(false)}
-            className="p-2 rounded-xl bg-surface border border-border hover:bg-surface-subtle text-foreground transition-colors"
+            className="p-2 rounded-lg bg-surface border border-border hover:bg-surface-subtle text-foreground transition-colors"
             aria-label="Menüyü Kapat"
           >
             <X className="w-5 h-5" />
@@ -282,7 +282,7 @@ export function Navbar() {
           <Link
             href="/"
             onClick={handleLinkClick}
-            className={`flex items-center justify-between p-3.5 rounded-xl font-bold text-sm transition-all border ${
+            className={`flex items-center justify-between p-3.5 rounded-lg font-bold text-sm transition-all border ${
               pathname === "/"
                 ? "bg-bronze text-white border-bronze shadow-sm"
                 : "bg-surface-subtle hover:bg-bronze/10 text-foreground border-border"
@@ -305,7 +305,7 @@ export function Navbar() {
           <Link
             href="/aydinlattigimiz-mekanlar"
             onClick={handleLinkClick}
-            className={`flex items-center justify-between p-3 rounded-xl transition-all border ${
+            className={`flex items-center justify-between p-3 rounded-lg transition-all border ${
               pathname === "/aydinlattigimiz-mekanlar"
                 ? "bg-bronze text-white border-bronze shadow-sm"
                 : "bg-bronze/10 hover:bg-bronze/20 text-foreground border-bronze/30"
@@ -328,7 +328,7 @@ export function Navbar() {
             <Link
               href="/koleksiyonlar"
               onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-xl transition-colors hover:bg-surface-subtle ${
+              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
                 pathname.startsWith("/koleksiyonlar")
                   ? "text-bronze font-bold bg-surface-subtle"
                   : "text-foreground/80"
@@ -364,7 +364,7 @@ export function Navbar() {
             <Link
               href="/aydinlatma-nedir"
               onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-xl transition-colors hover:bg-surface-subtle ${
+              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
                 pathname === "/aydinlatma-nedir"
                   ? "text-bronze font-bold bg-surface-subtle"
                   : "text-foreground/80"
@@ -380,7 +380,7 @@ export function Navbar() {
             <Link
               href="/hizmetler"
               onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-xl transition-colors hover:bg-surface-subtle ${
+              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
                 pathname.startsWith("/hizmetler")
                   ? "text-bronze font-bold bg-surface-subtle"
                   : "text-foreground/80"
@@ -396,7 +396,7 @@ export function Navbar() {
             <Link
               href="/subelerimiz"
               onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-xl transition-colors hover:bg-surface-subtle ${
+              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
                 pathname === "/subelerimiz" || pathname === "/iletisim"
                   ? "text-bronze font-bold bg-surface-subtle"
                   : "text-foreground/80"
@@ -412,7 +412,7 @@ export function Navbar() {
             <Link
               href="/hakkimizda"
               onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-xl transition-colors hover:bg-surface-subtle ${
+              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
                 pathname === "/hakkimizda"
                   ? "text-bronze font-bold bg-surface-subtle"
                   : "text-foreground/80"
@@ -428,7 +428,7 @@ export function Navbar() {
             <Link
               href="/sss"
               onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-xl transition-colors hover:bg-surface-subtle ${
+              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
                 pathname === "/sss"
                   ? "text-bronze font-bold bg-surface-subtle"
                   : "text-foreground/80"
@@ -452,7 +452,7 @@ export function Navbar() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+                className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-colors"
               >
                 <Store className="w-3.5 h-3.5" />
                 <span>Showroom</span>
@@ -463,7 +463,7 @@ export function Navbar() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+                className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-colors"
               >
                 <Zap className="w-3.5 h-3.5" />
                 <span>Elektrik Şube</span>
@@ -477,7 +477,7 @@ export function Navbar() {
               href={COMPANY_DATA.socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 border border-purple-500/20 shadow-sm transition-colors"
+              className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 border border-purple-500/20 shadow-sm transition-colors"
             >
               <InstagramIcon className="w-4 h-4 text-pink-400" />
               <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>
