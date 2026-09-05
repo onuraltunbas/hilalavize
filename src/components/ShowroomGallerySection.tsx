@@ -40,6 +40,7 @@ export function ShowroomGallerySection() {
       link: "/kategori/aksesuar",
       colSpan: "lg:col-span-4",
       tag: "Lüks Tamamlayıcılar",
+      ctaText: "Dekoratif Aksesuar Modellerini İncele",
     },
   ];
 
@@ -93,7 +94,7 @@ export function ShowroomGallerySection() {
                   {item.title}
                 </h3>
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-200 tracking-wide">
-                  Modeli İncele
+                  {item.ctaText || "Modeli İncele"}
                   <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </div>
               </div>
