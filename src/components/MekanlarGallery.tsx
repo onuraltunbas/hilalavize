@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const CATEGORIES = [
-  { key: "all", label: "Tüm Projeler (99)" },
+  { key: "all", label: `Tüm Projeler (${INSTALLATION_PROJECTS.length})` },
   { key: "salon", label: "Salon ve Oturma Alanı" },
   { key: "yemek-odasi", label: "Yemek Masası ve Ada" },
   { key: "villa", label: "Villa ve Yüksek Tavan" },

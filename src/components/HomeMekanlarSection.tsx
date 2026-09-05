@@ -29,7 +29,7 @@ export function HomeMekanlarSection() {
             href="/aydinlattigimiz-mekanlar"
             className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold tracking-wider uppercase text-foreground hover:text-bronze transition-colors group"
           >
-            <span>Tüm Projeleri Gör (99 Proje)</span>
+            <span>Tüm Projeleri Gör ({INSTALLATION_PROJECTS.length} Proje)</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>

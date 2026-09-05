@@ -25,10 +25,10 @@ export function Footer() {
         <div className="space-y-4">
           <Link href="/" className="inline-block py-1">
             <Image
-              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik • Avize"
-              width={935}
-              height={267}
+              src="/images/Gemini_Generated_Image_6kicah6kicah6kic.jpeg"
+              alt="Hilal Elektrik & Avize"
+              width={3808}
+              height={1088}
               className="h-16 sm:h-20 w-auto object-contain"
             />
           </Link>

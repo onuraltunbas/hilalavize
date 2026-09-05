@@ -83,8 +83,8 @@ export function Navbar() {
       <nav
         className={`w-full transition-all duration-300 ${
           isScrolled
-            ? "bg-background/90 backdrop-blur-md shadow-sm border-b border-border py-3.5"
-            : "bg-background/80 backdrop-blur-sm border-b border-border/60 py-4.5"
+            ? "bg-[#E1E0DD]/70 backdrop-blur-md shadow-sm border-b border-border/80 py-3.5"
+            : "bg-[#E1E0DD]/60 backdrop-blur-sm border-b border-border/60 py-4.5"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between relative">
@@ -172,10 +172,10 @@ export function Navbar() {
           <div className="flex-1 lg:flex-initial flex justify-center py-1">
             <Link href="/" onClick={handleLinkClick} className="flex items-center group">
               <Image
-                src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-                alt="Hilal Elektrik • Avize"
-                width={935}
-                height={267}
+                src="/images/Gemini_Generated_Image_6kicah6kicah6kic.jpeg"
+                alt="Hilal Elektrik & Avize"
+                width={3808}
+                height={1088}
                 className="h-13 sm:h-16 lg:h-20 w-auto object-contain transition-transform group-hover:scale-105"
                 priority
               />
@@ -258,10 +258,10 @@ export function Navbar() {
         <div className="p-4 bg-surface-subtle border-b border-border flex items-center justify-between">
           <Link href="/" onClick={handleLinkClick} className="flex items-center">
             <Image
-              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik • Avize"
-              width={160}
-              height={45}
+              src="/images/Gemini_Generated_Image_6kicah6kicah6kic.jpeg"
+              alt="Hilal Elektrik & Avize"
+              width={3808}
+              height={1088}
               className="h-10 sm:h-12 w-auto object-contain"
             />
           </Link>

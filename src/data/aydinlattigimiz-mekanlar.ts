@@ -899,5 +899,32 @@ export const INSTALLATION_PROJECTS: InstallationProject[] = [
     "category": "klasik",
     "categoryLabel": "Klasik Kristal Saray Serisi",
     "description": "Hilal Avize montaj ekibimiz tarafından Tekerek / Kahramanmaraş bölgesindeki seçkin bir yaşam alanına başarıyla uygulanan özel aydınlatma tasarımı."
+  },
+  {
+    "id": "mekan-100",
+    "src": "/images/aydinlattigimiz-mekanlar/mekan-100.jpg",
+    "title": "Özel Tasarım Kristal Salon Avize Uygulaması #100",
+    "location": "Onikişubat / Kahramanmaraş",
+    "category": "salon",
+    "categoryLabel": "Salon ve Oturma Alanı",
+    "description": "Hilal Avize montaj ekibimiz tarafından Onikişubat / Kahramanmaraş bölgesindeki seçkin bir yaşam alanına başarıyla uygulanan özel aydınlatma tasarımı."
+  },
+  {
+    "id": "mekan-101",
+    "src": "/images/aydinlattigimiz-mekanlar/mekan-101.jpg",
+    "title": "Modern Sarkıt Yemek Odası Aydınlatması #101",
+    "location": "Dulkadiroğlu / Kahramanmaraş",
+    "category": "yemek-odasi",
+    "categoryLabel": "Yemek Masası ve Ada",
+    "description": "Hilal Avize montaj ekibimiz tarafından Dulkadiroğlu / Kahramanmaraş bölgesindeki seçkin bir yaşam alanına başarıyla uygulanan özel aydınlatma tasarımı."
+  },
+  {
+    "id": "mekan-102",
+    "src": "/images/aydinlattigimiz-mekanlar/mekan-102.jpg",
+    "title": "Lüks Villa Girişi Yüksek Tavan Kristal Montajı #102",
+    "location": "Tekerek / Kahramanmaraş",
+    "category": "villa",
+    "categoryLabel": "Villa ve Yüksek Tavan",
+    "description": "Hilal Avize montaj ekibimiz tarafından Tekerek / Kahramanmaraş bölgesindeki seçkin bir yaşam alanına başarıyla uygulanan özel aydınlatma tasarımı."
   }
 ];
