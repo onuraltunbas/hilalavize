@@ -4,7 +4,6 @@ import { ShowroomGallerySection } from "@/components/ShowroomGallerySection";
 import { HomeMekanlarSection } from "@/components/HomeMekanlarSection";
 import { CampaignBannerSection } from "@/components/CampaignBannerSection";
 import { BrandHeritageSection } from "@/components/BrandHeritageSection";
-import { ConsultationForm } from "@/components/ConsultationForm";
 import { HomeCtaBanner } from "@/components/HomeCtaBanner";
 
 export default function HomePage() {
@@ -24,9 +23,6 @@ export default function HomePage() {
 
       {/* Aydınlatmanın Sanata Dönüştüğü Mekanlar: Vizyon, Misyon, Tarihçe */}
       <BrandHeritageSection />
-
-      {/* Aydınlatma Danışmanlığı Formu */}
-      <ConsultationForm />
 
       {/* Alt Hızlı İletişim Bandı */}
       <HomeCtaBanner />

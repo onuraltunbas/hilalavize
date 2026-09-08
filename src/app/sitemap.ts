@@ -16,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/hizmetler",
     "/hakkimizda",
     "/sss",
-    "/randevu",
     "/gizlilik-politikasi",
     "/kvkk-aydinlatma-metni",
     "/kullanim-sartlari",

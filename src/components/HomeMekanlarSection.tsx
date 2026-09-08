@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Sparkles, MapPin, ArrowDown } from "lucide-react";
+import { ArrowUpRight, Sparkles, MapPin } from "lucide-react";
 import { INSTALLATION_PROJECTS } from "@/data/aydinlattigimiz-mekanlar";
 
 export function HomeMekanlarSection() {
@@ -70,35 +70,14 @@ export function HomeMekanlarSection() {
           ))}
         </div>
 
-        {/* Alt Kısım: Sol alta yuvarlak aşağı in butonu ve mobil Tüm Projeleri Gör butonu */}
-        <div className="mt-8 sm:mt-12 flex items-center justify-between gap-4">
-          {/* Sol Alta Yuvarlak Aşağı İn Butonu */}
-          <a
-            href="#randevu"
-            className="inline-flex items-center gap-3 group focus:outline-none"
-            title="Ücretsiz Mimari ve Aydınlatma Desteği Formuna İn"
-            aria-label="Ücretsiz Mimari ve Aydınlatma Desteği Formuna İn"
-          >
-            <div className="w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-surface border-2 border-border/90 group-hover:border-bronze shadow-md flex items-center justify-center text-foreground group-hover:text-bronze transition-all duration-300 group-hover:scale-105 active:scale-95 shrink-0">
-              <ArrowDown className="w-5 h-5 sm:w-5 sm:h-5 transition-transform group-hover:translate-y-0.5" />
-            </div>
-            <div className="flex flex-col text-left">
-              <span className="text-[9px] sm:text-[11px] uppercase tracking-wider font-semibold text-bronze">
-                Aydınlatma Danışmanlığı
-              </span>
-              <span className="text-xs sm:text-sm font-bold text-foreground group-hover:text-bronze transition-colors">
-                Forma İn ↓
-              </span>
-            </div>
-          </a>
-
-          {/* Mobilde sağ tarafta Tüm Projeleri Gör */}
+        {/* Alt Kısım: Mobilde Tüm Projeleri Gör butonu */}
+        <div className="mt-8 flex md:hidden items-center justify-center">
           <Link
             href="/aydinlattigimiz-mekanlar"
-            className="md:hidden inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-foreground hover:text-bronze transition-colors py-2.5 px-3.5 rounded-lg bg-surface border border-border shadow-xs"
+            className="w-full text-center inline-flex items-center justify-center gap-2 text-xs font-bold tracking-wider uppercase text-foreground hover:text-bronze transition-colors py-3 px-4 rounded-lg bg-surface border border-border shadow-xs"
           >
-            <span>Tüm Projeler</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <span>Tüm Projeleri İncele</span>
+            <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
