@@ -33,12 +33,9 @@ export function BrandHeritageSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight font-heading mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight font-heading">
             Aydınlatmanın Sanata Dönüştüğü Mekanlar.
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground font-light leading-relaxed">
-            Hilal Elektrik ve Avize olarak geçmişten aldığımız ustalık mirasını, modern tasarım anlayışı ve kusursuz müşteri deneyimiyle buluşturuyoruz.
-          </p>
         </div>
 
         {/* 3 Pillars Grid */}
@@ -92,7 +89,7 @@ export function BrandHeritageSection() {
               />
             </div>
             <h4 className="text-lg sm:text-xl font-bold text-foreground font-heading max-w-2xl">
-              Avize Mağazamız ve Elektrik Malzemesi Şubemizde Bir Kahve Eşliğinde Hayalinizdeki Aydınlatmayı Seçin
+              Bir Kahve Eşliğinde Hayalinizdeki Aydınlatmayı Seçebilirsiniz
             </h4>
           </div>
           <div className="flex items-center gap-3 shrink-0">
