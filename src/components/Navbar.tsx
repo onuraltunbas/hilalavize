@@ -83,160 +83,148 @@ export function Navbar() {
       <nav
         className={`w-full transition-all duration-300 ${
           isScrolled
-            ? "bg-[#E1E0DD]/70 backdrop-blur-md shadow-sm border-b border-border/80 py-3.5"
-            : "bg-[#E1E0DD]/60 backdrop-blur-sm border-b border-border/60 py-4.5"
+            ? "bg-[#E1E0DD]/70 backdrop-blur-md shadow-sm border-b border-border/80 py-3 lg:py-2"
+            : "bg-[#E1E0DD]/60 backdrop-blur-sm border-b border-border/60 py-3.5 lg:py-2.5"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-[1fr_auto_1fr] items-center relative">
-          {/* Left Navigation (Desktop Links / Mobile Spacer) */}
-          <div className="flex items-center justify-start">
-            <div className="w-10 lg:hidden" aria-hidden="true" />
+        <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+          {/* Brand Logo (En sol tarafta & %10 büyütülmüş) */}
+          <Link href="/" onClick={handleLinkClick} className="flex items-center group shrink-0">
+            <Image
+              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+              alt="Hilal Elektrik & Avize"
+              width={935}
+              height={267}
+              className="h-12 sm:h-14 lg:h-[88px] w-auto object-contain transition-transform group-hover:scale-105"
+              priority
+            />
+          </Link>
 
-            {/* Desktop Left Navigation Links */}
-            <div className="hidden lg:flex items-center gap-3.5 xl:gap-5 text-[12.5px] xl:text-[13px] font-medium tracking-wide whitespace-nowrap">
-              <Link
-                href="/"
-                className={`transition-colors hover:text-bronze ${
-                  pathname === "/" ? "text-bronze font-semibold" : "text-foreground/80"
+          {/* Desktop Navigation Links (%7 küçültülmüş tipografi ve aralıklar) */}
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3.5 2xl:gap-5 text-[11.6px] xl:text-[12.1px] font-medium tracking-wide whitespace-nowrap">
+            <Link
+              href="/"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Anasayfa
+            </Link>
+
+            <Link
+              href="/koleksiyonlar"
+              className={`transition-colors hover:text-bronze ${
+                pathname.startsWith("/koleksiyonlar") ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Tüm Koleksiyonlar
+            </Link>
+
+            {/* Categories Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setCategoryDropdownOpen(true)}
+              onMouseLeave={() => setCategoryDropdownOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 transition-colors hover:text-bronze py-1.5 ${
+                  pathname.startsWith("/kategori") ? "text-bronze font-semibold" : "text-foreground/80"
                 }`}
+                onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
               >
-                Anasayfa
-              </Link>
+                Kategoriler
+                <ChevronDown className="w-3.5 h-3.5 text-bronze" />
+              </button>
 
-              <Link
-                href="/koleksiyonlar"
-                className={`transition-colors hover:text-bronze ${
-                  pathname.startsWith("/koleksiyonlar") ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-              >
-                Tüm Koleksiyonlar
-              </Link>
-
-              {/* Categories Dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => setCategoryDropdownOpen(true)}
-                onMouseLeave={() => setCategoryDropdownOpen(false)}
-              >
-                <button
-                  className={`flex items-center gap-1 transition-colors hover:text-bronze py-2 ${
-                    pathname.startsWith("/kategori") ? "text-bronze font-semibold" : "text-foreground/80"
-                  }`}
-                  onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
-                >
-                  Kategoriler
-                  <ChevronDown className="w-3.5 h-3.5 text-bronze" />
-                </button>
-
-                {categoryDropdownOpen && (
-                  <div className="absolute top-full left-0 w-80 bg-surface border border-border rounded-lg shadow-xl p-3 grid grid-cols-1 gap-1 animate-in fade-in slide-in-from-top-2 duration-200 z-50">
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-bronze px-3 py-1.5 border-b border-border/60">
-                      Aydınlatma ve Dekorasyon Kategorileri
-                    </div>
-                    {CATEGORIES.map((cat) => (
-                      <Link
-                        key={cat.slug}
-                        href={`/kategori/${cat.slug}`}
-                        onClick={handleLinkClick}
-                        className="group flex items-center justify-between px-3 py-2 rounded-lg text-foreground/80 hover:text-foreground hover:bg-surface-subtle transition-colors text-xs"
-                      >
-                        <span className="font-medium">{cat.name}</span>
-                        <span className="text-bronze text-xs font-bold group-hover:translate-x-1 transition-transform">
-                          →
-                        </span>
-                      </Link>
-                    ))}
+              {categoryDropdownOpen && (
+                <div className="absolute top-full left-0 w-80 bg-surface border border-border rounded-lg shadow-xl p-3 grid grid-cols-1 gap-1 animate-in fade-in slide-in-from-top-2 duration-200 z-50">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-bronze px-3 py-1.5 border-b border-border/60">
+                    Aydınlatma ve Dekorasyon Kategorileri
                   </div>
-                )}
-              </div>
-
-              <Link
-                href="/aydinlattigimiz-mekanlar"
-                className={`transition-colors hover:text-bronze ${
-                  pathname === "/aydinlattigimiz-mekanlar" ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-              >
-                Aydınlattığımız Mekanlar
-              </Link>
-
-              <Link
-                href="/aydinlatma-nedir"
-                className={`transition-colors hover:text-bronze ${
-                  pathname === "/aydinlatma-nedir" ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-              >
-                Aydınlatma Nedir
-              </Link>
+                  {CATEGORIES.map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/kategori/${cat.slug}`}
+                      onClick={handleLinkClick}
+                      className="group flex items-center justify-between px-3 py-2 rounded-lg text-foreground/80 hover:text-foreground hover:bg-surface-subtle transition-colors text-xs"
+                    >
+                      <span className="font-medium">{cat.name}</span>
+                      <span className="text-bronze text-xs font-bold group-hover:translate-x-1 transition-transform">
+                        →
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
-          </div>
 
-          {/* Centered & Enlarged Logo (Perfect Dead-Center via 1fr auto 1fr Grid) */}
-          <div className="flex justify-center items-center py-1">
-            <Link href="/" onClick={handleLinkClick} className="flex items-center group">
-              <Image
-                src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-                alt="Hilal Elektrik & Avize"
-                width={935}
-                height={267}
-                className="h-13 sm:h-16 lg:h-20 w-auto object-contain transition-transform group-hover:scale-105"
-                priority
-              />
+            <Link
+              href="/aydinlattigimiz-mekanlar"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/aydinlattigimiz-mekanlar" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Aydınlattığımız Mekanlar
+            </Link>
+
+            <Link
+              href="/aydinlatma-nedir"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/aydinlatma-nedir" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Aydınlatma Nedir
+            </Link>
+
+            <Link
+              href="/hizmetler"
+              className={`transition-colors hover:text-bronze ${
+                pathname.startsWith("/hizmetler") ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Hizmetlerimiz
+            </Link>
+
+            <Link
+              href="/subelerimiz"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/subelerimiz" || pathname === "/iletisim" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Şubelerimiz ve İletişim
+            </Link>
+
+            <Link
+              href="/hakkimizda"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/hakkimizda" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Hakkımızda
+            </Link>
+
+            <Link
+              href="/sss"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/sss" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              SSS
             </Link>
           </div>
 
-          {/* Right Navigation (Desktop Links / Mobile Hamburger Button) */}
-          <div className="flex items-center justify-end">
-            <div className="hidden lg:flex items-center gap-3.5 xl:gap-5 text-[12.5px] xl:text-[13px] font-medium tracking-wide whitespace-nowrap">
-              <Link
-                href="/hizmetler"
-                className={`transition-colors hover:text-bronze ${
-                  pathname.startsWith("/hizmetler") ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-              >
-                Hizmetlerimiz
-              </Link>
-
-              <Link
-                href="/subelerimiz"
-                className={`transition-colors hover:text-bronze ${
-                  pathname === "/subelerimiz" || pathname === "/iletisim" ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-              >
-                Şubelerimiz ve İletişim
-              </Link>
-
-              <Link
-                href="/hakkimizda"
-                className={`transition-colors hover:text-bronze ${
-                  pathname === "/hakkimizda" ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-              >
-                Hakkımızda
-              </Link>
-
-              <Link
-                href="/sss"
-                className={`transition-colors hover:text-bronze ${
-                  pathname === "/sss" ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-              >
-                SSS
-              </Link>
+          {/* Mobile Menu Button - 3 Clean Lines */}
+          <button
+            onClick={() => setMobileMenuOpen(true)}
+            className="lg:hidden p-2.5 rounded-lg border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
+            aria-label="Menüyü Aç"
+          >
+            <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
+              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
             </div>
-
-            {/* Mobile Menu Button - 3 Clean Lines */}
-            <button
-              onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2.5 rounded-lg border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
-              aria-label="Menüyü Aç"
-            >
-              <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
-                <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-                <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-                <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-              </div>
-            </button>
-          </div>
+          </button>
         </div>
       </nav>
 
