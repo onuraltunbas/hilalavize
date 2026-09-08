@@ -65,10 +65,6 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
 
         {/* Hero Banner */}
         <div className="relative rounded-2xl dgaraj-card p-6 sm:p-10 mb-10 space-y-3">
-          <span className="editorial-tag">
-            <MapPin className="w-3.5 h-3.5 text-bronze" />
-            {location.district}, {location.city}
-          </span>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
             {location.title}
           </h1>

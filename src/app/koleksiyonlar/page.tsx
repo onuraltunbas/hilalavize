@@ -8,7 +8,6 @@ import { CATEGORIES } from "@/data/categories";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductModal } from "@/components/ProductModal";
 import {
-  Sparkles,
   Search,
   Layers,
   ArrowRight,
@@ -50,10 +49,6 @@ export default function CollectionsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="editorial-tag">
-            <Sparkles className="w-3.5 h-3.5 text-bronze" />
-            Seçkin Aydınlatma ve Dekorasyon Vitrini
-          </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight">
             Hilal Avize Tüm Koleksiyonlar
           </h1>
@@ -112,10 +107,6 @@ export default function CollectionsPage() {
         {/* 2. DIRECTORY ve SEARCH SECTION */}
         <div id="tum-urunler" className="pt-8 border-t border-border space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="editorial-tag">
-              <Layers className="w-3.5 h-3.5 text-bronze" />
-              Tüm Ürün Kataloğu
-            </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
               Modellere Göre Hızlı Arama ve Filtreleme
             </h2>

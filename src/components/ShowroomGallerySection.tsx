@@ -21,13 +21,6 @@ export function ShowroomGallerySection() {
       tag: "Trend Tasarımlar",
     },
     {
-      title: "Showroom ve Mağaza Deneyimi",
-      image: "/images/1920x1080_hero_showroom.jpeg",
-      link: "/subelerimiz",
-      colSpan: "lg:col-span-4",
-      tag: "Canlı Deneyim",
-    },
-    {
       title: "Tasarım Duvar Aplikleri ve Ray Spotlar",
       image: "/images/categories/banner_aplikler.jpg",
       link: "/kategori/aplik-ve-spotlar",
@@ -40,6 +33,13 @@ export function ShowroomGallerySection() {
       link: "/kategori/aksesuar",
       colSpan: "lg:col-span-4",
       tag: "Lüks Tamamlayıcılar",
+    },
+    {
+      title: "Showroom ve Mağaza Deneyimi",
+      image: "/images/1920x1080_hero_showroom.jpeg",
+      link: "/subelerimiz",
+      colSpan: "md:col-span-2 lg:col-span-4",
+      tag: "Canlı Deneyim",
     },
   ];
 

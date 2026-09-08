@@ -3,8 +3,6 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { TrustBadges } from "@/components/TrustBadges";
 import { BranchesSection } from "@/components/BranchesSection";
-import { Sparkles } from "lucide-react";
-
 export const metadata: Metadata = {
   title: "Hakkımızda | Hilal Elektrik Avize Aksesuar Kahramanmaraş",
   description:
@@ -17,10 +15,6 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
         {/* Hero */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="editorial-tag">
-            <Sparkles className="w-3.5 h-3.5 text-bronze" />
-            25+ Yıllık Tecrübe ve Güven
-          </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight">
             Işığın ve Zarafetin Hikayesi
           </h1>

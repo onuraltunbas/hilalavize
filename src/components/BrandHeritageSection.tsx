@@ -7,7 +7,6 @@ export function BrandHeritageSection() {
   const pillars = [
     {
       icon: History,
-      badge: "",
       title: "Köklü Tarihçe ve Tecrübe",
       description:
         "Kahramanmaraş'ta elektrik tesisatı ve aydınlatma sektöründe yıllar önce attığımız adımlar; bugün Onikişubat'ta avize mağazamız ve elektrik malzemesi şubemiz ile toptanda, perakendede ve her türlü proje işlerinde bölgenin en güvenilir çözüm ortağına dönüştü. Dürüst esnaflık, profesyonel usta ve işçilik hizmeti ile kaliteli malzeme anlayışını nesiller boyu yaşatıyoruz.",
@@ -15,7 +14,6 @@ export function BrandHeritageSection() {
     },
     {
       icon: Eye,
-      badge: "Geleceğe Bakışımız",
       title: "Vizyonumuz",
       description:
         "Aydınlatmayı yalnızca karanlığı aydınlatan bir araç değil; yaşam alanlarına ruh, derinlik ve asalet katan mimari bir sanat eseri olarak görüyoruz. Dokunduğumuz her mekanda zamansız zarafeti ve üst düzey ışık konforunu standart kılmayı hedefliyoruz.",
@@ -23,7 +21,6 @@ export function BrandHeritageSection() {
     },
     {
       icon: Target,
-      badge: "Varlık Sebebimiz",
       title: "Misyonumuz",
       description:
         "Kararmayan birinci sınıf kaplamalar, ışığı kusursuz kıran saf K9 kristaller ve kaliteli elektrik malzemeleri ile ömürlük ürünler sunmak. Ücretsiz yerinde keşiften anahtar teslim güvenli montaja kadar her aşamada koşulsuz memnuniyet sağlamak.",
@@ -54,16 +51,11 @@ export function BrandHeritageSection() {
                 className="dgaraj-card p-7 sm:p-9 flex flex-col justify-between relative group hover:border-bronze transition-all duration-300"
               >
                 <div>
-                  {/* Top Icon ve Tag */}
+                  {/* Top Icon */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="w-12 h-12 rounded-2xl bg-surface-subtle border border-border flex items-center justify-center text-bronze group-hover:scale-110 transition-transform">
                       <Icon className="w-6 h-6" />
                     </div>
-                    {item.badge && (
-                      <span className="text-[11px] font-bold tracking-wider uppercase text-bronze px-2.5 py-1 rounded-full bg-surface-subtle border border-border">
-                        {item.badge}
-                      </span>
-                    )}
                   </div>
 
                   {/* Title */}
@@ -89,15 +81,21 @@ export function BrandHeritageSection() {
 
         {/* Brand Editorial Showcase Strip */}
         <div className="p-8 sm:p-10 rounded-2xl bg-surface-subtle border border-border flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-1 text-center md:text-left">
-            <div className="text-xs font-bold text-bronze tracking-wider uppercase">
-              Hilal Avize ve Hilal Elektrik
+          <div className="space-y-3 text-center md:text-left">
+            <div className="flex justify-center md:justify-start">
+              <Image
+                src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+                alt="Hilal Elektrik & Avize"
+                width={935}
+                height={267}
+                className="h-12 sm:h-14 w-auto object-contain"
+              />
             </div>
-            <h4 className="text-lg sm:text-xl font-bold text-foreground font-heading">
-              Showroomumuzda Bir Kahve Eşliğinde Hayalinizdeki Aydınlatmayı Seçin
+            <h4 className="text-lg sm:text-xl font-bold text-foreground font-heading max-w-2xl">
+              Avize Mağazamız ve Elektrik Malzemesi Şubemizde Bir Kahve Eşliğinde Hayalinizdeki Aydınlatmayı Seçin
             </h4>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 shrink-0">
             <Link
               href="/hakkimizda"
               className="bg-primary text-primary-foreground hover:opacity-90 font-bold px-6 py-3 rounded-lg text-xs sm:text-sm transition-all flex items-center gap-2 shadow-sm"

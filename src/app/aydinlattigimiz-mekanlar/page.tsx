@@ -2,7 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { MekanlarGallery } from "@/components/MekanlarGallery";
-import { Sparkles, MessageCircle, ChevronRight, ShieldCheck, Home } from "lucide-react";
+import { Sparkles, MessageCircle, ChevronRight, Home } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Aydınlattığımız Mekanlar | Müşteri Evleri ve Montaj Referansları | Hilal Avize Kahramanmaraş",
@@ -40,10 +40,6 @@ export default function AydinlattigimizMekanlarPage() {
         {/* Danışmanlık ve Çağrı Alanı */}
         <div className="dgaraj-card p-8 sm:p-12 text-center rounded-3xl space-y-6 bg-gradient-to-b from-surface to-surface-subtle border border-border mt-16 shadow-lg">
           <div className="max-w-2xl mx-auto space-y-3">
-            <span className="editorial-tag inline-flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Hilal Avize Mimari Danışmanlık ve Montaj</span>
-            </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">
               Sizin Evinizi de Birlikte Aydınlatalım!
             </h2>

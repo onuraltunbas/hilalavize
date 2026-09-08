@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CATEGORIES } from "@/data/categories";
-import { Sparkles, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export function FeaturedCategories() {
   return (
@@ -11,10 +11,6 @@ export function FeaturedCategories() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="space-y-3 max-w-2xl">
-            <span className="editorial-tag">
-              <Sparkles className="w-3.5 h-3.5 text-bronze" />
-              Geniş Ürün Yelpazesi
-            </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
               Aydınlatma ve Dekorasyon Kategorilerimiz
             </h2>

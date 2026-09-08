@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import { COMPANY_DATA } from "@/data/company";
-import { Sparkles, MessageCircle, CheckCircle2 } from "lucide-react";
+import { MessageCircle, CheckCircle2 } from "lucide-react";
 
 export function ConsultationForm() {
   const [formData, setFormData] = useState({
@@ -129,10 +129,6 @@ export function ConsultationForm() {
         <div className="dgaraj-card p-6 sm:p-12 relative overflow-hidden">
           {/* Başlık */}
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-3">
-            <span className="editorial-tag">
-              <Sparkles className="w-3.5 h-3.5 text-bronze" />
-              Ücretsiz Mimari ve Aydınlatma Desteği
-            </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
               Evinize En Uygun Modeli Birlikte Bulalım
             </h2>

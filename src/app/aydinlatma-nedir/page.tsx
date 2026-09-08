@@ -7,11 +7,9 @@ import {
   Sparkles,
   Layers,
   Sun,
-  Ruler,
   CheckCircle2,
   MessageCircle,
   Eye,
-  Compass,
 } from "lucide-react";
 import { COMPANY_DATA } from "@/data/company";
 
@@ -191,10 +189,6 @@ export default function LightingGuidePage() {
         {/* Section 4: Chandelier Sizing Formula */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-5">
-            <span className="editorial-tag">
-              <Ruler className="w-3.5 h-3.5 text-bronze" />
-              Pratik Seçim Formülü
-            </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
               Odanıza Göre Doğru Avize Boyutu Nasıl Hesaplanır?
             </h2>
@@ -225,10 +219,6 @@ export default function LightingGuidePage() {
           {/* Consultation CTA Box */}
           <div className="dgaraj-card p-6 sm:p-8 space-y-5 bg-surface">
             <div className="space-y-2">
-              <span className="editorial-tag">
-                <Compass className="w-3.5 h-3.5 text-bronze" />
-                Ücretsiz Aydınlatma Danışmanlığı
-              </span>
               <h3 className="text-xl font-bold text-foreground">
                 Evinizin Fotoğrafını Gönderin, Doğru Avizeyi Beraber Belirleyelim!
               </h3>

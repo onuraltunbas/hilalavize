@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { FAQS } from "@/data/faqs";
-import { ChevronDown, HelpCircle } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -15,10 +15,6 @@ export function FaqSection() {
     <section className="py-20 bg-background relative border-b border-border" id="sss">
       <div className="max-w-4xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14 space-y-3">
-          <span className="editorial-tag">
-            <HelpCircle className="w-3.5 h-3.5 text-bronze" />
-            Merak Edilenler
-          </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
             Sıkça Sorulan Sorular (SSS)
           </h2>

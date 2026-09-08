@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { COMPANY_DATA } from "@/data/company";
-import { Sparkles, MessageCircle, Store } from "lucide-react";
+import { MessageCircle, Store } from "lucide-react";
 
 export function HomeCtaBanner() {
   const showroom = COMPANY_DATA.branches[0];
@@ -12,10 +12,6 @@ export function HomeCtaBanner() {
         <div className="dgaraj-card p-6 sm:p-10 relative overflow-hidden bg-surface">
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
             <div className="space-y-2.5 max-w-2xl">
-              <span className="editorial-tag">
-                <Sparkles className="w-3.5 h-3.5 text-bronze" />
-                Kahramanmaraş&apos;ın En Kapsamlı Aydınlatma Vitrini
-              </span>
               <h2 className="text-xl sm:text-3xl font-extrabold text-foreground tracking-tight">
                 Evinize En Uygun Avizeyi Beraber Seçelim!
               </h2>

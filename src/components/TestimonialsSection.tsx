@@ -7,10 +7,6 @@ export function TestimonialsSection() {
     <section className="py-20 bg-background relative border-b border-border" id="musteri-yorumlari">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <span className="editorial-tag">
-            <Star className="w-3.5 h-3.5 fill-bronze text-bronze" />
-            %100 Gerçek Müşteri Deneyimleri
-          </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
             Müşterilerimizin Hilal Avize Yorumları
           </h2>
