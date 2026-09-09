@@ -18,17 +18,15 @@ export function ProductCard({ product }: ProductCardProps) {
       title={`${product.name} - Ürün Detayı`}
     >
       {/* Image Area */}
-      <div className="relative w-full overflow-hidden bg-surface-subtle flex items-center justify-center p-2">
+      <div className="relative aspect-4/3 w-full overflow-hidden bg-surface-subtle">
         <Image
           src={product.image}
           alt={`${product.name} - Kahramanmaraş Hilal Avize`}
-          width={800}
-          height={800}
+          fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 33vw"
-          className="w-full h-auto object-contain block group-hover:scale-105 transition-transform duration-500"
-          unoptimized
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-30 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-40" />
 
         {/* Custom badge */}
         {product.badge && (

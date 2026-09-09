@@ -98,7 +98,7 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
       </div>
 
       {/* Matched Products Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 items-start">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
         {recommendations.map(({ product, score, reason }) => (
           <div
             key={product.id}

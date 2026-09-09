@@ -177,7 +177,7 @@ export default function CollectionsPage() {
 
           {/* Products Grid */}
           {filteredProducts.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 items-start">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
               {filteredProducts.map((product) => (
                 <ProductCard
                   key={product.id}
