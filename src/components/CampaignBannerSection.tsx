@@ -33,7 +33,7 @@ export function CampaignBannerSection() {
             </h2>
 
             <p className="text-sm sm:text-base text-white/80 font-light leading-relaxed mb-8">
-              Odanızın fotoğrafını veya planını bize iletin; uzman ekibimizle en doğru çap, doğru lümen ve dekoratif stili belirleyelim. Kampanya kapsamında ücretsiz keşif, profesyonel montaj ve ömürlük kaplama güvencesi sizi bekliyor.
+              Odanızın fotoğrafını veya planını bize iletin; uzman ekibimizle en doğru çap, doğru lümen ve dekoratif stili belirleyelim.
             </p>
 
             {/* Campaign Highlights - Özellik Listesi (Buton formatında değil, belirgin liste maddeleri) */}
