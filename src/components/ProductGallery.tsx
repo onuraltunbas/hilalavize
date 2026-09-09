@@ -33,13 +33,15 @@ export function ProductGallery({
   return (
     <div className="space-y-3">
       {/* Main Image Container */}
-      <div className="relative h-80 sm:h-[450px] w-full rounded-lg overflow-hidden bg-surface-subtle border border-border shadow-sm group">
+      <div className="relative w-full rounded-2xl overflow-hidden bg-surface-subtle border border-border shadow-sm group flex items-center justify-center p-3 sm:p-6 min-h-[300px]">
         <Image
           src={activeImage}
           alt={`${productName} - Görsel ${currentIndex + 1}`}
-          fill
+          width={1200}
+          height={1200}
           priority
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          unoptimized
+          className="w-full h-auto max-h-[600px] object-contain mx-auto transition-transform duration-500 group-hover:scale-[1.02]"
         />
 
         {/* Custom Badge */}
@@ -85,17 +87,19 @@ export function ProductGallery({
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`relative w-16 h-16 rounded-lg overflow-hidden shrink-0 border transition-all ${
+              className={`relative w-16 h-16 rounded-lg overflow-hidden shrink-0 border p-1 bg-surface-subtle flex items-center justify-center transition-all ${
                 currentIndex === idx
-                  ? "border-bronze shadow-sm"
+                  ? "border-bronze shadow-sm ring-1 ring-bronze"
                   : "border-border opacity-60 hover:opacity-100"
               }`}
             >
               <Image
                 src={img}
                 alt={`${productName} küçük görsel ${idx + 1}`}
-                fill
-                className="object-cover"
+                width={64}
+                height={64}
+                unoptimized
+                className="w-full h-full object-contain"
               />
             </button>
           ))}
