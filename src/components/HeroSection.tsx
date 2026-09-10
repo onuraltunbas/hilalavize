@@ -23,11 +23,17 @@ export function HeroSection() {
           <div className="absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-black to-transparent pointer-events-none" />
         </div>
 
-        {/* Content Container below video - ONLY Slogan + Button */}
+        {/* Content Container below video - Slogan + Brand + Button */}
         <div className="px-5 pt-6 pb-12 text-center flex flex-col items-center bg-black">
-          <h1 className="text-3xl font-extrabold tracking-tight leading-tight mb-5 font-heading text-white">
+          <span className="inline-block px-3 py-1 mb-3 rounded-full bg-white/10 border border-white/20 text-white/90 text-[11px] font-medium tracking-wide">
+            Hilal Elektrik & Avize Kahramanmaraş
+          </span>
+          <h1 className="text-3xl font-extrabold tracking-tight leading-tight mb-3 font-heading text-white">
             Işığın En Zarif Hali.
           </h1>
+          <p className="text-xs text-zinc-300 max-w-xs mb-5 font-light leading-relaxed">
+            Kahramanmaraş&apos;ta lüks kristal avizeler, modern LED sarkıtlar ve profesyonel elektrik çözümleri.
+          </p>
 
           <Link
             href="/koleksiyonlar"
@@ -55,11 +61,17 @@ export function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/35" />
         </div>
 
-        {/* Desktop Content - ONLY Slogan + Button */}
+        {/* Desktop Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-8 text-center flex flex-col items-center py-24">
-          <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-8 font-heading drop-shadow-md">
+          <span className="inline-block px-4 py-1.5 mb-5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-xs font-semibold tracking-wider uppercase">
+            Hilal Elektrik & Avize • Kahramanmaraş Onikişubat
+          </span>
+          <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-5 font-heading drop-shadow-md">
             Işığın En Zarif Hali.
           </h1>
+          <p className="text-base lg:text-lg text-zinc-200 max-w-2xl mb-8 font-light drop-shadow leading-relaxed">
+            Hilal Avize Showroom ve Elektrik Şubesi ile lüks aydınlatma tasarımları, dekoratif aksesuarlar ve kaliteli elektrik montaj çözümleri.
+          </p>
 
           <Link
             href="/koleksiyonlar"

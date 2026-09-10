@@ -11,6 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     "",
     "/koleksiyonlar",
+    "/aydinlattigimiz-mekanlar",
+    "/aydinlatma-nedir",
     "/subelerimiz",
     "/iletisim",
     "/hizmetler",

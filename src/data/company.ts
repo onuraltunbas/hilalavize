@@ -41,7 +41,7 @@ export const COMPANY_DATA = {
   tagline: "Işığın ve Zarafetin Kahramanmaraş'taki Buluşma Noktası",
   description:
     "Hilal Elektrik Avize Aksesuar, Kahramanmaraş Onikişubat'ta iki ayrı uzman şubesiyle hizmet vermektedir. Lüks avize, modern aplik, ray spot, cam sanat objeleri, ayna, saat, dekoratif mobilya showroomumuz ve profesyonel elektrik malzemeleri ile uygulama şubemizle yaşam alanlarınızı aydınlatıyoruz.",
-  siteUrl: "https://hilalavize-five.vercel.app",
+  siteUrl: "https://hilalelektrikavize.com",
   establishedYear: "1998",
   socials: {
     instagram: "https://www.instagram.com/hilal.avize/",

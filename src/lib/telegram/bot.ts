@@ -1,4 +1,5 @@
 import { PRODUCTS, Product } from "@/data/products";
+import { COMPANY_DATA } from "@/data/company";
 
 // Ortam Değişkenleri ve Sabitler
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "8836427661:AAF0N11G29uJKkTQ0sZO-FzF7QQXRZTrg3Q";
@@ -314,5 +315,5 @@ export function formatProductDetails(product: Product): string {
 🏢 *Şube:* ${product.branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
 
 🌐 *Canlı Web Sayfası:*
-https://hilalavize-five.vercel.app/urun/${product.slug}`;
+${COMPANY_DATA.siteUrl}/urun/${product.slug}`;
 }

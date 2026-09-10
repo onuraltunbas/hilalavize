@@ -20,6 +20,7 @@ import {
 } from "@/lib/telegram/bot";
 import { PRODUCTS, Product } from "@/data/products";
 import { saveProductAsync, deleteProductAsync } from "@/lib/products-store";
+import { COMPANY_DATA } from "@/data/company";
 
 export async function POST(req: NextRequest) {
   try {
@@ -178,7 +179,7 @@ export async function POST(req: NextRequest) {
     if (text === "/durum") {
       await sendTelegramMessage(
         chatId,
-        `✅ *Sistem Durumu: Aktif*\n\n👤 *Yönetici:* ${userDisplayName}\n🔐 *Oturum:* Açık\n📦 *Yayındaki Ürün Sayısı:* ${PRODUCTS.length}\n🌐 *Web Sitesi:* https://hilalavize-five.vercel.app`
+        `✅ *Sistem Durumu: Aktif*\n\n👤 *Yönetici:* ${userDisplayName}\n🔐 *Oturum:* Açık\n📦 *Yayındaki Ürün Sayısı:* ${PRODUCTS.length}\n🌐 *Web Sitesi:* ${COMPANY_DATA.siteUrl}`
       );
       return NextResponse.json({ ok: true });
     }
@@ -256,7 +257,7 @@ export async function POST(req: NextRequest) {
         const details = formatProductDetails(foundProduct);
         const fullImageUrl = foundProduct.image.startsWith("http") || foundProduct.image.startsWith("data:")
           ? foundProduct.image
-          : `https://hilalavize-five.vercel.app${foundProduct.image}`;
+          : `${COMPANY_DATA.siteUrl}${foundProduct.image}`;
         await sendTelegramPhoto(chatId, fullImageUrl, details);
       } else {
         await sendTelegramMessage(
@@ -479,7 +480,7 @@ _(Mobilya / Aksesuar ise 'Dekoratif Mobilya' yazabilirsiniz)_`
 🏢 *Şube:* ${branch === "showroom" ? "Avize Showroom" : "Elektrik Şubesi"}
 
 🌐 *Canlı Web Sayfası:*
-https://hilalavize-five.vercel.app/urun/${slug}
+${COMPANY_DATA.siteUrl}/urun/${slug}
 
 _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
 
@@ -494,7 +495,7 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
 📂 *Kategori:* ${cat.name}
 📐 *Boyut:* ${d.dimensions}
 💡 *Duy:* ${d.lightingType}
-🌐 *İncele:* https://hilalavize-five.vercel.app/urun/${slug}`;
+🌐 *İncele:* ${COMPANY_DATA.siteUrl}/urun/${slug}`;
 
         await broadcastToAllAdmins(broadcastAnnouncement, chatId, photoToSend);
 
@@ -508,7 +509,7 @@ _Ürün başarıyla oluşturuldu ve web sitenize işlendi._`;
       const details = formatProductDetails(autoProduct);
       const fullImageUrl = autoProduct.image.startsWith("http") || autoProduct.image.startsWith("data:")
         ? autoProduct.image
-        : `https://hilalavize-five.vercel.app${autoProduct.image}`;
+        : `${COMPANY_DATA.siteUrl}${autoProduct.image}`;
       await sendTelegramPhoto(chatId, fullImageUrl, details);
       return NextResponse.json({ ok: true });
     }

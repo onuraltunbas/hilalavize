@@ -27,28 +27,39 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hilalavize.com"),
+  metadataBase: new URL("https://hilalelektrikavize.com"),
   title: {
-    default: "Hilal Elektrik Avize Aksesuar | Kahramanmaraş Lüks Aydınlatma Showroomu",
-    template: "%s | Hilal Elektrik Avize Aksesuar",
+    default: "Hilal Elektrik & Avize | Kahramanmaraş Lüks Avize, Aydınlatma ve Elektrik",
+    template: "%s | Hilal Elektrik & Avize Kahramanmaraş",
   },
   description:
-    "Kahramanmaraş Onikişubat'ta lüks saray tipi kristal avizeler, modern LED sarkıtlar, dekoratif aynalar, cam süs eşyaları, saatler ve elektrik malzemeleri. Ücretsiz danışmanlık ve montaj güvencesi.",
+    "Hilal Elektrik & Avize Kahramanmaraş Onikişubat'ta lüks saray tipi kristal avizeler, modern LED aplikler, dekoratif aksesuarlar ve toptan-perakende elektrik malzemeleri ile hizmetinizde. Ücretsiz keşif ve profesyonel montaj.",
   keywords: [
-    "Kahramanmaraş avize",
-    "Onikişubat avize mağazaları",
+    "Hilal",
+    "Hilal Elektrik",
+    "Hilal Avize",
+    "Hilal Elektrik Avize",
+    "Hilal Elektrik Kahramanmaraş",
     "Hilal Avize Kahramanmaraş",
+    "hilalelektrikavize.com",
+    "Kahramanmaraş avize",
     "Kahramanmaraş elektrikçi",
+    "Kahramanmaraş aydınlatma",
+    "Onikişubat avize mağazaları",
+    "Onikişubat elektrik malzemeleri",
     "kristal avize modelleri",
     "modern LED avize",
     "manyetik ray spot",
     "dokunmatik led ayna",
     "lüks cam anahtar priz",
-    "dekoratif saat ve berjer",
+    "avize tamiri ve montajı Kahramanmaraş",
   ],
-  authors: [{ name: "Hilal Elektrik Avize Aksesuar" }],
-  creator: "Hilal Elektrik Avize Aksesuar",
-  publisher: "Hilal Elektrik Avize Aksesuar",
+  alternates: {
+    canonical: "/",
+  },
+  authors: [{ name: "Hilal Elektrik & Avize", url: "https://hilalelektrikavize.com" }],
+  creator: "Hilal Elektrik & Avize",
+  publisher: "Hilal Elektrik & Avize",
   formatDetection: {
     email: false,
     address: true,
@@ -57,9 +68,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://hilalavize.com",
-    siteName: "Hilal Elektrik Avize Aksesuar",
-    title: "Hilal Elektrik Avize Aksesuar | Kahramanmaraş Lüks Aydınlatma",
+    url: "https://hilalelektrikavize.com",
+    siteName: "Hilal Elektrik & Avize",
+    title: "Hilal Elektrik & Avize | Kahramanmaraş Lüks Aydınlatma ve Elektrik",
     description:
       "Kahramanmaraş Onikişubat'ta 2 uzman şubemizle lüks avize, modern aydınlatma, dekoratif aksesuarlar ve profesyonel elektrik montaj hizmeti sunuyoruz.",
     images: [
@@ -67,13 +78,13 @@ export const metadata: Metadata = {
         url: "/images/1920x1080_hero_showroom.jpg",
         width: 1920,
         height: 1080,
-        alt: "Hilal Avize Showroom Kahramanmaraş",
+        alt: "Hilal Elektrik ve Avize Showroom Kahramanmaraş",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hilal Elektrik Avize Aksesuar | Kahramanmaraş",
+    title: "Hilal Elektrik & Avize | Kahramanmaraş",
     description:
       "Lüks kristal avizeler, modern sarkıtlar, dekoratif aynalar ve elektrik malzemeleri. Kahramanmaraş Onikişubat.",
     images: ["/images/1920x1080_hero_showroom.jpg"],
@@ -95,7 +106,7 @@ export const metadata: Metadata = {
     apple: "/images/hilal_logo.png",
   },
   verification: {
-    google: "google-site-verification-kodunuz-buraya",
+    google: "G-SbhMGn5dtReztay-3XYcfb7G8gUT-XVfPDG_Lg23U",
   },
 };
 
