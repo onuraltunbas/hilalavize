@@ -203,7 +203,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-5 rounded-lg text-sm flex items-center justify-center gap-2.5 shadow-sm transition-transform hover:-translate-y-0.5"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  WhatsApp ile Teklif Al
+                  Teklif Al
                 </a>
               </div>
             </div>

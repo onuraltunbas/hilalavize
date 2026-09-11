@@ -7,8 +7,6 @@ import { usePathname } from "next/navigation";
 import { COMPANY_DATA } from "@/data/company";
 import { CATEGORIES } from "@/data/categories";
 import {
-  MessageCircle,
-  Menu,
   X,
   ChevronDown,
   ChevronRight,
@@ -26,10 +24,10 @@ import {
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
 export function Navbar() {
-  const pathname = usePathname();
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,8 +40,11 @@ export function Navbar() {
 
   // Close mobile drawer whenever route changes
   useEffect(() => {
-    setMobileMenuOpen(false);
-    setCategoryDropdownOpen(false);
+    const timer = setTimeout(() => {
+      setMobileMenuOpen(false);
+      setCategoryDropdownOpen(false);
+    }, 0);
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   // Lock document body scroll when mobile drawer is active
@@ -159,21 +160,21 @@ export function Navbar() {
             </div>
 
             <Link
-              href="/aydinlattigimiz-mekanlar"
-              className={`transition-colors hover:text-bronze ${
-                pathname === "/aydinlattigimiz-mekanlar" ? "text-bronze font-semibold" : "text-foreground/80"
-              }`}
-            >
-              Aydınlattığımız Mekanlar
-            </Link>
-
-            <Link
               href="/aydinlatma-nedir"
               className={`transition-colors hover:text-bronze ${
                 pathname === "/aydinlatma-nedir" ? "text-bronze font-semibold" : "text-foreground/80"
               }`}
             >
               Aydınlatma Nedir
+            </Link>
+
+            <Link
+              href="/aydinlattigimiz-mekanlar"
+              className={`transition-colors hover:text-bronze ${
+                pathname === "/aydinlattigimiz-mekanlar" ? "text-bronze font-semibold" : "text-foreground/80"
+              }`}
+            >
+              Aydınlattığımız Mekanlar
             </Link>
 
             <Link
@@ -289,28 +290,6 @@ export function Navbar() {
             <ChevronRight className="w-4 h-4 opacity-70" />
           </Link>
 
-          {/* 2. AYDINLATTIĞIMIZ MEKANLAR (Yeni Sayfa Butonu) */}
-          <Link
-            href="/aydinlattigimiz-mekanlar"
-            onClick={handleLinkClick}
-            className={`flex items-center justify-between p-3 rounded-lg transition-all border ${
-              pathname === "/aydinlattigimiz-mekanlar"
-                ? "bg-bronze text-white border-bronze shadow-sm"
-                : "bg-bronze/10 hover:bg-bronze/20 text-foreground border-bronze/30"
-            }`}
-          >
-            <div className="flex items-center gap-3">
-              <div className="p-1.5 rounded-lg bg-bronze text-white">
-                <Camera className="w-4 h-4" />
-              </div>
-              <div>
-                <span className="font-bold text-sm block">Aydınlattığımız Mekanlar</span>
-                <span className="text-[10px] text-muted-foreground block">Müşteri Evlerinden Kareler</span>
-              </div>
-            </div>
-            <ChevronRight className="w-4 h-4 text-bronze" />
-          </Link>
-
           {/* Menü Maddeleri */}
           <div className="space-y-1 text-sm font-medium">
             <Link
@@ -349,6 +328,7 @@ export function Navbar() {
               </div>
             </div>
 
+            {/* Aydınlatma Nedir */}
             <Link
               href="/aydinlatma-nedir"
               onClick={handleLinkClick}
@@ -360,9 +340,28 @@ export function Navbar() {
             >
               <div className="flex items-center gap-3">
                 <Sparkles className="w-4 h-4 text-amber-500" />
-                <span className="text-bronze font-semibold">Aydınlatma Nedir? (Rehber)</span>
+                <span className="text-bronze font-semibold">Aydınlatma Nedir?</span>
               </div>
               <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
+            </Link>
+
+            {/* Aydınlattığımız Mekanlar */}
+            <Link
+              href="/aydinlattigimiz-mekanlar"
+              onClick={handleLinkClick}
+              className={`flex items-center justify-between p-3 rounded-lg transition-all border ${
+                pathname === "/aydinlattigimiz-mekanlar"
+                  ? "bg-bronze text-white border-bronze shadow-sm"
+                  : "bg-surface-subtle hover:bg-bronze/10 text-foreground border-border"
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <div className={`p-1.5 rounded-lg ${pathname === "/aydinlattigimiz-mekanlar" ? "bg-white/20 text-white" : "bg-bronze/15 text-bronze"}`}>
+                  <Camera className="w-4 h-4" />
+                </div>
+                <span>Aydınlattığımız Mekanlar</span>
+              </div>
+              <ChevronRight className="w-4 h-4 text-bronze" />
             </Link>
 
             <Link

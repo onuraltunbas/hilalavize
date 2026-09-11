@@ -119,7 +119,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                 className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-4 rounded-lg text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
-                WhatsApp ile Teklif Al
+                Teklif Al
               </a>
             </div>
           </div>

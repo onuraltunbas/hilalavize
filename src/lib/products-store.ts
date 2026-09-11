@@ -99,11 +99,14 @@ export async function getAllProductsAsync(): Promise<Product[]> {
 export async function getProductBySlugAsync(slug: string): Promise<Product | undefined> {
   const all = await getAllProductsAsync();
   const clean = slug.toLowerCase().trim();
+  const cleanAlphaNum = clean.replace(/[^a-z0-9]/g, "");
   return all.find(
     (p) =>
       p.slug.toLowerCase() === clean ||
+      p.code.toLowerCase() === clean ||
       p.id.toLowerCase() === clean ||
-      p.id.toLowerCase().replace("-", "") === clean
+      p.id.toLowerCase().replace("-", "") === clean ||
+      p.code.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum
   );
 }
 
@@ -145,10 +148,13 @@ export function getAllProducts(): Product[] {
 
 export function getProductBySlug(slug: string): Product | undefined {
   const clean = slug.toLowerCase().trim();
+  const cleanAlphaNum = clean.replace(/[^a-z0-9]/g, "");
   return STATIC_PRODUCTS.find(
     (p) =>
       p.slug.toLowerCase() === clean ||
-      p.id.toLowerCase() === clean
+      p.code.toLowerCase() === clean ||
+      p.id.toLowerCase() === clean ||
+      p.code.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum
   );
 }
 

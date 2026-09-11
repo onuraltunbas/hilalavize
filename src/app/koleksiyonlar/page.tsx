@@ -31,14 +31,17 @@ export default function CollectionsPage() {
   }, []);
 
   const filteredProducts = useMemo(() => {
+    const q = searchQuery.toLowerCase().trim();
     return productsList.filter((product) => {
       const matchCategory =
         selectedCategory === "all" || product.categorySlug === selectedCategory;
       const matchSearch =
-        searchQuery === "" ||
-        product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.dimensions.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.lightingType.toLowerCase().includes(searchQuery.toLowerCase());
+        q === "" ||
+        product.name.toLowerCase().includes(q) ||
+        product.code.toLowerCase().includes(q) ||
+        product.categoryName.toLowerCase().includes(q) ||
+        product.dimensions.toLowerCase().includes(q) ||
+        product.lightingType.toLowerCase().includes(q);
 
       return matchCategory && matchSearch;
     });
@@ -119,7 +122,7 @@ export default function CollectionsPage() {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
               <input
                 type="text"
-                placeholder="Ürün adı, kristal, pirinç, mermer veya ölçü ara..."
+                placeholder="Ürün kodu (örn: HL-LED-001), kristal, aplik veya ölçü ara..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-surface-subtle border border-border focus:border-bronze rounded-xl pl-11 pr-4 py-3 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none transition-colors"

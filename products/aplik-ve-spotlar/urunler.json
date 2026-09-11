@@ -1,138 +1,172 @@
 [
   {
     "no": 1,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 1",
+    "name": "HL-ASP-001",
     "dimensions": "Φ230*H230mm",
     "lightingType": "Dahili LED 8W",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 1."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 1.",
+    "id": "ASP-001",
+    "code": "HL-ASP-001"
   },
   {
     "no": 2,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 2",
+    "name": "HL-ASP-002",
     "dimensions": "Standart Duvar Ölçüsü",
     "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 2."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 2.",
+    "id": "ASP-002",
+    "code": "HL-ASP-002"
   },
   {
     "no": 3,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 3",
+    "name": "HL-ASP-003",
     "dimensions": "Standart Duvar Ölçüsü",
     "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 3."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 3.",
+    "id": "ASP-003",
+    "code": "HL-ASP-003"
   },
   {
     "no": 4,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 4",
+    "name": "HL-ASP-004",
     "dimensions": "Φ120*H360mm",
     "lightingType": "Dahili LED 5W",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 4."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 4.",
+    "id": "ASP-004",
+    "code": "HL-ASP-004"
   },
   {
     "no": 5,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 5",
+    "name": "HL-ASP-005",
     "dimensions": "140*H800mm",
     "lightingType": "Dahili LED 10W",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 5."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 5.",
+    "id": "ASP-005",
+    "code": "HL-ASP-005"
   },
   {
     "no": 6,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 6",
+    "name": "HL-ASP-006",
     "dimensions": "200*H280mm",
     "lightingType": "Dahili LED 15W",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 6."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 6.",
+    "id": "ASP-006",
+    "code": "HL-ASP-006"
   },
   {
     "no": 7,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 7",
+    "name": "HL-ASP-007",
     "dimensions": "240*H230mm",
     "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 7."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 7.",
+    "id": "ASP-007",
+    "code": "HL-ASP-007"
   },
   {
     "no": 8,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 8",
+    "name": "HL-ASP-008",
     "dimensions": "420*H360mm",
     "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 8."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 8.",
+    "id": "ASP-008",
+    "code": "HL-ASP-008"
   },
   {
     "no": 9,
-    "name": "Belvai ve Sorea Modern LED Duvar Apliği",
+    "name": "HL-ASP-009",
     "dimensions": "Φ190*H35.5mm (Belvai) / Φ240*H300mm (Sorea)",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 9."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 9.",
+    "id": "ASP-009",
+    "code": "HL-ASP-009"
   },
   {
     "no": 10,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 10",
+    "name": "HL-ASP-010",
     "dimensions": "Φ230*H230mm",
     "lightingType": "Dahili LED 8W",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 10."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 10.",
+    "id": "ASP-010",
+    "code": "HL-ASP-010"
   },
   {
     "no": 11,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 11",
+    "name": "HL-ASP-011",
     "dimensions": "Φ95*H330mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 11."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 11.",
+    "id": "ASP-011",
+    "code": "HL-ASP-011"
   },
   {
     "no": 12,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 12",
+    "name": "HL-ASP-012",
     "dimensions": "Φ240*H380mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 12."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 12.",
+    "id": "ASP-012",
+    "code": "HL-ASP-012"
   },
   {
     "no": 13,
-    "name": "Tirra ve Eira Tasarım Duvar Apliği",
+    "name": "HL-ASP-013",
     "dimensions": "L180*W140*H100mm (Tirra-01) / L310*W140*H100mm (Tirra-02) / Φ200mm (Eira)",
     "lightingType": "G9 Duy (1-2 Adet)",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 13."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 13.",
+    "id": "ASP-013",
+    "code": "HL-ASP-013"
   },
   {
     "no": 14,
-    "name": "Modern Dekoratif LED Duvar Apliği - Model 14",
+    "name": "HL-ASP-014",
     "dimensions": "L55*W95*H450mm",
     "lightingType": "Dahili LED Modülü",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 14."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 14.",
+    "id": "ASP-014",
+    "code": "HL-ASP-014"
   },
   {
     "no": 15,
-    "name": "Lunis ve Vion Duvar Apliği",
+    "name": "HL-ASP-015",
     "dimensions": "L325*W150*H800mm (Lunis) / L180*W70*H410mm (Vion)",
     "lightingType": "G9*3 Duy (Lunis) / Dahili LED 8W (Vion)",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 15."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 15.",
+    "id": "ASP-015",
+    "code": "HL-ASP-015"
   },
   {
     "no": 16,
-    "name": "Alba Lüks Duvar Apliği",
+    "name": "HL-ASP-016",
     "dimensions": "L125*W100*H610mm (Alba)",
     "lightingType": "G9*3 Duy",
     "badge": "LED Duvar Apliği",
-    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 16."
+    "shortDescription": "Salon, antre, koridor ve yatak başı için zarif ışık hüzmesi sunan, enerji tasarruflu modern LED duvar apliği Model 16.",
+    "id": "ASP-016",
+    "code": "HL-ASP-016"
   },
   {
     "no": 17,
-    "name": "LOYA Lüks Kristal LED Duvar Apliği",
+    "name": "HL-ASP-017",
     "dimensions": "360*200*H230mm (G: 36 cm / D: 20 cm / Y: 23 cm)",
     "lightingType": "Dahili LED 20W",
     "badge": "Lüks Kristal Aplik",
-    "shortDescription": "360*200*H230mm boyutlarında altın sarısı gövde, prizmatik kristal taş dizilimi ve 20W LED ışık gücüyle göz alıcı LOYA aplik."
+    "shortDescription": "360*200*H230mm boyutlarında altın sarısı gövde, prizmatik kristal taş dizilimi ve 20W LED ışık gücüyle göz alıcı LOYA aplik.",
+    "id": "ASP-017",
+    "code": "HL-ASP-017"
   }
 ]

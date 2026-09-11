@@ -6,26 +6,26 @@ import { ArrowUpRight } from "lucide-react";
 export function ShowroomGallerySection() {
   const showcases = [
     {
-      title: "Tekli Avizeler ve Sarkıtlar",
-      image: "/images/categories/banner_sarkitlar.jpg",
-      link: "/kategori/tekli-avizeler",
-      colSpan: "lg:col-span-5",
-      tag: "Ada & Masa Üstü",
-    },
-    {
-      title: "Klasik ve Kristal Avizeler",
+      title: "Klasik Kristal Avizeler",
       image: "/images/categories/theresa_kapak.jpeg",
       link: "/kategori/klasik",
       colSpan: "lg:col-span-7",
-      tag: "Öne Çıkan Seri",
+      tag: "Saray Kristali",
       objectPosition: "object-[center_20%]",
     },
     {
       title: "Modern LED Avizeler",
       image: "/images/categories/banner_led.jpg",
       link: "/kategori/ledli-grup",
-      colSpan: "lg:col-span-4",
+      colSpan: "lg:col-span-5",
       tag: "Trend Tasarımlar",
+    },
+    {
+      title: "Üçlü & Tekli Avizeler ve Sarkıtlar",
+      image: "/images/categories/banner_sarkitlar.jpg",
+      link: "/kategori/tekli-avizeler",
+      colSpan: "lg:col-span-4",
+      tag: "Ada & Masa Üstü",
     },
     {
       title: "Aplik ve Spot Aydınlatma",
@@ -35,25 +35,18 @@ export function ShowroomGallerySection() {
       tag: "Mimari Vurgu",
     },
     {
-      title: "Dekoratif Tablo Koleksiyonu",
-      image: "/products/tablo/photo/10.jpg",
-      link: "/kategori/tablo",
-      colSpan: "lg:col-span-4",
-      tag: "Sanat & Estetik",
-    },
-    {
-      title: "Lüks Aksesuar ve Çini Koleksiyonu",
-      image: "/images/categories/banner_aksesuarlar.jpg",
-      link: "/kategori/aksesuar",
-      colSpan: "md:col-span-1 lg:col-span-6",
-      tag: "Lüks Tamamlayıcılar",
-    },
-    {
       title: "Yerli Üretim Koleksiyonu",
       image: "/images/categories/banner_yerli_uretim.webp",
       link: "/kategori/yerli-urunler",
-      colSpan: "md:col-span-1 lg:col-span-6",
+      colSpan: "lg:col-span-4",
       tag: "Özel İmalat",
+    },
+    {
+      title: "Aksesuarlar",
+      image: "/images/categories/banner_aksesuarlar.jpg",
+      link: "/kategori/aksesuar",
+      colSpan: "lg:col-span-12",
+      tag: "İthal Aksesuar • Çini • Tablo & Ayna",
     },
   ];
 
@@ -67,6 +60,9 @@ export function ShowroomGallerySection() {
               Göz Alıcı Modeller, <br className="hidden sm:inline" />
               Canlı Mağaza Deneyimi.
             </h2>
+            <p className="text-sm sm:text-base text-muted-foreground mt-3 font-light">
+              Daha fazlası için mağazamıza bekliyoruz
+            </p>
           </div>
           <Link
             href="/koleksiyonlar"

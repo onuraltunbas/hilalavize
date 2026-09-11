@@ -89,7 +89,7 @@ export function BrandHeritageSection() {
               />
             </div>
             <h4 className="text-lg sm:text-xl font-bold text-foreground font-heading max-w-2xl">
-              Bir Kahve Eşliğinde Hayalinizdeki Aydınlatmayı Seçebilirsiniz
+              Hayalinizdeki aydınlatmayı seçmek için sizi mağazamıza bekliyoruz
             </h4>
           </div>
           <div className="flex items-center gap-3 shrink-0">

@@ -13,67 +13,30 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const CATEGORIES = [
-  { key: "all", label: "Tüm Projeler" },
-  { key: "salon", label: "Salon ve Oturma Alanı" },
-  { key: "yemek-odasi", label: "Yemek Masası ve Ada" },
-  { key: "villa", label: "Villa ve Yüksek Tavan" },
-  { key: "modern-led", label: "Modern LED Modeller" },
-  { key: "klasik", label: "Klasik Kristal Modeller" },
-];
-
 export function MekanlarGallery() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
   const [activeProject, setActiveProject] = useState<InstallationProject | null>(null);
-  const [visibleCount, setVisibleCount] = useState(24);
-
-  const filteredProjects = useMemo(() => {
-    if (selectedCategory === "all") return INSTALLATION_PROJECTS;
-    return INSTALLATION_PROJECTS.filter((p) => p.category === selectedCategory);
-  }, [selectedCategory]);
+  const [visibleCount, setVisibleCount] = useState(36);
 
   const displayedProjects = useMemo(() => {
-    return filteredProjects.slice(0, visibleCount);
-  }, [filteredProjects, visibleCount]);
+    return INSTALLATION_PROJECTS.slice(0, visibleCount);
+  }, [visibleCount]);
 
   const handleNext = () => {
     if (!activeProject) return;
-    const currentIndex = filteredProjects.findIndex((p) => p.id === activeProject.id);
-    const nextIndex = (currentIndex + 1) % filteredProjects.length;
-    setActiveProject(filteredProjects[nextIndex]);
+    const currentIndex = INSTALLATION_PROJECTS.findIndex((p) => p.id === activeProject.id);
+    const nextIndex = (currentIndex + 1) % INSTALLATION_PROJECTS.length;
+    setActiveProject(INSTALLATION_PROJECTS[nextIndex]);
   };
 
   const handlePrev = () => {
     if (!activeProject) return;
-    const currentIndex = filteredProjects.findIndex((p) => p.id === activeProject.id);
-    const prevIndex = (currentIndex - 1 + filteredProjects.length) % filteredProjects.length;
-    setActiveProject(filteredProjects[prevIndex]);
+    const currentIndex = INSTALLATION_PROJECTS.findIndex((p) => p.id === activeProject.id);
+    const prevIndex = (currentIndex - 1 + INSTALLATION_PROJECTS.length) % INSTALLATION_PROJECTS.length;
+    setActiveProject(INSTALLATION_PROJECTS[prevIndex]);
   };
 
   return (
     <div className="space-y-8">
-      {/* Kategori Filtre Butonları */}
-      <div className="flex items-center justify-center gap-2 overflow-x-auto pb-2 scrollbar-none flex-wrap">
-        {CATEGORIES.map((cat) => {
-          const isActive = selectedCategory === cat.key;
-          return (
-            <button
-              key={cat.key}
-              onClick={() => {
-                setSelectedCategory(cat.key);
-                setVisibleCount(24);
-              }}
-              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
-                isActive
-                  ? "bg-bronze text-white shadow-md scale-105"
-                  : "bg-surface border border-border text-muted-foreground hover:text-foreground hover:bg-surface-subtle"
-              }`}
-            >
-              {cat.label}
-            </button>
-          );
-        })}
-      </div>
 
       {/* Projeler Izgarası */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
@@ -118,7 +81,7 @@ export function MekanlarGallery() {
       </div>
 
       {/* Daha Fazla Göster Butonu */}
-      {visibleCount < filteredProjects.length && (
+      {visibleCount < INSTALLATION_PROJECTS.length && (
         <div className="text-center pt-4">
           <button
             onClick={() => setVisibleCount((prev) => prev + 24)}

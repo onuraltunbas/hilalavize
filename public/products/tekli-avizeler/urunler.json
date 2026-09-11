@@ -1,50 +1,62 @@
 [
   {
     "no": 1,
-    "name": "Dekoratif Tekli Sarkıt Avize - Model 1",
+    "name": "HL-TKL-001",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "badge": "Tekli Sarkıt",
-    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 1."
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 1.",
+    "id": "TKL-001",
+    "code": "HL-TKL-001"
   },
   {
     "no": 2,
-    "name": "Dekoratif Tekli Sarkıt Avize - Model 2",
+    "name": "HL-TKL-002",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "badge": "Tekli Sarkıt",
-    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 2."
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 2.",
+    "id": "TKL-002",
+    "code": "HL-TKL-002"
   },
   {
     "no": 3,
-    "name": "Dekoratif Tekli Sarkıt Avize - Model 3",
+    "name": "HL-TKL-003",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "badge": "Tekli Sarkıt",
-    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 3."
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 3.",
+    "id": "TKL-003",
+    "code": "HL-TKL-003"
   },
   {
     "no": 4,
-    "name": "Dekoratif Tekli Sarkıt Avize - Model 4",
+    "name": "HL-TKL-004",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "badge": "Tekli Sarkıt",
-    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 4."
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 4.",
+    "id": "TKL-004",
+    "code": "HL-TKL-004"
   },
   {
     "no": 5,
-    "name": "Dekoratif Tekli Sarkıt Avize - Model 5",
+    "name": "HL-TKL-005",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "badge": "Tekli Sarkıt",
-    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 5."
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 5.",
+    "id": "TKL-005",
+    "code": "HL-TKL-005"
   },
   {
     "no": 6,
-    "name": "Dekoratif Tekli Sarkıt Avize - Model 6",
+    "name": "HL-TKL-006",
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "badge": "Tekli Sarkıt",
-    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 6."
+    "shortDescription": "Ada üstü, mutfak masası ve antreler için şık tasarımlı, E27 duylu dekoratif tekli sarkıt avize Model 6.",
+    "id": "TKL-006",
+    "code": "HL-TKL-006"
   }
 ]

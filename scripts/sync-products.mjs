@@ -14,52 +14,45 @@ const GENERATED_TS_PATH = path.join(rootDir, "src", "data", "products.ts");
 const CATEGORY_CONFIGS = {
   klasik: {
     slug: "klasik",
-    name: "Klasik Avizeler",
+    name: "Klasik Kristal Avizeler",
     prefix: "KLS",
     defaultBranch: "showroom",
     defaultImage: "/images/theresa_kapak.jpeg",
   },
   "ledli-grup": {
     slug: "ledli-grup",
-    name: "LED'li Avizeler",
+    name: "Modern LED Avizeler",
     prefix: "LED",
     defaultBranch: "showroom",
-    defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
+    defaultImage: "/images/categories/banner_led.jpg",
   },
   "tekli-avizeler": {
     slug: "tekli-avizeler",
-    name: "Tekli Avizeler ve Sarkıtlar",
+    name: "Üçlü & Tekli Avizeler ve Sarkıtlar",
     prefix: "TKL",
     defaultBranch: "showroom",
-    defaultImage: "/images/800x800_modern_led_halka_avize.jpg",
+    defaultImage: "/images/categories/banner_sarkitlar.jpg",
   },
   "aplik-ve-spotlar": {
     slug: "aplik-ve-spotlar",
     name: "Aplik ve Spot Aydınlatma",
     prefix: "ASP",
     defaultBranch: "showroom",
-    defaultImage: "/images/800x800_dekoratif_duvar_aplik.jpg",
-  },
-  aksesuar: {
-    slug: "aksesuar",
-    name: "Lüks Aksesuar ve Çini Koleksiyonu",
-    prefix: "AKS",
-    defaultBranch: "showroom",
-    defaultImage: "/products/aksesuar/photo/10.jpg",
-  },
-  tablo: {
-    slug: "tablo",
-    name: "Dekoratif Tablo Koleksiyonu",
-    prefix: "TBL",
-    defaultBranch: "showroom",
-    defaultImage: "/products/tablo/photo/10.jpg",
+    defaultImage: "/images/categories/banner_aplikler.jpg",
   },
   "yerli-urunler": {
     slug: "yerli-urunler",
     name: "Yerli Üretim Koleksiyonu",
     prefix: "YRL",
     defaultBranch: "showroom",
-    defaultImage: "/images/800x800_klasik_kollu_kristal_avize.jpg",
+    defaultImage: "/products/yerli-urunler/photo/700.jpeg",
+  },
+  aksesuar: {
+    slug: "aksesuar",
+    name: "Aksesuarlar",
+    prefix: "AKS",
+    defaultBranch: "showroom",
+    defaultImage: "/images/categories/banner_aksesuarlar.jpg",
   },
 };
 
@@ -230,72 +223,44 @@ function processAllProducts() {
       const mainImage = productImages[0];
 
       // Slug
-      let slug = item.slug ? turkishToSlug(item.slug) : turkishToSlug(item.name || id);
-      if (!slug) slug = `${catSlug}-${id.toLowerCase()}`;
+      let slug = turkishToSlug(code);
       if (usedSlugs.has(slug)) {
         slug = `${slug}-${id.toLowerCase()}`;
       }
       usedSlugs.add(slug);
 
-      // Akıllı İsimlendirme (İsim yazılmazsa kategoriye uygun otomatik lüks isim atanır)
-      let name = item.name;
-      if (!name || name.trim() === "") {
-        if (catSlug === "avizeler") {
-          name = `Dekoratif Modern LED Avize - Model ${itemNo}`;
-        } else if (catSlug === "aplikler") {
-          name = `Dekoratif Duvar Apliği - Model ${itemNo}`;
-        } else if (catSlug === "spot-ve-ray-spot") {
-          name = `Dekoratif Manyetik Ray Spot - Model ${itemNo}`;
-        } else if (catSlug === "abajur-ve-lambader") {
-          name = `Dekoratif Lüks Lambader - Model ${itemNo}`;
-        } else if (catSlug === "dekoratif-aynalar") {
-          name = `Dekoratif Akıllı LED Ayna - Model ${itemNo}`;
-        } else if (catSlug === "duvar-ve-masa-saatleri") {
-          name = `Özel Tasarım Dekoratif Saat - Model ${itemNo}`;
-        } else if (catSlug === "cam-sus-esyalari") {
-          name = `El Yapımı Cam Süs Eşyası - Model ${itemNo}`;
-        } else if (catSlug === "anahtar-ve-priz-serileri") {
-          name = `Lüks Cam Anahtar & Priz - Model ${itemNo}`;
-        } else if (catSlug === "dekoratif-koltuk-ve-berjerler") {
-          name = `Özel Tasarım Lüks Berjer - Model ${itemNo}`;
-        } else if (catSlug === "dekoratif-sehpalar") {
-          name = `Dekoratif Mermer & Bronz Sehpa - Model ${itemNo}`;
-        } else {
-          name = `${catConfig.name} - Model ${itemNo}`;
-        }
-      }
+      // Ürün ismi doğrudan ürün kodudur
+      const name = code;
 
-      // Akıllı Ölçü / Boyut (Tablo ve aksesuar için kullanıcı talebiyle boyut yazılmaz)
-      const isDimensionless = catSlug === "tablo" || catSlug === "aksesuar";
+      // Akıllı Ölçü / Boyut (Aksesuar için kullanıcı talebiyle boyut yazılmaz)
+      const isDimensionless = catSlug === "aksesuar";
       const rawDim = isDimensionless ? "" : (item.dimensions || item.olculer || item.boyutlar);
       const dimensions = isDimensionless ? "" : (rawDim && rawDim.trim() !== "" ? rawDim.trim() : "Ayarlanabilir Yükseklik / Standart Ölçü");
 
       // Akıllı Aydınlatma / Duy
       const rawLight = item.lightingType || item.duy || item.aydinlatma;
       const lightingType = isDimensionless
-        ? (catSlug === "tablo" ? "Duvar Sanat Eseri" : "Dekoratif Çini / Sanat Objesi")
+        ? (item.subcategory === "Tablo ve Aynalar" ? "Duvar Sanat Eseri / Ayna" : "Dekoratif Çini / Sanat Objesi")
         : (rawLight && rawLight.trim() !== ""
           ? rawLight.trim()
-          : (catSlug === "avizeler" || catSlug === "aplikler" || catSlug === "spot-ve-ray-spot"
-            ? "Dahili LED / E14-E27 Uyumlu"
-            : "Dekoratif Aydınlatma / Obje"));
+          : "Dahili LED / E14-E27 Uyumlu");
       const branch = item.branch || catConfig.defaultBranch;
       const badge = item.badge || undefined;
-      const subcategory = item.subcategory || item.altKategori || undefined;
+      const subcategory = catSlug === "aksesuar" ? (item.subcategory || "Çini Aksesuarlar") : undefined;
 
       const shortDescription =
         item.shortDescription ||
         item.kisaAciklama ||
         (isDimensionless
-          ? `${name}; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.`
-          : `${name}; ${dimensions} ölçüleri ve ${lightingType} aydınlatması ile yaşam alanlarınıza değer katar.`);
+          ? `${code}; yaşam alanlarınıza seçkin bir zarafet ve sanatsal bir estetik katar.`
+          : `${code}; ${dimensions} ölçüleri ve ${lightingType} aydınlatması ile yaşam alanlarınıza değer katar.`);
 
       const description =
         item.description ||
         item.aciklama ||
         (isDimensionless
-          ? `${name}, Kahramanmaraş Hilal Showroom özel koleksiyonu olarak sunulmaktadır. El işçiliği detayları ve estetik hatlarıyla mekanınızın en prestijli odak noktasıdır.`
-          : `${name}, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. ${dimensions} ölçüleri, ${lightingType} aydınlatması ile estetik ve yüksek verimli ışık sağlar.`);
+          ? `${code}, Kahramanmaraş Hilal Showroom özel koleksiyonu olarak sunulmaktadır. El işçiliği detayları ve estetik hatlarıyla mekanınızın en prestijli odak noktasıdır.`
+          : `${code}, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. ${dimensions} ölçüleri, ${lightingType} aydınlatması ile estetik ve yüksek verimli ışık sağlar.`);
 
       const features = Array.isArray(item.features)
         ? item.features
@@ -312,10 +277,8 @@ function processAllProducts() {
                 "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği",
               ]);
 
-      const seoTitle = item.seoTitle || `${name} Kahramanmaraş | Hilal Avize`;
-      const seoDescription =
-        item.seoDescription ||
-        `${name} modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize ve Elektrik Showroom'unda canlı inceleyin.`;
+      const seoTitle = `${code} | Hilal Avize Kahramanmaraş`;
+      const seoDescription = `${code} modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin.`;
 
       allProcessedProducts.push({
         id,

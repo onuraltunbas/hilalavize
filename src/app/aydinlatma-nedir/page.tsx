@@ -24,24 +24,44 @@ export default function LightingGuidePage() {
 
   const lightingLayers = [
     {
-      title: "1. Genel (Ortam) Aydınlatması",
+      num: "01",
+      title: "Genel (Ortam) Aydınlatması",
       icon: Sun,
+      badge: "Temel Katman",
       desc: "Mekanın genelini dengeli ve homojen bir şekilde aydınlatan temel ışık kaynağıdır. Salonların merkezinde yer alan kristal veya modern avizeler bu katmanın ana aktörüdür.",
+      cardBorder: "border-amber-500/40 hover:border-amber-400 hover:shadow-amber-500/10",
+      accentBg: "bg-amber-500/10 text-amber-500 border-amber-500/25",
+      badgeColor: "bg-amber-500/15 text-amber-600 dark:text-amber-300 border-amber-500/30",
     },
     {
-      title: "2. Görev (Çalışma) Aydınlatması",
+      num: "02",
+      title: "Görev (Çalışma) Aydınlatması",
       icon: Lightbulb,
+      badge: "Fonksiyonel",
       desc: "Yemek masası üstü, mutfak tezgahı veya okuma köşesi gibi spesifik alanlara odaklanan fonksiyonel sarkıtlar ve yönlendirilebilir spotlardır.",
+      cardBorder: "border-yellow-600/40 hover:border-yellow-500 hover:shadow-yellow-500/10",
+      accentBg: "bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 border-yellow-500/25",
+      badgeColor: "bg-yellow-500/15 text-yellow-700 dark:text-yellow-300 border-yellow-500/30",
     },
     {
-      title: "3. Vurgu ve Derinlik Aydınlatması",
+      num: "03",
+      title: "Vurgu ve Derinlik Aydınlatması",
       icon: Layers,
+      badge: "Mimari Vurgu",
       desc: "Tabloları, duvar dokularını, nişleri veya mimari detayları öne çıkaran şık duvar aplikleri ve ray spot sistemleridir.",
+      cardBorder: "border-orange-500/40 hover:border-orange-400 hover:shadow-orange-500/10",
+      accentBg: "bg-orange-500/10 text-orange-500 border-orange-500/25",
+      badgeColor: "bg-orange-500/15 text-orange-600 dark:text-orange-300 border-orange-500/30",
     },
     {
-      title: "4. Dekoratif Aydınlatma",
+      num: "04",
+      title: "Dekoratif Aydınlatma",
       icon: Sparkles,
+      badge: "Lüks & Prestij",
       desc: "Işık kapalıyken dahi birer sanat eseri gibi duran K9 kristal taşlar, el üfleme camlar ve pirinç döküm detaylarla mekana prestij katan armatürlerdir.",
+      cardBorder: "border-amber-400/50 hover:border-amber-300 hover:shadow-amber-400/15",
+      accentBg: "bg-gradient-to-br from-amber-400/20 to-amber-600/20 text-amber-500 border-amber-400/30",
+      badgeColor: "bg-amber-400/15 text-amber-600 dark:text-amber-200 border-amber-400/30",
     },
   ];
 
@@ -138,12 +158,27 @@ export default function LightingGuidePage() {
             {lightingLayers.map((layer, idx) => {
               const Icon = layer.icon;
               return (
-                <div key={idx} className="dgaraj-card p-6 flex flex-col justify-between space-y-4">
-                  <div className="space-y-3">
-                    <div className="w-11 h-11 rounded-xl bg-surface-subtle border border-border flex items-center justify-center text-bronze">
-                      <Icon className="w-5 h-5" />
+                <div
+                  key={idx}
+                  className={`relative group rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 bg-gradient-to-b from-surface via-surface to-surface-subtle/90 border-2 ${layer.cardBorder} shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 overflow-hidden`}
+                >
+                  <div className="space-y-4 relative z-10">
+                    <div className="flex items-center justify-between">
+                      <div className={`w-12 h-12 rounded-2xl border flex items-center justify-center ${layer.accentBg} shadow-sm group-hover:scale-105 transition-transform`}>
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <span className={`text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full border ${layer.badgeColor}`}>
+                        {layer.badge}
+                      </span>
                     </div>
-                    <h3 className="text-base font-bold text-foreground">{layer.title}</h3>
+                    <div>
+                      <div className="text-[11px] font-bold text-bronze uppercase tracking-wider mb-1">
+                        Katman {layer.num}
+                      </div>
+                      <h3 className="text-base font-extrabold text-foreground leading-snug">
+                        {layer.title}
+                      </h3>
+                    </div>
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       {layer.desc}
                     </p>

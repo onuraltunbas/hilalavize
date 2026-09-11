@@ -41,22 +41,22 @@ export default function AydinlattigimizMekanlarPage() {
         <div className="dgaraj-card p-8 sm:p-12 text-center rounded-3xl space-y-6 bg-gradient-to-b from-surface to-surface-subtle border border-border mt-16 shadow-lg">
           <div className="max-w-2xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">
-              Sizin Evinizi de Birlikte Aydınlatalım!
+              Mekanlarınızı Birlikte Aydınlatalım!
             </h2>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Odanızın veya yemek masanızın fotoğrafını WhatsApp üzerinden bize gönderin; tavan yüksekliğinize, mobilya tarzınıza ve oda ölçülerinize en uygun avize modellerini birlikte belirleyelim.
+              Mekanınızın, salonunuzun veya projenizin fotoğrafını WhatsApp üzerinden bize gönderin; tavan yüksekliğinize, mimari tarzınıza ve mekan ölçülerinize en uygun avize ve aydınlatma modellerini birlikte belirleyelim.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <a
-              href="https://wa.me/905053801350?text=Merhaba%2C%20evimin%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20ayd%C4%B1nlatma%20ve%20avize%20se%C3%A7imi%20i%C3%A7in%20dan%C4%B1%C5%9Fmanl%C4%B1k%20almak%20istiyorum."
+              href="https://wa.me/905053801350?text=Merhaba%2C%20mekan%C4%B1m%C4%B1n%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20ayd%C4%B1nlatma%20ve%20avize%20se%C3%A7imi%20i%C3%A7in%20dan%C4%B1%C5%9Fmanl%C4%B1k%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-[#059669] hover:bg-[#047857] text-white font-bold py-3.5 px-8 rounded-lg text-sm flex items-center justify-center gap-2.5 shadow-md transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="w-4 h-4" />
-              WhatsApp ile Oda Fotoğrafı Gönder
+              WhatsApp ile Fotoğraf Gönder
             </a>
 
             <Link

@@ -1,5 +1,5 @@
 import React from "react";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
 import { CATEGORIES } from "@/data/categories";
@@ -26,6 +26,11 @@ export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
+  if (slug === "tablo") {
+    return {
+      title: "Aksesuarlar | Hilal Avize",
+    };
+  }
   const category = CATEGORIES.find((c) => c.slug === slug);
 
   if (!category) {
@@ -52,6 +57,9 @@ export async function generateMetadata({
 
 export default async function CategoryDetailPage({ params }: CategoryPageProps) {
   const { slug } = await params;
+  if (slug === "tablo") {
+    redirect("/kategori/aksesuar");
+  }
   const category = CATEGORIES.find((c) => c.slug === slug);
 
   if (!category) {

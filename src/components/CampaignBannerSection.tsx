@@ -48,7 +48,7 @@ export function CampaignBannerSection() {
                 <div className="w-5 h-5 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center shrink-0">
                   <Check className="w-3 h-3 text-amber-300 stroke-[2.5]" />
                 </div>
-                <span className="font-medium tracking-wide">Eksiksiz ve Güvenli Montaj</span>
+                <span className="font-medium tracking-wide">Özenli Montaj ve Montaj Sonrası Kontrol</span>
               </div>
               <div className="flex items-center gap-3 text-white/90">
                 <div className="w-5 h-5 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center shrink-0">
