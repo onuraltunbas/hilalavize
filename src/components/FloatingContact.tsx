@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { COMPANY_DATA } from "@/data/company";
 import {
   MessageCircle,
@@ -12,8 +13,13 @@ import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
 export function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   const showroom = COMPANY_DATA.branches[0];
   const electrical = COMPANY_DATA.branches[1];
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">

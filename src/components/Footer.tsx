@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { COMPANY_DATA } from "@/data/company";
 import { CATEGORIES } from "@/data/categories";
 import {
@@ -14,8 +17,13 @@ import {
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
 export function Footer() {
+  const pathname = usePathname();
   const showroom = COMPANY_DATA.branches[0];
   const electrical = COMPANY_DATA.branches[1];
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
 
   return (
     <footer className="bg-surface text-muted-foreground border-t border-border pt-16 pb-8">
