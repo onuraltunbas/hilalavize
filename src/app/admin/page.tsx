@@ -1169,23 +1169,23 @@ export default function AdminPage() {
         </main>
       </div>
 
-      {/* 3. FLOATING ACTION BUTTON (SAĞ EN ALT KÖŞEDE AKTİVİTE BUTONU) */}
-      <div className="fixed bottom-6 right-6 z-40">
+      {/* 3. SAĞ EN ALT KÖŞEDE KÜÇÜK YUVARLAK AKTİVİTE BUTONU */}
+      <div className="fixed bottom-5 right-5 z-40">
         <button
           type="button"
           onClick={() => {
             fetchActivities();
             setIsActivityDrawerOpen(true);
           }}
-          className="flex items-center gap-2.5 px-4 py-3 bg-[#93826E] hover:bg-[#7A6956] text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 font-bold text-xs border border-white/20 cursor-pointer group"
-          title="Son İşlem ve Giriş Aktivitelerini Görüntüle"
+          className="relative w-11 h-11 rounded-full bg-[#93826E] hover:bg-[#7A6956] text-white shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center border border-white/40 cursor-pointer group"
+          title="Aktivite Geçmişi"
+          aria-label="Aktivite Geçmişi"
         >
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+          <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-white"></span>
           </span>
-          <History className="w-4 h-4 group-hover:rotate-[-20deg] transition-transform" />
-          <span className="tracking-wide">Aktivite Geçmişi</span>
+          <History className="w-5 h-5 group-hover:rotate-[-30deg] transition-transform duration-300" />
         </button>
       </div>
 

@@ -42,13 +42,16 @@ function getLocalPath(subpath: string) {
 
 // --- CLOUD GIST STORAGE (Commit ve Vercel Build Tetiklemez!) ---
 async function readGistFile(filename: string): Promise<string | null> {
-  if (!GITHUB_TOKEN) return null;
+  const token = GITHUB_TOKEN;
+  if (!token) return null;
   try {
-    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}?t=${Date.now()}`, {
       headers: {
-        Authorization: `token ${GITHUB_TOKEN}`,
+        Authorization: `token ${token}`,
         "User-Agent": "hilalavize-app",
         Accept: "application/vnd.github.v3+json",
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        Pragma: "no-cache",
       },
       cache: "no-store",
     });
@@ -65,12 +68,13 @@ async function readGistFile(filename: string): Promise<string | null> {
 }
 
 async function writeGistFile(filename: string, contentStr: string): Promise<boolean> {
-  if (!GITHUB_TOKEN) return false;
+  const token = GITHUB_TOKEN;
+  if (!token) return false;
   try {
     const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
       method: "PATCH",
       headers: {
-        Authorization: `token ${GITHUB_TOKEN}`,
+        Authorization: `token ${token}`,
         "User-Agent": "hilalavize-app",
         "Content-Type": "application/json",
       },
@@ -200,10 +204,14 @@ export async function getAdminActivities(): Promise<AdminActivity[]> {
   let list: AdminActivity[] = [];
   if (content) {
     try {
-      list = JSON.parse(content);
-      writeLocalActivities(list);
+      const parsed = JSON.parse(content);
+      if (Array.isArray(parsed)) {
+        list = parsed;
+        writeLocalActivities(list);
+      }
     } catch {}
-  } else {
+  }
+  if (list.length === 0) {
     list = readLocalActivities();
   }
 
@@ -235,10 +243,8 @@ export async function logAdminActivity(item: {
   const trimmed = currentList.slice(0, 200);
 
   writeLocalActivities(trimmed);
-  // Bulutta arka planda güncelle (Commit yok, Vercel build yok!)
-  writeGistFile("activities.json", JSON.stringify(trimmed, null, 2) + "\n").catch((err) => {
-    console.error("Gist activity sync error:", err);
-  });
+  // Gist'e yaz ve tamamlanmasını bekle (Böylece anında okunduğunda listede olur)
+  await writeGistFile("activities.json", JSON.stringify(trimmed, null, 2) + "\n");
 
   return newActivity;
 }
