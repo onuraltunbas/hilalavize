@@ -1,5 +1,17 @@
 [
   {
+    "id": "act-1789201703113-zf57",
+    "username": "onur",
+    "displayName": "Onur",
+    "action": "price_update",
+    "description": "Onur, HL-KLS-001 kodlu ürünün fiyatını güncelledi (Belirtilmemişti ➔ 15000 ₺).",
+    "timestamp": "2026-09-12T08:28:23.113Z",
+    "metadata": {
+      "code": "HL-KLS-001",
+      "newPrice": "15000"
+    }
+  },
+  {
     "id": "act-1789200816189",
     "username": "sistem",
     "displayName": "Sistem",
