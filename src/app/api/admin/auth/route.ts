@@ -84,10 +84,9 @@ export async function POST(req: Request) {
         );
       }
 
-      // Güncelle
       users[username].password = newPassword;
       users[username].updatedAt = new Date().toISOString();
-      await saveAdminUsers(users, `kullanici sifresi guncellendi: ${username}`);
+      await saveAdminUsers(users);
 
       // Aktiviteyi logla
       await logAdminActivity({

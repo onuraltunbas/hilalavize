@@ -16,7 +16,7 @@ function getGitHubToken(): string {
 }
 
 const GITHUB_TOKEN = getGitHubToken();
-const GITHUB_REPO = "onuraltunbas/hilalavize";
+const GIST_ID = "b3966c06ee962f2a0e4a442dd05cb77d";
 
 export interface AdminActivity {
   id: string;
@@ -40,14 +40,13 @@ function getLocalPath(subpath: string) {
   return path.join(process.cwd(), "src", "data", subpath);
 }
 
-// --- GITHUB API HELPERS ---
-async function fetchGitHubFile(relPath: string): Promise<{ content: string; sha: string } | null> {
-  const token = GITHUB_TOKEN;
-  if (!token) return null;
+// --- CLOUD GIST STORAGE (Commit ve Vercel Build Tetiklemez!) ---
+async function readGistFile(filename: string): Promise<string | null> {
+  if (!GITHUB_TOKEN) return null;
   try {
-    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${relPath}`, {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
       headers: {
-        Authorization: `token ${token}`,
+        Authorization: `token ${GITHUB_TOKEN}`,
         "User-Agent": "hilalavize-app",
         Accept: "application/vnd.github.v3+json",
       },
@@ -55,53 +54,42 @@ async function fetchGitHubFile(relPath: string): Promise<{ content: string; sha:
     });
     if (!res.ok) return null;
     const data = await res.json();
-    const content = Buffer.from(data.content, "base64").toString("utf-8");
-    return { content, sha: data.sha };
+    if (data.files && data.files[filename]) {
+      return data.files[filename].content;
+    }
+    return null;
   } catch (err) {
-    console.error(`GitHub read error for ${relPath}:`, err);
+    console.error(`Gist read error for ${filename}:`, err);
     return null;
   }
 }
 
-async function saveGitHubFile(relPath: string, contentStr: string, commitMsg: string): Promise<boolean> {
-  const token = GITHUB_TOKEN;
-  if (!token) return false;
+async function writeGistFile(filename: string, contentStr: string): Promise<boolean> {
+  if (!GITHUB_TOKEN) return false;
   try {
-    const existing = await fetchGitHubFile(relPath);
-    const contentBase64 = Buffer.from(contentStr).toString("base64");
-
-    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${relPath}`, {
-      method: "PUT",
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+      method: "PATCH",
       headers: {
-        Authorization: `token ${token}`,
+        Authorization: `token ${GITHUB_TOKEN}`,
         "User-Agent": "hilalavize-app",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        message: commitMsg,
-        content: contentBase64,
-        ...(existing?.sha ? { sha: existing.sha } : {}),
-        branch: "main",
+        files: {
+          [filename]: { content: contentStr },
+        },
       }),
     });
-
-    if (!res.ok) {
-      const errBody = await res.text();
-      console.error(`GitHub PUT error for ${relPath}:`, res.status, errBody);
-      return false;
-    }
-    return true;
+    return res.ok;
   } catch (err) {
-    console.error(`GitHub write error for ${relPath}:`, err);
+    console.error(`Gist write error for ${filename}:`, err);
     return false;
   }
 }
 
 // ==========================================
-// 1. PRICES
+// 1. PRICES (Fiyatlar)
 // ==========================================
-const PRICES_FILE = "src/data/admin-prices.json";
-
 function readLocalPrices(): Record<string, string | number> {
   try {
     const p = getLocalPath("admin-prices.json");
@@ -122,10 +110,10 @@ function writeLocalPrices(prices: Record<string, string | number>) {
 }
 
 export async function getAdminPrices(): Promise<Record<string, string | number>> {
-  const gh = await fetchGitHubFile(PRICES_FILE);
-  if (gh) {
+  const content = await readGistFile("prices.json");
+  if (content) {
     try {
-      const parsed = JSON.parse(gh.content);
+      const parsed = JSON.parse(content);
       writeLocalPrices(parsed);
       return parsed;
     } catch {}
@@ -133,17 +121,15 @@ export async function getAdminPrices(): Promise<Record<string, string | number>>
   return readLocalPrices();
 }
 
-export async function saveAdminPrices(prices: Record<string, string | number>, commitMsg: string): Promise<boolean> {
+export async function saveAdminPrices(prices: Record<string, string | number>): Promise<boolean> {
   writeLocalPrices(prices);
   const jsonStr = JSON.stringify(prices, null, 2) + "\n";
-  return await saveGitHubFile(PRICES_FILE, jsonStr, commitMsg);
+  return await writeGistFile("prices.json", jsonStr);
 }
 
 // ==========================================
-// 2. USERS
+// 2. USERS (Kullanıcılar)
 // ==========================================
-const USERS_FILE = "src/data/admin-users.json";
-
 const DEFAULT_USERS: Record<string, AdminUser> = {
   onur: { username: "onur", password: "onur123", displayName: "Onur" },
   cigdem: { username: "cigdem", password: "cigdem123", displayName: "Çiğdem" },
@@ -170,10 +156,10 @@ function writeLocalUsers(users: Record<string, AdminUser>) {
 }
 
 export async function getAdminUsers(): Promise<Record<string, AdminUser>> {
-  const gh = await fetchGitHubFile(USERS_FILE);
-  if (gh) {
+  const content = await readGistFile("users.json");
+  if (content) {
     try {
-      const parsed = JSON.parse(gh.content);
+      const parsed = JSON.parse(content);
       writeLocalUsers(parsed);
       return parsed;
     } catch {}
@@ -181,17 +167,15 @@ export async function getAdminUsers(): Promise<Record<string, AdminUser>> {
   return readLocalUsers();
 }
 
-export async function saveAdminUsers(users: Record<string, AdminUser>, commitMsg: string): Promise<boolean> {
+export async function saveAdminUsers(users: Record<string, AdminUser>): Promise<boolean> {
   writeLocalUsers(users);
   const jsonStr = JSON.stringify(users, null, 2) + "\n";
-  return await saveGitHubFile(USERS_FILE, jsonStr, commitMsg);
+  return await writeGistFile("users.json", jsonStr);
 }
 
 // ==========================================
-// 3. ACTIVITIES
+// 3. ACTIVITIES (Aktivite Geçmişi)
 // ==========================================
-const ACTIVITIES_FILE = "src/data/admin-activities.json";
-
 function readLocalActivities(): AdminActivity[] {
   try {
     const p = getLocalPath("admin-activities.json");
@@ -212,11 +196,11 @@ function writeLocalActivities(activities: AdminActivity[]) {
 }
 
 export async function getAdminActivities(): Promise<AdminActivity[]> {
-  const gh = await fetchGitHubFile(ACTIVITIES_FILE);
+  const content = await readGistFile("activities.json");
   let list: AdminActivity[] = [];
-  if (gh) {
+  if (content) {
     try {
-      list = JSON.parse(gh.content);
+      list = JSON.parse(content);
       writeLocalActivities(list);
     } catch {}
   } else {
@@ -251,8 +235,9 @@ export async function logAdminActivity(item: {
   const trimmed = currentList.slice(0, 200);
 
   writeLocalActivities(trimmed);
-  saveGitHubFile(ACTIVITIES_FILE, JSON.stringify(trimmed, null, 2) + "\n", `aktivite: [${item.action}] ${item.username}`).catch((err) => {
-    console.error("Activity GitHub sync error:", err);
+  // Bulutta arka planda güncelle (Commit yok, Vercel build yok!)
+  writeGistFile("activities.json", JSON.stringify(trimmed, null, 2) + "\n").catch((err) => {
+    console.error("Gist activity sync error:", err);
   });
 
   return newActivity;

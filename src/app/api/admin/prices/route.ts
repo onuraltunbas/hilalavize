@@ -39,8 +39,8 @@ export async function POST(req: Request) {
       prices[code] = typeof price === "number" ? price : String(price).trim();
     }
 
-    // Fiyatı kalıcı olarak hem yerel hem GitHub'a kaydet
-    await saveAdminPrices(prices, `fiyat guncellendi: ${code} -> ${price}`);
+    // Fiyatı bulut depolamaya kaydet (Commit ve Vercel build tetiklemez)
+    await saveAdminPrices(prices);
 
     // Aktiviteyi anında kaydet
     if (username) {
