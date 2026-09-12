@@ -1,5 +1,13 @@
 [
   {
+    "id": "act-1789201715862-5jop",
+    "username": "onur",
+    "displayName": "Onur",
+    "action": "logout",
+    "description": "Onur sistemden çıkış yaptı.",
+    "timestamp": "2026-09-12T08:28:35.862Z"
+  },
+  {
     "id": "act-1789201703113-zf57",
     "username": "onur",
     "displayName": "Onur",
