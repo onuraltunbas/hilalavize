@@ -231,8 +231,8 @@ function processAllProducts() {
       }
       usedSlugs.add(slug);
 
-      // Ürün ismi doğrudan ürün kodudur
-      const name = code;
+      // Ürün ismi (özel tanımlanmışsa o isim, yoksa ürün kodudur)
+      const name = item.name && item.name !== code ? item.name : (item.displayName || code);
 
       // Akıllı Ölçü / Boyut (Aksesuar için kullanıcı talebiyle boyut yazılmaz)
       const isDimensionless = catSlug === "aksesuar";

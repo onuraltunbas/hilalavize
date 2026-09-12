@@ -1,7 +1,7 @@
 [
   {
     "no": 1,
-    "name": "HL-KLS-001",
+    "name": "Maria Theresa Model 1",
     "dimensions": "Q: 120 H: 125 cm / Q: 105 H: 80 cm / L: 300 W: 90 H: 120 cm",
     "lightingType": "E14 Duy (18x40W / 28x40W)",
     "badge": "Maria Theresa Ailesi",
@@ -14,7 +14,7 @@
   },
   {
     "no": 2,
-    "name": "HL-KLS-002",
+    "name": "Maria Theresa Model 2",
     "dimensions": "Q: 35 W: 45 H: 25 cm / Q: 40 H: 160 cm / Q: 33 H: 35 cm / Q: 85 W: 60 H: 35 cm",
     "lightingType": "E14 Duy (3x40W / 5x40W / 6x40W / 9x40W)",
     "badge": "Maria Theresa Ailesi",
@@ -27,7 +27,7 @@
   },
   {
     "no": 3,
-    "name": "HL-KLS-003",
+    "name": "Maria Theresa Model 3",
     "dimensions": "L: 105 W: 60 H: 100 cm / L: 150 W: 90 H: 120 cm / Q: 70-90 H: 100 cm",
     "lightingType": "E14 Duy (6x40W / 8x40W / 10x40W / 15x40W / 16x40W)",
     "badge": "Maria Theresa Ailesi",
@@ -40,7 +40,7 @@
   },
   {
     "no": 4,
-    "name": "HL-KLS-004",
+    "name": "Baccarat Model 1",
     "dimensions": "Çap: 90 cm",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "badge": "Baccarat Ailesi",

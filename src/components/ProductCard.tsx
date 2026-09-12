@@ -41,8 +41,13 @@ export function ProductCard({ product }: ProductCardProps) {
       {/* Content */}
       <div className="p-3.5 sm:p-4 flex-1 flex flex-col justify-between">
         <div>
-          <div className="text-[10px] sm:text-[11px] text-bronze font-semibold mb-1 uppercase tracking-wider">
-            <span>{product.categoryName}</span>
+          <div className="flex items-center justify-between gap-2 text-[10px] sm:text-[11px] text-bronze font-semibold mb-1 uppercase tracking-wider">
+            <span className="truncate">{product.categoryName}</span>
+            {product.code && product.name !== product.code && (
+              <span className="font-mono text-[10px] text-muted-foreground/80 normal-case shrink-0">
+                {product.code}
+              </span>
+            )}
           </div>
 
           <h3 className="text-xs sm:text-sm md:text-base font-bold text-foreground group-hover:text-bronze transition-colors leading-snug line-clamp-2">

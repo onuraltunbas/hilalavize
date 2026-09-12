@@ -265,9 +265,16 @@ export default function AdminPage() {
 
                     {/* Product Code Header with Copy Button */}
                     <div className="flex items-center justify-between gap-2">
-                      <h2 className="text-lg font-black text-white font-mono tracking-tight group-hover:text-amber-400 transition-colors">
-                        {product.code}
-                      </h2>
+                      <div>
+                        <h2 className="text-lg font-black text-white font-mono tracking-tight group-hover:text-amber-400 transition-colors">
+                          {product.code}
+                        </h2>
+                        {product.name && product.name !== product.code && (
+                          <div className="text-xs font-semibold text-amber-300/90 mt-0.5">
+                            {product.name}
+                          </div>
+                        )}
+                      </div>
                       <button
                         type="button"
                         onClick={(e) => {
