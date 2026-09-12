@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getAdminPrices, saveAdminPrices, logAdminActivity } from "@/lib/admin-storage";
+import { getAdminPrices, saveAdminPrices } from "@/lib/admin-storage";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -41,21 +41,6 @@ export async function POST(req: Request) {
 
     // Fiyatı bulut depolamaya kaydet (Commit ve Vercel build tetiklemez)
     await saveAdminPrices(prices);
-
-    // Aktiviteyi anında kaydet
-    if (username) {
-      const userLabel = displayName || username;
-      const newPriceFormatted = prices[code] ? `${prices[code]} ₺` : "Kaldırıldı";
-      const oldPriceFormatted = oldPrice ? `${oldPrice} ₺` : "Belirtilmemişti";
-
-      await logAdminActivity({
-        username,
-        displayName: userLabel,
-        action: "price_update",
-        description: `${userLabel}, ${code} kodlu ürünün fiyatını güncelledi (${oldPriceFormatted} ➔ ${newPriceFormatted}).`,
-        metadata: { code, oldPrice, newPrice: prices[code] || null },
-      });
-    }
 
     return NextResponse.json({
       success: true,

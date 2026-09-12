@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getAdminUsers, saveAdminUsers, logAdminActivity } from "@/lib/admin-storage";
+import { getAdminUsers, saveAdminUsers } from "@/lib/admin-storage";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -30,14 +30,6 @@ export async function POST(req: Request) {
           { status: 401 }
         );
       }
-
-      // Giriş aktivitesini logla (Kalıcı)
-      await logAdminActivity({
-        username,
-        displayName: user.displayName || username,
-        action: "login",
-        description: `${user.displayName || username} sisteme giriş yaptı.`,
-      });
 
       return NextResponse.json({
         success: true,
@@ -88,32 +80,14 @@ export async function POST(req: Request) {
       users[username].updatedAt = new Date().toISOString();
       await saveAdminUsers(users);
 
-      // Aktiviteyi logla
-      await logAdminActivity({
-        username,
-        displayName: user.displayName || username,
-        action: "password_change",
-        description: `${user.displayName || username} şifresini değiştirdi.`,
-      });
-
       return NextResponse.json({
         success: true,
         message: "Şifreniz başarıyla değiştirildi.",
       });
     }
 
-    // 3. ÇIKIŞ LOGLAMA (LOGOUT)
+    // 3. ÇIKIŞ (LOGOUT)
     if (action === "logout") {
-      const username = String(body.username || "").toLowerCase().trim();
-      const displayName = String(body.displayName || username);
-      if (username) {
-        await logAdminActivity({
-          username,
-          displayName,
-          action: "logout",
-          description: `${displayName} sistemden çıkış yaptı.`,
-        });
-      }
       return NextResponse.json({ success: true });
     }
 

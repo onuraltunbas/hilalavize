@@ -18,15 +18,6 @@ function getGitHubToken(): string {
 const GITHUB_TOKEN = getGitHubToken();
 const GIST_ID = "b3966c06ee962f2a0e4a442dd05cb77d";
 
-export interface AdminActivity {
-  id: string;
-  username: string;
-  displayName: string;
-  action: "login" | "logout" | "password_change" | "price_update" | "search" | "product_view" | "filter_change" | "system_init";
-  description: string;
-  timestamp: string;
-  metadata?: Record<string, any>;
-}
 
 export interface AdminUser {
   username: string;
@@ -175,76 +166,4 @@ export async function saveAdminUsers(users: Record<string, AdminUser>): Promise<
   writeLocalUsers(users);
   const jsonStr = JSON.stringify(users, null, 2) + "\n";
   return await writeGistFile("users.json", jsonStr);
-}
-
-// ==========================================
-// 3. ACTIVITIES (Aktivite Geçmişi)
-// ==========================================
-function readLocalActivities(): AdminActivity[] {
-  try {
-    const p = getLocalPath("admin-activities.json");
-    if (fs.existsSync(p)) {
-      return JSON.parse(fs.readFileSync(p, "utf-8"));
-    }
-  } catch {}
-  return [];
-}
-
-function writeLocalActivities(activities: AdminActivity[]) {
-  try {
-    const p = getLocalPath("admin-activities.json");
-    const dir = path.dirname(p);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(p, JSON.stringify(activities, null, 2) + "\n", "utf-8");
-  } catch {}
-}
-
-export async function getAdminActivities(): Promise<AdminActivity[]> {
-  const content = await readGistFile("activities.json");
-  let list: AdminActivity[] = [];
-  if (content) {
-    try {
-      const parsed = JSON.parse(content);
-      if (Array.isArray(parsed)) {
-        list = parsed;
-        writeLocalActivities(list);
-      }
-    } catch {}
-  }
-  if (list.length === 0) {
-    list = readLocalActivities();
-  }
-
-  // En yeni aktivite en üstte
-  list.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
-  return list;
-}
-
-export async function logAdminActivity(item: {
-  username: string;
-  displayName?: string;
-  action: AdminActivity["action"];
-  description: string;
-  metadata?: Record<string, any>;
-}): Promise<AdminActivity> {
-  const currentList = await getAdminActivities();
-
-  const newActivity: AdminActivity = {
-    id: "act-" + Date.now() + "-" + Math.random().toString(36).substring(2, 6),
-    username: String(item.username).toLowerCase().trim(),
-    displayName: String(item.displayName || item.username).trim(),
-    action: item.action,
-    description: String(item.description).trim(),
-    timestamp: new Date().toISOString(),
-    metadata: item.metadata,
-  };
-
-  currentList.unshift(newActivity);
-  const trimmed = currentList.slice(0, 200);
-
-  writeLocalActivities(trimmed);
-  // Gist'e yaz ve tamamlanmasını bekle (Böylece anında okunduğunda listede olur)
-  await writeGistFile("activities.json", JSON.stringify(trimmed, null, 2) + "\n");
-
-  return newActivity;
 }

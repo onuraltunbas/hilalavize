@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo, useEffect, useRef } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PRODUCTS, Product } from "@/data/products";
@@ -28,26 +28,13 @@ import {
   User,
   LogOut,
   KeyRound,
-  History,
-  Clock,
   ShieldCheck,
   AlertCircle,
-  TrendingUp,
 } from "lucide-react";
 
 interface AdminUserSession {
   username: string;
   displayName: string;
-}
-
-interface ActivityItem {
-  id: string;
-  username: string;
-  displayName: string;
-  action: "login" | "logout" | "password_change" | "price_update" | "search" | "product_view" | "filter_change" | "system_init";
-  description: string;
-  timestamp: string;
-  metadata?: Record<string, any>;
 }
 
 function formatPrice(val: number | string | undefined | null): string {
@@ -61,22 +48,6 @@ function formatPrice(val: number | string | undefined | null): string {
     return new Intl.NumberFormat("tr-TR").format(numericOnly) + " ₺";
   }
   return cleanStr;
-}
-
-function formatActivityDate(dateStr: string): string {
-  try {
-    const d = new Date(dateStr);
-    return new Intl.DateTimeFormat("tr-TR", {
-      day: "2-digit",
-      month: "short",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    }).format(d);
-  } catch {
-    return dateStr;
-  }
 }
 
 export default function AdminPage() {
@@ -101,11 +72,6 @@ export default function AdminPage() {
   });
   const [isChangingPassword, setIsChangingPassword] = useState<boolean>(false);
 
-  // --- ACTIVITIES STATE ---
-  const [activities, setActivities] = useState<ActivityItem[]>([]);
-  const [isActivityDrawerOpen, setIsActivityDrawerOpen] = useState<boolean>(false);
-  const [isLoadingActivities, setIsLoadingActivities] = useState<boolean>(false);
-
   // --- PRODUCTS & FILTERS STATE ---
   const [products, setProducts] = useState<Product[]>(PRODUCTS);
   const [prices, setPrices] = useState<Record<string, string | number>>({});
@@ -126,10 +92,7 @@ export default function AdminPage() {
   // Image preview modal
   const [activePreviewImage, setActivePreviewImage] = useState<{ url: string; title: string } | null>(null);
 
-  // Debounce search logging
-  const searchLogTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-  // 1. Session & Cache Check on Mount
+  // 1. Session & Local Cache Check on Mount
   useEffect(() => {
     try {
       const stored = sessionStorage.getItem("hilal_admin_session");
@@ -139,7 +102,7 @@ export default function AdminPage() {
           setCurrentUser(parsed);
         }
       }
-      // Fiyat önbelleğini anında yükle (Yenilemede asla kaybolmaz)
+      // Fiyat önbelleğini anında yükle
       const cachedPrices = localStorage.getItem("hilal_admin_prices_cache");
       if (cachedPrices) {
         const parsedPrices = JSON.parse(cachedPrices);
@@ -170,22 +133,6 @@ export default function AdminPage() {
     }
   };
 
-  // Fetch activities helper
-  const fetchActivities = async () => {
-    setIsLoadingActivities(true);
-    try {
-      const res = await fetch("/api/admin/activities", { cache: "no-store" });
-      const data = await res.json();
-      if (data.success && Array.isArray(data.activities)) {
-        setActivities(data.activities);
-      }
-    } catch (err) {
-      console.error("Activities fetch error:", err);
-    } finally {
-      setIsLoadingActivities(false);
-    }
-  };
-
   // 2. Fetch data once logged in
   useEffect(() => {
     if (!currentUser) return;
@@ -200,64 +147,9 @@ export default function AdminPage() {
       })
       .catch(() => {});
 
-    // Fiyatları ve Aktiviteleri çek
+    // Fiyatları çek
     fetchPrices();
-    fetchActivities();
   }, [currentUser]);
-
-  // Aktivite paneli açıkken 4 saniyede bir otomatik yenile
-  useEffect(() => {
-    if (!isActivityDrawerOpen || !currentUser) return;
-    const interval = setInterval(() => {
-      fetchActivities();
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [isActivityDrawerOpen, currentUser]);
-
-  // Helper to log client activities
-  const logClientActivity = async (action: ActivityItem["action"], description: string, metadata?: Record<string, any>) => {
-    if (!currentUser) return;
-    try {
-      await fetch("/api/admin/activities", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          username: currentUser.username,
-          displayName: currentUser.displayName,
-          action,
-          description,
-          metadata,
-        }),
-      });
-      // Listeyi hemen tazele
-      fetchActivities();
-    } catch (err) {
-      console.error("Activity log error:", err);
-    }
-  };
-
-  // Debounced Search Activity Logger
-  useEffect(() => {
-    if (!currentUser || !searchQuery || searchQuery.trim().length < 2) return;
-
-    if (searchLogTimeoutRef.current) {
-      clearTimeout(searchLogTimeoutRef.current);
-    }
-
-    searchLogTimeoutRef.current = setTimeout(() => {
-      logClientActivity(
-        "search",
-        `${currentUser.displayName}, "${searchQuery.trim()}" aramasını yaptı (${filteredProducts.length} ürün bulundu).`,
-        { query: searchQuery.trim(), count: filteredProducts.length }
-      );
-    }, 2000);
-
-    return () => {
-      if (searchLogTimeoutRef.current) {
-        clearTimeout(searchLogTimeoutRef.current);
-      }
-    };
-  }, [searchQuery, currentUser]);
 
   // --- LOGIN HANDLER ---
   const handleLogin = async (e: React.FormEvent) => {
@@ -287,6 +179,7 @@ export default function AdminPage() {
         sessionStorage.setItem("hilal_admin_session", JSON.stringify(data.user));
         setLoginPassword("");
         setLoginError("");
+        fetchPrices();
       } else {
         setLoginError(data.error || "Giriş başarısız. Bilgilerinizi kontrol edin.");
       }
@@ -308,7 +201,6 @@ export default function AdminPage() {
           body: JSON.stringify({
             action: "logout",
             username: currentUser.username,
-            displayName: currentUser.displayName,
           }),
         });
       } catch {}
@@ -419,8 +311,6 @@ export default function AdminPage() {
         });
         setSavedFeedbackCode(code);
         setTimeout(() => setSavedFeedbackCode(null), 2500);
-        // Aktiviteleri hemen güncelle
-        fetchActivities();
       }
     } catch (err) {
       console.error("Fiyat kaydedilemedi:", err);
@@ -626,7 +516,7 @@ export default function AdminPage() {
           {/* Güvenlik Bilgisi */}
           <div className="mt-8 pt-6 border-t border-[#E6E5E0] text-center">
             <p className="text-[11px] text-[#8C8B87]">
-              Tüm girişler ve panel işlemleri güvenlik amacıyla kayıt altına alınmaktadır.
+              Hilal Avize &copy; Yönetim Sistemi • Yetkisiz erişimler engellenmektedir.
             </p>
           </div>
         </div>
@@ -687,7 +577,7 @@ export default function AdminPage() {
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {/* Kullanıcı Rozeti */}
             <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#F4F4F1] border border-[#E6E5E0] text-xs">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
               <span className="font-bold text-[#141414]">{currentUser.displayName}</span>
             </div>
 
@@ -701,7 +591,7 @@ export default function AdminPage() {
                 setConfirmPassword("");
                 setIsPasswordModalOpen(true);
               }}
-              className="p-2 sm:px-3 sm:py-2 rounded-xl bg-[#F4F4F1] hover:bg-[#EAE9E4] border border-[#E6E5E0] text-[#141414] text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-xs"
+              className="p-2 sm:px-3 sm:py-2 rounded-xl bg-[#F4F4F1] hover:bg-[#EAE9E4] border border-[#E6E5E0] text-[#141414] text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-xs cursor-pointer"
               title="Şifre Değiştir"
             >
               <KeyRound className="w-3.5 h-3.5 text-[#93826E]" />
@@ -712,7 +602,7 @@ export default function AdminPage() {
             <button
               type="button"
               onClick={handleLogout}
-              className="p-2 sm:px-3 sm:py-2 rounded-xl bg-red-50 hover:bg-red-100 border border-red-200 text-red-700 text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-xs"
+              className="p-2 sm:px-3 sm:py-2 rounded-xl bg-red-50 hover:bg-red-100 border border-red-200 text-red-700 text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-xs cursor-pointer"
               title="Çıkış Yap"
             >
               <LogOut className="w-3.5 h-3.5" />
@@ -749,7 +639,7 @@ export default function AdminPage() {
               <button
                 type="button"
                 onClick={resetAllFilters}
-                className="text-[11px] text-[#93826E] hover:text-[#7A6956] flex items-center gap-1 font-semibold transition-colors"
+                className="text-[11px] text-[#93826E] hover:text-[#7A6956] flex items-center gap-1 font-semibold transition-colors cursor-pointer"
                 title="Tüm Filtreleri Temizle"
               >
                 <RotateCcw className="w-3 h-3" />
@@ -773,7 +663,7 @@ export default function AdminPage() {
                   setSelectedCategory("all");
                   setSelectedSubcategory("all");
                 }}
-                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold transition-all ${
+                className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                   selectedCategory === "all"
                     ? "bg-[#93826E] text-white font-bold shadow-xs"
                     : "text-[#4A4945] hover:bg-[#F4F4F1] hover:text-[#141414]"
@@ -804,7 +694,7 @@ export default function AdminPage() {
                       setSelectedCategory(cat.slug);
                       setSelectedSubcategory("all");
                     }}
-                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold transition-all text-left ${
+                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold transition-all text-left cursor-pointer ${
                       isSelected
                         ? "bg-[#93826E] text-white font-bold shadow-xs"
                         : "text-[#4A4945] hover:bg-[#F4F4F1] hover:text-[#141414]"
@@ -836,7 +726,7 @@ export default function AdminPage() {
                 <button
                   type="button"
                   onClick={() => setSelectedSubcategory("all")}
-                  className={`w-full text-left px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                  className={`w-full text-left px-3 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                     selectedSubcategory === "all"
                       ? "bg-[#F4F4F1] text-[#93826E] font-bold border border-[#93826E]/40"
                       : "text-[#6B6A66] hover:text-[#141414] hover:bg-[#F8F8F5]"
@@ -849,7 +739,7 @@ export default function AdminPage() {
                     key={sub}
                     type="button"
                     onClick={() => setSelectedSubcategory(sub)}
-                    className={`w-full text-left px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                    className={`w-full text-left px-3 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                       selectedSubcategory === sub
                         ? "bg-[#F4F4F1] text-[#93826E] font-bold border border-[#93826E]/40"
                         : "text-[#6B6A66] hover:text-[#141414] hover:bg-[#F8F8F5]"
@@ -878,7 +768,7 @@ export default function AdminPage() {
                   key={opt.id}
                   type="button"
                   onClick={() => setPriceFilter(opt.id as any)}
-                  className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-left transition-colors ${
+                  className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium text-left transition-colors cursor-pointer ${
                     priceFilter === opt.id
                       ? "bg-[#F4F4F1] text-[#141414] font-bold border border-[#93826E]"
                       : "text-[#6B6A66] hover:text-[#141414] hover:bg-[#F8F8F5]"
@@ -900,7 +790,7 @@ export default function AdminPage() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
-              className="w-full bg-[#F4F4F1] border border-[#E6E5E0] text-xs text-[#141414] rounded-xl px-3 py-2 focus:outline-none focus:border-[#93826E]"
+              className="w-full bg-[#F4F4F1] border border-[#E6E5E0] text-xs text-[#141414] rounded-xl px-3 py-2 focus:outline-none focus:border-[#93826E] cursor-pointer"
             >
               <option value="default">Varsayılan Sıralama</option>
               <option value="price-asc">Fiyata Göre (Artan)</option>
@@ -934,7 +824,7 @@ export default function AdminPage() {
               <button
                 type="button"
                 onClick={resetAllFilters}
-                className="text-xs text-[#93826E] hover:text-[#7A6956] font-semibold flex items-center gap-1 self-start sm:self-auto transition-colors"
+                className="text-xs text-[#93826E] hover:text-[#7A6956] font-semibold flex items-center gap-1 self-start sm:self-auto transition-colors cursor-pointer"
               >
                 <RotateCcw className="w-3 h-3" />
                 <span>Filtreleri Sıfırla</span>
@@ -959,17 +849,12 @@ export default function AdminPage() {
                     {/* Üst Kısım: Fotoğraf */}
                     <div
                       className="relative aspect-square w-full bg-[#F4F4F1] overflow-hidden cursor-pointer"
-                      onClick={() => {
-                        logClientActivity(
-                          "product_view",
-                          `${currentUser.displayName}, ${product.code} kodlu ürün görselini büyüttü.`,
-                          { code: product.code }
-                        );
+                      onClick={() =>
                         setActivePreviewImage({
                           url: product.image,
                           title: product.name !== product.code ? `${product.name} (${product.code})` : product.code,
-                        });
-                      }}
+                        })
+                      }
                     >
                       <Image
                         src={product.image}
@@ -1025,7 +910,7 @@ export default function AdminPage() {
                               e.stopPropagation();
                               handleCopy(product.code);
                             }}
-                            className="p-1.5 rounded-lg bg-[#F4F4F1] hover:bg-[#EAE9E4] text-[#6B6A66] hover:text-[#141414] border border-[#E6E5E0] transition-colors shrink-0"
+                            className="p-1.5 rounded-lg bg-[#F4F4F1] hover:bg-[#EAE9E4] text-[#6B6A66] hover:text-[#141414] border border-[#E6E5E0] transition-colors shrink-0 cursor-pointer"
                             title="Ürün Kodunu Kopyala"
                           >
                             {copiedCode === product.code ? (
@@ -1169,148 +1054,13 @@ export default function AdminPage() {
         </main>
       </div>
 
-      {/* 3. SAĞ EN ALT KÖŞEDE KÜÇÜK YUVARLAK AKTİVİTE BUTONU */}
-      <div className="fixed bottom-5 right-5 z-40">
-        <button
-          type="button"
-          onClick={() => {
-            fetchActivities();
-            setIsActivityDrawerOpen(true);
-          }}
-          className="relative w-11 h-11 rounded-full bg-[#93826E] hover:bg-[#7A6956] text-white shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center border border-white/40 cursor-pointer group"
-          title="Aktivite Geçmişi"
-          aria-label="Aktivite Geçmişi"
-        >
-          <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-white"></span>
-          </span>
-          <History className="w-5 h-5 group-hover:rotate-[-30deg] transition-transform duration-300" />
-        </button>
-      </div>
-
-      {/* 4. AKTİVİTE DRAWER (SAĞDAN AÇILAN AKTİVİTE PANELİ) */}
-      {isActivityDrawerOpen && (
-        <div className="fixed inset-0 z-50 flex justify-end">
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 bg-black/40 backdrop-blur-xs transition-opacity"
-            onClick={() => setIsActivityDrawerOpen(false)}
-          />
-
-          {/* Drawer Content */}
-          <div className="relative w-full max-w-md bg-white h-full shadow-2xl z-10 flex flex-col border-l border-[#E6E5E0]">
-            {/* Header */}
-            <div className="p-5 border-b border-[#E6E5E0] flex items-center justify-between bg-[#FAF9F6]">
-              <div className="flex items-center gap-2.5">
-                <div className="p-2 rounded-xl bg-[#93826E]/15 text-[#93826E]">
-                  <Clock className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold text-[#141414]">Aktivite & İşlem Günlüğü</h3>
-                  <p className="text-[11px] text-[#6B6A66]">Kullanıcı girişleri, aramalar ve fiyatlar</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-1.5">
-                <button
-                  type="button"
-                  onClick={fetchActivities}
-                  disabled={isLoadingActivities}
-                  className="p-2 rounded-lg text-[#6B6A66] hover:text-[#141414] hover:bg-[#EAE9E4] transition-colors"
-                  title="Yenile"
-                >
-                  <RotateCcw className={`w-4 h-4 ${isLoadingActivities ? "animate-spin" : ""}`} />
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setIsActivityDrawerOpen(false)}
-                  className="p-2 rounded-lg text-[#6B6A66] hover:text-[#141414] hover:bg-[#EAE9E4] transition-colors"
-                  title="Kapat"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
-
-            {/* List */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3">
-              {isLoadingActivities && activities.length === 0 ? (
-                <div className="py-12 text-center text-xs text-[#6B6A66] flex flex-col items-center gap-2">
-                  <Loader2 className="w-5 h-5 text-[#93826E] animate-spin" />
-                  <span>Aktiviteler yükleniyor...</span>
-                </div>
-              ) : activities.length > 0 ? (
-                activities.map((act) => {
-                  let badgeBg = "bg-zinc-100 text-zinc-700 border-zinc-200";
-                  let badgeText = "İşlem";
-
-                  if (act.action === "login") {
-                    badgeBg = "bg-emerald-50 text-emerald-700 border-emerald-200";
-                    badgeText = "Giriş";
-                  } else if (act.action === "logout") {
-                    badgeBg = "bg-zinc-100 text-zinc-700 border-zinc-200";
-                    badgeText = "Çıkış";
-                  } else if (act.action === "password_change") {
-                    badgeBg = "bg-amber-50 text-amber-700 border-amber-200";
-                    badgeText = "Şifre";
-                  } else if (act.action === "price_update") {
-                    badgeBg = "bg-blue-50 text-blue-700 border-blue-200";
-                    badgeText = "Fiyat";
-                  } else if (act.action === "search") {
-                    badgeBg = "bg-purple-50 text-purple-700 border-purple-200";
-                    badgeText = "Arama";
-                  } else if (act.action === "product_view") {
-                    badgeBg = "bg-stone-100 text-stone-700 border-stone-200";
-                    badgeText = "İnceleme";
-                  }
-
-                  return (
-                    <div
-                      key={act.id}
-                      className="p-3.5 rounded-2xl bg-[#FAF9F6] border border-[#E6E5E0] space-y-2 hover:border-[#93826E]/40 transition-colors"
-                    >
-                      <div className="flex items-center justify-between gap-2">
-                        <div className="flex items-center gap-2">
-                          <span className="w-6 h-6 rounded-full bg-[#93826E] text-white flex items-center justify-center text-[10px] font-bold">
-                            {(act.displayName || act.username).substring(0, 1).toUpperCase()}
-                          </span>
-                          <span className="text-xs font-bold text-[#141414]">
-                            {act.displayName || act.username}
-                          </span>
-                        </div>
-                        <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${badgeBg}`}>
-                          {badgeText}
-                        </span>
-                      </div>
-
-                      <p className="text-xs text-[#333230] leading-relaxed">
-                        {act.description}
-                      </p>
-
-                      <div className="flex items-center justify-end text-[10px] font-mono text-[#8C8B87]">
-                        <span>{formatActivityDate(act.timestamp)}</span>
-                      </div>
-                    </div>
-                  );
-                })
-              ) : (
-                <div className="py-12 text-center text-xs text-[#6B6A66]">
-                  Henüz kayıtlı aktivite bulunmuyor.
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* 5. ŞİFRE DEĞİŞTİRME MODALI */}
+      {/* 3. ŞİFRE DEĞİŞTİRME MODALI */}
       {isPasswordModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
           <div className="bg-white border border-[#E6E5E0] rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl relative">
             <button
               onClick={() => setIsPasswordModalOpen(false)}
-              className="absolute top-4 right-4 p-1.5 rounded-lg text-[#8C8B87] hover:text-[#141414] hover:bg-[#F4F4F1] transition-colors"
+              className="absolute top-4 right-4 p-1.5 rounded-lg text-[#8C8B87] hover:text-[#141414] hover:bg-[#F4F4F1] transition-colors cursor-pointer"
               title="Kapat"
             >
               <X className="w-5 h-5" />
@@ -1405,7 +1155,7 @@ export default function AdminPage() {
         </div>
       )}
 
-      {/* 6. LIGHTBOX PREVIEW MODAL */}
+      {/* 4. LIGHTBOX PREVIEW MODAL */}
       {activePreviewImage && (
         <div
           className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 cursor-pointer"
@@ -1417,7 +1167,7 @@ export default function AdminPage() {
           >
             <button
               onClick={() => setActivePreviewImage(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/20 hover:bg-white/30 text-white backdrop-blur-xs transition-colors"
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/20 hover:bg-white/30 text-white backdrop-blur-xs transition-colors cursor-pointer"
               title="Kapat"
             >
               <X className="w-6 h-6" />
