@@ -135,13 +135,14 @@ export async function GET() {
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { code, price } = body;
+    const { code, price, username, displayName } = body;
 
     if (!code) {
       return NextResponse.json({ success: false, error: "Ürün kodu gereklidir." }, { status: 400 });
     }
 
     const prices = readLocalPrices();
+    const oldPrice = prices[code];
 
     if (price === null || price === undefined || String(price).trim() === "") {
       delete prices[code];
@@ -150,6 +151,34 @@ export async function POST(req: Request) {
     }
 
     writeLocalPrices(prices);
+
+    // Aktiviteyi logla
+    if (username) {
+      try {
+        const actPath = path.join(process.cwd(), "src", "data", "admin-activities.json");
+        let list: any[] = [];
+        if (fs.existsSync(actPath)) {
+          list = JSON.parse(fs.readFileSync(actPath, "utf-8"));
+        }
+        const userLabel = displayName || username;
+        const newPriceFormatted = prices[code] ? `${prices[code]} ₺` : "Kaldırıldı";
+        const oldPriceFormatted = oldPrice ? `${oldPrice} ₺` : "Belirtilmemişti";
+
+        list.unshift({
+          id: "act-" + Date.now() + "-" + Math.random().toString(36).substring(2, 6),
+          username: String(username).toLowerCase().trim(),
+          displayName: userLabel,
+          action: "price_update",
+          description: `${userLabel}, ${code} kodlu ürünün fiyatını güncelledi (${oldPriceFormatted} ➔ ${newPriceFormatted}).`,
+          timestamp: new Date().toISOString(),
+          metadata: { code, oldPrice, newPrice: prices[code] || null },
+        });
+        if (list.length > 250) list = list.slice(0, 250);
+        fs.writeFileSync(actPath, JSON.stringify(list, null, 2) + "\n", "utf-8");
+      } catch (logErr) {
+        console.error("Price activity log error:", logErr);
+      }
+    }
 
     writeGitHubPrices(prices, `fiyat guncellendi: ${code} -> ${price}`).catch((err) => {
       console.warn("GitHub background commit failed:", err);

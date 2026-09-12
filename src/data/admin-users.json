@@ -1,0 +1,20 @@
+{
+  "onur": {
+    "username": "onur",
+    "password": "onur123",
+    "displayName": "Onur",
+    "createdAt": "2026-09-12T08:13:36.188Z"
+  },
+  "cigdem": {
+    "username": "cigdem",
+    "password": "cigdem123",
+    "displayName": "Çiğdem",
+    "createdAt": "2026-09-12T08:13:36.189Z"
+  },
+  "lutfiye": {
+    "username": "lutfiye",
+    "password": "lutfiye123",
+    "displayName": "Lütfiye",
+    "createdAt": "2026-09-12T08:13:36.189Z"
+  }
+}
