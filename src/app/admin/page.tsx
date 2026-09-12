@@ -129,7 +129,7 @@ export default function AdminPage() {
   // Debounce search logging
   const searchLogTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // 1. Session Check on Mount
+  // 1. Session & Cache Check on Mount
   useEffect(() => {
     try {
       const stored = sessionStorage.getItem("hilal_admin_session");
@@ -139,12 +139,52 @@ export default function AdminPage() {
           setCurrentUser(parsed);
         }
       }
+      // Fiyat önbelleğini anında yükle (Yenilemede asla kaybolmaz)
+      const cachedPrices = localStorage.getItem("hilal_admin_prices_cache");
+      if (cachedPrices) {
+        const parsedPrices = JSON.parse(cachedPrices);
+        if (parsedPrices && typeof parsedPrices === "object") {
+          setPrices(parsedPrices);
+        }
+      }
     } catch (e) {
       console.error("Session reading error:", e);
     } finally {
       setIsAuthChecking(false);
     }
   }, []);
+
+  // Fetch prices helper
+  const fetchPrices = async () => {
+    try {
+      const res = await fetch("/api/admin/prices", { cache: "no-store" });
+      const data = await res.json();
+      if (data.success && data.prices) {
+        setPrices(data.prices);
+        try {
+          localStorage.setItem("hilal_admin_prices_cache", JSON.stringify(data.prices));
+        } catch {}
+      }
+    } catch (err) {
+      console.error("Prices fetch error:", err);
+    }
+  };
+
+  // Fetch activities helper
+  const fetchActivities = async () => {
+    setIsLoadingActivities(true);
+    try {
+      const res = await fetch("/api/admin/activities", { cache: "no-store" });
+      const data = await res.json();
+      if (data.success && Array.isArray(data.activities)) {
+        setActivities(data.activities);
+      }
+    } catch (err) {
+      console.error("Activities fetch error:", err);
+    } finally {
+      setIsLoadingActivities(false);
+    }
+  };
 
   // 2. Fetch data once logged in
   useEffect(() => {
@@ -160,35 +200,19 @@ export default function AdminPage() {
       })
       .catch(() => {});
 
-    // Fiyatları çek (Sadece admin paneli erişebilir)
-    fetch("/api/admin/prices")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.success && data.prices) {
-          setPrices(data.prices);
-        }
-      })
-      .catch(() => {});
-
-    // Aktiviteleri çek
+    // Fiyatları ve Aktiviteleri çek
+    fetchPrices();
     fetchActivities();
   }, [currentUser]);
 
-  // Fetch activities helper
-  const fetchActivities = async () => {
-    setIsLoadingActivities(true);
-    try {
-      const res = await fetch("/api/admin/activities");
-      const data = await res.json();
-      if (data.success && Array.isArray(data.activities)) {
-        setActivities(data.activities);
-      }
-    } catch (err) {
-      console.error("Activities fetch error:", err);
-    } finally {
-      setIsLoadingActivities(false);
-    }
-  };
+  // Aktivite paneli açıkken 4 saniyede bir otomatik yenile
+  useEffect(() => {
+    if (!isActivityDrawerOpen || !currentUser) return;
+    const interval = setInterval(() => {
+      fetchActivities();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isActivityDrawerOpen, currentUser]);
 
   // Helper to log client activities
   const logClientActivity = async (action: ActivityItem["action"], description: string, metadata?: Record<string, any>) => {
@@ -205,10 +229,8 @@ export default function AdminPage() {
           metadata,
         }),
       });
-      // Refresh activity list if open
-      if (isActivityDrawerOpen) {
-        fetchActivities();
-      }
+      // Listeyi hemen tazele
+      fetchActivities();
     } catch (err) {
       console.error("Activity log error:", err);
     }
@@ -385,16 +407,19 @@ export default function AdminPage() {
       if (data.success) {
         setPrices((prev) => {
           const next = { ...prev };
-          if (data.price !== null && data.price !== undefined) {
+          if (data.price !== null && data.price !== undefined && data.price !== "") {
             next[code] = data.price;
           } else {
             delete next[code];
           }
+          try {
+            localStorage.setItem("hilal_admin_prices_cache", JSON.stringify(next));
+          } catch {}
           return next;
         });
         setSavedFeedbackCode(code);
-        setTimeout(() => setSavedFeedbackCode(null), 2000);
-        // Refresh activities
+        setTimeout(() => setSavedFeedbackCode(null), 2500);
+        // Aktiviteleri hemen güncelle
         fetchActivities();
       }
     } catch (err) {
