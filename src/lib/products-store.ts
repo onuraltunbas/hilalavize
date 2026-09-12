@@ -106,7 +106,9 @@ export async function getProductBySlugAsync(slug: string): Promise<Product | und
       p.code.toLowerCase() === clean ||
       p.id.toLowerCase() === clean ||
       p.id.toLowerCase().replace("-", "") === clean ||
-      p.code.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum
+      p.code.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum ||
+      (p.legacyCode && p.legacyCode.toLowerCase() === clean) ||
+      (p.legacyCode && p.legacyCode.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum)
   );
 }
 
@@ -154,7 +156,9 @@ export function getProductBySlug(slug: string): Product | undefined {
       p.slug.toLowerCase() === clean ||
       p.code.toLowerCase() === clean ||
       p.id.toLowerCase() === clean ||
-      p.code.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum
+      p.code.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum ||
+      (p.legacyCode && p.legacyCode.toLowerCase() === clean) ||
+      (p.legacyCode && p.legacyCode.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum)
   );
 }
 

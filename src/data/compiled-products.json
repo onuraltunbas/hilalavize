@@ -12,9 +12,9 @@
     "dimensions": "Q: 120 H: 125 cm / Q: 105 H: 80 cm / L: 300 W: 90 H: 120 cm",
     "lightingType": "E14 Duy (18x40W / 28x40W)",
     "branch": "showroom",
-    "image": "/products/klasik/photo/10.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-001.jpeg",
     "images": [
-      "/products/klasik/photo/10.jpeg"
+      "/products/klasik/photo/HL-KLS-001.jpeg"
     ],
     "features": [
       "E14 Duy (18x40W / 28x40W)",
@@ -38,9 +38,9 @@
     "dimensions": "Q: 35 W: 45 H: 25 cm / Q: 40 H: 160 cm / Q: 33 H: 35 cm / Q: 85 W: 60 H: 35 cm",
     "lightingType": "E14 Duy (3x40W / 5x40W / 6x40W / 9x40W)",
     "branch": "showroom",
-    "image": "/products/klasik/photo/20.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-002.jpeg",
     "images": [
-      "/products/klasik/photo/20.jpeg"
+      "/products/klasik/photo/HL-KLS-002.jpeg"
     ],
     "features": [
       "E14 Duy (3x40W / 5x40W / 6x40W / 9x40W)",
@@ -64,9 +64,9 @@
     "dimensions": "L: 105 W: 60 H: 100 cm / L: 150 W: 90 H: 120 cm / Q: 70-90 H: 100 cm",
     "lightingType": "E14 Duy (6x40W / 8x40W / 10x40W / 15x40W / 16x40W)",
     "branch": "showroom",
-    "image": "/products/klasik/photo/30.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-003.jpeg",
     "images": [
-      "/products/klasik/photo/30.jpeg"
+      "/products/klasik/photo/HL-KLS-003.jpeg"
     ],
     "features": [
       "E14 Duy (6x40W / 8x40W / 10x40W / 15x40W / 16x40W)",
@@ -90,9 +90,9 @@
     "dimensions": "Çap: 90 cm",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
-    "image": "/products/klasik/photo/40.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-004.jpeg",
     "images": [
-      "/products/klasik/photo/40.jpeg"
+      "/products/klasik/photo/HL-KLS-004.jpeg"
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
@@ -116,9 +116,9 @@
     "dimensions": "Çap: 95 cm, Uzunluk: 100 cm",
     "lightingType": "Dahili Yüksek Güçlü LED Modülü",
     "branch": "showroom",
-    "image": "/products/klasik/photo/50.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-005.jpeg",
     "images": [
-      "/products/klasik/photo/50.jpeg"
+      "/products/klasik/photo/HL-KLS-005.jpeg"
     ],
     "features": [
       "Dahili Yüksek Güçlü LED Modülü",
@@ -141,9 +141,9 @@
     "dimensions": "950*380*H1200mm",
     "lightingType": "Dahili LED 100W",
     "branch": "showroom",
-    "image": "/products/klasik/photo/60.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-006.jpeg",
     "images": [
-      "/products/klasik/photo/60.jpeg"
+      "/products/klasik/photo/HL-KLS-006.jpeg"
     ],
     "features": [
       "Dahili LED 100W",
@@ -167,10 +167,10 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/klasik/photo/70.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-007_2.jpeg",
     "images": [
-      "/products/klasik/photo/70.jpeg",
-      "/products/klasik/photo/71.jpeg"
+      "/products/klasik/photo/HL-KLS-007_2.jpeg",
+      "/products/klasik/photo/HL-KLS-007.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -194,10 +194,10 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
-    "image": "/products/klasik/photo/120.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-012_2.jpeg",
     "images": [
-      "/products/klasik/photo/120.jpeg",
-      "/products/klasik/photo/121.jpeg"
+      "/products/klasik/photo/HL-KLS-012_2.jpeg",
+      "/products/klasik/photo/HL-KLS-012.jpeg"
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
@@ -220,9 +220,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
-    "image": "/products/klasik/photo/140.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-014.jpeg",
     "images": [
-      "/products/klasik/photo/140.jpeg"
+      "/products/klasik/photo/HL-KLS-014.jpeg"
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
@@ -232,6 +232,33 @@
     ],
     "seoTitle": "HL-KLS-014 | Hilal Avize Kahramanmaraş",
     "seoDescription": "HL-KLS-014 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "KLS-041",
+    "code": "HL-KLS-041",
+    "legacyCode": "HL-LED-041",
+    "slug": "hl-kls-041",
+    "name": "HL-KLS-041",
+    "categorySlug": "klasik",
+    "categoryName": "Klasik Kristal Avizeler",
+    "badge": "Özel Tasarım",
+    "description": "HL-KLS-041, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Kirpi formunda ışığı 360 derece saçan metalik çubukları ve E14 duylarıyla mekana klasik ve modern bir derinlik katar.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/klasik/photo/HL-KLS-041.jpeg",
+    "images": [
+      "/products/klasik/photo/HL-KLS-041.jpeg"
+    ],
+    "features": [
+      "E14 Kandil Duy (LED Uyumlu)",
+      "Ayarlanabilir Yükseklik / Standart Ölçü",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-KLS-041 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-KLS-041 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-001",
@@ -246,9 +273,9 @@
     "dimensions": "Uzunluk: 100 cm / Yükseklik: 150 cm (L1000*H1500mm)",
     "lightingType": "Dahili Yüksek Verimli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/10.png",
+    "image": "/products/ledli-grup/photo/HL-LED-001.png",
     "images": [
-      "/products/ledli-grup/photo/10.png"
+      "/products/ledli-grup/photo/HL-LED-001.png"
     ],
     "features": [
       "Dahili Yüksek Verimli LED Modülü",
@@ -272,10 +299,10 @@
     "dimensions": "L600*W435*H1500mm / L530*W340*H1500mm / Φ800*H2000mm",
     "lightingType": "Dahili LED (18W / 21W / 86W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/20.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-002_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/20.jpeg",
-      "/products/ledli-grup/photo/21.jpeg"
+      "/products/ledli-grup/photo/HL-LED-002_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-002.jpeg"
     ],
     "features": [
       "Dahili LED (18W / 21W / 86W)",
@@ -299,9 +326,9 @@
     "dimensions": "Φ400*H1200mm / Φ600*H1200mm / Φ800*H1200mm",
     "lightingType": "Dahili LED (15W / 25W / 32W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/30.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-003.jpeg",
     "images": [
-      "/products/ledli-grup/photo/30.jpeg"
+      "/products/ledli-grup/photo/HL-LED-003.jpeg"
     ],
     "features": [
       "Dahili LED (15W / 25W / 32W)",
@@ -325,10 +352,10 @@
     "dimensions": "1800*350*H1700mm",
     "lightingType": "Dahili LED 58W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/40.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-004_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/40.jpeg",
-      "/products/ledli-grup/photo/41.jpeg"
+      "/products/ledli-grup/photo/HL-LED-004_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-004.jpeg"
     ],
     "features": [
       "Dahili LED 58W",
@@ -352,10 +379,10 @@
     "dimensions": "1200*380*H1400mm / Φ280*H1950mm",
     "lightingType": "Dahili LED (42W / 52W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/50.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-005_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/50.jpeg",
-      "/products/ledli-grup/photo/51.jpeg"
+      "/products/ledli-grup/photo/HL-LED-005_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-005.jpeg"
     ],
     "features": [
       "Dahili LED (42W / 52W)",
@@ -378,10 +405,10 @@
     "dimensions": "Φ800*H1500mm / Φ600*H1200mm",
     "lightingType": "Dahili LED (92W / 196W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/60.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-006_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/60.jpeg",
-      "/products/ledli-grup/photo/61.jpeg"
+      "/products/ledli-grup/photo/HL-LED-006_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-006.jpeg"
     ],
     "features": [
       "Dahili LED (92W / 196W)",
@@ -405,10 +432,10 @@
     "dimensions": "Φ900*H2100mm",
     "lightingType": "Dahili LED 400W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/70.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-007_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/70.jpeg",
-      "/products/ledli-grup/photo/71.jpeg"
+      "/products/ledli-grup/photo/HL-LED-007_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-007.jpeg"
     ],
     "features": [
       "Dahili LED 400W",
@@ -431,10 +458,10 @@
     "dimensions": "Φ600*H2200mm / Φ450*H1500mm",
     "lightingType": "Dahili LED (128W / 192W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/80.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-008_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/80.jpeg",
-      "/products/ledli-grup/photo/81.jpeg"
+      "/products/ledli-grup/photo/HL-LED-008_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-008.jpeg"
     ],
     "features": [
       "Dahili LED (128W / 192W)",
@@ -458,10 +485,10 @@
     "dimensions": "Φ800*H1200mm / Φ600*H1200mm",
     "lightingType": "Dahili LED (50W / 86W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/90.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-009_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/90.jpeg",
-      "/products/ledli-grup/photo/91.jpeg"
+      "/products/ledli-grup/photo/HL-LED-009_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-009.jpeg"
     ],
     "features": [
       "Dahili LED (50W / 86W)",
@@ -484,10 +511,10 @@
     "dimensions": "Φ600*H1200mm / L1200*W300*H1200mm",
     "lightingType": "Dahili LED (40W / 60W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/100.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-010_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/100.jpeg",
-      "/products/ledli-grup/photo/101.jpeg"
+      "/products/ledli-grup/photo/HL-LED-010_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-010.jpeg"
     ],
     "features": [
       "Dahili LED (40W / 60W)",
@@ -510,9 +537,9 @@
     "dimensions": "L1000*H1500mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/110.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-011.jpeg",
     "images": [
-      "/products/ledli-grup/photo/110.jpeg"
+      "/products/ledli-grup/photo/HL-LED-011.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -535,10 +562,10 @@
     "dimensions": "Φ600*H1200mm / Φ600*H1000mm",
     "lightingType": "Dahili LED (40W / 67W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/120.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-012_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/120.jpeg",
-      "/products/ledli-grup/photo/121.jpeg"
+      "/products/ledli-grup/photo/HL-LED-012_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-012.jpeg"
     ],
     "features": [
       "Dahili LED (40W / 67W)",
@@ -562,10 +589,10 @@
     "dimensions": "Φ950*H1500mm / Φ760*H1500mm",
     "lightingType": "Dahili LED (80W / 100W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/130.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-013_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/130.jpeg",
-      "/products/ledli-grup/photo/131.jpeg"
+      "/products/ledli-grup/photo/HL-LED-013_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-013.jpeg"
     ],
     "features": [
       "Dahili LED (80W / 100W)",
@@ -588,10 +615,10 @@
     "dimensions": "Φ780*H1500mm / Φ680*H1500mm",
     "lightingType": "Dahili LED (60W / 80W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/140.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-014_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/140.jpeg",
-      "/products/ledli-grup/photo/141.jpeg"
+      "/products/ledli-grup/photo/HL-LED-014_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-014.jpeg"
     ],
     "features": [
       "Dahili LED (60W / 80W)",
@@ -615,10 +642,10 @@
     "dimensions": "Φ720*H1100mm / Φ980*H1100mm",
     "lightingType": "Dahili LED (80W / 160W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/150.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-015_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/150.jpeg",
-      "/products/ledli-grup/photo/151.jpeg"
+      "/products/ledli-grup/photo/HL-LED-015_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-015.jpeg"
     ],
     "features": [
       "Dahili LED (80W / 160W)",
@@ -641,10 +668,10 @@
     "dimensions": "Φ860*H1500mm / Φ740*H1500mm / L840*W480*H1500mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/160.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-016_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/160.jpeg",
-      "/products/ledli-grup/photo/161.jpeg"
+      "/products/ledli-grup/photo/HL-LED-016_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-016.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -668,10 +695,10 @@
     "dimensions": "850*H1500mm",
     "lightingType": "Dahili LED 40W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/170.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-017_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/170.jpeg",
-      "/products/ledli-grup/photo/171.jpeg"
+      "/products/ledli-grup/photo/HL-LED-017_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-017.jpeg"
     ],
     "features": [
       "Dahili LED 40W",
@@ -694,10 +721,10 @@
     "dimensions": "Φ530*H1500mm / Φ630*H1500mm",
     "lightingType": "Dahili LED (48W / 64W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/180.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-018_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/180.jpeg",
-      "/products/ledli-grup/photo/181.jpeg"
+      "/products/ledli-grup/photo/HL-LED-018_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-018.jpeg"
     ],
     "features": [
       "Dahili LED (48W / 64W)",
@@ -720,10 +747,10 @@
     "dimensions": "700*80*H1200mm / Φ100*H1200mm",
     "lightingType": "Dahili LED (14W / 70W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/190.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-019_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/190.jpeg",
-      "/products/ledli-grup/photo/191.jpeg"
+      "/products/ledli-grup/photo/HL-LED-019_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-019.jpeg"
     ],
     "features": [
       "Dahili LED (14W / 70W)",
@@ -746,10 +773,10 @@
     "dimensions": "Φ810*H660mm / Φ660*H660mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/200.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-020_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/200.jpeg",
-      "/products/ledli-grup/photo/201.jpeg"
+      "/products/ledli-grup/photo/HL-LED-020_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-020.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -772,10 +799,10 @@
     "dimensions": "Φ750*H550mm / 950*H710mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/210.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-021_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/210.jpeg",
-      "/products/ledli-grup/photo/211.jpeg"
+      "/products/ledli-grup/photo/HL-LED-021_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-021.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -798,10 +825,10 @@
     "dimensions": "Φ600*H1500mm / Φ500*H1500mm / Φ800*H1500mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/220.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-022_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/220.jpeg",
-      "/products/ledli-grup/photo/221.jpeg"
+      "/products/ledli-grup/photo/HL-LED-022_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-022.jpeg"
     ],
     "features": [
       "Dahili LED (3000K Sıcak Beyaz)",
@@ -825,10 +852,10 @@
     "dimensions": "L1200*H1500mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/230.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-023_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/230.jpeg",
-      "/products/ledli-grup/photo/231.jpeg"
+      "/products/ledli-grup/photo/HL-LED-023_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-023.jpeg"
     ],
     "features": [
       "Dahili LED (3000K Sıcak Beyaz)",
@@ -852,10 +879,10 @@
     "dimensions": "1100*500*H1500mm / Φ400*H1200mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/240.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-024_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/240.jpeg",
-      "/products/ledli-grup/photo/241.jpeg"
+      "/products/ledli-grup/photo/HL-LED-024_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-024.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -878,10 +905,10 @@
     "dimensions": "Φ300*H1200mm / Φ450*H1500mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/250.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-025_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/250.jpeg",
-      "/products/ledli-grup/photo/251.jpeg"
+      "/products/ledli-grup/photo/HL-LED-025_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-025.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -904,10 +931,10 @@
     "dimensions": "Çap: 45 cm",
     "lightingType": "Dahili LED Aydınlatma Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/260.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-026_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/260.jpeg",
-      "/products/ledli-grup/photo/261.jpeg"
+      "/products/ledli-grup/photo/HL-LED-026_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-026.jpeg"
     ],
     "features": [
       "Dahili LED Aydınlatma Modülü",
@@ -930,9 +957,9 @@
     "dimensions": "450*800mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/270.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-027.jpeg",
     "images": [
-      "/products/ledli-grup/photo/270.jpeg"
+      "/products/ledli-grup/photo/HL-LED-027.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -955,9 +982,9 @@
     "dimensions": "450*800mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/280.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-028.jpeg",
     "images": [
-      "/products/ledli-grup/photo/280.jpeg"
+      "/products/ledli-grup/photo/HL-LED-028.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -980,10 +1007,10 @@
     "dimensions": "440*320*H1500mm / 440*310*H1500mm",
     "lightingType": "Dahili LED (30W / 45W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/290.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-029_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/290.jpeg",
-      "/products/ledli-grup/photo/291.jpeg"
+      "/products/ledli-grup/photo/HL-LED-029_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-029.jpeg"
     ],
     "features": [
       "Dahili LED (30W / 45W)",
@@ -1006,10 +1033,10 @@
     "dimensions": "Φ600*H1300mm / Φ830*H1400mm",
     "lightingType": "Dahili LED (64W / 110W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/300.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-030_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/300.jpeg",
-      "/products/ledli-grup/photo/301.jpeg"
+      "/products/ledli-grup/photo/HL-LED-030_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-030.jpeg"
     ],
     "features": [
       "Dahili LED (64W / 110W)",
@@ -1032,10 +1059,10 @@
     "dimensions": "Çap: 70 cm, Yükseklik: 100 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/310.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-031_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/310.jpeg",
-      "/products/ledli-grup/photo/311.jpeg"
+      "/products/ledli-grup/photo/HL-LED-031_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-031.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1058,10 +1085,10 @@
     "dimensions": "Çap: 50 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/320.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-032_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/320.jpeg",
-      "/products/ledli-grup/photo/321.jpeg"
+      "/products/ledli-grup/photo/HL-LED-032_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-032.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1084,9 +1111,9 @@
     "dimensions": "Çap: 60 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/330.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-033.jpeg",
     "images": [
-      "/products/ledli-grup/photo/330.jpeg"
+      "/products/ledli-grup/photo/HL-LED-033.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1110,10 +1137,10 @@
     "dimensions": "Φ600mm",
     "lightingType": "Dahili LED 60W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/340.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-034_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/340.jpeg",
-      "/products/ledli-grup/photo/341.jpeg"
+      "/products/ledli-grup/photo/HL-LED-034_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-034.jpeg"
     ],
     "features": [
       "Dahili LED 60W",
@@ -1137,9 +1164,9 @@
     "dimensions": "Φ700*H1500mm",
     "lightingType": "Dahili LED 80W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/350.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-035.jpeg",
     "images": [
-      "/products/ledli-grup/photo/350.jpeg"
+      "/products/ledli-grup/photo/HL-LED-035.jpeg"
     ],
     "features": [
       "Dahili LED 80W",
@@ -1162,10 +1189,10 @@
     "dimensions": "Φ700*H1000mm / L920*H1000mm",
     "lightingType": "Dahili LED 30W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/360.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-036_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/360.jpeg",
-      "/products/ledli-grup/photo/361.jpeg"
+      "/products/ledli-grup/photo/HL-LED-036_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-036.jpeg"
     ],
     "features": [
       "Dahili LED 30W",
@@ -1188,10 +1215,10 @@
     "dimensions": "Φ690*H1200mm / 880*280*1200mm",
     "lightingType": "Dahili LED 84W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/370.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-037_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/370.jpeg",
-      "/products/ledli-grup/photo/371.jpeg"
+      "/products/ledli-grup/photo/HL-LED-037_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-037.jpeg"
     ],
     "features": [
       "Dahili LED 84W",
@@ -1214,10 +1241,10 @@
     "dimensions": "Φ500mm / 570*570mm / 500*120mm",
     "lightingType": "Dahili LED (40W / 60W / 80W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/380.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-038_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/380.jpeg",
-      "/products/ledli-grup/photo/381.jpeg"
+      "/products/ledli-grup/photo/HL-LED-038_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-038.jpeg"
     ],
     "features": [
       "Dahili LED (40W / 60W / 80W)",
@@ -1240,10 +1267,10 @@
     "dimensions": "Çap: 55 cm",
     "lightingType": "E14 Kandil Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/390.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-039_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/390.jpeg",
-      "/products/ledli-grup/photo/391.jpeg"
+      "/products/ledli-grup/photo/HL-LED-039_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-039.jpeg"
     ],
     "features": [
       "E14 Kandil Duy (LED Ampul Uyumlu)",
@@ -1266,9 +1293,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "Dahili Kristal LED Işık Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/400.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-040.jpeg",
     "images": [
-      "/products/ledli-grup/photo/400.jpeg"
+      "/products/ledli-grup/photo/HL-LED-040.jpeg"
     ],
     "features": [
       "Dahili Kristal LED Işık Modülü",
@@ -1278,32 +1305,6 @@
     ],
     "seoTitle": "HL-LED-040 | Hilal Avize Kahramanmaraş",
     "seoDescription": "HL-LED-040 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "LED-041",
-    "code": "HL-LED-041",
-    "slug": "hl-led-041",
-    "name": "HL-LED-041",
-    "categorySlug": "ledli-grup",
-    "categoryName": "Modern LED Avizeler",
-    "badge": "Özel Tasarım",
-    "description": "HL-LED-041, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E14 Kandil Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Kirpi formunda ışığı 360 derece saçan metalik çubukları ve E14 duylarıyla mekana modern bir derinlik katar.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
-    "branch": "showroom",
-    "image": "/products/ledli-grup/photo/410.jpeg",
-    "images": [
-      "/products/ledli-grup/photo/410.jpeg"
-    ],
-    "features": [
-      "E14 Kandil Duy (LED Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-LED-041 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-LED-041 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
     "id": "LED-042",
@@ -1317,9 +1318,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/420.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-042.jpeg",
     "images": [
-      "/products/ledli-grup/photo/420.jpeg"
+      "/products/ledli-grup/photo/HL-LED-042.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1342,10 +1343,10 @@
     "dimensions": "Çap: 60 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/430.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-043_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/430.jpeg",
-      "/products/ledli-grup/photo/431.jpeg"
+      "/products/ledli-grup/photo/HL-LED-043_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-043.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1369,9 +1370,9 @@
     "dimensions": "L1200mm",
     "lightingType": "Dahili LED 40W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/440.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-044.jpeg",
     "images": [
-      "/products/ledli-grup/photo/440.jpeg"
+      "/products/ledli-grup/photo/HL-LED-044.jpeg"
     ],
     "features": [
       "Dahili LED 40W",
@@ -1394,10 +1395,10 @@
     "dimensions": "Φ500*H500mm / 880*H780mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/450.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-045_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/450.jpeg",
-      "/products/ledli-grup/photo/451.jpeg"
+      "/products/ledli-grup/photo/HL-LED-045_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-045.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1421,9 +1422,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "Dahili LED Aydınlatma Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/460.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-046.jpeg",
     "images": [
-      "/products/ledli-grup/photo/460.jpeg"
+      "/products/ledli-grup/photo/HL-LED-046.jpeg"
     ],
     "features": [
       "Dahili LED Aydınlatma Modülü",
@@ -1446,10 +1447,10 @@
     "dimensions": "Φ750*H500mm / Φ900*H530mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/klasik/photo/80.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-047_2.jpeg",
     "images": [
-      "/products/klasik/photo/80.jpeg",
-      "/products/klasik/photo/81.jpeg"
+      "/products/ledli-grup/photo/HL-LED-047_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-047.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1473,9 +1474,9 @@
     "dimensions": "Çap: 70 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/klasik/photo/90.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-048.jpeg",
     "images": [
-      "/products/klasik/photo/90.jpeg"
+      "/products/ledli-grup/photo/HL-LED-048.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1499,10 +1500,10 @@
     "dimensions": "Çap: 65 cm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/klasik/photo/100.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-049_2.jpeg",
     "images": [
-      "/products/klasik/photo/100.jpeg",
-      "/products/klasik/photo/101.jpeg"
+      "/products/ledli-grup/photo/HL-LED-049_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-049.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1526,9 +1527,9 @@
     "dimensions": "Çap: 120 cm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/klasik/photo/110.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-050.jpeg",
     "images": [
-      "/products/klasik/photo/110.jpeg"
+      "/products/ledli-grup/photo/HL-LED-050.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1551,9 +1552,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E14 Duy + Dahili LED Aydınlatma",
     "branch": "showroom",
-    "image": "/products/klasik/photo/130.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-051.jpeg",
     "images": [
-      "/products/klasik/photo/130.jpeg"
+      "/products/ledli-grup/photo/HL-LED-051.jpeg"
     ],
     "features": [
       "E14 Duy + Dahili LED Aydınlatma",
@@ -1577,9 +1578,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/10.jpeg",
+    "image": "/products/tekli-avizeler/photo/HL-TKL-001.jpeg",
     "images": [
-      "/products/tekli-avizeler/photo/10.jpeg"
+      "/products/tekli-avizeler/photo/HL-TKL-001.jpeg"
     ],
     "features": [
       "E27 Standart Duy (LED Ampul Uyumlu)",
@@ -1603,9 +1604,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/20.jpeg",
+    "image": "/products/tekli-avizeler/photo/HL-TKL-002.jpeg",
     "images": [
-      "/products/tekli-avizeler/photo/20.jpeg"
+      "/products/tekli-avizeler/photo/HL-TKL-002.jpeg"
     ],
     "features": [
       "E27 Standart Duy (LED Ampul Uyumlu)",
@@ -1629,9 +1630,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/30.jpeg",
+    "image": "/products/tekli-avizeler/photo/HL-TKL-003.jpeg",
     "images": [
-      "/products/tekli-avizeler/photo/30.jpeg"
+      "/products/tekli-avizeler/photo/HL-TKL-003.jpeg"
     ],
     "features": [
       "E27 Standart Duy (LED Ampul Uyumlu)",
@@ -1655,9 +1656,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/40.jpeg",
+    "image": "/products/tekli-avizeler/photo/HL-TKL-004.jpeg",
     "images": [
-      "/products/tekli-avizeler/photo/40.jpeg"
+      "/products/tekli-avizeler/photo/HL-TKL-004.jpeg"
     ],
     "features": [
       "E27 Standart Duy (LED Ampul Uyumlu)",
@@ -1681,9 +1682,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/50.jpeg",
+    "image": "/products/tekli-avizeler/photo/HL-TKL-005.jpeg",
     "images": [
-      "/products/tekli-avizeler/photo/50.jpeg"
+      "/products/tekli-avizeler/photo/HL-TKL-005.jpeg"
     ],
     "features": [
       "E27 Standart Duy (LED Ampul Uyumlu)",
@@ -1707,9 +1708,9 @@
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/60.jpeg",
+    "image": "/products/tekli-avizeler/photo/HL-TKL-006.jpeg",
     "images": [
-      "/products/tekli-avizeler/photo/60.jpeg"
+      "/products/tekli-avizeler/photo/HL-TKL-006.jpeg"
     ],
     "features": [
       "E27 Standart Duy (LED Ampul Uyumlu)",
@@ -1733,9 +1734,9 @@
     "dimensions": "Φ230*H230mm",
     "lightingType": "Dahili LED 8W",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/10.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-001.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/10.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-001.jpeg"
     ],
     "features": [
       "Dahili LED 8W",
@@ -1759,9 +1760,9 @@
     "dimensions": "Standart Duvar Ölçüsü",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/20.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-002.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/20.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-002.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1785,9 +1786,9 @@
     "dimensions": "Standart Duvar Ölçüsü",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/30.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-003.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/30.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-003.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1811,9 +1812,9 @@
     "dimensions": "Φ120*H360mm",
     "lightingType": "Dahili LED 5W",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/40.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-004.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/40.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-004.jpeg"
     ],
     "features": [
       "Dahili LED 5W",
@@ -1837,9 +1838,9 @@
     "dimensions": "140*H800mm",
     "lightingType": "Dahili LED 10W",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/50.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-005.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/50.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-005.jpeg"
     ],
     "features": [
       "Dahili LED 10W",
@@ -1863,9 +1864,9 @@
     "dimensions": "200*H280mm",
     "lightingType": "Dahili LED 15W",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/60.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-006.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/60.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-006.jpeg"
     ],
     "features": [
       "Dahili LED 15W",
@@ -1889,9 +1890,9 @@
     "dimensions": "240*H230mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/70.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-007.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/70.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-007.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1915,9 +1916,9 @@
     "dimensions": "420*H360mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/80.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-008.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/80.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-008.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1941,10 +1942,10 @@
     "dimensions": "Φ190*H35.5mm (Belvai) / Φ240*H300mm (Sorea)",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/90.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-009_2.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/90.jpeg",
-      "/products/aplik-ve-spotlar/photo/91.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-009_2.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-009.jpeg"
     ],
     "features": [
       "Dahili LED (3000K Sıcak Beyaz)",
@@ -1968,11 +1969,10 @@
     "dimensions": "Φ230*H230mm",
     "lightingType": "Dahili LED 8W",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/10.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-010_2.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/10.jpeg",
-      "/products/aplik-ve-spotlar/photo/100.jpeg",
-      "/products/aplik-ve-spotlar/photo/101.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-010_2.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-010.jpeg"
     ],
     "features": [
       "Dahili LED 8W",
@@ -1996,10 +1996,10 @@
     "dimensions": "Φ95*H330mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/110.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-011_2.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/110.jpeg",
-      "/products/aplik-ve-spotlar/photo/111.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-011_2.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-011.jpeg"
     ],
     "features": [
       "Dahili LED (3000K Sıcak Beyaz)",
@@ -2023,10 +2023,10 @@
     "dimensions": "Φ240*H380mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/120.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-012_2.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/120.jpeg",
-      "/products/aplik-ve-spotlar/photo/121.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-012_2.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-012.jpeg"
     ],
     "features": [
       "Dahili LED (3000K Sıcak Beyaz)",
@@ -2050,10 +2050,10 @@
     "dimensions": "L180*W140*H100mm (Tirra-01) / L310*W140*H100mm (Tirra-02) / Φ200mm (Eira)",
     "lightingType": "G9 Duy (1-2 Adet)",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/130.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-013_2.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/130.jpeg",
-      "/products/aplik-ve-spotlar/photo/131.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-013_2.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-013.jpeg"
     ],
     "features": [
       "G9 Duy (1-2 Adet)",
@@ -2077,10 +2077,10 @@
     "dimensions": "L55*W95*H450mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/140.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-014_2.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/140.jpeg",
-      "/products/aplik-ve-spotlar/photo/141.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-014_2.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-014.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -2104,9 +2104,9 @@
     "dimensions": "L325*W150*H800mm (Lunis) / L180*W70*H410mm (Vion)",
     "lightingType": "G9*3 Duy (Lunis) / Dahili LED 8W (Vion)",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/150.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-015.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/150.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-015.jpeg"
     ],
     "features": [
       "G9*3 Duy (Lunis) / Dahili LED 8W (Vion)",
@@ -2130,9 +2130,9 @@
     "dimensions": "L125*W100*H610mm (Alba)",
     "lightingType": "G9*3 Duy",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/160.jpeg",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-016.jpeg",
     "images": [
-      "/products/aplik-ve-spotlar/photo/160.jpeg"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-016.jpeg"
     ],
     "features": [
       "G9*3 Duy",
@@ -2156,9 +2156,9 @@
     "dimensions": "360*200*H230mm (G: 36 cm / D: 20 cm / Y: 23 cm)",
     "lightingType": "Dahili LED 20W",
     "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/170.png",
+    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-017.png",
     "images": [
-      "/products/aplik-ve-spotlar/photo/170.png"
+      "/products/aplik-ve-spotlar/photo/HL-ASP-017.png"
     ],
     "features": [
       "Dahili LED 20W",
@@ -2182,9 +2182,9 @@
     "dimensions": "Mekanınıza Göre Ayarlanabilir Sarkıt Boyu / Özel Ölçü İmalat (İstenilen Çap ve Yükseklikte)",
     "lightingType": "E27 / G9 Uyumlu (Dahili veya Değiştirilebilir LED Ampul Sistemi)",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/700.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-700.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/700.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-700.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2209,9 +2209,9 @@
     "dimensions": "Tavan Yüksekliğinize Göre Kademeli Ayarlanabilir / Özel Ebat ve Ölçü Üretimi",
     "lightingType": "E27 / LED Uyumlu Füme Cam Küreler",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/710.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-710.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/710.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-710.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2236,9 +2236,9 @@
     "dimensions": "Mimari Projenize Göre Ayarlanabilir Sarkıt Mesafesi / Özel Ölçü İmalat",
     "lightingType": "G9 LED / Kristal Işık Odaklı Aydınlatma Modülü",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/720.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-720.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/720.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-720.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2263,9 +2263,9 @@
     "dimensions": "Mekanınıza Özel Ayarlanabilir Sarkıt Yüksekliği / İstenilen Ebatta Üretilebilir",
     "lightingType": "E27 Duy / Rustik & Günışığı LED Ampul Uyumlu",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/730.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-730.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/730.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-730.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2290,9 +2290,9 @@
     "dimensions": "Tavan Yüksekliğine Göre Tam Ayarlanabilir / Özel Çap ve Boyut Seçeneği",
     "lightingType": "G9 / E14 LED Başlıklı Özel Aydınlatma",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/740.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-740.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/740.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-740.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2317,9 +2317,9 @@
     "dimensions": "İstenilen Boy ve Sarkıt Mesafesinde Üretim / Mekana Özel Ayarlanabilir",
     "lightingType": "E27 / G9 Amber & Günışığı LED Modülü",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/750.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-750.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/750.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-750.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2344,9 +2344,9 @@
     "dimensions": "Mekanınıza ve Galeri Boşluğunuza Göre Ayarlanabilir Sarkıt Boyu / Özel İmalat",
     "lightingType": "E27 Rustik Filament & Günışığı LED Ampuller",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/760.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-760.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/760.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-760.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2371,9 +2371,9 @@
     "dimensions": "Kademeli Ayarlanabilir Sarkıt Yüksekliği / İstenilen Renk, Çap ve Ebatta Özel Üretim",
     "lightingType": "E27 & E14 Çift Işık Kademeli LED Ampul Sistemi",
     "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/770.jpeg",
+    "image": "/products/yerli-urunler/photo/HL-YRL-770.jpeg",
     "images": [
-      "/products/yerli-urunler/photo/770.jpeg"
+      "/products/yerli-urunler/photo/HL-YRL-770.jpeg"
     ],
     "features": [
       "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
@@ -2399,9 +2399,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/10.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-001.jpg",
     "images": [
-      "/products/aksesuar/photo/10.jpg"
+      "/products/aksesuar/photo/HL-AKS-001.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2426,9 +2426,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/20.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-002.jpg",
     "images": [
-      "/products/aksesuar/photo/20.jpg"
+      "/products/aksesuar/photo/HL-AKS-002.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2453,9 +2453,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/30.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-003.jpg",
     "images": [
-      "/products/aksesuar/photo/30.jpg"
+      "/products/aksesuar/photo/HL-AKS-003.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2480,9 +2480,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/40.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-004.jpg",
     "images": [
-      "/products/aksesuar/photo/40.jpg"
+      "/products/aksesuar/photo/HL-AKS-004.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2507,9 +2507,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/50.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-005.jpg",
     "images": [
-      "/products/aksesuar/photo/50.jpg"
+      "/products/aksesuar/photo/HL-AKS-005.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2534,9 +2534,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/60.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-006.jpg",
     "images": [
-      "/products/aksesuar/photo/60.jpg"
+      "/products/aksesuar/photo/HL-AKS-006.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2561,9 +2561,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/70.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-007.jpg",
     "images": [
-      "/products/aksesuar/photo/70.jpg"
+      "/products/aksesuar/photo/HL-AKS-007.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2588,9 +2588,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/80.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-008.jpg",
     "images": [
-      "/products/aksesuar/photo/80.jpg"
+      "/products/aksesuar/photo/HL-AKS-008.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2615,9 +2615,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/90.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-009.jpg",
     "images": [
-      "/products/aksesuar/photo/90.jpg"
+      "/products/aksesuar/photo/HL-AKS-009.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2642,10 +2642,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/10.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-010.jpg",
     "images": [
-      "/products/aksesuar/photo/10.jpg",
-      "/products/aksesuar/photo/100.jpg"
+      "/products/aksesuar/photo/HL-AKS-010.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2670,9 +2669,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/110.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-011.jpg",
     "images": [
-      "/products/aksesuar/photo/110.jpg"
+      "/products/aksesuar/photo/HL-AKS-011.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2697,9 +2696,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/120.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-012.jpg",
     "images": [
-      "/products/aksesuar/photo/120.jpg"
+      "/products/aksesuar/photo/HL-AKS-012.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2724,9 +2723,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/130.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-013.jpg",
     "images": [
-      "/products/aksesuar/photo/130.jpg"
+      "/products/aksesuar/photo/HL-AKS-013.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2751,9 +2750,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/140.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-014.jpg",
     "images": [
-      "/products/aksesuar/photo/140.jpg"
+      "/products/aksesuar/photo/HL-AKS-014.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2778,9 +2777,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/150.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-015.jpg",
     "images": [
-      "/products/aksesuar/photo/150.jpg"
+      "/products/aksesuar/photo/HL-AKS-015.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2805,9 +2804,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/160.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-016.jpg",
     "images": [
-      "/products/aksesuar/photo/160.jpg"
+      "/products/aksesuar/photo/HL-AKS-016.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2832,9 +2831,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/170.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-017.jpg",
     "images": [
-      "/products/aksesuar/photo/170.jpg"
+      "/products/aksesuar/photo/HL-AKS-017.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2859,9 +2858,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/180.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-018.jpg",
     "images": [
-      "/products/aksesuar/photo/180.jpg"
+      "/products/aksesuar/photo/HL-AKS-018.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2886,9 +2885,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/190.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-019.jpg",
     "images": [
-      "/products/aksesuar/photo/190.jpg"
+      "/products/aksesuar/photo/HL-AKS-019.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2913,10 +2912,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/20.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-020.jpg",
     "images": [
-      "/products/aksesuar/photo/20.jpg",
-      "/products/aksesuar/photo/200.jpg"
+      "/products/aksesuar/photo/HL-AKS-020.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2941,9 +2939,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/210.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-021.jpg",
     "images": [
-      "/products/aksesuar/photo/210.jpg"
+      "/products/aksesuar/photo/HL-AKS-021.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2968,9 +2966,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/220.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-022.jpg",
     "images": [
-      "/products/aksesuar/photo/220.jpg"
+      "/products/aksesuar/photo/HL-AKS-022.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -2995,9 +2993,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/230.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-023.jpg",
     "images": [
-      "/products/aksesuar/photo/230.jpg"
+      "/products/aksesuar/photo/HL-AKS-023.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -3022,9 +3020,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/240.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-024.jpg",
     "images": [
-      "/products/aksesuar/photo/240.jpg"
+      "/products/aksesuar/photo/HL-AKS-024.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -3049,9 +3047,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/250.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-025.jpg",
     "images": [
-      "/products/aksesuar/photo/250.jpg"
+      "/products/aksesuar/photo/HL-AKS-025.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -3076,9 +3074,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/260.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-026.jpg",
     "images": [
-      "/products/aksesuar/photo/260.jpg"
+      "/products/aksesuar/photo/HL-AKS-026.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -3103,9 +3101,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/270.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-027.jpg",
     "images": [
-      "/products/aksesuar/photo/270.jpg"
+      "/products/aksesuar/photo/HL-AKS-027.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -3130,9 +3128,9 @@
     "dimensions": "",
     "lightingType": "Dekoratif Çini / Sanat Objesi",
     "branch": "showroom",
-    "image": "/products/aksesuar/photo/280.jpg",
+    "image": "/products/aksesuar/photo/HL-AKS-028.jpg",
     "images": [
-      "/products/aksesuar/photo/280.jpg"
+      "/products/aksesuar/photo/HL-AKS-028.jpg"
     ],
     "features": [
       "Birinci sınıf el işçiliği fırınlanmış seramik çini",
@@ -3157,9 +3155,9 @@
     "dimensions": "",
     "lightingType": "Duvar Sanat Eseri / Ayna",
     "branch": "showroom",
-    "image": "/products/tablo/photo/10.jpg",
+    "image": "/products/tablo/photo/HL-TBL-001.jpg",
     "images": [
-      "/products/tablo/photo/10.jpg"
+      "/products/tablo/photo/HL-TBL-001.jpg"
     ],
     "features": [
       "Orijinal el boyaması İznik çini karolar",
@@ -3184,9 +3182,9 @@
     "dimensions": "",
     "lightingType": "Duvar Sanat Eseri / Ayna",
     "branch": "showroom",
-    "image": "/products/tablo/photo/20.jpg",
+    "image": "/products/tablo/photo/HL-TBL-002.jpg",
     "images": [
-      "/products/tablo/photo/20.jpg"
+      "/products/tablo/photo/HL-TBL-002.jpg"
     ],
     "features": [
       "Kabartmalı el yapımı seramik çini pano",
@@ -3211,9 +3209,9 @@
     "dimensions": "",
     "lightingType": "Duvar Sanat Eseri / Ayna",
     "branch": "showroom",
-    "image": "/products/tablo/photo/30.jpg",
+    "image": "/products/tablo/photo/HL-TBL-003.jpg",
     "images": [
-      "/products/tablo/photo/30.jpg"
+      "/products/tablo/photo/HL-TBL-003.jpg"
     ],
     "features": [
       "Özel fırınlanmış dayanıklı porselen karo",
@@ -3238,9 +3236,9 @@
     "dimensions": "",
     "lightingType": "Duvar Sanat Eseri / Ayna",
     "branch": "showroom",
-    "image": "/products/tablo/photo/40.jpg",
+    "image": "/products/tablo/photo/HL-TBL-004.jpg",
     "images": [
-      "/products/tablo/photo/40.jpg"
+      "/products/tablo/photo/HL-TBL-004.jpg"
     ],
     "features": [
       "Özel oval fırın porselen levha",
@@ -3265,9 +3263,9 @@
     "dimensions": "",
     "lightingType": "Duvar Sanat Eseri / Ayna",
     "branch": "showroom",
-    "image": "/products/tablo/photo/50.jpg",
+    "image": "/products/tablo/photo/HL-TBL-005.jpg",
     "images": [
-      "/products/tablo/photo/50.jpg"
+      "/products/tablo/photo/HL-TBL-005.jpg"
     ],
     "features": [
       "Canlı mineral boyalarla el yapımı porselen",

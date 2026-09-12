@@ -45,7 +45,7 @@ const CATEGORY_CONFIGS = {
     name: "Yerli Üretim Koleksiyonu",
     prefix: "YRL",
     defaultBranch: "showroom",
-    defaultImage: "/products/yerli-urunler/photo/700.jpeg",
+    defaultImage: "/products/yerli-urunler/photo/HL-YRL-700.jpeg",
   },
   aksesuar: {
     slug: "aksesuar",
@@ -91,8 +91,46 @@ function copyDirRecursive(src, dest) {
   }
 }
 
-// Bir ürün için tüm fotoğrafları bul (10.jpg, 11.jpg, 12.jpg vs. veya AVZ-001.jpg)
-function findPhotosForProduct(catFolder, itemNo, productId, customPhoto, customImages) {
+// Bir ürün için tüm fotoğrafları bul (HL-KLS-001.jpeg, HL-KLS-001_2.jpeg vs.)
+function findPhotosForProduct(catFolder, itemNo, productId, code, customPhoto, customImages) {
+  const photoDir = path.join(PRODUCTS_DIR, catFolder, "photo");
+  const validExts = [".jpg", ".jpeg", ".png", ".webp", ".JPG", ".JPEG", ".PNG", ".WEBP"];
+
+  if (fs.existsSync(photoDir)) {
+    const files = fs.readdirSync(photoDir);
+
+    // Öncelik 1: Tam ürün kodu ile arama (Örn: HL-KLS-001.jpeg, HL-KLS-001_2.jpeg)
+    if (code) {
+      const codeFiles = files.filter((f) => {
+        if (f.startsWith(".")) return false;
+        const baseName = path.parse(f).name;
+        const ext = path.parse(f).ext;
+        if (!validExts.includes(ext)) return false;
+        return baseName === code || baseName.startsWith(`${code}_`) || baseName.startsWith(`${code}-`);
+      });
+      if (codeFiles.length > 0) {
+        codeFiles.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
+        return codeFiles.map((f) => `/products/${catFolder}/photo/${f}`);
+      }
+    }
+
+    // Öncelik 2: Ürün ID'si ile arama (Örn: KLS-001.jpeg)
+    if (productId) {
+      const idFiles = files.filter((f) => {
+        if (f.startsWith(".")) return false;
+        const baseName = path.parse(f).name;
+        const ext = path.parse(f).ext;
+        if (!validExts.includes(ext)) return false;
+        return baseName === productId || baseName.startsWith(`${productId}_`) || baseName.startsWith(`${productId}-`);
+      });
+      if (idFiles.length > 0) {
+        idFiles.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
+        return idFiles.map((f) => `/products/${catFolder}/photo/${f}`);
+      }
+    }
+  }
+
+  // Öncelik 3: Özel girilen resim dizisi veya tek resim
   if (Array.isArray(customImages) && customImages.length > 0) {
     return customImages;
   }
@@ -100,70 +138,34 @@ function findPhotosForProduct(catFolder, itemNo, productId, customPhoto, customI
     return [customPhoto];
   }
 
-  const photoDir = path.join(PRODUCTS_DIR, catFolder, "photo");
-  const rootPhotoDir = path.join(PRODUCTS_DIR, "photo");
+  // Öncelik 4: Geriye uyumluluk için eski sayısal kural (10.jpg, 11.jpg vb.)
   const foundImages = [];
-  const validExts = [".jpg", ".jpeg", ".png", ".webp", ".JPG", ".JPEG", ".PNG", ".WEBP"];
-
-  // 1. Kullanıcının istediği kural:
-  // no = 1 -> 10, 11, 12, 13...
-  // no = 2 -> 20, 21, 22...
-  // no = 10 -> 100, 101, 102...
   if (fs.existsSync(photoDir)) {
     const files = fs.readdirSync(photoDir);
-    const prefixBase = `${itemNo}`; // 1, 2, 10...
+    const prefixBase = `${itemNo}`;
 
-    // Aday dosya isimleri: 10, 11, 12... VEYA 1, 1_1, 1_2... VEYA ID
     const matchingFiles = files.filter((f) => {
       if (f.startsWith(".")) return false;
       const baseName = path.parse(f).name;
       const ext = path.parse(f).ext;
       if (!validExts.includes(ext)) return false;
 
-      // Kural 1: 10, 11, 12, ... (itemNo=1 için 10-19 arası, itemNo=10 için 100-109 arası)
       if (/^\d+$/.test(baseName)) {
         const val = parseInt(baseName, 10);
         const startVal = itemNo * 10;
         const endVal = startVal + 9;
         if (val >= startVal && val <= endVal) return true;
-        // Tek rakam yazıldıysa (örn: 1.jpg)
         if (baseName === String(itemNo)) return true;
       }
-
-      // Kural 2: ID ile adlandırma (Örn: AVZ-001.jpg, AVZ-001_1.jpg)
-      if (productId && (baseName === productId || baseName.startsWith(`${productId}_`) || baseName.startsWith(`${productId}-`))) {
-        return true;
-      }
-
-      // Kural 3: 1_1, 1_2 formatı
       if (baseName.startsWith(`${prefixBase}_`) || baseName.startsWith(`${prefixBase}-`)) {
         return true;
       }
-
       return false;
     });
 
-    // Doğal sıralama yap: 10.jpg, 11.jpg, 12.jpg...
     matchingFiles.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
-
     for (const f of matchingFiles) {
       foundImages.push(`/products/${catFolder}/photo/${f}`);
-    }
-  }
-
-  // 2. Kategori klasöründe yoksa kök products/photo/ klasörüne bak
-  if (foundImages.length === 0 && fs.existsSync(rootPhotoDir)) {
-    const files = fs.readdirSync(rootPhotoDir);
-    const matchingFiles = files.filter((f) => {
-      const baseName = path.parse(f).name;
-      const ext = path.parse(f).ext;
-      if (!validExts.includes(ext)) return false;
-      return productId && (baseName === productId || baseName.startsWith(`${productId}_`));
-    });
-
-    matchingFiles.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
-    for (const f of matchingFiles) {
-      foundImages.push(`/products/photo/${f}`);
     }
   }
 
@@ -214,8 +216,8 @@ function processAllProducts() {
       const code = item.code || `HL-${id}`;
       usedIds.add(id);
 
-      // Fotoğrafları bul (10.jpg, 11.jpg vb.)
-      let productImages = findPhotosForProduct(catSlug, itemNo, id, item.photo || item.image, item.images);
+      // Fotoğrafları bul (HL-KLS-001.jpeg vb.)
+      let productImages = findPhotosForProduct(catSlug, itemNo, id, code, item.photo || item.image, item.images);
       if (productImages.length === 0) {
         productImages = [catConfig.defaultImage];
       }
@@ -280,9 +282,12 @@ function processAllProducts() {
       const seoTitle = `${code} | Hilal Avize Kahramanmaraş`;
       const seoDescription = `${code} modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin.`;
 
+      const legacyCode = item.legacyCode || undefined;
+
       allProcessedProducts.push({
         id,
         code,
+        legacyCode,
         slug,
         name,
         categorySlug: catConfig.slug,
@@ -312,6 +317,7 @@ function processAllProducts() {
 export interface Product {
   id: string;
   code: string;
+  legacyCode?: string;
   slug: string;
   name: string;
   categorySlug: string;

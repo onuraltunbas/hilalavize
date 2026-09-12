@@ -7,7 +7,10 @@
     "badge": "Modern LED Seri",
     "shortDescription": "L1000*H1500mm ebatlarında dinamik çapraz çubuk tasarımı ve kristal uçlu LED aydınlatmasıyla salon ve yemek masaları için tasarlanmış lüks LED avize.",
     "id": "LED-001",
-    "code": "HL-LED-001"
+    "code": "HL-LED-001",
+    "images": [
+      "/products/ledli-grup/photo/HL-LED-001.png"
+    ]
   },
   {
     "no": 2,
@@ -17,8 +20,8 @@
     "badge": "Yeni Sezon",
     "shortDescription": "80 cm geniş çapı ve yüksek ışık verimiyle salon ve yemek masaları için tasarlanmış modern LED avize.",
     "images": [
-      "/products/ledli-grup/photo/20.jpeg",
-      "/products/ledli-grup/photo/21.jpeg"
+      "/products/ledli-grup/photo/HL-LED-002_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-002.jpeg"
     ],
     "id": "LED-002",
     "code": "HL-LED-002"
@@ -31,7 +34,7 @@
     "badge": "Popüler Model",
     "shortDescription": "60 cm çapında şık gold gövdeli ve homojen ışık yayan modern LED sarkıt avize.",
     "images": [
-      "/products/ledli-grup/photo/30.jpeg"
+      "/products/ledli-grup/photo/HL-LED-003.jpeg"
     ],
     "id": "LED-003",
     "code": "HL-LED-003"
@@ -44,8 +47,8 @@
     "badge": "Büyük Boy Seri",
     "shortDescription": "180x35 cm uzun formuyla geniş ada tezgahları ve uzun yemek masaları için mimari lineer avize.",
     "images": [
-      "/products/ledli-grup/photo/40.jpeg",
-      "/products/ledli-grup/photo/41.jpeg"
+      "/products/ledli-grup/photo/HL-LED-004_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-004.jpeg"
     ],
     "id": "LED-004",
     "code": "HL-LED-004"
@@ -58,8 +61,8 @@
     "badge": "Yeni Model",
     "shortDescription": "120x35 cm ideal ebadıyla mutfak adaları ve modern salonlar için minimalist lineer avize.",
     "images": [
-      "/products/ledli-grup/photo/50.jpeg",
-      "/products/ledli-grup/photo/51.jpeg"
+      "/products/ledli-grup/photo/HL-LED-005_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-005.jpeg"
     ],
     "id": "LED-005",
     "code": "HL-LED-005"
@@ -71,8 +74,8 @@
     "lightingType": "Dahili LED (92W / 196W)",
     "shortDescription": "60 cm çapında dairesel akıcı formu ve yumuşak ışık dağılımıyla ferah mekanlar oluşturan LED avize.",
     "images": [
-      "/products/ledli-grup/photo/60.jpeg",
-      "/products/ledli-grup/photo/61.jpeg"
+      "/products/ledli-grup/photo/HL-LED-006_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-006.jpeg"
     ],
     "id": "LED-006",
     "code": "HL-LED-006"
@@ -85,8 +88,8 @@
     "badge": "Geniş Salonlar İçin",
     "shortDescription": "90 cm dev çapı ve estetik halka tasarımıyla yüksek tavanlı salonlara prestij katan LED avize.",
     "images": [
-      "/products/ledli-grup/photo/70.jpeg",
-      "/products/ledli-grup/photo/71.jpeg"
+      "/products/ledli-grup/photo/HL-LED-007_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-007.jpeg"
     ],
     "id": "LED-007",
     "code": "HL-LED-007"
@@ -98,8 +101,8 @@
     "lightingType": "Dahili LED (128W / 192W)",
     "shortDescription": "60 cm çapında kompakt ve zarif tasarımıyla oturma odaları ve salonlar için ideal aydınlatma.",
     "images": [
-      "/products/ledli-grup/photo/80.jpeg",
-      "/products/ledli-grup/photo/81.jpeg"
+      "/products/ledli-grup/photo/HL-LED-008_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-008.jpeg"
     ],
     "id": "LED-008",
     "code": "HL-LED-008"
@@ -112,8 +115,8 @@
     "badge": "Tasarım Seri",
     "shortDescription": "60 cm çapında mimari açılı formuyla mekana derinlik kazandıran özel tasarım LED avize.",
     "images": [
-      "/products/ledli-grup/photo/90.jpeg",
-      "/products/ledli-grup/photo/91.jpeg"
+      "/products/ledli-grup/photo/HL-LED-009_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-009.jpeg"
     ],
     "id": "LED-009",
     "code": "HL-LED-009"
@@ -125,8 +128,8 @@
     "lightingType": "Dahili LED (40W / 60W)",
     "shortDescription": "60 cm çapında ışığı kıran özel difüzör camı ve yüksek ışık gücüne sahip modern avize.",
     "images": [
-      "/products/ledli-grup/photo/100.jpeg",
-      "/products/ledli-grup/photo/101.jpeg"
+      "/products/ledli-grup/photo/HL-LED-010_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-010.jpeg"
     ],
     "id": "LED-010",
     "code": "HL-LED-010"
@@ -138,7 +141,7 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "60 cm çapında geometrik hatları ve göz alıcı parlaklığıyla modern konutların vazgeçilmez modeli.",
     "images": [
-      "/products/ledli-grup/photo/110.jpeg"
+      "/products/ledli-grup/photo/HL-LED-011.jpeg"
     ],
     "id": "LED-011",
     "code": "HL-LED-011"
@@ -150,8 +153,8 @@
     "lightingType": "Dahili LED (40W / 67W)",
     "shortDescription": "60 cm çapında minimalist profili ve enerji tasarruflu yüksek parlaklık sunan LED avize.",
     "images": [
-      "/products/ledli-grup/photo/120.jpeg",
-      "/products/ledli-grup/photo/121.jpeg"
+      "/products/ledli-grup/photo/HL-LED-012_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-012.jpeg"
     ],
     "id": "LED-012",
     "code": "HL-LED-012"
@@ -164,8 +167,8 @@
     "badge": "Lüks Koleksiyon",
     "shortDescription": "75 cm geniş çapıyla salonunuzun merkezinde ışıltılı bir odak noktası oluşturan lüks LED avize.",
     "images": [
-      "/products/ledli-grup/photo/130.jpeg",
-      "/products/ledli-grup/photo/131.jpeg"
+      "/products/ledli-grup/photo/HL-LED-013_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-013.jpeg"
     ],
     "id": "LED-013",
     "code": "HL-LED-013"
@@ -177,8 +180,8 @@
     "lightingType": "Dahili LED (60W / 80W)",
     "shortDescription": "65 cm çapında estetik kıvrımları ve gözü yormayan sıcak amber ışığıyla zarif bir avize modeli.",
     "images": [
-      "/products/ledli-grup/photo/140.jpeg",
-      "/products/ledli-grup/photo/141.jpeg"
+      "/products/ledli-grup/photo/HL-LED-014_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-014.jpeg"
     ],
     "id": "LED-014",
     "code": "HL-LED-014"
@@ -191,8 +194,8 @@
     "badge": "Özel Tasarım",
     "shortDescription": "75 cm çapında organik dalgalı formuyla modern dekorasyonlara dinamizm katan heykelsi LED avize.",
     "images": [
-      "/products/ledli-grup/photo/150.jpeg",
-      "/products/ledli-grup/photo/151.jpeg"
+      "/products/ledli-grup/photo/HL-LED-015_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-015.jpeg"
     ],
     "id": "LED-015",
     "code": "HL-LED-015"
@@ -204,8 +207,8 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "80 cm çapında güçlü aydınlatma performansı ve fırçalanmış gövde kalitesiyle üst segment avize.",
     "images": [
-      "/products/ledli-grup/photo/160.jpeg",
-      "/products/ledli-grup/photo/161.jpeg"
+      "/products/ledli-grup/photo/HL-LED-016_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-016.jpeg"
     ],
     "id": "LED-016",
     "code": "HL-LED-016"
@@ -218,8 +221,8 @@
     "badge": "Çok Satan",
     "shortDescription": "85 cm geniş çapıyla büyük metrekareli salonlar ve villalar için tasarlanmış görkemli LED avize.",
     "images": [
-      "/products/ledli-grup/photo/170.jpeg",
-      "/products/ledli-grup/photo/171.jpeg"
+      "/products/ledli-grup/photo/HL-LED-017_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-017.jpeg"
     ],
     "id": "LED-017",
     "code": "HL-LED-017"
@@ -231,8 +234,8 @@
     "lightingType": "Dahili LED (48W / 64W)",
     "shortDescription": "65 cm çapında zarif ölçüleri ve ayarlanabilir askı yüksekliği ile şık salon aydınlatması.",
     "images": [
-      "/products/ledli-grup/photo/180.jpeg",
-      "/products/ledli-grup/photo/181.jpeg"
+      "/products/ledli-grup/photo/HL-LED-018_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-018.jpeg"
     ],
     "id": "LED-018",
     "code": "HL-LED-018"
@@ -244,8 +247,8 @@
     "lightingType": "Dahili LED (14W / 70W)",
     "shortDescription": "70 cm çapında modern ışık halkaları ve homojen parlaklığıyla çağdaş mekanlar için üretildi.",
     "images": [
-      "/products/ledli-grup/photo/190.jpeg",
-      "/products/ledli-grup/photo/191.jpeg"
+      "/products/ledli-grup/photo/HL-LED-019_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-019.jpeg"
     ],
     "id": "LED-019",
     "code": "HL-LED-019"
@@ -257,8 +260,8 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "70 cm çapında estetik geometrik formuyla yaşam alanınıza modern bir sanat dokunuşu kazandırır.",
     "images": [
-      "/products/ledli-grup/photo/200.jpeg",
-      "/products/ledli-grup/photo/201.jpeg"
+      "/products/ledli-grup/photo/HL-LED-020_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-020.jpeg"
     ],
     "id": "LED-020",
     "code": "HL-LED-020"
@@ -270,8 +273,8 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "70 cm çapında ışıltılı detayları ve 3 farklı renk sıcaklığı seçeneğiyle lüks salon avizesi.",
     "images": [
-      "/products/ledli-grup/photo/210.jpeg",
-      "/products/ledli-grup/photo/211.jpeg"
+      "/products/ledli-grup/photo/HL-LED-021_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-021.jpeg"
     ],
     "id": "LED-021",
     "code": "HL-LED-021"
@@ -283,8 +286,8 @@
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "shortDescription": "50 cm çapında kompakt odalar, antreler ve mutfak masaları için zarif ve verimli LED avize.",
     "images": [
-      "/products/ledli-grup/photo/220.jpeg",
-      "/products/ledli-grup/photo/221.jpeg"
+      "/products/ledli-grup/photo/HL-LED-022_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-022.jpeg"
     ],
     "id": "LED-022",
     "code": "HL-LED-022"
@@ -297,8 +300,8 @@
     "badge": "Dev Boyut (120 cm)",
     "shortDescription": "120 cm devasa çapı ile villa salonları, otel lobileri ve geniş yaşam alanları için anıtsal LED avize.",
     "images": [
-      "/products/ledli-grup/photo/230.jpeg",
-      "/products/ledli-grup/photo/231.jpeg"
+      "/products/ledli-grup/photo/HL-LED-023_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-023.jpeg"
     ],
     "id": "LED-023",
     "code": "HL-LED-023"
@@ -311,8 +314,8 @@
     "badge": "Premium Koleksiyon",
     "shortDescription": "100 cm geniş çapı, çoklu ışık katmanları ve göz alıcı parlaklığıyla üst segment lüks LED avize.",
     "images": [
-      "/products/ledli-grup/photo/240.jpeg",
-      "/products/ledli-grup/photo/241.jpeg"
+      "/products/ledli-grup/photo/HL-LED-024_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-024.jpeg"
     ],
     "id": "LED-024",
     "code": "HL-LED-024"
@@ -324,8 +327,8 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "55 cm çapında estetik halka yapısı ve 3 renk kademeli ışık moduyla modern salon ve oturma odası avizesi.",
     "images": [
-      "/products/ledli-grup/photo/250.jpeg",
-      "/products/ledli-grup/photo/251.jpeg"
+      "/products/ledli-grup/photo/HL-LED-025_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-025.jpeg"
     ],
     "id": "LED-025",
     "code": "HL-LED-025"
@@ -337,8 +340,8 @@
     "lightingType": "Dahili LED Aydınlatma Modülü",
     "shortDescription": "45 cm kompakt ebadı ve zarif kıvrımlarıyla antre, mutfak masası ve oturma köşeleri için şık LED avize.",
     "images": [
-      "/products/ledli-grup/photo/260.jpeg",
-      "/products/ledli-grup/photo/261.jpeg"
+      "/products/ledli-grup/photo/HL-LED-026_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-026.jpeg"
     ],
     "id": "LED-026",
     "code": "HL-LED-026"
@@ -350,7 +353,7 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "70 cm çapında çiçek formlu modern ışık yapısıyla yaşam alanınıza ferah ve sıcak bir ambiyans katar.",
     "images": [
-      "/products/ledli-grup/photo/270.jpeg"
+      "/products/ledli-grup/photo/HL-LED-027.jpeg"
     ],
     "id": "LED-027",
     "code": "HL-LED-027"
@@ -362,7 +365,7 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "70 cm geniş çapı, fırçalanmış gövde detayları ve homojen LED parlaklığı ile salonlar için özel seri.",
     "images": [
-      "/products/ledli-grup/photo/280.jpeg"
+      "/products/ledli-grup/photo/HL-LED-028.jpeg"
     ],
     "id": "LED-028",
     "code": "HL-LED-028"
@@ -374,8 +377,8 @@
     "lightingType": "Dahili LED (30W / 45W)",
     "shortDescription": "45 cm çapında minimal şıklığı ve göz kamaştırmayan homojen LED ışığıyla modern yaşam alanlarına özel.",
     "images": [
-      "/products/ledli-grup/photo/290.jpeg",
-      "/products/ledli-grup/photo/291.jpeg"
+      "/products/ledli-grup/photo/HL-LED-029_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-029.jpeg"
     ],
     "id": "LED-029",
     "code": "HL-LED-029"
@@ -387,8 +390,8 @@
     "lightingType": "Dahili LED (64W / 110W)",
     "shortDescription": "30 cm mini çapıyla ikili veya üçlü ada üstü kombinasyonları ve yatak başı sarkıtları için ideal.",
     "images": [
-      "/products/ledli-grup/photo/300.jpeg",
-      "/products/ledli-grup/photo/301.jpeg"
+      "/products/ledli-grup/photo/HL-LED-030_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-030.jpeg"
     ],
     "id": "LED-030",
     "code": "HL-LED-030"
@@ -400,8 +403,8 @@
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "shortDescription": "70 cm çapı ve 100 cm sarkıt yüksekliğiyle salon ve yemek masaları üzerinde kusursuz bir ışık şaheseri.",
     "images": [
-      "/products/ledli-grup/photo/310.jpeg",
-      "/products/ledli-grup/photo/311.jpeg"
+      "/products/ledli-grup/photo/HL-LED-031_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-031.jpeg"
     ],
     "id": "LED-031",
     "code": "HL-LED-031"
@@ -413,8 +416,8 @@
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "shortDescription": "50 cm çapında dairesel formu ve 3 renk kademeli ışık moduyla modern LED sarkıt avize.",
     "images": [
-      "/products/ledli-grup/photo/320.jpeg",
-      "/products/ledli-grup/photo/321.jpeg"
+      "/products/ledli-grup/photo/HL-LED-032_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-032.jpeg"
     ],
     "id": "LED-032",
     "code": "HL-LED-032"
@@ -426,7 +429,7 @@
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "shortDescription": "60 cm ideal ebadı ve homojen parlaklığıyla yemek masaları ve salonlar için şık LED sarkıt.",
     "images": [
-      "/products/ledli-grup/photo/330.jpeg"
+      "/products/ledli-grup/photo/HL-LED-033.jpeg"
     ],
     "id": "LED-033",
     "code": "HL-LED-033"
@@ -439,8 +442,8 @@
     "badge": "Büyük Boy",
     "shortDescription": "80 cm geniş çapı ve güçlü ışık yayılımıyla salon ve oturma alanlarına ferahlık katan model.",
     "images": [
-      "/products/ledli-grup/photo/340.jpeg",
-      "/products/ledli-grup/photo/341.jpeg"
+      "/products/ledli-grup/photo/HL-LED-034_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-034.jpeg"
     ],
     "id": "LED-034",
     "code": "HL-LED-034"
@@ -453,7 +456,7 @@
     "badge": "Çift Işık Modu",
     "shortDescription": "55 cm çapında hem dahili LED şeritleri hem de ampul duy yuvalarıyla zengin bir ışık kombinasyonu.",
     "images": [
-      "/products/ledli-grup/photo/350.jpeg"
+      "/products/ledli-grup/photo/HL-LED-035.jpeg"
     ],
     "id": "LED-035",
     "code": "HL-LED-035"
@@ -465,8 +468,8 @@
     "lightingType": "Dahili LED 30W",
     "shortDescription": "45 cm çapında minimalist çizgileri ve enerji tasarruflu LED teknolojisiyle modern yaşam alanlarına özel.",
     "images": [
-      "/products/ledli-grup/photo/360.jpeg",
-      "/products/ledli-grup/photo/361.jpeg"
+      "/products/ledli-grup/photo/HL-LED-036_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-036.jpeg"
     ],
     "id": "LED-036",
     "code": "HL-LED-036"
@@ -478,8 +481,8 @@
     "lightingType": "Dahili LED 84W",
     "shortDescription": "50 cm çapında estetik halka dizilimi ve ayarlanabilir askı boyuyla odanıza değer katan LED avize.",
     "images": [
-      "/products/ledli-grup/photo/370.jpeg",
-      "/products/ledli-grup/photo/371.jpeg"
+      "/products/ledli-grup/photo/HL-LED-037_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-037.jpeg"
     ],
     "id": "LED-037",
     "code": "HL-LED-037"
@@ -491,8 +494,8 @@
     "lightingType": "Dahili LED (40W / 60W / 80W)",
     "shortDescription": "40 cm çapında tavana sıfır montajlı, modern ve alçak tavanlı odalar için ferah aydınlatma sağlayan plafonyer LED avize.",
     "images": [
-      "/products/ledli-grup/photo/380.jpeg",
-      "/products/ledli-grup/photo/381.jpeg"
+      "/products/ledli-grup/photo/HL-LED-038_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-038.jpeg"
     ],
     "id": "LED-038",
     "code": "HL-LED-038"
@@ -504,8 +507,8 @@
     "lightingType": "E14 Kandil Duy (LED Ampul Uyumlu)",
     "shortDescription": "55 cm çapında modern sarkıt gövdesi ve E14 duy tipiyle yemek odaları ve salonlar için şık avize.",
     "images": [
-      "/products/ledli-grup/photo/390.jpeg",
-      "/products/ledli-grup/photo/391.jpeg"
+      "/products/ledli-grup/photo/HL-LED-039_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-039.jpeg"
     ],
     "id": "LED-039",
     "code": "HL-LED-039"
@@ -517,23 +520,10 @@
     "lightingType": "Dahili Kristal LED Işık Modülü",
     "shortDescription": "Işıltılı kristal taşlarla çevrili modern halka gövdesiyle göz kamaştıran LED avize modeli.",
     "images": [
-      "/products/ledli-grup/photo/400.jpeg"
+      "/products/ledli-grup/photo/HL-LED-040.jpeg"
     ],
     "id": "LED-040",
     "code": "HL-LED-040"
-  },
-  {
-    "no": 41,
-    "name": "HL-LED-041",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E14 Kandil Duy (LED Uyumlu)",
-    "badge": "Özel Tasarım",
-    "shortDescription": "Kirpi formunda ışığı 360 derece saçan metalik çubukları ve E14 duylarıyla mekana modern bir derinlik katar.",
-    "images": [
-      "/products/ledli-grup/photo/410.jpeg"
-    ],
-    "id": "LED-041",
-    "code": "HL-LED-041"
   },
   {
     "no": 42,
@@ -542,7 +532,7 @@
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "shortDescription": "Akıcı ve zarif sarkıt formuyla oturma odaları ve salonlar için çağdaş LED aydınlatma.",
     "images": [
-      "/products/ledli-grup/photo/420.jpeg"
+      "/products/ledli-grup/photo/HL-LED-042.jpeg"
     ],
     "id": "LED-042",
     "code": "HL-LED-042"
@@ -554,8 +544,8 @@
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "shortDescription": "60 cm çapında modern dairesel formu ve 3 renk kademeli ışık moduyla salon ve oturma alanlarına zarafet katan LED avize.",
     "images": [
-      "/products/ledli-grup/photo/430.jpeg",
-      "/products/ledli-grup/photo/431.jpeg"
+      "/products/ledli-grup/photo/HL-LED-043_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-043.jpeg"
     ],
     "id": "LED-043",
     "code": "HL-LED-043"
@@ -568,7 +558,7 @@
     "badge": "Modern LED Seri",
     "shortDescription": "120 cm geniş ebatlı modern formu ve 3 renk kademeli yüksek verimli LED ışık sistemiyle salon ve prestijli alanlar için tasarlandı.",
     "images": [
-      "/products/ledli-grup/photo/440.jpeg"
+      "/products/ledli-grup/photo/HL-LED-044.jpeg"
     ],
     "id": "LED-044",
     "code": "HL-LED-044"
@@ -580,8 +570,8 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "Modern formu ve estetik ışık dağılımıyla mekanlarınıza zarafet katan dekoratif avize Model 56.",
     "images": [
-      "/products/ledli-grup/photo/450.jpeg",
-      "/products/ledli-grup/photo/451.jpeg"
+      "/products/ledli-grup/photo/HL-LED-045_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-045.jpeg"
     ],
     "id": "LED-045",
     "code": "HL-LED-045"
@@ -594,7 +584,7 @@
     "badge": "Kristal LED Seri",
     "shortDescription": "Kristal taş detayları ve modern dairesel formuyla salon ve yaşam alanları için özel tasarlanmış şık LED avize.",
     "images": [
-      "/products/ledli-grup/photo/460.jpeg"
+      "/products/ledli-grup/photo/HL-LED-046.jpeg"
     ],
     "id": "LED-046",
     "code": "HL-LED-046"
@@ -607,8 +597,8 @@
     "lightingType": "Dahili LED Modülü",
     "shortDescription": "60 cm çapında klasik ve moderni birleştiren tasarımıyla salon ve oturma odalarına ışıltı katan model.",
     "images": [
-      "/products/klasik/photo/80.jpeg",
-      "/products/klasik/photo/81.jpeg"
+      "/products/ledli-grup/photo/HL-LED-047_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-047.jpeg"
     ],
     "id": "LED-047",
     "code": "HL-LED-047"
@@ -622,7 +612,7 @@
     "badge": "Özel Tasarım",
     "shortDescription": "70 cm çapında vintage esintili mimari hatları ve modern LED teknolojisiyle göz alıcı bir tasarım.",
     "images": [
-      "/products/klasik/photo/90.jpeg"
+      "/products/ledli-grup/photo/HL-LED-048.jpeg"
     ],
     "id": "LED-048",
     "code": "HL-LED-048"
@@ -636,8 +626,8 @@
     "badge": "Kristal Seri",
     "shortDescription": "65 cm çapında berrak kristal taş detayları ve güçlü LED ışığıyla salonlara ışıltı katan model.",
     "images": [
-      "/products/klasik/photo/100.jpeg",
-      "/products/klasik/photo/101.jpeg"
+      "/products/ledli-grup/photo/HL-LED-049_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-049.jpeg"
     ],
     "id": "LED-049",
     "code": "HL-LED-049"
@@ -651,7 +641,7 @@
     "badge": "Dev Boyut (120 cm)",
     "shortDescription": "120 cm görkemli çapı, parıltılı kristal taş dizilimi ve yüksek ışık kapasitesiyle büyük salon ve villa avizesi.",
     "images": [
-      "/products/klasik/photo/110.jpeg"
+      "/products/ledli-grup/photo/HL-LED-050.jpeg"
     ],
     "id": "LED-050",
     "code": "HL-LED-050"
@@ -664,7 +654,7 @@
     "lightingType": "E14 Duy + Dahili LED Aydınlatma",
     "shortDescription": "Kristal prizmaların ışıltısı ve E14 + LED çift ışık moduyla zenginleştirilmiş salon avizesi.",
     "images": [
-      "/products/klasik/photo/130.jpeg"
+      "/products/ledli-grup/photo/HL-LED-051.jpeg"
     ],
     "id": "LED-051",
     "code": "HL-LED-051"

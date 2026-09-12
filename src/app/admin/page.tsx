@@ -65,7 +65,9 @@ export default function AdminPage() {
         item.code?.toLowerCase().includes(q) ||
         item.code?.toLowerCase().replace(/[^a-z0-9]/g, "").includes(qClean) ||
         item.id?.toLowerCase().includes(q) ||
-        item.id?.toLowerCase().replace(/[^a-z0-9]/g, "").includes(qClean);
+        item.id?.toLowerCase().replace(/[^a-z0-9]/g, "").includes(qClean) ||
+        item.legacyCode?.toLowerCase().includes(q) ||
+        item.legacyCode?.toLowerCase().replace(/[^a-z0-9]/g, "").includes(qClean);
 
       const nameMatch = item.name?.toLowerCase().includes(q);
       const catMatch = item.categoryName?.toLowerCase().includes(q);
