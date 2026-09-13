@@ -41,8 +41,7 @@ export function JsonLd() {
       "Hilal Elektrik Kahramanmaraş",
       "Hilal Aydınlatma",
     ],
-    url: COMPANY_DATA.siteUrl,
-    logo: `${COMPANY_DATA.siteUrl}/images/hilal_logo.png`,
+    logo: `${COMPANY_DATA.siteUrl}/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png`,
     image: [
       `${COMPANY_DATA.siteUrl}/images/1920x1080_hero_showroom.jpg`,
       `${COMPANY_DATA.siteUrl}/images/1920x1080_elektrik_sube.jpg`,
