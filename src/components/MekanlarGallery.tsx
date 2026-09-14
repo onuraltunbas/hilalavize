@@ -61,9 +61,6 @@ export function MekanlarGallery() {
                   <ZoomIn className="w-3.5 h-3.5 text-amber-300" /> Büyüt ve İncele
                 </span>
               </div>
-              <div className="absolute top-3 right-3 bg-surface/90 backdrop-blur-xs text-[10px] font-extrabold text-foreground px-2 py-0.5 rounded-md border border-border/50 shadow-xs">
-                {project.categoryLabel}
-              </div>
             </div>
 
             {/* Bilgi Alanı */}
@@ -141,9 +138,6 @@ export function MekanlarGallery() {
             {/* Detay ve WhatsApp İletişim Paneli */}
             <div className="w-full md:w-80 p-5 sm:p-6 flex flex-col justify-between space-y-4 bg-surface">
               <div className="space-y-3">
-                <span className="text-[11px] font-extrabold uppercase tracking-wider text-bronze">
-                  {activeProject.categoryLabel}
-                </span>
                 <h3 className="text-lg font-black text-foreground leading-snug">
                   {activeProject.title}
                 </h3>

@@ -27,7 +27,7 @@ export default function AydinlattigimizMekanlarPage() {
         {/* Hero Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h1 className="text-3xl sm:text-5xl font-black text-foreground tracking-tight">
-            Aydınlattığımız Mekanlar
+            Aydınlattığımız Mekanlardan Örnekler
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
             Seçkin yaşam alanlarını özgün aydınlatma çözümleriyle buluşturduk.

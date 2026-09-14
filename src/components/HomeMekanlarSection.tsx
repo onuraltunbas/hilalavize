@@ -15,7 +15,7 @@ export function HomeMekanlarSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 lg:mb-14 gap-6">
           <div className="max-w-2xl space-y-2">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight font-heading">
-              Aydınlattığımız Mekanlar.
+              Aydınlattığımız Mekanlardan Örnekler
             </h2>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
               Montajını gerçekleştirdiğimiz mekanlardan kareler
@@ -51,9 +51,6 @@ export function HomeMekanlarSection() {
                   <span className="text-white text-xs font-bold flex items-center gap-1.5 bg-black/40 backdrop-blur-xs px-3 py-1.5 rounded-lg">
                     <Sparkles className="w-3.5 h-3.5 text-amber-300" /> Detayları Gör
                   </span>
-                </div>
-                <div className="absolute top-2 right-2 sm:top-3 sm:right-3 bg-surface/90 backdrop-blur-xs text-[9px] sm:text-[10px] font-extrabold text-foreground px-1.5 sm:px-2 py-0.5 rounded-md border border-border/50">
-                  {item.categoryLabel}
                 </div>
               </div>
 
