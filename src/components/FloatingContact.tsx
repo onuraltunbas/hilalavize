@@ -97,7 +97,7 @@ export function FloatingContact() {
           </div>
 
           <div className="pt-2 border-t border-border flex items-center justify-between text-[11px] text-muted-foreground">
-            <span>Çalışma: 09:00 - 17:00</span>
+            <span>Çalışma: 09:00 - 18:30</span>
             <span className="text-bronze font-medium">Kahramanmaraş</span>
           </div>
         </div>

@@ -31,14 +31,14 @@ export const FAQS: FAQItem[] = [
     id: "faq-4",
     question: "Elektrik şubenizde hangi işlemler ve malzemeler bulunuyor?",
     answer:
-      "Hilal Elektrik şubemizde (Şehit Polis Ali Mülazımoğlu Cad. Eymen Sitesi Altı No: 12) lüks temperli cam çerçeveli ve metal anahtar-priz serileri, TSE onaylı sigortalar, kaçak akım röleleri, kablo çeşitleri, spot lambalar ve tesisat aksesuarları yer almaktadır. Ayrıca priz montajı, sigorta değişimi ve tesisat uygulama hizmetleri sunmaktayız.",
+      "Hilal Elektrik şubemizde (Şehit Polis Ali Mülazımoğlu Cad. Eymen Sitesi Altı No: 12) lüks temperli cam çerçeveli ve metal anahtar-priz serileri, TSE onaylı sigortalar, kaçak akım röleleri, kablo çeşitleri, spot lambalar ve tesisat aksesuarları yer almaktadır. Ayrıca her türlü tesisat hizmetleri sunmaktayız.",
     category: "elektrik",
   },
   {
     id: "faq-5",
     question: "İki şubenizin çalışma saatleri ve adresleri nedir?",
     answer:
-      "Her iki şubemiz de Kahramanmaraş Onikişubat Yirmiikigün Mahallesi'ndedir. Pazar hariç haftanın 6 günü 09:00 - 17:00 saatleri arasında kesintisiz hizmet vermekteyiz. Avize ve Aksesuar Showroomumuz Umut Kent Sitesi F Blok altı No: 4A'da, Elektrik Şubemiz ise Eymen Sitesi altı No: 12'dedir.",
+      "Her iki şubemiz de Kahramanmaraş Onikişubat Yirmiikigün Mahallesi'ndedir. Pazar hariç haftanın 6 günü 09:00 - 18:30 saatleri arasında kesintisiz hizmet vermekteyiz. Avize ve Aksesuar Showroomumuz Umut Kent Sitesi F Blok altı No: 4A'da, Elektrik Şubemiz ise Eymen Sitesi altı No: 12'dedir.",
     category: "showroom",
   },
   {
