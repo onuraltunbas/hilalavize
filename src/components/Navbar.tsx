@@ -102,12 +102,14 @@ export function Navbar() {
             />
           </Link>
 
-          {/* Desktop Navigation Links (%7 küçültülmüş tipografi ve aralıklar) */}
-          <div className="hidden lg:flex items-center gap-2 xl:gap-3.5 2xl:gap-5 text-[11.6px] xl:text-[12.1px] font-medium tracking-wide whitespace-nowrap">
+          {/* Desktop Navigation Links (Şık Buton Görünümü, Bronz Çerçeve & Renkli Gölgelendirme) */}
+          <div className="hidden lg:flex items-center gap-1.5 xl:gap-2.5 2xl:gap-3.5 text-[11.5px] xl:text-[12px] font-semibold tracking-wide whitespace-nowrap">
             <Link
               href="/"
-              className={`transition-colors hover:text-bronze ${
-                pathname === "/" ? "text-bronze font-semibold" : "text-foreground/80"
+              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+                pathname === "/"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
+                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Anasayfa
@@ -115,8 +117,10 @@ export function Navbar() {
 
             <Link
               href="/koleksiyonlar"
-              className={`transition-colors hover:text-bronze ${
-                pathname.startsWith("/koleksiyonlar") ? "text-bronze font-semibold" : "text-foreground/80"
+              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+                pathname.startsWith("/koleksiyonlar") || pathname.startsWith("/kategori") || pathname.startsWith("/urun")
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
+                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Tüm Koleksiyonlar
@@ -124,8 +128,10 @@ export function Navbar() {
 
             <Link
               href="/aydinlatma-nedir"
-              className={`transition-colors hover:text-bronze ${
-                pathname === "/aydinlatma-nedir" ? "text-bronze font-semibold" : "text-foreground/80"
+              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+                pathname === "/aydinlatma-nedir"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
+                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Aydınlatma Nedir
@@ -133,8 +139,10 @@ export function Navbar() {
 
             <Link
               href="/aydinlattigimiz-mekanlar"
-              className={`transition-colors hover:text-bronze ${
-                pathname === "/aydinlattigimiz-mekanlar" ? "text-bronze font-semibold" : "text-foreground/80"
+              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+                pathname === "/aydinlattigimiz-mekanlar"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
+                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Aydınlattığımız Mekanlar
@@ -142,8 +150,10 @@ export function Navbar() {
 
             <Link
               href="/hizmetler"
-              className={`transition-colors hover:text-bronze ${
-                pathname.startsWith("/hizmetler") ? "text-bronze font-semibold" : "text-foreground/80"
+              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+                pathname.startsWith("/hizmetler")
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
+                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Hizmetlerimiz
@@ -151,8 +161,10 @@ export function Navbar() {
 
             <Link
               href="/subelerimiz"
-              className={`transition-colors hover:text-bronze ${
-                pathname === "/subelerimiz" || pathname === "/iletisim" ? "text-bronze font-semibold" : "text-foreground/80"
+              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+                pathname === "/subelerimiz" || pathname === "/iletisim"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
+                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Şubelerimiz ve İletişim
@@ -160,20 +172,13 @@ export function Navbar() {
 
             <Link
               href="/hakkimizda"
-              className={`transition-colors hover:text-bronze ${
-                pathname === "/hakkimizda" ? "text-bronze font-semibold" : "text-foreground/80"
+              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+                pathname === "/hakkimizda"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
+                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Hakkımızda
-            </Link>
-
-            <Link
-              href="/sss"
-              className={`transition-colors hover:text-bronze ${
-                pathname === "/sss" ? "text-bronze font-semibold" : "text-foreground/80"
-              }`}
-            >
-              SSS
             </Link>
           </div>
 
@@ -370,23 +375,7 @@ export function Navbar() {
             >
               <div className="flex items-center gap-3">
                 <Info className="w-4 h-4 text-bronze" />
-                <span>Hakkımızda</span>
-              </div>
-              <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
-            </Link>
-
-            <Link
-              href="/sss"
-              onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
-                pathname === "/sss"
-                  ? "text-bronze font-bold bg-surface-subtle"
-                  : "text-foreground/80"
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <HelpCircle className="w-4 h-4 text-bronze" />
-                <span>Sıkça Sorulan Sorular (SSS)</span>
+                <span>Hakkımızda & SSS</span>
               </div>
               <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
             </Link>

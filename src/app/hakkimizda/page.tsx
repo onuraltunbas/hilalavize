@@ -3,10 +3,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { TrustBadges } from "@/components/TrustBadges";
 import { BranchesSection } from "@/components/BranchesSection";
+import { FaqSection } from "@/components/FaqSection";
+
 export const metadata: Metadata = {
-  title: "Hakkımızda | Hilal Elektrik Avize Aksesuar Kahramanmaraş",
+  title: "Hakkımızda & Sıkça Sorulan Sorular | Hilal Elektrik Avize Aksesuar Kahramanmaraş",
   description:
-    "Hilal Elektrik Avize Aksesuar kurumsal hikayesi, kalite vizyonumuz, Onikişubat showroom deneyimimiz ve müşteri memnuniyeti anlayışımız.",
+    "Hilal Elektrik Avize Aksesuar kurumsal hikayesi, kalite vizyonumuz, Onikişubat showroom deneyimimiz ve sıkça sorulan sorular.",
 };
 
 export default function AboutPage() {
@@ -112,6 +114,7 @@ export default function AboutPage() {
 
         <TrustBadges />
         <BranchesSection />
+        <FaqSection />
       </div>
     </div>
   );
