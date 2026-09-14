@@ -151,23 +151,12 @@ export function Navbar() {
             <Link
               href="/hizmetler"
               className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
-                pathname.startsWith("/hizmetler")
+                pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
                   ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
                   : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Hizmetlerimiz
-            </Link>
-
-            <Link
-              href="/subelerimiz"
-              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
-                pathname === "/subelerimiz" || pathname === "/iletisim"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
-                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
-              }`}
-            >
-              Şubelerimiz ve İletişim
             </Link>
 
             <Link
@@ -336,30 +325,14 @@ export function Navbar() {
               href="/hizmetler"
               onClick={handleLinkClick}
               className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
-                pathname.startsWith("/hizmetler")
+                pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
                   ? "text-bronze font-bold bg-surface-subtle"
                   : "text-foreground/80"
               }`}
             >
               <div className="flex items-center gap-3">
                 <Award className="w-4 h-4 text-bronze" />
-                <span>Hizmetlerimiz</span>
-              </div>
-              <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
-            </Link>
-
-            <Link
-              href="/subelerimiz"
-              onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
-                pathname === "/subelerimiz" || pathname === "/iletisim"
-                  ? "text-bronze font-bold bg-surface-subtle"
-                  : "text-foreground/80"
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4 text-bronze" />
-                <span>Şubelerimiz ve İletişim</span>
+                <span>Hizmetlerimiz & Şubelerimiz</span>
               </div>
               <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
             </Link>
