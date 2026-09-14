@@ -45,12 +45,12 @@ export function BrandHeritageSection() {
             return (
               <div
                 key={index}
-                className="dgaraj-card p-7 sm:p-9 flex flex-col justify-between relative group hover:border-bronze transition-all duration-300"
+                className="p-7 sm:p-9 flex flex-col justify-between relative rounded-2xl bg-surface border-2 border-[#93826E]/30 shadow-md shadow-[#93826E]/10 transition-all duration-300 hover:border-[#93826E] hover:shadow-2xl hover:shadow-[#93826E]/20 hover:-translate-y-1.5 group"
               >
                 <div>
                   {/* Top Icon */}
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-surface-subtle border border-border flex items-center justify-center text-bronze group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-2xl bg-surface-subtle border border-[#93826E]/25 group-hover:border-[#93826E] group-hover:bg-[#93826E]/10 flex items-center justify-center text-bronze shadow-xs group-hover:scale-110 transition-all duration-300">
                       <Icon className="w-6 h-6" />
                     </div>
                   </div>
@@ -77,7 +77,7 @@ export function BrandHeritageSection() {
         </div>
 
         {/* Brand Editorial Showcase Strip */}
-        <div className="p-8 sm:p-10 rounded-2xl bg-surface-subtle border border-border flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="p-8 sm:p-10 rounded-2xl bg-surface border-2 border-[#93826E]/30 shadow-lg shadow-[#93826E]/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-3 text-center md:text-left">
             <div className="flex justify-center md:justify-start">
               <Image
