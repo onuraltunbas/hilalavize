@@ -25,7 +25,6 @@ import { InstagramIcon } from "@/components/icons/InstagramIcon";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
@@ -42,7 +41,6 @@ export function Navbar() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setMobileMenuOpen(false);
-      setCategoryDropdownOpen(false);
     }, 0);
     return () => clearTimeout(timer);
   }, [pathname]);
@@ -75,7 +73,6 @@ export function Navbar() {
 
   const handleLinkClick = () => {
     setMobileMenuOpen(false);
-    setCategoryDropdownOpen(false);
   };
 
   if (pathname?.startsWith("/admin")) {
@@ -124,44 +121,6 @@ export function Navbar() {
             >
               Tüm Koleksiyonlar
             </Link>
-
-            {/* Categories Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setCategoryDropdownOpen(true)}
-              onMouseLeave={() => setCategoryDropdownOpen(false)}
-            >
-              <button
-                className={`flex items-center gap-1 transition-colors hover:text-bronze py-1.5 ${
-                  pathname.startsWith("/kategori") ? "text-bronze font-semibold" : "text-foreground/80"
-                }`}
-                onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
-              >
-                Kategoriler
-                <ChevronDown className="w-3.5 h-3.5 text-bronze" />
-              </button>
-
-              {categoryDropdownOpen && (
-                <div className="absolute top-full left-0 w-80 bg-surface border border-border rounded-lg shadow-xl p-3 grid grid-cols-1 gap-1 animate-in fade-in slide-in-from-top-2 duration-200 z-50">
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-bronze px-3 py-1.5 border-b border-border/60">
-                    Aydınlatma ve Dekorasyon Kategorileri
-                  </div>
-                  {CATEGORIES.map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={`/kategori/${cat.slug}`}
-                      onClick={handleLinkClick}
-                      className="group flex items-center justify-between px-3 py-2 rounded-lg text-foreground/80 hover:text-foreground hover:bg-surface-subtle transition-colors text-xs"
-                    >
-                      <span className="font-medium">{cat.name}</span>
-                      <span className="text-bronze text-xs font-bold group-hover:translate-x-1 transition-transform">
-                        →
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
 
             <Link
               href="/aydinlatma-nedir"
