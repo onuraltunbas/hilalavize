@@ -102,14 +102,14 @@ export function Navbar() {
             />
           </Link>
 
-          {/* Desktop Navigation Links (Şık Buton Görünümü, Bronz Çerçeve & Renkli Gölgelendirme) */}
-          <div className="hidden lg:flex items-center gap-1.5 xl:gap-2.5 2xl:gap-3.5 text-[11.5px] xl:text-[12px] font-semibold tracking-wide whitespace-nowrap">
+          {/* Desktop Navigation Links (Büyük & Okunaklı Buton Görünümü, Bronz Çerçeve & Renkli Gölgelendirme) */}
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3 2xl:gap-4 text-[13px] xl:text-[14px] 2xl:text-[15px] font-bold whitespace-nowrap">
             <Link
               href="/"
-              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
                 pathname === "/"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
-                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
+                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Anasayfa
@@ -117,10 +117,10 @@ export function Navbar() {
 
             <Link
               href="/koleksiyonlar"
-              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
                 pathname.startsWith("/koleksiyonlar") || pathname.startsWith("/kategori") || pathname.startsWith("/urun")
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
-                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
+                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Tüm Koleksiyonlar
@@ -128,10 +128,10 @@ export function Navbar() {
 
             <Link
               href="/aydinlatma-nedir"
-              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
                 pathname === "/aydinlatma-nedir"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
-                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
+                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Aydınlatma Nedir
@@ -139,10 +139,10 @@ export function Navbar() {
 
             <Link
               href="/aydinlattigimiz-mekanlar"
-              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
                 pathname === "/aydinlattigimiz-mekanlar"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
-                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
+                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Aydınlattığımız Mekanlar
@@ -150,10 +150,10 @@ export function Navbar() {
 
             <Link
               href="/hizmetler"
-              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
                 pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
-                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
+                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Hizmetlerimiz
@@ -161,10 +161,10 @@ export function Navbar() {
 
             <Link
               href="/hakkimizda"
-              className={`px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl border transition-all duration-300 ${
+              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
                 pathname === "/hakkimizda"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/30 font-bold -translate-y-0.5"
-                  : "bg-surface/70 backdrop-blur-xs border-[#93826E]/20 text-foreground/80 shadow-xs shadow-[#93826E]/10 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-md hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
+                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
               }`}
             >
               Hakkımızda
