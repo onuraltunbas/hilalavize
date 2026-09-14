@@ -29,7 +29,9 @@ export function HeroSection() {
             Işığın En Zarif Hali.
           </h1>
           <p className="text-xs text-zinc-300 max-w-xs mb-5 font-light leading-relaxed">
-            Hilal Avize Showroom ve Elektrik malzeme Şubesi ile lüks aydınlatma tasarımları, dekoratif aksesuarlar ve kaliteli elektrik tesisat çözümleri.
+            Hilal Avize Showroom ve Elektrik Malzemesi Şubesi ile
+            <br />
+            lüks aydınlatma tasarımları, dekoratif aksesuarlar ve profesyonel elektrik tesisat çözümleri.
           </p>
 
           <Link
@@ -64,7 +66,9 @@ export function HeroSection() {
             Işığın En Zarif Hali.
           </h1>
           <p className="text-base lg:text-lg text-zinc-200 max-w-2xl mb-8 font-light drop-shadow leading-relaxed">
-            Hilal Avize Showroom ve Elektrik malzeme Şubesi ile lüks aydınlatma tasarımları, dekoratif aksesuarlar ve kaliteli elektrik tesisat çözümleri.
+            Hilal Avize Showroom ve Elektrik Malzemesi Şubesi ile
+            <br />
+            lüks aydınlatma tasarımları, dekoratif aksesuarlar ve profesyonel elektrik tesisat çözümleri.
           </p>
 
           <Link

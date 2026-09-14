@@ -39,14 +39,14 @@ export function ServicesSection() {
             return (
               <div
                 key={srv.slug}
-                className="dgaraj-card p-6 sm:p-8 flex flex-col justify-between space-y-6"
+                className="p-6 sm:p-8 flex flex-col justify-between space-y-6 rounded-2xl bg-surface border border-[#93826E]/30 shadow-md shadow-[#93826E]/10 transition-all duration-300 hover:border-[#93826E] hover:shadow-2xl hover:shadow-[#93826E]/25 hover:-translate-y-1.5 group relative"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="w-12 h-12 rounded-xl bg-surface-subtle border border-border flex items-center justify-center text-bronze shadow-sm">
+                    <div className="w-12 h-12 rounded-xl bg-surface-subtle border border-[#93826E]/25 group-hover:border-[#93826E] group-hover:bg-[#93826E]/10 flex items-center justify-center text-bronze shadow-sm transition-colors duration-300">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-surface-subtle text-bronze border border-border">
+                    <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-surface-subtle text-bronze border border-[#93826E]/25 group-hover:border-[#93826E]/60 transition-colors">
                       {srv.branch === "showroom"
                         ? "Avize Showroom"
                         : srv.branch === "electrical"

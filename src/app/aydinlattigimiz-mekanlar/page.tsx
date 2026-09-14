@@ -30,7 +30,7 @@ export default function AydinlattigimizMekanlarPage() {
             Aydınlattığımız Mekanlar
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Yüzlerce seçkin evin salonlarını, yemek odalarını ve villalarını Hilal Avize kalitesiyle buluşturduk.
+            Seçkin yaşam alanlarını özgün aydınlatma çözümleriyle buluşturduk.
           </p>
         </div>
 
