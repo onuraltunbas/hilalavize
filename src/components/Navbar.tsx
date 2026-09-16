@@ -91,10 +91,10 @@ export function Navbar() {
     return (
       <header className="sticky top-0 z-50 w-full transition-all duration-300 relative">
         {/* =========================================================================
-            1. MASAÜSTÜ: CHATGPT REFERANS TASARIMI (Tam Genişlik + Ortada Kavisli Altın Hat + Siyaha Gradient)
+            1. MASAÜSTÜ: CHATGPT REFERANS TASARIMI (Tam Genişlik + Ortada Kavisli Altın Hat + Beyazdan Siyaha Kesintisiz Gradient)
             ========================================================================= */}
         <nav className="hidden lg:block w-full relative">
-          {/* YAZILIMSAL SVG KATMANI: %30 daha saydam navbar gradienti, %25 daha aşağıda kavisli altın hat */}
+          {/* YAZILIMSAL SVG KATMANI: Yukarıdan aşağı beyazdan siyaha kesintisiz gradient + Kavisli altın hat */}
           <div className="absolute inset-0 w-full h-[96px] xl:h-[105px] 2xl:h-[114px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 1440 115"
@@ -102,12 +102,12 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* 1. Üst tarafı şu anki navbar renginde (#E1E0DD) ve %30 daha saydam, alt tarafı siyaha dönen gradient */}
+                {/* 1. Yukarıdan aşağıya: Beyazdan başlayıp zarifçe siyaha dönen kesintisiz gradient */}
                 <linearGradient id="chatgptNavGrad" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#E1E0DD" stopOpacity="0.52" />
-                  <stop offset="32%" stopColor="#8A7E72" stopOpacity="0.57" />
-                  <stop offset="68%" stopColor="#25201B" stopOpacity="0.66" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="0.70" />
+                  <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.88" />
+                  <stop offset="28%" stopColor="#E1E0DD" stopOpacity="0.85" />
+                  <stop offset="62%" stopColor="#2A241E" stopOpacity="0.94" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
                 {/* 2. Alt kenardaki parıldayan lüks altın hat */}
@@ -129,13 +129,16 @@ export function Navbar() {
                 </filter>
               </defs>
 
-              {/* Gradient Gövde Dolgusu (%25 daha aşağıya indirilmiş altın çizgi sınırına kadar) */}
-              <path
-                d="M 0,0 L 1440,0 L 1440,75 L 900,75 C 875,75 875,108 850,108 L 590,108 C 565,108 565,75 540,75 L 0,75 Z"
+              {/* Arka Plan Dolgusu: Boşluk ve beyazlık bırakmayan, yukarıdan aşağı tam dikdörtgen gradient */}
+              <rect
+                x="0"
+                y="0"
+                width="1440"
+                height="115"
                 fill="url(#chatgptNavGrad)"
               />
 
-              {/* Altın Parlayan Kavisli Sınır Çizgisi (%25 daha aşağı indirilmiş) */}
+              {/* Altın Parlayan Kavisli Sınır Çizgisi (Konumu ve kavisleri aynen korunur) */}
               <path
                 d="M 0,75 L 540,75 C 565,75 565,108 590,108 L 850,108 C 875,108 875,75 900,75 L 1440,75"
                 fill="none"
