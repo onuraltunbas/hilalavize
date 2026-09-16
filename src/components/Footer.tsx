@@ -196,6 +196,13 @@ export function Footer() {
           </Link>
         </div>
       </div>
+
+      {/* En Alt Sağ Köşe */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-3 pb-2 text-center md:text-right">
+        <span className="text-[11px] text-muted-foreground/70 tracking-wider font-medium">
+          Onur ALTUNBAŞ
+        </span>
+      </div>
     </footer>
   );
 }
