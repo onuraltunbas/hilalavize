@@ -102,11 +102,11 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* 1. Yukarıdan aşağıya: Beyazdan başlayıp zarifçe siyaha dönen kesintisiz gradient */}
+                {/* 1. Yukarıdan aşağıya: Sitenin sıcak kırık beyaz/fildişi tonundan (#FAF9F6) başlayıp siyaha dönen lüks gradient */}
                 <linearGradient id="chatgptNavGrad" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.88" />
-                  <stop offset="28%" stopColor="#E1E0DD" stopOpacity="0.85" />
-                  <stop offset="62%" stopColor="#2A241E" stopOpacity="0.94" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.88" />
+                  <stop offset="26%" stopColor="#E1E0DD" stopOpacity="0.85" />
+                  <stop offset="60%" stopColor="#2A241E" stopOpacity="0.94" />
                   <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
