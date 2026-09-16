@@ -93,8 +93,8 @@ export function Navbar() {
         {/* =========================================================================
             1. MASAÜSTÜ: ÇİZGİSİZ, YUKARIDAN HIZLICA SİYAHA DÖNEN GRADIENT & ALTIN BUTONLAR
             ========================================================================= */}
-        <nav className="hidden lg:block w-full relative">
-          {/* YAZILIMSAL SVG KATMANI: Çizgisiz, daha yukarıdan siyaha dönen kesintisiz gradient */}
+        <nav className="hidden lg:block w-full relative backdrop-blur-md backdrop-saturate-150">
+          {/* YAZILIMSAL SVG KATMANI: %20 daha şeffaf ve matlaştırılmış akıcı gradient */}
           <div className="absolute inset-0 w-full h-[96px] xl:h-[105px] 2xl:h-[114px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 1440 115"
@@ -102,13 +102,13 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* Yukarıdan aşağıya: Sitenin kırık beyazından (#FAF9F6) başlayıp pürüzsüzce tam siyaha (#000000) dönen akıcı gradient */}
+                {/* %20 daha şeffaf ve matlaştırılmış akıcı gradient */}
                 <linearGradient id="chatgptNavGrad" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.90" />
-                  <stop offset="25%" stopColor="#D5CFC9" stopOpacity="0.88" />
-                  <stop offset="52%" stopColor="#736558" stopOpacity="0.92" />
-                  <stop offset="78%" stopColor="#231E18" stopOpacity="0.97" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.72" />
+                  <stop offset="25%" stopColor="#D5CFC9" stopOpacity="0.70" />
+                  <stop offset="52%" stopColor="#736558" stopOpacity="0.74" />
+                  <stop offset="78%" stopColor="#231E18" stopOpacity="0.78" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="0.80" />
                 </linearGradient>
 
                 {/* 2. Alt kenardaki parıldayan lüks altın hat */}
