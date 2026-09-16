@@ -58,7 +58,7 @@ export function Navbar() {
 
       if (heroHeading) {
         const headingRect = heroHeading.getBoundingClientRect();
-        const navHeight = 90;
+        const navHeight = 96;
         const headingPageY = headingRect.top + scrollY;
         const arrivalScrollY = Math.max(100, headingPageY - navHeight);
         const startScrollY = Math.max(30, arrivalScrollY * 0.25);
@@ -330,7 +330,7 @@ export function Navbar() {
             ========================================================================= */}
         <nav className="lg:hidden w-full relative backdrop-blur-md backdrop-saturate-150">
           {/* Mobil/Tablet SVG Katmanı: Logoya tam sığacak genişlikte kavisli çentik */}
-          <div className="absolute inset-0 w-full h-[80px] sm:h-[88px] pointer-events-none overflow-visible">
+          <div className="absolute inset-0 w-full h-[96px] sm:h-[106px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 500 100"
               preserveAspectRatio="none"
@@ -399,21 +399,21 @@ export function Navbar() {
           </div>
 
           {/* Merkez Logo: Sağında/solunda buton yok, menü yazısı yok, doğrudan logoya basınca menü açılır */}
-          <div className="relative z-10 w-full px-4 h-[80px] sm:h-[88px] flex items-center justify-center">
+          <div className="relative z-10 w-full px-4 h-[96px] sm:h-[106px] flex items-center justify-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="relative flex items-center justify-center group cursor-pointer active:scale-95 transition-transform"
               aria-label={mobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
             >
               {/* Logonun arkasındaki sıcak altın aydınlatma halesi */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 sm:w-60 h-12 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.30)_0%,transparent_75%)] pointer-events-none blur-sm" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 sm:w-64 h-14 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.30)_0%,transparent_75%)] pointer-events-none blur-sm" />
 
               <Image
                 src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
                 alt="Hilal Elektrik & Avize - Menüyü Aç"
                 width={935}
                 height={267}
-                className="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
+                className="h-[58px] sm:h-[68px] w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
                 priority
               />
             </button>
@@ -424,7 +424,7 @@ export function Navbar() {
             3. LOGODAN AŞAĞI DOĞRU AÇILAN ANİMASYONLU BEYAZ MOBİL & TABLET MENÜSÜ
             ========================================================================= */}
         <div
-          className={`lg:hidden fixed inset-x-0 top-[80px] sm:top-[88px] bottom-0 z-50 transition-all duration-500 ease-out overflow-hidden ${
+          className={`lg:hidden fixed inset-x-0 top-[96px] sm:top-[106px] bottom-0 z-50 transition-all duration-500 ease-out overflow-hidden ${
             mobileMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none -translate-y-6"
@@ -438,7 +438,7 @@ export function Navbar() {
 
           {/* Logodan Aşağı Kayan Şık Beyaz Menü Paneli (Sitenin renkleriyle tam uyumlu) */}
           <div
-            className={`relative mx-auto w-[94%] sm:w-[88%] max-w-md max-h-[calc(100vh-100px)] overflow-y-auto bg-[#FAF9F6] border border-[#E1E0DD] rounded-2xl shadow-2xl p-4 sm:p-5 space-y-4 transition-all duration-500 ease-out mt-2 ${
+            className={`relative mx-auto w-[94%] sm:w-[88%] max-w-md max-h-[calc(100vh-116px)] overflow-y-auto bg-[#FAF9F6] border border-[#E1E0DD] rounded-2xl shadow-2xl p-4 sm:p-5 space-y-4 transition-all duration-500 ease-out mt-2 ${
               mobileMenuOpen
                 ? "translate-y-0 scale-100 opacity-100"
                 : "-translate-y-8 scale-95 opacity-0"
