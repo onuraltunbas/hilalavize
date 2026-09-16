@@ -10,6 +10,15 @@ export interface InstallationProject {
 
 export const INSTALLATION_PROJECTS: InstallationProject[] = [
   {
+    "id": "mekan-103",
+    "src": "/images/aydinlattigimiz-mekanlar/mekan-103.jpg",
+    "title": "Modern Renkli Cam Küre Teras ve Balkon Avizesi",
+    "location": "Onikişubat / Kahramanmaraş",
+    "category": "modern-led",
+    "categoryLabel": "Modern LED Aydınlatma",
+    "description": "Hilal Avize montaj ekibimiz tarafından manzaralı teras ve oturma alanına uygulanan özel tasarım renkli cam küre sarkıt avize montajı."
+  },
+  {
     "id": "mekan-1",
     "src": "/images/aydinlattigimiz-mekanlar/mekan-01.jpg",
     "title": "Özel Tasarım Salon Kristal Avize Montajı",
