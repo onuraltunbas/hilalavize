@@ -45,7 +45,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/images/categories/banner_led.jpg",
     featured: true,
     subcategories: [],
-    itemCount: 50,
+    itemCount: 51,
   },
   {
     slug: "tekli-avizeler",
@@ -93,7 +93,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/products/yerli-urunler/photo/770.jpeg",
     featured: true,
     subcategories: [],
-    itemCount: 32,
+    itemCount: 31,
   },
   {
     slug: "aksesuar",

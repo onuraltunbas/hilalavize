@@ -658,5 +658,25 @@
     ],
     "id": "LED-051",
     "code": "HL-LED-051"
+  },
+  {
+    "no": 52,
+    "id": "LED-052",
+    "code": "HL-LED-052",
+    "name": "HL-LED-052",
+    "badge": "Modern LED Lineer",
+    "dimensions": "Genişlik: 100-110 cm | Ayarlanabilir Çelik Halat Boyu",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü (45W)",
+    "shortDescription": "Lineer profil üzerinde organik dalgalar çizen akıcı LED hattı ile yemek masası, ada üstü ve çalışma alanlarına çağdaş mimari zarafet kazandırır.",
+    "images": [
+      "/products/ledli-grup/photo/HL-LED-052.jpeg"
+    ],
+    "features": [
+      "3 Renk Kademeli Dahili LED Teknolojisi",
+      "Akıcı Dalgalı Silikon LED Difüzör Tasarımı",
+      "Ayarlanabilir Çelik Askı Halatları",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ]
   }
 ]

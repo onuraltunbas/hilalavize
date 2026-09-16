@@ -1566,6 +1566,33 @@
     "seoDescription": "HL-LED-051 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
+    "id": "LED-052",
+    "code": "HL-LED-052",
+    "slug": "hl-led-052",
+    "name": "HL-LED-052",
+    "categorySlug": "ledli-grup",
+    "categoryName": "Modern LED Avizeler",
+    "badge": "Modern LED Lineer",
+    "description": "HL-LED-052, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 100-110 cm | Ayarlanabilir Çelik Halat Boyu ölçüleri, Dahili 3 Renk Kademeli LED Modülü (45W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
+    "shortDescription": "Lineer profil üzerinde organik dalgalar çizen akıcı LED hattı ile yemek masası, ada üstü ve çalışma alanlarına çağdaş mimari zarafet kazandırır.",
+    "dimensions": "Genişlik: 100-110 cm | Ayarlanabilir Çelik Halat Boyu",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü (45W)",
+    "branch": "showroom",
+    "image": "/products/ledli-grup/photo/HL-LED-052.jpeg",
+    "images": [
+      "/products/ledli-grup/photo/HL-LED-052.jpeg"
+    ],
+    "features": [
+      "3 Renk Kademeli Dahili LED Teknolojisi",
+      "Akıcı Dalgalı Silikon LED Difüzör Tasarımı",
+      "Ayarlanabilir Çelik Askı Halatları",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-LED-052 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-LED-052 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
     "id": "TKL-001",
     "code": "HL-TKL-001",
     "slug": "hl-tkl-001",
@@ -3276,32 +3303,6 @@
     ],
     "seoTitle": "HL-YRL-1000 | Hilal Avize Kahramanmaraş",
     "seoDescription": "HL-YRL-1000 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "YRL-1010",
-    "code": "HL-YRL-1010",
-    "slug": "hl-yrl-1010",
-    "name": "HL-YRL-1010",
-    "categorySlug": "yerli-urunler",
-    "categoryName": "Yerli Üretim Koleksiyonu",
-    "badge": "Özel Ölçü Üretim",
-    "description": "Lineer profil üzerinde organik dalgalar çizen akıcı LED hattı ile yemek masası, ada üstü ve çalışma alanlarına çağdaş mimari zarafet kazandırır. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
-    "shortDescription": "HL-YRL-1010; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
-    "dimensions": "Genişlik: 100-110 cm | Ayarlanabilir Çelik Halat Boyu | Mekanınıza Göre Özel Ölçü Üretim",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü (45W)",
-    "branch": "showroom",
-    "image": "/products/yerli-urunler/photo/HL-YRL-1010.jpeg",
-    "images": [
-      "/products/yerli-urunler/photo/HL-YRL-1010.jpeg"
-    ],
-    "features": [
-      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
-      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-YRL-1010 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-YRL-1010 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
     "id": "AKS-001",
