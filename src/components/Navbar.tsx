@@ -91,10 +91,10 @@ export function Navbar() {
     return (
       <header className="sticky top-0 z-50 w-full transition-all duration-300 relative">
         {/* =========================================================================
-            1. MASAÜSTÜ: ÇİZGİSİZ, YUKARIDAN HIZLICA SİYAHA DÖNEN GRADIENT & ALTIN BUTONLAR
+            1. MASAÜSTÜ NAVBAR: YUMUŞAK GRADIENT + ALTIN ÇİZGİ + GENİŞLETİLMİŞ BUTONLAR
             ========================================================================= */}
         <nav className="hidden lg:block w-full relative backdrop-blur-md backdrop-saturate-150">
-          {/* YAZILIMSAL SVG KATMANI: %20 daha şeffaf ve matlaştırılmış akıcı gradient */}
+          {/* YAZILIMSAL SVG KATMANI: Koleksiyonları Keşfet gradienti gibi yumuşak beyazdan siyaha geçiş */}
           <div className="absolute inset-0 w-full h-[96px] xl:h-[105px] 2xl:h-[114px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 1440 115"
@@ -102,16 +102,17 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* %20 daha şeffaf ve matlaştırılmış akıcı gradient */}
+                {/* Koleksiyonları Keşfet arkasındaki gibi ipeksi, yumuşak beyazdan siyaha gradient */}
                 <linearGradient id="chatgptNavGrad" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.72" />
-                  <stop offset="25%" stopColor="#D5CFC9" stopOpacity="0.70" />
-                  <stop offset="52%" stopColor="#736558" stopOpacity="0.74" />
-                  <stop offset="78%" stopColor="#231E18" stopOpacity="0.78" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="0.80" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.90" />
+                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.88" />
+                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.92" />
+                  <stop offset="68%" stopColor="#302820" stopOpacity="0.96" />
+                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.98" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
-                {/* 2. Alt kenardaki parıldayan lüks altın hat */}
+                {/* Alt kenardaki parıldayan lüks altın hat */}
                 <linearGradient id="chatgptGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="#9E7D3B" stopOpacity="0.35" />
                   <stop offset="32%" stopColor="#D4AF37" stopOpacity="0.80" />
@@ -120,7 +121,7 @@ export function Navbar() {
                   <stop offset="100%" stopColor="#9E7D3B" stopOpacity="0.35" />
                 </linearGradient>
 
-                {/* 3. Altın Işık Halesi (Glow Efekti) */}
+                {/* Altın Işık Halesi (Glow Efekti) */}
                 <filter id="chatgptGlow" x="-5%" y="-150%" width="110%" height="400%">
                   <feGaussianBlur stdDeviation="3.5" result="blur" />
                   <feMerge>
@@ -130,7 +131,7 @@ export function Navbar() {
                 </filter>
               </defs>
 
-              {/* Arka Plan Dolgusu: Yukarıdan aşağıya akıcı gradient */}
+              {/* Arka Plan Dolgusu: Yukarıdan aşağıya akıcı ipeksi gradient */}
               <rect
                 x="0"
                 y="0"
@@ -225,245 +226,282 @@ export function Navbar() {
         </nav>
 
         {/* =========================================================================
-            2. MOBİL: ŞIK, ALTIN ÇİZGİLİ VE AKICI MOBİL NAVBAR
+            2. MOBİL VE TABLET NAVBAR: MASAÜSTÜ GİBİ KAVİSLİ, SAĞINDA SOLUNDA BUTONSUZ,
+               LOGONUN ÜSTÜNE BASINCA AŞAĞI AÇILAN MENÜ TETİKLEYİCİLİ
             ========================================================================= */}
-        <nav className="lg:hidden w-full bg-gradient-to-b from-[#E1E0DD]/90 via-[#2A231C]/95 to-[#000000] backdrop-blur-md border-b border-[#D4AF37]/50 px-4 py-2.5 flex items-center justify-between shadow-lg">
-          <Link href="/" onClick={handleLinkClick} className="flex items-center shrink-0">
-            <Image
-              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik & Avize"
-              width={935}
-              height={267}
-              className="h-10 sm:h-11 w-auto object-contain drop-shadow"
-              priority
-            />
-          </Link>
+        <nav className="lg:hidden w-full relative backdrop-blur-md backdrop-saturate-150">
+          {/* Mobil/Tablet SVG Katmanı: Masaüstüyle Birebir Aynı Lüks Kavis ve Gradient */}
+          <div className="absolute inset-0 w-full h-[80px] sm:h-[88px] pointer-events-none overflow-visible">
+            <svg
+              viewBox="0 0 1440 115"
+              preserveAspectRatio="none"
+              className="w-full h-full block"
+            >
+              <defs>
+                <linearGradient id="mobileNavGrad" x1="0" y1="0" x2="0" y2="100%">
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.90" />
+                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.88" />
+                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.92" />
+                  <stop offset="68%" stopColor="#302820" stopOpacity="0.96" />
+                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.98" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
+                </linearGradient>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(true)}
-            className="p-2 rounded-lg border border-[#D4AF37]/40 text-white hover:bg-white/10 transition-colors flex items-center justify-center"
-            aria-label="Menüyü Aç"
-          >
-            <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
-              <span className="w-full h-0.5 bg-[#D4AF37] rounded-full transition-all" />
-              <span className="w-full h-0.5 bg-[#D4AF37] rounded-full transition-all" />
-              <span className="w-full h-0.5 bg-[#D4AF37] rounded-full transition-all" />
-            </div>
-          </button>
+                <linearGradient id="mobileGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#9E7D3B" stopOpacity="0.35" />
+                  <stop offset="32%" stopColor="#D4AF37" stopOpacity="0.80" />
+                  <stop offset="50%" stopColor="#FBE9B5" stopOpacity="1.0" />
+                  <stop offset="68%" stopColor="#D4AF37" stopOpacity="0.80" />
+                  <stop offset="100%" stopColor="#9E7D3B" stopOpacity="0.35" />
+                </linearGradient>
+              </defs>
+
+              <rect
+                x="0"
+                y="0"
+                width="1440"
+                height="115"
+                fill="url(#mobileNavGrad)"
+              />
+
+              <path
+                d="M 0,75 L 540,75 C 565,75 565,108 590,108 L 850,108 C 875,108 875,75 900,75 L 1440,75"
+                fill="none"
+                stroke="url(#mobileGoldLine)"
+                strokeWidth="2.2"
+                filter="url(#chatgptGlow)"
+              />
+            </svg>
+          </div>
+
+          {/* Merkez Logo: Sağında ve solunda buton YOK, logoya basınca menü aşağı açılır */}
+          <div className="relative z-10 w-full px-4 h-[80px] sm:h-[88px] flex items-center justify-center">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="relative flex flex-col items-center justify-center group cursor-pointer active:scale-95 transition-transform"
+              aria-label={mobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
+            >
+              {/* Logonun arkasındaki sıcak altın aydınlatma halesi */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 sm:w-60 h-12 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.30)_0%,transparent_75%)] pointer-events-none blur-sm" />
+
+              <Image
+                src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+                alt="Hilal Elektrik & Avize - Menüyü Aç"
+                width={935}
+                height={267}
+                className="h-11 sm:h-13 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
+                priority
+              />
+
+              {/* Menü Açılış İpucu / Zarif Altın Gösterge */}
+              <div className="flex items-center gap-1 mt-0.5 bg-black/60 border border-[#D4AF37]/50 rounded-full px-2 py-0.5 shadow-xs">
+                <span className="text-[10px] font-bold text-[#F5E2A8] uppercase tracking-wider">
+                  {mobileMenuOpen ? "Kapat" : "Menü"}
+                </span>
+                <ChevronDown
+                  className={`w-3 h-3 text-[#D4AF37] transition-transform duration-300 ${
+                    mobileMenuOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+            </button>
+          </div>
         </nav>
 
-      {/* Mobile Drawer Backdrop */}
-      <div
-        className={`fixed inset-0 bg-black/60 backdrop-blur-xs z-50 transition-opacity duration-300 lg:hidden ${
-          mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
-        onClick={() => setMobileMenuOpen(false)}
-        aria-hidden="true"
-      />
-
-      {/* Mobile Slide-Over Drawer Panel */}
-      <aside
-        className={`fixed top-0 bottom-0 right-0 w-[86%] max-w-sm bg-surface z-50 shadow-2xl flex flex-col transition-transform duration-300 ease-out lg:hidden border-l border-border ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-        aria-label="Mobil Gezinme Menüsü"
-      >
-        {/* Drawer Header with Logo & Close Button */}
-        <div className="p-4 bg-surface-subtle border-b border-border flex items-center justify-between">
-          <Link href="/" onClick={handleLinkClick} className="flex items-center">
-            <Image
-              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik & Avize"
-              width={935}
-              height={267}
-              className="h-10 sm:h-12 w-auto object-contain"
-            />
-          </Link>
-          <button
+        {/* =========================================================================
+            3. LOGODAN AŞAĞI DOĞRU AÇILAN ANİMASYONLU MOBİL & TABLET MENÜSÜ
+            ========================================================================= */}
+        <div
+          className={`lg:hidden fixed inset-x-0 top-[80px] sm:top-[88px] bottom-0 z-50 transition-all duration-500 ease-out overflow-hidden ${
+            mobileMenuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none -translate-y-6"
+          }`}
+        >
+          {/* Yarı Saydam Arka Plan Karartması */}
+          <div
+            className="absolute inset-0 bg-black/75 backdrop-blur-md transition-opacity duration-500"
             onClick={() => setMobileMenuOpen(false)}
-            className="p-2 rounded-lg bg-surface border border-border hover:bg-surface-subtle text-foreground transition-colors"
-            aria-label="Menüyü Kapat"
-          >
-            <X className="w-5 h-5" />
-          </button>
-        </div>
+          />
 
-        {/* Drawer Scrollable Body */}
-        <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
-          {/* 1. ANA SAYFA BUTONU (En Başta, Vurgulu) */}
-          <Link
-            href="/"
-            onClick={handleLinkClick}
-            className={`flex items-center justify-between p-3.5 rounded-lg font-bold text-sm transition-all border ${
-              pathname === "/"
-                ? "bg-bronze text-white border-bronze shadow-sm"
-                : "bg-surface-subtle hover:bg-bronze/10 text-foreground border-border"
+          {/* Logodan Aşağı Kayan Şık Menü Paneli */}
+          <div
+            className={`relative mx-auto w-[94%] sm:w-[88%] max-w-md max-h-[calc(100vh-100px)] overflow-y-auto bg-[#141210]/95 backdrop-blur-2xl border border-[#D4AF37]/40 rounded-2xl shadow-2xl p-4 sm:p-5 space-y-4 transition-all duration-500 ease-out mt-2 ${
+              mobileMenuOpen
+                ? "translate-y-0 scale-100 opacity-100"
+                : "-translate-y-8 scale-95 opacity-0"
             }`}
           >
-            <div className="flex items-center gap-3">
-              <div
-                className={`p-1.5 rounded-lg ${
-                  pathname === "/" ? "bg-white/20 text-white" : "bg-bronze/15 text-bronze"
-                }`}
-              >
-                <Home className="w-4 h-4" />
-              </div>
-              <span>Ana Sayfa</span>
-            </div>
-            <ChevronRight className="w-4 h-4 opacity-70" />
-          </Link>
-
-          {/* Menü Maddeleri */}
-          <div className="space-y-1 text-sm font-medium">
+            {/* 1. ANASAYFA BUTONU */}
             <Link
-              href="/koleksiyonlar"
+              href="/"
               onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
-                pathname.startsWith("/koleksiyonlar")
-                  ? "text-bronze font-bold bg-surface-subtle"
-                  : "text-foreground/80"
+              className={`w-full p-3 rounded-xl font-bold text-sm transition-all border flex items-center justify-between shadow-xs ${
+                pathname === "/"
+                  ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] shadow-[0_0_16px_rgba(212,175,55,0.4)]"
+                  : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/40 hover:border-[#D4AF37] hover:text-white"
               }`}
             >
-              <div className="flex items-center gap-3">
-                <Layers className="w-4 h-4 text-bronze" />
-                <span>Tüm Koleksiyonlar</span>
+              <div className="flex items-center gap-2.5">
+                <Home className="w-4 h-4 text-[#D4AF37]" />
+                <span>Anasayfa</span>
               </div>
-              <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
+              <ChevronRight className="w-4 h-4 opacity-70" />
             </Link>
 
-            {/* Kategoriler */}
-            <div className="pt-2 pb-1">
-              <div className="px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-wider text-bronze flex items-center gap-1.5">
-                <span>Kategoriler</span>
+            {/* 2. TÜM KOLEKSİYONLAR BAŞLIĞI (TUŞ DEĞİL!) VE ALTINDA 2 SÜTUN KARE FOTOĞRAFLI KARTLAR */}
+            <div className="pt-1">
+              <div className="flex items-center justify-between pb-2.5 px-1">
+                <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#F5E2A8] flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-[#D4AF37]" />
+                  Tüm Koleksiyonlar
+                </span>
+                <Link
+                  href="/koleksiyonlar"
+                  onClick={handleLinkClick}
+                  className="text-[11px] font-bold text-[#D4AF37] hover:text-white transition-colors"
+                >
+                  Tümünü Gör →
+                </Link>
               </div>
-              <div className="grid grid-cols-2 gap-1.5 pt-1">
+
+              {/* 2 Sütun Kare Fotoğraflı Kategori Kartları */}
+              <div className="grid grid-cols-2 gap-2 sm:gap-3">
                 {CATEGORIES.map((cat) => (
                   <Link
                     key={cat.slug}
                     href={`/kategori/${cat.slug}`}
                     onClick={handleLinkClick}
-                    className="text-xs text-foreground/75 hover:text-bronze py-2 px-2.5 rounded-lg hover:bg-surface-subtle transition-colors flex items-center justify-between bg-surface-subtle/50 border border-border/50"
+                    className="group relative aspect-square rounded-xl overflow-hidden block border border-[#D4AF37]/30 shadow-md hover:border-[#D4AF37] transition-all"
                   >
-                    <span className="truncate">{cat.shortName}</span>
-                    <ChevronRight className="w-3 h-3 text-bronze/60 shrink-0 ml-1" />
+                    {/* Kategori Arka Plan Fotoğrafı */}
+                    <Image
+                      src={cat.image}
+                      alt={cat.name}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 220px"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    />
+
+                    {/* Karartma Gradienti */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/15 group-hover:from-black/95 transition-colors" />
+
+                    {/* Kategori Başlığı ve Ürün Sayısı */}
+                    <div className="absolute inset-x-0 bottom-0 p-2 text-center">
+                      <span className="text-[12px] sm:text-[13px] font-bold text-white tracking-wide leading-tight drop-shadow-md block">
+                        {cat.shortName}
+                      </span>
+                      <span className="text-[10px] text-[#F5E2A8] font-medium block mt-0.5 opacity-85">
+                        {cat.itemCount} Ürün
+                      </span>
+                    </div>
                   </Link>
                 ))}
               </div>
             </div>
 
-            {/* Aydınlatma Nedir */}
-            <Link
-              href="/aydinlatma-nedir"
-              onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
-                pathname === "/aydinlatma-nedir"
-                  ? "text-bronze font-bold bg-surface-subtle"
-                  : "text-foreground/80"
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <Sparkles className="w-4 h-4 text-amber-500" />
-                <span className="text-bronze font-semibold">Aydınlatma Nedir?</span>
-              </div>
-              <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
-            </Link>
+            {/* 3. MASAÜSTÜYLE BİREBİR AYNI DİĞER BUTONLAR */}
+            <div className="space-y-2 pt-1">
+              {/* Aydınlatma Nedir */}
+              <Link
+                href="/aydinlatma-nedir"
+                onClick={handleLinkClick}
+                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                  pathname === "/aydinlatma-nedir"
+                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
+                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                }`}
+              >
+                <span>Aydınlatma Nedir</span>
+                <ChevronRight className="w-4 h-4 opacity-70" />
+              </Link>
 
-            {/* Aydınlattığımız Mekanlar */}
-            <Link
-              href="/aydinlattigimiz-mekanlar"
-              onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-lg transition-all border ${
-                pathname === "/aydinlattigimiz-mekanlar"
-                  ? "bg-bronze text-white border-bronze shadow-sm"
-                  : "bg-surface-subtle hover:bg-bronze/10 text-foreground border-border"
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <div className={`p-1.5 rounded-lg ${pathname === "/aydinlattigimiz-mekanlar" ? "bg-white/20 text-white" : "bg-bronze/15 text-bronze"}`}>
-                  <Camera className="w-4 h-4" />
-                </div>
+              {/* Aydınlattığımız Mekanlar */}
+              <Link
+                href="/aydinlattigimiz-mekanlar"
+                onClick={handleLinkClick}
+                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                  pathname === "/aydinlattigimiz-mekanlar"
+                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
+                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                }`}
+              >
                 <span>Aydınlattığımız Mekanlar</span>
-              </div>
-              <ChevronRight className="w-4 h-4 text-bronze" />
-            </Link>
+                <ChevronRight className="w-4 h-4 opacity-70" />
+              </Link>
 
-            <Link
-              href="/hizmetler"
-              onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
-                pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
-                  ? "text-bronze font-bold bg-surface-subtle"
-                  : "text-foreground/80"
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <Award className="w-4 h-4 text-bronze" />
-                <span>Hizmetlerimiz & Şubelerimiz</span>
-              </div>
-              <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
-            </Link>
+              {/* Hizmetlerimiz */}
+              <Link
+                href="/hizmetler"
+                onClick={handleLinkClick}
+                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                  pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
+                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
+                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                }`}
+              >
+                <span>Hizmetlerimiz</span>
+                <ChevronRight className="w-4 h-4 opacity-70" />
+              </Link>
 
-            <Link
-              href="/hakkimizda"
-              onClick={handleLinkClick}
-              className={`flex items-center justify-between p-3 rounded-lg transition-colors hover:bg-surface-subtle ${
-                pathname === "/hakkimizda"
-                  ? "text-bronze font-bold bg-surface-subtle"
-                  : "text-foreground/80"
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <Info className="w-4 h-4 text-bronze" />
-                <span>Hakkımızda & SSS</span>
-              </div>
-              <ChevronRight className="w-4 h-4 text-muted-foreground/60" />
-            </Link>
-          </div>
+              {/* Hakkımızda */}
+              <Link
+                href="/hakkimizda"
+                onClick={handleLinkClick}
+                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                  pathname === "/hakkimizda"
+                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
+                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                }`}
+              >
+                <span>Hakkımızda</span>
+                <ChevronRight className="w-4 h-4 opacity-70" />
+              </Link>
+            </div>
 
-          {/* Hızlı WhatsApp İletişim (İsimler kaldırıldı, sadece şube butonları) */}
-          <div className="pt-2 border-t border-border">
-            <div className="text-[11px] font-bold text-muted-foreground mb-2 px-1">Hızlı İletişim:</div>
-            <div className="grid grid-cols-2 gap-2">
+            {/* Hızlı WhatsApp İletişim */}
+            <div className="pt-2 border-t border-[#D4AF37]/30">
+              <div className="text-[11px] font-bold text-[#F5E2A8]/80 mb-2 px-1">Hızlı İletişim:</div>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
+                    "Merhaba, Hilal Avize Showroom ürünleri hakkında bilgi ve teklif almak istiyorum."
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors border border-emerald-400/30"
+                >
+                  <Store className="w-3.5 h-3.5" />
+                  <span>Showroom</span>
+                </a>
+                <a
+                  href={`https://wa.me/${electrical.contacts[0].whatsapp}?text=${encodeURIComponent(
+                    "Merhaba, elektrik tesisat ve malzeme konusunda teklif ve bilgi almak istiyorum."
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors border border-emerald-400/30"
+                >
+                  <Zap className="w-3.5 h-3.5" />
+                  <span>Elektrik Şube</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Instagram Butonu */}
+            <div className="pt-1">
               <a
-                href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
-                  "Merhaba, Hilal Avize Showroom ürünleri hakkında bilgi ve teklif almak istiyorum."
-                )}`}
+                href={COMPANY_DATA.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+                className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 border border-purple-400/30 shadow-sm transition-colors"
               >
-                <Store className="w-3.5 h-3.5" />
-                <span>Showroom</span>
-              </a>
-              <a
-                href={`https://wa.me/${electrical.contacts[0].whatsapp}?text=${encodeURIComponent(
-                  "Merhaba, elektrik tesisat ve malzeme konusunda teklif ve bilgi almak istiyorum."
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-colors"
-              >
-                <Zap className="w-3.5 h-3.5" />
-                <span>Elektrik Şube</span>
+                <InstagramIcon className="w-4 h-4 text-pink-400" />
+                <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>
               </a>
             </div>
           </div>
-
-          {/* Instagram Butonu (Mat lüks mor kadife, parlaklığı alınmış) */}
-          <div className="pt-1">
-            <a
-              href={COMPANY_DATA.socials.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 border border-purple-500/20 shadow-sm transition-colors"
-            >
-              <InstagramIcon className="w-4 h-4 text-pink-400" />
-              <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>
-            </a>
-          </div>
         </div>
-      </aside>
-    </header>
-  );
-}
+      </header>
+    );
+  }
