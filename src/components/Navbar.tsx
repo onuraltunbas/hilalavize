@@ -239,9 +239,9 @@ export function Navbar() {
                 opacity={Math.max(0, Math.min(1, scrollRatio))}
               />
 
-              {/* Altın Parlayan Kavisli Sınır Çizgisi */}
+              {/* Altın Parlayan Kavisli Sınır Çizgisi: Butonların üstünden geçer ve logoyu alttan kucaklar */}
               <path
-                d="M 0,75 L 540,75 C 565,75 565,108 590,108 L 850,108 C 875,108 875,75 900,75 L 1440,75"
+                d="M 0,32 L 530,32 C 560,32 560,108 590,108 L 850,108 C 880,108 880,32 910,32 L 1440,32"
                 fill="none"
                 stroke="url(#chatgptGoldLine)"
                 strokeWidth="2.2"
@@ -250,10 +250,10 @@ export function Navbar() {
             </svg>
           </div>
 
-          {/* İÇERİK: Sol ve Sağ Eşit Uzaklıkta, Butonlar Eşit Aralıklı ve Logodan Dengeli Uzaklaştırılmış */}
+          {/* İÇERİK: Sol ve Sağ Eşit Uzaklıkta, Butonlar Çizginin Altında Eşit Aralıklı */}
           <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[94px] xl:h-[103px] 2xl:h-[112px] grid grid-cols-[1fr_auto_1fr] items-center">
-            {/* Sol 3 Buton: Araları eşit açılmış, logodan yatayda uzaklaştırılmış */}
-            <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pr-8 xl:pr-14 -mt-2">
+            {/* Sol 3 Buton: Çizginin altında, araları eşit açılmış, logodan yatayda uzaklaştırılmış */}
+            <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pr-8 xl:pr-14 mt-4 xl:mt-5">
               <Link href="/" className={getLinkClass(pathname === "/")}>
                 Anasayfa
               </Link>
@@ -294,8 +294,8 @@ export function Navbar() {
               </Link>
             </div>
 
-            {/* Sağ 3 Buton: Araları eşit açılmış, logodan yatayda uzaklaştırılmış, sağ kenara eşit mesafe */}
-            <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pl-8 xl:pl-14 -mt-2">
+            {/* Sağ 3 Buton: Çizginin altında, araları eşit açılmış, logodan yatayda uzaklaştırılmış, sağ kenara eşit mesafe */}
+            <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pl-8 xl:pl-14 mt-4 xl:mt-5">
               <Link
                 href="/aydinlattigimiz-mekanlar"
                 className={getLinkClass(pathname === "/aydinlattigimiz-mekanlar")}
