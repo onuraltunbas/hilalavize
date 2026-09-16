@@ -166,5 +166,67 @@
     "images": [
       "/products/yerli-urunler/photo/HL-YRL-770.jpeg"
     ]
+  },
+  {
+    "no": 9,
+    "id": "YRL-780",
+    "code": "HL-YRL-780",
+    "name": "HL-YRL-780",
+    "badge": "Özel Ölçü Üretim",
+    "dimensions": "Çap: 66 cm | Kol Yüksekliği: 35 cm | Toplam Yükseklik: 70-170 cm (Ayarlanabilir Zincir) | Rozans: 12 cm",
+    "lightingType": "6 lı E14 Mum Ampul Duy (İsteğe Göre LED Modülü)",
+    "shortDescription": "İstenilen renkte (pirinç eskitme veya mat siyah) ve ebatta üretilebilen, 6 ince kollu şamdan formunda modern salon avizesi.",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-780.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-780_2.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-780_3.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "66 cm Çap ve Ayarlanabilir Zincir Boyu (70-170 cm)",
+      "Eskitme Pirinç veya Mat Siyah Gövde Seçeneği",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ]
+  },
+  {
+    "no": 10,
+    "id": "YRL-790",
+    "code": "HL-YRL-790",
+    "name": "HL-YRL-790",
+    "badge": "Özel İmalat Seri",
+    "dimensions": "Genişlik: 90-110 cm | Mekanınıza Göre Özel Ebat ve Zincir Boyu",
+    "lightingType": "8 li E14 Duy (Kristal Prizma Kuşaklı)",
+    "shortDescription": "Yemek masaları ve salonlar için eskitme pirinç gövde, prizmatik kristal bordür ve 8 kollu şamdan ışık tasarımıyla mekana özel üretilen lüks avize.",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-790.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Prizmatik Kristal Taş Bordürlü Eskitme Pirinç Gövde",
+      "Yemek Masası Boyutlarına Birebir Uygun Ölçülendirme",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ]
+  },
+  {
+    "no": 11,
+    "id": "YRL-800",
+    "code": "HL-YRL-800",
+    "name": "HL-YRL-800",
+    "badge": "Özel İmalat Seri",
+    "dimensions": "Çap: 70-80 cm | İstenilen Çap ve Zincir Yüksekliğinde İmalat",
+    "lightingType": "6 lı E14 Duy (Kristal Çubuk Bordürlü)",
+    "shortDescription": "Dairesel pirinç konstrüksiyonu çevreleyen kristal prizma taşları ve 6 adet şamdan kolu ile mekana göre özel imal edilen saray tipi yerli avize.",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-800.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Dairesel Kristal Bordür ve Eskitme Pirinç İşçiliği",
+      "Tavan Yüksekliğinize Göre Ayarlanabilir Taşıyıcı Zincir",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ]
   }
 ]

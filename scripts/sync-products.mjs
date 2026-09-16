@@ -109,7 +109,19 @@ function findPhotosForProduct(catFolder, itemNo, productId, code, customPhoto, c
         return baseName === code || baseName.startsWith(`${code}_`) || baseName.startsWith(`${code}-`);
       });
       if (codeFiles.length > 0) {
-        codeFiles.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
+        codeFiles.sort((a, b) => {
+          const getRank = (filename, target) => {
+            const base = path.parse(filename).name;
+            if (base === target) return 1;
+            const m = base.match(/[_-](\d+)$/);
+            if (m) return parseInt(m[1], 10);
+            return 99;
+          };
+          const rankA = getRank(a, code);
+          const rankB = getRank(b, code);
+          if (rankA !== rankB) return rankA - rankB;
+          return a.localeCompare(b, undefined, { numeric: true });
+        });
         return codeFiles.map((f) => `/products/${catFolder}/photo/${f}`);
       }
     }
@@ -124,7 +136,19 @@ function findPhotosForProduct(catFolder, itemNo, productId, code, customPhoto, c
         return baseName === productId || baseName.startsWith(`${productId}_`) || baseName.startsWith(`${productId}-`);
       });
       if (idFiles.length > 0) {
-        idFiles.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
+        idFiles.sort((a, b) => {
+          const getRank = (filename, target) => {
+            const base = path.parse(filename).name;
+            if (base === target) return 1;
+            const m = base.match(/[_-](\d+)$/);
+            if (m) return parseInt(m[1], 10);
+            return 99;
+          };
+          const rankA = getRank(a, productId);
+          const rankB = getRank(b, productId);
+          if (rankA !== rankB) return rankA - rankB;
+          return a.localeCompare(b, undefined, { numeric: true });
+        });
         return idFiles.map((f) => `/products/${catFolder}/photo/${f}`);
       }
     }
