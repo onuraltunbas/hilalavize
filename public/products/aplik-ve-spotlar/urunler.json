@@ -168,5 +168,143 @@
     "shortDescription": "360*200*H230mm boyutlarında altın sarısı gövde, prizmatik kristal taş dizilimi ve 20W LED ışık gücüyle göz alıcı LOYA aplik.",
     "id": "ASP-017",
     "code": "HL-ASP-017"
+  },
+  {
+    "no": 18,
+    "id": "ASP-018",
+    "code": "HL-ASP-018",
+    "name": "HL-ASP-018",
+    "badge": "Tasarım Aplik",
+    "dimensions": "Genişlik: 28 cm | Yükseklik: 55 cm",
+    "lightingType": "2 li G9 Duy (Opal Beyaz Cam Küreli)",
+    "shortDescription": "Zarif kavisli pirinç gövde ve çift opal beyaz cam küresiyle yatak başı, koridor ve salon duvarlarında huzurlu bir ışık yayar.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-018.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-018_2.jpeg"
+    ]
+  },
+  {
+    "no": 19,
+    "id": "ASP-019",
+    "code": "HL-ASP-019",
+    "name": "HL-ASP-019",
+    "badge": "Modern LED Aplik",
+    "dimensions": "Yükseklik: 60 cm | Genişlik: 15 cm",
+    "lightingType": "Dahili 3000K Günışığı LED Modülü",
+    "shortDescription": "Merkezi gövde etrafında helezonik kıvrılan akıcı LED hattı ile duvarlarda heykelsi ve modern bir ışık formu oluşturur.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-019.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-019_2.jpeg"
+    ]
+  },
+  {
+    "no": 20,
+    "id": "ASP-020",
+    "code": "HL-ASP-020",
+    "name": "HL-ASP-020",
+    "badge": "Minimalist LED Aplik",
+    "dimensions": "Yükseklik: 80-100 cm | Çap: Ø2.5 cm",
+    "lightingType": "Dahili Arka Endirekt LED (Sıcak Işık)",
+    "shortDescription": "Duvara vuran yumuşak endirekt ışığı ve ince pirinç çubuk formuyla tablo yanları, koridor ve salonlar için lüks minimalist aplik.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-020.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-020_2.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-020_3.jpeg"
+    ]
+  },
+  {
+    "no": 21,
+    "id": "ASP-021",
+    "code": "HL-ASP-021",
+    "name": "HL-ASP-021",
+    "badge": "Lüks Kristal Aplik",
+    "dimensions": "Genişlik: 22 cm | Yükseklik: 65 cm",
+    "lightingType": "2 li E14 Duy (Kristal Prizma Işık Yayılımı)",
+    "shortDescription": "Altın sarısı dikey borular ve ortasındaki prizmatik kristal taş kuşağıyla duvarlarda saray zarafetinde parıltı sunan lüks aplik.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-021.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-021_2.jpeg"
+    ]
+  },
+  {
+    "no": 22,
+    "id": "ASP-022",
+    "code": "HL-ASP-022",
+    "name": "HL-ASP-022",
+    "badge": "Krom Meşale Aplik",
+    "dimensions": "Yükseklik: 55 cm | Çap: 15 cm",
+    "lightingType": "E27 / E14 Duy (Şeffaf Cam Küre)",
+    "shortDescription": "Uzun krom meşale formu ve üstündeki berrak şeffaf cam küresiyle antre ve koridorlara çağdaş bir parlaklık kazandırır.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-022.jpeg"
+    ]
+  },
+  {
+    "no": 23,
+    "id": "ASP-023",
+    "code": "HL-ASP-023",
+    "name": "HL-ASP-023",
+    "badge": "Kumaş Şapkalı Aplik",
+    "dimensions": "Yükseklik: 45 cm | Şapka Çapı: 16 cm",
+    "lightingType": "E14 Duy (Kumaş Abajur Başlığı)",
+    "shortDescription": "Pirinç döküm gövde ve krem kumaş konik şapkası ile yatak odası ve oturma alanlarında gözü dinlendiren sıcak bir ambiyans ışığı.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-023.jpeg"
+    ]
+  },
+  {
+    "no": 24,
+    "id": "ASP-024",
+    "code": "HL-ASP-024",
+    "name": "HL-ASP-024",
+    "badge": "Rustik Bal Cam Aplik",
+    "dimensions": "Yükseklik: 35 cm | Derinlik: 22 cm",
+    "lightingType": "E27 Duy (Rustik Filament & LED Uyumlu)",
+    "shortDescription": "Kavisli pirinç kolu ve bal rengi şeffaf cam küresiyle rustik ve sıcak tonlu mekanların vazgeçilmez duvar aydınlatması.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-024.jpeg"
+    ]
+  },
+  {
+    "no": 25,
+    "id": "ASP-025",
+    "code": "HL-ASP-025",
+    "name": "HL-ASP-025",
+    "badge": "5 li Tavan Ray Spotu",
+    "dimensions": "Genişlik: 120 cm | Spot Çapı: Ø6 cm",
+    "lightingType": "5 x GU10 / Dahili LED (360° Yönlendirilebilir)",
+    "shortDescription": "Mat siyah lineer tavan tablası üzerinde 5 adet bağımsız yönlendirilebilir silindir spotuyla mimari ve modern vurgu aydınlatması.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-025.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-025_2.jpeg"
+    ]
+  },
+  {
+    "no": 26,
+    "id": "ASP-026",
+    "code": "HL-ASP-026",
+    "name": "HL-ASP-026",
+    "badge": "Dekoratif Aplik",
+    "dimensions": "Standart Ölçü / Duvar Tipi",
+    "lightingType": "LED / E27 Uyumlu",
+    "shortDescription": "Şık hatları ve kaliteli malzeme yapısıyla iç mekan duvarlarına estetik dokunuş katan çağdaş aplik modeli.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-026.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-026_2.jpeg"
+    ]
+  },
+  {
+    "no": 27,
+    "id": "ASP-027",
+    "code": "HL-ASP-027",
+    "name": "HL-ASP-027",
+    "badge": "Tasarım Aplik",
+    "dimensions": "Standart Ölçü / Duvar Tipi",
+    "lightingType": "LED / G9-E14 Uyumlu",
+    "shortDescription": "Modern yaşam alanları, koridor ve antreler için hem aydınlatma hem de sanatsal duvar dekoru sunan şık aplik.",
+    "images": [
+      "/products/aplik-ve-spotlar/photo/HL-ASP-027.jpeg",
+      "/products/aplik-ve-spotlar/photo/HL-ASP-027_2.jpeg"
+    ]
   }
 ]

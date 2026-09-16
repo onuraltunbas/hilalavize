@@ -77,7 +77,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/images/categories/banner_aplikler.jpg",
     featured: true,
     subcategories: [],
-    itemCount: 17,
+    itemCount: 27,
   },
   {
     slug: "yerli-urunler",
@@ -93,7 +93,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/products/yerli-urunler/photo/770.jpeg",
     featured: true,
     subcategories: [],
-    itemCount: 42,
+    itemCount: 32,
   },
   {
     slug: "aksesuar",
