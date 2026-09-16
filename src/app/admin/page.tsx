@@ -471,7 +471,7 @@ export default function AdminPage() {
                   required
                   value={loginUsername}
                   onChange={(e) => setLoginUsername(e.target.value)}
-                  placeholder="Kullanıcı adınız (Örn: onur, cigdem, lutfiye)"
+                  placeholder="Kullanıcı adı giriniz"
                   className="w-full bg-[#F4F4F1] hover:bg-[#EFEFEA] focus:bg-white border border-[#E6E5E0] focus:border-[#93826E] rounded-xl pl-10 pr-3 py-3 text-xs sm:text-sm text-[#141414] focus:outline-none focus:ring-2 focus:ring-[#93826E]/20 transition-all"
                 />
               </div>
