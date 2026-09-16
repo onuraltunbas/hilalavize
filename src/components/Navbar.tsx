@@ -58,7 +58,7 @@ export function Navbar() {
 
       if (heroHeading) {
         const headingRect = heroHeading.getBoundingClientRect();
-        const navHeight = 100;
+        const navHeight = 94;
         const headingPageY = headingRect.top + scrollY;
         const arrivalScrollY = Math.max(100, headingPageY - navHeight);
         const startScrollY = Math.max(30, arrivalScrollY * 0.25);
@@ -172,14 +172,14 @@ export function Navbar() {
             ========================================================================= */}
         <nav className="hidden lg:block w-full relative backdrop-blur-md backdrop-saturate-150">
           {/* YAZILIMSAL SVG KATMANI: Koleksiyonları Keşfet gradienti gibi yumuşak beyazdan siyaha geçiş */}
-          <div className="absolute inset-0 w-full h-[100px] xl:h-[109px] 2xl:h-[118px] pointer-events-none overflow-visible">
+          <div className="absolute inset-0 w-full h-[94px] xl:h-[103px] 2xl:h-[112px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 1440 115"
               preserveAspectRatio="none"
               className="w-full h-full block"
             >
               <defs>
-                {/* 1. Koyu Gradient: Saf monokrom akıcı geçiş, alt 2px yukarıdan aşağıya şeffaflaşır (en altta tam şeffaf) */}
+                {/* 1. Koyu Gradient: Referans görseldeki gibi saf monokrom akıcı geçiş ve alt kısımda tam katı siyah (#000000) */}
                 <linearGradient id="chatgptNavGradDark" x1="0" y1="0" x2="0" y2="100%">
                   <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.82" />
                   <stop offset="12%" stopColor="#DDDDDD" stopOpacity="0.85" />
@@ -188,20 +188,16 @@ export function Navbar() {
                   <stop offset="52%" stopColor="#585858" stopOpacity="0.96" />
                   <stop offset="65%" stopColor="#2A2A2A" stopOpacity="0.99" />
                   <stop offset="78%" stopColor="#000000" stopOpacity="1.0" />
-                  <stop offset="98%" stopColor="#000000" stopOpacity="1.0" />
-                  <stop offset="99%" stopColor="#000000" stopOpacity="0.5" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="0.0" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
-                {/* 2. Açık Gradient: Aşağı indikçe siyah kısım beyaza döner, alt 2px şeffaflaşır */}
+                {/* 2. Açık Gradient: Aşağı indikçe siyah kısım beyaza döner */}
                 <linearGradient id="chatgptNavGradLight" x1="0" y1="0" x2="0" y2="100%">
                   <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.80" />
                   <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.83" />
                   <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.87" />
                   <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.92" />
-                  <stop offset="98%" stopColor="#FAF9F6" stopOpacity="0.95" />
-                  <stop offset="99%" stopColor="#FAF9F6" stopOpacity="0.48" />
-                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.0" />
+                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.95" />
                 </linearGradient>
 
                 {/* Alt kenardaki parıldayan lüks altın hat */}
@@ -255,7 +251,7 @@ export function Navbar() {
           </div>
 
           {/* İÇERİK: Sol ve Sağ Eşit Uzaklıkta, Butonlar Eşit Aralıklı ve Logodan Dengeli Uzaklaştırılmış */}
-          <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[100px] xl:h-[109px] 2xl:h-[118px] grid grid-cols-[1fr_auto_1fr] items-center">
+          <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[94px] xl:h-[103px] 2xl:h-[112px] grid grid-cols-[1fr_auto_1fr] items-center">
             {/* Sol 3 Buton: Araları eşit açılmış, logodan yatayda uzaklaştırılmış */}
             <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pr-8 xl:pr-14 -mt-2">
               <Link href="/" className={getLinkClass(pathname === "/")}>
@@ -334,14 +330,14 @@ export function Navbar() {
             ========================================================================= */}
         <nav className="lg:hidden w-full relative backdrop-blur-md backdrop-saturate-150">
           {/* Mobil/Tablet SVG Katmanı: Logoya tam sığacak genişlikte kavisli çentik */}
-          <div className="absolute inset-0 w-full h-[100px] sm:h-[110px] pointer-events-none overflow-visible">
+          <div className="absolute inset-0 w-full h-[94px] sm:h-[104px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 500 100"
               preserveAspectRatio="none"
               className="w-full h-full block"
             >
               <defs>
-                {/* 1. Koyu Gradient (Mobil): Saf monokrom akıcı geçiş, alt 2px yukarıdan aşağıya şeffaflaşır (en altta tam şeffaf) */}
+                {/* 1. Koyu Gradient (Mobil): Referans görseldeki gibi saf monokrom akıcı geçiş ve alt kısımda tam katı siyah (#000000) */}
                 <linearGradient id="mobileNavGradDark" x1="0" y1="0" x2="0" y2="100%">
                   <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.82" />
                   <stop offset="12%" stopColor="#DDDDDD" stopOpacity="0.85" />
@@ -350,20 +346,16 @@ export function Navbar() {
                   <stop offset="52%" stopColor="#585858" stopOpacity="0.96" />
                   <stop offset="65%" stopColor="#2A2A2A" stopOpacity="0.99" />
                   <stop offset="78%" stopColor="#000000" stopOpacity="1.0" />
-                  <stop offset="98%" stopColor="#000000" stopOpacity="1.0" />
-                  <stop offset="99%" stopColor="#000000" stopOpacity="0.5" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="0.0" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
-                {/* 2. Açık Gradient (Mobil): Aşağı indikçe siyah kısım beyaza döner, alt 2px şeffaflaşır */}
+                {/* 2. Açık Gradient (Mobil): Aşağı indikçe siyah kısım beyaza döner */}
                 <linearGradient id="mobileNavGradLight" x1="0" y1="0" x2="0" y2="100%">
                   <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.80" />
                   <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.83" />
                   <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.87" />
                   <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.92" />
-                  <stop offset="98%" stopColor="#FAF9F6" stopOpacity="0.95" />
-                  <stop offset="99%" stopColor="#FAF9F6" stopOpacity="0.48" />
-                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.0" />
+                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.95" />
                 </linearGradient>
 
                 <linearGradient id="mobileGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -407,7 +399,7 @@ export function Navbar() {
           </div>
 
           {/* Merkez Logo: Sağında/solunda buton yok, menü yazısı yok, doğrudan logoya basınca menü açılır */}
-          <div className="relative z-10 w-full px-4 h-[100px] sm:h-[110px] flex items-center justify-center">
+          <div className="relative z-10 w-full px-4 h-[94px] sm:h-[104px] flex items-center justify-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="relative flex items-center justify-center group cursor-pointer active:scale-95 transition-transform"
@@ -432,7 +424,7 @@ export function Navbar() {
             3. LOGODAN AŞAĞI DOĞRU AÇILAN ANİMASYONLU BEYAZ MOBİL & TABLET MENÜSÜ
             ========================================================================= */}
         <div
-          className={`lg:hidden fixed inset-x-0 top-[100px] sm:top-[110px] bottom-0 z-50 transition-all duration-500 ease-out overflow-hidden ${
+          className={`lg:hidden fixed inset-x-0 top-[94px] sm:top-[104px] bottom-0 z-50 transition-all duration-500 ease-out overflow-hidden ${
             mobileMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none -translate-y-6"
@@ -446,7 +438,7 @@ export function Navbar() {
 
           {/* Logodan Aşağı Kayan Şık Beyaz Menü Paneli (Sitenin renkleriyle tam uyumlu) */}
           <div
-            className={`relative mx-auto w-[94%] sm:w-[88%] max-w-md max-h-[calc(100vh-120px)] overflow-y-auto bg-[#FAF9F6] border border-[#E1E0DD] rounded-2xl shadow-2xl p-4 sm:p-5 space-y-4 transition-all duration-500 ease-out mt-2 ${
+            className={`relative mx-auto w-[94%] sm:w-[88%] max-w-md max-h-[calc(100vh-114px)] overflow-y-auto bg-[#FAF9F6] border border-[#E1E0DD] rounded-2xl shadow-2xl p-4 sm:p-5 space-y-4 transition-all duration-500 ease-out mt-2 ${
               mobileMenuOpen
                 ? "translate-y-0 scale-100 opacity-100"
                 : "-translate-y-8 scale-95 opacity-0"
