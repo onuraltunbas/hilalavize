@@ -116,7 +116,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#00880E] hover:bg-[#00730c] text-white font-bold py-3.5 px-4 rounded-lg text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
+                className="w-full bg-[#1D7E45] hover:bg-[#17693a] text-white font-bold py-3.5 px-4 rounded-lg text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 Teklif Al

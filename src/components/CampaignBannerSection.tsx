@@ -66,9 +66,9 @@ export function CampaignBannerSection() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-[#00880E] hover:bg-[#00730c] text-white font-bold px-7 py-3.5 rounded-lg text-xs sm:text-sm tracking-wide transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-98"
+                className="w-full sm:w-auto bg-[#1D7E45] hover:bg-[#17693a] text-white font-bold px-7 py-3.5 rounded-lg text-xs sm:text-sm tracking-wide transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-98"
               >
-                <MessageCircle className="w-4 h-4 fill-white text-[#00880E]" />
+                <MessageCircle className="w-4 h-4 fill-white text-[#1D7E45]" />
                 Danışmanlık İçin Başvur
               </a>
 

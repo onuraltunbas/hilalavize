@@ -84,7 +84,7 @@ export function Footer() {
               href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, Hilal Avize Showroom ürünleri için bilgi ve teklif almak istiyorum.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#00880E] hover:bg-[#00730c] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
+              className="bg-[#1D7E45] hover:bg-[#17693a] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               WhatsApp&apos;tan Teklif Al
@@ -119,7 +119,7 @@ export function Footer() {
               href={`https://wa.me/${electrical.contacts[0].whatsapp}?text=${encodeURIComponent("Merhaba, elektrik tesisat ve malzeme için teklif ve bilgi almak istiyorum.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#00880E] hover:bg-[#00730c] text-white text-xs font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
+              className="bg-[#1D7E45] hover:bg-[#17693a] text-white text-xs font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors shadow-sm w-full"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               WhatsApp&apos;tan Teklif Al

@@ -124,7 +124,7 @@ export function AiComplementaryProducts({ currentProduct }: AiComplementaryProps
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-[#00880E] hover:bg-[#00730c] text-white font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+              className="w-full bg-[#1D7E45] hover:bg-[#17693a] text-white font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors shadow-sm"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               Birlikte Teklif Al

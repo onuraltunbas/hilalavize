@@ -112,7 +112,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#00880E] hover:bg-[#00730c] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                className="w-full bg-[#1D7E45] hover:bg-[#17693a] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp ile Bu Hizmeti Talep Et

@@ -96,7 +96,7 @@ export function ServicesSection() {
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#00880E] hover:bg-[#00730c] text-white font-semibold px-4 py-2 rounded-lg text-xs flex items-center gap-1.5 transition-colors shadow-sm"
+                    className="bg-[#1D7E45] hover:bg-[#17693a] text-white font-semibold px-4 py-2 rounded-lg text-xs flex items-center gap-1.5 transition-colors shadow-sm"
                   >
                     Bilgi Al
                   </a>

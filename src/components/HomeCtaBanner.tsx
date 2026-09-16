@@ -26,7 +26,7 @@ export function HomeCtaBanner() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#00880E] hover:bg-[#00730c] text-white font-bold px-6 py-3 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                className="bg-[#1D7E45] hover:bg-[#17693a] text-white font-bold px-6 py-3 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp&apos;tan Fotoğraf Gönder

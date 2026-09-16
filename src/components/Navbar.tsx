@@ -581,7 +581,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#00880E] hover:bg-[#00730c] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                  className="bg-[#1D7E45] hover:bg-[#17693a] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
                 >
                   <Store className="w-3.5 h-3.5" />
                   <span>Showroom</span>
@@ -592,7 +592,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#00880E] hover:bg-[#00730c] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                  className="bg-[#1D7E45] hover:bg-[#17693a] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
                 >
                   <Zap className="w-3.5 h-3.5" />
                   <span>Elektrik Şube</span>
