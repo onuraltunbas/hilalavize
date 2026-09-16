@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ChevronRight, Home, Layers, Sparkles, Camera, Award, Info } from "lucide-react";
+import { ChevronRight, Sparkles, Camera, Award, Info } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -47,26 +47,10 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* 3. Mobil Hızlı Menü Butonları: Gradient bittikten sonraki açık alanda */}
+      {/* 3. Mobil Hızlı Menü Butonları: Gradient bittikten sonraki açık alanda (4 Buton) */}
       <div className="lg:hidden w-full bg-[#FAF9F6] border-b border-border/80 px-4 pt-1 pb-8">
         <div className="max-w-md mx-auto">
           <div className="grid grid-cols-2 gap-2.5">
-            <Link
-              href="/"
-              className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
-            >
-              <Home className="w-3.5 h-3.5 text-bronze shrink-0" />
-              <span>Ana Sayfa</span>
-            </Link>
-
-            <Link
-              href="/koleksiyonlar"
-              className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
-            >
-              <Layers className="w-3.5 h-3.5 text-bronze shrink-0" />
-              <span>Tüm Koleksiyonlar</span>
-            </Link>
-
             <Link
               href="/aydinlatma-nedir"
               className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"

@@ -16,6 +16,7 @@ const playfair = Playfair_Display({
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
+import { FloatingHomeButton } from "@/components/FloatingHomeButton";
 import { CookieConsent } from "@/components/CookieConsent";
 import { JsonLd } from "@/components/JsonLd";
 
@@ -142,6 +143,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <FloatingContact />
+        <FloatingHomeButton />
         <CookieConsent />
       </body>
     </html>

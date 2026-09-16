@@ -278,7 +278,7 @@ export function Navbar() {
             </div>
 
             {/* Ortada Logo (Kavisli yuvanın tam ortasında & arkasında sıcak altın ışık halesi) */}
-            <div className="relative shrink-0 px-6 xl:px-10 flex items-center justify-center -translate-y-[10px]">
+            <div className="relative shrink-0 px-6 xl:px-10 flex items-center justify-center -translate-y-[16px]">
               {/* Logonun altındaki sıcak altın aydınlatma halesi */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 xl:w-72 h-16 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.28)_0%,transparent_75%)] pointer-events-none blur-sm" />
 
