@@ -96,10 +96,21 @@ function findPhotosForProduct(catFolder, itemNo, productId, code, customPhoto, c
   const photoDir = path.join(PRODUCTS_DIR, catFolder, "photo");
   const validExts = [".jpg", ".jpeg", ".png", ".webp", ".JPG", ".JPEG", ".PNG", ".WEBP"];
 
+  // Öncelik 1: urunler.json içinde özel tanımlanmış / düzenlenmiş resim dizisi
+  if (Array.isArray(customImages) && customImages.length > 0) {
+    const validCustom = customImages.filter((img) => typeof img === "string" && img.trim() !== "");
+    if (validCustom.length > 0) {
+      return validCustom;
+    }
+  }
+  if (customPhoto) {
+    return [customPhoto];
+  }
+
   if (fs.existsSync(photoDir)) {
     const files = fs.readdirSync(photoDir);
 
-    // Öncelik 1: Tam ürün kodu ile arama (Örn: HL-KLS-001.jpeg, HL-KLS-001_2.jpeg)
+    // Öncelik 2: Tam ürün kodu ile arama (Örn: HL-KLS-001.jpeg, HL-KLS-001_2.jpeg)
     if (code) {
       const codeFiles = files.filter((f) => {
         if (f.startsWith(".")) return false;
@@ -153,16 +164,7 @@ function findPhotosForProduct(catFolder, itemNo, productId, code, customPhoto, c
       }
     }
   }
-
-  // Öncelik 3: Özel girilen resim dizisi veya tek resim
-  if (Array.isArray(customImages) && customImages.length > 0) {
-    return customImages;
-  }
-  if (customPhoto) {
-    return [customPhoto];
-  }
-
-  // Öncelik 4: Geriye uyumluluk için eski sayısal kural (10.jpg, 11.jpg vb.)
+  // Öncelik 3: Geriye uyumluluk için eski sayısal kural (10.jpg, 11.jpg vb.)
   const foundImages = [];
   if (fs.existsSync(photoDir)) {
     const files = fs.readdirSync(photoDir);

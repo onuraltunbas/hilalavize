@@ -34,6 +34,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import AddProductModal from "@/components/admin/AddProductModal";
+import EditProductModal from "@/components/admin/EditProductModal";
 
 interface AdminUserSession {
   username: string;
@@ -96,6 +97,28 @@ export default function AdminPage() {
   const [activePreviewImage, setActivePreviewImage] = useState<{ url: string; title: string } | null>(null);
   // Add product modal state (only for 'onur')
   const [isAddProductModalOpen, setIsAddProductModalOpen] = useState<boolean>(false);
+  // Edit product modal state (only for 'onur')
+  const [editingProduct, setEditingProduct] = useState<Product | null>(null);
+
+  const handleProductUpdated = (updatedProduct: Product, newPrice?: string | number) => {
+    setProducts((prev) =>
+      prev.map((p) => (p.code === updatedProduct.code ? updatedProduct : p))
+    );
+    if (newPrice !== undefined) {
+      setPrices((prev) => {
+        const next = { ...prev };
+        if (newPrice === null || String(newPrice).trim() === "") {
+          delete next[updatedProduct.code];
+        } else {
+          next[updatedProduct.code] = newPrice;
+        }
+        try {
+          localStorage.setItem("hilal_admin_prices_cache", JSON.stringify(next));
+        } catch {}
+        return next;
+      });
+    }
+  };
 
   // 1. Session & Local Cache Check on Mount
   useEffect(() => {
@@ -922,21 +945,37 @@ export default function AdminPage() {
                               </div>
                             )}
                           </div>
-                          <button
-                            type="button"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleCopy(product.code);
-                            }}
-                            className="p-1.5 rounded-lg bg-[#F4F4F1] hover:bg-[#EAE9E4] text-[#6B6A66] hover:text-[#141414] border border-[#E6E5E0] transition-colors shrink-0 cursor-pointer"
-                            title="Ürün Kodunu Kopyala"
-                          >
-                            {copiedCode === product.code ? (
-                              <Check className="w-3.5 h-3.5 text-emerald-600" />
-                            ) : (
-                              <Copy className="w-3.5 h-3.5" />
+                          <div className="flex items-center gap-1.5 shrink-0">
+                            {currentUser?.username?.toLowerCase() === "onur" && (
+                              <button
+                                type="button"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setEditingProduct(product);
+                                }}
+                                className="px-2.5 py-1.5 rounded-lg bg-[#93826E]/10 hover:bg-[#93826E] text-[#7A6956] hover:text-white border border-[#93826E]/30 text-xs font-bold transition-all flex items-center gap-1 cursor-pointer shadow-xs"
+                                title="Ürünün Özelliklerini ve Fotoğraflarını Düzenle"
+                              >
+                                <Edit3 className="w-3.5 h-3.5" />
+                                <span>Düzenle</span>
+                              </button>
                             )}
-                          </button>
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleCopy(product.code);
+                              }}
+                              className="p-1.5 rounded-lg bg-[#F4F4F1] hover:bg-[#EAE9E4] text-[#6B6A66] hover:text-[#141414] border border-[#E6E5E0] transition-colors shrink-0 cursor-pointer"
+                              title="Ürün Kodunu Kopyala"
+                            >
+                              {copiedCode === product.code ? (
+                                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                              ) : (
+                                <Copy className="w-3.5 h-3.5" />
+                              )}
+                            </button>
+                          </div>
                         </div>
 
                         {/* Teknik Özellikler (Boyut / Aydınlatma) */}
@@ -1031,7 +1070,7 @@ export default function AdminPage() {
                         </div>
                       </div>
 
-                      {/* Kart Altı: Sitedeki Ürün Detayına Git */}
+                      {/* Kart Altı: Sitedeki Ürün Detayına Git & Düzenle */}
                       <div className="pt-3 border-t border-[#E6E5E0] flex items-center justify-between gap-2 mt-2">
                         <Link
                           href={`/urun/${product.slug}`}
@@ -1041,9 +1080,21 @@ export default function AdminPage() {
                           <span>Sitede İncele</span>
                           <ChevronRight className="w-3.5 h-3.5 text-[#8C8B87] group-hover:translate-x-0.5 transition-transform" />
                         </Link>
-                        <span className="text-[10px] font-mono text-[#8C8B87]">
-                          ID: {product.id}
-                        </span>
+                        <div className="flex items-center gap-2">
+                          {currentUser?.username?.toLowerCase() === "onur" && (
+                            <button
+                              type="button"
+                              onClick={() => setEditingProduct(product)}
+                              className="text-[11px] font-bold text-[#93826E] hover:text-[#7A6956] bg-[#93826E]/10 hover:bg-[#93826E]/20 px-2 py-0.5 rounded-md border border-[#93826E]/25 flex items-center gap-1 transition-all cursor-pointer"
+                            >
+                              <Edit3 className="w-3 h-3" />
+                              <span>Düzenle</span>
+                            </button>
+                          )}
+                          <span className="text-[10px] font-mono text-[#8C8B87]">
+                            ID: {product.id}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1212,6 +1263,15 @@ export default function AdminPage() {
         onProductAdded={(newProduct) => {
           setProducts((prev) => [newProduct, ...prev]);
         }}
+      />
+      {/* 6. ÜRÜN VE FOTOĞRAF DÜZENLEME MODALI (Sadece Onur) */}
+      <EditProductModal
+        isOpen={!!editingProduct}
+        product={editingProduct}
+        onClose={() => setEditingProduct(null)}
+        currentUsername={currentUser?.username}
+        currentPrice={editingProduct ? prices[editingProduct.code] : undefined}
+        onProductUpdated={handleProductUpdated}
       />
     </div>
   );

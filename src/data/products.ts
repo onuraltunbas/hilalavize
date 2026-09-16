@@ -192,10 +192,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/klasik/photo/HL-KLS-007.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-007_2.jpeg",
     "images": [
-      "/products/klasik/photo/HL-KLS-007.jpeg",
-      "/products/klasik/photo/HL-KLS-007_2.jpeg"
+      "/products/klasik/photo/HL-KLS-007_2.jpeg",
+      "/products/klasik/photo/HL-KLS-007.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -219,10 +219,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
     "lightingType": "E14 Kandil Duy (LED Uyumlu)",
     "branch": "showroom",
-    "image": "/products/klasik/photo/HL-KLS-012.jpeg",
+    "image": "/products/klasik/photo/HL-KLS-012_2.jpeg",
     "images": [
-      "/products/klasik/photo/HL-KLS-012.jpeg",
-      "/products/klasik/photo/HL-KLS-012_2.jpeg"
+      "/products/klasik/photo/HL-KLS-012_2.jpeg",
+      "/products/klasik/photo/HL-KLS-012.jpeg"
     ],
     "features": [
       "E14 Kandil Duy (LED Uyumlu)",
@@ -324,10 +324,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "L600*W435*H1500mm / L530*W340*H1500mm / Φ800*H2000mm",
     "lightingType": "Dahili LED (18W / 21W / 86W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-002.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-002_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-002.jpeg",
-      "/products/ledli-grup/photo/HL-LED-002_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-002_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-002.jpeg"
     ],
     "features": [
       "Dahili LED (18W / 21W / 86W)",
@@ -377,10 +377,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "1800*350*H1700mm",
     "lightingType": "Dahili LED 58W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-004.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-004_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-004.jpeg",
-      "/products/ledli-grup/photo/HL-LED-004_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-004_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-004.jpeg"
     ],
     "features": [
       "Dahili LED 58W",
@@ -404,10 +404,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "1200*380*H1400mm / Φ280*H1950mm",
     "lightingType": "Dahili LED (42W / 52W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-005.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-005_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-005.jpeg",
-      "/products/ledli-grup/photo/HL-LED-005_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-005_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-005.jpeg"
     ],
     "features": [
       "Dahili LED (42W / 52W)",
@@ -430,10 +430,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ800*H1500mm / Φ600*H1200mm",
     "lightingType": "Dahili LED (92W / 196W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-006.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-006_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-006.jpeg",
-      "/products/ledli-grup/photo/HL-LED-006_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-006_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-006.jpeg"
     ],
     "features": [
       "Dahili LED (92W / 196W)",
@@ -457,10 +457,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ900*H2100mm",
     "lightingType": "Dahili LED 400W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-007.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-007_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-007.jpeg",
-      "/products/ledli-grup/photo/HL-LED-007_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-007_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-007.jpeg"
     ],
     "features": [
       "Dahili LED 400W",
@@ -483,10 +483,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ600*H2200mm / Φ450*H1500mm",
     "lightingType": "Dahili LED (128W / 192W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-008.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-008_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-008.jpeg",
-      "/products/ledli-grup/photo/HL-LED-008_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-008_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-008.jpeg"
     ],
     "features": [
       "Dahili LED (128W / 192W)",
@@ -510,10 +510,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ800*H1200mm / Φ600*H1200mm",
     "lightingType": "Dahili LED (50W / 86W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-009.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-009_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-009.jpeg",
-      "/products/ledli-grup/photo/HL-LED-009_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-009_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-009.jpeg"
     ],
     "features": [
       "Dahili LED (50W / 86W)",
@@ -536,10 +536,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ600*H1200mm / L1200*W300*H1200mm",
     "lightingType": "Dahili LED (40W / 60W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-010.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-010_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-010.jpeg",
-      "/products/ledli-grup/photo/HL-LED-010_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-010_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-010.jpeg"
     ],
     "features": [
       "Dahili LED (40W / 60W)",
@@ -587,10 +587,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ600*H1200mm / Φ600*H1000mm",
     "lightingType": "Dahili LED (40W / 67W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-012.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-012_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-012.jpeg",
-      "/products/ledli-grup/photo/HL-LED-012_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-012_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-012.jpeg"
     ],
     "features": [
       "Dahili LED (40W / 67W)",
@@ -614,10 +614,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ950*H1500mm / Φ760*H1500mm",
     "lightingType": "Dahili LED (80W / 100W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-013.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-013_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-013.jpeg",
-      "/products/ledli-grup/photo/HL-LED-013_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-013_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-013.jpeg"
     ],
     "features": [
       "Dahili LED (80W / 100W)",
@@ -640,10 +640,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ780*H1500mm / Φ680*H1500mm",
     "lightingType": "Dahili LED (60W / 80W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-014.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-014_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-014.jpeg",
-      "/products/ledli-grup/photo/HL-LED-014_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-014_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-014.jpeg"
     ],
     "features": [
       "Dahili LED (60W / 80W)",
@@ -667,10 +667,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ720*H1100mm / Φ980*H1100mm",
     "lightingType": "Dahili LED (80W / 160W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-015.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-015_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-015.jpeg",
-      "/products/ledli-grup/photo/HL-LED-015_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-015_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-015.jpeg"
     ],
     "features": [
       "Dahili LED (80W / 160W)",
@@ -693,10 +693,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ860*H1500mm / Φ740*H1500mm / L840*W480*H1500mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-016.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-016_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-016.jpeg",
-      "/products/ledli-grup/photo/HL-LED-016_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-016_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-016.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -720,10 +720,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "850*H1500mm",
     "lightingType": "Dahili LED 40W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-017.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-017_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-017.jpeg",
-      "/products/ledli-grup/photo/HL-LED-017_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-017_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-017.jpeg"
     ],
     "features": [
       "Dahili LED 40W",
@@ -746,10 +746,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ530*H1500mm / Φ630*H1500mm",
     "lightingType": "Dahili LED (48W / 64W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-018.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-018_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-018.jpeg",
-      "/products/ledli-grup/photo/HL-LED-018_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-018_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-018.jpeg"
     ],
     "features": [
       "Dahili LED (48W / 64W)",
@@ -772,10 +772,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "700*80*H1200mm / Φ100*H1200mm",
     "lightingType": "Dahili LED (14W / 70W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-019.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-019_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-019.jpeg",
-      "/products/ledli-grup/photo/HL-LED-019_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-019_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-019.jpeg"
     ],
     "features": [
       "Dahili LED (14W / 70W)",
@@ -798,10 +798,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ810*H660mm / Φ660*H660mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-020.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-020_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-020.jpeg",
-      "/products/ledli-grup/photo/HL-LED-020_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-020_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-020.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -824,10 +824,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ750*H550mm / 950*H710mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-021.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-021_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-021.jpeg",
-      "/products/ledli-grup/photo/HL-LED-021_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-021_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-021.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -850,10 +850,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ600*H1500mm / Φ500*H1500mm / Φ800*H1500mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-022.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-022_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-022.jpeg",
-      "/products/ledli-grup/photo/HL-LED-022_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-022_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-022.jpeg"
     ],
     "features": [
       "Dahili LED (3000K Sıcak Beyaz)",
@@ -877,10 +877,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "L1200*H1500mm",
     "lightingType": "Dahili LED (3000K Sıcak Beyaz)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-023.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-023_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-023.jpeg",
-      "/products/ledli-grup/photo/HL-LED-023_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-023_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-023.jpeg"
     ],
     "features": [
       "Dahili LED (3000K Sıcak Beyaz)",
@@ -904,10 +904,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "1100*500*H1500mm / Φ400*H1200mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-024.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-024_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-024.jpeg",
-      "/products/ledli-grup/photo/HL-LED-024_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-024_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-024.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -930,10 +930,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ300*H1200mm / Φ450*H1500mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-025.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-025_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-025.jpeg",
-      "/products/ledli-grup/photo/HL-LED-025_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-025_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-025.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -956,10 +956,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 45 cm",
     "lightingType": "Dahili LED Aydınlatma Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-026.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-026_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-026.jpeg",
-      "/products/ledli-grup/photo/HL-LED-026_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-026_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-026.jpeg"
     ],
     "features": [
       "Dahili LED Aydınlatma Modülü",
@@ -1032,10 +1032,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "440*320*H1500mm / 440*310*H1500mm",
     "lightingType": "Dahili LED (30W / 45W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-029.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-029_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-029.jpeg",
-      "/products/ledli-grup/photo/HL-LED-029_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-029_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-029.jpeg"
     ],
     "features": [
       "Dahili LED (30W / 45W)",
@@ -1058,10 +1058,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ600*H1300mm / Φ830*H1400mm",
     "lightingType": "Dahili LED (64W / 110W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-030.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-030_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-030.jpeg",
-      "/products/ledli-grup/photo/HL-LED-030_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-030_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-030.jpeg"
     ],
     "features": [
       "Dahili LED (64W / 110W)",
@@ -1084,10 +1084,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 70 cm, Yükseklik: 100 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-031.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-031_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-031.jpeg",
-      "/products/ledli-grup/photo/HL-LED-031_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-031_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-031.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1110,10 +1110,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 50 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-032.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-032_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-032.jpeg",
-      "/products/ledli-grup/photo/HL-LED-032_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-032_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-032.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1162,10 +1162,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ600mm",
     "lightingType": "Dahili LED 60W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-034.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-034_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-034.jpeg",
-      "/products/ledli-grup/photo/HL-LED-034_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-034_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-034.jpeg"
     ],
     "features": [
       "Dahili LED 60W",
@@ -1214,10 +1214,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ700*H1000mm / L920*H1000mm",
     "lightingType": "Dahili LED 30W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-036.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-036_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-036.jpeg",
-      "/products/ledli-grup/photo/HL-LED-036_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-036_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-036.jpeg"
     ],
     "features": [
       "Dahili LED 30W",
@@ -1240,10 +1240,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ690*H1200mm / 880*280*1200mm",
     "lightingType": "Dahili LED 84W",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-037.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-037_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-037.jpeg",
-      "/products/ledli-grup/photo/HL-LED-037_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-037_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-037.jpeg"
     ],
     "features": [
       "Dahili LED 84W",
@@ -1266,10 +1266,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ500mm / 570*570mm / 500*120mm",
     "lightingType": "Dahili LED (40W / 60W / 80W)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-038.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-038_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-038.jpeg",
-      "/products/ledli-grup/photo/HL-LED-038_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-038_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-038.jpeg"
     ],
     "features": [
       "Dahili LED (40W / 60W / 80W)",
@@ -1292,10 +1292,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 55 cm",
     "lightingType": "E14 Kandil Duy (LED Ampul Uyumlu)",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-039.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-039_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-039.jpeg",
-      "/products/ledli-grup/photo/HL-LED-039_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-039_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-039.jpeg"
     ],
     "features": [
       "E14 Kandil Duy (LED Ampul Uyumlu)",
@@ -1368,10 +1368,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 60 cm",
     "lightingType": "Dahili 3 Renk Kademeli LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-043.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-043_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-043.jpeg",
-      "/products/ledli-grup/photo/HL-LED-043_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-043_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-043.jpeg"
     ],
     "features": [
       "Dahili 3 Renk Kademeli LED Modülü",
@@ -1420,10 +1420,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ500*H500mm / 880*H780mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-045.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-045_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-045.jpeg",
-      "/products/ledli-grup/photo/HL-LED-045_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-045_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-045.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1472,10 +1472,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Φ750*H500mm / Φ900*H530mm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-047.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-047_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-047.jpeg",
-      "/products/ledli-grup/photo/HL-LED-047_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-047_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-047.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
@@ -1525,10 +1525,10 @@ export const PRODUCTS: Product[] = [
     "dimensions": "Çap: 65 cm",
     "lightingType": "Dahili LED Modülü",
     "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-049.jpeg",
+    "image": "/products/ledli-grup/photo/HL-LED-049_2.jpeg",
     "images": [
-      "/products/ledli-grup/photo/HL-LED-049.jpeg",
-      "/products/ledli-grup/photo/HL-LED-049_2.jpeg"
+      "/products/ledli-grup/photo/HL-LED-049_2.jpeg",
+      "/products/ledli-grup/photo/HL-LED-049.jpeg"
     ],
     "features": [
       "Dahili LED Modülü",
