@@ -172,7 +172,7 @@ export function Navbar() {
             ========================================================================= */}
         <nav className="hidden lg:block w-full relative backdrop-blur-md backdrop-saturate-150">
           {/* YAZILIMSAL SVG KATMANI: Koleksiyonları Keşfet gradienti gibi yumuşak beyazdan siyaha geçiş */}
-          <div className="absolute inset-0 w-full h-[99px] xl:h-[108px] 2xl:h-[117px] pointer-events-none overflow-visible">
+          <div className="absolute inset-0 w-full h-[114px] xl:h-[123px] 2xl:h-[132px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 1440 115"
               preserveAspectRatio="none"
@@ -251,7 +251,7 @@ export function Navbar() {
           </div>
 
           {/* İÇERİK: Sol ve Sağ Eşit Uzaklıkta, Butonlar Çizginin Altında Eşit Aralıklı */}
-          <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[99px] xl:h-[108px] 2xl:h-[117px] grid grid-cols-[1fr_auto_1fr] items-center">
+          <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[114px] xl:h-[123px] 2xl:h-[132px] grid grid-cols-[1fr_auto_1fr] items-center">
             {/* Sol 3 Buton: Çizginin altında, araları eşit açılmış, logodan yatayda uzaklaştırılmış */}
             <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pr-8 xl:pr-14 mt-4 xl:mt-5">
               <Link href="/" className={getLinkClass(pathname === "/")}>
