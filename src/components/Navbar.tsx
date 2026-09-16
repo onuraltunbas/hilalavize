@@ -179,23 +179,25 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* 1. Koyu Gradient: %15 daha şeffaflaştırılmış, sayfa tepesindeyken aktif */}
+                {/* 1. Koyu Gradient: Referans görseldeki gibi saf monokrom akıcı geçiş ve alt kısımda tam katı siyah (#000000) */}
                 <linearGradient id="chatgptNavGradDark" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
-                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.75" />
-                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.78" />
-                  <stop offset="68%" stopColor="#302820" stopOpacity="0.82" />
-                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.83" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="0.85" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.82" />
+                  <stop offset="12%" stopColor="#DDDDDD" stopOpacity="0.85" />
+                  <stop offset="25%" stopColor="#BCBCBC" stopOpacity="0.88" />
+                  <stop offset="38%" stopColor="#929292" stopOpacity="0.92" />
+                  <stop offset="52%" stopColor="#585858" stopOpacity="0.96" />
+                  <stop offset="65%" stopColor="#2A2A2A" stopOpacity="0.99" />
+                  <stop offset="78%" stopColor="#000000" stopOpacity="1.0" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
-                {/* 2. Açık Gradient: %15 daha şeffaflaştırılmış, aşağı indikçe siyah kısım beyaza döner */}
+                {/* 2. Açık Gradient: Aşağı indikçe siyah kısım beyaza döner */}
                 <linearGradient id="chatgptNavGradLight" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
-                  <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.75" />
-                  <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.79" />
-                  <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.82" />
-                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.85" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.80" />
+                  <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.83" />
+                  <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.87" />
+                  <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.92" />
+                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.95" />
                 </linearGradient>
 
                 {/* Alt kenardaki parıldayan lüks altın hat */}
@@ -335,23 +337,25 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* 1. Koyu Gradient (Mobil): %15 daha şeffaflaştırılmış */}
+                {/* 1. Koyu Gradient (Mobil): Referans görseldeki gibi saf monokrom akıcı geçiş ve alt kısımda tam katı siyah (#000000) */}
                 <linearGradient id="mobileNavGradDark" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
-                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.75" />
-                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.78" />
-                  <stop offset="68%" stopColor="#302820" stopOpacity="0.82" />
-                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.83" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="0.85" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.82" />
+                  <stop offset="12%" stopColor="#DDDDDD" stopOpacity="0.85" />
+                  <stop offset="25%" stopColor="#BCBCBC" stopOpacity="0.88" />
+                  <stop offset="38%" stopColor="#929292" stopOpacity="0.92" />
+                  <stop offset="52%" stopColor="#585858" stopOpacity="0.96" />
+                  <stop offset="65%" stopColor="#2A2A2A" stopOpacity="0.99" />
+                  <stop offset="78%" stopColor="#000000" stopOpacity="1.0" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
-                {/* 2. Açık Gradient (Mobil): %15 daha şeffaflaştırılmış */}
+                {/* 2. Açık Gradient (Mobil): Aşağı indikçe siyah kısım beyaza döner */}
                 <linearGradient id="mobileNavGradLight" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
-                  <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.75" />
-                  <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.79" />
-                  <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.82" />
-                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.85" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.80" />
+                  <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.83" />
+                  <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.87" />
+                  <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.92" />
+                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.95" />
                 </linearGradient>
 
                 <linearGradient id="mobileGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
