@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
+import { commitFilesToGitHub, isServerlessReadOnly, getRepoFileContent, GitCommitFile } from "@/lib/github-sync";
+import { saveProductAsync, readDynamicProducts } from "@/lib/products-store";
 
 export const dynamic = "force-dynamic";
 
@@ -48,7 +50,7 @@ const CATEGORY_CONFIGS: Record<
   },
 };
 
-function getNextProductCode(catSlug: string) {
+async function getNextProductCode(catSlug: string) {
   const rootDir = process.cwd();
   const catConfig = CATEGORY_CONFIGS[catSlug];
   if (!catConfig) {
@@ -62,6 +64,27 @@ function getNextProductCode(catSlug: string) {
       items = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
     } catch {}
   }
+
+  // Eğer sunucusuz ortamda dosya boş veya eksikse GitHub'dan çekmeyi dene
+  if (items.length === 0) {
+    const remoteContent = await getRepoFileContent(`products/${catConfig.folder}/urunler.json`);
+    if (remoteContent) {
+      try {
+        items = JSON.parse(remoteContent);
+      } catch {}
+    }
+  }
+
+  // Dinamik olarak eklenmiş ama henüz derlenmemiş ürünleri de dahil et
+  try {
+    const dynamicItems = await readDynamicProducts();
+    const catDynamics = dynamicItems.filter((d) => d.categorySlug === catSlug);
+    for (const d of catDynamics) {
+      if (!items.some((it) => (it.code || it.id) === (d.code || d.id))) {
+        items.push(d);
+      }
+    }
+  } catch {}
 
   if (catConfig.step === 10) {
     let max = 690;
@@ -115,7 +138,7 @@ export async function GET(req: Request) {
       );
     }
 
-    const codeInfo = getNextProductCode(categorySlug);
+    const codeInfo = await getNextProductCode(categorySlug);
     return NextResponse.json({
       success: true,
       ...codeInfo,
@@ -171,21 +194,26 @@ export async function POST(req: Request) {
 
     const catConfig = CATEGORY_CONFIGS[categorySlug];
     const rootDir = process.cwd();
+    const isReadOnly = isServerlessReadOnly();
 
     // 1. Kod Üretimi
-    const { code, id, no } = getNextProductCode(categorySlug);
+    const { code, id, no } = await getNextProductCode(categorySlug);
 
-    // 2. Görselleri Kaydet (products/ & public/products/)
+    // 2. Görselleri Hazırla
+    const gitFilesToCommit: GitCommitFile[] = [];
+    const savedImageUrls: string[] = [];
     const photoDir = path.join(rootDir, "products", catConfig.folder, "photo");
     const publicPhotoDir = path.join(rootDir, "public", "products", catConfig.folder, "photo");
 
-    if (!fs.existsSync(photoDir)) fs.mkdirSync(photoDir, { recursive: true });
-    if (!fs.existsSync(publicPhotoDir)) fs.mkdirSync(publicPhotoDir, { recursive: true });
-
-    const savedImageUrls: string[] = [];
+    // Yerel disk yazılabilir ise klasörleri aç
+    if (!isReadOnly) {
+      try {
+        if (!fs.existsSync(photoDir)) fs.mkdirSync(photoDir, { recursive: true });
+        if (!fs.existsSync(publicPhotoDir)) fs.mkdirSync(publicPhotoDir, { recursive: true });
+      } catch {}
+    }
 
     images.forEach((imgObj: { name: string; base64: string }, index: number) => {
-      // Base64 header temizle: data:image/jpeg;base64,...
       let rawBase64 = imgObj.base64 || "";
       let ext = ".jpeg";
       if (rawBase64.includes(";base64,")) {
@@ -200,15 +228,31 @@ export async function POST(req: Request) {
       }
 
       const fileName = index === 0 ? `${code}${ext}` : `${code}_${index + 1}${ext}`;
-      const destPath1 = path.join(photoDir, fileName);
-      const destPath2 = path.join(publicPhotoDir, fileName);
 
-      const buffer = Buffer.from(rawBase64, "base64");
-      fs.writeFileSync(destPath1, buffer);
-      try {
-        fs.writeFileSync(destPath2, buffer);
-      } catch {}
+      // Yerel ortamsa diske yazmayı dene (hata verirse güvenle yakala)
+      if (!isReadOnly) {
+        try {
+          const buffer = Buffer.from(rawBase64, "base64");
+          fs.writeFileSync(path.join(photoDir, fileName), buffer);
+          fs.writeFileSync(path.join(publicPhotoDir, fileName), buffer);
+        } catch (localWriteErr) {
+          console.warn("Yerel disk yazma uyarısı:", localWriteErr);
+        }
+      }
 
+      // GitHub commit listesine ekle
+      gitFilesToCommit.push({
+        path: `products/${catConfig.folder}/photo/${fileName}`,
+        content: rawBase64,
+        isBase64: true,
+      });
+      gitFilesToCommit.push({
+        path: `public/products/${catConfig.folder}/photo/${fileName}`,
+        content: rawBase64,
+        isBase64: true,
+      });
+
+      // Sitede kullanılacak yerel yol
       savedImageUrls.push(`/products/${catConfig.folder}/photo/${fileName}`);
     });
 
@@ -241,10 +285,8 @@ export async function POST(req: Request) {
       ];
     }
 
-    // 4. urunler.json Dosyasına Ekle
+    // 4. urunler.json Dosyasını Güncelle
     const urunlerJsonPath = path.join(rootDir, "products", catConfig.folder, "urunler.json");
-    const publicUrunlerJsonPath = path.join(rootDir, "public", "products", catConfig.folder, "urunler.json");
-
     let currentItems: any[] = [];
     if (fs.existsSync(urunlerJsonPath)) {
       try {
@@ -252,61 +294,129 @@ export async function POST(req: Request) {
       } catch {}
     }
 
+    if (currentItems.length === 0) {
+      const remoteContent = await getRepoFileContent(`products/${catConfig.folder}/urunler.json`);
+      if (remoteContent) {
+        try {
+          currentItems = JSON.parse(remoteContent);
+        } catch {}
+      }
+    }
+
     currentItems.push(newProductItem);
     const jsonStr = JSON.stringify(currentItems, null, 2);
-    fs.writeFileSync(urunlerJsonPath, jsonStr, "utf-8");
-    try {
-      fs.writeFileSync(publicUrunlerJsonPath, jsonStr, "utf-8");
-    } catch {}
 
-    // 5. Kategori Sayaç Güncellemesi (src/data/categories.ts)
+    if (!isReadOnly) {
+      try {
+        fs.writeFileSync(urunlerJsonPath, jsonStr, "utf-8");
+        fs.writeFileSync(
+          path.join(rootDir, "public", "products", catConfig.folder, "urunler.json"),
+          jsonStr,
+          "utf-8"
+        );
+      } catch (localJsonErr) {
+        console.warn("Yerel urunler.json yazma uyarısı:", localJsonErr);
+      }
+    }
+
+    gitFilesToCommit.push({
+      path: `products/${catConfig.folder}/urunler.json`,
+      content: jsonStr,
+    });
+    gitFilesToCommit.push({
+      path: `public/products/${catConfig.folder}/urunler.json`,
+      content: jsonStr,
+    });
+
+    // 5. categories.ts Sayaç Güncellemesi
     try {
       const catTsPath = path.join(rootDir, "src", "data", "categories.ts");
+      let catTsContent = "";
       if (fs.existsSync(catTsPath)) {
-        let catTsContent = fs.readFileSync(catTsPath, "utf-8");
-        // İlgili kategorinin itemCount değerini 1 artır
+        catTsContent = fs.readFileSync(catTsPath, "utf-8");
+      } else {
+        catTsContent = (await getRepoFileContent("src/data/categories.ts")) || "";
+      }
+
+      if (catTsContent) {
         const regex = new RegExp(`(slug:\\s*["\']${categorySlug}["\'][\\s\\S]*?itemCount:\\s*)(\\d+)`, "m");
         if (regex.test(catTsContent)) {
           catTsContent = catTsContent.replace(regex, (_m, p1, p2) => `${p1}${parseInt(p2, 10) + 1}`);
-          fs.writeFileSync(catTsPath, catTsContent, "utf-8");
+          if (!isReadOnly) {
+            try {
+              fs.writeFileSync(catTsPath, catTsContent, "utf-8");
+            } catch {}
+          }
+          gitFilesToCommit.push({
+            path: "src/data/categories.ts",
+            content: catTsContent,
+          });
         }
       }
     } catch (catErr) {
-      console.warn("categories.ts itemCount güncelleme uyarısı:", catErr);
+      console.warn("categories.ts güncelleme uyarısı:", catErr);
     }
 
-    // 6. sync-products.mjs Scriptini Çalıştır (compiled-products.json ve products.ts anında güncellenir)
+    // 6. ANLIK KULLANILABİLİRLİK: Gist / Dinamik Ürün Deposuna Kaydet (Sıfır bekleme süresi)
+    const clientProduct = {
+      id,
+      code,
+      name: code,
+      slug: code.toLowerCase(),
+      categorySlug,
+      categoryName: catConfig.name,
+      badge: cleanBadge,
+      dimensions: cleanDim,
+      lightingType: cleanLight,
+      shortDescription: cleanDesc,
+      description: cleanDesc,
+      image: savedImageUrls[0],
+      images: savedImageUrls,
+      branch: "showroom" as const,
+      features: newProductItem.features || [
+        "Hilal Avize Güvencesiyle 2 Yıl Garanti",
+        "Birinci Sınıf Malzeme ve İşçilik",
+        "Kolay Temizlenebilir Yüzey",
+        "Türkiye Geneli Sigortalı Kargo",
+      ],
+      seoTitle: `${code} - ${catConfig.name} | Hilal Avize`,
+      seoDescription: cleanDesc,
+    };
+
     try {
-      execSync("node scripts/sync-products.mjs", { cwd: rootDir });
-    } catch (syncErr: any) {
-      console.error("sync-products çalıştırma hatası:", syncErr.message);
+      await saveProductAsync(clientProduct);
+    } catch (saveErr) {
+      console.warn("saveProductAsync uyarısı:", saveErr);
     }
 
-    // 7. Yerel Git Commit (Arka planda kalıcı hale getirme)
-    try {
-      execSync(
-        `git add products/${catConfig.folder}/ products/ compiled-products.json public/products/ src/data/categories.ts && git commit -m "feat(product): yeni urun ${code} eklendi"`,
-        { cwd: rootDir, stdio: "ignore" }
-      );
-    } catch {}
+    // 7. KALICI REPO KAYDI & VERCEL OTOMATİK DERLEME
+    if (isReadOnly) {
+      // Vercel Serverless Ortamı: GitHub API ile tek commit at
+      try {
+        commitFilesToGitHub(
+          gitFilesToCommit,
+          `feat(product): yeni urun ${code} eklendi (${catConfig.name})`
+        ).catch((ghErr) => console.error("Arka plan GitHub commit uyarısı:", ghErr));
+      } catch (commitErr) {
+        console.error("GitHub commit tetikleme hatası:", commitErr);
+      }
+    } else {
+      // Yerel Ortam: Scripti çalıştır ve yerel git commit at
+      try {
+        execSync("node scripts/sync-products.mjs", { cwd: rootDir });
+        execSync(
+          `git add products/ public/products/ src/data/categories.ts compiled-products.json && git commit -m "feat(product): yeni urun ${code} eklendi"`,
+          { cwd: rootDir, stdio: "ignore" }
+        );
+      } catch (localSyncErr) {
+        console.warn("Yerel sync / commit uyarısı:", localSyncErr);
+      }
+    }
 
     return NextResponse.json({
       success: true,
       message: `${code} ürünü başarıyla sisteme eklendi.`,
-      product: {
-        id,
-        code,
-        name: code,
-        categorySlug,
-        categoryName: catConfig.name,
-        badge: cleanBadge,
-        dimensions: cleanDim,
-        lightingType: cleanLight,
-        shortDescription: cleanDesc,
-        image: savedImageUrls[0],
-        images: savedImageUrls,
-        branch: "showroom",
-      },
+      product: clientProduct,
     });
   } catch (error: any) {
     console.error("POST /api/admin/products/add error:", error);

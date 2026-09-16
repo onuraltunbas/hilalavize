@@ -1,17 +1,76 @@
 import { PRODUCTS as STATIC_PRODUCTS, Product } from "@/data/products";
 
-// GitHub API ile Kalıcı Depolama (Token base64 ile saklanır, runtime'da çözülür)
+export type { Product };
+
+// GitHub API ile Kalıcı Depolama
 const _ENCODED = "Z2hwXzA0R080Q1NlQ2ZwV0pkSEladGtCWUltN2ZtaFYyMFA4ZDNq";
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || Buffer.from(_ENCODED, "base64").toString("utf-8");
+const GIST_ID = "b3966c06ee962f2a0e4a442dd05cb77d";
 const GITHUB_REPO = "onuraltunbas/hilalavize";
 const DYNAMIC_FILE_PATH = "src/data/dynamic-products.json";
 
-// Dinamik ürünleri oku (GitHub'dan)
-async function readDynamicProducts(): Promise<Product[]> {
+// Gist üzerinden anlık dinamik ürünleri oku (Hızlı & Çakışmasız)
+async function readGistProducts(): Promise<Product[] | null> {
+  if (!GITHUB_TOKEN) return null;
+  try {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}?t=${Date.now()}`, {
+      headers: {
+        Authorization: `token ${GITHUB_TOKEN}`,
+        "User-Agent": "hilalavize-products",
+        Accept: "application/vnd.github.v3+json",
+      },
+      cache: "no-store",
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (data.files && data.files["dynamic_products.json"]) {
+      const content = data.files["dynamic_products.json"].content;
+      const parsed = JSON.parse(content);
+      return Array.isArray(parsed) ? parsed : [];
+    }
+    return [];
+  } catch (err) {
+    console.error("readGistProducts error:", err);
+    return null;
+  }
+}
+
+// Gist üzerinden anlık dinamik ürünleri yaz
+async function writeGistProducts(products: Product[]): Promise<boolean> {
+  if (!GITHUB_TOKEN) return false;
+  try {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+      method: "PATCH",
+      headers: {
+        Authorization: `token ${GITHUB_TOKEN}`,
+        "User-Agent": "hilalavize-products",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        files: {
+          "dynamic_products.json": { content: JSON.stringify(products, null, 2) },
+        },
+      }),
+    });
+    return res.ok;
+  } catch (err) {
+    console.error("writeGistProducts error:", err);
+    return false;
+  }
+}
+
+// Dinamik ürünleri oku (Öncelik: Gist, Yedek: GitHub repo)
+export async function readDynamicProducts(): Promise<Product[]> {
+  const gistProducts = await readGistProducts();
+  if (gistProducts !== null) {
+    return gistProducts;
+  }
+
+  // Fallback: GitHub Repo Contents
   if (!GITHUB_TOKEN) return [];
   try {
     const res = await fetch(
-      `https://api.github.com/repos/${GITHUB_REPO}/contents/${DYNAMIC_FILE_PATH}`,
+      `https://api.github.com/repos/${GITHUB_REPO}/contents/${DYNAMIC_FILE_PATH}?t=${Date.now()}`,
       {
         headers: {
           Authorization: `Bearer ${GITHUB_TOKEN}`,
@@ -30,69 +89,26 @@ async function readDynamicProducts(): Promise<Product[]> {
   }
 }
 
-// Dinamik ürünleri yaz (GitHub'a commit at → Vercel otomatik rebuild)
-async function writeDynamicProducts(products: Product[], commitMsg: string): Promise<boolean> {
-  if (!GITHUB_TOKEN) {
-    console.error("GITHUB_TOKEN yok, ürün kaydedilemedi!");
-    return false;
-  }
-  try {
-    // Mevcut dosyanın SHA'sını al (güncelleme için gerekli)
-    let sha = "";
-    const checkRes = await fetch(
-      `https://api.github.com/repos/${GITHUB_REPO}/contents/${DYNAMIC_FILE_PATH}`,
-      {
-        headers: {
-          Authorization: `Bearer ${GITHUB_TOKEN}`,
-          Accept: "application/vnd.github.v3+json",
-        },
-      }
-    );
-    if (checkRes.ok) {
-      const fileData = await checkRes.json();
-      sha = fileData.sha;
-    }
-
-    const contentBase64 = Buffer.from(
-      JSON.stringify(products, null, 2)
-    ).toString("base64");
-
-    const putRes = await fetch(
-      `https://api.github.com/repos/${GITHUB_REPO}/contents/${DYNAMIC_FILE_PATH}`,
-      {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${GITHUB_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          message: commitMsg,
-          content: contentBase64,
-          ...(sha ? { sha } : {}),
-          branch: "main",
-        }),
-      }
-    );
-
-    if (!putRes.ok) {
-      const err = await putRes.text();
-      console.error("GitHub commit hatası:", err);
-      return false;
-    }
-    return true;
-  } catch (e) {
-    console.error("GitHub yazma hatası:", e);
-    return false;
-  }
-}
-
-// Tüm ürünleri getir: statik + dinamik
+// Tüm ürünleri getir: Dinamik ürünler + Statik ürünler
+// Eğer dinamik listede bir ürün varsa, statik olanın yerine o geçer (düzenlemeler için)
 export async function getAllProductsAsync(): Promise<Product[]> {
-  const dynamicProducts = await readDynamicProducts();
-  // Dinamik ürünleri en başa koy, statik ürünlerin üzerine yazma
-  const staticIds = new Set(STATIC_PRODUCTS.map((p) => p.id));
-  const uniqueDynamic = dynamicProducts.filter((p) => !staticIds.has(p.id));
-  return [...uniqueDynamic, ...STATIC_PRODUCTS];
+  try {
+    const dynamicProducts = await readDynamicProducts();
+    if (!dynamicProducts || dynamicProducts.length === 0) {
+      return STATIC_PRODUCTS;
+    }
+
+    const dynamicCodes = new Set(dynamicProducts.map((p) => (p.code || p.id).toUpperCase()));
+
+    // Statik ürünlerden dinamik listede olanları filtrele (dinamik olan günceldir)
+    const remainingStatic = STATIC_PRODUCTS.filter(
+      (p) => !dynamicCodes.has((p.code || p.id).toUpperCase())
+    );
+
+    return [...dynamicProducts, ...remainingStatic];
+  } catch {
+    return STATIC_PRODUCTS;
+  }
 }
 
 // Slug ile ürün bul (asenkron)
@@ -112,35 +128,46 @@ export async function getProductBySlugAsync(slug: string): Promise<Product | und
   );
 }
 
-// Yeni ürün kaydet (GitHub'a commit → Vercel rebuild)
+// Yeni veya güncellenen ürünü anında Gist'e kaydet (Vercel build süresini beklemeden anında sitede aktif olur)
 export async function saveProductAsync(product: Product): Promise<boolean> {
-  const existing = await readDynamicProducts();
-  const idx = existing.findIndex((p) => p.id === product.id || p.slug === product.slug);
-  if (idx !== -1) {
-    existing[idx] = product;
-  } else {
-    existing.unshift(product);
+  try {
+    const existing = await readDynamicProducts();
+    const prodCode = (product.code || product.id).toUpperCase();
+    const idx = existing.findIndex(
+      (p) => (p.code || p.id).toUpperCase() === prodCode || p.slug === product.slug
+    );
+
+    if (idx !== -1) {
+      existing[idx] = product;
+    } else {
+      existing.unshift(product);
+    }
+
+    return await writeGistProducts(existing);
+  } catch (err) {
+    console.error("saveProductAsync error:", err);
+    return false;
   }
-  return writeDynamicProducts(
-    existing,
-    `urun: ${product.id} ${product.name} eklendi`
-  );
 }
 
-// Ürün sil (GitHub'a commit → Vercel rebuild)
+// Ürün sil
 export async function deleteProductAsync(idOrSlug: string): Promise<Product | null> {
-  const existing = await readDynamicProducts();
-  const clean = idOrSlug.toLowerCase().trim();
-  const idx = existing.findIndex(
-    (p) => p.id.toLowerCase() === clean || p.slug.toLowerCase() === clean
-  );
-  if (idx === -1) return null;
-  const removed = existing.splice(idx, 1)[0];
-  await writeDynamicProducts(
-    existing,
-    `urun: ${removed.id} ${removed.name} silindi`
-  );
-  return removed;
+  try {
+    const existing = await readDynamicProducts();
+    const clean = idOrSlug.toLowerCase().trim();
+    const idx = existing.findIndex(
+      (p) =>
+        p.id.toLowerCase() === clean ||
+        p.code.toLowerCase() === clean ||
+        p.slug.toLowerCase() === clean
+    );
+    if (idx === -1) return null;
+    const removed = existing.splice(idx, 1)[0];
+    await writeGistProducts(existing);
+    return removed;
+  } catch {
+    return null;
+  }
 }
 
 // Senkron yardımcılar (geriye uyumluluk)
@@ -160,13 +187,4 @@ export function getProductBySlug(slug: string): Product | undefined {
       (p.legacyCode && p.legacyCode.toLowerCase() === clean) ||
       (p.legacyCode && p.legacyCode.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlphaNum)
   );
-}
-
-export function addDynamicProduct(product: Product): void {
-  saveProductAsync(product).catch(console.error);
-}
-
-export function removeDynamicProduct(idOrSlug: string): Product | null {
-  deleteProductAsync(idOrSlug).catch(console.error);
-  return null;
 }

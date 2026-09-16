@@ -2,7 +2,10 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
+import { commitFilesToGitHub, isServerlessReadOnly, getRepoFileContent, GitCommitFile } from "@/lib/github-sync";
 import { getAdminPrices, saveAdminPrices } from "@/lib/admin-storage";
+import { saveProductAsync, getProductBySlugAsync } from "@/lib/products-store";
+import { Product } from "@/data/products";
 
 export const dynamic = "force-dynamic";
 
@@ -85,12 +88,12 @@ export async function POST(req: Request) {
     }
 
     const rootDir = process.cwd();
+    const isReadOnly = isServerlessReadOnly();
 
     // 1. Kategoriyi tespit et
     let targetCategorySlug = categorySlug;
     let targetFolder = CATEGORY_CONFIGS[categorySlug]?.folder;
 
-    // Eğer categorySlug belirtilmemişse veya bulunamazsa klasörleri tara
     if (!targetFolder) {
       for (const [slug, conf] of Object.entries(CATEGORY_CONFIGS)) {
         const testPath = path.join(rootDir, "products", conf.folder, "urunler.json");
@@ -118,11 +121,17 @@ export async function POST(req: Request) {
     const photoDir = path.join(rootDir, "products", targetFolder, "photo");
     const publicPhotoDir = path.join(rootDir, "public", "products", targetFolder, "photo");
 
-    if (!fs.existsSync(photoDir)) fs.mkdirSync(photoDir, { recursive: true });
-    if (!fs.existsSync(publicPhotoDir)) fs.mkdirSync(publicPhotoDir, { recursive: true });
+    if (!isReadOnly) {
+      try {
+        if (!fs.existsSync(photoDir)) fs.mkdirSync(photoDir, { recursive: true });
+        if (!fs.existsSync(publicPhotoDir)) fs.mkdirSync(publicPhotoDir, { recursive: true });
+      } catch {}
+    }
 
-    // 2. Yeni fotoğrafları kaydet
+    // 2. Yeni fotoğrafları hazırla
+    const gitFilesToCommit: GitCommitFile[] = [];
     const savedNewImageUrls: string[] = [];
+
     if (Array.isArray(newImages) && newImages.length > 0) {
       newImages.forEach((imgObj: { name: string; base64: string }, index: number) => {
         let rawBase64 = imgObj.base64 || "";
@@ -141,20 +150,33 @@ export async function POST(req: Request) {
         const timestamp = Date.now();
         const safeCode = code.replace(/[^a-zA-Z0-9_-]/g, "_");
         const fileName = `${safeCode}_add_${timestamp}_${index + 1}${ext}`;
-        const destPath1 = path.join(photoDir, fileName);
-        const destPath2 = path.join(publicPhotoDir, fileName);
 
-        const buffer = Buffer.from(rawBase64, "base64");
-        fs.writeFileSync(destPath1, buffer);
-        try {
-          fs.writeFileSync(destPath2, buffer);
-        } catch {}
+        if (!isReadOnly) {
+          try {
+            const buffer = Buffer.from(rawBase64, "base64");
+            fs.writeFileSync(path.join(photoDir, fileName), buffer);
+            fs.writeFileSync(path.join(publicPhotoDir, fileName), buffer);
+          } catch (localImgErr) {
+            console.warn("Yerel fotoğraf kaydetme uyarısı:", localImgErr);
+          }
+        }
+
+        gitFilesToCommit.push({
+          path: `products/${targetFolder}/photo/${fileName}`,
+          content: rawBase64,
+          isBase64: true,
+        });
+        gitFilesToCommit.push({
+          path: `public/products/${targetFolder}/photo/${fileName}`,
+          content: rawBase64,
+          isBase64: true,
+        });
 
         savedNewImageUrls.push(`/products/${targetFolder}/photo/${fileName}`);
       });
     }
 
-    // 3. Nihai fotoğraf listesini oluştur (tutulanlar + yeniler)
+    // 3. Nihai fotoğraf listesi
     const validKeptImages = Array.isArray(keptImages)
       ? keptImages.filter((img) => typeof img === "string" && img.trim() !== "")
       : [];
@@ -169,62 +191,66 @@ export async function POST(req: Request) {
 
     // 4. urunler.json dosyasını güncelle
     const urunlerJsonPath = path.join(rootDir, "products", targetFolder, "urunler.json");
-    const publicUrunlerJsonPath = path.join(rootDir, "public", "products", targetFolder, "urunler.json");
-
-    if (!fs.existsSync(urunlerJsonPath)) {
-      return NextResponse.json(
-        { success: false, error: "Kategori veri dosyası bulunamadı." },
-        { status: 404 }
-      );
-    }
-
     let items: any[] = [];
-    try {
-      items = JSON.parse(fs.readFileSync(urunlerJsonPath, "utf-8"));
-    } catch {
-      return NextResponse.json(
-        { success: false, error: "Kategori veri dosyası okunamadı." },
-        { status: 500 }
-      );
+    if (fs.existsSync(urunlerJsonPath)) {
+      try {
+        items = JSON.parse(fs.readFileSync(urunlerJsonPath, "utf-8"));
+      } catch {}
     }
 
-    const itemIndex = items.findIndex(
+    if (items.length === 0) {
+      const remoteContent = await getRepoFileContent(`products/${targetFolder}/urunler.json`);
+      if (remoteContent) {
+        try {
+          items = JSON.parse(remoteContent);
+        } catch {}
+      }
+    }
+
+    let itemIndex = items.findIndex(
       (it) => it.code === code || it.id === code || `HL-${it.id}` === code
     );
 
-    if (itemIndex === -1) {
+    let existingItem = itemIndex !== -1 ? items[itemIndex] : null;
+
+    // Eğer urunler.json içinde bulunamazsa dinamik depodan al
+    if (!existingItem) {
+      const dynProduct = await getProductBySlugAsync(code.toLowerCase());
+      if (dynProduct) {
+        existingItem = dynProduct;
+      }
+    }
+
+    if (!existingItem) {
       return NextResponse.json(
-        { success: false, error: `Ürün veritabanında bulunamadı (${code}).` },
+        { success: false, error: `Ürün sistemde bulunamadı (${code}).` },
         { status: 404 }
       );
     }
 
-    const existingItem = items[itemIndex];
+    // Silinen fotoğrafları yerel diskteyse temizle (serverless değilse)
+    if (!isReadOnly) {
+      const oldImages: string[] = Array.isArray(existingItem.images)
+        ? existingItem.images
+        : existingItem.photo
+        ? [existingItem.photo]
+        : [];
 
-    // Eski fotoğraflardan silinenleri tespit et ve güvenliyse diskten temizle
-    const oldImages: string[] = Array.isArray(existingItem.images)
-      ? existingItem.images
-      : existingItem.photo
-      ? [existingItem.photo]
-      : [];
+      const deletedImages = oldImages.filter((oldImg) => !finalImages.includes(oldImg));
+      deletedImages.forEach((delImg) => {
+        try {
+          if (delImg.startsWith(`/products/${targetFolder}/photo/`)) {
+            const fileName = path.basename(delImg);
+            const p1 = path.join(photoDir, fileName);
+            const p2 = path.join(publicPhotoDir, fileName);
+            if (fs.existsSync(p1)) fs.unlinkSync(p1);
+            if (fs.existsSync(p2)) fs.unlinkSync(p2);
+          }
+        } catch {}
+      });
+    }
 
-    const deletedImages = oldImages.filter((oldImg) => !finalImages.includes(oldImg));
-    deletedImages.forEach((delImg) => {
-      try {
-        // Yalnızca bu ürünün kendi fotoğraf klasöründeki dosyaları sil
-        if (delImg.startsWith(`/products/${targetFolder}/photo/`)) {
-          const fileName = path.basename(delImg);
-          const p1 = path.join(photoDir, fileName);
-          const p2 = path.join(publicPhotoDir, fileName);
-          if (fs.existsSync(p1)) fs.unlinkSync(p1);
-          if (fs.existsSync(p2)) fs.unlinkSync(p2);
-        }
-      } catch (err) {
-        console.warn("Dosya silme uyarısı:", delImg, err);
-      }
-    });
-
-    // Güncellenmiş alanlar
+    // Güncellenmiş nesne
     const updatedItem = {
       ...existingItem,
       name: (name !== undefined && name !== null && String(name).trim() !== "") ? String(name).trim() : (existingItem.name || code),
@@ -235,13 +261,35 @@ export async function POST(req: Request) {
       images: finalImages,
     };
 
-    items[itemIndex] = updatedItem;
+    if (itemIndex !== -1) {
+      items[itemIndex] = updatedItem;
+    } else {
+      items.push(updatedItem);
+    }
 
     const updatedJsonStr = JSON.stringify(items, null, 2);
-    fs.writeFileSync(urunlerJsonPath, updatedJsonStr, "utf-8");
-    try {
-      fs.writeFileSync(publicUrunlerJsonPath, updatedJsonStr, "utf-8");
-    } catch {}
+
+    if (!isReadOnly) {
+      try {
+        fs.writeFileSync(urunlerJsonPath, updatedJsonStr, "utf-8");
+        fs.writeFileSync(
+          path.join(rootDir, "public", "products", targetFolder, "urunler.json"),
+          updatedJsonStr,
+          "utf-8"
+        );
+      } catch (localWriteJsonErr) {
+        console.warn("Yerel urunler.json güncelleme uyarısı:", localWriteJsonErr);
+      }
+    }
+
+    gitFilesToCommit.push({
+      path: `products/${targetFolder}/urunler.json`,
+      content: updatedJsonStr,
+    });
+    gitFilesToCommit.push({
+      path: `public/products/${targetFolder}/urunler.json`,
+      content: updatedJsonStr,
+    });
 
     // 5. Fiyat güncellemesi varsa kaydet
     if (price !== undefined) {
@@ -258,37 +306,64 @@ export async function POST(req: Request) {
       }
     }
 
-    // 6. sync-products.mjs Scriptini Çalıştır
+    // 6. ANLIK KULLANILABİLİRLİK: Dinamik Ürün Deposuna (Gist) Kaydet
+    const fullClientProduct: Product = {
+      id: updatedItem.id || code,
+      code: updatedItem.code || code,
+      name: updatedItem.name,
+      slug: (updatedItem.slug || code).toLowerCase(),
+      categorySlug: targetCategorySlug,
+      categoryName: catConfig.name,
+      badge: updatedItem.badge,
+      dimensions: updatedItem.dimensions,
+      lightingType: updatedItem.lightingType,
+      shortDescription: updatedItem.shortDescription,
+      description: updatedItem.shortDescription || "",
+      image: finalImages[0],
+      images: finalImages,
+      branch: (updatedItem.branch || "showroom") as "showroom" | "electrical",
+      features: updatedItem.features || [
+        "Hilal Avize Güvencesiyle 2 Yıl Garanti",
+        "Birinci Sınıf Malzeme ve İşçilik",
+        "Kolay Temizlenebilir Yüzey",
+        "Türkiye Geneli Sigortalı Kargo",
+      ],
+      seoTitle: `${code} - ${catConfig.name} | Hilal Avize`,
+      seoDescription: updatedItem.shortDescription || "",
+    };
+
     try {
-      execSync("node scripts/sync-products.mjs", { cwd: rootDir });
-    } catch (syncErr: any) {
-      console.error("sync-products çalıştırma hatası:", syncErr.message);
+      await saveProductAsync(fullClientProduct);
+    } catch (saveErr) {
+      console.warn("Dinamik ürün güncelleme uyarısı:", saveErr);
     }
 
-    // 7. Git commit (arka planda)
-    try {
-      execSync(
-        `git add products/${targetFolder}/ products/ compiled-products.json public/products/ && git commit -m "feat(product): ${code} urunu duzenlendi"`,
-        { cwd: rootDir, stdio: "ignore" }
-      );
-    } catch {}
+    // 7. KALICI REPO KAYDI
+    if (isReadOnly) {
+      try {
+        commitFilesToGitHub(
+          gitFilesToCommit,
+          `feat(product): ${code} urunu duzenlendi`
+        ).catch((ghErr) => console.error("Arka plan GitHub commit hatası:", ghErr));
+      } catch (commitErr) {
+        console.error("GitHub commit tetikleme hatası:", commitErr);
+      }
+    } else {
+      try {
+        execSync("node scripts/sync-products.mjs", { cwd: rootDir });
+        execSync(
+          `git add products/ public/products/ compiled-products.json && git commit -m "feat(product): ${code} urunu duzenlendi"`,
+          { cwd: rootDir, stdio: "ignore" }
+        );
+      } catch (localSyncErr) {
+        console.warn("Yerel sync / commit uyarısı:", localSyncErr);
+      }
+    }
 
     return NextResponse.json({
       success: true,
       message: `${code} başarıyla güncellendi.`,
-      product: {
-        id: updatedItem.id || code,
-        code: updatedItem.code || code,
-        name: updatedItem.name,
-        categorySlug: targetCategorySlug,
-        categoryName: catConfig.name,
-        badge: updatedItem.badge,
-        dimensions: updatedItem.dimensions,
-        lightingType: updatedItem.lightingType,
-        shortDescription: updatedItem.shortDescription,
-        image: finalImages[0],
-        images: finalImages,
-      },
+      product: fullClientProduct,
       price: price !== undefined ? price : undefined,
     });
   } catch (error: any) {
