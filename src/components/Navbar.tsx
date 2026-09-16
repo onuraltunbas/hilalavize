@@ -84,17 +84,17 @@ export function Navbar() {
     const getLinkClass = (isActive: boolean) =>
       `px-3.5 py-1.5 xl:px-4.5 xl:py-2 rounded-full transition-all duration-300 whitespace-nowrap text-[12.5px] xl:text-[13.5px] 2xl:text-[14.5px] font-semibold tracking-wide ${
         isActive
-          ? "bg-gradient-to-r from-[#93826E] via-[#857461] to-[#736351] text-white border border-[#D4AF37]/60 shadow-[0_0_16px_rgba(212,175,55,0.30)] font-bold -translate-y-0.5"
-          : "text-white/90 hover:text-[#F5E2A8] hover:bg-white/10 border border-transparent hover:border-[#D4AF37]/30 hover:shadow-sm transition-all -translate-y-0.5 active:scale-95"
+          ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] font-bold border border-[#FFF2CC] shadow-[0_0_18px_rgba(212,175,55,0.45)] -translate-y-0.5"
+          : "text-[#F5E2A8] bg-black/35 hover:bg-[#D4AF37]/20 border border-[#D4AF37]/45 hover:border-[#D4AF37] hover:text-white shadow-xs hover:shadow-[0_0_14px_rgba(212,175,55,0.30)] transition-all -translate-y-0.5 active:scale-95"
       }`;
 
     return (
       <header className="sticky top-0 z-50 w-full transition-all duration-300 relative">
         {/* =========================================================================
-            1. MASAÜSTÜ: CHATGPT REFERANS TASARIMI (Tam Genişlik + Ortada Kavisli Altın Hat + Beyazdan Siyaha Kesintisiz Gradient)
+            1. MASAÜSTÜ: ÇİZGİSİZ, YUKARIDAN HIZLICA SİYAHA DÖNEN GRADIENT & ALTIN BUTONLAR
             ========================================================================= */}
         <nav className="hidden lg:block w-full relative">
-          {/* YAZILIMSAL SVG KATMANI: Yukarıdan aşağı beyazdan siyaha kesintisiz gradient + Kavisli altın hat */}
+          {/* YAZILIMSAL SVG KATMANI: Çizgisiz, daha yukarıdan siyaha dönen kesintisiz gradient */}
           <div className="absolute inset-0 w-full h-[96px] xl:h-[105px] 2xl:h-[114px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 1440 115"
@@ -102,49 +102,23 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* 1. Yukarıdan aşağıya: Sitenin sıcak kırık beyaz/fildişi tonundan (#FAF9F6) başlayıp siyaha dönen lüks gradient */}
+                {/* Görseldeki gibi: En üstte sitenin kırık beyazı, hemen ardından hızla koyulaşıp siyaha dönen gradient */}
                 <linearGradient id="chatgptNavGrad" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.88" />
-                  <stop offset="26%" stopColor="#E1E0DD" stopOpacity="0.85" />
-                  <stop offset="60%" stopColor="#2A241E" stopOpacity="0.94" />
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.90" />
+                  <stop offset="12%" stopColor="#8A7E72" stopOpacity="0.88" />
+                  <stop offset="32%" stopColor="#2A241E" stopOpacity="0.95" />
+                  <stop offset="65%" stopColor="#0B0907" stopOpacity="0.99" />
                   <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
-
-                {/* 2. Alt kenardaki parıldayan lüks altın hat */}
-                <linearGradient id="chatgptGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#9E7D3B" stopOpacity="0.35" />
-                  <stop offset="32%" stopColor="#D4AF37" stopOpacity="0.80" />
-                  <stop offset="50%" stopColor="#FBE9B5" stopOpacity="1.0" />
-                  <stop offset="68%" stopColor="#D4AF37" stopOpacity="0.80" />
-                  <stop offset="100%" stopColor="#9E7D3B" stopOpacity="0.35" />
-                </linearGradient>
-
-                {/* 3. Altın Işık Halesi (Glow Efekti) */}
-                <filter id="chatgptGlow" x="-5%" y="-150%" width="110%" height="400%">
-                  <feGaussianBlur stdDeviation="3.5" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
               </defs>
 
-              {/* Arka Plan Dolgusu: Boşluk ve beyazlık bırakmayan, yukarıdan aşağı tam dikdörtgen gradient */}
+              {/* Arka Plan Dolgusu: Çizgisiz, yukarıdan aşağıya akıcı gradient */}
               <rect
                 x="0"
                 y="0"
                 width="1440"
                 height="115"
                 fill="url(#chatgptNavGrad)"
-              />
-
-              {/* Altın Parlayan Kavisli Sınır Çizgisi (Konumu ve kavisleri aynen korunur) */}
-              <path
-                d="M 0,75 L 540,75 C 565,75 565,108 590,108 L 850,108 C 875,108 875,75 900,75 L 1440,75"
-                fill="none"
-                stroke="url(#chatgptGoldLine)"
-                strokeWidth="2.2"
-                filter="url(#chatgptGlow)"
               />
             </svg>
           </div>
