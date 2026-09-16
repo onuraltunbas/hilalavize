@@ -186,7 +186,7 @@ export function BranchesSection() {
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#059669] hover:bg-[#047857] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-colors"
+                        className="bg-[#00880E] hover:bg-[#00730c] text-white font-bold py-2.5 px-3 rounded-lg text-xs flex items-center justify-center gap-2 shadow-sm transition-colors"
                       >
                         <MessageCircle className="w-4 h-4" />
                         WhatsApp&apos;tan Teklif Al

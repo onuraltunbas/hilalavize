@@ -39,7 +39,7 @@ interface AddProductModalProps {
 const CATEGORIES_DATA = [
   {
     slug: "tekli-avizeler",
-    name: "Üçlü & Tekli Avizeler ve Sarkıtlar",
+    name: "Cam Sarkıt Avizeler",
     shortName: "Sarkıtlar",
     prefix: "TKL",
     description: "Mutfak adası, yemek masası ve modern sarkıt modelleri",
@@ -55,8 +55,8 @@ const CATEGORIES_DATA = [
   },
   {
     slug: "yerli-urunler",
-    name: "Yerli Üretim Koleksiyonu",
-    shortName: "Yerli Üretim",
+    name: "Özel İmalat Avizeler",
+    shortName: "Özel İmalat",
     prefix: "YRL",
     description: "Özel ölçü galeri boşluğu, merdiven ve şamdan avizeler",
     icon: "🏛️",

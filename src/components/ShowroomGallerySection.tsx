@@ -7,7 +7,7 @@ export function ShowroomGallerySection() {
   const showcases = [
     {
       title: "Klasik Kristal Avizeler",
-      image: "/images/categories/theresa_kapak.jpeg",
+      image: "/images/categories/klasik_kristal_avizeler.jpg",
       link: "/kategori/klasik",
       colSpan: "lg:col-span-7",
       tag: "Saray Kristali",
@@ -21,7 +21,7 @@ export function ShowroomGallerySection() {
       tag: "Trend Tasarımlar",
     },
     {
-      title: "Üçlü & Tekli Avizeler ve Sarkıtlar",
+      title: "Cam Sarkıt Avizeler",
       image: "/images/categories/banner_sarkitlar.jpg",
       link: "/kategori/tekli-avizeler",
       colSpan: "lg:col-span-4",
@@ -35,8 +35,8 @@ export function ShowroomGallerySection() {
       tag: "Mimari Vurgu",
     },
     {
-      title: "Yerli Üretim Koleksiyonu",
-      image: "/images/categories/banner_yerli_uretim.webp",
+      title: "Özel İmalat Avizeler",
+      image: "/images/categories/ozel_imalat_avizeler.jpg",
       link: "/kategori/yerli-urunler",
       colSpan: "lg:col-span-4",
       tag: "Özel İmalat",

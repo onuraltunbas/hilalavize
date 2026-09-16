@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, Sparkles, MapPin } from "lucide-react";
 import { INSTALLATION_PROJECTS } from "@/data/aydinlattigimiz-mekanlar";
 
 export function HomeMekanlarSection() {
@@ -17,9 +17,6 @@ export function HomeMekanlarSection() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight font-heading">
               Aydınlattığımız Mekanlardan Örnekler
             </h2>
-            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Montajını gerçekleştirdiğimiz mekanlardan kareler
-            </p>
           </div>
           <Link
             href="/aydinlattigimiz-mekanlar"
@@ -54,10 +51,11 @@ export function HomeMekanlarSection() {
                 </div>
               </div>
 
-              <div className="p-2.5 sm:p-4 bg-surface">
-                <h3 className="text-xs sm:text-sm font-bold text-foreground line-clamp-1 group-hover:text-bronze transition-colors">
-                  {item.title}
-                </h3>
+              <div className="p-2.5 sm:p-3.5 bg-surface">
+                <p className="text-xs sm:text-sm font-semibold text-muted-foreground flex items-center gap-1.5 group-hover:text-foreground transition-colors">
+                  <MapPin className="w-3.5 h-3.5 text-bronze shrink-0" />
+                  <span className="truncate">{item.location}</span>
+                </p>
               </div>
             </Link>
           ))}

@@ -186,7 +186,7 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
                 href="https://wa.me/905053801350"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#059669] hover:bg-[#047857] text-white font-bold px-5 py-2 rounded-lg text-xs shadow-sm"
+                className="inline-flex items-center gap-2 bg-[#00880E] hover:bg-[#00730c] text-white font-bold px-5 py-2 rounded-lg text-xs shadow-sm"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp ile Bilgi Al

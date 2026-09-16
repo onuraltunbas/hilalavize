@@ -44,15 +44,6 @@ export function ProductGallery({
           className="w-full h-auto max-h-[600px] object-contain mx-auto transition-transform duration-500 group-hover:scale-[1.02]"
         />
 
-        {/* Custom Badge */}
-        {customBadge && (
-          <div className="absolute top-3 right-3 z-10">
-            <span className="px-3 py-1 rounded-md text-[11px] font-bold bg-primary text-primary-foreground border border-border shadow-sm">
-              {customBadge}
-            </span>
-          </div>
-        )}
-
         {/* Multi-photo Navigation Arrows */}
         {validImages.length > 1 && (
           <>

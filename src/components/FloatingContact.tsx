@@ -55,7 +55,7 @@ export function FloatingContact() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
+                  className="bg-[#00880E] hover:bg-[#00730c] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
                 >
                   <MessageCircle className="w-4 h-4" /> WhatsApp ile Teklif Al
                 </a>
@@ -77,7 +77,7 @@ export function FloatingContact() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
+                  className="bg-[#00880E] hover:bg-[#00730c] text-white text-xs font-bold py-2.5 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm w-full"
                 >
                   <MessageCircle className="w-4 h-4" /> WhatsApp ile Teklif Al
                 </a>
@@ -106,7 +106,7 @@ export function FloatingContact() {
       {/* Main Floating Trigger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-2.5 bg-[#059669] hover:bg-[#047857] text-white font-bold px-4 py-3 rounded-full shadow-lg border border-emerald-400/30 transition-all transform hover:scale-105"
+        className="group relative flex items-center gap-2.5 bg-[#00880E] hover:bg-[#00730c] text-white font-bold px-4 py-3 rounded-full shadow-lg border border-emerald-400/30 transition-all transform hover:scale-105"
         aria-label="Teklif Al"
       >
         <span className="relative flex h-2.5 w-2.5">

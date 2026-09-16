@@ -157,7 +157,7 @@ export function Navbar() {
     const isLightNav = scrollRatio > 0.55;
 
     const getLinkClass = (isActive: boolean) =>
-      `px-3.5 py-1.5 xl:px-4.5 xl:py-2 rounded-full transition-all duration-300 whitespace-nowrap text-[12.5px] xl:text-[13.5px] 2xl:text-[14.5px] font-semibold tracking-wide ${
+      `px-3.5 py-1.5 xl:px-4.5 xl:py-2 rounded-lg transition-all duration-300 whitespace-nowrap text-[12.5px] xl:text-[13.5px] 2xl:text-[14.5px] font-semibold tracking-wide ${
         isActive
           ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] font-bold border border-[#FFF2CC] shadow-[0_0_18px_rgba(212,175,55,0.45)] -translate-y-0.5"
           : isLightNav
@@ -402,7 +402,7 @@ export function Navbar() {
           <div className="relative z-10 w-full px-4 h-[94px] sm:h-[104px] flex items-center justify-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="relative flex items-center justify-center group cursor-pointer active:scale-95 transition-transform"
+              className="relative flex items-center justify-center group cursor-pointer active:scale-95 transition-transform -translate-y-[10px]"
               aria-label={mobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
             >
               {/* Logonun arkasındaki sıcak altın aydınlatma halesi */}
@@ -581,7 +581,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                  className="bg-[#00880E] hover:bg-[#00730c] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
                 >
                   <Store className="w-3.5 h-3.5" />
                   <span>Showroom</span>
@@ -592,7 +592,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                  className="bg-[#00880E] hover:bg-[#00730c] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
                 >
                   <Zap className="w-3.5 h-3.5" />
                   <span>Elektrik Şube</span>

@@ -64,13 +64,10 @@ export function MekanlarGallery() {
             </div>
 
             {/* Bilgi Alanı */}
-            <div className="p-3.5 space-y-1 bg-surface">
-              <h3 className="text-xs sm:text-sm font-bold text-foreground line-clamp-1 group-hover:text-bronze transition-colors">
-                {project.title}
-              </h3>
-              <p className="text-[11px] text-muted-foreground flex items-center gap-1">
-                <MapPin className="w-3 h-3 text-bronze shrink-0" />
-                <span>{project.location}</span>
+            <div className="p-3 bg-surface">
+              <p className="text-xs sm:text-sm font-semibold text-muted-foreground flex items-center gap-1.5 group-hover:text-foreground transition-colors">
+                <MapPin className="w-3.5 h-3.5 text-bronze shrink-0" />
+                <span className="truncate">{project.location}</span>
               </p>
             </div>
           </div>
@@ -167,7 +164,7 @@ export function MekanlarGallery() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#059669] hover:bg-[#047857] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
+                  className="w-full bg-[#00880E] hover:bg-[#00730c] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
                 >
                   <MessageCircle className="w-4 h-4" />
                   Bu Model Hakkında Bilgi Al

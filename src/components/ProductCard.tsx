@@ -27,15 +27,6 @@ export function ProductCard({ product }: ProductCardProps) {
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-40" />
-
-        {/* Custom badge */}
-        {product.badge && (
-          <div className="absolute top-2.5 right-2.5 z-10">
-            <span className="px-2.5 py-0.5 rounded-md text-[9px] sm:text-[10px] font-bold bg-primary text-primary-foreground border border-border shadow-sm">
-              {product.badge}
-            </span>
-          </div>
-        )}
       </div>
 
       {/* Content */}
