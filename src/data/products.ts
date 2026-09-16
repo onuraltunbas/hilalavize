@@ -1591,33 +1591,6 @@ export const PRODUCTS: Product[] = [
     "seoDescription": "HL-LED-051 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
-    "id": "LED-052",
-    "code": "HL-LED-052",
-    "slug": "hl-led-052",
-    "name": "HL-LED-052",
-    "categorySlug": "ledli-grup",
-    "categoryName": "Modern LED Avizeler",
-    "badge": "Modern LED Lineer",
-    "description": "HL-LED-052, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 100-110 cm | Ayarlanabilir Çelik Halat Boyu ölçüleri, Dahili 3 Renk Kademeli LED Modülü (45W) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Lineer profil üzerinde organik dalgalar çizen akıcı LED hattı ile yemek masası, ada üstü ve çalışma alanlarına çağdaş mimari zarafet kazandırır.",
-    "dimensions": "Genişlik: 100-110 cm | Ayarlanabilir Çelik Halat Boyu",
-    "lightingType": "Dahili 3 Renk Kademeli LED Modülü (45W)",
-    "branch": "showroom",
-    "image": "/products/ledli-grup/photo/HL-LED-052.jpeg",
-    "images": [
-      "/products/ledli-grup/photo/HL-LED-052.jpeg"
-    ],
-    "features": [
-      "3 Renk Kademeli Dahili LED Teknolojisi",
-      "Akıcı Dalgalı Silikon LED Difüzör Tasarımı",
-      "Ayarlanabilir Çelik Askı Halatları",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-LED-052 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-LED-052 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
     "id": "TKL-001",
     "code": "HL-TKL-001",
     "slug": "hl-tkl-001",
@@ -1772,547 +1745,6 @@ export const PRODUCTS: Product[] = [
     ],
     "seoTitle": "HL-TKL-006 | Hilal Avize Kahramanmaraş",
     "seoDescription": "HL-TKL-006 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-007",
-    "code": "HL-TKL-007",
-    "slug": "hl-tkl-007",
-    "name": "HL-TKL-007",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Sarkıt Avize",
-    "description": "HL-TKL-007, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 70 cm / Ayarlanabilir Yükseklik ölçüleri, 6 kollu E27 / G9 Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Modern dairesel halka formu ve füme cam küreleri ile salon ve yemek alanlarına seçkin bir hava katar.",
-    "dimensions": "Çap: 70 cm / Ayarlanabilir Yükseklik",
-    "lightingType": "6 kollu E27 / G9 Duy (LED Uyumlu)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-007.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-007.jpeg"
-    ],
-    "features": [
-      "6 kollu E27 / G9 Duy (LED Uyumlu)",
-      "Çap: 70 cm / Ayarlanabilir Yükseklik",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-007 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-007 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-008",
-    "code": "HL-TKL-008",
-    "slug": "hl-tkl-008",
-    "name": "HL-TKL-008",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Ada & Masa Üstü Sarkıt",
-    "description": "HL-TKL-008, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 81 cm | Yükseklik: 51 - 86 cm (Ayarlanabilir) ölçüleri, GU10 (2x7W) Spot + E27 (2x20W Max) Küre aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Mutfak adası ve yemek masası üstü için bronz gövdeli, 2 adet yönlendirilebilir spot ve 2 adet füme cam küreli modern lineer sarkıt.",
-    "dimensions": "Genişlik: 81 cm | Yükseklik: 51 - 86 cm (Ayarlanabilir)",
-    "lightingType": "GU10 (2x7W) Spot + E27 (2x20W Max) Küre",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-008.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-008.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-008_2.jpeg"
-    ],
-    "features": [
-      "GU10 (2x7W) Spot + E27 (2x20W Max) Küre",
-      "Genişlik: 81 cm | Yükseklik: 51 - 86 cm (Ayarlanabilir)",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-008 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-008 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-009",
-    "code": "HL-TKL-009",
-    "slug": "hl-tkl-009",
-    "name": "HL-TKL-009",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "12 li Bal Cam Sarkıt",
-    "description": "HL-TKL-009, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 90 cm | Gövde: 35 cm | Toplam Yükseklik: 90 cm ölçüleri, 12 li G9 / E14 Duy (Bal Cam Küreli) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "90 cm çapında dairesel pirinç gövde ve etrafını saran 12 adet bal rengi cam küre ile salon ve yemek odalarına sıcak bir ışıltı kazandırır.",
-    "dimensions": "Çap: 90 cm | Gövde: 35 cm | Toplam Yükseklik: 90 cm",
-    "lightingType": "12 li G9 / E14 Duy (Bal Cam Küreli)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-009.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-009.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-009_2.jpeg"
-    ],
-    "features": [
-      "12 li G9 / E14 Duy (Bal Cam Küreli)",
-      "Çap: 90 cm | Gövde: 35 cm | Toplam Yükseklik: 90 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-009 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-009 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-010",
-    "code": "HL-TKL-010",
-    "slug": "hl-tkl-010",
-    "name": "HL-TKL-010",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Lineer Sarkıt & Spot",
-    "description": "HL-TKL-010, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 116 cm | Sarkıt Çapı: Ø6 cm | Yükseklik: 150 cm (Ayarlanabilir) ölçüleri, 5 li GU10 / LED Silindir Sarkıt + 4 lü Yönlendirilebilir Spot aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "116 cm uzunluğunda mat siyah tavan rayı, 5 adet zarif silindir sarkıt ve 4 adet yönlendirilebilir tavan spotu ile modern mimari aydınlatma.",
-    "dimensions": "Genişlik: 116 cm | Sarkıt Çapı: Ø6 cm | Yükseklik: 150 cm (Ayarlanabilir)",
-    "lightingType": "5 li GU10 / LED Silindir Sarkıt + 4 lü Yönlendirilebilir Spot",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-010.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-010.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-010_2.jpeg"
-    ],
-    "features": [
-      "5 li GU10 / LED Silindir Sarkıt + 4 lü Yönlendirilebilir Spot",
-      "Genişlik: 116 cm | Sarkıt Çapı: Ø6 cm | Yükseklik: 150 cm (Ayarlanabilir)",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-010 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-010 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-011",
-    "code": "HL-TKL-011",
-    "slug": "hl-tkl-011",
-    "name": "HL-TKL-011",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Moleküler Füme Sarkıt",
-    "description": "HL-TKL-011, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 100 cm | Ayarlanabilir Çift Askı Boyu ölçüleri, E27 / G9 Duy (Reflekte Füme Cam Küreler) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Yatay lineer gövde üzerinde kümelenen reflekte füme cam küreleri ile modern salon ve yemek masaları için etkileyici bir odak noktası.",
-    "dimensions": "Genişlik: 100 cm | Ayarlanabilir Çift Askı Boyu",
-    "lightingType": "E27 / G9 Duy (Reflekte Füme Cam Küreler)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-011.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-011.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-011_2.jpeg"
-    ],
-    "features": [
-      "E27 / G9 Duy (Reflekte Füme Cam Küreler)",
-      "Genişlik: 100 cm | Ayarlanabilir Çift Askı Boyu",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-011 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-011 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-012",
-    "code": "HL-TKL-012",
-    "slug": "hl-tkl-012",
-    "name": "HL-TKL-012",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "5 li Tüp Sarkıt",
-    "description": "HL-TKL-012, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 90-100 cm | Kademeli Ayarlanabilir Sarkıt Boyu ölçüleri, Dahili LED / GU10 Uyumlu Odak Işık Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Kademeli sarkıtılan 5 adet mat siyah silindir tüpü ile mutfak adası, yemek masası ve salon köşeleri için minimalist odak aydınlatması.",
-    "dimensions": "Genişlik: 90-100 cm | Kademeli Ayarlanabilir Sarkıt Boyu",
-    "lightingType": "Dahili LED / GU10 Uyumlu Odak Işık Modülü",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-012.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-012.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-012_2.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-012_3.jpeg"
-    ],
-    "features": [
-      "Dahili LED / GU10 Uyumlu Odak Işık Modülü",
-      "Genişlik: 90-100 cm | Kademeli Ayarlanabilir Sarkıt Boyu",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-012 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-012 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-013",
-    "code": "HL-TKL-013",
-    "slug": "hl-tkl-013",
-    "name": "HL-TKL-013",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "5 li Helezon Sarkıt",
-    "description": "HL-TKL-013, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 35 cm | Rozans: 25 cm | Yükseklik: 100 cm (Ayarlanabilir) ölçüleri, 5 li E27 Duy (Bal Cam Küreli) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Helezon spiral dizilimli 5 adet altın başlıklı bal rengi cam küresiyle merdiven holü, köşe ve yüksek tavanlar için zarif kademeli sarkıt.",
-    "dimensions": "Çap: 35 cm | Rozans: 25 cm | Yükseklik: 100 cm (Ayarlanabilir)",
-    "lightingType": "5 li E27 Duy (Bal Cam Küreli)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-013.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-013.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-013_2.jpeg"
-    ],
-    "features": [
-      "5 li E27 Duy (Bal Cam Küreli)",
-      "Çap: 35 cm | Rozans: 25 cm | Yükseklik: 100 cm (Ayarlanabilir)",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-013 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-013 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-014",
-    "code": "HL-TKL-014",
-    "slug": "hl-tkl-014",
-    "name": "HL-TKL-014",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Çift Küreli Sarkıt",
-    "description": "HL-TKL-014, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 38 cm | Gövde Yüksekliği: 18 cm | Toplam Yükseklik: 75 cm ölçüleri, 2 li G9 / E14 Duy (Bal Cam Küre) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "38 cm genişliğinde eskitme pirinç gövde ve iki yöne bakan bal rengi cam küreleri ile ada üstü ve berjer yanı için şık kompakt sarkıt.",
-    "dimensions": "Genişlik: 38 cm | Gövde Yüksekliği: 18 cm | Toplam Yükseklik: 75 cm",
-    "lightingType": "2 li G9 / E14 Duy (Bal Cam Küre)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-014.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-014.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-014_2.jpeg"
-    ],
-    "features": [
-      "2 li G9 / E14 Duy (Bal Cam Küre)",
-      "Genişlik: 38 cm | Gövde Yüksekliği: 18 cm | Toplam Yükseklik: 75 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-014 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-014 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-015",
-    "code": "HL-TKL-015",
-    "slug": "hl-tkl-015",
-    "name": "HL-TKL-015",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Modern Sarkıt",
-    "description": "HL-TKL-015, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 / LED Duy Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Özgün tasarımı ve sıcak ışık yayılımı ile modern mutfak, antre ve oturma alanlarına estetik katan sarkıt avize.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 / LED Duy Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-015.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-015.jpeg"
-    ],
-    "features": [
-      "E27 / LED Duy Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-015 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-015 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-016",
-    "code": "HL-TKL-016",
-    "slug": "hl-tkl-016",
-    "name": "HL-TKL-016",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Modern Sarkıt",
-    "description": "HL-TKL-016, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 / LED Duy Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "İnce detayları ve dengeli ışık dağılımıyla yemek masası ve ada üstlerinde göz yormayan zarif bir ambiyans sağlar.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 / LED Duy Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-016.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-016.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-016_2.jpeg"
-    ],
-    "features": [
-      "E27 / LED Duy Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-016 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-016 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-017",
-    "code": "HL-TKL-017",
-    "slug": "hl-tkl-017",
-    "name": "HL-TKL-017",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Tasarım Sarkıt",
-    "description": "HL-TKL-017, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 / G9 Duy Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Mekanlara derinlik katan formu ve kaliteli malzeme işçiliği ile seçkin yaşam alanları için özel sarkıt modeli.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 / G9 Duy Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-017.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-017.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-017_2.jpeg"
-    ],
-    "features": [
-      "E27 / G9 Duy Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-017 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-017 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-018",
-    "code": "HL-TKL-018",
-    "slug": "hl-tkl-018",
-    "name": "HL-TKL-018",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Modern Sarkıt",
-    "description": "HL-TKL-018, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, Dahili LED / E27 Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Modern iç mimari trendlerine uygun hatları ve homojen ışığıyla yaşam alanlarını tamamlayan sarkıt model.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED / E27 Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-018.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-018.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-018_2.jpeg"
-    ],
-    "features": [
-      "Dahili LED / E27 Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-018 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-018 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-019",
-    "code": "HL-TKL-019",
-    "slug": "hl-tkl-019",
-    "name": "HL-TKL-019",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Tasarım Sarkıt",
-    "description": "HL-TKL-019, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 / LED Duy Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Şık cam formu ve estetik askı detaylarıyla yemek alanları ve ada tezgahlarına değer katan modern sarkıt avize.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 / LED Duy Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-019.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-019.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-019_2.jpeg"
-    ],
-    "features": [
-      "E27 / LED Duy Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-019 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-019 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-020",
-    "code": "HL-TKL-020",
-    "slug": "hl-tkl-020",
-    "name": "HL-TKL-020",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Modern Sarkıt",
-    "description": "HL-TKL-020, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Çap: 60 cm / Ayarlanabilir Yükseklik ölçüleri, E14 Mum Duy (LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Estetik halka gövde tasarımı ve küre cam başlıklarıyla yaşam alanlarınıza seçkin bir zarafet katan modern sarkıt avize.",
-    "dimensions": "Çap: 60 cm / Ayarlanabilir Yükseklik",
-    "lightingType": "E14 Mum Duy (LED Uyumlu)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-020.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-020.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-020_2.jpeg"
-    ],
-    "features": [
-      "E14 Mum Duy (LED Uyumlu)",
-      "Çap: 60 cm / Ayarlanabilir Yükseklik",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-020 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-020 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-021",
-    "code": "HL-TKL-021",
-    "slug": "hl-tkl-021",
-    "name": "HL-TKL-021",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Tasarım Sarkıt",
-    "description": "HL-TKL-021, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Modern geometrik formu ve dengeli ışık yayılımı ile yemek masası ve ada tezgahlarına değer katan özel sarkıt.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-021.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-021.jpeg"
-    ],
-    "features": [
-      "E27 Standart Duy (LED Ampul Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-021 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-021 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-022",
-    "code": "HL-TKL-022",
-    "slug": "hl-tkl-022",
-    "name": "HL-TKL-022",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Modern Sarkıt",
-    "description": "HL-TKL-022, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, Dahili LED / E27 Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Zarif hatları ve yüksek ışık kalitesiyle salon, antre ve oturma alanlarına derinlik katan şık sarkıt modeli.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED / E27 Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-022.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-022.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-022_2.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-022_3.jpeg"
-    ],
-    "features": [
-      "Dahili LED / E27 Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-022 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-022 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-023",
-    "code": "HL-TKL-023",
-    "slug": "hl-tkl-023",
-    "name": "HL-TKL-023",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Tasarım Sarkıt",
-    "description": "HL-TKL-023, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 / G9 Duy Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "İnce işçilikli detayları ve modern askı sistemiyle seçkin mekanlar için tasarlanmış estetik sarkıt avize.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 / G9 Duy Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-023.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-023.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-023_2.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-023_3.jpeg"
-    ],
-    "features": [
-      "E27 / G9 Duy Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-023 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-023 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-024",
-    "code": "HL-TKL-024",
-    "slug": "hl-tkl-024",
-    "name": "HL-TKL-024",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Modern Sarkıt",
-    "description": "HL-TKL-024, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Yumuşak ışık dağılımı ve şık gövdesiyle mutfak adaları ve yemek odaları için ideal sarkıt aydınlatma.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-024.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-024.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-024_2.jpeg"
-    ],
-    "features": [
-      "E27 Standart Duy (LED Ampul Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-024 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-024 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-025",
-    "code": "HL-TKL-025",
-    "slug": "hl-tkl-025",
-    "name": "HL-TKL-025",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Tasarım Sarkıt",
-    "description": "HL-TKL-025, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, Dahili LED / E27 Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Çağdaş iç mekan trendlerini yansıtan yalın ve güçlü çizgileriyle ferah aydınlatma sunan modern sarkıt.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "Dahili LED / E27 Uyumlu",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-025.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-025.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-025_2.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-025_3.jpeg"
-    ],
-    "features": [
-      "Dahili LED / E27 Uyumlu",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-025 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-025 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "TKL-026",
-    "code": "HL-TKL-026",
-    "slug": "hl-tkl-026",
-    "name": "HL-TKL-026",
-    "categorySlug": "tekli-avizeler",
-    "categoryName": "Üçlü & Tekli Avizeler ve Sarkıtlar",
-    "badge": "Modern Sarkıt",
-    "description": "HL-TKL-026, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Ayarlanabilir Yükseklik / Standart Ölçü ölçüleri, E27 Standart Duy (LED Ampul Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Dekoratif duruşu ve homojen ışık karakteriyle yaşam alanlarının atmosferini zenginleştiren seçkin sarkıt model.",
-    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
-    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
-    "branch": "showroom",
-    "image": "/products/tekli-avizeler/photo/HL-TKL-026.jpeg",
-    "images": [
-      "/products/tekli-avizeler/photo/HL-TKL-026.jpeg",
-      "/products/tekli-avizeler/photo/HL-TKL-026_2.jpeg"
-    ],
-    "features": [
-      "E27 Standart Duy (LED Ampul Uyumlu)",
-      "Ayarlanabilir Yükseklik / Standart Ölçü",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-TKL-026 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-TKL-026 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
     "id": "ASP-001",
@@ -2763,274 +2195,6 @@ export const PRODUCTS: Product[] = [
     "seoDescription": "HL-ASP-017 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
-    "id": "ASP-018",
-    "code": "HL-ASP-018",
-    "slug": "hl-asp-018",
-    "name": "HL-ASP-018",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Tasarım Aplik",
-    "description": "HL-ASP-018, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 28 cm | Yükseklik: 55 cm ölçüleri, 2 li G9 Duy (Opal Beyaz Cam Küreli) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Zarif kavisli pirinç gövde ve çift opal beyaz cam küresiyle yatak başı, koridor ve salon duvarlarında huzurlu bir ışık yayar.",
-    "dimensions": "Genişlik: 28 cm | Yükseklik: 55 cm",
-    "lightingType": "2 li G9 Duy (Opal Beyaz Cam Küreli)",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-018.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-018.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-018_2.jpeg"
-    ],
-    "features": [
-      "2 li G9 Duy (Opal Beyaz Cam Küreli)",
-      "Genişlik: 28 cm | Yükseklik: 55 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-018 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-018 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-019",
-    "code": "HL-ASP-019",
-    "slug": "hl-asp-019",
-    "name": "HL-ASP-019",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Modern LED Aplik",
-    "description": "HL-ASP-019, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Yükseklik: 60 cm | Genişlik: 15 cm ölçüleri, Dahili 3000K Günışığı LED Modülü aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Merkezi gövde etrafında helezonik kıvrılan akıcı LED hattı ile duvarlarda heykelsi ve modern bir ışık formu oluşturur.",
-    "dimensions": "Yükseklik: 60 cm | Genişlik: 15 cm",
-    "lightingType": "Dahili 3000K Günışığı LED Modülü",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-019.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-019.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-019_2.jpeg"
-    ],
-    "features": [
-      "Dahili 3000K Günışığı LED Modülü",
-      "Yükseklik: 60 cm | Genişlik: 15 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-019 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-019 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-020",
-    "code": "HL-ASP-020",
-    "slug": "hl-asp-020",
-    "name": "HL-ASP-020",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Minimalist LED Aplik",
-    "description": "HL-ASP-020, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Yükseklik: 80-100 cm | Çap: Ø2.5 cm ölçüleri, Dahili Arka Endirekt LED (Sıcak Işık) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Duvara vuran yumuşak endirekt ışığı ve ince pirinç çubuk formuyla tablo yanları, koridor ve salonlar için lüks minimalist aplik.",
-    "dimensions": "Yükseklik: 80-100 cm | Çap: Ø2.5 cm",
-    "lightingType": "Dahili Arka Endirekt LED (Sıcak Işık)",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-020.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-020.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-020_2.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-020_3.jpeg"
-    ],
-    "features": [
-      "Dahili Arka Endirekt LED (Sıcak Işık)",
-      "Yükseklik: 80-100 cm | Çap: Ø2.5 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-020 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-020 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-021",
-    "code": "HL-ASP-021",
-    "slug": "hl-asp-021",
-    "name": "HL-ASP-021",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Lüks Kristal Aplik",
-    "description": "HL-ASP-021, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 22 cm | Yükseklik: 65 cm ölçüleri, 2 li E14 Duy (Kristal Prizma Işık Yayılımı) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Altın sarısı dikey borular ve ortasındaki prizmatik kristal taş kuşağıyla duvarlarda saray zarafetinde parıltı sunan lüks aplik.",
-    "dimensions": "Genişlik: 22 cm | Yükseklik: 65 cm",
-    "lightingType": "2 li E14 Duy (Kristal Prizma Işık Yayılımı)",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-021.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-021.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-021_2.jpeg"
-    ],
-    "features": [
-      "2 li E14 Duy (Kristal Prizma Işık Yayılımı)",
-      "Genişlik: 22 cm | Yükseklik: 65 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-021 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-021 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-022",
-    "code": "HL-ASP-022",
-    "slug": "hl-asp-022",
-    "name": "HL-ASP-022",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Krom Meşale Aplik",
-    "description": "HL-ASP-022, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Yükseklik: 55 cm | Çap: 15 cm ölçüleri, E27 / E14 Duy (Şeffaf Cam Küre) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Uzun krom meşale formu ve üstündeki berrak şeffaf cam küresiyle antre ve koridorlara çağdaş bir parlaklık kazandırır.",
-    "dimensions": "Yükseklik: 55 cm | Çap: 15 cm",
-    "lightingType": "E27 / E14 Duy (Şeffaf Cam Küre)",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-022.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-022.jpeg"
-    ],
-    "features": [
-      "E27 / E14 Duy (Şeffaf Cam Küre)",
-      "Yükseklik: 55 cm | Çap: 15 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-022 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-022 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-023",
-    "code": "HL-ASP-023",
-    "slug": "hl-asp-023",
-    "name": "HL-ASP-023",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Kumaş Şapkalı Aplik",
-    "description": "HL-ASP-023, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Yükseklik: 45 cm | Şapka Çapı: 16 cm ölçüleri, E14 Duy (Kumaş Abajur Başlığı) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Pirinç döküm gövde ve krem kumaş konik şapkası ile yatak odası ve oturma alanlarında gözü dinlendiren sıcak bir ambiyans ışığı.",
-    "dimensions": "Yükseklik: 45 cm | Şapka Çapı: 16 cm",
-    "lightingType": "E14 Duy (Kumaş Abajur Başlığı)",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-023.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-023.jpeg"
-    ],
-    "features": [
-      "E14 Duy (Kumaş Abajur Başlığı)",
-      "Yükseklik: 45 cm | Şapka Çapı: 16 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-023 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-023 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-024",
-    "code": "HL-ASP-024",
-    "slug": "hl-asp-024",
-    "name": "HL-ASP-024",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Rustik Bal Cam Aplik",
-    "description": "HL-ASP-024, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Yükseklik: 35 cm | Derinlik: 22 cm ölçüleri, E27 Duy (Rustik Filament & LED Uyumlu) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Kavisli pirinç kolu ve bal rengi şeffaf cam küresiyle rustik ve sıcak tonlu mekanların vazgeçilmez duvar aydınlatması.",
-    "dimensions": "Yükseklik: 35 cm | Derinlik: 22 cm",
-    "lightingType": "E27 Duy (Rustik Filament & LED Uyumlu)",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-024.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-024.jpeg"
-    ],
-    "features": [
-      "E27 Duy (Rustik Filament & LED Uyumlu)",
-      "Yükseklik: 35 cm | Derinlik: 22 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-024 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-024 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-025",
-    "code": "HL-ASP-025",
-    "slug": "hl-asp-025",
-    "name": "HL-ASP-025",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "5 li Tavan Ray Spotu",
-    "description": "HL-ASP-025, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Genişlik: 120 cm | Spot Çapı: Ø6 cm ölçüleri, 5 x GU10 / Dahili LED (360° Yönlendirilebilir) aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Mat siyah lineer tavan tablası üzerinde 5 adet bağımsız yönlendirilebilir silindir spotuyla mimari ve modern vurgu aydınlatması.",
-    "dimensions": "Genişlik: 120 cm | Spot Çapı: Ø6 cm",
-    "lightingType": "5 x GU10 / Dahili LED (360° Yönlendirilebilir)",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-025.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-025.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-025_2.jpeg"
-    ],
-    "features": [
-      "5 x GU10 / Dahili LED (360° Yönlendirilebilir)",
-      "Genişlik: 120 cm | Spot Çapı: Ø6 cm",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-025 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-025 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-026",
-    "code": "HL-ASP-026",
-    "slug": "hl-asp-026",
-    "name": "HL-ASP-026",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Dekoratif Aplik",
-    "description": "HL-ASP-026, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Ölçü / Duvar Tipi ölçüleri, LED / E27 Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Şık hatları ve kaliteli malzeme yapısıyla iç mekan duvarlarına estetik dokunuş katan çağdaş aplik modeli.",
-    "dimensions": "Standart Ölçü / Duvar Tipi",
-    "lightingType": "LED / E27 Uyumlu",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-026.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-026.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-026_2.jpeg"
-    ],
-    "features": [
-      "LED / E27 Uyumlu",
-      "Standart Ölçü / Duvar Tipi",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-026 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-026 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
-    "id": "ASP-027",
-    "code": "HL-ASP-027",
-    "slug": "hl-asp-027",
-    "name": "HL-ASP-027",
-    "categorySlug": "aplik-ve-spotlar",
-    "categoryName": "Aplik ve Spot Aydınlatma",
-    "badge": "Tasarım Aplik",
-    "description": "HL-ASP-027, Kahramanmaraş Hilal Showroom kalitesi ve güvencesiyle sunulmaktadır. Standart Ölçü / Duvar Tipi ölçüleri, LED / G9-E14 Uyumlu aydınlatması ile estetik ve yüksek verimli ışık sağlar.",
-    "shortDescription": "Modern yaşam alanları, koridor ve antreler için hem aydınlatma hem de sanatsal duvar dekoru sunan şık aplik.",
-    "dimensions": "Standart Ölçü / Duvar Tipi",
-    "lightingType": "LED / G9-E14 Uyumlu",
-    "branch": "showroom",
-    "image": "/products/aplik-ve-spotlar/photo/HL-ASP-027.jpeg",
-    "images": [
-      "/products/aplik-ve-spotlar/photo/HL-ASP-027.jpeg",
-      "/products/aplik-ve-spotlar/photo/HL-ASP-027_2.jpeg"
-    ],
-    "features": [
-      "LED / G9-E14 Uyumlu",
-      "Standart Ölçü / Duvar Tipi",
-      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
-      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
-    ],
-    "seoTitle": "HL-ASP-027 | Hilal Avize Kahramanmaraş",
-    "seoDescription": "HL-ASP-027 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
-  },
-  {
     "id": "YRL-700",
     "code": "HL-YRL-700",
     "slug": "hl-yrl-700",
@@ -3328,6 +2492,841 @@ export const PRODUCTS: Product[] = [
     ],
     "seoTitle": "HL-YRL-800 | Hilal Avize Kahramanmaraş",
     "seoDescription": "HL-YRL-800 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-810",
+    "code": "HL-YRL-810",
+    "slug": "hl-yrl-810",
+    "name": "HL-YRL-810",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Modern dairesel halka formu ve füme cam küreleri ile salon ve yemek alanlarına seçkin bir hava katar. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-810; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Çap: 70 cm / Ayarlanabilir Yükseklik | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "6 kollu E27 / G9 Duy (LED Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-810.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-810.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-810 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-810 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-820",
+    "code": "HL-YRL-820",
+    "slug": "hl-yrl-820",
+    "name": "HL-YRL-820",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Mutfak adası ve yemek masası üstü için bronz gövdeli, 2 adet yönlendirilebilir spot ve 2 adet füme cam küreli modern lineer sarkıt. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-820; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 81 cm | Yükseklik: 51 - 86 cm (Ayarlanabilir) | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "GU10 (2x7W) Spot + E27 (2x20W Max) Küre",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-820.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-820.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-820_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-820 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-820 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-830",
+    "code": "HL-YRL-830",
+    "slug": "hl-yrl-830",
+    "name": "HL-YRL-830",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "90 cm çapında dairesel pirinç gövde ve etrafını saran 12 adet bal rengi cam küre ile salon ve yemek odalarına sıcak bir ışıltı kazandırır. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-830; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Çap: 90 cm | Gövde: 35 cm | Toplam Yükseklik: 90 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "12 li G9 / E14 Duy (Bal Cam Küreli)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-830.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-830.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-830_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-830 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-830 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-840",
+    "code": "HL-YRL-840",
+    "slug": "hl-yrl-840",
+    "name": "HL-YRL-840",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "116 cm uzunluğunda mat siyah tavan rayı, 5 adet zarif silindir sarkıt ve 4 adet yönlendirilebilir tavan spotu ile modern mimari aydınlatma. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-840; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 116 cm | Sarkıt Çapı: Ø6 cm | Yükseklik: 150 cm (Ayarlanabilir) | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "5 li GU10 / LED Silindir Sarkıt + 4 lü Yönlendirilebilir Spot",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-840.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-840.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-840_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-840 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-840 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-850",
+    "code": "HL-YRL-850",
+    "slug": "hl-yrl-850",
+    "name": "HL-YRL-850",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Yatay lineer gövde üzerinde kümelenen reflekte füme cam küreleri ile modern salon ve yemek masaları için etkileyici bir odak noktası. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-850; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 100 cm | Ayarlanabilir Çift Askı Boyu | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 / G9 Duy (Reflekte Füme Cam Küreler)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-850.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-850.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-850_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-850 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-850 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-860",
+    "code": "HL-YRL-860",
+    "slug": "hl-yrl-860",
+    "name": "HL-YRL-860",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Kademeli sarkıtılan 5 adet mat siyah silindir tüpü ile mutfak adası, yemek masası ve salon köşeleri için minimalist odak aydınlatması. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-860; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 90-100 cm | Kademeli Ayarlanabilir Sarkıt Boyu | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "Dahili LED / GU10 Uyumlu Odak Işık Modülü",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-860.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-860.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-860_2.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-860_3.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-860 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-860 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-870",
+    "code": "HL-YRL-870",
+    "slug": "hl-yrl-870",
+    "name": "HL-YRL-870",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Helezon spiral dizilimli 5 adet altın başlıklı bal rengi cam küresiyle merdiven holü, köşe ve yüksek tavanlar için zarif kademeli sarkıt. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-870; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Çap: 35 cm | Rozans: 25 cm | Yükseklik: 100 cm (Ayarlanabilir) | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "5 li E27 Duy (Bal Cam Küreli)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-870.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-870.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-870_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-870 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-870 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-880",
+    "code": "HL-YRL-880",
+    "slug": "hl-yrl-880",
+    "name": "HL-YRL-880",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "38 cm genişliğinde eskitme pirinç gövde ve iki yöne bakan bal rengi cam küreleri ile ada üstü ve berjer yanı için şık kompakt sarkıt. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-880; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 38 cm | Gövde Yüksekliği: 18 cm | Toplam Yükseklik: 75 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "2 li G9 / E14 Duy (Bal Cam Küre)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-880.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-880.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-880_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-880 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-880 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-890",
+    "code": "HL-YRL-890",
+    "slug": "hl-yrl-890",
+    "name": "HL-YRL-890",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Özgün tasarımı ve sıcak ışık yayılımı ile modern mutfak, antre ve oturma alanlarına estetik katan sarkıt avize. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-890; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 / LED Duy Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-890.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-890.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-890 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-890 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-900",
+    "code": "HL-YRL-900",
+    "slug": "hl-yrl-900",
+    "name": "HL-YRL-900",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "İnce detayları ve dengeli ışık dağılımıyla yemek masası ve ada üstlerinde göz yormayan zarif bir ambiyans sağlar. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-900; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 / LED Duy Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-900.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-900.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-900_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-900 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-900 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-910",
+    "code": "HL-YRL-910",
+    "slug": "hl-yrl-910",
+    "name": "HL-YRL-910",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Mekanlara derinlik katan formu ve kaliteli malzeme işçiliği ile seçkin yaşam alanları için özel sarkıt modeli. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-910; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 / G9 Duy Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-910.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-910.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-910_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-910 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-910 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-920",
+    "code": "HL-YRL-920",
+    "slug": "hl-yrl-920",
+    "name": "HL-YRL-920",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Modern iç mimari trendlerine uygun hatları ve homojen ışığıyla yaşam alanlarını tamamlayan sarkıt model. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-920; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "Dahili LED / E27 Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-920.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-920.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-920_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-920 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-920 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-930",
+    "code": "HL-YRL-930",
+    "slug": "hl-yrl-930",
+    "name": "HL-YRL-930",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Şık cam formu ve estetik askı detaylarıyla yemek alanları ve ada tezgahlarına değer katan modern sarkıt avize. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-930; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 / LED Duy Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-930.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-930.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-930_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-930 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-930 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-940",
+    "code": "HL-YRL-940",
+    "slug": "hl-yrl-940",
+    "name": "HL-YRL-940",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Estetik halka gövde tasarımı ve küre cam başlıklarıyla yaşam alanlarınıza seçkin bir zarafet katan modern sarkıt avize. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-940; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Çap: 60 cm / Ayarlanabilir Yükseklik | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E14 Mum Duy (LED Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-940.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-940.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-940_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-940 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-940 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-950",
+    "code": "HL-YRL-950",
+    "slug": "hl-yrl-950",
+    "name": "HL-YRL-950",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Modern geometrik formu ve dengeli ışık yayılımı ile yemek masası ve ada tezgahlarına değer katan özel sarkıt. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-950; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-950.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-950.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-950 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-950 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-960",
+    "code": "HL-YRL-960",
+    "slug": "hl-yrl-960",
+    "name": "HL-YRL-960",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Zarif hatları ve yüksek ışık kalitesiyle salon, antre ve oturma alanlarına derinlik katan şık sarkıt modeli. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-960; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "Dahili LED / E27 Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-960.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-960.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-960_2.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-960_3.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-960 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-960 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-970",
+    "code": "HL-YRL-970",
+    "slug": "hl-yrl-970",
+    "name": "HL-YRL-970",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "İnce işçilikli detayları ve modern askı sistemiyle seçkin mekanlar için tasarlanmış estetik sarkıt avize. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-970; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 / G9 Duy Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-970.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-970.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-970_2.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-970_3.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-970 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-970 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-980",
+    "code": "HL-YRL-980",
+    "slug": "hl-yrl-980",
+    "name": "HL-YRL-980",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Yumuşak ışık dağılımı ve şık gövdesiyle mutfak adaları ve yemek odaları için ideal sarkıt aydınlatma. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-980; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-980.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-980.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-980_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-980 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-980 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-990",
+    "code": "HL-YRL-990",
+    "slug": "hl-yrl-990",
+    "name": "HL-YRL-990",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Çağdaş iç mekan trendlerini yansıtan yalın ve güçlü çizgileriyle ferah aydınlatma sunan modern sarkıt. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-990; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "Dahili LED / E27 Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-990.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-990.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-990_2.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-990_3.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-990 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-990 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1000",
+    "code": "HL-YRL-1000",
+    "slug": "hl-yrl-1000",
+    "name": "HL-YRL-1000",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Dekoratif duruşu ve homojen ışık karakteriyle yaşam alanlarının atmosferini zenginleştiren seçkin sarkıt model. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1000; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1000.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1000.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1000_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1000 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1000 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1010",
+    "code": "HL-YRL-1010",
+    "slug": "hl-yrl-1010",
+    "name": "HL-YRL-1010",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Zarif kavisli pirinç gövde ve çift opal beyaz cam küresiyle yatak başı, koridor ve salon duvarlarında huzurlu bir ışık yayar. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1010; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 28 cm | Yükseklik: 55 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "2 li G9 Duy (Opal Beyaz Cam Küreli)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1010.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1010.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1010_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1010 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1010 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1020",
+    "code": "HL-YRL-1020",
+    "slug": "hl-yrl-1020",
+    "name": "HL-YRL-1020",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Merkezi gövde etrafında helezonik kıvrılan akıcı LED hattı ile duvarlarda heykelsi ve modern bir ışık formu oluşturur. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1020; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Yükseklik: 60 cm | Genişlik: 15 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "Dahili 3000K Günışığı LED Modülü",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1020.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1020.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1020_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1020 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1020 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1030",
+    "code": "HL-YRL-1030",
+    "slug": "hl-yrl-1030",
+    "name": "HL-YRL-1030",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Duvara vuran yumuşak endirekt ışığı ve ince pirinç çubuk formuyla tablo yanları, koridor ve salonlar için lüks minimalist aplik. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1030; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Yükseklik: 80-100 cm | Çap: Ø2.5 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "Dahili Arka Endirekt LED (Sıcak Işık)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1030.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1030.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1030_2.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1030_3.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1030 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1030 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1040",
+    "code": "HL-YRL-1040",
+    "slug": "hl-yrl-1040",
+    "name": "HL-YRL-1040",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Altın sarısı dikey borular ve ortasındaki prizmatik kristal taş kuşağıyla duvarlarda saray zarafetinde parıltı sunan lüks aplik. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1040; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 22 cm | Yükseklik: 65 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "2 li E14 Duy (Kristal Prizma Işık Yayılımı)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1040.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1040.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1040_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1040 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1040 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1050",
+    "code": "HL-YRL-1050",
+    "slug": "hl-yrl-1050",
+    "name": "HL-YRL-1050",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Uzun krom meşale formu ve üstündeki berrak şeffaf cam küresiyle antre ve koridorlara çağdaş bir parlaklık kazandırır. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1050; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Yükseklik: 55 cm | Çap: 15 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 / E14 Duy (Şeffaf Cam Küre)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1050.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1050.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1050 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1050 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1060",
+    "code": "HL-YRL-1060",
+    "slug": "hl-yrl-1060",
+    "name": "HL-YRL-1060",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Pirinç döküm gövde ve krem kumaş konik şapkası ile yatak odası ve oturma alanlarında gözü dinlendiren sıcak bir ambiyans ışığı. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1060; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Yükseklik: 45 cm | Şapka Çapı: 16 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E14 Duy (Kumaş Abajur Başlığı)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1060.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1060.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1060 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1060 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1070",
+    "code": "HL-YRL-1070",
+    "slug": "hl-yrl-1070",
+    "name": "HL-YRL-1070",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Kavisli pirinç kolu ve bal rengi şeffaf cam küresiyle rustik ve sıcak tonlu mekanların vazgeçilmez duvar aydınlatması. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1070; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Yükseklik: 35 cm | Derinlik: 22 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "E27 Duy (Rustik Filament & LED Uyumlu)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1070.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1070.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1070 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1070 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1080",
+    "code": "HL-YRL-1080",
+    "slug": "hl-yrl-1080",
+    "name": "HL-YRL-1080",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Mat siyah lineer tavan tablası üzerinde 5 adet bağımsız yönlendirilebilir silindir spotuyla mimari ve modern vurgu aydınlatması. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1080; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 120 cm | Spot Çapı: Ø6 cm | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "5 x GU10 / Dahili LED (360° Yönlendirilebilir)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1080.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1080.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1080_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1080 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1080 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1090",
+    "code": "HL-YRL-1090",
+    "slug": "hl-yrl-1090",
+    "name": "HL-YRL-1090",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Şık hatları ve kaliteli malzeme yapısıyla iç mekan duvarlarına estetik dokunuş katan çağdaş aplik modeli. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1090; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Standart Ölçü / Duvar Tipi | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "LED / E27 Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1090.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1090.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1090_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1090 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1090 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1100",
+    "code": "HL-YRL-1100",
+    "slug": "hl-yrl-1100",
+    "name": "HL-YRL-1100",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Modern yaşam alanları, koridor ve antreler için hem aydınlatma hem de sanatsal duvar dekoru sunan şık aplik. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1100; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Standart Ölçü / Duvar Tipi | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "LED / G9-E14 Uyumlu",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1100.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1100.jpeg",
+      "/products/yerli-urunler/photo/HL-YRL-1100_2.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1100 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1100 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
+  },
+  {
+    "id": "YRL-1110",
+    "code": "HL-YRL-1110",
+    "slug": "hl-yrl-1110",
+    "name": "HL-YRL-1110",
+    "categorySlug": "yerli-urunler",
+    "categoryName": "Yerli Üretim Koleksiyonu",
+    "badge": "Özel Ölçü Üretim",
+    "description": "Lineer profil üzerinde organik dalgalar çizen akıcı LED hattı ile yemek masası, ada üstü ve çalışma alanlarına çağdaş mimari zarafet kazandırır. İstediğiniz renkte, ebatta ve tavan yüksekliğine göre özel olarak imal edilir.",
+    "shortDescription": "HL-YRL-1110; özel renk, ebat ve ölçülerde mekana göre üretilebilen yerli üretim özel tasarım koleksiyon modeli.",
+    "dimensions": "Genişlik: 100-110 cm | Ayarlanabilir Çelik Halat Boyu | Mekanınıza Göre Özel Ölçü Üretim",
+    "lightingType": "Dahili 3 Renk Kademeli LED Modülü (45W)",
+    "branch": "showroom",
+    "image": "/products/yerli-urunler/photo/HL-YRL-1110.jpeg",
+    "images": [
+      "/products/yerli-urunler/photo/HL-YRL-1110.jpeg"
+    ],
+    "features": [
+      "İstediğiniz Renkte, Ebatta ve Şekilde Özel İmalat",
+      "Mekanınıza Göre Ayarlanabilir Taşıyıcı Boyu / Askı Sistemi",
+      "Hilal Avize Güvencesiyle Hasarsız Teslimat",
+      "Hilal Avize Uzman Ekibi Tarafından Profesyonel Montaj Desteği"
+    ],
+    "seoTitle": "HL-YRL-1110 | Hilal Avize Kahramanmaraş",
+    "seoDescription": "HL-YRL-1110 modeli, özellikleri ve fiyat danışmanlığı. Kahramanmaraş Hilal Avize Showroom'unda canlı inceleyin."
   },
   {
     "id": "AKS-001",

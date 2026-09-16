@@ -45,7 +45,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/images/categories/banner_led.jpg",
     featured: true,
     subcategories: [],
-    itemCount: 51,
+    itemCount: 50,
   },
   {
     slug: "tekli-avizeler",
@@ -61,7 +61,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/images/categories/banner_sarkitlar.jpg",
     featured: true,
     subcategories: [],
-    itemCount: 26,
+    itemCount: 6,
   },
   {
     slug: "aplik-ve-spotlar",
@@ -77,7 +77,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/images/categories/banner_aplikler.jpg",
     featured: true,
     subcategories: [],
-    itemCount: 27,
+    itemCount: 17,
   },
   {
     slug: "yerli-urunler",
@@ -93,7 +93,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/products/yerli-urunler/photo/770.jpeg",
     featured: true,
     subcategories: [],
-    itemCount: 11,
+    itemCount: 42,
   },
   {
     slug: "aksesuar",
