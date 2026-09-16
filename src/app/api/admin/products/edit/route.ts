@@ -332,21 +332,20 @@ export async function POST(req: Request) {
       seoDescription: updatedItem.shortDescription || "",
     };
 
-    try {
-      await saveProductAsync(fullClientProduct);
-    } catch (saveErr) {
-      console.warn("Dinamik ürün güncelleme uyarısı:", saveErr);
+    const gistSaved = await saveProductAsync(fullClientProduct);
+    if (!gistSaved) {
+      console.error("UYARI: Ürün Gist deposuna kaydedilemedi! Code:", code);
     }
 
     // 7. KALICI REPO KAYDI
     if (isReadOnly) {
       try {
-        commitFilesToGitHub(
+        await commitFilesToGitHub(
           gitFilesToCommit,
           `feat(product): ${code} urunu duzenlendi`
-        ).catch((ghErr) => console.error("Arka plan GitHub commit hatası:", ghErr));
+        );
       } catch (commitErr) {
-        console.error("GitHub commit tetikleme hatası:", commitErr);
+        console.error("GitHub commit hatası:", commitErr);
       }
     } else {
       try {

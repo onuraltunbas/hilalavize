@@ -382,23 +382,22 @@ export async function POST(req: Request) {
       seoTitle: `${code} - ${catConfig.name} | Hilal Avize`,
       seoDescription: cleanDesc,
     };
-
-    try {
-      await saveProductAsync(clientProduct);
-    } catch (saveErr) {
-      console.warn("saveProductAsync uyarısı:", saveErr);
+    // 6. ANLIK KULLANILABİLİRLİK: Gist / Dinamik Ürün Deposuna Kaydet
+    const gistSaved = await saveProductAsync(clientProduct);
+    if (!gistSaved) {
+      console.error("UYARI: Ürün Gist deposuna kaydedilemedi! Code:", code);
     }
 
     // 7. KALICI REPO KAYDI & VERCEL OTOMATİK DERLEME
     if (isReadOnly) {
-      // Vercel Serverless Ortamı: GitHub API ile tek commit at
+      // Vercel Serverless Ortamı: GitHub API ile tek commit at (arka planda)
       try {
-        commitFilesToGitHub(
+        await commitFilesToGitHub(
           gitFilesToCommit,
           `feat(product): yeni urun ${code} eklendi (${catConfig.name})`
-        ).catch((ghErr) => console.error("Arka plan GitHub commit uyarısı:", ghErr));
+        );
       } catch (commitErr) {
-        console.error("GitHub commit tetikleme hatası:", commitErr);
+        console.error("GitHub commit hatası:", commitErr);
       }
     } else {
       // Yerel Ortam: Scripti çalıştır ve yerel git commit at
