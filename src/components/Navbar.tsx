@@ -325,9 +325,9 @@ export function Navbar() {
             <Link
               href="/"
               onClick={handleLinkClick}
-              className={`w-full p-3.5 rounded-xl font-bold text-sm transition-all border flex items-center justify-between shadow-xs ${
+              className={`w-full p-3.5 rounded-xl font-bold text-sm transition-all duration-300 border flex items-center justify-between shadow-xs hover:-translate-y-1 hover:shadow-lg hover:shadow-bronze/20 active:translate-y-0 active:scale-[0.98] ${
                 pathname === "/"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-sm"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-bronze/25"
                   : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
               }`}
             >
@@ -348,7 +348,7 @@ export function Navbar() {
                 <Link
                   href="/koleksiyonlar"
                   onClick={handleLinkClick}
-                  className="text-[11px] font-bold text-bronze hover:underline transition-colors"
+                  className="text-[11px] font-bold text-bronze hover:underline transition-colors hover:-translate-y-0.5 inline-block"
                 >
                   Tümünü Gör →
                 </Link>
@@ -361,7 +361,7 @@ export function Navbar() {
                     key={cat.slug}
                     href={`/kategori/${cat.slug}`}
                     onClick={handleLinkClick}
-                    className="group relative aspect-square rounded-xl overflow-hidden block border border-border/80 shadow-sm hover:border-bronze hover:shadow-md transition-all"
+                    className="group relative aspect-square rounded-xl overflow-hidden block border border-border/80 shadow-sm hover:border-bronze hover:shadow-xl hover:shadow-black/25 hover:-translate-y-1.5 active:translate-y-0 active:scale-[0.97] transition-all duration-300"
                   >
                     {/* Kategori Arka Plan Fotoğrafı */}
                     <Image
@@ -395,10 +395,10 @@ export function Navbar() {
               <Link
                 href="/aydinlatma-nedir"
                 onClick={handleLinkClick}
-                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all duration-300 border flex items-center justify-between shadow-xs hover:-translate-y-1 hover:shadow-lg hover:shadow-bronze/20 hover:border-bronze active:translate-y-0 active:scale-[0.98] ${
                   pathname === "/aydinlatma-nedir"
-                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
-                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-md shadow-bronze/25"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border"
                 }`}
               >
                 <span>Aydınlatma Nedir</span>
@@ -409,10 +409,10 @@ export function Navbar() {
               <Link
                 href="/aydinlattigimiz-mekanlar"
                 onClick={handleLinkClick}
-                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all duration-300 border flex items-center justify-between shadow-xs hover:-translate-y-1 hover:shadow-lg hover:shadow-bronze/20 hover:border-bronze active:translate-y-0 active:scale-[0.98] ${
                   pathname === "/aydinlattigimiz-mekanlar"
-                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
-                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-md shadow-bronze/25"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border"
                 }`}
               >
                 <span>Aydınlattığımız Mekanlar</span>
@@ -423,10 +423,10 @@ export function Navbar() {
               <Link
                 href="/hizmetler"
                 onClick={handleLinkClick}
-                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all duration-300 border flex items-center justify-between shadow-xs hover:-translate-y-1 hover:shadow-lg hover:shadow-bronze/20 hover:border-bronze active:translate-y-0 active:scale-[0.98] ${
                   pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
-                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
-                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-md shadow-bronze/25"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border"
                 }`}
               >
                 <span>Hizmetlerimiz</span>
@@ -437,10 +437,10 @@ export function Navbar() {
               <Link
                 href="/hakkimizda"
                 onClick={handleLinkClick}
-                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all duration-300 border flex items-center justify-between shadow-xs hover:-translate-y-1 hover:shadow-lg hover:shadow-bronze/20 hover:border-bronze active:translate-y-0 active:scale-[0.98] ${
                   pathname === "/hakkimizda"
-                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
-                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-md shadow-bronze/25"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border"
                 }`}
               >
                 <span>Hakkımızda</span>
@@ -458,7 +458,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
                 >
                   <Store className="w-3.5 h-3.5" />
                   <span>Showroom</span>
@@ -469,7 +469,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
                 >
                   <Zap className="w-3.5 h-3.5" />
                   <span>Elektrik Şube</span>
@@ -483,7 +483,7 @@ export function Navbar() {
                 href={COMPANY_DATA.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 border border-purple-400/30 shadow-sm transition-colors"
+                className="w-full bg-[#3d194f] hover:bg-[#52216b] text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-2 border border-purple-400/30 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
                 <InstagramIcon className="w-4 h-4 text-pink-400" />
                 <span>Instagram: {COMPANY_DATA.socials.instagramHandle}</span>
