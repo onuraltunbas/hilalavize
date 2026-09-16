@@ -110,15 +110,42 @@ export function Navbar() {
                   <stop offset="65%" stopColor="#0B0907" stopOpacity="0.99" />
                   <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
+
+                {/* 2. Alt kenardaki parıldayan lüks altın hat */}
+                <linearGradient id="chatgptGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#9E7D3B" stopOpacity="0.35" />
+                  <stop offset="32%" stopColor="#D4AF37" stopOpacity="0.80" />
+                  <stop offset="50%" stopColor="#FBE9B5" stopOpacity="1.0" />
+                  <stop offset="68%" stopColor="#D4AF37" stopOpacity="0.80" />
+                  <stop offset="100%" stopColor="#9E7D3B" stopOpacity="0.35" />
+                </linearGradient>
+
+                {/* 3. Altın Işık Halesi (Glow Efekti) */}
+                <filter id="chatgptGlow" x="-5%" y="-150%" width="110%" height="400%">
+                  <feGaussianBlur stdDeviation="3.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
               </defs>
 
-              {/* Arka Plan Dolgusu: Çizgisiz, yukarıdan aşağıya akıcı gradient */}
+              {/* Arka Plan Dolgusu: Yukarıdan aşağıya akıcı gradient */}
               <rect
                 x="0"
                 y="0"
                 width="1440"
                 height="115"
                 fill="url(#chatgptNavGrad)"
+              />
+
+              {/* Altın Parlayan Kavisli Sınır Çizgisi */}
+              <path
+                d="M 0,75 L 540,75 C 565,75 565,108 590,108 L 850,108 C 875,108 875,75 900,75 L 1440,75"
+                fill="none"
+                stroke="url(#chatgptGoldLine)"
+                strokeWidth="2.2"
+                filter="url(#chatgptGlow)"
               />
             </svg>
           </div>
