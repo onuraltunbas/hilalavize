@@ -79,112 +79,166 @@ export function Navbar() {
     return null;
   }
 
-  return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300">
-      {/* Main Navbar */}
-      <nav
-        className={`w-full transition-all duration-300 ${
-          isScrolled
-            ? "bg-[#E1E0DD]/70 backdrop-blur-md shadow-sm border-b border-border/80 py-3 lg:py-2"
-            : "bg-[#E1E0DD]/60 backdrop-blur-sm border-b border-border/60 py-3.5 lg:py-2.5"
-        }`}
-      >
-        <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-          {/* Brand Logo (En sol tarafta & %10 büyütülmüş) */}
-          <Link href="/" onClick={handleLinkClick} className="flex items-center group shrink-0">
-            <Image
-              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-              alt="Hilal Elektrik & Avize"
-              width={935}
-              height={267}
-              className="h-12 sm:h-14 lg:h-[88px] w-auto object-contain transition-transform group-hover:scale-105"
-              priority
-            />
-          </Link>
+    const isHome = pathname === "/";
+    const isHomeTop = isHome && !isScrolled;
 
-          {/* Desktop Navigation Links (Büyük & Okunaklı Buton Görünümü, Bronz Çerçeve & Renkli Gölgelendirme) */}
-          <div className="hidden lg:flex items-center gap-2 xl:gap-3 2xl:gap-4 text-[13px] xl:text-[14px] 2xl:text-[15px] font-bold whitespace-nowrap">
-            <Link
-              href="/"
-              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
-                pathname === "/"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
-                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
-              }`}
-            >
-              Anasayfa
-            </Link>
+    const getLinkClass = (isActive: boolean) =>
+      `px-3 py-1.5 xl:px-4 xl:py-2 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 whitespace-nowrap text-[12px] xl:text-[13.5px] 2xl:text-[15px] font-bold ${
+        isActive
+          ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
+          : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+      }`;
 
-            <Link
-              href="/koleksiyonlar"
-              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
-                pathname.startsWith("/koleksiyonlar") || pathname.startsWith("/kategori") || pathname.startsWith("/urun")
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
-                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
-              }`}
-            >
-              Tüm Koleksiyonlar
-            </Link>
+    return (
+      <header className="sticky top-0 z-50 w-full transition-all duration-300 relative">
+        {/* Main Navbar */}
+        <nav
+          className={`w-full transition-all duration-300 relative ${
+            isScrolled
+              ? "bg-[#E1E0DD]/70 backdrop-blur-md shadow-sm border-b border-border/80 py-3 lg:py-2"
+              : isHomeTop
+              ? "bg-[#E1E0DD]/60 backdrop-blur-sm border-b-0 py-3 lg:py-2"
+              : "bg-[#E1E0DD]/60 backdrop-blur-sm border-b border-border/60 py-3.5 lg:py-2.5"
+          }`}
+        >
+          <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            {/* --- DESKTOP LAYOUT (3 Buton - Ortada Logo - 3 Buton) --- */}
+            <div className="hidden lg:grid grid-cols-[1fr_auto_1fr] items-center gap-3 xl:gap-5 2xl:gap-8 w-full">
+              {/* Sol 3 Buton: buton1, buton2, buton3 */}
+              <div className="flex items-center justify-end gap-2 xl:gap-3 2xl:gap-4 font-bold whitespace-nowrap">
+                <Link href="/" className={getLinkClass(pathname === "/")}>
+                  Anasayfa
+                </Link>
 
-            <Link
-              href="/aydinlatma-nedir"
-              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
-                pathname === "/aydinlatma-nedir"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
-                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
-              }`}
-            >
-              Aydınlatma Nedir
-            </Link>
+                <Link
+                  href="/koleksiyonlar"
+                  className={getLinkClass(
+                    pathname.startsWith("/koleksiyonlar") ||
+                      pathname.startsWith("/kategori") ||
+                      pathname.startsWith("/urun")
+                  )}
+                >
+                  Tüm Koleksiyonlar
+                </Link>
 
-            <Link
-              href="/aydinlattigimiz-mekanlar"
-              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
-                pathname === "/aydinlattigimiz-mekanlar"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
-                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
-              }`}
-            >
-              Aydınlattığımız Mekanlar
-            </Link>
+                <Link
+                  href="/aydinlatma-nedir"
+                  className={getLinkClass(pathname === "/aydinlatma-nedir")}
+                >
+                  Aydınlatma Nedir
+                </Link>
+              </div>
 
-            <Link
-              href="/hizmetler"
-              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
-                pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
-                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
-              }`}
-            >
-              Hizmetlerimiz
-            </Link>
+              {/* Ortada Logo (Kavisli yuvaya oturan merkez logo) */}
+              <div className="flex items-center justify-center shrink-0 px-2 xl:px-4">
+                <Link href="/" onClick={handleLinkClick} className="flex items-center group">
+                  <Image
+                    src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+                    alt="Hilal Elektrik & Avize"
+                    width={935}
+                    height={267}
+                    className="h-14 sm:h-16 lg:h-[72px] xl:h-[84px] w-auto object-contain transition-transform group-hover:scale-105"
+                    priority
+                  />
+                </Link>
+              </div>
 
-            <Link
-              href="/hakkimizda"
-              className={`px-3.5 py-2 xl:px-4.5 xl:py-2.5 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 ${
-                pathname === "/hakkimizda"
-                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
-                  : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
-              }`}
-            >
-              Hakkımızda
-            </Link>
+              {/* Sağ 3 Buton: buton4, buton5, buton6 */}
+              <div className="flex items-center justify-start gap-2 xl:gap-3 2xl:gap-4 font-bold whitespace-nowrap">
+                <Link
+                  href="/aydinlattigimiz-mekanlar"
+                  className={getLinkClass(pathname === "/aydinlattigimiz-mekanlar")}
+                >
+                  Aydınlattığımız Mekanlar
+                </Link>
+
+                <Link
+                  href="/hizmetler"
+                  className={getLinkClass(
+                    pathname.startsWith("/hizmetler") ||
+                      pathname === "/subelerimiz" ||
+                      pathname === "/iletisim"
+                  )}
+                >
+                  Hizmetlerimiz
+                </Link>
+
+                <Link
+                  href="/hakkimizda"
+                  className={getLinkClass(pathname === "/hakkimizda")}
+                >
+                  Hakkımızda
+                </Link>
+              </div>
+            </div>
+
+            {/* --- MOBILE LAYOUT (Logo solda, Hamburger sağda) --- */}
+            <div className="lg:hidden flex items-center justify-between gap-4">
+              <Link href="/" onClick={handleLinkClick} className="flex items-center group shrink-0">
+                <Image
+                  src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+                  alt="Hilal Elektrik & Avize"
+                  width={935}
+                  height={267}
+                  className="h-11 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+                  priority
+                />
+              </Link>
+
+              {/* Mobile Menu Button - 3 Clean Lines */}
+              <button
+                onClick={() => setMobileMenuOpen(true)}
+                className="p-2.5 rounded-lg border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
+                aria-label="Menüyü Aç"
+              >
+                <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
+                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+                </div>
+              </button>
+            </div>
           </div>
 
-          {/* Mobile Menu Button - 3 Clean Lines */}
-          <button
-            onClick={() => setMobileMenuOpen(true)}
-            className="lg:hidden p-2.5 rounded-lg border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
-            aria-label="Menüyü Aç"
-          >
-            <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
-              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+          {/* Ana Sayfa İlk Açılış: Çizgisiz, Ortası Logoya Göre Kavisli, Aşağıya Doğru Siyaha Dönen Gradient */}
+          {isHomeTop && (
+            <div className="hidden lg:block absolute left-0 right-0 top-full w-full pointer-events-none overflow-visible -mt-[1px]">
+              <svg
+                viewBox="0 0 1440 90"
+                preserveAspectRatio="none"
+                className="w-full h-16 xl:h-24 block drop-shadow-sm"
+              >
+                <defs>
+                  {/* Ortadaki Kavis Yuvası: Mevcut Navbar Rengini ve Saydamlığını Aynen Korur */}
+                  <linearGradient id="hilalNavCradle" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#E1E0DD" stopOpacity="0.6" />
+                    <stop offset="100%" stopColor="#E1E0DD" stopOpacity="0.6" />
+                  </linearGradient>
+
+                  {/* O Çizgi Hattından Aşağıya Doğru Siyaha Dönen Gradient */}
+                  <linearGradient id="hilalNavToBlack" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#E1E0DD" stopOpacity="0.6" />
+                    <stop offset="30%" stopColor="#1C1A18" stopOpacity="0.75" />
+                    <stop offset="70%" stopColor="#0A0A0A" stopOpacity="0.92" />
+                    <stop offset="100%" stopColor="#000000" stopOpacity="1" />
+                  </linearGradient>
+                </defs>
+
+                {/* 1. Logonun altındaki kavisli yuva (Cradle): Navbar rengiyle logoyu sarar */}
+                <path
+                  d="M 530,0 C 600,0 630,38 720,38 C 810,38 840,0 910,0 Z"
+                  fill="url(#hilalNavCradle)"
+                />
+
+                {/* 2. Kavisli hattan aşağıya doğru yumuşakça siyaha dönen geçiş (Çizgi olmadan) */}
+                <path
+                  d="M 0,0 L 530,0 C 600,0 630,38 720,38 C 810,38 840,0 910,0 L 1440,0 L 1440,90 L 0,90 Z"
+                  fill="url(#hilalNavToBlack)"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
-      </nav>
+          )}
+        </nav>
 
       {/* Mobile Drawer Backdrop */}
       <div
