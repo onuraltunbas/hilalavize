@@ -30,7 +30,10 @@ import {
   KeyRound,
   ShieldCheck,
   AlertCircle,
+  Plus,
+  Sparkles,
 } from "lucide-react";
+import AddProductModal from "@/components/admin/AddProductModal";
 
 interface AdminUserSession {
   username: string;
@@ -91,6 +94,8 @@ export default function AdminPage() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
   // Image preview modal
   const [activePreviewImage, setActivePreviewImage] = useState<{ url: string; title: string } | null>(null);
+  // Add product modal state (only for 'onur')
+  const [isAddProductModalOpen, setIsAddProductModalOpen] = useState<boolean>(false);
 
   // 1. Session & Local Cache Check on Mount
   useEffect(() => {
@@ -575,6 +580,19 @@ export default function AdminPage() {
 
           {/* Sağ Köşe: Kullanıcı Bilgisi, Şifre Değiştir, Çıkış Yap & Mağazaya Git */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {/* Yeni Ürün Ekle Butonu (SADECE 'onur' kullanıcısı) */}
+            {currentUser.username.toLowerCase().trim() === "onur" && (
+              <button
+                type="button"
+                onClick={() => setIsAddProductModalOpen(true)}
+                className="py-2 px-3 sm:px-4 rounded-xl bg-gradient-to-r from-[#93826E] to-[#7A6956] hover:from-[#847461] hover:to-[#6B5B49] text-white text-xs sm:text-sm font-bold shadow-sm hover:shadow-md transition-all flex items-center gap-1.5 cursor-pointer ring-2 ring-[#93826E]/20"
+                title="Yeni Ürün Ekle (Sadece Yetkili Onur)"
+              >
+                <Plus className="w-4 h-4" />
+                <span>Yeni Ürün Ekle</span>
+              </button>
+            )}
+
             {/* Kullanıcı Rozeti */}
             <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#F4F4F1] border border-[#E6E5E0] text-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
@@ -1186,6 +1204,15 @@ export default function AdminPage() {
           </div>
         </div>
       )}
+      {/* 5. ADIM ADIM YENİ ÜRÜN EKLEME MODALI (Sadece Onur) */}
+      <AddProductModal
+        isOpen={isAddProductModalOpen}
+        onClose={() => setIsAddProductModalOpen(false)}
+        currentUsername={currentUser?.username}
+        onProductAdded={(newProduct) => {
+          setProducts((prev) => [newProduct, ...prev]);
+        }}
+      />
     </div>
   );
 }
