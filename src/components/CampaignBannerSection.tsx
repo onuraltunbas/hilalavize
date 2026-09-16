@@ -54,12 +54,6 @@ export function CampaignBannerSection() {
                 <div className="w-5 h-5 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center shrink-0">
                   <Check className="w-3 h-3 text-amber-300 stroke-[2.5]" />
                 </div>
-                <span className="font-medium tracking-wide">Saf K9 Berrak Kristal Garantisi</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/90">
-                <div className="w-5 h-5 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center shrink-0">
-                  <Check className="w-3 h-3 text-amber-300 stroke-[2.5]" />
-                </div>
                 <span className="font-medium tracking-wide">Showrooma Özel Teklifler</span>
               </div>
             </div>
@@ -68,14 +62,14 @@ export function CampaignBannerSection() {
             <div className="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto">
               <a
                 href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
-                  "Merhaba, web sitenizdeki Showroom Kampanyası hakkında bilgi ve teklif almak istiyorum."
+                  "Merhaba, mekanım için aydınlatma danışmanlığı almak istiyorum."
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-[#00880E] hover:bg-[#00730c] text-white font-bold px-7 py-3.5 rounded-lg text-xs sm:text-sm tracking-wide transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-98"
               >
                 <MessageCircle className="w-4 h-4 fill-white text-[#00880E]" />
-                Kampanya Teklifi Al (WhatsApp)
+                Danışmanlık İçin Başvur
               </a>
 
               <a

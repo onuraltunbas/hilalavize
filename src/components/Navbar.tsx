@@ -387,9 +387,9 @@ export function Navbar() {
                 opacity={Math.max(0, Math.min(1, scrollRatio))}
               />
 
-              {/* Genişletilmiş Çentik Hattı: Masaüstündeki gibi logonun rahatça içine oturduğu geniş altın hat */}
+              {/* Genişletilmiş Çentik Hattı: Çentik kısmı alt çizginin 2px üstüne (y=97) indirildi */}
               <path
-                d="M 0,55 L 45,55 C 75,55 75,85 105,85 L 395,85 C 425,85 425,55 455,55 L 500,55"
+                d="M 0,55 L 45,55 C 75,55 75,97 105,97 L 395,97 C 425,97 425,55 455,55 L 500,55"
                 fill="none"
                 stroke="url(#mobileGoldLine)"
                 strokeWidth="2.2"
@@ -402,7 +402,7 @@ export function Navbar() {
           <div className="relative z-10 w-full px-4 h-[94px] sm:h-[104px] flex items-center justify-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="relative flex items-center justify-center group cursor-pointer active:scale-95 transition-transform -translate-y-[10px]"
+              className="relative flex items-center justify-center group cursor-pointer active:scale-95 transition-transform -translate-y-[13px]"
               aria-label={mobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
             >
               {/* Logonun arkasındaki sıcak altın aydınlatma halesi */}

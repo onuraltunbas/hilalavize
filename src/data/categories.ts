@@ -41,8 +41,8 @@ export const CATEGORIES: Category[] = [
     seoTitle: "Modern LED Avize Modelleri Kahramanmaraş | Hilal Avize",
     seoDescription:
       "Modern halka LED avizeler, 3 renk kademeli sarkıt modelleri ve mimari aydınlatma çeşitleri Kahramanmaraş Hilal Avize'de.",
-    image: "/images/categories/banner_led.jpg",
-    coverImage: "/images/categories/banner_led.jpg",
+    image: "/images/categories/modern_led_avizeler.png",
+    coverImage: "/images/categories/modern_led_avizeler.png",
     featured: true,
     subcategories: [],
     itemCount: 51,
@@ -57,8 +57,8 @@ export const CATEGORIES: Category[] = [
     seoTitle: "Cam Sarkıt Avize Modelleri Kahramanmaraş | Hilal Avize",
     seoDescription:
       "Modern cam sarkıt avize modelleri, üfleme cam ve metal detaylı tasarımlar Kahramanmaraş Hilal Avize Showroom'unda.",
-    image: "/images/categories/banner_sarkitlar.jpg",
-    coverImage: "/images/categories/banner_sarkitlar.jpg",
+    image: "/images/categories/cam_sarkit_avizeler.png",
+    coverImage: "/images/categories/cam_sarkit_avizeler.png",
     featured: true,
     subcategories: [],
     itemCount: 6,

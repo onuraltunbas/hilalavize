@@ -15,14 +15,14 @@ export function ShowroomGallerySection() {
     },
     {
       title: "Modern LED Avizeler",
-      image: "/images/categories/banner_led.jpg",
+      image: "/images/categories/modern_led_avizeler.png",
       link: "/kategori/ledli-grup",
       colSpan: "lg:col-span-5",
       tag: "Trend Tasarımlar",
     },
     {
       title: "Cam Sarkıt Avizeler",
-      image: "/images/categories/banner_sarkitlar.jpg",
+      image: "/images/categories/cam_sarkit_avizeler.png",
       link: "/kategori/tekli-avizeler",
       colSpan: "lg:col-span-4",
       tag: "Ada & Masa Üstü",
