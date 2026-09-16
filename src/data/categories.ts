@@ -61,7 +61,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/images/categories/banner_sarkitlar.jpg",
     featured: true,
     subcategories: [],
-    itemCount: 19,
+    itemCount: 26,
   },
   {
     slug: "aplik-ve-spotlar",

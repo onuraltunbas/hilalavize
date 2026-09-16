@@ -239,5 +239,105 @@
       "/products/tekli-avizeler/photo/HL-TKL-019.jpeg",
       "/products/tekli-avizeler/photo/HL-TKL-019_2.jpeg"
     ]
+  },
+  {
+    "no": 20,
+    "id": "TKL-020",
+    "code": "HL-TKL-020",
+    "name": "HL-TKL-020",
+    "badge": "Modern Sarkıt",
+    "dimensions": "Çap: 60 cm / Ayarlanabilir Yükseklik",
+    "lightingType": "E14 Mum Duy (LED Uyumlu)",
+    "shortDescription": "Estetik halka gövde tasarımı ve küre cam başlıklarıyla yaşam alanlarınıza seçkin bir zarafet katan modern sarkıt avize.",
+    "images": [
+      "/products/tekli-avizeler/photo/HL-TKL-020.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-020_2.jpeg"
+    ]
+  },
+  {
+    "no": 21,
+    "id": "TKL-021",
+    "code": "HL-TKL-021",
+    "name": "HL-TKL-021",
+    "badge": "Tasarım Sarkıt",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "shortDescription": "Modern geometrik formu ve dengeli ışık yayılımı ile yemek masası ve ada tezgahlarına değer katan özel sarkıt.",
+    "images": [
+      "/products/tekli-avizeler/photo/HL-TKL-021.jpeg"
+    ]
+  },
+  {
+    "no": 22,
+    "id": "TKL-022",
+    "code": "HL-TKL-022",
+    "name": "HL-TKL-022",
+    "badge": "Modern Sarkıt",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "Dahili LED / E27 Uyumlu",
+    "shortDescription": "Zarif hatları ve yüksek ışık kalitesiyle salon, antre ve oturma alanlarına derinlik katan şık sarkıt modeli.",
+    "images": [
+      "/products/tekli-avizeler/photo/HL-TKL-022.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-022_2.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-022_3.jpeg"
+    ]
+  },
+  {
+    "no": 23,
+    "id": "TKL-023",
+    "code": "HL-TKL-023",
+    "name": "HL-TKL-023",
+    "badge": "Tasarım Sarkıt",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 / G9 Duy Uyumlu",
+    "shortDescription": "İnce işçilikli detayları ve modern askı sistemiyle seçkin mekanlar için tasarlanmış estetik sarkıt avize.",
+    "images": [
+      "/products/tekli-avizeler/photo/HL-TKL-023.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-023_2.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-023_3.jpeg"
+    ]
+  },
+  {
+    "no": 24,
+    "id": "TKL-024",
+    "code": "HL-TKL-024",
+    "name": "HL-TKL-024",
+    "badge": "Modern Sarkıt",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "shortDescription": "Yumuşak ışık dağılımı ve şık gövdesiyle mutfak adaları ve yemek odaları için ideal sarkıt aydınlatma.",
+    "images": [
+      "/products/tekli-avizeler/photo/HL-TKL-024.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-024_2.jpeg"
+    ]
+  },
+  {
+    "no": 25,
+    "id": "TKL-025",
+    "code": "HL-TKL-025",
+    "name": "HL-TKL-025",
+    "badge": "Tasarım Sarkıt",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "Dahili LED / E27 Uyumlu",
+    "shortDescription": "Çağdaş iç mekan trendlerini yansıtan yalın ve güçlü çizgileriyle ferah aydınlatma sunan modern sarkıt.",
+    "images": [
+      "/products/tekli-avizeler/photo/HL-TKL-025.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-025_2.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-025_3.jpeg"
+    ]
+  },
+  {
+    "no": 26,
+    "id": "TKL-026",
+    "code": "HL-TKL-026",
+    "name": "HL-TKL-026",
+    "badge": "Modern Sarkıt",
+    "dimensions": "Ayarlanabilir Yükseklik / Standart Ölçü",
+    "lightingType": "E27 Standart Duy (LED Ampul Uyumlu)",
+    "shortDescription": "Dekoratif duruşu ve homojen ışık karakteriyle yaşam alanlarının atmosferini zenginleştiren seçkin sarkıt model.",
+    "images": [
+      "/products/tekli-avizeler/photo/HL-TKL-026.jpeg",
+      "/products/tekli-avizeler/photo/HL-TKL-026_2.jpeg"
+    ]
   }
 ]
