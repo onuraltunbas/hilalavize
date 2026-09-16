@@ -26,6 +26,8 @@ import { InstagramIcon } from "@/components/icons/InstagramIcon";
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollRatio, setScrollRatio] = useState(0);
+  const prevRatioRef = React.useRef(0);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -36,6 +38,78 @@ export function Navbar() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Sitede aşağı indikçe (Işığın En Zarif Hali'ne geldikçe) gradientin siyah kısmı beyaza döner
+  // Yukarı çıktıkça tekrar eski haline (siyaha) yumuşakça döner
+  useEffect(() => {
+    if (pathname !== "/") {
+      // Alt sayfalarda hero video olmadığı için navbar direkt açık/beyaz uyumlu tondadır
+      setScrollRatio(1);
+      prevRatioRef.current = 1;
+      return;
+    }
+
+    let ticking = false;
+
+    const updateScrollRatio = () => {
+      const scrollY = window.scrollY;
+      const heroHeading = document.getElementById("hero-heading");
+      let targetRatio = 0;
+
+      if (heroHeading) {
+        const headingRect = heroHeading.getBoundingClientRect();
+        const navHeight = 90;
+        const headingPageY = headingRect.top + scrollY;
+        const arrivalScrollY = Math.max(100, headingPageY - navHeight);
+        const startScrollY = Math.max(30, arrivalScrollY * 0.25);
+
+        if (scrollY <= startScrollY) {
+          targetRatio = 0;
+        } else if (scrollY >= arrivalScrollY) {
+          targetRatio = 1;
+        } else {
+          const raw = (scrollY - startScrollY) / (arrivalScrollY - startScrollY);
+          targetRatio = raw * raw * (3 - 2 * raw); // Yumuşak akıcı geçiş (smoothstep)
+        }
+      } else {
+        const startScrollY = 60;
+        const arrivalScrollY = 420;
+        if (scrollY <= startScrollY) {
+          targetRatio = 0;
+        } else if (scrollY >= arrivalScrollY) {
+          targetRatio = 1;
+        } else {
+          const raw = (scrollY - startScrollY) / (arrivalScrollY - startScrollY);
+          targetRatio = raw * raw * (3 - 2 * raw);
+        }
+      }
+
+      const roundedRatio = Math.round(targetRatio * 100) / 100;
+      if (Math.abs(prevRatioRef.current - roundedRatio) >= 0.008) {
+        prevRatioRef.current = roundedRatio;
+        setScrollRatio(roundedRatio);
+      }
+
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollRatio);
+        ticking = true;
+      }
+    };
+
+    updateScrollRatio();
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, [pathname]);
 
   // Close mobile drawer whenever route changes
   useEffect(() => {
@@ -80,11 +154,14 @@ export function Navbar() {
   }
 
     const isHome = pathname === "/";
+    const isLightNav = scrollRatio > 0.55;
 
     const getLinkClass = (isActive: boolean) =>
       `px-3.5 py-1.5 xl:px-4.5 xl:py-2 rounded-full transition-all duration-300 whitespace-nowrap text-[12.5px] xl:text-[13.5px] 2xl:text-[14.5px] font-semibold tracking-wide ${
         isActive
           ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] font-bold border border-[#FFF2CC] shadow-[0_0_18px_rgba(212,175,55,0.45)] -translate-y-0.5"
+          : isLightNav
+          ? "text-[#32281E] bg-white/75 hover:bg-[#D4AF37]/20 border border-[#B89647]/50 hover:border-[#9E7D3B] hover:text-[#12100C] shadow-xs hover:shadow-[0_0_14px_rgba(212,175,55,0.30)] transition-all -translate-y-0.5 active:scale-95"
           : "text-[#F5E2A8] bg-black/35 hover:bg-[#D4AF37]/20 border border-[#D4AF37]/45 hover:border-[#D4AF37] hover:text-white shadow-xs hover:shadow-[0_0_14px_rgba(212,175,55,0.30)] transition-all -translate-y-0.5 active:scale-95"
       }`;
 
@@ -102,14 +179,23 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* Koleksiyonları Keşfet arkasındaki gibi ipeksi, yumuşak beyazdan siyaha gradient */}
-                <linearGradient id="chatgptNavGrad" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.90" />
-                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.88" />
-                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.92" />
-                  <stop offset="68%" stopColor="#302820" stopOpacity="0.96" />
-                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.98" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
+                {/* 1. Koyu Gradient: %15 daha şeffaflaştırılmış, sayfa tepesindeyken aktif */}
+                <linearGradient id="chatgptNavGradDark" x1="0" y1="0" x2="0" y2="100%">
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
+                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.75" />
+                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.78" />
+                  <stop offset="68%" stopColor="#302820" stopOpacity="0.82" />
+                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.83" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="0.85" />
+                </linearGradient>
+
+                {/* 2. Açık Gradient: %15 daha şeffaflaştırılmış, aşağı indikçe siyah kısım beyaza döner */}
+                <linearGradient id="chatgptNavGradLight" x1="0" y1="0" x2="0" y2="100%">
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
+                  <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.75" />
+                  <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.79" />
+                  <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.82" />
+                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.85" />
                 </linearGradient>
 
                 {/* Alt kenardaki parıldayan lüks altın hat */}
@@ -131,13 +217,24 @@ export function Navbar() {
                 </filter>
               </defs>
 
-              {/* Arka Plan Dolgusu: Yukarıdan aşağıya akıcı ipeksi gradient */}
+              {/* Arka Plan: Koyu Gradient (Sayfa en üstündeyken tam görünür, aşağı indikçe söner) */}
               <rect
                 x="0"
                 y="0"
                 width="1440"
                 height="115"
-                fill="url(#chatgptNavGrad)"
+                fill="url(#chatgptNavGradDark)"
+                opacity={Math.max(0, Math.min(1, 1 - scrollRatio))}
+              />
+
+              {/* Arka Plan: Açık Beyaz Gradient (Aşağı indikçe yavaşça belirir, yukarı çıktıkça söner) */}
+              <rect
+                x="0"
+                y="0"
+                width="1440"
+                height="115"
+                fill="url(#chatgptNavGradLight)"
+                opacity={Math.max(0, Math.min(1, scrollRatio))}
               />
 
               {/* Altın Parlayan Kavisli Sınır Çizgisi */}
@@ -238,13 +335,23 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                <linearGradient id="mobileNavGrad" x1="0" y1="0" x2="0" y2="100%">
-                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.90" />
-                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.88" />
-                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.92" />
-                  <stop offset="68%" stopColor="#302820" stopOpacity="0.96" />
-                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.98" />
-                  <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
+                {/* 1. Koyu Gradient (Mobil): %15 daha şeffaflaştırılmış */}
+                <linearGradient id="mobileNavGradDark" x1="0" y1="0" x2="0" y2="100%">
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
+                  <stop offset="18%" stopColor="#E2DDD7" stopOpacity="0.75" />
+                  <stop offset="42%" stopColor="#8A7D70" stopOpacity="0.78" />
+                  <stop offset="68%" stopColor="#302820" stopOpacity="0.82" />
+                  <stop offset="88%" stopColor="#120F0C" stopOpacity="0.83" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="0.85" />
+                </linearGradient>
+
+                {/* 2. Açık Gradient (Mobil): %15 daha şeffaflaştırılmış */}
+                <linearGradient id="mobileNavGradLight" x1="0" y1="0" x2="0" y2="100%">
+                  <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.77" />
+                  <stop offset="22%" stopColor="#F5F2EC" stopOpacity="0.75" />
+                  <stop offset="50%" stopColor="#EFECE5" stopOpacity="0.79" />
+                  <stop offset="78%" stopColor="#E8E3DA" stopOpacity="0.82" />
+                  <stop offset="100%" stopColor="#FAF9F6" stopOpacity="0.85" />
                 </linearGradient>
 
                 <linearGradient id="mobileGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -256,12 +363,24 @@ export function Navbar() {
                 </linearGradient>
               </defs>
 
+              {/* Mobil Arka Plan: Koyu Gradient (Yukarıdayken görünür) */}
               <rect
                 x="0"
                 y="0"
                 width="500"
                 height="100"
-                fill="url(#mobileNavGrad)"
+                fill="url(#mobileNavGradDark)"
+                opacity={Math.max(0, Math.min(1, 1 - scrollRatio))}
+              />
+
+              {/* Mobil Arka Plan: Açık Gradient (Aşağı inildikçe yavaşça belirir) */}
+              <rect
+                x="0"
+                y="0"
+                width="500"
+                height="100"
+                fill="url(#mobileNavGradLight)"
+                opacity={Math.max(0, Math.min(1, scrollRatio))}
               />
 
               {/* Genişletilmiş Çentik Hattı: Masaüstündeki gibi logonun rahatça içine oturduğu geniş altın hat */}

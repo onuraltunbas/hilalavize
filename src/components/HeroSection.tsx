@@ -24,7 +24,10 @@ export function HeroSection() {
       {/* 2. Slogan, Açıklama ve Buton Alanı (Siyahtan Sitenin Rengine Gradient Geçiş) */}
       <div className="relative w-full bg-gradient-to-b from-black via-[#181614] to-[#FAF9F6] text-center px-4 sm:px-8 pt-4 sm:pt-8 pb-16 sm:pb-24">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-3 sm:mb-4 font-heading text-white drop-shadow-md">
+          <h1
+            id="hero-heading"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-3 sm:mb-4 font-heading text-white drop-shadow-md"
+          >
             Işığın En Zarif Hali.
           </h1>
 
