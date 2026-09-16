@@ -83,29 +83,57 @@ export function Navbar() {
     const isHomeTop = isHome && !isScrolled;
 
     const getLinkClass = (isActive: boolean) =>
-      `px-3 py-1.5 xl:px-4 xl:py-2 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 whitespace-nowrap text-[12px] xl:text-[13.5px] 2xl:text-[15px] font-bold ${
+      `px-3 py-1.5 xl:px-4 xl:py-2 2xl:px-5 2xl:py-2.5 rounded-xl border-[1.5px] transition-all duration-300 whitespace-nowrap text-[12px] xl:text-[13px] 2xl:text-[14.5px] font-bold ${
         isActive
           ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-md shadow-[#93826E]/35 font-extrabold -translate-y-0.5"
-          : "bg-surface/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-surface hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
+          : "bg-[#FAF9F6]/85 backdrop-blur-xs border-[#93826E]/30 text-foreground shadow-xs shadow-[#93826E]/15 hover:border-[#93826E] hover:text-foreground hover:bg-[#FAF9F6] hover:shadow-lg hover:shadow-[#93826E]/25 hover:-translate-y-0.5 active:scale-95"
       }`;
 
     return (
-      <header className="sticky top-0 z-50 w-full transition-all duration-300 relative">
-        {/* Main Navbar */}
-        <nav
-          className={`w-full transition-all duration-300 relative ${
-            isScrolled
-              ? "bg-[#E1E0DD]/70 backdrop-blur-md shadow-sm border-b border-border/80 py-3 lg:py-2"
-              : isHomeTop
-              ? "bg-[#E1E0DD]/60 backdrop-blur-sm border-b-0 py-3 lg:py-2"
-              : "bg-[#E1E0DD]/60 backdrop-blur-sm border-b border-border/60 py-3.5 lg:py-2.5"
-          }`}
-        >
-          <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-            {/* --- DESKTOP LAYOUT (3 Buton - Ortada Logo - 3 Buton) --- */}
-            <div className="hidden lg:grid grid-cols-[1fr_auto_1fr] items-center gap-3 xl:gap-5 2xl:gap-8 w-full">
+      <header className="sticky top-0 z-50 w-full transition-all duration-300 pointer-events-none">
+        {/* =========================================================================
+            1. MASAÜSTÜ: SOLIDROAD TARZI YUKARIDAN SARKAN KAVİSLİ & NOTCH NAVBAR
+            ========================================================================= */}
+        <div className="hidden lg:block w-full relative pointer-events-auto">
+          <div className="relative mx-auto w-[94%] max-w-[1260px] 2xl:max-w-[1380px]">
+            {/* YAZILIMSAL SVG KAVİS & GRADİENT KATMANI (Fotoğraftaki Solidroad Kulaklı & Ortası Kavisli Şekil) */}
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="absolute inset-0 w-full h-[98px] xl:h-[108px] 2xl:h-[116px] pointer-events-none drop-shadow-2xl"
+              style={{ filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.38))" }}
+            >
+              <defs>
+                {/* Navbar Renklerine Uygun ve Aşağıya Doğru Kusursuz Siyaha Dönen Gradient */}
+                <linearGradient id="sculptedNavGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#E6E4E1" stopOpacity="0.88" />
+                  <stop offset="35%" stopColor="#D8D4CE" stopOpacity="0.80" />
+                  <stop offset="70%" stopColor="#352D26" stopOpacity="0.85" />
+                  <stop offset="100%" stopColor="#0B0A09" stopOpacity="0.98" />
+                </linearGradient>
+
+                {/* İnce Lüks Bronz Kontur Parıltısı */}
+                <linearGradient id="sculptedStrokeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#93826E" stopOpacity="0.55" />
+                  <stop offset="40%" stopColor="#93826E" stopOpacity="0.30" />
+                  <stop offset="85%" stopColor="#1F1B17" stopOpacity="0.50" />
+                  <stop offset="100%" stopColor="#000000" stopOpacity="0.85" />
+                </linearGradient>
+              </defs>
+
+              {/* Kusursuz Kavis Yolu: Sol iç kavis (kulak) -> Düz gövde -> Ortada logoya özel kavisli yuva -> Sağ iç kavis (kulak) */}
+              <path
+                d="M 0,0 C 22,0 36,16 36,36 L 36,74 C 36,88 48,96 64,96 L 460,96 C 515,96 545,120 600,120 C 655,120 685,96 740,96 L 1136,96 C 1152,96 1164,88 1164,74 L 1164,36 C 1164,16 1178,0 1200,0 Z"
+                fill="url(#sculptedNavGrad)"
+                stroke="url(#sculptedStrokeGrad)"
+                strokeWidth="1"
+              />
+            </svg>
+
+            {/* İKİNCİ FOTODAKİ BUTON VE LOGO DÜZENİ: buton1, buton2, buton3 | LOGO | buton4, buton5, buton6 */}
+            <div className="relative z-10 px-8 xl:px-12 pt-2 pb-3.5 xl:pb-4 flex items-center justify-between gap-2 xl:gap-4">
               {/* Sol 3 Buton: buton1, buton2, buton3 */}
-              <div className="flex items-center justify-end gap-2 xl:gap-3 2xl:gap-4 font-bold whitespace-nowrap">
+              <div className="flex-1 flex items-center justify-end gap-1.5 xl:gap-2.5 2xl:gap-3 font-bold whitespace-nowrap">
                 <Link href="/" className={getLinkClass(pathname === "/")}>
                   Anasayfa
                 </Link>
@@ -129,22 +157,22 @@ export function Navbar() {
                 </Link>
               </div>
 
-              {/* Ortada Logo (Kavisli yuvaya oturan merkez logo) */}
-              <div className="flex items-center justify-center shrink-0 px-2 xl:px-4">
+              {/* Ortada Logo (Kavisli cebe tam oturan merkez logo) */}
+              <div className="shrink-0 px-2 xl:px-5 flex items-center justify-center -mt-0.5">
                 <Link href="/" onClick={handleLinkClick} className="flex items-center group">
                   <Image
                     src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
                     alt="Hilal Elektrik & Avize"
                     width={935}
                     height={267}
-                    className="h-14 sm:h-16 lg:h-[72px] xl:h-[84px] w-auto object-contain transition-transform group-hover:scale-105"
+                    className="h-12 sm:h-14 lg:h-[68px] xl:h-[78px] 2xl:h-[84px] w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-md"
                     priority
                   />
                 </Link>
               </div>
 
               {/* Sağ 3 Buton: buton4, buton5, buton6 */}
-              <div className="flex items-center justify-start gap-2 xl:gap-3 2xl:gap-4 font-bold whitespace-nowrap">
+              <div className="flex-1 flex items-center justify-start gap-1.5 xl:gap-2.5 2xl:gap-3 font-bold whitespace-nowrap">
                 <Link
                   href="/aydinlattigimiz-mekanlar"
                   className={getLinkClass(pathname === "/aydinlattigimiz-mekanlar")}
@@ -171,73 +199,36 @@ export function Navbar() {
                 </Link>
               </div>
             </div>
-
-            {/* --- MOBILE LAYOUT (Logo solda, Hamburger sağda) --- */}
-            <div className="lg:hidden flex items-center justify-between gap-4">
-              <Link href="/" onClick={handleLinkClick} className="flex items-center group shrink-0">
-                <Image
-                  src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
-                  alt="Hilal Elektrik & Avize"
-                  width={935}
-                  height={267}
-                  className="h-11 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
-                  priority
-                />
-              </Link>
-
-              {/* Mobile Menu Button - 3 Clean Lines */}
-              <button
-                onClick={() => setMobileMenuOpen(true)}
-                className="p-2.5 rounded-lg border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
-                aria-label="Menüyü Aç"
-              >
-                <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
-                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-                  <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
-                </div>
-              </button>
-            </div>
           </div>
+        </div>
 
-          {/* Ana Sayfa İlk Açılış: Çizgisiz, Ortası Logoya Göre Kavisli, Aşağıya Doğru Siyaha Dönen Gradient */}
-          {isHomeTop && (
-            <div className="hidden lg:block absolute left-0 right-0 top-full w-full pointer-events-none overflow-visible -mt-[1px]">
-              <svg
-                viewBox="0 0 1440 90"
-                preserveAspectRatio="none"
-                className="w-full h-16 xl:h-24 block drop-shadow-sm"
-              >
-                <defs>
-                  {/* Ortadaki Kavis Yuvası: Mevcut Navbar Rengini ve Saydamlığını Aynen Korur */}
-                  <linearGradient id="hilalNavCradle" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#E1E0DD" stopOpacity="0.6" />
-                    <stop offset="100%" stopColor="#E1E0DD" stopOpacity="0.6" />
-                  </linearGradient>
+        {/* =========================================================================
+            2. MOBİL: DÜZGÜN, KULLANIŞLI VE AKICI MOBİL NAVBAR
+            ========================================================================= */}
+        <nav className="lg:hidden w-full bg-[#E1E0DD]/90 backdrop-blur-md border-b border-border/80 px-4 py-2.5 flex items-center justify-between pointer-events-auto shadow-sm">
+          <Link href="/" onClick={handleLinkClick} className="flex items-center shrink-0">
+            <Image
+              src="/images/Gemini_Generated_Image_6kicah6kicah6kic-removebg-preview.png"
+              alt="Hilal Elektrik & Avize"
+              width={935}
+              height={267}
+              className="h-10 sm:h-11 w-auto object-contain"
+              priority
+            />
+          </Link>
 
-                  {/* O Çizgi Hattından Aşağıya Doğru Siyaha Dönen Gradient */}
-                  <linearGradient id="hilalNavToBlack" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#E1E0DD" stopOpacity="0.6" />
-                    <stop offset="30%" stopColor="#1C1A18" stopOpacity="0.75" />
-                    <stop offset="70%" stopColor="#0A0A0A" stopOpacity="0.92" />
-                    <stop offset="100%" stopColor="#000000" stopOpacity="1" />
-                  </linearGradient>
-                </defs>
-
-                {/* 1. Logonun altındaki kavisli yuva (Cradle): Navbar rengiyle logoyu sarar */}
-                <path
-                  d="M 530,0 C 600,0 630,38 720,38 C 810,38 840,0 910,0 Z"
-                  fill="url(#hilalNavCradle)"
-                />
-
-                {/* 2. Kavisli hattan aşağıya doğru yumuşakça siyaha dönen geçiş (Çizgi olmadan) */}
-                <path
-                  d="M 0,0 L 530,0 C 600,0 630,38 720,38 C 810,38 840,0 910,0 L 1440,0 L 1440,90 L 0,90 Z"
-                  fill="url(#hilalNavToBlack)"
-                />
-              </svg>
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(true)}
+            className="p-2 rounded-lg border border-border text-foreground hover:bg-surface-subtle transition-colors flex items-center justify-center"
+            aria-label="Menüyü Aç"
+          >
+            <div className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
+              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
+              <span className="w-full h-0.5 bg-foreground rounded-full transition-all" />
             </div>
-          )}
+          </button>
         </nav>
 
       {/* Mobile Drawer Backdrop */}
