@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Home, Layers, Sparkles, Camera, Award, Info } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -22,7 +22,7 @@ export function HeroSection() {
       </div>
 
       {/* 2. Slogan, Açıklama ve Buton Alanı (Siyahtan Sitenin Rengine Gradient Geçiş) */}
-      <div className="relative w-full bg-gradient-to-b from-black via-[#181614] to-[#FAF9F6] text-center px-4 sm:px-8 pt-4 sm:pt-8 pb-16 sm:pb-24">
+      <div className="relative w-full bg-gradient-to-b from-black via-[#181614] to-[#FAF9F6] text-center px-4 sm:px-8 pt-4 sm:pt-8 pb-8 sm:pb-24">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <h1
             id="hero-heading"
@@ -44,6 +44,61 @@ export function HeroSection() {
             Koleksiyonları Keşfet
             <ChevronRight className="w-4 h-4" />
           </Link>
+        </div>
+      </div>
+
+      {/* 3. Mobil Hızlı Menü Butonları: Gradient bittikten sonraki açık alanda */}
+      <div className="lg:hidden w-full bg-[#FAF9F6] border-b border-border/80 px-4 pt-1 pb-8">
+        <div className="max-w-md mx-auto">
+          <div className="grid grid-cols-2 gap-2.5">
+            <Link
+              href="/"
+              className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
+            >
+              <Home className="w-3.5 h-3.5 text-bronze shrink-0" />
+              <span>Ana Sayfa</span>
+            </Link>
+
+            <Link
+              href="/koleksiyonlar"
+              className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
+            >
+              <Layers className="w-3.5 h-3.5 text-bronze shrink-0" />
+              <span>Tüm Koleksiyonlar</span>
+            </Link>
+
+            <Link
+              href="/aydinlatma-nedir"
+              className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-bronze shrink-0" />
+              <span>Aydınlatma Nedir</span>
+            </Link>
+
+            <Link
+              href="/aydinlattigimiz-mekanlar"
+              className="flex items-center justify-center gap-2 py-3 px-2 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
+            >
+              <Camera className="w-3.5 h-3.5 text-bronze shrink-0" />
+              <span className="truncate">Aydınlattığımız Mekanlar</span>
+            </Link>
+
+            <Link
+              href="/hizmetler"
+              className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
+            >
+              <Award className="w-3.5 h-3.5 text-bronze shrink-0" />
+              <span>Hizmetlerimiz</span>
+            </Link>
+
+            <Link
+              href="/hakkimizda"
+              className="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-surface border border-border text-foreground font-bold text-xs shadow-xs hover:border-bronze active:scale-95 transition-all text-center"
+            >
+              <Info className="w-3.5 h-3.5 text-bronze shrink-0" />
+              <span>Hakkımızda</span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

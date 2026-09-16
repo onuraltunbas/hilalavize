@@ -157,7 +157,7 @@ export function Navbar() {
     const isLightNav = scrollRatio > 0.55;
 
     const getLinkClass = (isActive: boolean) =>
-      `px-3.5 py-1.5 xl:px-4.5 xl:py-2 rounded-lg transition-all duration-300 whitespace-nowrap text-[12.5px] xl:text-[13.5px] 2xl:text-[14.5px] font-semibold tracking-wide ${
+      `px-3.5 py-1.5 xl:px-4.5 xl:py-2 rounded-full transition-all duration-300 whitespace-nowrap text-[12.5px] xl:text-[13.5px] 2xl:text-[14.5px] font-semibold tracking-wide ${
         isActive
           ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] font-bold border border-[#FFF2CC] shadow-[0_0_18px_rgba(212,175,55,0.45)] -translate-y-0.5"
           : isLightNav
@@ -172,7 +172,7 @@ export function Navbar() {
             ========================================================================= */}
         <nav className="hidden lg:block w-full relative backdrop-blur-md backdrop-saturate-150">
           {/* YAZILIMSAL SVG KATMANI: Koleksiyonları Keşfet gradienti gibi yumuşak beyazdan siyaha geçiş */}
-          <div className="absolute inset-0 w-full h-[94px] xl:h-[103px] 2xl:h-[112px] pointer-events-none overflow-visible">
+          <div className="absolute inset-0 w-full h-[99px] xl:h-[108px] 2xl:h-[117px] pointer-events-none overflow-visible">
             <svg
               viewBox="0 0 1440 115"
               preserveAspectRatio="none"
@@ -251,7 +251,7 @@ export function Navbar() {
           </div>
 
           {/* İÇERİK: Sol ve Sağ Eşit Uzaklıkta, Butonlar Çizginin Altında Eşit Aralıklı */}
-          <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[94px] xl:h-[103px] 2xl:h-[112px] grid grid-cols-[1fr_auto_1fr] items-center">
+          <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[99px] xl:h-[108px] 2xl:h-[117px] grid grid-cols-[1fr_auto_1fr] items-center">
             {/* Sol 3 Buton: Çizginin altında, araları eşit açılmış, logodan yatayda uzaklaştırılmış */}
             <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pr-8 xl:pr-14 mt-4 xl:mt-5">
               <Link href="/" className={getLinkClass(pathname === "/")}>
@@ -278,7 +278,7 @@ export function Navbar() {
             </div>
 
             {/* Ortada Logo (Kavisli yuvanın tam ortasında & arkasında sıcak altın ışık halesi) */}
-            <div className="relative shrink-0 px-6 xl:px-10 flex items-center justify-center">
+            <div className="relative shrink-0 px-6 xl:px-10 flex items-center justify-center -translate-y-[10px]">
               {/* Logonun altındaki sıcak altın aydınlatma halesi */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 xl:w-72 h-16 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.28)_0%,transparent_75%)] pointer-events-none blur-sm" />
 

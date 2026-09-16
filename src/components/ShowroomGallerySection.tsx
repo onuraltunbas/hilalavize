@@ -43,7 +43,7 @@ export function ShowroomGallerySection() {
     },
     {
       title: "Aksesuarlar",
-      image: "/images/categories/banner_aksesuarlar.jpg",
+      image: "/images/categories/aksesuarlar.jpg",
       link: "/kategori/aksesuar",
       colSpan: "lg:col-span-12",
       tag: "İthal Aksesuar • Çini • Tablo & Ayna",

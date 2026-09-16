@@ -105,8 +105,8 @@ export const CATEGORIES: Category[] = [
     seoTitle: "Lüks Aksesuarlar, Çini, Tablo ve Aynalar Kahramanmaraş | Hilal Aksesuar",
     seoDescription:
       "Lüks ithal konsol aksesuarları, el yapımı çini sanat eserleri, dekoratif aynalar ve tablolar Hilal Avize ve Aksesuar Showroom'unda.",
-    image: "/images/categories/banner_aksesuarlar.jpg",
-    coverImage: "/images/categories/banner_aksesuarlar.jpg",
+    image: "/images/categories/aksesuarlar.jpg",
+    coverImage: "/images/categories/aksesuarlar.jpg",
     featured: true,
     subcategories: [
       "Lüks İthal Aksesuarlar",
