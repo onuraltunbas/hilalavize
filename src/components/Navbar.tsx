@@ -226,14 +226,14 @@ export function Navbar() {
         </nav>
 
         {/* =========================================================================
-            2. MOBİL VE TABLET NAVBAR: MASAÜSTÜ GİBİ KAVİSLİ, SAĞINDA SOLUNDA BUTONSUZ,
+            2. MOBİL VE TABLET NAVBAR: MASAÜSTÜ GİBİ GENİŞ KAVİSLİ, SAĞINDA SOLUNDA BUTONSUZ,
                LOGONUN ÜSTÜNE BASINCA AŞAĞI AÇILAN MENÜ TETİKLEYİCİLİ
             ========================================================================= */}
         <nav className="lg:hidden w-full relative backdrop-blur-md backdrop-saturate-150">
-          {/* Mobil/Tablet SVG Katmanı: Masaüstüyle Birebir Aynı Lüks Kavis ve Gradient */}
+          {/* Mobil/Tablet SVG Katmanı: Logoya tam sığacak genişlikte kavisli çentik */}
           <div className="absolute inset-0 w-full h-[80px] sm:h-[88px] pointer-events-none overflow-visible">
             <svg
-              viewBox="0 0 1440 115"
+              viewBox="0 0 500 100"
               preserveAspectRatio="none"
               className="w-full h-full block"
             >
@@ -259,13 +259,14 @@ export function Navbar() {
               <rect
                 x="0"
                 y="0"
-                width="1440"
-                height="115"
+                width="500"
+                height="100"
                 fill="url(#mobileNavGrad)"
               />
 
+              {/* Genişletilmiş Çentik Hattı: Masaüstündeki gibi logonun rahatça içine oturduğu geniş altın hat */}
               <path
-                d="M 0,75 L 540,75 C 565,75 565,108 590,108 L 850,108 C 875,108 875,75 900,75 L 1440,75"
+                d="M 0,55 L 45,55 C 75,55 75,85 105,85 L 395,85 C 425,85 425,55 455,55 L 500,55"
                 fill="none"
                 stroke="url(#mobileGoldLine)"
                 strokeWidth="2.2"
@@ -274,11 +275,11 @@ export function Navbar() {
             </svg>
           </div>
 
-          {/* Merkez Logo: Sağında ve solunda buton YOK, logoya basınca menü aşağı açılır */}
+          {/* Merkez Logo: Sağında/solunda buton yok, menü yazısı yok, doğrudan logoya basınca menü açılır */}
           <div className="relative z-10 w-full px-4 h-[80px] sm:h-[88px] flex items-center justify-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="relative flex flex-col items-center justify-center group cursor-pointer active:scale-95 transition-transform"
+              className="relative flex items-center justify-center group cursor-pointer active:scale-95 transition-transform"
               aria-label={mobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
             >
               {/* Logonun arkasındaki sıcak altın aydınlatma halesi */}
@@ -289,27 +290,15 @@ export function Navbar() {
                 alt="Hilal Elektrik & Avize - Menüyü Aç"
                 width={935}
                 height={267}
-                className="h-11 sm:h-13 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
+                className="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
                 priority
               />
-
-              {/* Menü Açılış İpucu / Zarif Altın Gösterge */}
-              <div className="flex items-center gap-1 mt-0.5 bg-black/60 border border-[#D4AF37]/50 rounded-full px-2 py-0.5 shadow-xs">
-                <span className="text-[10px] font-bold text-[#F5E2A8] uppercase tracking-wider">
-                  {mobileMenuOpen ? "Kapat" : "Menü"}
-                </span>
-                <ChevronDown
-                  className={`w-3 h-3 text-[#D4AF37] transition-transform duration-300 ${
-                    mobileMenuOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </div>
             </button>
           </div>
         </nav>
 
         {/* =========================================================================
-            3. LOGODAN AŞAĞI DOĞRU AÇILAN ANİMASYONLU MOBİL & TABLET MENÜSÜ
+            3. LOGODAN AŞAĞI DOĞRU AÇILAN ANİMASYONLU BEYAZ MOBİL & TABLET MENÜSÜ
             ========================================================================= */}
         <div
           className={`lg:hidden fixed inset-x-0 top-[80px] sm:top-[88px] bottom-0 z-50 transition-all duration-500 ease-out overflow-hidden ${
@@ -320,13 +309,13 @@ export function Navbar() {
         >
           {/* Yarı Saydam Arka Plan Karartması */}
           <div
-            className="absolute inset-0 bg-black/75 backdrop-blur-md transition-opacity duration-500"
+            className="absolute inset-0 bg-black/60 backdrop-blur-xs transition-opacity duration-500"
             onClick={() => setMobileMenuOpen(false)}
           />
 
-          {/* Logodan Aşağı Kayan Şık Menü Paneli */}
+          {/* Logodan Aşağı Kayan Şık Beyaz Menü Paneli (Sitenin renkleriyle tam uyumlu) */}
           <div
-            className={`relative mx-auto w-[94%] sm:w-[88%] max-w-md max-h-[calc(100vh-100px)] overflow-y-auto bg-[#141210]/95 backdrop-blur-2xl border border-[#D4AF37]/40 rounded-2xl shadow-2xl p-4 sm:p-5 space-y-4 transition-all duration-500 ease-out mt-2 ${
+            className={`relative mx-auto w-[94%] sm:w-[88%] max-w-md max-h-[calc(100vh-100px)] overflow-y-auto bg-[#FAF9F6] border border-[#E1E0DD] rounded-2xl shadow-2xl p-4 sm:p-5 space-y-4 transition-all duration-500 ease-out mt-2 ${
               mobileMenuOpen
                 ? "translate-y-0 scale-100 opacity-100"
                 : "-translate-y-8 scale-95 opacity-0"
@@ -336,14 +325,14 @@ export function Navbar() {
             <Link
               href="/"
               onClick={handleLinkClick}
-              className={`w-full p-3 rounded-xl font-bold text-sm transition-all border flex items-center justify-between shadow-xs ${
+              className={`w-full p-3.5 rounded-xl font-bold text-sm transition-all border flex items-center justify-between shadow-xs ${
                 pathname === "/"
-                  ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] shadow-[0_0_16px_rgba(212,175,55,0.4)]"
-                  : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/40 hover:border-[#D4AF37] hover:text-white"
+                  ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] shadow-sm"
+                  : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
               }`}
             >
               <div className="flex items-center gap-2.5">
-                <Home className="w-4 h-4 text-[#D4AF37]" />
+                <Home className="w-4 h-4 text-bronze" />
                 <span>Anasayfa</span>
               </div>
               <ChevronRight className="w-4 h-4 opacity-70" />
@@ -352,27 +341,27 @@ export function Navbar() {
             {/* 2. TÜM KOLEKSİYONLAR BAŞLIĞI (TUŞ DEĞİL!) VE ALTINDA 2 SÜTUN KARE FOTOĞRAFLI KARTLAR */}
             <div className="pt-1">
               <div className="flex items-center justify-between pb-2.5 px-1">
-                <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#F5E2A8] flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-[#D4AF37]" />
+                <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-foreground flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-bronze" />
                   Tüm Koleksiyonlar
                 </span>
                 <Link
                   href="/koleksiyonlar"
                   onClick={handleLinkClick}
-                  className="text-[11px] font-bold text-[#D4AF37] hover:text-white transition-colors"
+                  className="text-[11px] font-bold text-bronze hover:underline transition-colors"
                 >
                   Tümünü Gör →
                 </Link>
               </div>
 
               {/* 2 Sütun Kare Fotoğraflı Kategori Kartları */}
-              <div className="grid grid-cols-2 gap-2 sm:gap-3">
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
                 {CATEGORIES.map((cat) => (
                   <Link
                     key={cat.slug}
                     href={`/kategori/${cat.slug}`}
                     onClick={handleLinkClick}
-                    className="group relative aspect-square rounded-xl overflow-hidden block border border-[#D4AF37]/30 shadow-md hover:border-[#D4AF37] transition-all"
+                    className="group relative aspect-square rounded-xl overflow-hidden block border border-border/80 shadow-sm hover:border-bronze hover:shadow-md transition-all"
                   >
                     {/* Kategori Arka Plan Fotoğrafı */}
                     <Image
@@ -384,14 +373,14 @@ export function Navbar() {
                     />
 
                     {/* Karartma Gradienti */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/15 group-hover:from-black/95 transition-colors" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent group-hover:from-black/95 transition-colors" />
 
                     {/* Kategori Başlığı ve Ürün Sayısı */}
                     <div className="absolute inset-x-0 bottom-0 p-2 text-center">
                       <span className="text-[12px] sm:text-[13px] font-bold text-white tracking-wide leading-tight drop-shadow-md block">
                         {cat.shortName}
                       </span>
-                      <span className="text-[10px] text-[#F5E2A8] font-medium block mt-0.5 opacity-85">
+                      <span className="text-[10px] text-zinc-300 font-medium block mt-0.5">
                         {cat.itemCount} Ürün
                       </span>
                     </div>
@@ -406,10 +395,10 @@ export function Navbar() {
               <Link
                 href="/aydinlatma-nedir"
                 onClick={handleLinkClick}
-                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
                   pathname === "/aydinlatma-nedir"
-                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
-                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
                 }`}
               >
                 <span>Aydınlatma Nedir</span>
@@ -420,10 +409,10 @@ export function Navbar() {
               <Link
                 href="/aydinlattigimiz-mekanlar"
                 onClick={handleLinkClick}
-                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
                   pathname === "/aydinlattigimiz-mekanlar"
-                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
-                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
                 }`}
               >
                 <span>Aydınlattığımız Mekanlar</span>
@@ -434,10 +423,10 @@ export function Navbar() {
               <Link
                 href="/hizmetler"
                 onClick={handleLinkClick}
-                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
                   pathname.startsWith("/hizmetler") || pathname === "/subelerimiz" || pathname === "/iletisim"
-                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
-                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
                 }`}
               >
                 <span>Hizmetlerimiz</span>
@@ -448,10 +437,10 @@ export function Navbar() {
               <Link
                 href="/hakkimizda"
                 onClick={handleLinkClick}
-                className={`w-full p-3 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between ${
+                className={`w-full p-3.5 rounded-xl font-semibold text-sm transition-all border flex items-center justify-between shadow-xs ${
                   pathname === "/hakkimizda"
-                    ? "bg-gradient-to-r from-[#D4AF37] via-[#E8C872] to-[#B8860B] text-[#12100C] border-[#FFF2CC] font-bold"
-                    : "text-[#F5E2A8] bg-black/40 hover:bg-[#D4AF37]/20 border-[#D4AF37]/35 hover:border-[#D4AF37] hover:text-white"
+                    ? "bg-gradient-to-r from-[#93826E] to-[#7A6956] text-white border-[#7A6956] font-bold shadow-sm"
+                    : "bg-white hover:bg-surface-subtle text-foreground border-border hover:border-bronze"
                 }`}
               >
                 <span>Hakkımızda</span>
@@ -460,8 +449,8 @@ export function Navbar() {
             </div>
 
             {/* Hızlı WhatsApp İletişim */}
-            <div className="pt-2 border-t border-[#D4AF37]/30">
-              <div className="text-[11px] font-bold text-[#F5E2A8]/80 mb-2 px-1">Hızlı İletişim:</div>
+            <div className="pt-2 border-t border-border/80">
+              <div className="text-[11px] font-bold text-muted-foreground mb-2 px-1">Hızlı İletişim:</div>
               <div className="grid grid-cols-2 gap-2">
                 <a
                   href={`https://wa.me/${showroom.contacts[0].whatsapp}?text=${encodeURIComponent(
@@ -469,7 +458,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors border border-emerald-400/30"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
                 >
                   <Store className="w-3.5 h-3.5" />
                   <span>Showroom</span>
@@ -480,7 +469,7 @@ export function Navbar() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors border border-emerald-400/30"
+                  className="bg-[#059669] hover:bg-[#047857] text-white text-[11px] font-bold py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-colors"
                 >
                   <Zap className="w-3.5 h-3.5" />
                   <span>Elektrik Şube</span>
