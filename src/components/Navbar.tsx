@@ -102,12 +102,12 @@ export function Navbar() {
               className="w-full h-full block"
             >
               <defs>
-                {/* Görseldeki gibi: En üstte sitenin kırık beyazı, hemen ardından hızla koyulaşıp siyaha dönen gradient */}
+                {/* Yukarıdan aşağıya: Sitenin kırık beyazından (#FAF9F6) başlayıp pürüzsüzce tam siyaha (#000000) dönen akıcı gradient */}
                 <linearGradient id="chatgptNavGrad" x1="0" y1="0" x2="0" y2="100%">
                   <stop offset="0%" stopColor="#FAF9F6" stopOpacity="0.90" />
-                  <stop offset="12%" stopColor="#8A7E72" stopOpacity="0.88" />
-                  <stop offset="32%" stopColor="#2A241E" stopOpacity="0.95" />
-                  <stop offset="65%" stopColor="#0B0907" stopOpacity="0.99" />
+                  <stop offset="25%" stopColor="#D5CFC9" stopOpacity="0.88" />
+                  <stop offset="52%" stopColor="#736558" stopOpacity="0.92" />
+                  <stop offset="78%" stopColor="#231E18" stopOpacity="0.97" />
                   <stop offset="100%" stopColor="#000000" stopOpacity="1.0" />
                 </linearGradient>
 
@@ -150,10 +150,10 @@ export function Navbar() {
             </svg>
           </div>
 
-          {/* İÇERİK: Sol 3 Buton | Ortada Logo (Işık Halesi ile) | Sağ 3 Buton */}
-          <div className="relative z-10 max-w-7xl 2xl:max-w-[1440px] mx-auto px-6 xl:px-10 h-[96px] xl:h-[105px] 2xl:h-[114px] grid grid-cols-[1fr_auto_1fr] items-center">
-            {/* Sol 3 Buton: Anasayfa, Tüm Koleksiyonlar, Aydınlatma Nedir */}
-            <div className="flex items-center justify-end gap-2 xl:gap-3 2xl:gap-4 -mt-2">
+          {/* İÇERİK: Sol ve Sağ Eşit Uzaklıkta, Butonlar Eşit Aralıklı ve Logodan Dengeli Uzaklaştırılmış */}
+          <div className="relative z-10 w-full max-w-[1520px] 2xl:max-w-[1650px] mx-auto px-6 sm:px-10 xl:px-14 h-[96px] xl:h-[105px] 2xl:h-[114px] grid grid-cols-[1fr_auto_1fr] items-center">
+            {/* Sol 3 Buton: Araları eşit açılmış, logodan yatayda uzaklaştırılmış */}
+            <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pr-8 xl:pr-14 -mt-2">
               <Link href="/" className={getLinkClass(pathname === "/")}>
                 Anasayfa
               </Link>
@@ -178,7 +178,7 @@ export function Navbar() {
             </div>
 
             {/* Ortada Logo (Kavisli yuvanın tam ortasında & arkasında sıcak altın ışık halesi) */}
-            <div className="relative shrink-0 px-4 xl:px-6 flex items-center justify-center">
+            <div className="relative shrink-0 px-6 xl:px-10 flex items-center justify-center">
               {/* Logonun altındaki sıcak altın aydınlatma halesi */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 xl:w-72 h-16 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.28)_0%,transparent_75%)] pointer-events-none blur-sm" />
 
@@ -194,8 +194,8 @@ export function Navbar() {
               </Link>
             </div>
 
-            {/* Sağ 3 Buton: Aydınlattığımız Mekanlar, Hizmetlerimiz, Hakkımızda */}
-            <div className="flex items-center justify-start gap-2 xl:gap-3 2xl:gap-4 -mt-2">
+            {/* Sağ 3 Buton: Araları eşit açılmış, logodan yatayda uzaklaştırılmış, sağ kenara eşit mesafe */}
+            <div className="flex items-center justify-between xl:justify-evenly gap-2 xl:gap-5 pl-8 xl:pl-14 -mt-2">
               <Link
                 href="/aydinlattigimiz-mekanlar"
                 className={getLinkClass(pathname === "/aydinlattigimiz-mekanlar")}
