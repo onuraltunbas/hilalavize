@@ -93,7 +93,7 @@ export const CATEGORIES: Category[] = [
     coverImage: "/images/categories/ozel_imalat_avizeler.jpg",
     featured: true,
     subcategories: [],
-    itemCount: 31,
+    itemCount: 43,
   },
   {
     slug: "aksesuar",
