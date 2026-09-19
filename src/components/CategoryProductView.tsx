@@ -1,12 +1,15 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef, useEffect } from "react";
 import Image from "next/image";
 import { Product } from "@/data/products";
 import { Category } from "@/data/categories";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductModal } from "@/components/ProductModal";
 import { MessageCircle, Layers } from "lucide-react";
+import { PaginationComponent } from "@/components/ui/pagination";
+
+const ITEMS_PER_PAGE = 10;
 
 interface CategoryProductViewProps {
   category: Category;
@@ -16,6 +19,13 @@ interface CategoryProductViewProps {
 export function CategoryProductView({ category, products }: CategoryProductViewProps) {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("all");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const productsSectionRef = useRef<HTMLDivElement>(null);
+
+  // Alt kategori filtresi değiştiğinde sayfayı başa al
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedSubcategory]);
 
   // Determine active background image
   const activeBgImage = useMemo(() => {
@@ -48,6 +58,24 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
       );
     });
   }, [products, selectedSubcategory]);
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+
+  // 10'ar ürünlük sayfalanmış liste
+  const paginatedProducts = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [filteredProducts, currentPage]);
+
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
+    if (productsSectionRef.current) {
+      const yOffset = -90;
+      const y = productsSectionRef.current.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
 
   return (
     <div>
@@ -145,7 +173,7 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
       </div>
 
       {/* Products Section */}
-      <div className="mb-16">
+      <div ref={productsSectionRef} className="mb-16 scroll-mt-24">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
             <span>{category.name} Modellerimiz</span>
@@ -156,19 +184,37 @@ export function CategoryProductView({ category, products }: CategoryProductViewP
             )}
           </h2>
           <span className="text-xs text-muted-foreground font-semibold">
-            Gösterilen: <strong className="text-foreground">{filteredProducts.length}</strong> Model
+            Toplam: <strong className="text-foreground">{filteredProducts.length}</strong> Model
+            {totalPages > 1 && (
+              <span className="ml-1 text-bronze font-medium">
+                (Sayfa {currentPage}/{totalPages})
+              </span>
+            )}
           </span>
         </div>
 
         {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
-            {filteredProducts.map((prod) => (
-              <ProductCard
-                key={prod.id}
-                product={prod}
-              />
-            ))}
-          </div>
+          <>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
+              {paginatedProducts.map((prod) => (
+                <ProductCard
+                  key={prod.id}
+                  product={prod}
+                />
+              ))}
+            </div>
+
+            {/* Pagination Controls - Footerın hemen üstü ve tam ortada */}
+            {totalPages > 1 && (
+              <div className="mt-12 sm:mt-16 flex justify-center items-center w-full">
+                <PaginationComponent
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={handlePageChange}
+                />
+              </div>
+            )}
+          </>
         ) : (
           <div className="p-10 text-center dgaraj-card space-y-4">
             <p className="text-sm text-muted-foreground">

@@ -7,17 +7,21 @@ import { PRODUCTS, Product } from "@/data/products";
 import { CATEGORIES } from "@/data/categories";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductModal } from "@/components/ProductModal";
+import { PaginationComponent } from "@/components/ui/pagination";
 import {
   Search,
   Layers,
   ArrowRight,
 } from "lucide-react";
 
+const ITEMS_PER_PAGE = 12;
+
 export default function CollectionsPage() {
   const [productsList, setProductsList] = useState<Product[]>(PRODUCTS);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeModalProduct, setActiveModalProduct] = useState<Product | null>(null);
+  const [currentPage, setCurrentPage] = useState<number>(1);
 
   React.useEffect(() => {
     fetch("/api/products")
@@ -46,6 +50,29 @@ export default function CollectionsPage() {
       return matchCategory && matchSearch;
     });
   }, [productsList, selectedCategory, searchQuery]);
+
+  // Filtre veya arama değiştiğinde sayfayı başa al
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, searchQuery]);
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+
+  const paginatedProducts = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [filteredProducts, currentPage]);
+
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
+    const el = document.getElementById("tum-urunler");
+    if (el) {
+      const yOffset = -90;
+      const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="py-10 sm:py-16 bg-background min-h-screen">
@@ -164,6 +191,11 @@ export default function CollectionsPage() {
           <div className="flex items-center justify-between text-xs text-muted-foreground">
             <span>
               Toplam <strong className="text-foreground">{filteredProducts.length}</strong> model listeleniyor
+              {totalPages > 1 && (
+                <span className="ml-1 text-bronze font-medium">
+                  (Sayfa {currentPage}/{totalPages})
+                </span>
+              )}
             </span>
             {(selectedCategory !== "all" || searchQuery) && (
               <button
@@ -171,7 +203,7 @@ export default function CollectionsPage() {
                   setSelectedCategory("all");
                   setSearchQuery("");
                 }}
-                className="text-bronze hover:underline font-medium"
+                className="text-bronze hover:underline font-medium cursor-pointer"
               >
                 Filtreleri Temizle
               </button>
@@ -180,14 +212,27 @@ export default function CollectionsPage() {
 
           {/* Products Grid */}
           {filteredProducts.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
-              {filteredProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
+                {paginatedProducts.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                  />
+                ))}
+              </div>
+
+              {/* Pagination Controls - Footerın hemen üstü ve tam ortada */}
+              {totalPages > 1 && (
+                <div className="mt-12 sm:mt-16 flex justify-center items-center w-full">
+                  <PaginationComponent
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    onPageChange={handlePageChange}
+                  />
+                </div>
+              )}
+            </>
           ) : (
             <div className="text-center py-16 dgaraj-card space-y-3">
               <p className="text-foreground font-semibold">Aradığınız kriterlere uygun ürün bulunamadı.</p>
@@ -199,7 +244,7 @@ export default function CollectionsPage() {
                   setSelectedCategory("all");
                   setSearchQuery("");
                 }}
-                className="mt-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-xs font-bold"
+                className="mt-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-xs font-bold cursor-pointer"
               >
                 Tüm Ürünleri Göster
               </button>
