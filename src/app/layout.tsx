@@ -17,8 +17,10 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
 import { FloatingHomeButton } from "@/components/FloatingHomeButton";
+import Script from "next/script";
 import { CookieConsent } from "@/components/CookieConsent";
 import { JsonLd } from "@/components/JsonLd";
+import { Analytics } from "@vercel/analytics/next";
 
 export const viewport: Viewport = {
   themeColor: "#FAF9F6",
@@ -145,6 +147,23 @@ export default function RootLayout({
         <FloatingContact />
         <FloatingHomeButton />
         <CookieConsent />
+        <Analytics />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-CSSK614SGD"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CSSK614SGD');
+            `,
+          }}
+        />
       </body>
     </html>
   );

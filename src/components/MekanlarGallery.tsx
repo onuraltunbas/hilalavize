@@ -1,16 +1,14 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { INSTALLATION_PROJECTS, InstallationProject } from "@/data/aydinlattigimiz-mekanlar";
 import {
   MapPin,
-  MessageCircle,
   X,
   ChevronLeft,
   ChevronRight,
   ZoomIn,
-  CheckCircle2,
 } from "lucide-react";
 
 export function MekanlarGallery() {
@@ -21,19 +19,43 @@ export function MekanlarGallery() {
     return INSTALLATION_PROJECTS.slice(0, visibleCount);
   }, [visibleCount]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (!activeProject) return;
     const currentIndex = INSTALLATION_PROJECTS.findIndex((p) => p.id === activeProject.id);
     const nextIndex = (currentIndex + 1) % INSTALLATION_PROJECTS.length;
     setActiveProject(INSTALLATION_PROJECTS[nextIndex]);
-  };
+  }, [activeProject]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     if (!activeProject) return;
     const currentIndex = INSTALLATION_PROJECTS.findIndex((p) => p.id === activeProject.id);
     const prevIndex = (currentIndex - 1 + INSTALLATION_PROJECTS.length) % INSTALLATION_PROJECTS.length;
     setActiveProject(INSTALLATION_PROJECTS[prevIndex]);
-  };
+  }, [activeProject]);
+
+  // Klavye ok tuşları ve ESC ile kontrol
+  useEffect(() => {
+    if (!activeProject) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setActiveProject(null);
+      if (e.key === "ArrowRight") handleNext();
+      if (e.key === "ArrowLeft") handlePrev();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activeProject, handleNext, handlePrev]);
+
+  // Modal açıkken arkadaki sayfanın kaymasını engelle
+  useEffect(() => {
+    if (activeProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [activeProject]);
 
   return (
     <div className="space-y-8">
@@ -86,97 +108,58 @@ export function MekanlarGallery() {
         </div>
       )}
 
-      {/* Lightbox Modal */}
+      {/* Lightbox Modal - Sadece Görsel */}
       {activeProject && (
         <div
-          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200 select-none"
           onClick={() => setActiveProject(null)}
         >
+          {/* Modal Kapatma Butonu */}
+          <button
+            onClick={() => setActiveProject(null)}
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 z-50 p-2.5 sm:p-3 rounded-full bg-black/60 hover:bg-black text-white transition-all backdrop-blur-xs cursor-pointer shadow-lg hover:scale-105 border border-white/20"
+            aria-label="Kapat"
+          >
+            <X className="w-6 h-6" />
+          </button>
+
+          {/* Önceki Buton */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              handlePrev();
+            }}
+            className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-50 p-2.5 sm:p-3.5 rounded-full bg-black/60 hover:bg-black text-white transition-all backdrop-blur-xs cursor-pointer shadow-lg hover:scale-105 border border-white/20"
+            aria-label="Önceki Görsel"
+          >
+            <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
+          </button>
+
+          {/* Sonraki Buton */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              handleNext();
+            }}
+            className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-50 p-2.5 sm:p-3.5 rounded-full bg-black/60 hover:bg-black text-white transition-all backdrop-blur-xs cursor-pointer shadow-lg hover:scale-105 border border-white/20"
+            aria-label="Sonraki Görsel"
+          >
+            <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
+          </button>
+
+          {/* Büyük Görsel Alanı */}
           <div
-            className="relative max-w-4xl w-full max-h-[90vh] bg-surface rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row border border-border"
+            className="relative w-full max-w-5xl h-[80vh] sm:h-[88vh] flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Modal Kapatma Butonu */}
-            <button
-              onClick={() => setActiveProject(null)}
-              className="absolute top-3 right-3 z-20 p-2 rounded-lg bg-black/60 hover:bg-black text-white transition-colors cursor-pointer"
-              aria-label="Kapat"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            {/* Büyük Görsel */}
-            <div className="relative flex-1 min-h-[350px] md:min-h-[550px] bg-black/95 flex items-center justify-center overflow-hidden">
-              <Image
-                src={activeProject.src}
-                alt={activeProject.title}
-                fill
-                className="object-contain"
-                priority
-              />
-
-              {/* Önceki - Sonraki Butonları */}
-              <button
-                onClick={handlePrev}
-                className="absolute left-3 p-2 rounded-lg bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer"
-                aria-label="Önceki Görsel"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button
-                onClick={handleNext}
-                className="absolute right-3 p-2 rounded-lg bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer"
-                aria-label="Sonraki Görsel"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
-
-            {/* Detay ve WhatsApp İletişim Paneli */}
-            <div className="w-full md:w-80 p-5 sm:p-6 flex flex-col justify-between space-y-4 bg-surface">
-              <div className="space-y-3">
-                <h3 className="text-lg font-black text-foreground leading-snug">
-                  {activeProject.title}
-                </h3>
-                <p className="text-xs text-muted-foreground flex items-center gap-1.5">
-                  <MapPin className="w-3.5 h-3.5 text-bronze shrink-0" />
-                  <span>{activeProject.location}</span>
-                </p>
-                <p className="text-xs text-muted-foreground leading-relaxed pt-2 border-t border-border">
-                  {activeProject.description}
-                </p>
-                <div className="space-y-1.5 pt-2">
-                  <div className="text-[11px] font-bold text-foreground flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Hilal Avize Montaj Güvencesi</span>
-                  </div>
-                  <div className="text-[11px] font-bold text-foreground flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Tavana Özel Güvenli Çelik Dübel</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-border space-y-2">
-                <a
-                  href={`https://wa.me/905053801350?text=${encodeURIComponent(
-                    `Merhaba, "Aydınlattığımız Mekanlar" sayfanızdaki "${activeProject.title}" (${activeProject.location}) montajındaki avize modeli hakkında bilgi ve fiyat teklifi almak istiyorum.`
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-[#1D7E45] hover:bg-[#17693a] text-white font-bold py-3 px-4 rounded-lg text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-transform hover:-translate-y-0.5"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  Bu Model Hakkında Bilgi Al
-                </a>
-                <button
-                  onClick={() => setActiveProject(null)}
-                  className="w-full py-2 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-                >
-                  Galeride Gezinmeye Devam Et
-                </button>
-              </div>
-            </div>
+            <Image
+              src={activeProject.src}
+              alt={activeProject.title}
+              fill
+              className="object-contain drop-shadow-2xl"
+              sizes="(max-width: 1200px) 95vw, 1200px"
+              priority
+            />
           </div>
         </div>
       )}
